@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/moreIconItem_layout" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10">
+    <com.androidex.widget.RoundAsyncImageView android:id="@+id/moreIconItem_icon" android:layout_width="50dp" android:layout_height="50dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="?attr/item_content_text_color" android:id="@+id/moreIconItem_name" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:text="xxxxxxxxxxx" style="@style/more_text_view_style"/>
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+</LinearLayout>

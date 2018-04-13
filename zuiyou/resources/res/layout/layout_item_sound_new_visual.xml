@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:id="@+id/ivPlaySound" android:layout_width="19dp" android:layout_height="19dp" android:layout_marginLeft="13dp" android:src="@drawable/img_play_sound" android:layout_centerVertical="true"/>
+    <TextView android:textSize="15dp" android:textColor="@color/white" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <ProgressBar android:id="@+id/vDownloading" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp" android:layout_marginRight="13dp" android:layout_toLeftOf="@+id/tvTime" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle"/>
+    <cn.xiaochuankeji.tieba.ui.comment.soundnewvisual.SoundWaveView android:id="@+id/soundWaveView" android:layout_width="match_parent" android:layout_height="15dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/vDownloading" android:layout_toRightOf="@+id/ivPlaySound" android:layout_centerVertical="true"/>
+</merge>

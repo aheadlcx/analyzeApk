@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/vContainer" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/recyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="14sp" android:textColor="#4dffffff" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/vEmpty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="130dp" android:text="别让卤煮太寂寞"/>
+</FrameLayout>

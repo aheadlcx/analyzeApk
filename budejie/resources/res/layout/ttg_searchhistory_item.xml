@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="38dp">
+        <cn.tatagou.sdk.view.IconTextView android:textSize="21sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ttg_icon_history"/>
+        <TextView android:textSize="13sp" android:textColor="#000000" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/ttg_tv_searchcontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="我的" android:lines="1"/>
+    </LinearLayout>
+    <View android:background="#e9e9f0" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

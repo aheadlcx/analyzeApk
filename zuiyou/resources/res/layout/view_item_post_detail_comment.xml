@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.ui.tempview.DealChildLongClickRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.xiaochuankeji.tieba.ui.comment.CommentTopMemberView android:id="@+id/topMemberView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp"/>
+        <cn.xiaochuankeji.tieba.ui.comment.CommentBaseElementLinearLayout android:id="@+id/baseCommentElementView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="53dp" android:layout_marginTop="0dp" android:layout_marginRight="13dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llAreaSecondComment" android:background="@drawable/bg_post_detail_comment" android:padding="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="53dp" android:layout_marginTop="8dp" android:layout_marginRight="13dp">
+            <TextView android:textSize="@dimen/F2_text" android:textColor="@color/CT_3" android:ellipsize="end" android:id="@+id/tvSecondCommentOne" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="3dp"/>
+            <TextView android:textSize="@dimen/F2_text" android:textColor="@color/CT_3" android:ellipsize="end" android:id="@+id/tvSecondCommentTwo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="2" android:lineSpacingExtra="3dp"/>
+            <TextView android:textSize="@dimen/F2_text" android:textColor="@color/CM" android:id="@+id/tvTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="查看全部评论"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_divider" android:background="@color/CL" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_below="@+id/llContent"/>
+    <ImageView android:id="@+id/ivGodFlag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_god_square_flag"/>
+    <cn.xiaochuankeji.tieba.ui.widget.updown.CommentItemUpDownView android:id="@+id/commentItemUpDownView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_alignParentRight="true"/>
+</cn.xiaochuankeji.tieba.ui.tempview.DealChildLongClickRelativeLayout>

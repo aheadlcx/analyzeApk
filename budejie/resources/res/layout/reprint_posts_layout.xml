@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="?attr/reprint_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <RelativeLayout android:id="@+id/title" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout">
+        <TextView android:textColor="?attr/title_text_selector" android:gravity="center" android:id="@+id/write_left_btn" android:paddingLeft="@dimen/margin_8" android:paddingRight="@dimen/margin_20" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_alignParentLeft="true" style="@style/titleBtnStyle"/>
+        <TextView android:textSize="22sp" android:textColor="?attr/title_text_selector" android:id="@+id/write_comment_txt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reprint_title" android:layout_centerInParent="true"/>
+        <TextView android:textColor="?attr/title_text_selector" android:gravity="center" android:id="@+id/comment_send" android:paddingLeft="@dimen/margin_20" android:paddingRight="@dimen/margin_8" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/reprint_send" android:layout_alignParentRight="true" style="@style/titleBtnStyle"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottomLayout" android:layout_below="@+id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.budejie.www.widget.parsetagview.ParseTagEditText android:textColor="?attr/send_post_text_color" android:textColorHint="?attr/reprint_text_color_hint" android:gravity="top" android:id="@+id/repint_input_content" android:background="@null" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/reprint_hint" android:minLines="5"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/reprint_posts" android:background="?attr/reprint_post_layout_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textSize="14sp" android:textColor="#474747" android:ellipsize="end" android:id="@+id/posts_content" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="3" android:layout_weight="1"/>
+                <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/posts_image" android:visibility="gone" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginLeft="5dp" android:scaleType="centerCrop"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:enabled="true" android:textColor="@color/reprint_limit_size_text_color_selector" android:id="@+id/reprint_textsize_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:text="@string/reprint_content_text_size_limit" android:layout_above="@+id/bottomLayout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottomlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/include_create_post_bottom"/>
+    </LinearLayout>
+</RelativeLayout>

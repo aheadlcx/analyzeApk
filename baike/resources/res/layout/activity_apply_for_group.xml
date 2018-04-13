@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/apply_group" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="42dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="申请入群" style="?attr/nearby_list_item_name"/>
+    <ImageView android:id="@+id/send" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="?attr/publish_send" android:layout_alignTop="@+id/name" android:layout_alignBottom="@+id/name" android:layout_alignParentRight="true"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/prompt_lin" android:layout_width="match_parent" android:layout_height="46dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12dp" android:textColor="#b6b6b6" android:gravity="center_vertical" android:id="@+id/prompt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="你当前可以加入5个群，已加入3个群" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="12dp" android:textColor="#969696" android:gravity="center_vertical" android:id="@+id/content_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/prompt_lin" android:layout_below="@+id/send">
+        <EditText android:scrollbarThumbVertical="@drawable/wb_scrollbar" android:gravity="top" android:id="@+id/content" android:background="@null" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp" android:layout_marginBottom="5dp" android:hint="说说你为什么要加入这个群..." android:layout_weight="1" style="?attr/send_content"/>
+    </LinearLayout>
+</RelativeLayout>

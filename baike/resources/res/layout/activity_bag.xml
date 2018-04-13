@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/header" layout="@layout/item_header"/>
+        <TextView android:textSize="@dimen/live_text_17sp" android:textColor="#41364f" android:id="@+id/tv_market" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27dp" android:text="@string/market" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <fragment android:name="qsbk.app.live.ui.bag.BagFragment" android:id="@+id/fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

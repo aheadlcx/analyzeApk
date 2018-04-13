@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.PagerSlidingTabStrip android:textSize="14sp" android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="48dp" app:pstsTabPaddingLeftRight="10dp" app:pstsShouldExpand="true" style="?attr/psts"/>
+    <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabs"/>
+</LinearLayout>

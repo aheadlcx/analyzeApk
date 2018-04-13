@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/g_txt_big" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="@dimen/padding_medium">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="64dp" android:layout_height="64dp" android:scaleType="centerCrop" app:actualImageScaleType="6"/>
+        <TextView android:textSize="@dimen/g_txt_middle" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/content" android:layout_width="0px" android:layout_height="64dp" android:layout_marginLeft="8dp" android:maxLines="3" android:layout_weight="1"/>
+    </LinearLayout>
+    <EditText android:id="@+id/input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium" android:hint="说些什么"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/comment_qiushi" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:gravity="center" android:id="@+id/qiuyou_checkbox" android:paddingLeft="2dp" android:paddingTop="3dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+        <TextView android:textSize="14dp" android:gravity="top" android:layout_gravity="center" android:paddingLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论给原糗事"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium">
+        <View android:layout_width="1px" android:layout_height="1px" android:layout_weight="1"/>
+        <Button android:textSize="14dp" android:gravity="center" android:id="@+id/cancel" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="64dp" android:layout_height="48dp" android:text="取消" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <Button android:textSize="14dp" android:gravity="center" android:id="@+id/sure" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="64dp" android:layout_height="48dp" android:layout_marginRight="@dimen/padding_medium" android:text="分享" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+</LinearLayout>

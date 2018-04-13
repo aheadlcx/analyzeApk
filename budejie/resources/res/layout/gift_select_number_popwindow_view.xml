@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.v6.sixrooms.widgets.phone.NoShadowListView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent" android:layout_width="123dp" android:layout_height="280dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp"/>

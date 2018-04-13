@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/fl_input_dialog_root" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/v_input_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/ll_chat" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_chat" android:background="#eff4f5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/ll_top" android:background="#eff4f5" android:layout_width="match_parent" android:layout_height="@dimen/fourty_two_dp">
+                <View android:background="@color/rooms_third_ll_chat_top_diverline" android:layout_width="match_parent" android:layout_height="@dimen/dot_five_dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_chat_select" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/fifteen" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/iv_quietly_public" android:background="@drawable/rooms_third_room_private_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+                    <TextView android:textSize="@dimen/text_size_small_max" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/five_dip" android:text="@string/pad_room_private_chat_str"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/rl_select_chat" android:background="@drawable/rooms_third_room_selected_bg" android:paddingTop="@dimen/three_dip" android:paddingRight="@dimen/ten_dip" android:paddingBottom="@dimen/three_dip" android:layout_width="@dimen/hundred_sixty_five_dp" android:layout_height="@dimen/thirty_dip" android:layout_marginLeft="@dimen/twelve_dp" android:layout_marginRight="@dimen/ten_dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/text_size_small_mid" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/tv_current_chat_name" android:paddingLeft="@dimen/ten_dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/three_dip" android:text="@string/pad_room_chat_to_all_str" android:singleLine="true" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/iv_select_arrow" android:background="@drawable/rooms_third_room_triangle_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <include android:layout_width="match_parent" android:layout_height="@dimen/input_chat_up_height" android:layout_below="@+id/ll_top" layout="@layout/input_layout"/>
+        </RelativeLayout>
+        <cn.v6.sixrooms.widgets.phone.ExpressionKeyboard android:id="@+id/rl_expression_page" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

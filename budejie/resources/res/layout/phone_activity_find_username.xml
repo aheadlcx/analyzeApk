@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rl_find_username_view" android:background="@color/login_generally_Background" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+    <LinearLayout android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/titlebar_default">
+        <TextView android:textSize="@dimen/text_size_small_14" android:textColor="@color/unbundle_textcolor" android:gravity="center_vertical" android:id="@+id/tv_find_username_top" android:paddingLeft="@dimen/phone_login_padding_Left_v4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="15dp" android:text="@string/find_username_top_description" android:singleLine="true"/>
+        <ImageView style="@style/onePxLine"/>
+        <ListView android:id="@+id/username_listView" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+        <ImageView style="@style/onePxLine"/>
+        <TextView android:textSize="@dimen/text_size_small_min" android:textColor="@color/bundle_gray_textcolor_v4" android:gravity="center_vertical" android:id="@+id/bundle_phone_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_login_padding_Left_v4" android:layout_marginTop="@dimen/phone_login_tv_margin_left" android:layout_marginRight="@dimen/phone_login_padding_Left_v4" android:text="@string/find_username_bottom_description"/>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/phone_custom_progressbar"/>
+</RelativeLayout>

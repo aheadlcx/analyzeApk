@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="?attr/add_qiuyou_ic_search" android:id="@+id/action_edit_name" android:orderInCategory="50" android:title="修改群名" app:showAsAction="collapseActionView"/>
+    <item android:icon="?attr/add_qiuyou_ic_search" android:id="@+id/action_resign" android:orderInCategory="51" android:title="我要辞职" app:showAsAction="collapseActionView"/>
+    <item android:icon="?attr/add_qiuyou_ic_search" android:id="@+id/action_report" android:orderInCategory="52" android:title="举报群" app:showAsAction="collapseActionView"/>
+    <item android:icon="?attr/add_qiuyou_ic_search" android:id="@+id/action_quit" android:orderInCategory="53" android:title="我要退群" app:showAsAction="collapseActionView"/>
+</menu>

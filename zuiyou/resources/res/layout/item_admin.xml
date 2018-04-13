@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="63dp">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar_admin" android:layout_width="39dp" android:layout_height="39dp" android:layout_marginLeft="17dp" android:layout_marginRight="12dp" android:layout_centerVertical="true" app:roundAsCircle="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/avatar_admin" android:layout_centerVertical="true">
+        <TextView android:textSize="15dp" android:textColor="@color/CT_2" android:ellipsize="end" android:id="@+id/name_admin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="测试" android:maxLength="10"/>
+        <TextView android:textSize="10.4dp" android:textColor="@color/CT_5" android:id="@+id/tv_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="test"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6dp" android:layout_marginBottom="-4dp" android:layout_alignRight="@+id/avatar_admin" android:layout_alignBottom="@+id/avatar_admin">
+        <ImageView android:id="@+id/iv_level_holder_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/topic_holder_small_icon" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_level_admin_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/topic_admin_small_icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12dp" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/btn_fire" android:background="@drawable/bg_button_fire" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginRight="17dp" android:text="辞退" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/btn_check" android:background="@drawable/bg_button_fire" android:layout_width="44dp" android:layout_height="24dp" android:layout_marginRight="17dp" android:text="检查" android:layout_toLeftOf="@+id/btn_fire" android:layout_centerVertical="true"/>
+    <View android:id="@+id/split_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

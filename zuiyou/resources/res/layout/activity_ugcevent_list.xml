@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <FrameLayout android:id="@+id/navBar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <RelativeLayout android:id="@+id/fl_container" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <ImageView android:id="@+id/ivBack" android:layout_width="@dimen/item_height" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:ellipsize="middle" android:gravity="center_vertical" android:id="@+id/tvTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="跟拍活动" android:singleLine="true" android:drawablePadding="@dimen/divide_space_5" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/ulRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <qsbk.app.widget.QBImageView android:id="@+id/video_thumb" android:layout_width="90dp" android:layout_height="90dp" android:layout_margin="5dp" android:scaleType="centerCrop" android:contentDescription="@null"/>
+        <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/video_play_normal" android:scaleType="fitXY" android:contentDescription="@null"/>
+    </FrameLayout>
+    <TextView android:textSize="12sp" android:ellipsize="middle" android:gravity="center" android:id="@+id/video_duration" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+</LinearLayout>

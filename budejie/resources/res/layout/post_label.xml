@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/post_margin_left" android:layout_marginBottom="8dp">
+    <com.budejie.www.activity.labelsubscription.LabelTextView android:textSize="@dimen/font_13" android:textColor="?attr/post_label_text_color" android:gravity="center_vertical" android:id="@+id/label_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="?attr/post_label_icon"/>
+</HorizontalScrollView>

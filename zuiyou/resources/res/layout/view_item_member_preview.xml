@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="64dp">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/pv_avatar" android:layout_width="46dp" android:layout_height="46dp" style="@style/CircleImage"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+        <TextView android:textSize="12sp" android:textColor="@color/CT_2" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游客" android:singleLine="true" android:drawablePadding="8dp"/>
+        <TextView android:textSize="10sp" android:textColor="@color/CT_5" android:ellipsize="end" android:id="@+id/label_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/CT_5" android:id="@+id/tvLikeCount" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="0"/>
+</LinearLayout>

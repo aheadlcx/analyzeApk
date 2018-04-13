@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/moreIconItem_layout" android:background="?attr/list_view_item_background" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/HotItemLayout" android:layout_width="match_parent" android:layout_height="45dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/White" android:gravity="center" android:id="@+id/IndexTextView" android:background="@drawable/search_hot_1" android:layout_width="23dp" android:layout_height="16dp" android:text="1"/>
+            <TextView android:textSize="13sp" android:textColor="#545454" android:ellipsize="end" android:id="@+id/HotKeyTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="胡歌" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" app:viewAspectRatio="3.83" app:roundedCornerRadius="5dp"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/color_white" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这里是标题"/>
+        <TextView android:textSize="10sp" android:textColor="?attr/color_white" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginRight="10dp" android:text="每周话题"/>
+    </FrameLayout>
+</LinearLayout>

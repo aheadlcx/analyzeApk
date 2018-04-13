@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.SDEditSheet android:id="@+id/sd_edit_sheet" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.widget.SDPopupMenu android:id="@+id/sd_popup_menu" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.widget.SDTopSheet android:id="@+id/sd_top_sheet" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.widget.SDBottomSheet android:id="@+id/sd_bottom_sheet" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.widget.SDGuideDialog android:id="@+id/sd_guide_dialog" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.widget.SDCheckSheet android:id="@+id/sd_check_sheet" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.widget.TBAddSheet android:id="@+id/view_add_sheet" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

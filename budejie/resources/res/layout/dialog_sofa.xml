@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rooms_third_dialog_bg" android:layout_width="@dimen/Improved_Dialog_RootView_Width" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sofa_margin_left">
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请先选择座位" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_close_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sofa_margin_left" android:layout_marginRight="@dimen/sofa_margin_right">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll1_sofa" android:background="@drawable/sofa_item_bg_selector" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <RelativeLayout android:gravity="center" android:background="@drawable/sofa_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv1_header" android:visibility="visible" android:layout_width="@dimen/sofa_header_border" android:layout_height="@dimen/sofa_header_border" fresco:failureImage="@drawable/rooms_third_common_head_portrait" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1dp" fresco:roundingBorderColor="#ffffff"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv1_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sofa_name_margin_top" android:text="抢座" android:lines="1"/>
+                <TextView android:textSize="16sp" android:textColor="@color/sofa_num_color_selector" android:ellipsize="end" android:id="@+id/tv1_num" android:paddingBottom="@dimen/sofa_num_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sofa_num_margin_top" android:text="0" android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll2_sofa" android:background="@drawable/sofa_item_bg_selector" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <RelativeLayout android:gravity="center" android:background="@drawable/sofa_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv2_header" android:visibility="visible" android:layout_width="@dimen/sofa_header_border" android:layout_height="@dimen/sofa_header_border" fresco:failureImage="@drawable/rooms_third_common_head_portrait" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1dp" fresco:roundingBorderColor="#ffffff"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv2_name" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sofa_name_margin_top" android:text="抢座" android:lines="1"/>
+                <TextView android:textSize="16sp" android:textColor="@color/sofa_num_color_selector" android:ellipsize="end" android:id="@+id/tv2_num" android:paddingLeft="1dp" android:paddingRight="1dp" android:paddingBottom="@dimen/sofa_num_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sofa_num_margin_top" android:text="0" android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll3_sofa" android:background="@drawable/sofa_item_bg_selector" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <RelativeLayout android:gravity="center" android:background="@drawable/sofa_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv3_header" android:visibility="visible" android:layout_width="@dimen/sofa_header_border" android:layout_height="@dimen/sofa_header_border" fresco:failureImage="@drawable/rooms_third_common_head_portrait" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1dp" fresco:roundingBorderColor="#ffffff"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv3_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sofa_name_margin_top" android:text="抢座" android:lines="1"/>
+                <TextView android:textSize="16sp" android:textColor="@color/sofa_num_color_selector" android:ellipsize="end" android:id="@+id/tv3_num" android:paddingBottom="@dimen/sofa_num_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sofa_num_margin_top" android:text="0" android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll4_sofa" android:background="@drawable/sofa_item_bg_selector" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <RelativeLayout android:gravity="center" android:background="@drawable/sofa_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv4_header" android:visibility="visible" android:layout_width="@dimen/sofa_header_border" android:layout_height="@dimen/sofa_header_border" fresco:failureImage="@drawable/rooms_third_common_head_portrait" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1dp" fresco:roundingBorderColor="#ffffff"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv4_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sofa_name_margin_top" android:text="抢座" android:lines="1"/>
+                <TextView android:textSize="16sp" android:textColor="@color/sofa_num_color_selector" android:ellipsize="end" android:id="@+id/tv4_num" android:paddingBottom="@dimen/sofa_num_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sofa_num_margin_top" android:text="0" android:lines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_explain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="15dp" android:layout_marginRight="17dp" android:text="@string/sofa_item"/>
+        <View android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="17dp" android:layout_marginRight="17dp">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数量"/>
+            <EditText android:textSize="18sp" android:textColor="#333333" android:gravity="center" android:id="@+id/et_input_num" android:background="@drawable/sofa_input_bg" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="92dp" android:layout_height="40dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:inputType="number"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(100六币/沙发)"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/sofa_send_color_selector" android:gravity="center" android:id="@+id/tv_send" android:background="@drawable/sofa_send_bg_grey_selector" android:clickable="false" android:layout_width="match_parent" android:layout_height="45dp" android:text="抢座"/>
+    </LinearLayout>
+</LinearLayout>

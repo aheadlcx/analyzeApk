@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/guess_help_bg" android:clickable="true" android:layout_width="280dp" android:layout_height="362dp" android:layout_marginTop="135dp">
+        <ScrollView android:layout_gravity="center_horizontal" android:background="@drawable/guess_help_bottom_bg" android:scrollbars="none" android:layout_width="260dp" android:layout_height="308dp" android:layout_marginTop="42dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:layout_marginRight="24dp">
+                <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#362f86" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="如何使用复活卡"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#171717" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="当你拥有复活卡的时候，猜错后自动使用并复活，每局游戏仅限使用一次，最后一盘竞猜不可使用复活卡。" android:lineSpacingMultiplier="1.2"/>
+                <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#362f86" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="如何获得复活卡"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#171717" android:id="@+id/game_help_rule" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="点开app首页上方的猜猜乐宣传栏，并分享活动页面给好友，好友下载后在活动页面填写你的id，你和好友各获得一张复活卡。" android:lineSpacingMultiplier="1.2"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#332c7f" android:gravity="center" android:id="@+id/game_help_rule_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="点击下方按钮邀请好友获得复活卡" android:lineSpacingMultiplier="1.2"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp">
+                    <ImageView android:id="@+id/share_friend" android:layout_width="0dp" android:layout_height="42dp" android:src="@drawable/guess_share_friend" android:scaleType="centerInside" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/share_wechat" android:layout_width="0dp" android:layout_height="42dp" android:src="@drawable/guess_share_wechat" android:scaleType="centerInside" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/title_image" android:layout_width="200dp" android:layout_height="40dp" android:layout_marginTop="120dp" android:src="@drawable/fhk_help_title" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginTop="120dp" android:layout_marginRight="36dp" android:src="@drawable/guess_help_close" android:scaleType="centerInside"/>
+</FrameLayout>

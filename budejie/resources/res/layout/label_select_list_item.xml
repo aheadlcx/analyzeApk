@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/search_label_item_bg_theme" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_label" android:background="?attr/label_icon_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/font_16" android:textColor="?attr/search_label_item_color_theme" android:layout_gravity="center" android:id="@+id/item_at_name" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="#活动标题#" android:layout_toRightOf="@+id/iv_label"/>
+</RelativeLayout>

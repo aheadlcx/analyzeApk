@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:height="60dp" android:width="60dp">
+        <shape android:shape="rectangle">
+            <size android:height="60dp" android:width="60dp"/>
+            <solid android:color="@color/CM_night"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="27dp" android:width="27dp">
+        <bitmap android:gravity="center" android:src="@drawable/ic_link_night" android:antialias="true"/>
+    </item>
+</layer-list>

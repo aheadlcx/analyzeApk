@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_discount" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="270dp">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="80dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/iv_diamond" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/live_discount_diamond"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tv_diamond" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="80dp" android:layout_marginLeft="17dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/iv_enter" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/live_discount_diamond"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tv_enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_level_enter"/>
+            <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/tv_enter_count" android:background="@drawable/bg_discount_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3天"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="80dp" android:layout_marginLeft="17dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/iv_gift" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/live_discount_diamond"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tv_gift" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/live_text_20sp" android:textColor="#d2564e" android:gravity="center" android:id="@+id/tv_pay" android:background="@drawable/bg_corner_discount" android:layout_width="152dp" android:layout_height="38dp" android:layout_marginTop="19dp" android:text="@string/live_discount_get"/>
+</LinearLayout>

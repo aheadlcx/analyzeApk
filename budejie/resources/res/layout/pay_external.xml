@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textColor="#777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="商品名称:"/>
+            <TextView android:textColor="#333333" android:gravity="right" android:id="@+id/product_subject" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="测试的商品"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textColor="#777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="商品描述:"/>
+            <TextView android:textColor="#333333" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="该测试商品的详细描述"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textColor="#ff6600" android:gravity="right" android:id="@+id/orderIdTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="订单号:"/>
+            <TextView android:textColor="#777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="商品价格:"/>
+            <TextView android:textColor="#ff6600" android:gravity="right" android:id="@+id/product_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0.01元"/>
+        </LinearLayout>
+        <Button android:id="@+id/getUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="获取订单号" android:onClick="getUrl"/>
+        <Button android:id="@+id/pay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="支付" android:onClick="pay"/>
+        <Button android:id="@+id/check" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="检查账户" android:onClick="check"/>
+    </LinearLayout>
+</ScrollView>

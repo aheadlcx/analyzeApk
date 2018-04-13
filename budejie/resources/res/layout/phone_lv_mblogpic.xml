@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_one_container1" android:background="@drawable/rooms_third_room_expression_item_bg" android:padding="1dp" android:layout_width="match_parent" android:layout_height="@dimen/blog_pospic_width">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/pospic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </RelativeLayout>
+</RelativeLayout>

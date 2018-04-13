@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.widget.fits.FitsRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f5f5f7" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/image_container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/ivSplashBg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:src="@drawable/splash_center" android:layout_centerHorizontal="true"/>
+        <com.cesards.cropimageview.CropImageView android:id="@+id/ivSplashAd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="93dp" android:scaleType="centerCrop"/>
+    </RelativeLayout>
+    <FrameLayout android:background="#ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="93dp" android:src="@drawable/splash_icon"/>
+    </FrameLayout>
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btn_skip" android:background="@drawable/splash_skip_bg" android:visibility="invisible" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true"/>
+</cn.xiaochuankeji.tieba.widget.fits.FitsRelativeLayout>

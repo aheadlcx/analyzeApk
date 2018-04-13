@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/iv_up" android:background="@color/black_60_percent_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:clickable="true" android:layout_width="352dp" android:layout_height="322dp" android:layout_marginTop="150dp">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/bg_level_gift" android:layout_width="315dp" android:layout_height="322dp"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="53dp" android:layout_marginTop="17dp" android:src="@drawable/level_gift_silk" android:scaleType="fitXY"/>
+        <TextView android:textSize="24sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/level_gift_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="100dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="80dp" android:layout_height="wrap_content">
+                <FrameLayout android:background="@drawable/bg_level_gift_item" android:layout_width="80dp" android:layout_height="94dp">
+                    <TextView android:textSize="20sp" android:textColor="#834909" android:layout_gravity="center_horizontal" android:id="@+id/level_gift_heart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="48dp" android:layout_height="40dp" android:layout_marginTop="42dp" android:src="@drawable/level_gift_heart"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textColor="#834909" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="游戏赞"/>
+            </LinearLayout>
+            <TextView android:textSize="25sp" android:textColor="#834909" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="+"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="80dp" android:layout_height="wrap_content">
+                <FrameLayout android:background="@drawable/bg_level_gift_item" android:layout_width="80dp" android:layout_height="94dp">
+                    <TextView android:textSize="20sp" android:textColor="#834909" android:layout_gravity="center_horizontal" android:id="@+id/level_gift_diamond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="48dp" android:layout_height="40dp" android:layout_marginTop="42dp" android:src="@drawable/level_gift_diamond"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textColor="#834909" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="钻石"/>
+            </LinearLayout>
+            <TextView android:textSize="25sp" android:textColor="#834909" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="+"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="88dp" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="88dp" android:layout_height="94dp">
+                    <ImageView android:layout_gravity="right" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/level_gift_box_label"/>
+                    <ImageView android:layout_width="66dp" android:layout_height="74dp" android:layout_marginTop="15dp" android:src="@drawable/level_gift_box"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textColor="#834909" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="超级神奇宝箱"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/level_gift_btn_buy" android:background="@drawable/bg_level_gift_buy_btn" android:layout_width="216dp" android:layout_height="50dp" android:layout_marginTop="233dp">
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="立即购买"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/level_gift_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+        </FrameLayout>
+        <TextView android:textSize="10sp" android:textColor="#a9812c10" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/level_gift_time_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="right" android:id="@+id/level_gift_label" android:layout_width="54dp" android:layout_height="62dp" android:layout_marginTop="25dp" android:layout_marginRight="45dp" app:actualImageScaleType="2" app:actualImageResource="@drawable/level_gift_label_2"/>
+    </FrameLayout>
+    <ImageView android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="40dp" android:src="@drawable/live_start_up_close" android:scaleType="fitXY"/>
+</LinearLayout>

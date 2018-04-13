@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qsbk.app.widget.SizeNotifierRelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/circle_publish" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/circle_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="30dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <qsbk.app.widget.CircleEditText android:scrollbarThumbVertical="@drawable/wb_scrollbar" android:gravity="top" android:id="@+id/content" android:background="@null" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="109dp" android:minHeight="109dp" android:hint="这一刻你在想什么..." style="?attr/send_content"/>
+            <HorizontalScrollView android:id="@+id/images_container" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <qsbk.app.widget.QBImageView android:id="@+id/image1" android:layout_width="84dp" android:layout_height="84dp" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:src="@drawable/circle_article_publish_image_add" android:scaleType="centerCrop"/>
+                    <ImageView android:id="@+id/imageDelete1" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="96dp" android:src="@drawable/circle_article_publish_image_delete"/>
+                    <qsbk.app.widget.QBImageView android:id="@+id/image2" android:layout_width="84dp" android:layout_height="84dp" android:layout_marginLeft="118dp" android:layout_marginTop="8dp" android:src="@drawable/circle_article_publish_image_add" android:scaleType="centerCrop"/>
+                    <ImageView android:id="@+id/imageDelete2" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="194dp" android:src="@drawable/circle_article_publish_image_delete"/>
+                    <qsbk.app.widget.QBImageView android:id="@+id/image3" android:layout_width="84dp" android:layout_height="84dp" android:layout_marginLeft="216dp" android:layout_marginTop="8dp" android:src="@drawable/circle_article_publish_image_add" android:scaleType="centerCrop"/>
+                    <ImageView android:id="@+id/imageDelete3" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="292dp" android:src="@drawable/circle_article_publish_image_delete"/>
+                    <qsbk.app.widget.QBImageView android:id="@+id/image4" android:layout_width="84dp" android:layout_height="84dp" android:layout_marginLeft="312dp" android:layout_marginTop="8dp" android:src="@drawable/circle_article_publish_image_add" android:scaleType="centerCrop"/>
+                    <ImageView android:id="@+id/imageDelete4" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="388dp" android:src="@drawable/circle_article_publish_image_delete"/>
+                    <qsbk.app.widget.QBImageView android:id="@+id/image5" android:layout_width="84dp" android:layout_height="84dp" android:layout_marginLeft="408dp" android:layout_marginTop="8dp" android:src="@drawable/circle_article_publish_image_add" android:scaleType="centerCrop"/>
+                    <ImageView android:id="@+id/imageDelete5" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="484dp" android:src="@drawable/circle_article_publish_image_delete"/>
+                    <qsbk.app.widget.QBImageView android:id="@+id/image6" android:layout_width="84dp" android:layout_height="84dp" android:layout_marginLeft="506dp" android:layout_marginTop="8dp" android:src="@drawable/circle_article_publish_image_add" android:scaleType="centerCrop"/>
+                    <ImageView android:id="@+id/imageDelete6" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="580dp" android:src="@drawable/circle_article_publish_image_delete"/>
+                </FrameLayout>
+            </HorizontalScrollView>
+            <RelativeLayout android:gravity="center" android:id="@+id/id_add_video_layout" android:padding="15dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <qsbk.app.video.VideoPlayerView android:id="@+id/video_view" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/video_one_frame" android:visibility="visible" android:layout_width="41dp" android:layout_height="14dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/video_watermark"/>
+                <ImageView android:id="@+id/delete_video" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:src="@drawable/delete_image" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/play" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_selector" android:layout_centerInParent="true"/>
+                <View android:id="@+id/video_cover" android:background="?attr/publishBg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/share_container" android:background="?attr/qiuyoucircle_share_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="68dp" android:layout_marginLeft="20dp" android:layout_marginTop="@dimen/padding_medium" android:layout_marginRight="20dp">
+                <FrameLayout android:layout_width="68dp" android:layout_height="68dp">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/share_image" android:layout_width="68dp" android:layout_height="68dp" android:scaleType="centerCrop" app:actualImageScaleType="6"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/share_play" android:visibility="invisible" android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/video_play_normal"/>
+                    <ImageView android:id="@+id/gif_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:src="@drawable/ic_gif_tag"/>
+                </FrameLayout>
+                <qsbk.app.widget.QiushiEmotionTextView android:textSize="@dimen/g_txt_middle" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/share_content" android:layout_width="0px" android:layout_height="68dp" android:layout_marginLeft="8dp" android:maxLines="3" android:layout_weight="1"/>
+            </LinearLayout>
+            <qsbk.app.widget.CheckableLinearLayout android:orientation="horizontal" android:id="@+id/comment_qiushi" android:paddingLeft="12dp" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/id_bottom_bar">
+                <CheckBox android:enabled="false" android:gravity="center" android:id="@+id/comment_checkbox" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="14dp" android:gravity="top" android:layout_gravity="center" android:id="@+id/comment_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论给原糗事"/>
+            </qsbk.app.widget.CheckableLinearLayout>
+            <TextView android:textSize="18dp" android:textColor="#5e5e5e" android:gravity="center_vertical" android:id="@+id/add_vote" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="添加投票"/>
+            <RelativeLayout android:id="@+id/vote_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_centerVertical="true">
+                    <EditText android:textSize="18dp" android:textColor="#5e5e5e" android:textColorHint="#b8b8b8" android:gravity="center" android:id="@+id/vote_edit_left" android:background="#00000000" android:paddingRight="30dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="选项A" android:maxLength="4" android:layout_weight="1"/>
+                    <EditText android:textSize="18dp" android:textColor="#5e5e5e" android:textColorHint="#b8b8b8" android:gravity="center" android:id="@+id/vote_edit_right" android:background="#00000000" android:paddingLeft="30dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="选项B" android:maxLength="4" android:layout_weight="1"/>
+                </LinearLayout>
+                <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/circle_article_publish_vote_vs" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/vote_delete" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="12dp" android:src="@drawable/circle_article_publish_image_delete" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="15dp"/>
+            <LinearLayout android:paddingLeft="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="46dp">
+                <TextView android:textSize="18dp" android:textColor="#5e5e5e" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="同步至" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/sync_qzone" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginRight="16dp" android:src="@drawable/circle_article_publish_qzone"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/sync_pyq" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginRight="18dp" android:src="@drawable/circle_article_publish_pyq"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/id_bottom_bar" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="30dp" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/circle_vote" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/circle_vote" android:layout_alignParentLeft="true"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/circle_topic_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/circle_topic" android:layout_toRightOf="@+id/circle_vote"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/circle_at" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/circle_at" android:layout_toRightOf="@+id/circle_topic_iv"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/circle_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/circle_emotion" android:layout_toRightOf="@+id/circle_at"/>
+            <TextView android:textSize="10dp" android:textColor="#ffc4c4c4" android:gravity="center" android:layout_gravity="right" android:id="@+id/location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/emotions" android:background="?attr/emotion_main_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/emotion_container_height" android:layout_alignParentBottom="true">
+            <qsbk.app.im.emotion.EmotionViewPager android:layout_gravity="center_vertical" android:id="@+id/emotion_viewpager" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <qsbk.app.widget.DotView android:gravity="center_horizontal" android:id="@+id/emotion_dotview" android:layout_width="match_parent" android:layout_height="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</qsbk.app.widget.SizeNotifierRelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="42dp">
+        <TextView android:textSize="14sp" android:textColor="#888888" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="精选小说"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/ad_book_container" android:paddingLeft="10dp" android:paddingRight="10dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="101dp">
+        <RelativeLayout android:id="@+id/ad_book_bg" android:background="@drawable/ad_book_poster_shape_corner" android:layout_width="70dp" android:layout_height="101dp" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/ad_book_pic" android:visibility="visible" android:layout_width="69dp" android:layout_height="100dp" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_toRightOf="@+id/ad_book_bg" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/ad_book_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="#aaaaaa" android:ellipsize="end" android:id="@+id/ad_book_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:maxLines="1" android:layout_below="@+id/ad_book_name"/>
+            <TextView android:textSize="12sp" android:textColor="#aaaaaa" android:ellipsize="end" android:id="@+id/ad_book_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:maxLines="2" android:lines="2" android:layout_below="@+id/ad_book_author"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13sp" android:textColor="@color/ad_tools_button_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/ad_book_change_text" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="换一本" android:drawableRight="@drawable/ad_refresh_icon_selector" android:drawablePadding="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13sp" android:textColor="@color/ad_tools_button_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/ad_book_view_book_text" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="立即阅读" android:drawableRight="@drawable/ad_enter_icon_selector" android:drawablePadding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

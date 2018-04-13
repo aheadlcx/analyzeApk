@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:gravity="center" android:layout_width="65dp" android:layout_height="match_parent" android:text="支付宝"/>
+        <EditText android:textColor="?attr/color_gray" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/alipay_account" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:hint="请输入支付宝账号"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:gravity="center" android:layout_width="65dp" android:layout_height="match_parent" android:text="姓 名"/>
+        <EditText android:textColor="?attr/color_gray" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/alipay_name" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:hint="请输入支付宝姓名"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    <Button android:enabled="false" android:textSize="16sp" android:textColor="?attr/bind_btn_text_color" android:layout_gravity="center_horizontal" android:id="@+id/btn_done" android:background="?attr/bind_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="@string/done"/>
+    <TextView android:textColor="?attr/color_gray" android:id="@+id/tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="11dp" android:layout_marginRight="20dp"/>
+</LinearLayout>

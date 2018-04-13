@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/book_reader_drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/book_reader_read_container" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layerType="hardware"/>
+        <com.spriteapp.booklibrary.widget.ReadProgressLayout android:id="@+id/book_reader_read_progress_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        <com.spriteapp.booklibrary.widget.TextSizeLayout android:id="@+id/book_reader_text_size_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        <com.spriteapp.booklibrary.widget.ReadBottomLayout android:id="@+id/book_reader_bottom_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ListView android:layout_gravity="start" android:id="@+id/book_reader_catalog_list_view" android:background="@color/book_reader_white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0dp"/>
+</android.support.v4.widget.DrawerLayout>

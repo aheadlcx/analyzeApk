@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_laisee_log" android:paddingLeft="10dp" android:paddingRight="10dp" android:descendantFocusability="afterDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_laisee_im_small"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/color_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/laisee_log" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+</FrameLayout>

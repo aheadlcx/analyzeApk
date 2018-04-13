@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/ly_text" android:background="@color/ttg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ttg_title_bs_status" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/ttg_titlebar_layout"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <cn.tatagou.sdk.view.TtgPagerSlidingTab android:id="@+id/ttg_cats_tab" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="55dp" android:overScrollMode="never" fresco:ttgPstsIndicatorColor="@color/ttg_theme_font_color" fresco:ttgPstsUnderlineColor="@android:color/white" fresco:ttgPstsDividerColor="@android:color/white" fresco:ttgPstsIndicatorHeight="2dp" fresco:ttgPstsTabPaddingLeftRight="12dp" fresco:ttgPstsShouldExpand="false" fresco:ttgZmsTabTextSize="14sp" fresco:ttgZmsTabTextColor="#505050" fresco:ttgZmsSelectedTabTextSize="16sp" fresco:ttgZmsSelectedTabTextColor="@color/ttg_theme_font_color"/>
+                <TextView style="@style/TtgVLine"/>
+                <cn.tatagou.sdk.view.TtgCustomViewPager android:id="@+id/ttg_viewPage_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <include layout="@layout/ttg_notice_iamge"/>
+            <include layout="@layout/ttg_hint_layout"/>
+            <include layout="@layout/ttg_loading"/>
+            <include layout="@layout/ttg_main_identity_pop"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

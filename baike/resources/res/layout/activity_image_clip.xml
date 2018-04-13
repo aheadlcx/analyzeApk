@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.ButtonBar android:id="@+id/id_top_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" SettingItem:bgColor="#000000" SettingItem:rightTitle="确定"/>
+    <RelativeLayout android:id="@+id/clip_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <qsbk.app.widget.clip.ClipImageView android:id="@+id/src_pic" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <qsbk.app.widget.clip.ClipView android:id="@+id/clipview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <qsbk.app.widget.PersonalInfoView android:id="@+id/info" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" app:view_type="0"/>
+    </RelativeLayout>
+</LinearLayout>

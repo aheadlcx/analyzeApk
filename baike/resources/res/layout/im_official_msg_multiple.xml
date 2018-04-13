@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/chat_list_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:layout_gravity="center_horizontal" android:id="@+id/sendDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" style="?attr/msg_publish_time"/>
+    <LinearLayout android:orientation="vertical" android:background="?attr/msg_official_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:layout_marginBottom="2dp">
+        <RelativeLayout android:id="@+id/first_push_msg" android:background="?attr/msg_official_bg" android:padding="8dp" android:layout_width="match_parent" android:layout_height="135dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/first_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="6"/>
+            <TextView android:textSize="16sp" android:textColor="?attr/msg_official_title_multifirst" android:id="@+id/first_title" android:background="#66000000" android:padding="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="今天早上最糗的十件事" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <View android:background="?attr/msg_official_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <ListView android:id="@+id/push_msg_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:divider="?attr/msg_official_divider" android:dividerHeight="1dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@drawable/hug_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/hollow_head_hug_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hug_6" android:contentDescription="@string/image"/>
+    <TextView android:textSize="@dimen/F5_text" android:textColor="@color/tree_hole_main" android:id="@+id/hollow_head_hug_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/number" android:layout_marginStart="4dp"/>
+</LinearLayout>

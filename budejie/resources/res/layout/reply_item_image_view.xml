@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/ReplyImageLayout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp">
+    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/ItemImageView" android:background="@color/gray" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+    <ImageView android:id="@+id/PlayVideoImageView" android:background="@drawable/play_video_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/GifIconImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

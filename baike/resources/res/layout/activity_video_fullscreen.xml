@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.video.CircleVideoPlayerView android:id="@+id/video_player" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:videoSize="1" app:heightLimit="2">
+        <ProgressBar android:id="@+id/video_progress" android:visibility="gone" android:layout_width="46dp" android:layout_height="46dp" android:max="100" android:indeterminate="true" android:layout_centerInParent="true" style="?attr/video_loading_progress"/>
+        <ImageView android:id="@+id/video_play" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_selector" android:layout_centerInParent="true"/>
+    </qsbk.app.video.CircleVideoPlayerView>
+    <qsbk.app.video.VideoControlBar android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/video_control_bar" android:background="@drawable/circle_video_progress_bar" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/back" android:padding="16dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/add_qiuyou_ic_clear" android:layout_alignParentTop="true"/>
+    <FrameLayout android:id="@+id/videoEndLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="183dp" android:layout_height="110dp" android:layout_centerInParent="true">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/replay" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_replay_large" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/g_txt_big" android:textColor="@color/white" android:gravity="center" android:layout_width="60dp" android:layout_height="24dp" android:text="@string/replay" android:layout_below="@+id/replay" android:layout_alignParentLeft="true"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/share" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_share_large" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/g_txt_big" android:textColor="@color/white" android:gravity="center" android:layout_width="60dp" android:layout_height="24dp" android:text="@string/share" android:layout_below="@+id/share" android:layout_alignParentRight="true"/>
+            <android.support.v7.widget.AppCompatTextView android:textSize="14dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/play_next" android:layout_width="match_parent" android:layout_height="20dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <View android:id="@+id/collection_icon" android:layout_width="1px" android:layout_height="1px"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.core.widget.EmptyPlaceholderView android:id="@+id/empty" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp"/>
+    <qsbk.app.core.widget.refresh.SwipeRefreshLayoutBoth android:id="@+id/refresher" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </qsbk.app.core.widget.refresh.SwipeRefreshLayoutBoth>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/live_gift_rank_me" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/live_giftrank_item"/>
+    </FrameLayout>
+</FrameLayout>

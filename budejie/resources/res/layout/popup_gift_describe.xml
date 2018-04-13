@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/tv_gift_describe_triangle_up_popup" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/room_chat_list_bg_triangle_up"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tv_gift_describe_popup" android:background="@drawable/room_chat_list_bg" android:padding="5dp" android:layout_width="168dp" android:layout_height="wrap_content" android:layout_below="@+id/tv_gift_describe_triangle_up_popup"/>
+    <ImageView android:id="@+id/tv_gift_describe_triangle_popup" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/room_chat_list_bg_triangle" android:layout_below="@+id/tv_gift_describe_popup"/>
+</RelativeLayout>

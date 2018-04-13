@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/ttg_gray" android:gravity="center_vertical" android:id="@+id/tv_time" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="48dp" android:text="2018.18.19"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ly_info" android:background="@color/ttg_white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_time">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp">
+            <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="20sp" android:id="@+id/ttg_icon_feedback_msg" android:text="@string/ttg_icon_msg" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/iconFont"/>
+            <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tv_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="为什么我的账号不能登录" android:layout_toRightOf="@+id/ttg_icon_feedback_msg" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_feedback_edt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp">
+            <RelativeLayout android:id="@+id/rl_asked" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+                <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_asked_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Q:"/>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_asked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:text="我的购物车不能登录，返回也失效" android:layout_toRightOf="@+id/tv_asked_title" android:lineSpacingMultiplier="1.2"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/tv_vline" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" style="@style/TtgVLine"/>
+            <RelativeLayout android:id="@+id/rl_answer" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+                <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_answer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="A:"/>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:text="您好，请您查看您的网络是否有问题" android:layout_toRightOf="@+id/tv_answer_title" android:lineSpacingMultiplier="1.2"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

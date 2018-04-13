@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/new_share_bg" android:layout_width="300dp" android:layout_height="match_parent" android:layout_marginLeft="14dp" android:layout_marginRight="14dp">
+    <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/shareToTextColor" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="更多"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="5dp" android:paddingTop="27dp" android:paddingRight="5dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <qsbk.app.widget.ShareItem android:id="@+id/send_to_qiuyou_circle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <qsbk.app.widget.ShareItem android:id="@+id/resend" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <qsbk.app.widget.ShareItem android:id="@+id/share_delete" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

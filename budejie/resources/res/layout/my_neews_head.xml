@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="?attr/list_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/post_margin">
+        <RelativeLayout android:id="@+id/enter_sggested_follows" android:background="?attr/common_press" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#888888" android:id="@+id/account_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐关注" android:layout_alignParentLeft="true" style="@style/more_item_text_style"/>
+            <ImageView android:id="@+id/jiantou" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <com.budejie.www.activity.view.RecommendView android:id="@+id/first_view" android:background="?attr/common_press" android:padding="@dimen/margin_8" android:layout_width="match_parent" android:layout_height="70dp"/>
+    </LinearLayout>
+</LinearLayout>

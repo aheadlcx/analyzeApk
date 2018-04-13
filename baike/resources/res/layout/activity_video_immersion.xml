@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg">
+    <qsbk.app.widget.PtrLayout android:id="@+id/ptr" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listview" android:scrollbars="vertical" android:fadingEdge="none" android:saveEnabled="true" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:drawSelectorOnTop="true" android:scrollingCache="true" android:dividerHeight="0dp" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="false" style="?attr/xlistview"/>
+    </qsbk.app.widget.PtrLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/custom_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/back" android:background="@drawable/topic_actionbar_btn" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="@dimen/abc_action_bar_default_height" android:singleLine="true" android:drawableLeft="@drawable/ic_arrow_left_padding" android:drawablePadding="2dp"/>
+        <qsbk.app.widget.TipsView android:layout_gravity="center_vertical" android:id="@+id/tipsView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/widget_tips_view_height"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="62.6dp">
+    <RelativeLayout android:id="@+id/rl_container" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="62.6dp" android:layout_marginBottom="1.7dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/topic_cover_pv" android:layout_width="38.3dp" android:layout_height="38.3dp" android:layout_centerVertical="true" style="@style/RoundedImage"/>
+        <ImageView android:id="@+id/ivSubscript" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="-6dp" android:layout_marginBottom="-4dp" android:src="@drawable/topic_talent_small_icon" android:layout_alignRight="@+id/topic_cover_pv" android:layout_alignBottom="@+id/topic_cover_pv"/>
+        <cn.xiaochuankeji.tieba.ui.widget.text.BadgeTextView android:textSize="@dimen/F4_text" android:textColor="@color/CW" android:gravity="center" android:id="@+id/post_count_tv" android:background="@color/CH_1" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.7dp" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/post_count_tv" android:layout_toRightOf="@+id/topic_cover_pv" android:layout_centerVertical="true">
+            <cn.xiaochuankeji.tieba.ui.widget.AutoFitTextView android:textSize="13.9sp" android:textColor="@color/CT_2" android:ellipsize="middle" android:layout_gravity="center_vertical" android:id="@+id/topic_title_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivUpFlag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:src="@drawable/topic_follow_up"/>
+        </LinearLayout>
+        <View android:id="@+id/split_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:layout_gravity="top" android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navTitleText="帖子详情" app:navOptionImg="@drawable/ic_nav_more"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <cn.xiaochuankeji.tieba.ui.post.PostQueryListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/navbar_height"/>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/input_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</RelativeLayout>

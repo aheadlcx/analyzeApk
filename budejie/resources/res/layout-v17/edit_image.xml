@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/include_titlebar"/>
+    <RelativeLayout android:id="@+id/contentLayout" android:background="@drawable/edit_picture_bg_repeat" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/TrunPageLayout" android:layout_below="@+id/title_bar">
+        <com.edmodo.cropper.CropImageView android:layout_gravity="center" android:id="@+id/cropper_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" fresco:guidelines="2" fresco:fixAspectRatio="false"/>
+        <bdj.uk.co.senab.photoview.PhotoView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@+id/imgView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.tencent.smtt.sdk.WebView android:id="@+id/wv_gif" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/TrunPageLayout" android:background="@drawable/edit_picture_bg_repeat" android:layout_width="match_parent" android:layout_height="61dp" android:layout_above="@+id/bottom_bar_rl">
+        <ImageView android:id="@+id/EditImageFrontImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23dp" android:src="@drawable/edit_picture_front_selector"/>
+        <ImageView android:id="@+id/EditImageNextImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/edit_picture_next_selector"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_bar_rl" android:background="@color/bg_tab_normal" android:layout_width="match_parent" android:layout_height="72dp" android:weightSum="5" android:layout_alignParentBottom="true">
+        <RadioGroup android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/bottom_rdobtn_1" android:checked="false" android:text="旋转" android:drawableTop="@drawable/btn_rotation_selector" android:drawablePadding="4dp" style="@style/edit_image_bottom_button"/>
+            <RadioButton android:id="@+id/bottom_rdobtn_2" android:checked="true" android:text="自由裁剪" android:drawableTop="@drawable/btn_cropper_free_selector" android:drawablePadding="4dp" style="@style/edit_image_bottom_button"/>
+            <RadioButton android:id="@+id/bottom_rdobtn_3" android:text="3:4裁剪" android:drawableTop="@drawable/btn_cropper_3_4_selector" android:drawablePadding="4dp" style="@style/edit_image_bottom_button"/>
+            <RadioButton android:id="@+id/bottom_rdobtn_4" android:text="1:1裁剪" android:drawableTop="@drawable/btn_cropper_1_1_selector" android:drawablePadding="4dp" style="@style/edit_image_bottom_button"/>
+            <RadioButton android:id="@+id/bottom_rdobtn_5" android:text="4:3裁剪" android:drawableTop="@drawable/btn_cropper_4_3_selector" android:drawablePadding="4dp" style="@style/edit_image_bottom_button"/>
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

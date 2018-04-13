@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.marshalchen.ultimaterecyclerview.ui.VerticalSwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.marshalchen.ultimaterecyclerview.swipelistview.SwipeListView android:id="@+id/ultimate_list" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.marshalchen.ultimaterecyclerview.ui.VerticalSwipeRefreshLayout>
+    <com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.AddFloatingActionButton android:id="@+id/defaultFloatingActionButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:plusIconColor="#808080" app:urv_fab_colorNormal="#ffffff"/>
+    <ViewStub android:id="@+id/floatingActionViewStub" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ViewStub android:id="@+id/emptyview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+</RelativeLayout>

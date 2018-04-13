@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.widget.Fit43FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_empty_tale_comments"/>
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="别让卤煮寂寞太久噢~" android:singleLine="true"/>
+    </LinearLayout>
+</cn.xiaochuankeji.tieba.widget.Fit43FrameLayout>

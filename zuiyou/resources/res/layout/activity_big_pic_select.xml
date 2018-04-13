@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.widget.fits.FitsRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#111111" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/controller" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <TextView android:textColor="@color/CM" android:gravity="center" android:id="@+id/tvFinish" android:paddingLeft="10dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="@dimen/navbar_height" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <cn.xiaochuankeji.tieba.ui.widget.text.BadgeTextView android:textColor="@color/CW" android:gravity="center" android:id="@+id/tvPicCount" android:background="@color/CM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tvFinish" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/controller"/>
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="left" android:id="@+id/ivLeftArrow" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/ivSelect" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="@dimen/navbar_height" android:src="@drawable/selector_pic_select"/>
+    </FrameLayout>
+</cn.xiaochuankeji.tieba.widget.fits.FitsRelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="@color/color_fffafb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <cn.xiaochuankeji.tieba.ui.hollow.widget.TouchListenerLayout android:orientation="vertical" android:id="@+id/hollow_edit_listener_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navbar_height">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/hollow_edit_ll_welcome" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="22sp" android:textColor="@color/CT_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:text="@string/hollow_welcome"/>
+                <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:gravity="center" android:id="@+id/hollow_edit_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/hollow" android:lineSpacingExtra="4dp"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/hole_welcome" android:contentDescription="@string/image"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/hollow_edit_ll_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="3"/>
+                <TextView android:textSize="22sp" android:textColor="@color/tree_hole_main" android:gravity="center" android:id="@+id/hollow_edit_time" android:layout_width="86dp" android:layout_height="wrap_content" android:text="@string/time"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F2_line">
+                    <cn.xiaochuankeji.tieba.ui.hollow.widget.RecordAnimView android:id="@+id/hollow_edit_anim" android:layout_width="match_parent" android:layout_height="80dp"/>
+                    <ImageView android:layout_width="match_parent" android:layout_height="80dp" android:src="@drawable/hollow_mask" android:scaleType="fitXY" android:contentDescription="@string/image"/>
+                </FrameLayout>
+                <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="4"/>
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/hollow_edit_click_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <View style="@style/my_divide_view"/>
+                <cn.xiaochuankeji.tieba.ui.hollow.widget.CardView android:gravity="center" android:id="@+id/hollow_edit_bt_reset" android:visibility="invisible" android:layout_width="50dp" android:layout_height="30dp" app:cardShadowColor="@color/tree_hole_main" app:cardShadowRadius="4dp" app:cardBackColor="@color/CB" app:cardRadiusAll="16dp">
+                    <TextView android:textSize="@dimen/F4_text" android:textColor="@color/tree_hole_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/record_again"/>
+                </cn.xiaochuankeji.tieba.ui.hollow.widget.CardView>
+                <View style="@style/my_divide_view"/>
+                <ImageView android:id="@+id/hollow_edit_bt_main" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/record" android:scaleType="fitXY" android:contentDescription="@string/image"/>
+                <View style="@style/my_divide_view"/>
+                <cn.xiaochuankeji.tieba.ui.hollow.widget.CardView android:gravity="center" android:id="@+id/hollow_edit_bt_play" android:visibility="invisible" android:layout_width="50dp" android:layout_height="30dp" app:cardShadowColor="@color/tree_hole_main" app:cardShadowRadius="4dp" app:cardBackColor="@color/CB" app:cardRadiusAll="16dp">
+                    <TextView android:textSize="@dimen/F4_text" android:textColor="@color/tree_hole_main" android:id="@+id/hollow_edit_tx_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/try_listen"/>
+                </cn.xiaochuankeji.tieba.ui.hollow.widget.CardView>
+                <View style="@style/my_divide_view"/>
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/hollow_edit_text_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F5_line" android:layout_below="@+id/hollow_edit_click_layout">
+                <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:id="@+id/hollow_edit_text_say" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/press_to_say" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:id="@+id/hollow_edit_text_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/F2_line" android:text="@string/text_to_say" android:layout_toRightOf="@+id/hollow_edit_text_say" android:layout_marginStart="@dimen/F2_line" android:layout_toEndOf="@+id/hollow_edit_text_say"/>
+                <View android:background="@drawable/bg_publish_selected_circle" android:layout_width="4dp" android:layout_height="4dp" android:layout_marginTop="6dp" android:layout_below="@+id/hollow_edit_text_say" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </cn.xiaochuankeji.tieba.ui.hollow.widget.TouchListenerLayout>
+</RelativeLayout>

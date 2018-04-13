@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/image" android:background="#f2f2f2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/select_image_num_layout" android:background="@drawable/select_image_num_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/select_image_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/select_image_video_mark" android:background="@drawable/select_image_video_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/select_image_video" android:layout_width="14dp" android:layout_height="8dp" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

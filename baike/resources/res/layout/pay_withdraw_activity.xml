@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/fl_withdraw" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/header" layout="@layout/item_header"/>
+        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="@color/text_header" android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/tv_withdraw_record" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginRight="17dp" android:text="@string/pay_withdraw_record"/>
+    </FrameLayout>
+    <ScrollView android:id="@+id/scrollView" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_withdraw" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_withdraw_info" android:background="#fffddb2e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp">
+                <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#793d00" android:ellipsize="marquee" android:id="@+id/tv_withdraw_info" android:paddingTop="5dp" android:paddingBottom="5dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/pay_withdraw_money_info" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="8dp" android:src="@drawable/pay_withdraw_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/ll_notice" android:background="#fffddb2e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#793d00" android:id="@+id/tv_notice" android:paddingLeft="16dp" android:paddingTop="5dp" android:paddingRight="16dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="端午节特别活动，礼券分成翻倍!!!!! "/>
+                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="8dp" android:src="@drawable/pay_withdraw_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="right" android:id="@+id/iv_question" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="20dp" android:layout_marginRight="14dp" android:src="@drawable/pay_withdraw_question"/>
+                <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#ff675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="20dp" android:text="@string/pay_withdraw_money_available"/>
+                <TextView android:textSize="@dimen/live_text_46sp" android:textColor="#ffffbc4d" android:id="@+id/tv_available_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="50dp" android:text="0"/>
+                <View android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="114dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="115dp">
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="19dp" android:paddingTop="14dp" android:paddingBottom="13dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#ff675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_withdraw_today"/>
+                        <TextView android:textSize="@dimen/live_text_28sp" android:textColor="#ff41364f" android:id="@+id/tv_money_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                    </LinearLayout>
+                    <View android:background="#fff2f2f2" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="19dp" android:paddingTop="14dp" android:paddingBottom="13dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#ff675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_withdraw_total"/>
+                        <TextView android:textSize="@dimen/live_text_28sp" android:textColor="#ff41364f" android:id="@+id/tv_money_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:layout_gravity="right" android:id="@+id/tv_withdraw_diamond" android:background="@drawable/pay_withdraw_diamond_btn" android:visibility="visible" android:layout_width="77dp" android:layout_height="22dp" android:layout_marginTop="70dp" android:layout_marginRight="15dp"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_withdraw_available"/>
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center_vertical" android:id="@+id/tv_available_certificate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:text="0"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="37dp">
+                <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#ff41364f" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_withdraw_account"/>
+            </LinearLayout>
+            <LinearLayout android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center_vertical" android:layout_width="90dp" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_withdraw_amount"/>
+                <EditText android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center" android:id="@+id/et_withdraw_amount" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/pay_withdraw_condition" android:singleLine="true" android:maxLength="9" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                <TextView android:textSize="@dimen/live_text_15sp" android:layout_gravity="center_vertical" android:layout_width="90dp" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_withdraw_exchange_money"/>
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:gravity="center_vertical" android:id="@+id/tv_withdraw_money" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:hint="@string/pay_withdraw_exchange_money_hint" android:singleLine="true"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center_vertical" android:layout_width="90dp" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_withdraw_ali"/>
+                <EditText android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center" android:id="@+id/et_withdraw_account" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/pay_withdraw_fill_in_account" android:singleLine="true" android:inputType="textEmailAddress"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center_vertical" android:layout_width="90dp" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_withdraw_name"/>
+                <EditText android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center" android:id="@+id/et_withdraw_name" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/pay_withdraw_fill_in_name" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ffb0abb7" android:id="@+id/pay_withdraw_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:text="@string/pay_withdraw_tips" android:textIsSelectable="true"/>
+            <TextView android:textColor="#793d00" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_btn_withdraw" android:background="@drawable/pay_withdraw_btn" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:text="@string/pay_withdraw"/>
+            <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#ff675e72" android:gravity="center" android:layout_gravity="center" android:id="@+id/withdraw_times_limit" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/pay_withdraw_exchange_limit"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

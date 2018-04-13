@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.imageview.FrescoTouchImageView android:id="@+id/tumbImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <ProgressBar android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@+id/bigImageView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textSize="12sp" android:id="@+id/origin_picture" android:background="@drawable/check_origin_pic" android:visibility="visible" android:layout_width="120dp" android:layout_height="24dp" android:layout_marginBottom="@dimen/look_big_img_view_padding" android:text="@string/look_origin_picture" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

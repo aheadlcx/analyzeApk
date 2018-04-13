@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/item_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/item_userinfo_layout" android:background="?attr/comment_item_title_bg" android:layout_width="match_parent" android:layout_height="45dp">
+        <FrameLayout android:id="@+id/writerProfile_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_8" android:layout_centerVertical="true">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/writerProfile" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/author_item_img_normal"/>
+            <View android:id="@+id/writerProfile_ready" android:background="?attr/imageready_bg" android:visibility="visible" android:layout_width="35dp" android:layout_height="35dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/name_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/writerProfile_layout" android:layout_alignBaseline="@+id/writerProfile_layout" android:layout_centerVertical="true">
+            <TextView android:textSize="12sp" android:textColor="?attr/item_title_name_time_color" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/writerName" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="0dp" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="9sp" android:textColor="?attr/item_title_name_time_color" android:gravity="center_vertical" android:id="@+id/commentHint" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

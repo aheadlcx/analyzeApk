@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cmt_pop_ding" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="12sp" android:textColor="#ee7b7b" android:layout_gravity="center" android:id="@+id/likeCountAnim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/cmt_pop_divider0" android:background="@drawable/cmt_pop_divider" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cmt_pop_report" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <ImageView android:id="@+id/cmt_pop_divider1" android:background="@drawable/cmt_pop_divider" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cmt_pop_reply" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <ImageView android:id="@+id/cmt_iv_d0" android:background="@drawable/cmt_pop_divider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cmt_pop_delete" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cmt_delete" android:layout_weight="1"/>
+    <ImageView android:id="@+id/cmt_iv_d1" android:background="@drawable/cmt_pop_divider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cmt_pop_blacklist" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cmt_blacklist" android:layout_weight="1"/>
+    <ImageView android:id="@+id/cmt_iv_d2" android:background="@drawable/cmt_pop_divider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cmt_pop_delete_comment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cmt_delete" android:layout_weight="1"/>
+</LinearLayout>

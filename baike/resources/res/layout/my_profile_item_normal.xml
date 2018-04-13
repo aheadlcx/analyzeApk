@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="24dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="56dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="30dp" android:layout_height="30dp" android:contentDescription="@null"/>
+    <TextView android:textSize="16dp" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" style="?attr/msg_usrname"/>
+    <View android:layout_gravity="center_vertical" android:id="@+id/tips" android:background="?attr/found_item_tips" android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="7dp"/>
+    <TextView android:textSize="10dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/new_fans_tips" android:background="@drawable/new_msg_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="2"/>
+</LinearLayout>

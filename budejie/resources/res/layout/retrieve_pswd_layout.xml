@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+        <RelativeLayout android:gravity="center" android:background="?attr/phone_edittext_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <com.budejie.www.widget.erroredittext.SetErrorAbleEditText android:textSize="@dimen/font_16" android:textColor="@color/myinfo_attention" android:id="@+id/retrieve_inputpswd" android:background="@android:color/transparent" android:paddingLeft="@dimen/margin_8" android:paddingRight="@dimen/margin_8" android:layout_width="match_parent" android:layout_height="@dimen/height_38" android:hint="@string/phone_input_hint_password" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textPassword"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:background="?attr/phone_edittext_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <com.budejie.www.widget.erroredittext.SetErrorAbleEditText android:textSize="@dimen/font_16" android:textColor="@color/myinfo_attention" android:id="@+id/retrieve_inputpswd_again" android:background="@android:color/transparent" android:paddingLeft="@dimen/margin_8" android:paddingRight="@dimen/margin_8" android:layout_width="match_parent" android:layout_height="@dimen/height_38" android:hint="@string/phone_input_hint_password_again" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textPassword"/>
+        </RelativeLayout>
+        <Button android:textSize="21sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/ok_btn" android:background="@drawable/phone_num_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/verify_affirm"/>
+    </LinearLayout>
+</RelativeLayout>

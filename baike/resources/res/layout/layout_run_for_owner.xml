@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@r$color/group_info_picture_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12dp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34dp" android:layout_marginTop="16dp" android:text="亲爱的糗友，邀请您参加群大选拔，尽快报名哦~"/>
+        <TextView android:textSize="12dp" android:textColor="#ffffff" android:id="@+id/end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34dp" android:layout_marginTop="5dp" android:text="报名截止时间：-月-日"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/manifesto_layout" android:background="@drawable/run_for_owner_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="14dp" android:layout_marginRight="16dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16dp" android:textColor="#3b3d42" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="18dp" android:layout_marginBottom="22dp" android:text="我的竞选宣言：" android:layout_weight="1"/>
+                <ImageView android:id="@+id/manifesto_modify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="13dp" android:src="@drawable/group_intruduce_modify"/>
+            </LinearLayout>
+            <TextView android:textSize="14dp" android:textColor="#63625e" android:id="@+id/manifesto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:lineSpacingExtra="1dp"/>
+            <TextView android:textSize="16dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/quit_owner_btn" android:background="@drawable/red_button" android:layout_width="300dp" android:layout_height="40dp" android:layout_marginTop="25dp" android:layout_marginBottom="10dp" android:text="我要退选"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/run_for_owner_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="14dp" android:layout_marginRight="16dp">
+            <TextView android:textSize="16dp" android:textColor="#3b3d42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="群大特权"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <TextView android:textSize="14dp" android:textColor="#63625e" android:gravity="center_horizontal" android:layout_width="120dp" android:layout_height="wrap_content" android:text="1、炫酷的身份标识" android:drawableTop="@drawable/owner_privilege_1" android:drawablePadding="18dp"/>
+                <TextView android:textSize="14dp" android:textColor="#63625e" android:gravity="center_horizontal" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginLeft="52dp" android:text="2、管理群相册" android:drawableTop="@drawable/owner_privilege_2" android:drawablePadding="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="10dp">
+                <TextView android:textSize="14dp" android:textColor="#63625e" android:gravity="center_horizontal" android:layout_width="120dp" android:layout_height="wrap_content" android:text="3、审批入群申请" android:drawableTop="@drawable/owner_privilege_3" android:drawablePadding="18dp"/>
+                <TextView android:textSize="14dp" android:textColor="#63625e" android:gravity="center_horizontal" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginLeft="52dp" android:text="4、踢走不受欢迎的家伙们" android:drawableTop="@drawable/owner_privilege_4" android:drawablePadding="18dp"/>
+            </LinearLayout>
+            <TextView android:textSize="16dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/run_for_owner_btn" android:background="@drawable/used_button" android:layout_width="300dp" android:layout_height="40dp" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:text="我要参选群大"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

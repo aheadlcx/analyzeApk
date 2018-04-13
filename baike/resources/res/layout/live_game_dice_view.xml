@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_dice_1" android:layout_width="35dp" android:layout_height="37dp" android:scaleType="fitXY"/>
+    <ImageView android:id="@+id/iv_dice_2" android:layout_width="35dp" android:layout_height="37dp" android:scaleType="fitXY"/>
+    <ImageView android:id="@+id/iv_dice_3" android:layout_width="35dp" android:layout_height="37dp" android:scaleType="fitXY"/>
+</merge>

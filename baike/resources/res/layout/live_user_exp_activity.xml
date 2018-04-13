@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" layout="@layout/item_header"/>
+    <ScrollView android:layout_gravity="center_horizontal" android:background="@color/white" android:paddingTop="10dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/touch_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="264dp" android:layout_height="137dp" android:layout_marginTop="8dp" android:src="@drawable/live_exp_mark"/>
+                <TextView android:textSize="@dimen/live_text_20sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_mark_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="88dp" android:text="1"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/gray" android:layout_gravity="center_horizontal" android:id="@+id/tv_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#675f73" android:id="@+id/tv_cur_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23dp"/>
+                <qsbk.app.live.widget.ExpPrgressView android:id="@+id/expv_user_exp" android:layout_width="200dp" android:layout_height="5dp" android:progressDrawable="@drawable/exp_progress_view"/>
+                <TextView android:textSize="15sp" android:textColor="#675f73" android:id="@+id/tv_next_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp"/>
+            </LinearLayout>
+            <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="40dp"/>
+            <TextView android:textSize="15sp" android:textColor="#41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="16dp" android:text="@string/live_level_how"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <LinearLayout android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/ic_record" android:layout_width="29dp" android:layout_height="29dp" android:src="@drawable/live_level_record"/>
+                            <TextView android:textSize="@dimen/live_text_16sp" android:textColor="#7b47d2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="29dp" android:text="@string/level_watch_record" android:layout_toRightOf="@+id/ic_record"/>
+                        </LinearLayout>
+                        <TextView android:textSize="12sp" android:textColor="#41364f" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:maxWidth="95dp" android:text="@string/live_level_exp"/>
+                    </FrameLayout>
+                    <View android:layout_gravity="center" android:background="#f2f2f2" android:layout_width="2dp" android:layout_height="40dp"/>
+                    <FrameLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/ic_gift" android:layout_width="29dp" android:layout_height="29dp" android:src="@drawable/live_level_gift"/>
+                            <TextView android:textSize="@dimen/live_text_16sp" android:textColor="#ef4867" android:gravity="center" android:layout_width="wrap_content" android:layout_height="29dp" android:text="@string/level_gift"/>
+                        </LinearLayout>
+                        <TextView android:textSize="12sp" android:textColor="#41364f" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:maxWidth="110dp" android:text="@string/live_level_gift"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="80dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="105dp">
+                    <TextView android:textSize="15sp" android:textColor="#41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_level_prv"/>
+                    <ImageView android:id="@+id/iv_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:src="@drawable/live_level_question"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="136dp">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_rank" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/live_level_rank"/>
+                        <TextView android:textSize="13sp" android:textColor="#41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/live_level_rank"/>
+                        <TextView android:textSize="10sp" android:textColor="#675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="LV.2"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_mic" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/live_level_mic"/>
+                        <TextView android:textSize="13sp" android:textColor="#41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/live_level_mic"/>
+                        <TextView android:textSize="10sp" android:textColor="#675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="LV.5"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_join_family" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/live_level_join_family"/>
+                        <TextView android:textSize="13sp" android:textColor="#41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/live_level_family"/>
+                        <TextView android:textSize="10sp" android:textColor="#675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="LV.5"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="260dp">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_charge" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/live_level_charge"/>
+                        <TextView android:textSize="13sp" android:textColor="#41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/live_level_charge"/>
+                        <TextView android:textSize="10sp" android:textColor="#675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="LV.10"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_create_family" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/live_level_family"/>
+                        <TextView android:textSize="13sp" android:textColor="#41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/live_level_create_family"/>
+                        <TextView android:textSize="10sp" android:textColor="#675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="LV.30"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_enter" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/live_level_enter"/>
+                        <TextView android:textSize="13sp" android:textColor="#41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/live_level_enter"/>
+                        <TextView android:textSize="10sp" android:textColor="#675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="LV.31"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="230dp" android:baselineAligned="false">
+                    <TextView android:textSize="12sp" android:textColor="#b06400" android:id="@+id/tv_rank_intro" android:background="@drawable/live_level_intro" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/live_level_rank_intro" android:layout_weight="1"/>
+                    <TextView android:textSize="12sp" android:textColor="#b06400" android:layout_gravity="bottom" android:id="@+id/tv_mic_intro" android:background="@drawable/live_level_intro" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/live_level_mic_intro" android:layout_weight="1"/>
+                    <TextView android:textSize="12sp" android:textColor="#b06400" android:id="@+id/tv_joinfamily_intro" android:background="@drawable/live_level_intro" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/live_level_joinfamily_intro" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="bottom" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="105dp" android:baselineAligned="false">
+                    <TextView android:textSize="12sp" android:textColor="#b06400" android:layout_gravity="bottom" android:id="@+id/tv_charge_intro" android:background="@drawable/live_level_intro" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/live_level_charge_intro" android:layout_weight="1"/>
+                    <TextView android:textSize="12sp" android:textColor="#b06400" android:layout_gravity="bottom" android:id="@+id/tv_createfamily_intro" android:background="@drawable/live_level_intro" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/live_level_createfamily_intro" android:layout_weight="1"/>
+                    <TextView android:textSize="12sp" android:textColor="#b06400" android:layout_gravity="bottom" android:id="@+id/tv_enter_intro" android:background="@drawable/live_level_intro" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/live_level_enter_intro" android:layout_weight="1"/>
+                </LinearLayout>
+                <TextView android:textSize="12sp" android:textColor="#b06400" android:id="@+id/tv_question_info" android:background="@drawable/live_level_question_intro" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="52dp" android:layout_marginTop="60dp" android:text="@string/live_level_question_intro"/>
+            </FrameLayout>
+            <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

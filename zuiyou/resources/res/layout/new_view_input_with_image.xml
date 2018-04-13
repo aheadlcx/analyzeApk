@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/flInputCommentRootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/llViewContent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/vDivideTop" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llInputEditTextContainer" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <RelativeLayout android:layout_gravity="bottom" android:id="@+id/voice_container" android:layout_width="40dp" android:layout_height="match_parent">
+                <ImageView android:id="@+id/ivChangeTextOrVoice" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_record_voice" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/ivSoundFlag" android:visibility="gone" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:src="@drawable/img_sound_flag" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <EditText android:textSize="@dimen/F9_text" android:textColor="@color/CT_1" android:textColorHint="@color/CT_6" android:gravity="center_vertical" android:id="@+id/etInput" android:paddingLeft="10dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:minHeight="30dp" android:hint="评论..." android:maxLines="4" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="bottom" android:id="@+id/add_image" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/ic_add_picture"/>
+            <Button android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/send" android:background="@drawable/send" android:layout_width="48dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:foreground="@null" android:text="发送"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

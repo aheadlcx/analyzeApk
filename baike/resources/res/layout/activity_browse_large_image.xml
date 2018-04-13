@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/wrapper" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_float_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:actualImageScaleType="2"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge"/>
+    <ImageView android:id="@+id/iv_download" android:padding="20dp" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/browse_image_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

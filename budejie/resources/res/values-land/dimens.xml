@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <dimen name="abc_action_bar_progress_bar_size">32dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <dimen name="live_room_red_layoutbottom">7dp</dimen>
+    <dimen name="room_chat_height">116dp</dimen>
+    <dimen name="room_chat_height_fit">165dp</dimen>
+    <dimen name="room_chat_layout_marginbottom">3dp</dimen>
+    <dimen name="room_chat_layout_marginleft">10dp</dimen>
+    <dimen name="room_chat_layout_marginright">310dp</dimen>
+    <dimen name="room_chat_marginbottom">3dp</dimen>
+    <dimen name="room_chat_parent_layout_marginbottom">2dp</dimen>
+    <dimen name="room_gift_marginright">20dp</dimen>
+    <dimen name="room_private_chat_marginleft">10dp</dimen>
+    <dimen name="room_red_layoutbottom">8dp</dimen>
+    <dimen name="room_red_marginright">4dp</dimen>
+    <dimen name="room_right_button_interval">12.5dp</dimen>
+    <dimen name="room_right_button_top">3dp</dimen>
+    <dimen name="room_share_marginright">20dp</dimen>
+    <dimen name="song_agree_margin_refuse">0dp</dimen>
+    <dimen name="song_name_layout_margin_left">95dp</dimen>
+    <dimen name="song_name_margin_left">115dp</dimen>
+    <dimen name="song_refuse_margin_right">5dp</dimen>
+    <dimen name="song_status_margin_right">13.5dp</dimen>
+</resources>

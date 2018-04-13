@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/part_without_text" android:background="@drawable/live_gift_bg" android:paddingLeft="5dp" android:layout_width="190dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:minHeight="48dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/live_gift_avatar" android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/live_avatar_default" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/live_gift_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:minWidth="118dp" android:minHeight="48dp" android:layout_toRightOf="@+id/live_gift_avatar" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="90dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="7dp">
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/live_gift_username" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:alpha="0.6"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:textColor="#fddb2e" android:id="@+id/live_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="1dp" android:layout_marginBottom="8dp" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:layout_width="30dp" android:layout_height="0dp" android:layout_toRightOf="@+id/live_gift_content"/>
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/live_gift_image" android:padding="5dp" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="160dp" app:placeholderImage="@drawable/live_gift_default" app:placeholderImageScaleType="5" app:actualImageScaleType="5"/>
+    <qsbk.app.core.widget.FrameAnimationView android:id="@+id/live_gift_anim" android:padding="5dp" android:layout_width="65dp" android:layout_height="50dp" android:layout_marginLeft="145dp" android:layout_marginTop="5dp" app:placeholderImage="@drawable/live_gift_default" app:placeholderImageScaleType="5" app:actualImageScaleType="5"/>
+    <LinearLayout android:id="@+id/live_ll_gift_count" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/live_gift_image">
+        <TextView android:textSize="@dimen/live_text_30sp" android:textStyle="bold" android:textColor="#fffddb2e" android:id="@+id/tv_gift_x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="×"/>
+        <TextView android:textSize="@dimen/live_text_30sp" android:textStyle="bold" android:textColor="#fffddb2e" android:id="@+id/live_tv_gift_count" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1"/>
+    </LinearLayout>
+</RelativeLayout>

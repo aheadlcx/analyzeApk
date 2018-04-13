@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#151414" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12dp" android:textColor="#969696" android:id="@+id/drag_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="15dp" android:text="拖动选择你要裁减的片段" android:drawableLeft="@drawable/arrow_down" android:layout_centerHorizontal="true"/>
+    <HorizontalScrollView android:id="@+id/frame_hs" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/drag_tip">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/frame_ll" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+    <ImageView android:id="@+id/left_drag_bar" android:layout_width="@dimen/video_drag_width" android:layout_height="@dimen/video_drag_height" android:src="@drawable/video_drag_left_selector" android:scaleType="fitXY" android:layout_alignTop="@+id/frame_hs" android:contentDescription="@null"/>
+    <ImageView android:id="@+id/right_drag_bar" android:layout_width="@dimen/video_drag_width" android:layout_height="@dimen/video_drag_height" android:src="@drawable/video_drag_right_selector" android:scaleType="fitXY" android:layout_alignTop="@+id/frame_hs" android:contentDescription="@null"/>
+    <View android:id="@+id/sharder_left" android:background="#66000000" android:layout_width="wrap_content" android:layout_height="@dimen/video_frame_length" android:layout_alignTop="@+id/frame_hs" android:layout_alignParentLeft="true"/>
+    <View android:id="@+id/sharder_right" android:background="#66000000" android:layout_width="match_parent" android:layout_height="@dimen/video_frame_length" android:layout_toRightOf="@+id/right_drag_bar" android:layout_alignTop="@+id/frame_hs"/>
+    <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/crop_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/frame_hs" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

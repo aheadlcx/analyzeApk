@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/phone_avtivity_rl" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+    <include android:id="@+id/phone_activity_bill_title_include" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp" android:layout_below="@+id/titlebar_default" layout="@layout/list_item_bill_title"/>
+    <cn.v6.sixrooms.widgets.phone.BillPullToRefreshView android:orientation="vertical" android:id="@+id/phone_activity_bill_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/phone_activity_bill_title_include">
+        <com.emilsjolander.components.stickylistheaders.StickyListHeadersListView android:id="@+id/phone_activity_bill_lv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+    </cn.v6.sixrooms.widgets.phone.BillPullToRefreshView>
+    <include android:id="@+id/phone_activity_bill_loding" android:visibility="gone" layout="@layout/phone_custom_progressbar"/>
+    <TextView android:textSize="15sp" android:textColor="@android:color/darker_gray" android:id="@+id/phone_activity_bill_tv_not_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_data" android:layout_centerInParent="true"/>
+</RelativeLayout>

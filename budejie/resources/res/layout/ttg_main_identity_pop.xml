@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="vertical" android:id="@+id/ttg_linear_indentity" android:background="@color/transparent_dark_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ttg_linear_indentity_pop" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ttg_idenity_relative_top" android:background="@drawable/ttg_identity_top_border_shape" android:layout_width="match_parent" android:layout_height="70dp">
+            <LinearLayout android:gravity="center" android:id="@+id/ttg_ly_identity_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <cn.tatagou.sdk.view.IconTextView android:textSize="24sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/ttg_icon_identity"/>
+                <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/ttg_firsttitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="做一个有身份的人"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/ttv_tv_left_line" android:background="@android:color/white" android:layout_width="20dp" android:layout_height="1dp"/>
+                <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@+id/ttg_secondtitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_identity_text2"/>
+                <TextView android:id="@+id/ttv_tv_right_line" android:background="@android:color/white" android:layout_width="20dp" android:layout_height="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ttg_identity_bottom_root" android:background="@drawable/ttg_identity_bottom_border_shape" android:layout_width="match_parent" android:layout_height="190dp"/>
+    </LinearLayout>
+</LinearLayout>

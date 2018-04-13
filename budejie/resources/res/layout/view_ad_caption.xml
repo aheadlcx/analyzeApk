@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/ad_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ad_caption" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>

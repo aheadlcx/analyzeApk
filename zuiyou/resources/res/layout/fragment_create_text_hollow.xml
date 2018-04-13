@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_fffafb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.hollow.widget.CardView android:gravity="center_vertical" android:paddingLeft="@dimen/F2_line" android:paddingRight="@dimen/F2_line" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="@dimen/F3_line" android:layout_marginTop="36dp" android:layout_marginRight="@dimen/F3_line" app:cardShadowColor="@color/color_faadbc_shadow" app:cardShadowRadius="4dp" app:cardShadowY="2dp" app:cardBackColor="@color/CB" app:cardRadiusAll="12dp">
+        <TextView android:textSize="@dimen/F2_text" android:textColor="@color/CT_2" android:id="@+id/tv_nickname" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/empty" android:maxLines="1" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/F2_text" android:textColor="@color/color_f5878a" android:id="@+id/btn_change_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tree_edit_change"/>
+    </cn.xiaochuankeji.tieba.ui.hollow.widget.CardView>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="186dp" android:layout_marginLeft="@dimen/F3_line" android:layout_marginTop="@dimen/F5_line" android:layout_marginRight="@dimen/F3_line">
+        <cn.xiaochuankeji.tieba.ui.hollow.widget.CardView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="186dp" app:cardShadowColor="@color/color_faadbc_shadow" app:cardShadowRadius="4dp" app:cardShadowY="2dp" app:cardBackColor="@color/CB" app:cardRadiusAll="12dp">
+            <View android:id="@+id/tree_publish_edit_fun" android:layout_width="match_parent" style="@style/my_divide_view"/>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_6" android:layout_gravity="end" android:id="@+id/edit_warn_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/F2_line" android:layout_marginBottom="8dp" android:text="@string/image"/>
+        </cn.xiaochuankeji.tieba.ui.hollow.widget.CardView>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/F2_line" android:paddingTop="@dimen/F3_line" android:paddingRight="@dimen/F2_line" android:paddingBottom="@dimen/F2_line" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:textSize="@dimen/F2_text" android:textColorHint="@color/CT_6" android:id="@+id/tree_publish_edit" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/tree_edit_title" android:maxLength="45" android:lineSpacingExtra="4dp" android:lineSpacingMultiplier="1.2" android:textCursorDrawable="@drawable/edit_cursor_color"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginTop="@dimen/F2_line">
+        <com.yarolegovich.discretescrollview.DiscreteScrollView android:id="@+id/tree_publish_emotion" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/hollow_mask" android:scaleType="fitXY" android:contentDescription="@string/image"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/tree_publish_refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh_emotion" android:contentDescription="@string/image"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/tree_publish_refresh_fun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <View android:background="@drawable/bg_publish_selected_circle" android:layout_width="8dp" android:layout_height="8dp"/>
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F4_line" android:text="@string/emotion_info"/>
+    </LinearLayout>
+</LinearLayout>

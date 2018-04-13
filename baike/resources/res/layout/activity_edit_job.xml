@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/nearby_list_item_bg">
+    <ProgressBar android:id="@+id/loadingbar" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:progressDrawable="@drawable/loadingbar" android:layout_centerInParent="true"/>
+    <ListView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_small" android:layout_marginRight="@dimen/padding_small" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="0px"/>
+    <TextView android:textSize="@dimen/g_txt_big" android:textColor="?attr/info_complete_text2" android:id="@+id/haunt_hint" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="@string/haunt_hint" android:layout_below="@+id/listview"/>
+</RelativeLayout>

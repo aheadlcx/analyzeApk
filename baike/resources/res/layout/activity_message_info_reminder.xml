@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="?attr/setting_bg_new" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/new_message_text_lin" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="center" android:layout_gravity="center" android:id="@+id/new_message" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="群临时小纸条"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/new_message_notify_detail" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/group_tem_note" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="群临时小纸条"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/small_paper_text_lin" android:background="?attr/setting_bg_new" android:visibility="visible" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/small_paper" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="小纸条记录"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/clear_info_lin" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:layout_width="match_parent" android:layout_height="@dimen/g_divider_large" style="?attr/setting_line_bg_new"/>
+                <TextView android:textSize="@dimen/g_txt_big" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/clear_info" android:background="?attr/notification_setting_item_background" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="清空小纸条记录" android:layout_weight="1" style="?attr/setting_item"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.ArrowRectangleView android:id="@+id/share_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" app:arrow_color="?attr/new_share_bg_color">
+        <GridView android:gravity="center" android:id="@+id/grid" android:background="?attr/new_share_bg" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="20dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="10dp" android:verticalSpacing="15dp" android:stretchMode="columnWidth" android:numColumns="5"/>
+    </qsbk.app.widget.ArrowRectangleView>
+</FrameLayout>

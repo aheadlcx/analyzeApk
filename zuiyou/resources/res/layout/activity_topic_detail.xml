@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navOptionImg="@drawable/ic_nav_more" app:navExtraOptionImg="@drawable/ic_write" app:navSecondOptionImg="@drawable/topic_nav_admin" app:navShowBottomDivide="false"/>
+    <in.srain.cube.views.ptr.PtrFrameLayout android:id="@+id/ptrFrameLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar" app:ptr_header="@+id/navBar" app:ptr_content="@+id/id_stickynavlayout_viewpager" app:ptr_resistance="3.7" app:ptr_ratio_of_header_height_to_refresh="1" app:ptr_duration_to_close="200" app:ptr_duration_to_close_header="1000" app:ptr_pull_to_fresh="false" app:ptr_keep_header_when_refresh="true">
+        <cn.xiaochuankeji.tieba.ui.widget.StickyNavLayout android:orientation="vertical" android:id="@+id/stickyNavLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:orientation="vertical" android:id="@+id/id_stickynavlayout_topview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <cn.xiaochuankeji.tieba.ui.widget.indicator.MagicIndicator android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/id_stickynavlayout_indicator" android:layout_width="match_parent" android:layout_height="45dp"/>
+            <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/id_stickynavlayout_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </cn.xiaochuankeji.tieba.ui.widget.StickyNavLayout>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+    <cn.xiaochuankeji.tieba.ui.homepage.PostLoadedTipsView android:id="@+id/tips_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:layout_below="@+id/navBar" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

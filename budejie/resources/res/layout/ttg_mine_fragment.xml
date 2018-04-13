@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/ttg_ly_mine" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/ttg_titlebar_layout"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/rl_order" style="@style/mylyInfo">
+                <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="19sp" android:id="@+id/tv_icon_order" android:paddingTop="2dp" android:text="@string/ttg_icon_order" android:layout_centerVertical="true" style="@style/iconFontMine"/>
+                <TextView android:id="@+id/tv_order" android:text="@string/my_order" android:layout_toRightOf="@+id/tv_icon_order" style="@style/myTvText"/>
+                <cn.tatagou.sdk.view.IconTextView android:id="@+id/tv_icon_order_jump" style="@style/iconFont_jump"/>
+                <TextView android:layout_alignLeft="@+id/tv_order" android:layout_alignParentBottom="true" style="@style/TtgVLine"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_my_cart" style="@style/mylyInfo">
+                <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="19sp" android:id="@+id/tv_icon_cart" android:text="@string/ttg_icon_into_cart" android:layout_centerVertical="true" style="@style/iconFontMine"/>
+                <TextView android:id="@+id/tv_cart" android:text="@string/my_car" android:layout_toRightOf="@+id/tv_icon_cart" style="@style/myTvText"/>
+                <cn.tatagou.sdk.view.IconTextView android:id="@+id/tv_icon_cart_jump" style="@style/iconFont_jump"/>
+                <TextView android:layout_alignLeft="@+id/tv_cart" android:layout_alignParentBottom="true" style="@style/TtgVLine"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_footprint" style="@style/mylyInfo">
+                <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="24sp" android:id="@+id/tv_icon_footprint" android:text="@string/ttg_my_icon_footprint" android:layout_centerVertical="true" style="@style/iconFontMine"/>
+                <TextView android:id="@+id/tv_footprint" android:layout_marginLeft="7dp" android:text="@string/footprint" android:layout_toRightOf="@+id/tv_icon_footprint" style="@style/myTvText"/>
+                <cn.tatagou.sdk.view.IconTextView android:id="@+id/tv_icon_footprint_jump" style="@style/iconFont_jump"/>
+                <TextView android:layout_alignLeft="@+id/tv_footprint" android:layout_alignParentBottom="true" style="@style/TtgVLine"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_feedback" style="@style/mylyInfo">
+                <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="18sp" android:id="@+id/tv_icon_feedback" android:paddingTop="2dp" android:layout_marginLeft="2dp" android:text="@string/ttg_icon_shop_feedback" android:layout_centerVertical="true" style="@style/iconFontMine"/>
+                <TextView android:id="@+id/tv_feedback" android:text="@string/my_feedback" android:layout_toRightOf="@+id/tv_icon_feedback" style="@style/myTvText"/>
+                <TextView android:id="@+id/tv_msg_ponit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+                <cn.tatagou.sdk.view.IconTextView android:id="@+id/tv_icon_feedback_jump" style="@style/iconFont_jump"/>
+                <TextView android:layout_alignLeft="@+id/tv_feedback" android:layout_alignParentBottom="true" style="@style/TtgVLine"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_shenfeng" style="@style/mylyInfo">
+                <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="18sp" android:id="@+id/tv_icon_shenfeng" android:paddingTop="2dp" android:layout_marginLeft="2dp" android:text="@string/ttg_icon_me_shenfeng" android:layout_centerVertical="true" style="@style/iconFontMine"/>
+                <TextView android:id="@+id/tv_shenfeng" android:text="我的身份" android:layout_toRightOf="@+id/tv_icon_shenfeng" style="@style/myTvText"/>
+                <TextView android:textSize="14dp" android:textColor="#8b8b8b" android:id="@+id/ttg_tv_shengfeng" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无" android:layout_toLeftOf="@+id/tv_icon_shenfeng_jump" android:layout_centerInParent="true"/>
+                <cn.tatagou.sdk.view.IconTextView android:id="@+id/tv_icon_shenfeng_jump" style="@style/iconFont_jump"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_login" android:layout_marginTop="10dp" style="@style/mylyInfo">
+                <cn.tatagou.sdk.view.IconTextView android:textSize="20sp" android:textColor="#ffff5500" android:id="@+id/tv_icon_login" android:layout_marginLeft="2dp" android:text="@string/ttg_icon_taobao" android:layout_centerVertical="true" style="@style/iconFont"/>
+                <TextView android:id="@+id/tv_ttg_taobao_login" android:text="@string/tb_login" android:layout_toRightOf="@+id/tv_icon_login" style="@style/myTvText"/>
+                <TextView android:textSize="14dp" android:textColor="#ffff2738" android:gravity="right" android:id="@+id/tv_ttg_login_mark" android:paddingRight="10dp" android:text="@string/go_login" android:layout_toLeftOf="@+id/tv_icon_login_jump" android:layout_toRightOf="@+id/tv_ttg_taobao_login" style="@style/myTvText"/>
+                <cn.tatagou.sdk.view.IconTextView android:id="@+id/tv_icon_login_jump" style="@style/iconFont_jump"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/ttg_rl_bc_register" android:visibility="gone" style="@style/mylyInfo">
+                <TextView android:id="@+id/ttg_tv_bc_register_line" android:layout_alignLeft="@+id/ttg_tv_bc_register" android:layout_alignParentTop="true" style="@style/TtgVLine"/>
+                <cn.tatagou.sdk.view.IconTextView android:textSize="26sp" android:gravity="center_vertical" android:id="@+id/ttg_tv_icon_bc_register" android:layout_height="match_parent" android:layout_below="@+id/ttg_tv_bc_register_line" style="@style/iconFont"/>
+                <TextView android:id="@+id/ttg_tv_bc_register" android:text="@string/ttg_bc_register" android:layout_toRightOf="@+id/ttg_tv_icon_bc_register" style="@style/myTvText"/>
+                <cn.tatagou.sdk.view.IconTextView android:id="@+id/ttg_tv_icon_bc_register_jump" style="@style/iconFont_jump"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <include layout="@layout/ttg_hint_layout"/>
+    </FrameLayout>
+</LinearLayout>

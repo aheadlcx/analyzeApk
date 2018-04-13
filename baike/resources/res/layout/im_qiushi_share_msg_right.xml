@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/chat_list_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12dp" android:layout_gravity="center_horizontal" android:id="@+id/sendDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" style="?attr/msg_publish_time"/>
+    <RelativeLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/msgContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100dp" android:layout_marginTop="20dp" android:layout_marginRight="18dp" android:layout_marginBottom="2dp" android:layout_alignParentRight="true" style="?attr/msg_right">
+            <RelativeLayout android:id="@+id/imageContainer" android:layout_width="58dp" android:layout_height="84dp" android:layout_marginLeft="13dp" android:layout_centerVertical="true">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/coverImage" android:layout_width="@dimen/large_user_icon" android:layout_height="@dimen/large_user_icon" android:layout_centerVertical="true" app:actualImageScaleType="6" app:roundedCornerRadius="3dp"/>
+                <ImageView android:id="@+id/videoIndicator" android:visibility="gone" android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/video_indicator" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/gif_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="17dp" android:src="@drawable/ic_gif_tag"/>
+            </RelativeLayout>
+            <TextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvBrief" android:paddingRight="17dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="9dp" android:minWidth="85dp" android:maxLines="3" android:layout_toRightOf="@+id/imageContainer" android:layout_centerVertical="true" android:lineSpacingExtra="2dp" style="?attr/qiushi_im_msg_right"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_status_view" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

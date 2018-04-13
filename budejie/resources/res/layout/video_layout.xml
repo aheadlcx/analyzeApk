@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/item_layout" android:background="?attr/audit_content_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="?attr/audit_content_text_color" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:singleLine="false" android:lineSpacingExtra="5dp"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/image_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/video_container_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/img_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center" android:id="@+id/main_img" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.tencent.smtt.sdk.WebView android:layout_gravity="center" android:id="@+id/wv_gif" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="top" android:id="@+id/error_img_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="?attr/load_error_state"/>
+            </LinearLayout>
+            <View android:id="@+id/imageready" android:background="#e0000000" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <Button android:layout_gravity="center" android:id="@+id/play" android:background="@drawable/play_btn_bg" android:visibility="gone" android:layout_width="62dp" android:layout_height="60dp"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/video_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_bt_selector"/>
+            <FrameLayout android:layout_gravity="bottom" android:id="@+id/checkFullPic_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/checkFullPic_back" android:layout_width="match_parent" android:layout_height="match_parent" android:src="?attr/check_full_pic_back_dark_bg"/>
+                <TextView android:textSize="17sp" android:textColor="@drawable/checkbig_textcolor" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_full_pic" android:drawableLeft="?attr/check_full_pic_btn_bg" android:drawablePadding="10dp"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/progress_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/baisibudejie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:src="@drawable/baisibudejie"/>
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/gif_progress" android:background="@drawable/progressbar_bg" android:layout_width="220dp" android:layout_height="15dp" android:layout_marginTop="10dp" android:progressDrawable="@drawable/progress_style" style="?android:attr/progressBarStyleHorizontal"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

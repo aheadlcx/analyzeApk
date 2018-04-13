@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/action_share_timeline" android:orderInCategory="50" android:title="分享到朋友圈" app:showAsAction="never"/>
+    <item android:id="@+id/action_share_session" android:orderInCategory="51" android:title="分享给微信好友" app:showAsAction="never"/>
+    <item android:id="@+id/action_open_in_browser" android:orderInCategory="51" android:title="浏览器中打开链接" app:showAsAction="never"/>
+</menu>

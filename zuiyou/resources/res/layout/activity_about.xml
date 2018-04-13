@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navTitleText="关于最右"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="174dp">
+                <ImageView android:id="@+id/logo_zuiyou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="51dp" android:src="@drawable/img_zuiyou_about"/>
+                <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:id="@+id/tvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvCommunityRules" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:longClickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="最右公约" android:drawableRight="@drawable/ic_arrow_right"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="13dp"/>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvCommunityManageRules" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="最右社区管理规范" android:drawableRight="@drawable/ic_arrow_right"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvUserRules" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="用户协议" android:drawableRight="@drawable/ic_arrow_right"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="13dp"/>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvRightOfPrivacyRules" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="隐私权声明" android:drawableRight="@drawable/ic_arrow_right"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="13dp"/>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvKnowledgeRules" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="知识产权声明" android:drawableRight="@drawable/ic_arrow_right"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="13dp"/>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvReliefRules" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="免责声明" android:drawableRight="@drawable/ic_arrow_right"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="13dp"/>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/license" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:text="开源许可" android:drawableRight="@drawable/ic_arrow_right"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="120dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

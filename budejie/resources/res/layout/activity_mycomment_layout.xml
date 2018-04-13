@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/navigation_bar"/>
+    <FrameLayout android:id="@+id/myCommentFragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10"/>
+</LinearLayout>

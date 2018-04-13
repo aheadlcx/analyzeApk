@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/new_main_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="@color/main_red" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_btn"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom" android:background="@color/black" android:layout_width="match_parent" android:layout_height="47dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:id="@+id/hot_comment_save_ll" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:background="@drawable/hot_comment_share_save_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="16sp" android:textColor="@drawable/hot_comment_share_bottom_text_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/save"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/hot_comment_share_ll" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:background="@drawable/hot_comment_share_share_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="16sp" android:textColor="@drawable/hot_comment_share_bottom_text_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/share"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@+id/middle" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:fillViewport="true" android:layout_above="@+id/bottom" android:layout_below="@+id/title" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/image_container" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/image_view_1" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/image_view_2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/image_view_3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/image_view_4" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

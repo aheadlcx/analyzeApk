@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_gifts" android:background="#1e1d28" android:paddingBottom="10dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <qsbk.app.live.widget.GiftViewPager android:id="@+id/gift_viewpager" android:layout_width="match_parent" android:layout_height="214dp"/>
+            <qsbk.app.live.widget.DotView android:gravity="center_horizontal" android:id="@+id/dot_gifts" android:layout_width="match_parent" android:layout_height="12dp" android:layout_below="@+id/gift_viewpager" app:dot_count="0"/>
+        </RelativeLayout>
+        <FrameLayout android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_pay" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_charge" android:layout_width="28dp" android:layout_height="14dp" android:layout_marginLeft="14dp" android:src="@drawable/live_gift_charge"/>
+                <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#fddb2e" android:id="@+id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="8dp"/>
+                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="2dp" android:src="@drawable/live_pay_diamond"/>
+                <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/live_gift_box_arrow_right"/>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/gift_progress_bar" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="155dp" android:max="100" android:progress="0" android:secondaryProgress="100"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/iv_first_charge" android:layout_width="53dp" android:layout_height="40dp" android:layout_marginRight="96dp" app:actualImageScaleType="5"/>
+            <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_send_gift" android:background="@drawable/live_gift_box_send_selector" android:layout_width="75dp" android:layout_height="28dp" android:layout_marginRight="10dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <qsbk.app.core.widget.EmptyPlaceholderView android:id="@+id/gift_box_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="40dp"/>
+</FrameLayout>

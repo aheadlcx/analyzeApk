@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ProgressBar android:id="@+id/id_chat_list_head_bar" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="@dimen/im_head_scroll_height" android:maxWidth="32dp" android:maxHeight="32dp" android:minWidth="32dp" android:minHeight="32dp" style="?android:attr/progressBarStyleSmall"/>
+</LinearLayout>

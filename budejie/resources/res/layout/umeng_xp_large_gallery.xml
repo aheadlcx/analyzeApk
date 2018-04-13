@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="140dp">
+    <RelativeLayout android:id="@+id/umeng_xp_gallery_entity" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.umeng.newxp.view.UGallery android:id="@+id/umeng_xp_gallery" android:layout_width="match_parent" android:layout_height="match_parent" android:animationDuration="300" android:spacing="0.5dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/umeng_xp_gallery_pointer" android:background="#22000000" android:layout_width="match_parent" android:layout_height="20dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/umeng_xp_gallery_progress" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="60dp" android:layout_height="60dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/umeng_xp_gallery_errorpage" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="28sp" android:textStyle="bold" android:gravity="center" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/umeng_xp_failed_loading"/>
+    </RelativeLayout>
+</RelativeLayout>

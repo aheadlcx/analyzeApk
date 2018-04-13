@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.widget.Fit21FrameLayout android:background="@color/CX" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="13dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tips_incompatible" android:scaleType="matrix"/>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="神秘新功能^O^  请下载最新版本查看"/>
+        </LinearLayout>
+    </cn.xiaochuankeji.tieba.widget.Fit21FrameLayout>
+</FrameLayout>

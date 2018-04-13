@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <qsbk.app.widget.ThemeableImageView android:layout_gravity="center_horizontal" android:id="@+id/image" android:background="@drawable/emotion_grid_item_bg_selector" android:padding="4dp" android:layout_width="64dp" android:layout_height="64dp" android:scaleType="centerInside"/>
+    <TextView android:textSize="10dp" android:textColor="@r$color/g_txt_small" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="5"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/recordBottomFrame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <RelativeLayout android:id="@+id/write_comment_layout" android:background="?attr/comment_bottom_bar_bg" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="43dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/recordOrKeyboard" android:padding="10dp" android:layout_width="43dp" android:layout_height="43dp" android:src="?attr/keyboard_record_state" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="?attr/new_detail_bottom_text" android:gravity="center_vertical" android:id="@+id/write_comment_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="写评论..." android:layout_toRightOf="@+id/recordOrKeyboard"/>
+    </RelativeLayout>
+    <com.budejie.www.widget.RecordVoiceView android:id="@+id/record_voice_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/write_comment_layout"/>
+    <com.budejie.www.widget.CommentOperateView android:id="@+id/opetate_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/write_comment_layout"/>
+</RelativeLayout>

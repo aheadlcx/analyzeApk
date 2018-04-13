@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/sfFriend_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10" android:layout_marginBottom="@dimen/margin_10" android:layout_weight="1">
+            <ImageView android:id="@+id/sfFriend_sinaicon" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="?attr/recommend_social_sina_bg"/>
+            <TextView android:textSize="@dimen/font_16" android:textColor="?attr/item_title_name_time_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/person_bindsina_text"/>
+        </LinearLayout>
+        <View android:background="?attr/follow_divider_vertical" android:layout_width="@dimen/divider_vertical_width" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_8"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/sfFriend_tencent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10" android:layout_marginBottom="@dimen/margin_10" android:layout_weight="1">
+            <ImageView android:id="@+id/sfFriend_tencenticon" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="?attr/recommend_social_tencent_bg"/>
+            <TextView android:textSize="@dimen/font_16" android:textColor="?attr/item_title_name_time_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/person_bindtecent_text"/>
+        </LinearLayout>
+        <View android:background="?attr/follow_divider_vertical" android:layout_width="@dimen/divider_vertical_width" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_8"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/sfFriend_contacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10" android:layout_marginBottom="@dimen/margin_10" android:layout_weight="1">
+            <ImageView android:id="@+id/sfFriend_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="?attr/recommend_social_phone_bg"/>
+            <TextView android:textSize="@dimen/font_16" android:textColor="?attr/item_title_name_time_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contacts"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?attr/follow_divider_horizontal" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_marginLeft="@dimen/margin_8" android:layout_marginTop="@dimen/margin_8" android:layout_marginRight="@dimen/margin_8"/>
+</LinearLayout>

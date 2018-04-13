@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="13dp" android:layout_marginTop="13dp" android:layout_marginRight="8dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/CircleImage"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/avatar" android:layout_alignTop="@+id/avatar" android:layout_alignBottom="@+id/avatar">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_4" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <ImageView android:id="@+id/iv_owner" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/ic_comment_master"/>
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_6" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="15dp" android:singleLine="true"/>
+        </LinearLayout>
+        <cn.xiaochuankeji.tieba.ui.widget.updown.CommentItemUpDownView android:id="@+id/like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.customtv.ExpandableTextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:id="@+id/review" android:paddingRight="13dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_toRightOf="@+id/avatar" android:layout_below="@+id/avatar"/>
+    <cn.xiaochuankeji.tieba.ui.recommend.widget.MultiDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/avatar" android:layout_below="@+id/review"/>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginTop="8dp" android:layout_toRightOf="@+id/avatar" android:layout_below="@+id/image"/>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.CarouselContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/personal_profile_head"/>
+</com.budejie.www.widget.CarouselContainer>

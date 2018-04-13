@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ly_time" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+        <cn.tatagou.sdk.view.IconTextView android:textSize="20sp" android:textColor="#606060" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_timer"/>
+        <TextView android:textSize="12sp" android:textColor="@color/session_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="距离结束:"/>
+        <TextView android:textSize="12sp" android:textColor="@color/session_title" android:id="@+id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/dialog_circle_publish" android:layout_width="300dp" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/circle_publish_tips_img"/>
+        <TextView android:textSize="15dp" android:textColor="#ffb015" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="严禁发表以下信息"/>
+        <TextView android:textSize="14dp" android:textColor="#484848" android:id="@+id/tips" android:layout_width="250dp" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:lineSpacingExtra="2dp" android:lineSpacingMultiplier="1.2"/>
+        <TextView android:textSize="15dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btn" android:background="@drawable/circle_publish_tips_btn" android:layout_width="260dp" android:layout_height="44dp" android:layout_marginTop="20dp" android:text="朕知道了"/>
+    </LinearLayout>
+</RelativeLayout>

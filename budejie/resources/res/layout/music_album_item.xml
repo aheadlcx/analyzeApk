@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/personal_music_album_item_bg" android:padding="0.5dp" android:layout_width="138dp" android:layout_height="wrap_content">
+    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/music_album_cover" android:layout_width="137dp" android:layout_height="182dp" android:scaleType="centerCrop"/>
+    <TextView android:textSize="13sp" android:textColor="?attr/personal_music_album_item_content" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/music_album_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:singleLine="true"/>
+</LinearLayout>

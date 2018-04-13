@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navTitleText="返回" app:navNeedBack="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <GridView android:id="@+id/viewPictures" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:layout_weight="1"/>
+        <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+        <TextView android:textSize="17sp" android:textColor="@color/CM" android:gravity="center" android:id="@+id/textConform" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="49dp" android:text="确定"/>
+    </LinearLayout>
+</RelativeLayout>

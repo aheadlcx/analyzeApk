@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/fl_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_content" android:background="@drawable/full_screen_open_guard_dialog_bg" android:visibility="visible" android:layout_width="240dp" android:layout_height="284dp">
+        <ImageView android:id="@+id/iv_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:src="@drawable/head_line_rule_icon" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_close_selector" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/common_gray_textcolor" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:text="上头条规则" android:layout_below="@+id/iv_gold"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_3" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="7dp" android:layout_marginRight="20dp" android:text="每30分钟统计一次“上头条”礼物数量，前3名上头条哦！
+每周积分最高的主播成为“头条达人”，获得额外福利。
+上头条限签约主播哦！" android:layout_below="@+id/tv_title" android:lineSpacingExtra="5dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/event_ruleurl_text_selector" android:id="@+id/tv_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28dp" android:layout_marginBottom="18dp" android:text="头条达人活动详情>" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

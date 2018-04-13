@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.TransitionDraweeView android:id="@+id/transition_img" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <qsbk.app.widget.imageview.ExtendedViewPager android:id="@+id/view_pager" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/btn_container" android:paddingRight="@dimen/big_img_view_padding" android:paddingBottom="@dimen/big_img_view_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/saveBtn" android:background="@null" android:clickable="true" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/icon_save_selector" android:contentDescription="@string/description_cacheImage"/>
+    </FrameLayout>
+</RelativeLayout>

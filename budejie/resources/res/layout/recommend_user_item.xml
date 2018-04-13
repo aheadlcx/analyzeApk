@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/ll_pp_head_portrait" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/person_info" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.androidex.widget.RoundAsyncImageView android:id="@+id/user_icon" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/head_portrait" android:layout_centerVertical="true"/>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_user_credit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/user_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="14sp" android:textColor="#0a0a0a" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="11sp" android:textColor="#5d5d5d" android:id="@+id/user_describe" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/user_name"/>
+        </RelativeLayout>
+        <CheckBox android:id="@+id/item_cb" android:background="@drawable/recommend_user_item_selector" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/user_image_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp">
+        <com.budejie.www.util.SquareLayout android:id="@+id/user_info1" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_info_image1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <Button android:ellipsize="end" android:id="@+id/user_info_text1" android:background="@color/new_main_background_color" android:paddingLeft="0dp" android:paddingTop="2dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.budejie.www.util.SquareLayout>
+        <com.budejie.www.util.SquareLayout android:id="@+id/user_info2" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_info_image2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <Button android:ellipsize="end" android:id="@+id/user_info_text2" android:background="@color/new_main_background_color" android:paddingLeft="0dp" android:paddingTop="2dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.budejie.www.util.SquareLayout>
+        <com.budejie.www.util.SquareLayout android:id="@+id/user_info3" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_info_image3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <Button android:ellipsize="end" android:id="@+id/user_info_text3" android:background="@color/new_main_background_color" android:paddingLeft="0dp" android:paddingTop="2dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.budejie.www.util.SquareLayout>
+        <com.budejie.www.util.SquareLayout android:id="@+id/user_info4" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_info_image4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <Button android:ellipsize="end" android:id="@+id/user_info_text4" android:background="@color/new_main_background_color" android:paddingLeft="0dp" android:paddingTop="2dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.budejie.www.util.SquareLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+    <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

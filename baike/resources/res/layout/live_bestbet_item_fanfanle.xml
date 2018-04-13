@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bg" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#407b5a" android:id="@+id/tv_step" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_avatar" android:padding="1dp" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textColor="#407b5a" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="65dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxWidth="120dp" android:singleLine="true" android:layout_centerVertical="true"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/live_bestbet_add" android:layout_toLeftOf="@+id/tv_bet_result" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff4848" android:id="@+id/tv_bet_result" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_width="13dp" android:layout_height="13dp" android:layout_marginLeft="3dp" android:src="@drawable/live_bestbet_like"/>
+</LinearLayout>

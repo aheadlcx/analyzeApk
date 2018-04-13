@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="57dp" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/wivIcon" android:layout_width="57dp" android:layout_height="57dp"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="57dp" android:layout_height="wrap_content" android:layout_marginTop="9dp"/>
+</LinearLayout>

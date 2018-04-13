@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.NavigationBar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/navigation_bar" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/fl_navi_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <FrameLayout android:id="@+id/fl_navi_mid" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/fl_navi_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</com.budejie.www.widget.NavigationBar>

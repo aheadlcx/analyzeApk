@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="horizontal" android:id="@+id/umeng_xp_bottom" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true">
+    <Button android:textSize="17dp" android:textColor="#666666" android:gravity="center" android:id="@+id/umeng_xp_back" android:text="收起" android:layout_weight="1" style="@style/umeng_xp_grad_but"/>
+    <Button android:textSize="17dp" android:textColor="#666666" android:gravity="center" android:id="@+id/umeng_xp_more" android:text="更多" android:layout_weight="1" style="@style/umeng_xp_grad_but"/>
+</LinearLayout>

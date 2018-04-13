@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/image_picker_bar" android:background="#eb000000" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/picker_name" android:paddingLeft="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="相册" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="16dp" android:gravity="center" android:id="@+id/picker_preview" android:paddingLeft="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="预览" android:layout_weight="1"/>
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/bottom_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/picker_count" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="10dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/select_num" android:background="@drawable/select_num_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="2" android:layout_toLeftOf="@+id/picker_count"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <GridView android:id="@+id/image_picker_grid" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="4dp" android:verticalSpacing="4dp" android:numColumns="4" android:layout_above="@+id/image_picker_bar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <View android:id="@+id/image_folder_list_mask" android:background="#b2000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/image_picker_bar"/>
+    <ListView android:id="@+id/image_folder_list" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:divider="#888888" android:dividerHeight="0.5dp" android:layout_above="@+id/image_picker_bar"/>
+</RelativeLayout>

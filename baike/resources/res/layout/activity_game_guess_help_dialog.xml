@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/guess_help_bg" android:clickable="true" android:layout_width="280dp" android:layout_height="362dp" android:layout_marginTop="135dp">
+        <ScrollView android:layout_gravity="center_horizontal" android:background="@drawable/guess_help_bottom_bg" android:scrollbars="none" android:layout_width="260dp" android:layout_height="311dp" android:layout_marginTop="40dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:layout_marginRight="24dp">
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#353535" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="1、游戏区域有大、小两个选项，每轮游戏20秒，玩家需要在这20秒内猜三颗骰子的数字之和是多少；" android:lineSpacingMultiplier="1.2"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#353535" android:id="@+id/game_help_rule" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="2、若骰子之和结果是11~17，则猜“大”的玩家猜对；若结果为4~10，则猜“小”的玩家猜对；" android:lineSpacingMultiplier="1.2"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#353535" android:id="@+id/game_help_rule_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="3、猜对的玩家即可进入下一关；猜错的玩家若有复活卡则自动复活，也可进入下一关；总共有4关，连续猜对4关即可瓜分奖金" android:lineSpacingMultiplier="1.2"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="160dp" android:layout_height="40dp" android:layout_marginTop="120dp" android:src="@drawable/guess_help_title" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="right" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginTop="120dp" android:layout_marginRight="36dp" android:src="@drawable/guess_help_close" android:scaleType="centerInside"/>
+</FrameLayout>

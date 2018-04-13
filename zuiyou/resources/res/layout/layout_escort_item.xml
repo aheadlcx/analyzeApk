@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/left_right_common_distance" android:paddingBottom="@dimen/left_right_common_distance" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/escort_list" android:layout_width="match_parent" android:layout_height="52.2dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:weightSum="5">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="52.2dp" android:layout_weight="1">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/escort_1" android:visibility="gone" android:layout_width="52.2dp" android:layout_height="52.2dp" android:scaleType="centerInside" android:layout_centerInParent="true" app:placeholderImage="@color/white_20" app:roundAsCircle="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="52.2dp" android:layout_weight="1">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/escort_2" android:visibility="gone" android:layout_width="52.2dp" android:layout_height="52.2dp" android:scaleType="centerInside" android:layout_centerInParent="true" app:placeholderImage="@color/white_20" app:roundAsCircle="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="52.2dp" android:layout_weight="1">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/escort_3" android:visibility="gone" android:layout_width="52.2dp" android:layout_height="52.2dp" android:scaleType="centerInside" android:layout_centerInParent="true" app:placeholderImage="@color/white_20" app:roundAsCircle="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="52.2dp" android:layout_weight="1">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/escort_4" android:visibility="gone" android:layout_width="52.2dp" android:layout_height="52.2dp" android:scaleType="centerInside" android:layout_centerInParent="true" app:placeholderImage="@color/white_20" app:roundAsCircle="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="52.2dp" android:layout_weight="1">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/escort_5" android:visibility="gone" android:layout_width="52.2dp" android:layout_height="52.2dp" android:scaleType="centerInside" app:placeholderImage="@color/white_20" app:roundAsCircle="true"/>
+            <TextView android:textColor="#ffffff" android:id="@+id/escort_size_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CB" android:gravity="center" android:id="@+id/btn_apply_escort" android:background="@drawable/btn_apply_agree_selector" android:layout_width="match_parent" android:layout_height="34.8dp" android:layout_marginLeft="@dimen/left_right_common_distance" android:layout_marginTop="@dimen/left_right_common_distance" android:layout_marginRight="@dimen/left_right_common_distance" android:text="申请成为护卫队"/>
+</LinearLayout>

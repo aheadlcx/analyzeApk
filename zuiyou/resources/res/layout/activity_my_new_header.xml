@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/member_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:minHeight="210dp"/>
+    <View android:background="@drawable/shape_member_cover_top" android:layout_width="match_parent" android:layout_height="63dp" android:layout_alignParentTop="true"/>
+    <ImageView android:id="@+id/my_hollow_icon" android:layout_width="92dp" android:layout_height="26dp" android:layout_marginTop="72dp" android:src="@drawable/profile_shudong" android:scaleType="fitXY" android:layout_alignParentRight="true" android:contentDescription="@string/image"/>
+    <View android:background="@drawable/shape_member_cover_bottom" android:layout_width="match_parent" android:layout_height="94dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/profile" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.4dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/member_title" android:layout_width="match_parent" android:layout_height="35dp">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F7_text" android:textColor="@color/CW" android:ellipsize="end" android:id="@+id/member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/member_gender" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8.7dp" android:src="@drawable/ic_male" android:scaleType="fitCenter"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/member_official" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8.7dp" android:src="@drawable/personal_guanfang_profile" android:scaleType="fitCenter"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/member_assessor" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8.7dp" android:src="@drawable/ic_assessor_senior"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/member_community" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8.7dp" android:src="@drawable/personal_shixizly"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_big_arrow_right"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_talent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/iv_talent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/talent"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/iv_talent_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/talent_original_text"/>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F4_text" android:textColor="@color/CW" android:ellipsize="end" android:id="@+id/tv_talent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/warn_medal" android:maxLines="1"/>
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F4_text" android:textColor="@color/CW" android:ellipsize="end" android:id="@+id/member_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/member_avatar" android:background="@drawable/bg_avatar_circle" android:padding="1dp" android:focusable="true" android:clickable="true" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginLeft="17.4dp" android:layout_marginBottom="5dp" android:layout_above="@+id/profile" android:layout_alignParentLeft="true" app:actualImageScaleType="2" app:roundAsCircle="true"/>
+</RelativeLayout>

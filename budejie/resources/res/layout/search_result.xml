@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/SearchAllLayout" android:background="?attr/list_view_item_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/SearchPostTextView" android:layout_width="0dp" android:layout_height="match_parent" android:text="帖子" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/myinfo_label_text_color" android:gravity="center" android:id="@+id/SearchLabelTextView" android:layout_width="0dp" android:layout_height="match_parent" android:text="版块" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/myinfo_label_text_color" android:gravity="center" android:id="@+id/SearchUserTextView" android:layout_width="0dp" android:layout_height="match_parent" android:text="用户" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/SearchTabLine" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="matrix" android:contentDescription="@null"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <android.support.v4.view.ViewPager android:id="@+id/SearchPager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

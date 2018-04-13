@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="bg_loadmore_normal">#41b1f7</drawable>
+    <drawable name="bg_loadmore_pressed">#3da7e8</drawable>
+    <drawable name="bg_navigation_area_pressed">#d6f0fa</drawable>
+    <drawable name="default_indexBar_background">@android:color/transparent</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+</resources>

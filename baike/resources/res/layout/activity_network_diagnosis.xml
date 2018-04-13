@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/bg_content" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" layout="@layout/item_header"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/ll_comment" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true">
+            <EditText android:textSize="@dimen/live_text_14sp" android:textColor="@color/black_41364F" android:textColorHint="@color/light_gray_b0abb7" android:gravity="center_vertical" android:id="@+id/et_rtmp_addr" android:background="@drawable/comment_input_bg" android:paddingLeft="13dp" android:paddingTop="12dp" android:paddingRight="8dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="" android:hint="请输入直播地址" android:layout_toLeftOf="@+id/btn_ping" android:textCursorDrawable="@drawable/live_comment_cursor"/>
+            <LinearLayout android:gravity="center" android:id="@+id/btn_ping" android:background="@drawable/live_publish_selector" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/et_rtmp_addr" android:layout_alignBottom="@+id/et_rtmp_addr" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/live_text_14sp" android:textColor="@color/black_41364F" android:gravity="center" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="开始诊断"/>
+                <ProgressBar android:id="@+id/progress_view" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="8dp" android:max="100" android:progress="0" android:secondaryProgress="100"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/live_text_13sp" android:textColor="@color/black" android:id="@+id/tv_result" android:background="@color/white" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:focusable="false" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:singleLine="false" android:editable="false"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

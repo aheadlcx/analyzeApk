@@ -1,0 +1,171 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="qsbk.app.live">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" /> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.microphone" />
+
+    <application
+        android:name=".QsbkLiveApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:theme"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".debug.LiveDebugMainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".debug.LiveGameDebugActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".debug.LiveGiftAnimDebugActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="qsbk.app.live.ui.LivePushActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="qsbk.app.live.ui.LivePullActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="qsbk.app.live.ui.GiftRankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+
+        <activity
+            android:name="qsbk.app.live.ui.LiveRankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+
+        <activity
+            android:name="qsbk.app.live.ui.NetworkDiagnosisActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+        <activity
+            android:name="qsbk.app.live.ui.LiveUserLevelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+        <activity
+            android:name="qsbk.app.live.ui.NetworkConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+        <activity
+            android:name="qsbk.app.live.ui.family.FamilyCreateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="qsbk.app.live.ui.family.FamilyDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="qsbk.app.live.ui.family.FamilyMemberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="qsbk.app.live.ui.family.FamilyAnchorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="qsbk.app.live.ui.family.FamilyMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slidr"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
+

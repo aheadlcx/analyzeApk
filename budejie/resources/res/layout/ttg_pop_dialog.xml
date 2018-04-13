@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="vertical" android:id="@+id/ly_address" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_btn_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginRight="35dp">
+        <TextView android:textSize="18sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginBottom="22dp" android:text="您确定要取消关注吗"/>
+        <TextView style="@style/TtgVLine"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#666666" android:gravity="center" android:id="@+id/btn_cancel" android:layout_width="0dp" android:layout_height="48dp" android:text="取消" android:layout_weight="1"/>
+            <TextView style="@style/TtgHLine"/>
+            <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="18sp" android:gravity="center" android:id="@+id/btn_ok" android:layout_width="0dp" android:layout_height="48dp" android:text="确定" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

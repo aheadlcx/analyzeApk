@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="@drawable/news_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="100dp" android:text="@string/system_incompatible"/>
+    <LinearLayout android:gravity="center" android:background="@drawable/news_cancel_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16sp" android:background="@drawable/system_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goback" android:onClick="systemCancelBtn$Click"/>
+        <Button android:textSize="16sp" android:id="@+id/downloadBtn" android:background="@drawable/system_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/godownload"/>
+    </LinearLayout>
+</RelativeLayout>

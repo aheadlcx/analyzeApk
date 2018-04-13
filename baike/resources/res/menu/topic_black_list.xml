@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/remove_all" android:orderInCategory="300" android:title="全部解除" app:showAsAction="always"/>
+</menu>

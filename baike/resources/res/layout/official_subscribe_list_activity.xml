@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/official_background" android:background="@r$color/main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/official_list" android:paddingLeft="17dp" android:paddingRight="17dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="?attr/official_list_divider" android:dividerHeight="@dimen/g_divider_small"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loadingbar" android:layout_width="wrap_content" android:layout_height="match_parent" android:progressDrawable="@drawable/loadingbar"/>
+</LinearLayout>

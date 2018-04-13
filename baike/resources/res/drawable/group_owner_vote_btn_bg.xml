@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false">
+        <color android:color="@r$color/im_group_voted_btn_bg_color"/>
+    </item>
+    <item>
+        <color android:color="@r$color/im_group_vote_btn_bg_color"/>
+    </item>
+</selector>

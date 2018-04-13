@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/play_simple_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/play_simple_view_close" android:background="@color/black_transparent" android:padding="8dp" android:layout_width="33dp" android:layout_height="33dp" android:src="@drawable/simple_view_close_selector"/>
+    <ImageView android:id="@+id/play_simple_view_play" android:background="@drawable/play_bt_selector" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

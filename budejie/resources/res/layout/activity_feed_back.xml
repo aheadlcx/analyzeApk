@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/new_main_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/feed_back_bg" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <ImageView android:id="@+id/feed_back_header" android:background="@drawable/icon_new" android:layout_width="61dp" android:layout_height="61dp"/>
+        <TextView android:textSize="17sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:text="百思不得姐意见反馈" android:layout_toRightOf="@+id/feed_back_header" android:layout_alignTop="@+id/feed_back_header"/>
+        <ImageView android:id="@+id/feed_back_image" android:background="@drawable/feed_back_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31dp" android:layout_below="@+id/feed_back_header" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="13sp" android:textColor="#929292" android:id="@+id/feed_back_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="@string/feed_back_tip" android:layout_below="@+id/feed_back_image" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="13sp" android:textColor="@drawable/feed_back_save_text_selector" android:id="@+id/feed_back_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/feed_back_save" android:layout_below="@+id/feed_back_text" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

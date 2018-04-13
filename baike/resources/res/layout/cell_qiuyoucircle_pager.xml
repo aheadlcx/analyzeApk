@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="8dp" style="?attr/main_bg"/>
+    <android.support.v4.view.TopicViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="200dp" android:layout_below="@+id/divider" app:refresh_time="2300"/>
+    <qsbk.app.widget.IndicatorView android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_alignBottom="@+id/pager" android:layout_centerHorizontal="true" app:count="3" app:space="5dp" app:drawable="@drawable/indicator"/>
+    <View android:id="@+id/divider_bellow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/pager" style="?attr/main_bg"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="?attr/audit_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/shenheScrollView" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5dp" android:fillViewport="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18sp" android:textColor="?attr/audit_content_text_color" android:id="@+id/duanzi_content_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

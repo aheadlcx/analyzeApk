@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp">
+        <ImageView android:layout_width="257dp" android:layout_height="310dp" android:src="@drawable/live_game_dialog_bg_catanddog" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="112dp" android:layout_height="28dp" android:layout_marginTop="18dp" android:src="@drawable/live_game_history_dialog_bg_title_catanddog" android:scaleType="fitXY"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="173dp" android:layout_height="20dp" android:layout_marginTop="75dp">
+            <ImageView android:padding="2dp" android:layout_width="49dp" android:layout_height="21dp" android:layout_marginLeft="10dp" android:src="@drawable/live_game_cat_label"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+            <ImageView android:padding="2dp" android:layout_width="49dp" android:layout_height="21dp" android:layout_marginRight="10dp" android:src="@drawable/live_game_dog_label"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/recyclerview" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="257dp" android:layout_height="189dp" android:layout_marginTop="103dp"/>
+        <qsbk.app.core.widget.EmptyPlaceholderView android:layout_gravity="center_horizontal" android:id="@+id/game_history_empty" android:visibility="gone" android:layout_width="160dp" android:layout_height="175dp" android:layout_marginTop="103dp"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_close" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="100dp" android:layout_marginTop="120dp" android:src="@drawable/live_game_catanddog_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

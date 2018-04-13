@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:layout_gravity="top" android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navTitleText="调试选项" app:navNeedBack="true"/>
+    <ScrollView android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/navbar_height" android:layout_below="@+id/navBar">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:minHeight="44dp">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/release_api" android:background="@drawable/bn_blue_selector" android:layout_width="80dp" android:layout_height="44dp" android:text="线上环境"/>
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/debug_api" android:background="@drawable/bn_blue_selector" android:layout_width="80dp" android:layout_height="44dp" android:layout_marginLeft="16dp" android:text="测试环境"/>
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/js_bridge" android:background="@drawable/bn_blue_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginLeft="16dp" android:text="js bridge 测试"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:minHeight="44dp">
+                <RelativeLayout android:background="@drawable/bn_blue_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginRight="12dp" android:layout_weight="1">
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F2_text" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启用https" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <Switch android:id="@+id/https_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="启用 https" android:textOff="关闭 https" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/bn_blue_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="12dp" android:layout_weight="1">
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F2_text" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启布局边界" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <Switch android:id="@+id/debug_show_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:minHeight="44dp">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/setting" android:background="@drawable/bn_blue_selector" android:layout_width="80dp" android:layout_height="44dp" android:text="系统设置"/>
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/dev_setting" android:background="@drawable/bn_blue_selector" android:layout_width="80dp" android:layout_height="44dp" android:layout_marginLeft="16dp" android:text="开发者选项"/>
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/net_setting" android:background="@drawable/bn_blue_selector" android:layout_width="80dp" android:layout_height="44dp" android:layout_marginLeft="16dp" android:text="网络设置"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:minHeight="44dp">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/update_did" android:background="@drawable/bn_blue_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44dp" android:text="更新deviceId"/>
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/clear_message_db" android:background="@drawable/bn_blue_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="44dp" android:text="重建消息数据库"/>
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/clear_history_cache" android:background="@drawable/bn_blue_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginLeft="16dp" android:text="清除缓存"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:minHeight="44dp">
+                <RelativeLayout android:background="@drawable/bn_blue_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="160dp" android:layout_height="44dp">
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F2_text" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LeakCanary" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <Switch android:id="@+id/enable_leak_canary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <cn.xiaochuankeji.tieba.widget.AchievementView android:layout_gravity="center_horizontal" android:id="@+id/achievementView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" app:ac_icon="@drawable/icon_zuiyou_logo" app:ac_color="@color/CM" app:ac_text_color="@color/white"/>
+</FrameLayout>

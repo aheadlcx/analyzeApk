@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vote_avatars_bg" android:background="@color/bg_content" android:paddingLeft="23dp" android:paddingTop="6dp" android:paddingRight="23dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_1" android:background="@drawable/bg_head" android:visibility="invisible" android:layout_width="@dimen/avatar_post_vote_area" android:layout_height="@dimen/avatar_post_vote_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_2" android:background="@drawable/bg_head" android:visibility="invisible" android:layout_width="@dimen/avatar_post_vote_area" android:layout_height="@dimen/avatar_post_vote_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_3" android:background="@drawable/bg_head" android:visibility="invisible" android:layout_width="@dimen/avatar_post_vote_area" android:layout_height="@dimen/avatar_post_vote_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_4" android:background="@drawable/bg_head" android:visibility="invisible" android:layout_width="@dimen/avatar_post_vote_area" android:layout_height="@dimen/avatar_post_vote_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_5" android:background="@drawable/bg_head" android:visibility="invisible" android:layout_width="@dimen/avatar_post_vote_area" android:layout_height="@dimen/avatar_post_vote_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_6" android:background="@drawable/bg_head" android:visibility="invisible" android:layout_width="@dimen/avatar_post_vote_area" android:layout_height="@dimen/avatar_post_vote_area"/>
+    </LinearLayout>
+</RelativeLayout>

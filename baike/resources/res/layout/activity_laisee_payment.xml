@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#99000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/desc_window" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="70dp" android:layout_marginRight="20dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="40dp">
+                <ImageView android:layout_gravity="right" android:id="@+id/close" android:padding="14dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_laisee_close"/>
+                <TextView android:textSize="16sp" android:textColor="?attr/color_gray" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="红包支付"/>
+            </FrameLayout>
+            <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="14sp" android:textColor="@r$color/light_gray_laisee" android:id="@+id/pay_for" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="个人红包"/>
+            <TextView android:textSize="28sp" android:textColor="?attr/color_black" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="0.01"/>
+            <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp"/>
+            <RelativeLayout android:id="@+id/payment_way" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+                <ImageView android:id="@+id/payment_logo" android:padding="4dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_wallet_balance" android:layout_centerVertical="true"/>
+                <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/payment_desc" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:text="糗百钱袋" android:layout_toRightOf="@+id/payment_logo" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/arrow" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/user_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="12sp" android:textColor="?attr/color_gray" android:id="@+id/other_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他支付方式" android:layout_toLeftOf="@+id/arrow" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginTop="4dp" android:layout_marginRight="12dp"/>
+            <LinearLayout android:id="@+id/pwd_input" android:layout_width="wrap_content" android:layout_height="48dp">
+                <View android:background="?attr/dividerColor" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/pwd_1" android:padding="12dp" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/img_psw_bg"/>
+                <View android:background="?attr/dividerColor" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/pwd_2" android:padding="12dp" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/img_psw_bg"/>
+                <View android:background="?attr/dividerColor" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/pwd_3" android:padding="12dp" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/img_psw_bg"/>
+                <View android:background="?attr/dividerColor" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/pwd_4" android:padding="12dp" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/img_psw_bg"/>
+                <View android:background="?attr/dividerColor" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/pwd_5" android:padding="12dp" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/img_psw_bg"/>
+                <View android:background="?attr/dividerColor" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/pwd_6" android:padding="12dp" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/img_psw_bg"/>
+                <View android:background="?attr/dividerColor" android:layout_width="1px" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="1dp"/>
+            <Button android:textColor="@color/white" android:id="@+id/btn_pay" android:background="@drawable/yellow_round_btn_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="12dp" android:layout_marginTop="4dp" android:layout_marginRight="12dp" android:layout_marginBottom="8dp" android:text="立即支付"/>
+        </LinearLayout>
+        <qsbk.app.widget.VirtualKeyboardView android:id="@+id/keyboard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

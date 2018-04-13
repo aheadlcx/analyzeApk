@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/tougao_layout" android:background="?attr/send_post_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/titleLayout" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+    <include android:id="@+id/show_step" android:layout_width="match_parent" android:layout_height="65dp" android:layout_below="@+id/titleLayout" layout="@layout/show_step_view"/>
+    <com.budejie.www.widget.parsetagview.ParseTagEditText android:textSize="18sp" android:textColor="?attr/send_post_text_color" android:textColorHint="?attr/send_post_text_hint_color" android:gravity="top" android:id="@+id/editTougao" android:background="@color/transparent" android:paddingLeft="13dp" android:paddingTop="10dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="5" android:minLines="5" android:maxLength="140" android:layout_below="@+id/show_step"/>
+    <com.budejie.www.widget.SelectLabelLayout android:id="@+id/label_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_15" android:layout_below="@+id/editTougao"/>
+    <com.budejie.www.widget.VoteView android:id="@+id/vote_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="56dp" android:layout_below="@+id/editTougao"/>
+    <include layout="@layout/include_create_post_bottom"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:layout_gravity="top" android:id="@+id/navBar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:navTitleText="话题成员" app:navNeedBack="true" app:navShowBottomDivide="true"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/list_member" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar"/>
+    <LinearLayout android:id="@+id/view_load_more" android:background="@drawable/bg_load_more" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <cn.htjyb.ui.widget.headfooterlistview.ViewLoadMoreFooter android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <FrameLayout android:id="@+id/nav_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/back" android:layout_width="@dimen/navbar_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="@dimen/navbar_height" android:text="网络诊断"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/nav_bar">
+        <Button android:textSize="15sp" android:textColor="@color/CW" android:id="@+id/btn_start" android:background="@drawable/selector_bg_diagnose" android:layout_width="120dp" android:layout_height="30dp" android:text="开始诊断"/>
+        <TextView android:textColor="@color/CT_2" android:id="@+id/label_log" android:padding="5dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:singleLine="false" android:layout_weight="1"/>
+        <Button android:textSize="15sp" android:textColor="@color/CW" android:id="@+id/btn_copy" android:background="@drawable/selector_bg_diagnose" android:layout_width="120dp" android:layout_height="30dp" android:text="复制到剪贴板"/>
+    </LinearLayout>
+</RelativeLayout>

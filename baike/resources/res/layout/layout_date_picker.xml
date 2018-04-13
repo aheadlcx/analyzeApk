@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_picker" android:background="#f2f7fa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/container_toolbar" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16sp" android:textColor="#999999" android:id="@+id/btn_cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@android:string/cancel"/>
+            <Button android:textSize="16sp" android:textColor="#303f9f" android:id="@+id/btn_confirm" android:background="@null" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@android:string/ok" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:background="#f2f7fa" android:padding="3dp" android:layout_width="match_parent" android:layout_height="180dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.bruce.pickerview.LoopView android:id="@+id/picker_year" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:textSize="25sp" app:canLoop="false"/>
+                <com.bruce.pickerview.LoopView android:id="@+id/picker_month" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_weight="1" app:textSize="25sp" app:canLoop="false"/>
+                <com.bruce.pickerview.LoopView android:id="@+id/picker_day" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_weight="1" app:textSize="25sp" app:canLoop="false"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

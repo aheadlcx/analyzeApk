@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/clear_layout" android:paddingLeft="@dimen/padding_nearby_clear_layout" android:paddingRight="@dimen/padding_nearby_clear_layout" android:paddingBottom="80dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:background="?attr/nearby_icon_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_medium"/>
+        <TextView android:textSize="@dimen/g_txt_small" android:textColor="@r$color/g_txt_small" android:gravity="center" android:id="@+id/post_clear_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_medium" android:text="地理位置已清除"/>
+        <Button android:id="@+id/open_nearby" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/view_nearby_qiu_friends" style="?attr/nearby_btn"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/open_location_services" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="80dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:background="?attr/nearby_icon_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="无法获取您的位置信息，您可以通过以下操作提高附近的定位精度：在位置设置中打开GPS和无线网络"/>
+        <Button android:id="@+id/id_btn_open_service" android:layout_width="match_parent" android:layout_height="48dp" android:text="打开定位服务" style="?attr/nearby_btn"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/id_loading_div" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+    </RelativeLayout>
+</FrameLayout>

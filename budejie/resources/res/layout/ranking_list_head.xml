@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/list_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <com.androidex.util.ClickControlledSpinner android:id="@+id/typeSpinner" android:background="@drawable/rank_spinner_nomal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:background="#cccccc" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        <com.androidex.util.ClickControlledSpinner android:id="@+id/timeSpinner" android:background="@drawable/rank_spinner_nomal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:background="#cccccc" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        <com.androidex.util.ClickControlledSpinner android:id="@+id/sortSpinner" android:background="@drawable/rank_spinner_nomal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

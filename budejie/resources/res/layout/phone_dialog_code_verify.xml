@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/rooms_third_dialog_bg" android:layout_width="@dimen/Improved_Dialog_RootView_Width" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/tip_show_tip_title"/>
+        <TextView android:textSize="15sp" android:textColor="#636363" android:gravity="center" android:layout_gravity="center" android:id="@+id/tip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="9dp" android:layout_marginRight="20dp" android:text="@string/msg_verify_dilog_tip_msg"/>
+        <TextView android:textSize="15sp" android:textColor="#636363" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_times_tip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <EditText android:textSize="17sp" android:gravity="center" android:id="@+id/content" android:background="@drawable/rooms_third_msg_verify_getcode_bg" android:layout_width="100dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginRight="15dp" android:singleLine="true" android:maxLength="6" android:layout_centerVertical="true" android:inputType="number"/>
+            <TextView android:textSize="12sp" android:textColor="@color/rooms_third_verify_dialog_getcode_button_selecter" android:id="@+id/tv_getcode_btn" android:background="@drawable/rooms_third_msg_verify_dialog_bg" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginRight="20dp" android:layout_toRightOf="@+id/content" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_marginTop="20dp" style="@style/onePxLine"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="15sp" android:textColor="#ff666666" android:gravity="center" android:id="@+id/cancel" android:background="@drawable/rooms_third_dialog_left_button_selecter" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Cancel" android:layout_weight="1"/>
+            <ImageView android:id="@+id/onePxLineVertical" style="@style/onePxGrayLineVertical"/>
+            <TextView android:textSize="15sp" android:textColor="@color/rooms_third_verify_dialog_right_button_selecter" android:gravity="center" android:id="@+id/ok" android:background="@drawable/rooms_third_dialog_right_button_selecter" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/confirm" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

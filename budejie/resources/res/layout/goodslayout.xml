@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="#f2f0f0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/titleLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentTop="true">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@+id/goodsRadioGroup" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="1dp" android:layout_centerInParent="true">
+            <RadioButton android:gravity="center" android:id="@+id/newestGoodsRadio" android:background="@drawable/goods_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/newestGoods"/>
+            <RadioButton android:gravity="center" android:id="@+id/hotestGoodsRadio" android:background="@drawable/goods_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/hotestGoods"/>
+        </RadioGroup>
+    </RelativeLayout>
+    <com.budejie.www.activity.view.CustomListView android:id="@+id/goodsNewListview" android:background="@android:color/transparent" android:paddingLeft="3dp" android:paddingRight="3dp" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="3dp" android:layout_below="@+id/titleLayout"/>
+    <com.budejie.www.activity.view.CustomListView android:id="@+id/goodsHotListview" android:background="@android:color/transparent" android:paddingLeft="3dp" android:paddingRight="3dp" android:focusable="true" android:visibility="gone" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="3dp" android:layout_below="@+id/titleLayout"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="40dp" android:layout_height="40dp" android:indeterminateDrawable="@drawable/progress_bar_drawable" style="?android:attr/progressBarStyleSmall"/>
+        <TextView android:textSize="18sp" android:textColor="#ffaaaaaa" android:id="@+id/tv_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downloading"/>
+    </LinearLayout>
+</RelativeLayout>

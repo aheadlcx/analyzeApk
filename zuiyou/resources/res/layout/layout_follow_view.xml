@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/follow_view_icon_follow" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_feed_follow" android:scaleType="centerInside" android:contentDescription="@string/image"/>
+    <ImageView android:id="@+id/follow_view_icon_delete" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_close" android:scaleType="centerInside" android:contentDescription="@string/image"/>
+    <ImageView android:id="@+id/follow_view_icon_more" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_nav_more" android:scaleType="centerInside" android:contentDescription="@string/image"/>
+</LinearLayout>

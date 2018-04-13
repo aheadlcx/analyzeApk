@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="false">
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00000"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00001"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00002"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00003"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00004"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00005"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00006"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00007"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00008"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00009"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00010"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00011"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00012"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00013"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00014"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00015"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00016"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00017"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00018"/>
+    <item android:duration="50" android:drawable="@drawable/review_waiting_00019"/>
+</animation-list>

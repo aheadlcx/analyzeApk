@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="17dp" android:paddingTop="7dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_candidate_info" android:background="@drawable/item_gm_history_card" android:layout_width="wrap_content" android:layout_height="82dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/large_user_icon" android:layout_height="@dimen/large_user_icon" android:layout_marginLeft="11dp" android:layout_centerVertical="true" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+        <TextView android:textSize="16dp" android:textColor="#3b3d42" android:id="@+id/tv_candidate_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="10dp" android:layout_toRightOf="@+id/avatar"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_group_take" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/tv_candidate_name" android:layout_alignLeft="@+id/tv_candidate_name">
+            <TextView android:textSize="12dp" android:textColor="#63625e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上任 : "/>
+            <TextView android:textSize="12dp" android:textColor="#969696" android:id="@+id/tv_group_take_date" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12dp" android:textColor="#63625e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="人数 : "/>
+            <TextView android:textSize="12dp" android:textColor="#969696" android:id="@+id/tv_group_take_mem_num" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_group_retire" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/ll_group_take" android:layout_alignLeft="@+id/tv_candidate_name">
+            <TextView android:textSize="12dp" android:textColor="#63625e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卸任 : "/>
+            <TextView android:textSize="12dp" android:textColor="#969696" android:id="@+id/tv_group_retire_date" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12dp" android:textColor="#63625e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="人数 : "/>
+            <TextView android:textSize="12dp" android:textColor="#969696" android:id="@+id/tv_group_retire_mem_num" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

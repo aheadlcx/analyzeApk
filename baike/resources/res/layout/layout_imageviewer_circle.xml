@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.TransitionDraweeView android:id="@+id/transition_img" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <qsbk.app.widget.imageview.ExtendedViewPager android:id="@+id/view_pager" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/ext_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@drawable/imageviewer_footermask" android:layout_width="match_parent" android:layout_height="120dp" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:id="@+id/btn_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/saveBtn" android:paddingLeft="8dp" android:paddingRight="4dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="18dp" android:src="@drawable/qiuyou_circle_download" android:layout_alignParentRight="true" android:contentDescription="@string/description_cacheImage"/>
+                <ImageView android:id="@+id/share_btn" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="?attr/circle_article_share" android:layout_toLeftOf="@+id/saveBtn"/>
+                <TextView android:textSize="13sp" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/comment_count" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="11" android:layout_toLeftOf="@+id/share_btn"/>
+                <ImageView android:id="@+id/comment_bt" android:layout_width="15dp" android:layout_height="match_parent" android:src="@drawable/qiuyoucircle_comment" android:layout_toLeftOf="@+id/comment_count"/>
+                <qsbk.app.ticker.TickerView android:textSize="13dp" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/like_count" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/comment_bt"/>
+                <ImageView android:id="@+id/like_count_bt" android:layout_width="15dp" android:layout_height="match_parent" android:src="@drawable/qiuyoucircle_like_s" android:layout_toLeftOf="@+id/like_count"/>
+                <TextView android:textSize="13dp" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/distance" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="22dp" android:minWidth="40dp"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/white" android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

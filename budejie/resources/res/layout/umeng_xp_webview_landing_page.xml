@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/umeng_xp_rootId" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/umeng_xp_message" android:background="@drawable/umeng_xp_more_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="51dp">
+        <Button android:gravity="center_vertical" android:id="@+id/umeng_xp_back" android:background="@drawable/umeng_xp_selector_back" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="收起" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#4b4b4b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="精品推荐" android:shadowColor="#ffeeeeee" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="2" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <WebView android:id="@+id/umeng_xp_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/umeng_xp_message"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/umeng_xp_pb" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/umeng_xp_loading" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

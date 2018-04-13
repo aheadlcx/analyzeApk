@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_video_recommended" android:background="#d9000000" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/video_recommend_viewpager" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navigation_height" android:flipInterval="30" android:layout_above="@+id/video_recommend_viewpager_indicator"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/video_recommend_viewpager_indicator" android:layout_width="match_parent" android:layout_height="20dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

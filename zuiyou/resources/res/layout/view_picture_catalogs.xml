@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_gravity="top" android:background="@color/black_50" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navbar_height"/>
+    <FrameLayout android:background="@color/CB" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/navbar_height">
+        <ListView android:id="@+id/listCatalog" android:paddingTop="11dp" android:paddingBottom="11dp" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="@dimen/picture_catalogs_list_item_height" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+    </FrameLayout>
+</FrameLayout>

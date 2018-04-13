@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/dynamic_adjust_position_contain" android:background="@color/bg_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/title" android:textColor="@color/text_header" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="@dimen/header_bar_height" android:maxWidth="200dp" android:singleLine="true"/>
+        <ImageButton android:id="@+id/iv_up" android:background="@color/bg_header" android:padding="11dp" android:layout_width="56dp" android:layout_height="@dimen/header_bar_height" android:src="@drawable/back_black_normal" android:scaleType="centerInside"/>
+        <View android:background="@color/divider_header" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/iv_up"/>
+    </RelativeLayout>
+    <qsbk.app.core.widget.EmptyPlaceholderView android:id="@+id/empty" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <qsbk.app.core.widget.refresh.SwipeRefreshLayoutBoth android:id="@+id/refresher" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </qsbk.app.core.widget.refresh.SwipeRefreshLayoutBoth>
+</LinearLayout>

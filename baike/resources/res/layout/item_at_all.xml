@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="67dp" style="?attr/nearby_list_item_bg">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_marginLeft="13dp" android:layout_marginRight="12dp" android:layout_centerVertical="true" app:actualImageScaleType="0" app:roundAsCircle="true" app:actualImageResource="@drawable/ic_group_at_all"/>
+    <TextView android:textSize="16sp" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50dp" android:text="全体成员" android:singleLine="true" android:layout_toRightOf="@+id/avatar" android:layout_centerVertical="true" style="?attr/nearby_list_item_name"/>
+    <TextView android:textSize="12sp" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/divider" android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

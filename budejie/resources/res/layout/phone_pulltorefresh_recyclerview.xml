@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.view.SixRoomPullToRefreshRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/pullToRefreshRecyclerView" android:background="@color/live_hall_list_background" android:layout_width="match_parent" android:layout_height="match_parent"/>

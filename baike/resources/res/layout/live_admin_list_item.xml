@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="23dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/color_41364F" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:singleLine="true"/>
+    <TextView android:id="@+id/tv_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" style="@style/LevelLabel"/>
+    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/live_text_11.5sp" android:textColor="@color/color_41364F" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_cancel_admin" android:background="@drawable/bg_corner_2dp_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="22dp" android:minWidth="71dp" android:minHeight="27dp" android:text="@string/admin_cancel" android:singleLine="true"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_comment_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="13dp" android:src="@drawable/comment_loading_failed"/>
+    <TextView android:textSize="13sp" android:textColor="#bbbbbb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_load_failed"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/navigation_height"/>
+</LinearLayout>

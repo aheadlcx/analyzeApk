@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.v6.sixrooms.base.VLPagerView android:id="@+id/pagerView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <cn.v6.sixrooms.base.VLStatedButtonBar android:id="@+id/buttonBar" android:background="@drawable/phone_hall_navigation_bg" android:layout_width="match_parent" android:layout_height="47dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_mobileStar" android:background="#66000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_mobileStar_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rooms_third_mobile_star_button_transparent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name"/>
+        <ImageView android:id="@+id/iv_mobileStar_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19dp" android:src="@drawable/rooms_third_mobile_star_close" android:layout_alignTop="@+id/iv_mobileStar_tip" android:layout_alignRight="@+id/iv_mobileStar_tip" android:contentDescription="@string/app_name" android:layout_marginEnd="19dp" android:layout_alignEnd="@+id/iv_mobileStar_tip"/>
+    </RelativeLayout>
+</FrameLayout>

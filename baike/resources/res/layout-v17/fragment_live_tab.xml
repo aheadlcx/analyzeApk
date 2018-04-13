@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar_live" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStart="0dp" app:contentInsetEnd="0dp" app:theme="?attr/toolbar_style">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/add" android:background="?attr/actionBarItemBackground" android:layout_width="52dp" android:layout_height="match_parent" android:src="@drawable/group_create" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <ImageView android:id="@+id/rank" android:background="?attr/actionBarItemBackground" android:layout_width="52dp" android:layout_height="match_parent" android:src="@drawable/ic_audit" android:scaleType="center" android:layout_toLeftOf="@+id/add" android:layout_alignParentTop="true" android:layout_toStartOf="@+id/add"/>
+            <qsbk.app.widget.QiuyouCircleTab android:id="@+id/tab" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_toLeftOf="@+id/rank"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <qsbk.app.widget.TipsView android:id="@+id/tipsView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/widget_tips_view_height"/>
+        <RelativeLayout android:id="@+id/declaration" android:background="#88000000" android:layout_width="match_parent" android:layout_height="38dp">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="由第三方热猫直播提供服务和内容运营"/>
+            <ImageView android:id="@+id/declaration_close" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/ic_tip_close" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/activity_notification" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginBottom="56dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:id="@+id/follow_container" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="14dp" android:layout_marginBottom="15dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@+id/follow_flip_container" android:background="@drawable/shape_live_flip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36dp">
+                <ViewFlipper android:id="@+id/follow_flip" android:layout_width="wrap_content" android:layout_height="36dp" android:minWidth="80dp"/>
+                <ImageView android:id="@+id/flip_close" android:paddingTop="4dp" android:paddingRight="3dp" android:paddingBottom="4dp" android:layout_width="12dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="6dp" android:src="@drawable/ic_live_flip_close" android:layout_toRightOf="@+id/follow_flip" android:layout_centerVertical="true"/>
+                <ImageView android:background="@drawable/new_msg_tips" android:layout_width="12dp" android:layout_height="12dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/follow_feed" android:background="@drawable/shape_live_all" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="130dp">
+                <ImageView android:id="@+id/cover" android:background="@drawable/shape_live_follow_oval" android:layout_width="23dp" android:layout_height="23dp" android:layout_marginLeft="5dp" android:src="@drawable/ic_follow_play" android:layout_centerVertical="true"/>
+                <TextView android:textColor="?attr/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="7dp" android:text="已粉主播动态" android:maxLines="1" android:layout_toRightOf="@+id/cover" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <qsbk.app.widget.LiveFollowClickedFlip android:id="@+id/liv_clicked_flip" android:background="@drawable/shape_live_all" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

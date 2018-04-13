@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v4.view.LiveBannerViewPager android:id="@+id/live_banner_view_pager" android:layout_width="match_parent" android:layout_height="wrap_content" app:refresh_time="4000"/>
+    <qsbk.app.live.widget.DotView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/live_banner_dot_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13dp"/>
+    <View android:layout_gravity="bottom" android:background="?attr/group_info_item_bg" android:layout_width="match_parent" android:layout_height="3dp"/>
+</FrameLayout>

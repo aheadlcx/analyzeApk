@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_layer_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/room_upgrade_notification_layer_0" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/rl_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/iv_bg_up" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/room_upgrade_notification_layer_1_up"/>
+        <ImageView android:id="@+id/iv_bg_down" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/room_upgrade_notification_layer_1_down" android:layout_below="@+id/iv_bg_up"/>
+        <ImageView android:id="@+id/btn_del" android:background="@drawable/room_upgrade_pop_del_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:layout_alignTop="@+id/iv_bg_down" android:layout_alignRight="@+id/iv_bg_down"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignLeft="@+id/iv_bg_down" android:layout_alignTop="@+id/iv_bg_down" android:layout_alignRight="@+id/iv_bg_down" android:layout_alignBottom="@+id/iv_bg_down">
+            <TextView android:textSize="@dimen/phone_sc_13sp" android:textColor="@color/room_upgrade_text_color" android:gravity="center" android:id="@+id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+            <TextView android:id="@+id/upgrade_deliver" android:background="@drawable/upgrade_deliver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

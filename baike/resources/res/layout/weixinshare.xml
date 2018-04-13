@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/shareLayout" android:background="@drawable/share_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="#fff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="微信分享"/>
+        <Button android:textSize="18sp" android:textColor="#000" android:gravity="center" android:id="@+id/share2firend" android:background="@drawable/btn_style_alert_dialog_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="用微信发给朋友"/>
+        <Button android:textSize="18sp" android:textColor="#000" android:gravity="center" android:id="@+id/share2firends" android:background="@drawable/btn_style_alert_dialog_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="分享到微信朋友圈"/>
+        <Button android:textSize="18sp" android:textColor="#fff" android:gravity="center" android:id="@+id/cancle" android:background="@drawable/btn_style_alert_dialog_cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:text="取消"/>
+    </LinearLayout>
+</RelativeLayout>

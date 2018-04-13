@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:baselineAligned="false">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/backIv" android:background="@drawable/phone_ic_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:contentDescription="@string/app_name" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+        <cn.v6.sixrooms.widgets.phone.indicator.MagicIndicator android:id="@+id/indicator" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <FrameLayout android:id="@+id/categoryFl" android:layout_width="64dp" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:background="@drawable/phone_ic_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name"/>
+        </FrameLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

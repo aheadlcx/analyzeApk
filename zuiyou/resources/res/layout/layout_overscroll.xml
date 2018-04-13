@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/overscroll" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.overscroll.RefreshTopView android:layout_gravity="top" android:id="@+id/top_buoy" android:layout_width="match_parent" android:layout_height="@dimen/base_over_scroll_size" android:translationY="@dimen/base_over_scroll_top_size"/>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.widget.overscroll.RefreshTopView android:id="@+id/top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/base_over_scroll_size" android:layout_alignParentTop="true"/>
+        <cn.xiaochuankeji.tieba.ui.widget.overscroll.RefreshBottomView android:layout_gravity="bottom" android:id="@+id/bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/base_over_scroll_size" android:layout_alignParentBottom="true"/>
+        <android.support.v7.widget.RecyclerView android:scrollbarStyle="insideOverlay" android:layout_gravity="center" android:id="@+id/recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom" android:layout_below="@+id/top"/>
+        <FrameLayout android:id="@+id/progress" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom" android:layout_below="@+id/top">
+            <ProgressBar android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp" style="?android:attr/progressBarStyleInverse"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.overscroll.RefreshBottomView android:layout_gravity="bottom" android:id="@+id/bottom_buoy" android:layout_width="match_parent" android:layout_height="@dimen/base_over_scroll_size" android:translationY="@dimen/base_over_scroll_bottom_size"/>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/book_reader_white" android:layout_width="match_parent" android:layout_height="@dimen/book_reader_bottom_layout_height">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/book_reader_chapter_layout" android:layout_width="0dp" android:layout_height="@dimen/book_reader_bottom_layout_height" android:layout_weight="1">
+        <ImageView android:id="@+id/book_reader_chapter_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/book_reader_chapter_selector"/>
+        <TextView android:textSize="@dimen/book_reader_bottom_operation_text_size" android:textColor="@color/book_reader_bottom_text_selector" android:id="@+id/book_reader_chapter_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="章节"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/book_reader_progress_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/book_reader_progress_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/book_reader_progress_selector"/>
+        <TextView android:textSize="@dimen/book_reader_bottom_operation_text_size" android:textColor="@color/book_reader_bottom_text_selector" android:id="@+id/book_reader_progress_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="调整进度"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/book_reader_mode_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/book_reader_mode_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/book_reader_mode_selector"/>
+        <TextView android:textSize="@dimen/book_reader_bottom_operation_text_size" android:textColor="@color/book_reader_bottom_text_selector" android:id="@+id/book_reader_mode_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="夜间模式"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/book_reader_text_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/book_reader_text_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/book_reader_text_size_selector"/>
+        <TextView android:textSize="@dimen/book_reader_bottom_operation_text_size" android:textColor="@color/book_reader_bottom_text_selector" android:id="@+id/book_reader_text_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="字号"/>
+    </LinearLayout>
+</LinearLayout>

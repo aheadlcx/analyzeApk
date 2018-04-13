@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/new_main_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="@color/main_red" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <RelativeLayout android:background="@color/main_red" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_marginBottom="10dp">
+        <TextView android:textSize="@dimen/title_left_right_font_size" android:textColor="@drawable/title_left_back_font_style" android:gravity="center" android:layout_gravity="center" android:id="@+id/back" android:background="@color/transparent" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/title_back" android:drawableLeft="@drawable/collect_left_btn"/>
+        <LinearLayout android:id="@+id/center_tab_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <Button android:textSize="16sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@+id/notice_btn" android:background="@color/main_red" android:layout_width="60dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/message_center_notice"/>
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@+id/set_btn" android:background="@drawable/myinfo_setting_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

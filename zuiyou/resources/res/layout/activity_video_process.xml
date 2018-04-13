@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:layout_gravity="center" android:id="@+id/preview_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.videomaker.edittext.OverlayEditTextContainer android:id="@+id/overlay_edit_text_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/layout_control_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@drawable/record_top_mask" android:layout_width="match_parent" android:layout_height="70dp"/>
+        <View android:layout_gravity="bottom" android:background="@drawable/record_bottom_mask" android:layout_width="match_parent" android:layout_height="70dp"/>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="75dp">
+            <FrameLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp">
+                <ImageView android:layout_width="47dp" android:layout_height="47dp" android:src="@drawable/record_save"/>
+                <TextView android:textSize="14dp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="68dp" android:text="存草稿箱" android:shadowColor="#33000000" android:shadowDx="0" android:shadowDy="3" android:shadowRadius="3"/>
+            </FrameLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_process" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp">
+            <ImageView android:id="@+id/btn_back" android:padding="9.5dp" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/record_cancel"/>
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+            <FrameLayout android:id="@+id/btn_mix_sound" android:layout_width="56dp" android:layout_height="60dp">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/ic_mix_audio"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="音效"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/btn_pick_sticker" android:layout_width="56dp" android:layout_height="60dp">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/ic_ugc_sticker"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="贴纸"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/btn_pick_bgm" android:layout_width="56dp" android:layout_height="60dp">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/bgm_selector"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="音乐"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/btn_add_text" android:layout_width="56dp" android:layout_height="60dp">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/add_text"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="文字"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/btn_select_cover" android:layout_width="56dp" android:layout_height="60dp">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/select_cover"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="封面"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/ll_progress" android:background="@drawable/bg_video_progress" android:visibility="gone" android:layout_width="92dp" android:layout_height="92dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="64dp" android:layout_centerInParent="true">
+            <cn.xiaochuankeji.tieba.ui.mediabrowse.component.RoundProgressBar android:id="@+id/roundPBar" android:visibility="visible" android:layout_width="37dp" android:layout_height="37dp" app:roundColor="#ee333333" app:roundProgressColor="#fbdb00" app:roundWidth="3dp" app:textColor="@color/transparent" app:textSize="0sp"/>
+            <TextView android:textSize="11dp" android:textColor="@color/white" android:id="@+id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="上传中25%"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <cn.xiaochuankeji.tieba.ui.videomaker.SoundMixPanel android:id="@+id/sound_mix_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/vTextInputGuideCover" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/textInputAnimationView" android:layout_width="110dp" android:layout_height="161dp" android:layout_marginTop="8dp" android:layout_marginRight="37dp" app:lottie_autoPlay="false" app:lottie_loop="false"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/vTextAddGuideCover" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/addTextAnimationView" android:layout_width="200dp" android:layout_height="209dp" android:layout_marginTop="80dp" app:lottie_autoPlay="false" app:lottie_loop="true"/>
+    </FrameLayout>
+</FrameLayout>

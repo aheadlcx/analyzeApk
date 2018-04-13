@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_vertical" android:orientation="horizontal" android:background="#1a1a1a" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="64dp">
+    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/down_loading" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="17dp" android:paddingRight="11dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/better_offline_notif_loading" android:singleLine="true"/>
+        <ProgressBar android:id="@+id/notifyBar" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp" style="@style/Widget.ProgressBar.Horizontal"/>
+        <TextView android:textSize="13sp" android:textColor="#4cffffff" android:layout_gravity="right" android:id="@+id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/pause" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="6dp" android:src="@drawable/video_pause" android:scaleType="centerInside"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/stop" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/offline_stop_icon" android:scaleType="centerInside"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/umeng_xp_recom" android:background="#ececec" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/umeng_xp_recoright" android:scaleType="fitXY" android:layout_alignParentTop="true"/>
+</RelativeLayout>

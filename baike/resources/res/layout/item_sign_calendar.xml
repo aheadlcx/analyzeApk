@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp">
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@+id/calendar" android:layout_width="match_parent" android:layout_height="wrap_content" app:mcv_leftButtonSrc="@drawable/ic_catch_up_card_init" app:mcv_rightButtonSrc="@drawable/ic_calendar_today" app:mcv_tileHeight="44dp"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <LinearLayout android:gravity="top|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/img_good" android:background="@drawable/ic_good" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="1dp"/>
+                <TextView android:textSize="12sp" android:textColor="?attr/color_gray" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/good" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="top|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/img_bad" android:background="@drawable/ic_bad" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="1dp"/>
+                <TextView android:textSize="12sp" android:textColor="?attr/color_gray" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/bad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

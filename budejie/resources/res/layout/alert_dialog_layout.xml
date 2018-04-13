@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp" android:src="?attr/icon_post_copyright" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/send_video" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/send_video_img" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/send_video"/>
+            <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/send_video_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="发视频"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/send_picture" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/send_video">
+            <ImageView android:id="@+id/send_picture_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/send_picture"/>
+            <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/send_picture_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="发图片"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/send_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/send_picture">
+            <ImageView android:id="@+id/send_text_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/send_text"/>
+            <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/send_text_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="发段子"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/send_voice" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/send_video" android:layout_alignLeft="@+id/send_video">
+            <ImageView android:id="@+id/send_voice_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/send_voice"/>
+            <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/send_voice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="发声音"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/enter_posts" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/send_voice" android:layout_alignTop="@+id/send_voice">
+            <ImageView android:id="@+id/enter_posts_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/audit"/>
+            <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/enter_posts_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="审帖"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/send_link" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/enter_posts" android:layout_alignTop="@+id/enter_posts">
+            <ImageView android:id="@+id/send_link_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/send_link"/>
+            <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/send_link_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="发链接"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/music_album" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/send_link" android:layout_alignTop="@+id/enter_posts">
+            <ImageView android:id="@+id/music_album_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/music_album"/>
+            <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/music_album_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="音乐相册"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/send_videoOnline" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/enter_posts" android:layout_alignTop="@+id/send_video">
+            <ImageView android:id="@+id/send_videoOnline_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sopcast"/>
+            <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/send_videoOnline_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="发直播"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:textSize="17sp" android:textColor="?attr/dailog_cancel_text_color" android:gravity="center" android:id="@+id/cacel" android:background="?attr/dailog_cacel_btn_bg" android:padding="9dp" android:layout_width="match_parent" android:layout_height="44dp" android:text="取消" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

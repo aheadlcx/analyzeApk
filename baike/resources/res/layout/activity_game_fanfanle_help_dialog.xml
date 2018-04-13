@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="271dp" android:layout_height="380dp" android:src="@drawable/fanfanle_win_bg" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="271dp" android:layout_height="114dp" android:src="@drawable/game_fanfanle_tengtiao" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="128dp" android:layout_height="30dp" android:layout_marginTop="50dp" android:src="@drawable/game_fanfanle_help_bg" android:scaleType="fitXY"/>
+        <ScrollView android:layout_gravity="center_horizontal" android:paddingLeft="14dp" android:paddingRight="14dp" android:scrollbars="none" android:layout_width="219dp" android:layout_height="200dp" android:layout_marginTop="115dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/white" android:gravity="center_vertical" android:background="@drawable/game_fanfanle_rule_bg" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="游戏说明"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#407b5a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="热猫星球的熊猫博士近日在市场买了许多竹子，但是他身为一个死宅，不知道怎么吃最好吃。聪明的你是一个扑克牌预言家，你需要通过扑克牌预言帮助熊猫博士挑选最好吃的一根竹子，如果猜对了熊猫博士会给予丰厚的奖励。" android:lineSpacingExtra="2dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                    <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/white" android:gravity="center_vertical" android:background="@drawable/game_fanfanle_rule_bg" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="游戏规则"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#407b5a" android:id="@+id/game_help_rule" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="每轮游戏都会有一张已亮出的扑克牌（即底牌），你需要猜测下一张扑克。" android:lineSpacingExtra="2dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="150dp" android:layout_marginTop="100dp" android:src="@drawable/live_game_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/backgroud" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="8dp" android:tint="#4c000000" app:actualImageScaleType="6"/>
+        <View android:id="@+id/divider_bellow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/backgroud" style="?attr/main_bg"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="8dp">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_centerVertical="true">
+            <TextView android:textSize="21dp" android:textStyle="bold" android:textColor="?attr/topic_focus_color" android:ellipsize="end" android:gravity="left" android:id="@+id/topic_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@r$color/shadow_color" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="16"/>
+            <TextView android:textSize="14dp" android:textColor="?attr/topic_focus_color" android:gravity="left" android:id="@+id/topic_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:shadowColor="@r$color/shadow_color" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="16" android:layout_below="@+id/topic_message"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layerMask" android:background="@drawable/edit_info_items_card_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4dp"/>
+</FrameLayout>

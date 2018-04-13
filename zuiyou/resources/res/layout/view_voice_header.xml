@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.xiaochuankeji.tieba.ui.topic.weight.PostMemberView android:id="@+id/post_member_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/voice_post_content" android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="10dp">
+            <cn.xiaochuankeji.tieba.ui.voice.widget.CoverFrameLayout android:id="@+id/rl_cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:heightWidthRatio="0.78">
+                <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:viewAspectRatio="1.28" app:placeholderImage="@drawable/voice_background_03_blur" app:placeholderImageScaleType="6"/>
+                <View android:background="@color/white_36" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <View android:background="@color/black_15" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/up_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/icon_voicedetail_up"/>
+                <android.support.v4.widget.NestedScrollView android:id="@+id/nestedScrollView" android:layout_width="match_parent" android:layout_height="172dp" android:layout_marginTop="40dp" android:fillViewport="true" android:overScrollMode="never">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/nestedScrollContentView" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/ll_album" android:layout_width="68dp" android:layout_height="68dp">
+                                <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_album" android:layout_width="68dp" android:layout_height="68dp" android:scaleType="centerCrop" app:placeholderImage="@drawable/voice_background_03" app:placeholderImageScaleType="6" style="@style/CircleImage"/>
+                                <View android:id="@+id/iv_album_mask" android:background="@drawable/background_circle" android:layout_width="26dp" android:layout_height="26dp" android:layout_centerInParent="true"/>
+                                <ImageView android:id="@+id/iv_album_bg" android:layout_width="31dp" android:layout_height="31dp" android:src="@drawable/icon_voicedetail_album" android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                            <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_text" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" android:lineSpacingMultiplier="1.4"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+                <View android:layout_gravity="bottom" android:id="@+id/view" android:background="@drawable/bg_voice_text" android:layout_width="match_parent" android:layout_height="140dp"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/down_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="218dp" android:src="@drawable/icon_voicedetail_down"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginBottom="8dp">
+                    <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+                    <cn.xiaochuankeji.tieba.ui.comment.soundnewvisual.SoundWaveViewV2Detail android:id="@+id/soundWaveView" android:layout_width="0dp" android:layout_height="10dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/iv_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/voice_play_detail_v2" android:contentDescription="@string/image"/>
+                </LinearLayout>
+                <View android:background="@color/image_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </cn.xiaochuankeji.tieba.ui.voice.widget.CoverFrameLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/F6_text" android:textColor="@color/CW" android:ellipsize="middle" android:gravity="center" android:id="@+id/voice_topic" android:background="@drawable/bg_topic" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="@dimen/F4_line" android:singleLine="true"/>
+        <cn.xiaochuankeji.tieba.ui.topic.weight.PostOperateView android:id="@+id/post_operate_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/voice_divide_view" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/voice_delete_in_topic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/tips_inconformity" android:contentDescription="@string/image"/>
+</FrameLayout>

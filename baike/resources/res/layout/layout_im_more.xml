@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/more_container" android:layout_width="match_parent" android:layout_height="240dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="4" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/send_img" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="54dp" android:layout_height="54dp" style="?attr/more_send_img"/>
+            <TextView android:textSize="10sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="相册"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="54dp" android:layout_height="54dp" style="?attr/more_send_laisee"/>
+            <TextView android:textSize="10sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="红包"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

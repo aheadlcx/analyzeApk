@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/ll_empty" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/multilineText" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/live_text_14sp" android:textStyle="italic" android:textColor="@color/tab_text_normal" android:gravity="center" android:id="@+id/multilineText1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/live_text_14sp" android:textStyle="italic" android:textColor="@color/tab_text_normal" android:gravity="center" android:id="@+id/multilineText2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp"/>
+        <TextView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="70dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_placeholder" android:visibility="gone" android:layout_width="100dp" android:layout_height="120dp"/>
+    <TextView android:textSize="@dimen/live_text_14sp" android:textColor="@color/tab_text_normal" android:layout_gravity="center" android:id="@+id/tv_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/network_not_well" android:singleLine="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_action" android:background="@drawable/bg_corner_2dp" android:layout_width="102dp" android:layout_height="30dp" android:layout_marginTop="15dp">
+        <ImageView android:id="@+id/iv_icon" android:visibility="gone" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="8dp"/>
+        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="@color/black_90_percent_transparent" android:gravity="center" android:id="@+id/tv_placeholder_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/click_to_refresh"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progress_bar" android:visibility="visible" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginLeft="8dp" android:max="100" android:progress="0" android:secondaryProgress="100"/>
+</LinearLayout>

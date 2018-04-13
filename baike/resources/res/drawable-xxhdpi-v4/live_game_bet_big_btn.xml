@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="false" android:drawable="@drawable/live_game_bet_big_normal"/>
+    <item android:state_selected="true" android:drawable="@drawable/live_game_bet_big_press"/>
+    <item android:drawable="@drawable/live_game_bet_big_normal"/>
+</selector>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="@color/bg_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/CL" android:dividerHeight="@dimen/divide_space_1px" android:layout_below="@+id/navBar"/>
+    <include layout="@layout/textview_empty_tip_view"/>
+</RelativeLayout>

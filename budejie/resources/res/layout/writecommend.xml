@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/writecommendlayout" android:background="@color/list_item_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <RelativeLayout android:id="@+id/title" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap" android:layout_below="@+id/TitleGapLayout">
+        <LinearLayout android:gravity="left" android:layout_width="70dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_8" android:layout_alignParentLeft="true">
+            <TextView android:id="@+id/write_left_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/titleBtnStyle"/>
+        </LinearLayout>
+        <TextView android:textSize="22sp" android:textColor="@color/title_text_color" android:id="@+id/write_comment_txt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_commend" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="right" android:layout_width="70dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/margin_8" android:layout_alignParentRight="true">
+            <TextView android:id="@+id/comment_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" style="@style/titleBtnStyle"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottomTotalLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ReplyLayout" android:background="#dfdfdf" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#949494" android:ellipsize="end" android:id="@+id/ReplyTextView" android:paddingLeft="14dp" android:paddingTop="8dp" android:paddingRight="14dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/bottomLayout" android:background="@drawable/write_commend_tongshi_bg" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="20sp" android:textColor="#000000" android:gravity="center" android:id="@+id/commend_forward_text" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="15dp" android:text="@string/commend_forward_hint" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/write_weibo_layout" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_toRightOf="@+id/commend_forward_text" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <EditText android:textColor="#949494" android:gravity="top" android:id="@+id/commend" android:background="@color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/writer_detail_hint" android:cursorVisible="true" android:maxLength="140" android:layout_above="@+id/bottomTotalLayout" android:layout_below="@+id/title"/>
+    <TextView android:id="@+id/textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:text="140字" android:layout_above="@+id/bottomTotalLayout" android:layout_alignParentRight="true"/>
+</RelativeLayout>

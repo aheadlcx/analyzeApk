@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/rlVoiceInput" android:background="@color/CB" android:visibility="gone" android:layout_width="match_parent" android:layout_height="236dp">
+        <FrameLayout android:id="@+id/fl_input_tool" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <ImageView android:layout_gravity="left" android:id="@+id/ivChangeToKeyBoard" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/selector_keyboard"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/ivSelectPic" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/add_photo_bg"/>
+        </FrameLayout>
+        <RelativeLayout android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="44dp">
+            <cn.xiaochuankeji.tieba.ui.danmaku.VoiceInputAnimationView android:id="@+id/ivVoiceAnimation" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/ivVoiceInput" android:visibility="visible" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/selector_dan_voice_input" android:layout_centerInParent="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:gravity="center" android:id="@+id/ivVoiceTimeCounter" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="17dp" android:layout_above="@+id/ivVoiceInput"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlVoiceInputFinished" android:visibility="gone" android:layout_width="match_parent" android:layout_height="192dp" android:layout_marginTop="44dp">
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlPlayVoice" android:background="@drawable/selector_bg_voice_input_play" android:clickable="true" android:layout_width="105dp" android:layout_height="34dp" android:layout_marginTop="20dp" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivVoiceInputPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:src="@drawable/anim_danmaku_sound_gray" android:layout_centerVertical="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:id="@+id/tvVoiceTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:ellipsize="end" android:gravity="center" android:id="@+id/label_recognizer_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="17dp" android:layout_marginRight="25dp" android:maxLines="2" android:layout_below="@+id/rlPlayVoice" android:lineSpacingExtra="5dp"/>
+            <TextView android:textSize="16sp" android:textColor="@drawable/selector_voice_reset_textcolor" android:gravity="center" android:id="@+id/btn_voice_rerecord" android:background="@drawable/selector_bg_voice_reset" android:layout_width="88dp" android:layout_height="34dp" android:layout_marginLeft="25dp" android:layout_marginBottom="25dp" android:text="重录" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+            <TextView android:textSize="16sp" android:textColor="@drawable/selector_voice_send_textcolor" android:gravity="center" android:id="@+id/ivVoiceSend" android:background="@drawable/selector_bg_voice_send" android:layout_width="88dp" android:layout_height="34dp" android:layout_marginRight="25dp" android:layout_marginBottom="25dp" android:text="发送" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <View android:background="@color/CL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginTop="44dp"/>
+    </RelativeLayout>
+</merge>

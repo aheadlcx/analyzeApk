@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/tabs_frame" android:layout_width="match_parent" android:layout_height="48dp">
+        <qsbk.app.widget.PagerSlidingTabStrip android:textSize="14sp" android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="48dp" app:pstsDividerColor="#00000000" app:pstsTabPaddingLeftRight="10dp" app:pstsShouldExpand="true" style="?attr/psts"/>
+        <LinearLayout android:gravity="center_vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="10dp" android:textColor="@color/black" android:gravity="right" android:id="@+id/friend_num" android:paddingRight="15dp" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="10dp" android:textColor="@color/black" android:gravity="right" android:id="@+id/fans_num" android:paddingRight="15dp" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="10dp" android:textColor="@color/black" android:gravity="right" android:id="@+id/group_num" android:paddingRight="25dp" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </FrameLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabs_frame"/>
+    <SurfaceView android:id="@+id/hack_surface_view" android:visibility="gone" android:layout_width="0px" android:layout_height="0px"/>
+</RelativeLayout>

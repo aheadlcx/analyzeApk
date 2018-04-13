@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="67dp" style="?attr/nearby_list_item_bg">
+    <TextView android:textSize="16dp" android:textColor="?attr/official_list_header_tips" android:gravity="center" android:id="@+id/no_member_tips" android:layout_width="match_parent" android:layout_height="match_parent" android:text="没有设置管理员"/>
+    <View android:id="@+id/divider" android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

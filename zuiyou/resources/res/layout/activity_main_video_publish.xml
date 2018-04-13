@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navOptionText="发表" app:navNeedBack="true"/>
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <EditText android:id="@+id/edit_content" android:paddingTop="21dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:hint="说点什么吧..." android:singleLine="false" android:lineSpacingMultiplier="1.5" style="@style/EditNoBorder"/>
+                <TextView android:textSize="12sp" android:textColor="@drawable/text_blue_bg_selector" android:gravity="center" android:id="@+id/btn_select_topic" android:background="@drawable/blue_border_round_rect_bg_selector" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_marginRight="20dp" android:layout_marginBottom="36dp" android:text="选择话题"/>
+                <FrameLayout android:layout_width="168dp" android:layout_height="266dp" android:layout_marginLeft="18dp" android:layout_marginTop="-18dp">
+                    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/ugcvideo_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:placeholderImage="@color/gray_80" app:roundedCornerRadius="4dp"/>
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_video_flag_small"/>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

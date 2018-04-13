@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/btn_white_round_corner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="10dp">
+        <Button android:textSize="@dimen/content" android:id="@+id/takephoto" android:background="@drawable/transparent_to_gray_selector_corner" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/avatar_eidt_camera"/>
+        <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="2px"/>
+        <Button android:textSize="@dimen/content" android:id="@+id/album" android:background="@drawable/transparent_to_gray_selector_corner" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/avatar_eidt_album"/>
+    </LinearLayout>
+    <Button android:textSize="@dimen/content" android:textColor="@color/red" android:id="@+id/sheet_bt_cancel" android:background="@drawable/btn_white_to_gray_round_corner" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="@string/setting_cancel"/>
+</LinearLayout>

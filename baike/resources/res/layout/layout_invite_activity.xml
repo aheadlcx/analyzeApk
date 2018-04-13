@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg">
+    <qsbk.app.widget.PtrLayout android:id="@+id/ptr" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listview" android:scrollbars="vertical" android:fadingEdge="none" android:saveEnabled="true" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:drawSelectorOnTop="true" android:scrollingCache="true" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="false" style="?attr/xlistview"/>
+    </qsbk.app.widget.PtrLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/tips_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fail_img"/>
+        <TextView android:textSize="14dp" android:textColor="#969696" android:id="@+id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="加载失败"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/selected_group" android:background="#e6000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <com.meetme.android.horizontallistview.HorizontalListView android:id="@+id/avatar_list" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="18dp" android:textColor="#ffba15" android:gravity="center" android:id="@+id/invite_button" android:paddingLeft="15dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="邀请"/>
+    </LinearLayout>
+</RelativeLayout>

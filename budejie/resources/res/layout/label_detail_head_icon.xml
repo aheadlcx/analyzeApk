@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/label_detail_head_layout" android:background="?attr/window_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+    <LinearLayout android:orientation="horizontal" android:background="?attr/list_item_bg" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="75dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/user_layout1" android:visibility="invisible" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_icon1" android:layout_width="@dimen/label_detail_head_icon_wh" android:layout_height="@dimen/label_detail_head_icon_wh" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/label_detail_default_icon"/>
+                <TextView android:id="@+id/user_ranking1" android:background="@drawable/user_ranking_one" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp"/>
+                <TextView android:gravity="center" android:id="@+id/user_v1" android:background="?attr/list_item_user_v" android:visibility="gone" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="35dp" android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="10sp" android:textColor="#888888" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/user_layout2" android:visibility="invisible" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_icon2" android:layout_width="@dimen/label_detail_head_icon_wh" android:layout_height="@dimen/label_detail_head_icon_wh" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/label_detail_default_icon"/>
+                <TextView android:id="@+id/user_ranking2" android:background="@drawable/user_ranking_one" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp"/>
+                <TextView android:gravity="center" android:id="@+id/user_v2" android:background="?attr/list_item_user_v" android:visibility="gone" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="35dp" android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="10sp" android:textColor="#888888" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/user_layout3" android:visibility="invisible" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_icon3" android:layout_width="@dimen/label_detail_head_icon_wh" android:layout_height="@dimen/label_detail_head_icon_wh" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/label_detail_default_icon"/>
+                <TextView android:id="@+id/user_ranking3" android:background="@drawable/user_ranking_one" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp"/>
+                <TextView android:gravity="center" android:id="@+id/user_v3" android:background="?attr/list_item_user_v" android:visibility="gone" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="35dp" android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="10sp" android:textColor="#888888" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_name3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/user_layout4" android:visibility="invisible" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_icon4" android:layout_width="@dimen/label_detail_head_icon_wh" android:layout_height="@dimen/label_detail_head_icon_wh" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/label_detail_default_icon"/>
+                <TextView android:id="@+id/user_ranking4" android:background="@drawable/user_ranking_one" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp"/>
+                <TextView android:gravity="center" android:id="@+id/user_v4" android:background="?attr/list_item_user_v" android:visibility="gone" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="35dp" android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="10sp" android:textColor="#888888" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_name4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/user_layout5" android:visibility="invisible" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_icon5" android:layout_width="@dimen/label_detail_head_icon_wh" android:layout_height="@dimen/label_detail_head_icon_wh" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/label_detail_default_icon"/>
+                <TextView android:id="@+id/user_ranking5" android:background="@drawable/user_ranking_one" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp"/>
+                <TextView android:gravity="center" android:id="@+id/user_v5" android:background="?attr/list_item_user_v" android:visibility="gone" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="35dp" android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="10sp" android:textColor="#888888" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_name5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/user_layout6" android:visibility="invisible" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_icon6" android:layout_width="@dimen/label_detail_head_icon_wh" android:layout_height="@dimen/label_detail_head_icon_wh" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/label_detail_default_icon"/>
+                <TextView android:id="@+id/user_ranking6" android:background="@drawable/user_ranking_one" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp"/>
+                <TextView android:gravity="center" android:id="@+id/user_v6" android:background="?attr/list_item_user_v" android:visibility="gone" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="35dp" android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="10sp" android:textColor="#888888" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_name6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/user_layout7" android:visibility="invisible" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_icon7" android:layout_width="@dimen/label_detail_head_icon_wh" android:layout_height="@dimen/label_detail_head_icon_wh" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/label_detail_default_icon"/>
+                <TextView android:id="@+id/user_ranking7" android:background="@drawable/user_ranking_one" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp"/>
+                <TextView android:gravity="center" android:id="@+id/user_v7" android:background="?attr/list_item_user_v" android:visibility="gone" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="35dp" android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="10sp" android:textColor="#888888" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_name7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

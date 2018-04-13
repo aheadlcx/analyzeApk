@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="?attr/topic_bg" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="30dp"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/topic_icon" android:layout_width="@dimen/large_user_icon" android:layout_height="@dimen/large_user_icon" android:layout_marginLeft="17dp" android:src="@drawable/circle_topic_default" app:actualImageScaleType="6" app:roundAsCircle="false" app:roundedCornerRadius="6dp"/>
+    <TextView android:textSize="@dimen/content" android:textColor="?attr/topic_title_color" android:ellipsize="end" android:id="@+id/topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="20dp" android:singleLine="true" android:drawablePadding="5dp" android:layout_toRightOf="@+id/topic_icon" android:layout_alignBottom="@+id/topic_icon"/>
+    <RelativeLayout android:id="@+id/header_icon_relativelayout" android:background="?attr/topic_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/topic_icon">
+        <TextView android:textSize="12dp" android:textColor="?attr/topic_normal_color" android:gravity="center_vertical" android:id="@+id/topic_total" android:paddingLeft="17dp" android:layout_width="wrap_content" android:layout_height="40dp"/>
+        <TextView android:textSize="12dp" android:textColor="?attr/topic_normal_color" android:gravity="center_vertical" android:id="@+id/topic_today" android:paddingLeft="24dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_toRightOf="@+id/topic_total" android:layout_alignTop="@+id/topic_total"/>
+        <TextView android:textSize="12dp" android:textColor="?attr/topic_normal_color" android:gravity="center_vertical" android:id="@+id/master_nick" android:paddingLeft="5dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="40dp" android:text="haya" android:layout_alignTop="@+id/topic_total" android:layout_alignParentRight="true"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/master_avatar" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="9dp" android:layout_toLeftOf="@+id/master_nick" android:layout_alignTop="@+id/topic_total" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+        <TextView android:textSize="12dp" android:textColor="?attr/topic_focus_color" android:gravity="center" android:id="@+id/apply_for_master" android:background="?attr/topic_focus_bg" android:layout_width="60dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:layout_marginRight="15dp" android:text="申请题主" android:layout_alignTop="@+id/topic_total" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/topic_intro_layout" android:paddingLeft="17dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+            <TextView android:textSize="14dp" android:textColor="?attr/topic_content_color" android:ellipsize="end" android:id="@+id/topic_intro" android:paddingTop="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:id="@+id/topic_intro_modify" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/group_intruduce_modify" android:scaleType="centerInside"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/topic_intro_more" android:layout_width="match_parent" android:layout_height="20dp" android:layout_below="@+id/topic_intro_layout">
+            <ImageView android:id="@+id/topic_des_more_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qiuyoucircle_action" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/topic_add_intro" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="40dp">
+            <TextView android:textSize="12dp" android:textColor="?attr/topic_normal_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加话题简介" android:drawableLeft="@drawable/group_intruduce_modify" android:drawablePadding="3dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/clocked_rank_relativelayout" android:background="?attr/topic_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_below="@+id/header_icon_relativelayout">
+        <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="12dp" android:gravity="center" android:id="@+id/clocked_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/profile_item_default_margin" android:text="打卡排行榜" android:singleLine="true" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="2dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/clocked_user" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_alignParentLeft="true">
+            <FrameLayout android:id="@+id/frame" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_level_gold"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame1" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_marginLeft="12dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar1" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_level_silver"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame2" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_marginLeft="12dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar2" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_level_copper"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/topic_rank_relative_layout" android:background="?attr/topic_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="41dp" android:layout_below="@+id/clocked_rank_relativelayout">
+        <View android:id="@+id/divider" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/divider">
+            <ImageView android:id="@+id/topic_rank_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/rank_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="14dp" android:id="@+id/topic_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="天梯" android:layout_toRightOf="@+id/topic_rank_icon" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12dp" android:id="@+id/topic_rank_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/profile_item_default_margin" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="2dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

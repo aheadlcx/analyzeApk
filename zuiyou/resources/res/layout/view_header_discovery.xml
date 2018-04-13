@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlRoot" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlIndicatorContainer" android:layout_width="match_parent" android:layout_height="@dimen/divide_item_height_48" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/flCategory" android:visibility="gone" android:layout_width="match_parent" android:layout_height="38dp">
+        <android.support.v7.widget.RecyclerView android:id="@+id/id_recyclerview_horizontal" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginRight="42dp"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/ivMoreTopic" android:layout_width="48dp" android:layout_height="38dp" android:src="@drawable/img_topic_more" android:scaleType="centerCrop"/>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/viewPager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="14sp" android:textColor="#777d91" android:gravity="center" android:id="@+id/tvMoreTopic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="52dp" android:text="更多话题 >"/>
+    <View android:id="@+id/divider" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <FrameLayout android:id="@+id/flTodayArea" android:background="@drawable/img_daily_hot" android:layout_width="match_parent" android:layout_height="94dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llTodayTxtArea" android:background="@drawable/bg_today" android:layout_width="81dp" android:layout_height="38dp" android:layout_marginLeft="175dp" android:layout_marginTop="10dp">
+            <TextView android:textSize="9sp" android:textColor="#777d91" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="每日热门"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvToday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:text="1-27"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

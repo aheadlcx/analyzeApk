@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <FrameLayout android:id="@+id/nav_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <ImageView android:id="@+id/ivBack" android:layout_width="@dimen/item_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:ellipsize="middle" android:gravity="center_vertical" android:id="@+id/tvTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="创建话题" android:singleLine="true" android:maxLength="16" android:drawablePadding="@dimen/divide_space_5" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CM" android:gravity="center_vertical" android:id="@+id/tvOptionText" android:paddingLeft="15dp" android:paddingRight="@dimen/left_right_common_distance" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="创建" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/nav_bar">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/left_right_common_distance" android:paddingRight="@dimen/left_right_common_distance" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/left_right_common_distance">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/pvTopicCover" android:layout_width="86dp" android:layout_height="86dp" app:placeholderImage="@drawable/topic_cover_default" app:roundedCornerRadius="5dp" style="@style/RoundedImage"/>
+                    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/cover_crumb" android:layout_width="31dp" android:layout_height="31dp" android:src="@drawable/topic_cover_upload"/>
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/left_right_common_distance">
+                    <TextView android:textSize="@dimen/F10_text" android:textColor="@color/CT_2" android:id="@+id/tv_topic_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="话题名称"/>
+                    <EditText android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:textColorHint="@color/CT_5" android:id="@+id/etTopicName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="给话题起个响亮的名字吧" android:maxLength="14" android:imeOptions="actionDone" style="@style/EditNoBorder"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/F10_text" android:textColor="@color/CT_2" android:id="@+id/tv_focus_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="关注者"/>
+            <EditText android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:textColorHint="@color/CT_5" android:id="@+id/etFocusName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:hint="给关注者起个称号吧" android:imeOptions="actionDone" style="@style/EditNoBorder"/>
+            <TextView android:textSize="@dimen/F10_text" android:textColor="@color/CT_2" android:id="@+id/tv_topic_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="话题描述"/>
+            <EditText android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:textColorHint="@color/CT_5" android:id="@+id/etBrief" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="200个字以内" android:singleLine="false" android:maxLength="200" android:lineSpacingMultiplier="1.5" android:imeOptions="actionDone" style="@style/EditNoBorder"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="63dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:minWidth="63dp" android:layout_weight="1">
+        <qsbk.app.widget.HighlightableImageButton android:id="@+id/support" android:background="@null" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitXY" android:layout_centerInParent="true" style="?attr/article_support"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:minWidth="63dp" android:layout_weight="1">
+        <qsbk.app.widget.HighlightableImageButton android:id="@+id/unsupport" android:background="@null" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitXY" android:layout_centerInParent="true" style="?attr/article_unsupport"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/comment" android:layout_width="63dp" android:layout_height="63dp" android:src="@drawable/operation_comments" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/share" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/operation_share" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/save" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/operation_save" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

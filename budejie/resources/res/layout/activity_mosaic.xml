@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_tab_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/include_titlebar"/>
+    <LinearLayout android:gravity="center" android:id="@+id/draw_photo_view_parent" android:background="@drawable/edit_picture_bg_repeat" android:layout_width="match_parent" android:layout_height="0dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/draw_photo_view" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/button_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_mosaic_imgs" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:button="@null" android:src="@drawable/ic_mosaic_1" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_2" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_3" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_4" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_5" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_6" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_7" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_8" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_9" style="@style/img_mosaic_style"/>
+                <ImageView android:src="@drawable/ic_mosaic_10" style="@style/img_mosaic_style"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <RelativeLayout android:textColor="@drawable/selector_deal_photo_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="65dp" android:layout_marginTop="10dp" android:layout_marginRight="65dp" android:layout_centerVertical="true">
+            <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/seekbar" android:layout_centerInParent="true"/>
+            <SeekBar android:gravity="center" android:id="@+id/seekBar" android:paddingLeft="30dp" android:paddingRight="29.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@color/transparent" android:thumb="@drawable/circle_sharper" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_eraser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="72dp" android:layout_alignParentLeft="true">
+                <TextView android:textSize="12sp" android:textColor="@drawable/selector_blue_white_text" android:id="@+id/txt_eraser" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="橡皮擦"/>
+                <ImageView android:id="@+id/img_eraser" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/selector_eraser_btn"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_paint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="72dp" android:layout_alignParentRight="true">
+                <TextView android:textSize="12sp" android:textColor="@drawable/selector_blue_white_text" android:id="@+id/txt_paint" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="涂抹笔"/>
+                <ImageView android:id="@+id/img_paint" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/selector_paint_btn"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/left_right_common_distance" android:layout_marginTop="4.3dp" android:layout_marginRight="@dimen/left_right_common_distance">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/sdvCover" android:layout_width="86dp" android:layout_height="86dp" android:layout_marginLeft="13dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/RoundedImage"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/sdvCover" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/F8_text" android:textColor="@color/CT_2" android:id="@+id/tvTopicName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_6" android:gravity="left" android:id="@+id/tvMore" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1"/>
+            <cn.xiaochuankeji.tieba.ui.widget.MultipleLineEllipsisTextView android:textSize="@dimen/F10_text" android:textColor="@color/CT_4" android:id="@+id/tvTopicBrief" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:lineSpacingMultiplier="1.4"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/left_right_common_distance" android:layout_marginTop="14dp" android:layout_marginRight="@dimen/left_right_common_distance" android:layout_marginBottom="14dp">
+        <TextView android:textSize="16dp" android:textColor="@color/CW" android:gravity="center" android:id="@+id/ivFollow" android:background="@drawable/bg_selector_follow" android:layout_width="86dp" android:layout_height="27dp" android:layout_alignParentRight="true"/>
+        <cn.xiaochuankeji.tieba.ui.topic.TopicUppedMemberViewController android:id="@+id/viewUpsArea" android:layout_width="match_parent" android:layout_height="30dp" android:layout_toLeftOf="@+id/ivFollow"/>
+    </RelativeLayout>
+    <com.youth.banner.Banner android:id="@+id/banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="@dimen/left_right_common_distance" android:layout_marginRight="@dimen/left_right_common_distance" android:layout_marginBottom="18dp" app:indicator_width="5dp" app:indicator_height="5dp" app:indicator_drawable_selected="@drawable/switcher_indicator_select" app:indicator_drawable_unselected="@drawable/switcher_indicator_unselect"/>
+    <View android:id="@+id/head_divider" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="8.7dp"/>
+</LinearLayout>

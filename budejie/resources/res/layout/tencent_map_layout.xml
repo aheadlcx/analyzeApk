@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tencent.tencentmap.mapsdk.map.MapView android:id="@android:id/widget_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <Button android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@android:id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@android:id/title" android:background="#7f000000" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center" android:id="@android:id/icon" android:background="@drawable/chat_position" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

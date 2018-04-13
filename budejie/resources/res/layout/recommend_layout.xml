@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/recommend_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_alignParentTop="true">
+    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/recommend_user_avatar" android:layout_width="@dimen/width_55" android:layout_height="@dimen/width_55" android:src="@drawable/head_portrait" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/recommend_follow_layout" android:layout_toRightOf="@+id/recommend_user_avatar" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/recommend_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true"/>
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/iv_members_mark" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/recommend_nickname" android:layout_alignTop="@+id/recommend_nickname" android:layout_alignBottom="@+id/recommend_nickname"/>
+        <TextView android:textSize="12sp" android:textColor="#5d5d5d" android:id="@+id/recommend_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0个帖子" android:singleLine="true" android:layout_below="@+id/recommend_nickname" android:layout_alignLeft="@+id/recommend_nickname"/>
+        <TextView android:textSize="12sp" android:textColor="#929292" android:id="@+id/recommend_fans_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0关注" android:singleLine="true" android:layout_below="@+id/recommend_fans_count" android:layout_alignLeft="@+id/recommend_fans_count"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/recommend_follow_layout" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/recommend_follow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/recommend_follow_img" android:background="@drawable/follow" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textColor="?attr/theme_red_color" android:id="@+id/recommend_folow_text" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加关注"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/recommend_follow_loading" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/recommend_followed" android:visibility="gone" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/recommend_followed_img" android:background="@drawable/followed" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/recommend_folowed_text" android:paddingTop="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已关注"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

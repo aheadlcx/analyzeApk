@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:id="@+id/rootViewVoice" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlVoiceInput" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="166dp">
+        <cn.xiaochuankeji.tieba.ui.danmaku.VoiceInputAnimationView android:id="@+id/ivVoiceAnimation" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/ivVoiceInput" android:visibility="visible" android:layout_width="66dp" android:layout_height="66dp" android:layout_marginTop="9dp" android:src="@drawable/img_pressed_record" android:layout_centerInParent="true"/>
+        <TextView android:textSize="18sp" android:textColor="#b7bbc5" android:id="@+id/ivVoiceTimeCounter" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_above="@+id/ivVoiceInput" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlVoiceInputFinished" android:visibility="gone" android:layout_width="match_parent" android:layout_height="166dp">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlPlayVoice" android:clickable="true" android:layout_width="209dp" android:layout_height="35dp" android:layout_marginTop="27dp" android:layout_centerHorizontal="true">
+            <cn.xiaochuankeji.tieba.ui.comment.soundnewvisual.SoundNewVisualView android:id="@+id/ivVoiceInputPlay" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="#9c9ea9" android:ellipsize="end" android:gravity="center" android:id="@+id/label_recognizer_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="16dp" android:layout_marginRight="25dp" android:maxLines="2" android:layout_below="@+id/rlPlayVoice" android:lineSpacingExtra="5dp"/>
+        <TextView android:textSize="15sp" android:textColor="#888a97" android:gravity="center" android:id="@+id/btn_voice_rerecord" android:background="@drawable/bg_reset_voice" android:layout_width="88dp" android:layout_height="34dp" android:layout_marginBottom="25dp" android:text="重录" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <View android:background="@color/CL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginTop="44dp"/>
+</RelativeLayout>

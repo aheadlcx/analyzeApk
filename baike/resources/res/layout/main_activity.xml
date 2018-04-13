@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg">
+    <qsbk.app.widget.TabPanel android:id="@+id/tabPanel" android:background="?attr/tab_panel_bg" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/divider" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_above="@+id/tabPanel"/>
+    <FrameLayout android:id="@+id/container" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/divider"/>
+    <qsbk.app.widget.QBImageView android:id="@+id/mid_icon" android:layout_width="62dp" android:layout_height="62dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <SurfaceView android:id="@+id/hack_surface_view" android:visibility="gone" android:layout_width="0px" android:layout_height="0px"/>
+</RelativeLayout>

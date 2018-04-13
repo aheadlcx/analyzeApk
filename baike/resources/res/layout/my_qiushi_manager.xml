@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0px" style="?attr/main_bg"/>
+        <ImageView android:id="@+id/award_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

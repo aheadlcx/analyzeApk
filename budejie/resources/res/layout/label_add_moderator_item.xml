@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+    <com.budejie.www.activity.label.view.SwipeLayout android:id="@+id/swipe_layout" android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/item_layout" android:layout_width="match_parent" android:layout_height="52dp">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/portrait_image_view" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="@dimen/post_margin_left" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="?attr/label_list_item_name" android:id="@+id/user_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/portrait_image_view" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/delete_deputy_button" android:background="#000" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="100dp" android:layout_height="52dp" android:text="@string/label_delete_deputy_moderator"/>
+    </com.budejie.www.activity.label.view.SwipeLayout>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

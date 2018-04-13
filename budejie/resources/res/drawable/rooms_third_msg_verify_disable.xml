@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/get_verify_button_solid_disable"/>
+    <stroke android:width="0.7dp" android:color="@color/get_verify_button_stroke_disable"/>
+    <corners android:radius="6dp"/>
+</shape>

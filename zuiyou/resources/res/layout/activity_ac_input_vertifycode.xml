@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navTitleText="输入验证码" app:navNeedBack="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="top" android:orientation="vertical" android:id="@+id/vgData" android:paddingLeft="34dp" android:paddingRight="34dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navbar_height">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="34dp">
+            <EditText android:id="@+id/etVerificationCode" android:layout_width="match_parent" android:layout_height="30dp" android:hint="请输入验证码" android:inputType="number" style="@style/CommonEdit"/>
+            <TextView android:textSize="14sp" android:textColor="@color/CM" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/bnResend" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重新发送"/>
+        </FrameLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/text_hint" android:gravity="center_horizontal" android:id="@+id/tvDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <Button android:textSize="@dimen/F9_text" android:textColor="@color/CB_1" android:id="@+id/bnNext" android:background="@drawable/login_blue_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="下一步"/>
+    </LinearLayout>
+</FrameLayout>

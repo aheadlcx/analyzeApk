@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/single_article_cmt_item_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.SizeNotifierRelativeLayout android:orientation="vertical" android:id="@+id/root" android:saveEnabled="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/emotions" android:background="?attr/emotion_main_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/emotion_container_height" android:layout_alignParentBottom="true">
+            <qsbk.app.im.emotion.EmotionViewPager android:layout_gravity="center_vertical" android:id="@+id/emotion_viewpager" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <qsbk.app.widget.DotView android:gravity="center_horizontal" android:id="@+id/emotion_dotview" android:layout_width="match_parent" android:layout_height="10dp" app:dot_count="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/addCmtLayout" android:background="?attr/singleArticleBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_above="@+id/emotions" android:layout_alignWithParentIfMissing="true">
+            <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+            <ImageButton android:layout_gravity="center_vertical" android:id="@+id/send_img" android:background="@drawable/button_on_press" android:padding="5dp" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="@dimen/padding_small" style="?attr/image_send_selector"/>
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="@dimen/padding_small">
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/sendEmotion" android:background="@drawable/button_on_press" android:padding="5dp" android:layout_width="34dp" android:layout_height="34dp"/>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/sendKeyboard" android:background="@drawable/button_on_press" android:padding="5dp" android:visibility="gone" android:layout_width="34dp" android:layout_height="34dp"/>
+            </FrameLayout>
+            <qsbk.app.widget.QiushiEmotionEditText android:id="@+id/addCmtEditText" android:background="@null" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:hint="@string/comment_input_hint" android:layout_weight="1" android:lineSpacingExtra="2dp" android:inputType="text" android:imeOptions="actionSend" app:emotionSize="20dp" style="?attr/edittext_comment"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/padding_small">
+                <TextView android:textSize="16sp" android:textColor="#e14123" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/exceed_words" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/send" android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="match_parent" style="?attr/btnSend"/>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="?attr/dividerColor01" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_large" android:layout_above="@+id/addCmtLayout"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/divider" android:layout_alignParentTop="true">
+            <qsbk.app.widget.AutoLoadMoreListView android:id="@+id/xListView" android:fadingEdge="none" android:saveEnabled="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:drawSelectorOnTop="true" android:scrollingCache="false" android:cacheColorHint="@color/transparent" android:divider="#00000000" android:dividerHeight="0dp" android:headerDividersEnabled="true" android:footerDividersEnabled="true" style="?attr/xlistview"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/to_reply_layout" android:background="#e6528bff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginBottom="0dp" android:layout_above="@+id/addCmtLayout">
+            <TextView android:textSize="13dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/to_reply_info" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingRight="20dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true"/>
+            <TextView android:textSize="13dp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/to_reply_close" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="✕" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="136dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/tips_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fail_img"/>
+            <TextView android:textSize="14dp" android:textColor="#969696" android:id="@+id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="糗事不存在"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/comment_img_container" android:background="@r$color/alpha_black_mask_20_percent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/to_reply_layout">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/comment_img" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp" android:layout_above="@+id/addCmtLayout"/>
+            <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/comment_img_clear" android:background="@drawable/shape_yellow_oval" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="56dp" android:layout_marginBottom="56dp" android:src="@drawable/ic_event_close" android:scaleType="centerInside"/>
+        </FrameLayout>
+        <SurfaceView android:id="@+id/hack_surface_view" android:visibility="gone" android:layout_width="0px" android:layout_height="0px"/>
+    </qsbk.app.widget.SizeNotifierRelativeLayout>
+</RelativeLayout>

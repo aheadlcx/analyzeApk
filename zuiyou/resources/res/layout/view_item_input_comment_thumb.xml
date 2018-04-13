@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="75dp" android:layout_height="88dp">
+    <View android:background="@color/transparent" android:layout_width="75dp" android:layout_height="88dp"/>
+    <FrameLayout android:layout_width="62dp" android:layout_height="62dp" android:layout_marginTop="13dp" android:layout_marginBottom="13dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/ivThumb" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:placeholderImage="@color/gray_80" app:roundedCornerRadius="4dp"/>
+        <TextView android:textSize="9dp" android:textColor="@color/white" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/tvNumber" android:background="@drawable/bg_comment_image_number" android:paddingLeft="5dp" android:paddingTop="3dp" android:paddingRight="5dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ivVideoFlag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_input_comment_video_flag"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/ivDelete" android:padding="5dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/icon_delete_picture"/>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar" android:layout_width="52.2dp" android:layout_height="52.2dp" android:layout_marginTop="18dp" android:layout_centerHorizontal="true" app:actualImageScaleType="2" app:roundAsCircle="true"/>
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:id="@+id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="1" android:layout_below="@+id/avatar" android:layout_centerHorizontal="true"/>
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F5_text" android:textColor="@color/CW" android:gravity="center" android:id="@+id/follow" android:background="@drawable/bg_selector_follow" android:layout_width="48.7dp" android:layout_height="21.8dp" android:layout_marginTop="6dp" android:layout_below="@+id/nickname" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

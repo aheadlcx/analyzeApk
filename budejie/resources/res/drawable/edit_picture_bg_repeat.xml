@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android" android:src="@drawable/edit_picture_bg" android:dither="true" android:tileMode="repeat"/>

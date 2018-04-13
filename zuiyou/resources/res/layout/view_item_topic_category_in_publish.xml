@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="43dp">
+    <TextView android:textSize="13sp" android:textColor="@color/topic_text_color_in_publish" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvPgcCategoryName" android:background="@drawable/selector_topic_category" android:layout_width="match_parent" android:layout_height="match_parent" android:text="推荐"/>
+    <View android:layout_gravity="center_vertical" android:id="@+id/vFlag" android:background="@color/CM" android:visibility="gone" android:layout_width="3dp" android:layout_height="22dp"/>
+</FrameLayout>

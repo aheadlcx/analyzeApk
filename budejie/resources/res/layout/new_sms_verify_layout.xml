@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/traceroute_rootview" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+            <TextView android:gravity="center" android:id="@+id/county_num" android:background="@drawable/input_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+            <com.budejie.www.widget.erroredittext.SetErrorAbleEditText android:textSize="@dimen/font_18" android:textColor="@color/input_phone_number" android:id="@+id/input_phone_number" android:background="@drawable/input_bg" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone_input_hint" android:singleLine="true" android:maxLength="11" android:layout_toRightOf="@+id/county_num" android:layout_centerVertical="true" android:inputType="phone"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:gravity="center" android:id="@+id/verify_num_str" android:background="@drawable/input_psw" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.budejie.www.widget.erroredittext.SetErrorAbleEditText android:textSize="@dimen/font_18" android:textColor="@color/input_phone_number" android:id="@+id/input_verify_num" android:background="@drawable/input_bg" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone_edit_hint_psw" android:singleLine="true" android:maxLength="11" android:inputType="textPassword"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="100dp">
+            <ImageView android:id="@+id/next_left" android:background="@drawable/new_next_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/to_next_btn" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/to_next_btn" android:background="@drawable/default_next_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/next_right" android:background="@drawable/new_next_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/to_next_btn" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

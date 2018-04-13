@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/option_container" android:layout_width="match_parent" android:layout_height="51dp" android:layout_alignParentBottom="true" style="?attr/article_item_bg">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="10dp" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="6dp" android:layout_height="6dp" android:src="@drawable/ic_green_circle" android:layout_alignRight="@+id/avatar" android:layout_alignBottom="@+id/avatar"/>
+        <Button android:textSize="12sp" android:textColor="?attr/game_bt_text_color" android:gravity="center" android:id="@+id/add" android:background="?attr/game_bt_bg" android:padding="0dp" android:layout_width="46dp" android:layout_height="22dp" android:layout_marginRight="10dp" android:text="加入" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="10sp" android:textColor="?attr/hot_comment" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/friend" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:maxLines="1" android:layout_toLeftOf="@+id/add" android:layout_toRightOf="@+id/avatar"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/bg_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/option_container">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:background="@drawable/group_recommend_mask" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="8dp" android:maxLines="1" android:layout_alignBottom="@+id/bg_container"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="4dp" android:maxLines="1" android:layout_above="@+id/content"/>
+</RelativeLayout>

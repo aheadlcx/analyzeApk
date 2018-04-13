@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_avatar" android:layout_width="49dp" android:layout_height="49dp">
+        <ImageView android:id="@+id/iv_avatar_bg" android:layout_width="49dp" android:layout_height="49dp" android:src="@drawable/pinfo_avatar_noshadow_bg" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@null"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_centerInParent="true" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+    </RelativeLayout>
+</LinearLayout>

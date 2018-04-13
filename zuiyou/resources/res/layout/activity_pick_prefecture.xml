@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <FrameLayout android:gravity="bottom" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <ImageView android:id="@+id/back" android:layout_width="@dimen/item_height" android:layout_height="@dimen/item_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+        <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:ellipsize="middle" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/item_height" android:singleLine="true" android:maxLength="16" android:drawablePadding="@dimen/divide_space_5"/>
+    </FrameLayout>
+    <android.support.v7.widget.AppCompatEditText android:textSize="13dp" android:textColor="@color/CT_2" android:textColorHint="@color/CT_5" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/search" android:background="@drawable/index_bg_search" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:layout_marginBottom="4dp" android:hint="搜索地区" android:drawableLeft="@drawable/ic_search" android:drawablePadding="12dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.widget.indexablerv.IndexLayout android:id="@+id/indexLayout" android:layout_width="match_parent" android:layout_height="match_parent" app:indexBar_textSpace="4dp" app:indexBar_background="#08000000" app:indexBar_layout_width="24dp"/>
+        <fragment android:id="@+id/search_fragment" android:layout_width="match_parent" android:layout_height="match_parent" class="cn.xiaochuankeji.tieba.ui.picker.SearchFragment"/>
+        <FrameLayout android:id="@+id/progress" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="56dp" android:layout_height="56dp"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

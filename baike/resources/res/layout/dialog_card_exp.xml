@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_corner_white_8dp" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingBottom="38dp" android:layout_width="285dp" android:layout_height="wrap_content" android:layout_marginTop="55dp">
+        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#7f7f7f" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:text="@string/family_card_success"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#41364f" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_exp" android:padding="12dp" android:layout_width="186dp" android:layout_height="45dp" android:layout_marginTop="7dp" android:text="@string/family_card_get_exp" android:maxLength="50"/>
+        <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#7f7f7f" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/family_card_hint"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="110dp" android:layout_height="110dp" android:src="@drawable/family_card"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="65dp" android:layout_marginRight="50dp" android:src="@drawable/family_close"/>
+</FrameLayout>

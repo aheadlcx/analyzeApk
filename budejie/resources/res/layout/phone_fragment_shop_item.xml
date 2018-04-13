@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="vertical" android:background="@drawable/rooms_third_shop_vip_purple_button_bg" android:layout_width="match_parent" android:layout_height="40dp">
+    <TextView android:textSize="14sp" android:textColor="#ffa13edc" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100000六币"/>
+    <TextView android:textSize="12sp" android:textColor="#ffa13edc" android:id="@+id/period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-个月"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/list_item_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="@dimen/font_17" android:textColor="?attr/item_content_text_color" android:id="@+id/phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_17" android:textColor="?attr/item_content_text_color" android:id="@+id/rightText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已经注册过百思不得姐"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_17" android:textColor="?attr/item_content_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/belowText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="了，请直接登录"/>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="@dimen/margin_20" android:textColor="?attr/item_content_text_color" android:gravity="center" android:id="@+id/change" android:layout_width="0dp" android:layout_height="wrap_content" android:text="修改" android:layout_weight="1"/>
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="@dimen/divide_line_height" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/margin_20" android:textColor="?attr/item_content_text_color" android:gravity="center" android:id="@+id/confirm" android:layout_width="0dp" android:layout_height="wrap_content" android:text="确定" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

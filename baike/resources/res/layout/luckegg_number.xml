@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <qsbk.app.live.widget.NumberAnimTextView android:textSize="@dimen/live_text_30sp" android:textStyle="bold" android:textColor="@color/yellow_fddb2e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="×"/>
+    <qsbk.app.live.widget.NumberAnimTextView android:textSize="@dimen/live_text_30sp" android:textStyle="bold" android:textColor="@color/yellow_fddb2e" android:id="@+id/tv_luckyegg_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0"/>
+</LinearLayout>

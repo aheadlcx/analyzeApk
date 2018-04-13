@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="13sp" android:textColor="#747474" android:gravity="center" android:id="@+id/ttg_tv_list_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp" android:text="@string/special_top_hint"/>
+    <View android:id="@+id/ttg_tv_list_title_line" android:background="@color/ttg_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/tv_test_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tv_list_title" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/ttg_line" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" style="@style/TtgVLine"/>
+        <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="13sp" android:gravity="center" android:background="@android:color/white" android:paddingLeft="@dimen/spacing_v" android:layout_width="match_parent" android:layout_height="32dp" android:text="以下商品优惠已结束"/>
+        <TextView android:id="@+id/ttg_fenge_bottom" android:visibility="visible" android:layout_height="0.5dp" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" style="@style/TtgVLine"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ly_text" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="7dp">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_session" android:layout_width="140dp" android:layout_height="140dp" android:scaleType="fitCenter"/>
+            <ImageView android:id="@+id/iv_act_icon" android:visibility="gone" android:layout_width="140dp" android:layout_height="140dp"/>
+            <TextView android:textSize="11sp" android:textColor="@android:color/white" android:layout_gravity="bottom" android:id="@+id/tv_label_icon" android:background="@drawable/ttg_main_label2" android:paddingLeft="8dp" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginBottom="2dp" android:maxWidth="140dp" android:text="优质" android:lines="1"/>
+        </FrameLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/spacing_v" android:layout_marginTop="7dp">
+            <cn.tatagou.sdk.view.IconTextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/ttg_tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="2" android:layout_alignParentTop="true" android:lineSpacingMultiplier="1.2"/>
+            <LinearLayout android:gravity="bottom" android:id="@+id/ly_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_below="@+id/ttg_tv_title">
+                <TextView android:textSize="23sp" android:textColor="@color/price_font" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0" android:includeFontPadding="false"/>
+                <TextView android:textSize="15sp" android:textColor="@color/ttg_bdbdbd" android:id="@+id/tv_original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_left" android:text="￥25" android:includeFontPadding="false"/>
+                <TextView android:textSize="15sp" android:textColor="@color/ttg_bdbdbd" android:id="@+id/tv_no_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="包邮"/>
+                <TextView android:textSize="13sp" android:textColor="@color/price_font" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ttg_tv_badges" android:background="@drawable/shape_red_label" android:paddingLeft="2dp" android:paddingRight="2dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="拍立减" android:lines="1"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="12sp" android:textColor="@color/ttg_bdbdbd" android:id="@+id/tv_sellCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="已售0" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/ttg_bdbdbd" android:id="@+id/ttg_icon_product" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ttg_ly_banner" android:paddingTop="7dp" android:paddingBottom="7dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_banner" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:minHeight="100dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tv_first_line" android:visibility="visible" android:layout_height="0.5dp" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" android:layout_marginBottom="1dp" style="@style/TtgVLine"/>
+    <cn.tatagou.sdk.view.ThemeIconFontTextView android:textSize="14sp" android:gravity="center" android:id="@+id/ttg_tv_rcmm_refresh" android:background="@drawable/shape_top_bottom_btn_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="0.5dp" android:text="@string/ttg_icon_refresh"/>
+</LinearLayout>

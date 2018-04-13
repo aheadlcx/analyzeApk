@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="18dp" android:layout_width="66dp" android:layout_height="89dp">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/wivThumb" android:layout_width="28dp" android:layout_height="28dp" android:layout_centerHorizontal="true" app:actualImageScaleType="5"/>
+    <TextView android:textSize="13sp" android:textColor="@color/selector_music_category" android:gravity="center" android:id="@+id/tvCategoryName" android:layout_width="66dp" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="热门" android:layout_below="@+id/wivThumb"/>
+    <View android:id="@+id/divider" android:background="#ffffff" android:visibility="invisible" android:layout_width="21dp" android:layout_height="1dp" android:layout_marginBottom="7dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

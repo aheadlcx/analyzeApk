@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="320dp" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:textColor="@android:color/holo_blue_light" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="请输入备注名"/>
+    <View android:id="@+id/head_divider" android:background="@android:color/holo_blue_light" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:minHeight="30dp">
+        <EditText android:textSize="18dp" android:textColor="#3b3d42" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/reset_remark" android:background="#00000000" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="8" android:layout_weight="9">
+            <requestFocus/>
+        </EditText>
+        <TextView android:textSize="12dp" android:textColor="#7f7f7f" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/left_count" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="8" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="47dp">
+        <TextView android:textSize="18dp" android:textColor="#3b3d42" android:gravity="center" android:id="@+id/cancel" android:layout_width="0dp" android:layout_height="match_parent" android:text="取消" android:layout_weight="1"/>
+        <View android:id="@+id/button_divider" android:background="#ededed" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="18dp" android:textColor="#3b3d42" android:gravity="center" android:id="@+id/submit" android:layout_width="0dp" android:layout_height="match_parent" android:text="确定" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

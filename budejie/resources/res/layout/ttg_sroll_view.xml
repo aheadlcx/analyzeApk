@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fy_scroll" android:background="@color/bg_prompt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_default" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <android.support.v4.view.ViewPager android:id="@+id/vp_img" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/ly_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_v" android:layout_marginBottom="@dimen/bottom_border"/>
+    </FrameLayout>
+</LinearLayout>

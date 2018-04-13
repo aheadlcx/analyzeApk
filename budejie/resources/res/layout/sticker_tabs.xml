@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/rl_rdo_container" android:background="#62534b" android:layout_width="match_parent" android:layout_height="50dp" android:baselineAligned="false">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/line" android:layout_width="match_parent" android:layout_height="47dp">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rdo_grooup" android:layout_width="match_parent" android:layout_height="47dp"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginBottom="4dp">
+        <ImageView android:id="@+id/img_cursor" android:layout_width="0dp" android:layout_height="0dp" android:src="#4694ed" android:scaleType="matrix"/>
+    </RelativeLayout>
+</LinearLayout>

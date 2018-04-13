@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.curtain.FloatVideoRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/curtain_root_layout" android:background="#ededed" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/navigation_height">
+    <RelativeLayout android:id="@+id/activity_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+        <include android:id="@+id/topLayout" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+        <com.budejie.www.widget.XListView android:id="@+id/listview" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@android:color/transparent" android:layout_below="@+id/topLayout"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_width="@dimen/page_load_progress_width" android:layout_height="@dimen/page_load_progress_width" android:indeterminateDrawable="@drawable/progress_bar_drawable" style="?android:attr/progressBarStyleSmall"/>
+            <TextView android:textSize="18sp" android:textColor="#ffaaaaaa" android:id="@+id/tv_load" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/float_video_layout"/>
+</com.budejie.www.widget.curtain.FloatVideoRootLayout>

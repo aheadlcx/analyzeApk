@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="73dp">
+    <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/img_no_follow_ugcvideo_left"/>
+    <ImageView android:id="@+id/ivAnim" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/anim_ugcvideo_empty_review" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/img_no_follow_ugcvideo_right"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="#dddddd" android:layout_width="0dp" android:layout_height="0.5dp" android:layout_marginLeft="57dp" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:textColor="#c3c3c9" android:id="@+id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="新消息分割线"/>
+    <View android:background="#dddddd" android:layout_width="0dp" android:layout_height="0.5dp" android:layout_marginRight="57dp" android:layout_weight="1"/>
+</LinearLayout>

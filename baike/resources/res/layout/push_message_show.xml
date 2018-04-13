@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/oneProfileBg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <qsbk.app.widget.CommonWebView android:scrollbarThumbVertical="@drawable/wb_scrollbar" android:id="@+id/about" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/fl_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

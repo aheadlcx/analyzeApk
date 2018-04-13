@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootview" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg">
+    <qsbk.app.widget.QiushiTopicNavLayout android:orientation="vertical" android:id="@+id/qiushi_topicNavLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/id_qiushi_topic_topview" android:background="#4400ff00" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <qsbk.app.widget.QiushiTopicHeader android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <qsbk.app.widget.PagerSlidingTabStrip android:textSize="14sp" android:id="@+id/id_qiushi_topic_indicator" android:layout_width="match_parent" android:layout_height="48dp" app:pstsDividerColor="#00000000" app:pstsTabPaddingLeftRight="10dp" app:pstsShouldExpand="true" style="?attr/psts"/>
+        <android.support.v4.view.ViewPager android:id="@+id/id_qiushi_topic_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </qsbk.app.widget.QiushiTopicNavLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/topic_bar" android:background="?attr/qiuyoucircle_topic_bar_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <TextView android:ellipsize="end" android:id="@+id/topic_bar_text" android:background="#00000000" android:paddingLeft="20dp" android:paddingTop="6dp" android:paddingRight="20dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:hint="我有酒，你有糗事吗？" android:maxLines="2" android:layout_centerInParent="true" style="?attr/edittext_comment"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/custom_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/actionbar_share" android:layout_width="48dp" android:layout_height="@dimen/abc_action_bar_default_height" android:src="@drawable/icon_share" android:scaleType="center" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/back" android:background="@drawable/topic_actionbar_btn" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height" android:singleLine="true" android:drawableLeft="@drawable/ic_arrow_left_padding" android:drawablePadding="2dp" android:layout_toLeftOf="@+id/actionbar_share"/>
+    </RelativeLayout>
+</RelativeLayout>

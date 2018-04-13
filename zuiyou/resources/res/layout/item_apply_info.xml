@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="63dp">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar_applier" android:layout_width="39dp" android:layout_height="39dp" android:layout_marginLeft="17dp" android:layout_centerVertical="true" app:placeholderImage="@drawable/default_avatar" app:roundAsCircle="true"/>
+    <TextView android:textSize="13dp" android:textColor="@color/CT_2" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_toRightOf="@+id/avatar_applier" android:layout_centerVertical="true"/>
+    <Button android:textSize="12dp" android:textColor="@color/CT_2" android:id="@+id/btn_deny" android:background="@drawable/bg_button_fire" android:layout_width="44dp" android:layout_height="24dp" android:layout_marginRight="17dp" android:text="拒绝" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <Button android:textSize="12dp" android:textColor="@color/CB" android:id="@+id/btn_agree" android:background="@drawable/bg_button_agree" android:layout_width="44dp" android:layout_height="24dp" android:layout_marginRight="13dp" android:text="通过" android:layout_toLeftOf="@+id/btn_deny" android:layout_centerVertical="true"/>
+    <View android:id="@+id/split_line" android:background="@color/list_refresh_bg" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

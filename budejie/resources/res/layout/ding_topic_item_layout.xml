@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/top" android:background="?attr/common_press" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@+id/relayout" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="5dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.androidex.widget.RoundAsyncImageView android:id="@+id/writerProfile" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerCrop"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_toLeftOf="@+id/bt_layout" android:layout_toRightOf="@+id/relayout" android:layout_centerVertical="true">
+            <TextView android:id="@+id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" style="@style/follow_text_2_style"/>
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/iv_members_mark" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/nickname" android:layout_alignTop="@+id/nickname" android:layout_alignBottom="@+id/nickname"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/nickname">
+                <TextView android:id="@+id/fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/follow_text_3_style"/>
+                <TextView android:id="@+id/tiezi_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" style="@style/follow_text_3_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/bt_layout" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/font_14" android:textColor="#bbbbbb" android:gravity="center" android:id="@+id/cancel_btn" android:background="?attr/follows_shape_item_unadd_bg" android:layout_width="50dp" android:layout_height="24dp" android:singleLine="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="?attr/theme_red_color" android:gravity="center" android:id="@+id/add_btn" android:background="?attr/follows_shape_item_bg" android:layout_width="50dp" android:layout_height="24dp" android:singleLine="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@+id/divider_h_view1" android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_below="@+id/top"/>
+</RelativeLayout>

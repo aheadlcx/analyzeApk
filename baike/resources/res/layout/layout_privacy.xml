@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/security_safe_divider" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <qsbk.app.widget.NotificationSettingItem android:id="@+id/network_publish_dynamic" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="互联网屏蔽自己的糗百动态"/>
+    <LinearLayout android:orientation="horizontal" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="打开屏蔽开关需1小时左右生效，百度快照信息是由百度公司决定生效时间"/>
+    </LinearLayout>
+    <qsbk.app.widget.SettingItem android:id="@+id/black_list_manage" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="黑名单" SettingItem:showDivide="false"/>
+</LinearLayout>

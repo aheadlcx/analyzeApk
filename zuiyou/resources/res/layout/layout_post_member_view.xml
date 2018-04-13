@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="44dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@+id/post_head_icon_hot" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_post_recommend" android:contentDescription="@string/image"/>
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/post_head_avatar_img" android:longClickable="true" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="13dp" android:layout_alignParentBottom="true" style="@style/CircleImage"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/post_head_info_ll" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_marginLeft="10dp" android:layout_marginTop="12dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13sp" android:textColor="@color/CT_4" android:ellipsize="end" android:id="@+id/post_head_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <ImageView android:id="@+id/post_head_icon_official" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/personal_guanfang" android:contentDescription="@string/image"/>
+                <ImageView android:id="@+id/post_head_icon_talent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/talent" android:contentDescription="@string/image"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_6" android:ellipsize="end" android:id="@+id/post_head_ct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <View style="@style/my_divide_view"/>
+        <TextView android:textSize="12sp" android:textColor="@color/CT_6" android:gravity="center_vertical" android:id="@+id/post_head_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:singleLine="true"/>
+        <ImageView android:id="@+id/post_head_icon_delete" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_marginTop="12dp" android:src="@drawable/ic_close" android:scaleType="center" android:contentDescription="@string/image"/>
+        <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CM" android:gravity="center_vertical" android:id="@+id/post_head_icon_follow" android:background="@drawable/bg_round_blue_border" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="21dp" android:layout_marginTop="12dp" android:layout_marginRight="13dp" android:text="@string/pay_attention"/>
+        <ImageView android:id="@+id/post_head_icon_more" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:src="@drawable/ic_nav_more" android:scaleType="center" android:contentDescription="@string/image"/>
+        <TextView android:textSize="10sp" android:textColor="#41b1f7" android:gravity="center" android:id="@+id/post_head_cancel_follow" android:background="@drawable/bg_round_blue_border" android:visibility="gone" android:layout_width="60dp" android:layout_height="22dp" android:layout_marginTop="12dp" android:layout_marginRight="18dp" android:text="@string/cancel_follow"/>
+        <TextView android:textSize="10sp" android:textColor="#41b1f7" android:gravity="center" android:id="@+id/post_head_cancel_favor" android:background="@drawable/bg_round_blue_border" android:visibility="gone" android:layout_width="60dp" android:layout_height="22dp" android:layout_marginTop="12dp" android:layout_marginRight="18dp" android:layout_marginBottom="9dp" android:text="@string/cancel_collection"/>
+        <cn.xiaochuankeji.tieba.ui.topic.weight.FollowView android:gravity="center_vertical" android:id="@+id/post_head_follow_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="51.2dp" android:layout_height="48dp">
+        <ImageView android:id="@+id/post_head_icon_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/image"/>
+    </RelativeLayout>
+</RelativeLayout>

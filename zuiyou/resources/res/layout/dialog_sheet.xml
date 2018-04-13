@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/vgActionContainer" android:background="@drawable/sheet_bg" android:layout_width="300dp" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/CM" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvTitle" android:paddingLeft="@dimen/divide_space_15" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="@dimen/divide_item_height_65" android:text="标题"/>
+        <View android:id="@+id/viewBlueLine" android:background="@color/CM" android:layout_width="match_parent" android:layout_height="2dp"/>
+    </LinearLayout>
+</FrameLayout>

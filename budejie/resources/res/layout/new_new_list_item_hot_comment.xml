@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/hot_cmt_content_layout" android:background="?attr/hot_comment_bg" android:paddingTop="2dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_14" android:textColor="@color/post_hot_comment_name_color" android:id="@+id/hot_cmt_username_textview" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_14" android:id="@+id/hot_cmt_content_textview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.budejie.www.activity.view.AudioLayout android:id="@+id/hot_cmt_content_voice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

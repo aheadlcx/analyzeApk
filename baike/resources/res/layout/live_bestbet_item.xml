@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_rank" android:visibility="invisible" android:layout_width="18dp" android:layout_height="18dp"/>
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/white" android:id="@+id/tv_rank" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_avatar" android:padding="1dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="38dp" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16sp" android:textColor="#08dd95" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="76dp" android:maxWidth="120dp" android:singleLine="true" android:layout_centerVertical="true"/>
+    <ImageView android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="9dp" android:src="@drawable/live_bestbet_like" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/live_text_16sp" android:textColor="#ff4848" android:id="@+id/tv_bet_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28dp" android:text="0" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/live_bestbet_add" android:layout_toLeftOf="@+id/tv_bet_result" android:layout_centerVertical="true"/>
+</RelativeLayout>

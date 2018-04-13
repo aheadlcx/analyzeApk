@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="@color/transparents" android:paddingTop="2dp" android:paddingBottom="1dp" android:layout_width="200dp" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tv_gift_tag" android:background="@drawable/rooms_third_giftpage_item_bg" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/StyleBarTitle"/>
+</FrameLayout>

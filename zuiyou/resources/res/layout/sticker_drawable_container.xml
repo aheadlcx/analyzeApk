@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_gravity="top" android:id="@+id/top_padding_hint" android:background="@color/black_40" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <View android:layout_gravity="bottom" android:id="@+id/bottom_padding_hint" android:background="@color/black_40" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="77dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btn_remove_sticker" android:paddingLeft="27dp" android:paddingTop="7dp" android:paddingRight="27dp" android:paddingBottom="27dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/sticker_remove"/>
+    </FrameLayout>
+</merge>

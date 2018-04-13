@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/foot_lin" android:background="#f2f2fe" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:id="@+id/foot_left_line" android:background="#ffffff" android:layout_width="85dp" android:layout_height="1dp" android:layout_marginLeft="5dp"/>
+        <TextView android:textSize="12dp" android:textColor="#ff0000" android:gravity="center" android:layout_gravity="center" android:id="@+id/foot_remind" android:layout_width="0dp" android:layout_height="wrap_content" android:text="已经看完，点这里可以换一天哦~" android:layout_weight="1"/>
+        <View android:layout_gravity="center_vertical" android:id="@+id/foot_right_line" android:background="#ffffff" android:layout_width="85dp" android:layout_height="1dp" android:layout_marginRight="5dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/foot_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:src="@drawable/cross_clock"/>
+</LinearLayout>

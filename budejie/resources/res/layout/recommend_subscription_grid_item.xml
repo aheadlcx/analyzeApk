@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.budejie.www.util.SquareLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/id_item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/id_item_select" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:layout_marginBottom="3dp" android:src="@drawable/label_no_selector_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </com.budejie.www.util.SquareLayout>
+    <TextView android:textSize="17sp" android:textColor="#0a0a0a" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/label_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:singleLine="true" android:overScrollMode="never"/>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/more_layout" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_btn"/>
+    <ScrollView android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom" android:layout_below="@+id/title">
+        <LinearLayout android:orientation="vertical" android:id="@+id/joke_to_pic_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_joke_to_picture_book"/>
+            <include layout="@layout/layout_joke_to_picture_lace"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/joke_to_pic_content_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/joke_to_pic_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:minLines="4" android:lineSpacingExtra="10dp"/>
+                <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/joke_to_pic_bottom"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/joke_to_pic_wx_layout" android:background="@color/white" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/joke_to_pic_wx_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/joke_to_pic_wx_top" android:layout_alignParentTop="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/joke_to_pic_wx_center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:minHeight="450dp" android:layout_below="@+id/joke_to_pic_wx_top">
+                    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/joke_to_pic_wx_header" android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/joke_to_pic_wx_header"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="9dp">
+                        <TextView android:textSize="13sp" android:textColor="@color/joke_to_pic_wx_name_color" android:id="@+id/joke_to_pic_wx_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/joke_to_pic_wx_name"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/black" android:id="@+id/joke_to_pic_wx_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp">
+                            <TextView android:textSize="12sp" android:textColor="@color/joke_to_pic_wx_time_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="16分钟前"/>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/joke_to_pic_wx_comment" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/joke_to_pic_wx_comment" android:background="@drawable/joke_to_pic_wx_comment_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/joke_to_pic_wx_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/joke_to_pic_bottom" android:layout_below="@+id/joke_to_pic_wx_center"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/joke_to_pic_wx_chat_layout" android:background="@color/joke_to_pic_wx_chat_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/joke_to_pic_wx_chat_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/joke_to_pic_wx_chat_top" android:layout_alignParentTop="true"/>
+                <RelativeLayout android:id="@+id/joke_to_pic_wx_chat_center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:minHeight="420dp" android:layout_below="@+id/joke_to_pic_wx_chat_top">
+                    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/joke_to_pic_wx_chat_header" android:layout_width="38dp" android:layout_height="38dp" android:layout_alignParentRight="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/joke_to_pic_wx_chat_header">
+                        <TextView android:textSize="13sp" android:textColor="@color/joke_to_pic_wx_time_color" android:gravity="right" android:id="@+id/joke_to_pic_wx_chat_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_gravity="right" android:id="@+id/joke_to_pic_wx_chat_content" android:background="@drawable/joke_to_pic_wx_chat_me" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="3dp" android:maxWidth="200dp"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/joke_to_pic_wx_chat_comment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:id="@+id/joke_to_pic_wx_chat_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/joke_to_pic_bottom" android:layout_below="@+id/joke_to_pic_wx_chat_center"/>
+                <ImageView android:id="@+id/joke_to_pic_wx_chat_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/joke_to_pic_wx_chat_input" android:layout_below="@+id/joke_to_pic_wx_chat_bottom"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <HorizontalScrollView android:id="@+id/bottom" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="106dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_item_layout" android:background="#f8f8f8" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@color/joke_to_pic_color_1"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:src="@drawable/joke_to_pic_1"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:src="@drawable/joke_to_pic_2"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:src="@drawable/joke_to_pic_3"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:src="@drawable/joke_to_pic_4"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:src="@drawable/joke_to_pic_5"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:src="@drawable/joke_to_pic_6"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:src="@color/joke_to_pic_color_2"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:src="@color/joke_to_pic_color_4"/>
+            <ImageView android:background="@drawable/bg_joke_to_pic_item_selector" android:padding="1.3dp" android:layout_width="72.7dp" android:layout_height="72.7dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@color/joke_to_pic_color_6"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

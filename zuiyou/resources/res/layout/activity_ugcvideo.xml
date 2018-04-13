@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="@drawable/img_test_blur" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:background="@drawable/img_ugcvideo_top_mask" android:layout_width="match_parent" android:layout_height="103dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageView android:id="@+id/ivBack" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="38dp" android:layout_height="match_parent" android:src="@drawable/img_ugc_video_back" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llMemberInfo" android:background="@drawable/bg_follow_video_member_info_main" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_toRightOf="@+id/ivBack" android:layout_centerVertical="true">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/wivMemberAvatar" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="2dp" style="@style/CircleImage"/>
+            <TextView android:textSize="11dp" android:textColor="@color/white" android:id="@+id/tvMemberName" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="8sp" android:textColor="#e83257" android:gravity="center" android:id="@+id/vFocus" android:background="@drawable/bg_follow_video_member_focus_main" android:visibility="visible" android:layout_width="37dp" android:layout_height="18dp" android:layout_marginRight="4dp" android:text="关注"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivShare" android:paddingLeft="15dp" android:paddingTop="17.5dp" android:paddingRight="20dp" android:paddingBottom="17.5dp" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/img_follow_video_share" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+        <ImageView android:id="@+id/ivReport" android:paddingLeft="15dp" android:paddingTop="17.5dp" android:paddingRight="15dp" android:paddingBottom="17.5dp" android:layout_width="51dp" android:layout_height="56dp" android:src="@drawable/img_follow_video_report" android:scaleType="centerCrop" android:layout_toLeftOf="@+id/ivShare"/>
+        <ImageView android:id="@+id/ivDelete" android:paddingLeft="15dp" android:paddingTop="17.5dp" android:paddingRight="15dp" android:paddingBottom="17.5dp" android:visibility="gone" android:layout_width="51dp" android:layout_height="56dp" android:src="@drawable/img_main_ugcvideo_delete" android:scaleType="centerCrop" android:layout_toLeftOf="@+id/ivShare"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/img_ugcvideo_bottom_mask" android:layout_width="match_parent" android:layout_height="200dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llBottomContainer" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="83dp">
+            <ImageView android:layout_gravity="right" android:id="@+id/ivCreateVideo" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginRight="19dp" android:src="@drawable/img_publish_follow_video"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="59dp">
+                <ImageView android:id="@+id/ivDanmukuSwitch" android:paddingLeft="19dp" android:paddingTop="19dp" android:paddingRight="5dp" android:paddingBottom="19dp" android:layout_width="45dp" android:layout_height="59dp" android:src="@drawable/selector_main_ugcvideo_danmuku"/>
+                <TextView android:textSize="13dp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/tvWriteDanmuku" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="发弹幕" android:shadowColor="#33000000" android:shadowDx="0" android:shadowDy="3" android:shadowRadius="3" android:layout_toRightOf="@+id/ivDanmukuSwitch"/>
+                <ImageView android:id="@+id/ivHate" android:paddingLeft="15dp" android:paddingTop="19dp" android:paddingRight="19dp" android:paddingBottom="19dp" android:layout_width="55dp" android:layout_height="59dp" android:src="@drawable/selector_img_main_ugcvideo_hate" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="15dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvLikeCount" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/ivHate"/>
+                <ImageView android:id="@+id/ivLike" android:paddingLeft="19dp" android:paddingTop="19dp" android:paddingRight="15dp" android:paddingBottom="19dp" android:layout_width="55dp" android:layout_height="59dp" android:src="@drawable/selector_img_main_ugcvideo_like" android:scaleType="centerCrop" android:layout_toLeftOf="@+id/tvLikeCount"/>
+            </RelativeLayout>
+            <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/ultimateRecyclerView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="73dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_progress" android:background="@drawable/bg_video_progress" android:visibility="gone" android:layout_width="92dp" android:layout_height="92dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="64dp" android:layout_centerInParent="true">
+            <cn.xiaochuankeji.tieba.ui.mediabrowse.component.RoundProgressBar android:id="@+id/roundPBar" android:visibility="visible" android:layout_width="37dp" android:layout_height="37dp" app:roundColor="#ee333333" app:roundProgressColor="#fbdb00" app:roundWidth="3dp" app:textColor="@color/transparent" app:textSize="0sp"/>
+            <TextView android:textSize="11dp" android:textColor="@color/white" android:id="@+id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/vPause" android:background="#66000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_ugcvideo_pause"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.ugcvideodetail.CustomVolumeView android:id="@+id/pVolumeBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/bg_ugc_volume" android:minHeight="2dp" style="@style/Widget.ProgressBar.Horizontal"/>
+</FrameLayout>

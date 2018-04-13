@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.activity.view.ShowStepView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/frame" android:background="@drawable/content_bg" android:layout_width="match_parent" android:layout_height="60dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/lier" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:textColor="#000000" android:gravity="center" android:orientation="vertical" android:id="@+id/item1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/point1" android:background="@drawable/gray_point" android:layout_width="15dp" android:layout_height="15dp"/>
+            <TextView android:textSize="16dp" android:textColor="@color/text_gray" android:id="@+id/desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拍照"/>
+        </LinearLayout>
+        <LinearLayout android:textColor="#000000" android:gravity="center" android:orientation="vertical" android:id="@+id/item2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/point2" android:background="@drawable/red_point" android:layout_width="15dp" android:layout_height="15dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/text_gray" android:id="@+id/desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音"/>
+        </LinearLayout>
+        <LinearLayout android:textColor="#000000" android:gravity="center" android:orientation="vertical" android:id="@+id/item3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:gravity="center" android:id="@+id/point3" android:background="@drawable/red_point" android:layout_width="15dp" android:layout_height="15dp"/>
+            <TextView android:textSize="16dp" android:textColor="@color/text_gray" android:gravity="center" android:id="@+id/desc3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="美化"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/item4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/point4" android:background="@drawable/red_point" android:layout_width="15dp" android:layout_height="15dp"/>
+            <TextView android:textSize="16dp" android:textColor="@color/text_gray" android:id="@+id/desc4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="描述"/>
+        </LinearLayout>
+    </LinearLayout>
+    <AbsoluteLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/line1" android:background="@drawable/gray_line" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="2dp"/>
+        <ImageView android:id="@+id/line2" android:background="@drawable/gray_line" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="20dp"/>
+        <ImageView android:id="@+id/line3" android:background="@drawable/gray_line" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="2dp"/>
+    </AbsoluteLayout>
+</com.budejie.www.activity.view.ShowStepView>

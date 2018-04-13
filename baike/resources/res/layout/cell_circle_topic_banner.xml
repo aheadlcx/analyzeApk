@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/group_info_item_bg" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="30dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" app:viewAspectRatio="3.83" app:roundedCornerRadius="5dp"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/color_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这里是标题" android:maxLines="1" android:shadowColor="#66000000" android:shadowDx="0.1" android:shadowDy="0.1" android:shadowRadius="3"/>
+        <ImageView android:id="@+id/weekly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/ic_weekly_recommend"/>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/vol_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_marginBottom="3dp">
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vol."/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="?attr/color_white" android:id="@+id/desc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每周话题"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

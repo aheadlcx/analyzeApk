@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="?attr/setting_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="26dp" android:paddingTop="26dp" android:paddingRight="26dp" android:paddingBottom="26dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:id="@+id/sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="111111"/>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/gold_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="54dp">
+                <qsbk.app.widget.MagicTextView android:textSize="22sp" android:textColor="@r$color/hammer_num_color" android:gravity="bottom" android:id="@+id/x" android:layout_width="wrap_content" android:layout_height="54dp" android:text="×" app:strokeWidth="0.5dp" app:strokeColor="@color/black" app:strokeJoinStyle="0"/>
+                <qsbk.app.widget.MagicTextView android:textSize="32sp" android:textColor="@r$color/hammer_num_color" android:gravity="bottom" android:layout_gravity="top" android:id="@+id/gold_num" android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginLeft="3dp" app:strokeWidth="0.5dp" app:strokeColor="@color/black" app:strokeJoinStyle="0"/>
+                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="4dp" android:src="@drawable/ic_hammer_gold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/color_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginLeft="16dp">
+                <qsbk.app.widget.MagicTextView android:textSize="22sp" android:textColor="@r$color/hammer_num_color" android:gravity="bottom" android:id="@+id/color_x" android:layout_width="wrap_content" android:layout_height="54dp" android:text="×" app:strokeWidth="0.5dp" app:strokeColor="@color/black" app:strokeJoinStyle="0"/>
+                <qsbk.app.widget.MagicTextView android:textSize="32sp" android:textColor="@r$color/hammer_num_color" android:gravity="bottom" android:layout_gravity="top" android:id="@+id/color_num" android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginLeft="3dp" app:strokeWidth="0.5dp" app:strokeColor="@color/black" app:strokeJoinStyle="0"/>
+                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="4dp" android:src="@drawable/ic_hammer_blue"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="?attr/color_light" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginBottom="22dp" android:text=""/>
+        <Button android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/button" android:background="@drawable/circle_publish_tips_btn" android:layout_width="wrap_content" android:layout_height="38dp" android:minWidth="220dp" android:text="去砸蛋"/>
+    </LinearLayout>
+</RelativeLayout>

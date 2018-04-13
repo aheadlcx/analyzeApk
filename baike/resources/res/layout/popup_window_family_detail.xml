@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_popup_window_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/head" android:textColor="@color/black_90_percent_transparent" android:gravity="bottom" android:id="@+id/tv_quit" android:background="@drawable/transparent_to_gray_selector_corner" android:padding="13dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/family_expel"/>
+</LinearLayout>

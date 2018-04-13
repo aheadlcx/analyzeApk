@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/F5_line" android:layout_width="match_parent" android:layout_height="54dp">
+        <ImageView android:layout_width="32dp" android:layout_height="28dp" android:src="@drawable/icon_favorite" android:scaleType="fitXY" android:contentDescription="@string/image"/>
+        <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:ellipsize="end" android:id="@+id/my_favor_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/F4_line" android:text="@string/hollow_welcome" android:singleLine="true"/>
+        <View style="@style/my_divide_view"/>
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:ellipsize="end" android:gravity="end" android:id="@+id/my_favor_item_info" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/F4_line" android:text="@string/hollow_welcome" android:singleLine="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:contentDescription="@string/image"/>
+    </LinearLayout>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="57dp"/>
+</LinearLayout>

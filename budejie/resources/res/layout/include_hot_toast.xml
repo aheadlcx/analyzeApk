@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="horizontal" android:background="@drawable/f5_toast_bg" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginTop="@dimen/toptabpageindicator_height" android:layout_marginRight="5dp">
+    <TextView android:textSize="14sp" android:textColor="@color/toast_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/now_active"/>
+    <TextView android:textSize="14sp" android:textColor="@color/red" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/hot_latest"/>
+    <TextView android:textSize="14sp" android:textColor="@color/toast_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/now_active_two"/>
+</LinearLayout>

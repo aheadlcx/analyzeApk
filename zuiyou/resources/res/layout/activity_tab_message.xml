@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/header" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height" android:layout_alignParentTop="true">
+        <cn.xiaochuankeji.tieba.ui.widget.indicator.MagicIndicator android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/indicator" android:layout_width="180dp" android:layout_height="@dimen/navbar_height"/>
+        <RelativeLayout android:id="@+id/tips" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.xiaochuankeji.tieba.widget.fits.FitWidthImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_n_p_remind" android:scaleType="matrix"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/tips_close" android:padding="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/header"/>
+</RelativeLayout>

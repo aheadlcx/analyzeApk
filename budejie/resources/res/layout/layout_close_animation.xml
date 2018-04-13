@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rela_gift_animation" android:layout_width="wrap_content" android:layout_height="48dp">
+    <ImageView android:id="@+id/img_animation_promt" android:visibility="gone" android:layout_width="98dp" android:layout_height="wrap_content" android:src="@drawable/animation_close_promt" android:layout_centerVertical="true"/>
+    <Button android:id="@+id/bt_close_animation" android:background="@drawable/animation_close_selector" android:visibility="gone" android:layout_width="38dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/img_animation_promt" android:layout_centerVertical="true"/>
+</RelativeLayout>

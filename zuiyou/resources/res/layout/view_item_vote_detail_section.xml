@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider_view" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="7dp"/>
+    <RelativeLayout android:id="@+id/section_header" android:background="@color/CB" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+        <View android:id="@+id/viewPrev" android:background="@color/CM" android:layout_width="5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/tvVoteItemName" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="17dp" android:text="xxx" android:layout_toRightOf="@+id/viewPrev"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/tvVoteItemPercent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="xxx" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

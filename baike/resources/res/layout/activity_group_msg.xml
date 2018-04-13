@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/msg_master_switch_text_lin" android:paddingLeft="19dp" android:paddingTop="11dp" android:layout_width="match_parent" android:layout_height="32dp">
+        <TextView android:textSize="12dp" android:textColor="#969696" android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总开关"/>
+    </LinearLayout>
+    <View android:id="@+id/msg_head_dividing_line" android:background="#cccccc" android:layout_width="328dp" android:layout_height="2dp" android:layout_marginLeft="16dp" android:layout_below="@+id/msg_master_switch_text_lin"/>
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/msg_master_switch_lin" android:paddingLeft="30dp" android:paddingTop="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/msg_head_dividing_line">
+        <TextView android:textSize="16dp" android:textColor="#63625e" android:layout_width="0dp" android:layout_height="wrap_content" android:text="群消息提醒" android:layout_weight="1"/>
+        <qsbk.app.widget.Switch android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/msg_master_switch" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Widget.AppCompat.CompoundButton.Switch"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/msg_separate_switch_text_line" android:paddingLeft="19dp" android:paddingTop="11dp" android:layout_width="match_parent" android:layout_height="32dp" android:layout_below="@+id/msg_master_switch_lin">
+        <TextView android:textSize="12dp" android:textColor="#969696" android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单独开关"/>
+    </LinearLayout>
+    <View android:id="@+id/msg_body_dividing_line" android:background="#cccccc" android:layout_width="328dp" android:layout_height="2dp" android:layout_marginLeft="16dp" android:layout_below="@+id/msg_separate_switch_text_line"/>
+    <qsbk.app.widget.PtrLayout android:id="@+id/ptr" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/msg_body_dividing_line">
+        <ListView android:id="@+id/listview" android:scrollbars="vertical" android:fadingEdge="none" android:saveEnabled="true" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:drawSelectorOnTop="true" android:scrollingCache="false" android:dividerHeight="0dp" android:headerDividersEnabled="false" android:footerDividersEnabled="true" style="?attr/xlistview"/>
+    </qsbk.app.widget.PtrLayout>
+</RelativeLayout>

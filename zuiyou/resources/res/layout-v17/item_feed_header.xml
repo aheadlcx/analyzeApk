@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.widget.fits.FitWidthImageView android:id="@+id/tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/tips_follow" android:scaleType="fitXY" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/tip2_layout" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/tips">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:id="@+id/tips2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.5dp" android:layout_marginRight="8.5dp" android:text="@string/people_you_interested" android:layout_centerInParent="true"/>
+        <View android:layout_gravity="center" android:background="@color/CL" android:layout_width="52dp" android:layout_height="@dimen/divide_space_1px" android:layout_toLeftOf="@+id/tips2" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tips2"/>
+        <View android:layout_gravity="center" android:background="@color/CL" android:layout_width="52dp" android:layout_height="@dimen/divide_space_1px" android:layout_toRightOf="@+id/tips2" android:layout_centerVertical="true" android:layout_toEndOf="@+id/tips2"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:paddingTop="80dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:background="@drawable/live_best_bet_bg" android:paddingTop="52dp" android:paddingBottom="22dp" android:layout_width="270dp" android:layout_height="286dp" android:layout_marginLeft="3dp">
+            <android.support.v7.widget.RecyclerView android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:paddingRight="10dp" android:layout_width="273dp" android:layout_height="25dp" android:layout_marginTop="8dp">
+            <ImageView android:layout_width="97dp" android:layout_height="25dp" android:src="@drawable/live_ic_best_bet" android:scaleType="centerCrop"/>
+            <ImageView android:id="@+id/iv_close" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/live_ic_best_bet_close" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.activity.video.MySeekBar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/record_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="12dp" android:max="100" android:progressDrawable="@drawable/record_progress_style" android:minHeight="11dp" android:thumb="@drawable/record_seekbar_thumb" android:thumbOffset="4dp"/>

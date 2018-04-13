@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="65dp"> &gt;
+
+    <ImageView android:id="@+id/vMusic" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="20dp" android:src="@drawable/img_music_selected" android:layout_centerVertical="true"/>
+    <TextView android:textSize="15sp" android:textColor="#f43f76" android:gravity="center" android:id="@+id/vCancel" android:paddingLeft="10dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="65dp" android:text="取消选择" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="16sp" android:textColor="#2b2b2b" android:ellipsize="end" android:id="@+id/tvMusicName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_toRightOf="@+id/vMusic" android:layout_centerVertical="true"/>
+    <ImageView android:layout_width="32dp" android:layout_height="16dp" android:layout_marginLeft="7dp" android:src="@drawable/img_music_selected_flag" android:layout_toRightOf="@+id/tvMusicName" android:layout_centerVertical="true"/>
+</RelativeLayout>

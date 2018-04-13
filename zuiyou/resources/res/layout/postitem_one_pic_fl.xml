@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/picture_view" android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:viewAspectRatio="1.77" style="@style/PostImage"/>
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="center_horizontal" android:id="@+id/portrait_picture_view" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" app:viewAspectRatio="0.625" style="@style/PostImage"/>
+    <TextView android:textSize="10sp" android:textColor="@color/CB" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/tvLongImgFlag" android:background="@drawable/bg_longpic_flag" android:layout_width="32dp" android:layout_height="18dp" android:layout_marginRight="8dp" android:layout_marginBottom="7dp" android:text="长图"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/flVBottomLine" android:background="@drawable/recommend_video_cover" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp">
+        <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="33dp">
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tvPlayCount" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginLeft="17dp" android:drawableLeft="@drawable/ic_play_count_flag" android:drawablePadding="7.5dp" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tvDanmuCount" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginLeft="21dp" android:drawableLeft="@drawable/ic_danmu_count_flag" android:drawablePadding="7.5dp" android:layout_toRightOf="@+id/tvPlayCount" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tvVDur" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/ivVFlag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_flag"/>
+    <TextView android:textSize="12sp" android:textColor="@color/CT_5" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_retry" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:drawablePadding="6dp"/>
+</merge>

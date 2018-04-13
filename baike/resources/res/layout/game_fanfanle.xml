@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/game_container" android:background="@drawable/game_fanfanle_bg" android:layout_width="match_parent" android:layout_height="201dp">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="144dp" android:layout_marginTop="57dp" android:src="@drawable/game_fanfanle_vs"/>
+    <qsbk.app.live.widget.GameFanfanleProgressView android:id="@+id/game_fanfanle_progressview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/iv_bird" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-47dp" android:layout_marginTop="13dp" android:src="@drawable/game_fanfanle_bird_left"/>
+    <ImageView android:id="@+id/iv_clond_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-65dp" android:layout_marginTop="41dp" android:src="@drawable/game_fanfanle_cloud_left"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/iv_cloud_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="76dp" android:layout_marginRight="-68dp" android:src="@drawable/game_fanfanle_cloud_right"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="46dp">
+        <ImageView android:id="@+id/iv_board" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/game_fanfanle_board"/>
+        <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/tv_board" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="0"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/game_fanfanle_love"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/iv_card" android:layout_width="33dp" android:layout_height="49dp" android:layout_marginLeft="93dp" android:layout_marginTop="42dp"/>
+    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#437504" android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="right" android:id="@+id/tv_countdown" android:background="@drawable/game_fanfanle_clock" android:paddingBottom="5.5dp" android:layout_width="33dp" android:layout_height="53dp" android:layout_marginTop="26dp" android:layout_marginRight="8dp" android:text="00" android:transformPivotX="16.5dp" android:transformPivotY="0dp"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/ll_game_bottom" android:layout_width="match_parent" android:layout_height="42dp">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_game_balance" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/live_game_balance2" android:scaleType="centerInside"/>
+                <TextView android:textSize="15sp" android:textColor="#ffe503" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_game_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="1dp" android:text="0" android:singleLine="true" style="@style/TextShadow_game_money_num"/>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="18dp" android:layout_height="14dp" android:src="@drawable/live_game_diamond" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <qsbk.app.live.widget.GameBetButton android:orientation="horizontal" android:id="@+id/bet_btn" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="bottom" android:id="@+id/btn_more" android:paddingLeft="7dp" android:paddingTop="5dp" android:paddingRight="5dp" android:layout_width="45dp" android:layout_height="match_parent" android:src="@drawable/live_game_more_ic_selector" android:scaleType="centerCrop"/>
+        </LinearLayout>
+        <View android:id="@+id/divider_bottom" android:background="@color/black_30_percent_transparent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/iv_result_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/black_60_percent_transparent"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_pokegroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_card1" android:background="@drawable/bg_select_poke" android:padding="2dp" android:layout_width="37dp" android:layout_height="55dp" android:layout_marginLeft="178dp" android:layout_marginTop="40dp" android:src="@drawable/game_fanfanle_poke_bg"/>
+        <ImageView android:id="@+id/iv_card2" android:background="@drawable/bg_select_poke" android:padding="2dp" android:layout_width="37dp" android:layout_height="55dp" android:layout_marginLeft="-10dp" android:layout_marginTop="40dp" android:src="@drawable/game_fanfanle_poke_bg"/>
+        <ImageView android:id="@+id/iv_card3" android:background="@drawable/bg_select_poke" android:padding="2dp" android:layout_width="37dp" android:layout_height="55dp" android:layout_marginLeft="-10dp" android:layout_marginTop="40dp" android:src="@drawable/game_fanfanle_poke_bg"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_card1_result" android:padding="2dp" android:layout_width="37dp" android:layout_height="53dp" android:layout_marginLeft="178dp" android:layout_marginTop="40dp"/>
+        <ImageView android:id="@+id/iv_card2_result" android:padding="2dp" android:layout_width="37dp" android:layout_height="53dp" android:layout_marginLeft="-10dp" android:layout_marginTop="40dp"/>
+        <ImageView android:id="@+id/iv_card3_result" android:padding="2dp" android:layout_width="37dp" android:layout_height="53dp" android:layout_marginLeft="-10dp" android:layout_marginTop="40dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="102dp">
+        <FrameLayout android:id="@+id/fl_bet1" android:background="@drawable/game_fanfanle_selector" android:layout_width="49dp" android:layout_height="51dp">
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="大"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvRate1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_bet2" android:background="@drawable/game_fanfanle_selector" android:layout_width="49dp" android:layout_height="51dp" android:layout_marginLeft="21dp">
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="小"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvRate2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_bet3" android:background="@drawable/game_fanfanle_selector" android:layout_width="49dp" android:layout_height="51dp" android:layout_marginLeft="21dp">
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="平"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvRate3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_bet4" android:background="@drawable/game_fanfanle_selector" android:layout_width="49dp" android:layout_height="51dp" android:layout_marginLeft="21dp">
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="红"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvRate4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_bet5" android:background="@drawable/game_fanfanle_selector" android:layout_width="49dp" android:layout_height="51dp" android:layout_marginLeft="21dp">
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="黑"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvRate5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="102dp">
+        <ImageView android:id="@+id/iv_bet1_result" android:layout_width="49dp" android:layout_height="51dp"/>
+        <ImageView android:id="@+id/iv_bet2_result" android:layout_width="49dp" android:layout_height="51dp" android:layout_marginLeft="21dp"/>
+        <ImageView android:id="@+id/iv_bet3_result" android:layout_width="49dp" android:layout_height="51dp" android:layout_marginLeft="21dp"/>
+        <ImageView android:id="@+id/iv_bet4_result" android:layout_width="49dp" android:layout_height="51dp" android:layout_marginLeft="21dp"/>
+        <ImageView android:id="@+id/iv_bet5_result" android:layout_width="49dp" android:layout_height="51dp" android:layout_marginLeft="21dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/btn_mvp" android:padding="8dp" android:visibility="gone" android:layout_width="43dp" android:layout_height="44dp" android:layout_marginBottom="154dp" android:src="@drawable/btn_mvp" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/btn_help" android:padding="8dp" android:visibility="gone" android:layout_width="43dp" android:layout_height="44dp" android:layout_marginBottom="103dp" android:src="@drawable/live_game_help_ic_selector" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/btn_history" android:padding="8dp" android:visibility="gone" android:layout_width="43dp" android:layout_height="44dp" android:layout_marginBottom="52dp" android:src="@drawable/live_game_history_ic_selector" android:scaleType="fitXY"/>
+    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_tips" android:background="@drawable/live_game_tips" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42dp"/>
+</FrameLayout>

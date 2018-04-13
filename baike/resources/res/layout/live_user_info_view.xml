@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_window_light" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="left" android:orientation="vertical" android:id="@+id/ll_report" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/live_user_report"/>
+                <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/color_675E72" android:id="@+id/tv_report" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_report" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="left" android:orientation="vertical" android:id="@+id/ll_silent" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="43dp">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/live_user_silent"/>
+                <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/color_675E72" android:id="@+id/tv_silent" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_silent" android:singleLine="true"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/live_user_close"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.5dp">
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/black_41364F" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:id="@+id/tv_user_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" style="@style/LevelLabel"/>
+            <TextView android:textSize="@dimen/live_text_9sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_admin_label" android:background="@drawable/live_admin_bg" android:visibility="gone" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginLeft="5dp" android:text=" "/>
+            <qsbk.app.live.widget.FamilyLevelView android:id="@+id/fl_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="1dp"/>
+            <ProgressBar android:id="@+id/progress_bar" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="8dp" android:max="100" android:progress="0" android:secondaryProgress="100"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/black_41364F" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/tv_nick_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true" android:textIsSelectable="true" android:alpha="0.54"/>
+        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="@color/black_41364F" android:layout_gravity="center_horizontal" android:id="@+id/tv_remark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="9dp" android:layout_marginRight="18dp" android:maxLines="5" android:textIsSelectable="true"/>
+        <View android:background="@color/color_eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="19dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp">
+            <FrameLayout android:id="@+id/fl_userpage" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/black_41364F" android:layout_gravity="center" android:id="@+id/tv_userpage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homepage" android:drawablePadding="5dp"/>
+            </FrameLayout>
+            <View android:background="@color/color_eeeeee" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <FrameLayout android:id="@+id/ll_follow" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/black_41364F" android:layout_gravity="center" android:id="@+id/btn_follow" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_follow" android:drawableLeft="@drawable/live_user_follow" android:drawablePadding="5dp"/>
+            </FrameLayout>
+            <View android:background="@color/color_eeeeee" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/black_41364F" android:gravity="center" android:id="@+id/btn_at" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/at_ta" android:layout_weight="1"/>
+            <View android:background="@color/color_eeeeee" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/black_41364F" android:gravity="center" android:id="@+id/tv_admin" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/admin_set" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="64dp" android:layout_height="64dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</FrameLayout>

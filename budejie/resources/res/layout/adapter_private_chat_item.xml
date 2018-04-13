@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="65dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="#cccccc" android:id="@+id/tv_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="320dp"/>
+    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxWidth="320dp"/>
+</LinearLayout>

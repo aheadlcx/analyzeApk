@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:paddingLeft="40dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@+id/pull_to_refresh_progress" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="45dp" android:layout_marginRight="-50dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/round_progress_bar_blue_1" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/pull_to_refresh_image" android:background="@drawable/list_view_pull" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/pull_to_refresh_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="#929292" android:id="@+id/pull_to_refresh_text" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_refresh_label" android:layout_toRightOf="@+id/pull_to_refresh_progress"/>
+                <TextView android:textColor="#929292" android:id="@+id/pull_to_refresh_updated_at" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/pull_to_refresh_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

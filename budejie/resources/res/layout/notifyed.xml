@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="#1a1a1a" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/notifyLog" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="5dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14sp" android:textColor="#fff" android:id="@+id/notifyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:singleLine="true" android:layout_toRightOf="@+id/notifyLog" android:layout_alignTop="@+id/notifyLog" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="14sp" android:textColor="#949494" android:id="@+id/notifyMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:singleLine="true" android:layout_toRightOf="@+id/notifyLog" android:layout_below="@+id/notifyTitle"/>
+    <TextView android:textSize="14sp" android:textColor="#949494" android:id="@+id/notifyTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_alignBottom="@+id/notifyMessage" android:layout_alignParentRight="true"/>
+</RelativeLayout>

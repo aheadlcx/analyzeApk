@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:textSize="16sp" android:textStyle="bold" android:textColor="@color/book_reader_title_text_selector" android:orientation="vertical" android:id="@+id/book_reader_free_text_view" android:layout_width="match_parent" android:layout_height="match_parent" android:text="签到"/>

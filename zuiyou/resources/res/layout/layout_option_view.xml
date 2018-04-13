@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/ivIcon" android:layout_width="43dp" android:layout_height="43dp"/>
+    <TextView android:textSize="10sp" android:textColor="@color/CT_3" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.7dp" android:text="微信" android:singleLine="true"/>
+</LinearLayout>

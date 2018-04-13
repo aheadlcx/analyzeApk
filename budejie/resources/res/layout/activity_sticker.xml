@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/include_titlebar"/>
+    <RelativeLayout android:id="@+id/rl_tab" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <com.bdj.picture.edit.widget.TabHorizontalScrollView android:id="@+id/sv_nav" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="50dp">
+            <RelativeLayout android:id="@+id/rl_nav" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioGroup android:orientation="horizontal" android:id="@+id/rg_nav" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true"/>
+                <ImageView android:id="@+id/iv_nav_indicator" android:background="@color/main_red" android:layout_width="1dp" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </com.bdj.picture.edit.widget.TabHorizontalScrollView>
+        <ImageView android:id="@+id/iv_nav_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/iv_navagation_scroll_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_nav_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/iv_navagation_scroll_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/container_viewpager" android:background="@color/white" android:focusableInTouchMode="true" android:visibility="visible" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30" android:layout_below="@+id/rl_tab"/>
+</RelativeLayout>

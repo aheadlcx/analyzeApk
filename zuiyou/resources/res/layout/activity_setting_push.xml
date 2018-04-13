@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navTitleText="推送设置" app:navNeedBack="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/navBar">
+        <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <cn.xiaochuankeji.tieba.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_line" android:showDividers="middle" app:dividerPaddingLeft="41dp">
+            <RelativeLayout android:id="@+id/push_recommend_container" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height">
+                <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="精彩内容推送消息" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/push_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_switch" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/push_comment_container" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height">
+                <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推送评论消息" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/push_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_switch" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/push_chat_container" android:paddingRight="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/item_height">
+                <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推送私信消息" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/push_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_switch" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </cn.xiaochuankeji.tieba.widget.LinearLayoutCompat>
+        <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

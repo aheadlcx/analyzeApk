@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/record_layout" android:background="?attr/send_post_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+    <include android:id="@+id/recordStepView" android:layout_width="match_parent" android:layout_height="65dp" android:layout_below="@+id/title" layout="@layout/show_step_view"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_above="@+id/recordBottomFrame" android:layout_below="@+id/recordStepView">
+        <TextView android:textColor="@color/text_gray" android:id="@+id/recordAvailableTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可以再录 01:00" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layoutTime" android:layout_below="@+id/recordAvailableTime">
+            <ImageView android:layout_gravity="center" android:id="@+id/recordPhoto" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5dp" android:scaleType="centerCrop"/>
+            <SeekBar android:layout_gravity="bottom" android:id="@+id/mSeekBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/seekBar_style"/>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/recordPlayBtn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_play_white" android:layout_centerInParent="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/recordTime" android:background="@color/translucence2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="00:00" android:layout_below="@+id/recordPlayBtn" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/layoutTime" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/black" android:id="@+id/recordPlayCurrentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_alignParentLeft="true"/>
+            <TextView android:textColor="@color/black" android:id="@+id/recordPlayDurationTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="04:00" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/recordBottomFrame" android:background="@drawable/bottom_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/reordCancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/record_cancel_iv_bg" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/recordCommit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/record_commit_iv_bg" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/recordFrame" android:background="@drawable/record_btn_factory_bg" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/recordIcon" android:layout_width="20dp" android:layout_height="24dp" android:layout_marginRight="8dp" android:src="@drawable/ic_record_normal"/>
+            <TextView android:textSize="18sp" android:textColor="@color/text_gray" android:layout_gravity="center_vertical" android:id="@+id/recordText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按住录音"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

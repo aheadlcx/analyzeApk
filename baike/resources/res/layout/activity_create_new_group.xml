@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" style="?attr/main_bg">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/create_new_group_head_img" android:layout_width="match_parent" android:layout_height="204dp" android:src="@drawable/create_new_group_head"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/create_group_large" android:textColor="@r$color/create_group_text" android:gravity="center" android:id="@+id/create_new_group_remind" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="建立群组"/>
+                <TextView android:textSize="@dimen/create_group_middle" android:textColor="@r$color/create_group_text_gray" android:gravity="center" android:id="@+id/create_new_group_sub_remind" android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="建群后，群会出现在附近的群和被搜索到。
+也可以邀请好友进群畅聊"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/create_group_large" android:textColor="@r$color/create_group_text" android:id="@+id/create_new_group_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="10dp" android:text="建群条件 : "/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp">
+                <ImageView android:id="@+id/qb_age_img" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="19dp" android:src="@drawable/create_not_suit"/>
+                <TextView android:textSize="@dimen/create_group_small" android:textColor="@r$color/create_group_text_gray" android:gravity="center" android:id="@+id/age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="糗龄达到100天"/>
+                <TextView android:textSize="@dimen/create_group_small" android:textColor="@r$color/create_group_text_green" android:gravity="center" android:layout_gravity="right" android:id="@+id/qb_age_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+                <ImageView android:id="@+id/person_group_limit_img" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="19dp" android:src="@drawable/create_not_suit"/>
+                <TextView android:textSize="@dimen/create_group_small" android:textColor="@r$color/create_group_text_gray" android:id="@+id/person_group_limit_remind" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="未达加群上限" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/create_group_small" android:textColor="@r$color/create_group_text_green" android:gravity="center" android:layout_gravity="right" android:id="@+id/person_group_limit_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+                <ImageView android:id="@+id/person_info_img" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="19dp" android:src="@drawable/create_not_suit"/>
+                <TextView android:textSize="@dimen/create_group_small" android:textColor="@r$color/create_group_text_gray" android:id="@+id/personal_info_remind" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="完善个人资料" android:layout_weight="1"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/person_info_set" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/create_group_small" android:textColor="@r$color/create_group_text_green" android:gravity="center_vertical" android:layout_gravity="right" android:id="@+id/personal_info_set_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去设置"/>
+                    <ImageView android:id="@+id/personal_info_set_img" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="18dp" android:src="@drawable/goto_set"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+                <ImageView android:id="@+id/location_img" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="19dp" android:src="@drawable/create_not_suit"/>
+                <TextView android:textSize="@dimen/create_group_small" android:textColor="@r$color/create_group_text_gray" android:id="@+id/create_new_group_location_remind" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="打开地理位置设置" android:layout_weight="1"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/location_set" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/create_group_small" android:textColor="@r$color/create_group_text_green" android:gravity="center_vertical" android:layout_gravity="right" android:id="@+id/personal_location_set_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去设置"/>
+                    <ImageView android:id="@+id/personal_location_set_img" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="18dp" android:src="@drawable/goto_set"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/create_group_middle" android:textColor="@r$color/create_group_button_unused" android:gravity="center" android:id="@+id/next_create_tv" android:background="@drawable/not_used_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="16dp" android:text="不满足建群条件"/>
+            <TextView android:textSize="12dp" android:textColor="#969696" android:id="@+id/tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="建群后您将成为第一任群大，您的任期为 3个月,任期满后将根据活跃度情况有机会参与下一轮竞选。"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_13" android:textColor="?attr/tougao_select_label_text_color" android:gravity="center" android:id="@+id/select_label_button" android:background="?attr/select_label_background" android:layout_width="94dp" android:layout_height="26dp" android:text="@string/select_section"/>
+    <TextView android:textSize="@dimen/font_13" android:textColor="?attr/tougao_label_text_color" android:gravity="center" android:id="@+id/label_button" android:background="?attr/label_background" android:paddingLeft="@dimen/margin_5" android:paddingRight="@dimen/margin_5" android:layout_width="wrap_content" android:layout_height="26dp" android:minWidth="94dp"/>
+</RelativeLayout>

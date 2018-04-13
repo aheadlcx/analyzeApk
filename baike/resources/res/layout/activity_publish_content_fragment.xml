@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/publish_content" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg">
+    <qsbk.app.widget.SizeNotifierRelativeLayout android:id="@+id/size_nofify_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_marginLeft="20dp" android:layout_marginTop="18dp" android:layout_marginRight="12dp" app:actualImageScaleType="0" app:roundAsCircle="true"/>
+        <TextView android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_toRightOf="@+id/avatar" style="?attr/nearby_list_item_name"/>
+        <TextView android:textSize="14dp" android:textColor="?attr/publish_anonymous" android:paddingLeft="18dp" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="匿名" android:layout_below="@+id/name" android:layout_alignLeft="@+id/name"/>
+        <CheckBox android:gravity="center" android:id="@+id/anonymous" android:paddingTop="2dp" android:paddingRight="40dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr/publish_check_box" android:layout_below="@+id/name" android:layout_alignLeft="@+id/name"/>
+        <ImageView android:id="@+id/send" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="?attr/publish_send" android:layout_alignTop="@+id/avatar" android:layout_alignBottom="@+id/avatar" android:layout_alignParentRight="true"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_above="@+id/bottom_bar_container" android:layout_below="@+id/avatar">
+            <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <qsbk.app.widget.qiushitopic.MultiLayoutEditText android:scrollbarThumbVertical="@drawable/wb_scrollbar" android:gravity="top" android:id="@+id/content" android:background="@null" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp" android:layout_marginBottom="10dp" android:minHeight="100dp" android:lineSpacingExtra="0dp" android:lineSpacingMultiplier="1" style="?attr/send_content"/>
+                    <TextView android:textSize="@dimen/content" android:textColor="?attr/color_light" android:id="@+id/hint" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp" android:layout_marginBottom="10dp" android:minHeight="100dp" android:includeFontPadding="false" android:lineSpacingExtra="0dp" android:lineSpacingMultiplier="1"/>
+                </FrameLayout>
+                <RelativeLayout android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <qsbk.app.widget.QiushiImageLayout android:id="@+id/id_add_img_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+                    <RelativeLayout android:id="@+id/id_add_video_layout" android:padding="15dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <qsbk.app.video.VideoPlayerView android:id="@+id/video_view" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        <ImageView android:id="@+id/video_one_frame" android:visibility="visible" android:layout_width="41dp" android:layout_height="14dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/video_watermark"/>
+                        <ImageView android:id="@+id/delete_video" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:src="@drawable/delete_image" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                        <ImageView android:id="@+id/play" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_selector" android:layout_centerInParent="true"/>
+                        <View android:id="@+id/video_cover" android:background="?attr/publishBg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:layout_width="match_parent" android:layout_height="40dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="left" android:orientation="horizontal" android:id="@+id/locationContainer" android:paddingLeft="@dimen/padding_small" android:paddingTop="5dp" android:paddingRight="@dimen/padding_small" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="4dp" android:layout_above="@+id/bottom_bar_divider" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/ic_publish_location"/>
+            <TextView android:textSize="@dimen/g_txt_small" android:textColor="?attr/publish_location" android:gravity="center" android:id="@+id/location" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="4dp" android:text="@string/location_add" android:layout_weight="1"/>
+            <ImageButton android:id="@+id/close_location" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/ic_publish_close" android:contentDescription="@null"/>
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/event" android:visibility="invisible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:layout_above="@+id/bottom_bar_divider"/>
+        <View android:id="@+id/bottom_bar_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_above="@+id/bottom_bar_container"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/id_bottom_bar" android:background="?attr/publishBottomBarBg" android:layout_width="match_parent" android:layout_height="46dp" android:layout_alignParentBottom="true">
+                <ImageButton android:id="@+id/id_add_topic" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" style="?attr/add_qiushi_topic"/>
+                <ImageButton android:id="@+id/id_from_albumn" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" style="?attr/addimage_from_album"/>
+                <ImageButton android:id="@+id/id_from_video" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" style="?attr/addimage_from_video"/>
+                <ImageButton android:id="@+id/id_add_emotion" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" style="?attr/addemotion"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/emotions" android:background="?attr/emotion_main_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/emotion_container_height" android:layout_alignParentBottom="true">
+                <qsbk.app.im.emotion.EmotionViewPager android:layout_gravity="center_vertical" android:id="@+id/emotion_viewpager" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+                <qsbk.app.widget.DotView android:gravity="center_horizontal" android:id="@+id/emotion_dotview" android:layout_width="match_parent" android:layout_height="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <SurfaceView android:id="@+id/hack_surface_view" android:visibility="gone" android:layout_width="0px" android:layout_height="0px"/>
+    </qsbk.app.widget.SizeNotifierRelativeLayout>
+</RelativeLayout>

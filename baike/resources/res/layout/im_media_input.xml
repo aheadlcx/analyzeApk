@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="?attr/emotion_main_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/emotion_viewpager_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <qsbk.app.im.emotion.EmotionViewPager android:layout_gravity="center_vertical" android:id="@+id/emotion_viewpager" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+                <qsbk.app.widget.DotView android:gravity="center_horizontal" android:id="@+id/emotion_dotview" android:layout_width="match_parent" android:layout_height="10dp" app:dot_count="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/collecion_viewpager_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <qsbk.app.im.CollectEmotion.CollectionViewPager android:layout_gravity="center_vertical" android:id="@+id/collect_viewpager" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+                <qsbk.app.widget.DotView android:gravity="center_horizontal" android:id="@+id/collect_dotview" android:layout_width="match_parent" android:layout_height="10dp" app:dot_count="1"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <ImageButton android:gravity="center" android:id="@+id/latest" android:background="#e1e1e1" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/emoji_recent" android:layout_weight="1"/>
+            <ImageButton android:gravity="center" android:id="@+id/tuotuo" android:background="#fafafa" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/emoji_tuotuo" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <GridView android:id="@+id/more_container" android:background="?attr/emotion_main_bg" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:numColumns="4"/>
+</merge>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qsbk.app.widget.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/size_nofify_layout" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/login_bg">
+    <ScrollView android:id="@+id/id_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium">
+                <ImageView android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerInParent="true" style="?attr/login_split_line"/>
+                <TextView android:textSize="@dimen/g_txt_middle" android:gravity="center_horizontal" android:paddingLeft="@dimen/padding_medium" android:paddingRight="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_key_login" android:layout_centerInParent="true" style="?attr/login_base_txt"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                <RelativeLayout android:id="@+id/qqLayout" android:layout_width="match_parent" android:layout_height="50dp" style="?attr/login_btn_qq">
+                    <ImageView android:background="@r$color/alpha_black_mask_20_percent" android:padding="@dimen/padding_small" android:layout_width="50dp" android:layout_height="50dp" android:src="?attr/login_qq" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+                    <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="使用QQ帐号" android:layout_centerInParent="true" style="?attr/login_btn_txt_base"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/wxLayout" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/padding_small" style="?attr/login_btn_wx">
+                    <ImageView android:background="@r$color/alpha_black_mask_20_percent" android:padding="@dimen/padding_small" android:layout_width="50dp" android:layout_height="50dp" android:src="?attr/login_wx" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+                    <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="使用微信帐号" android:layout_centerInParent="true" style="?attr/login_btn_txt_base"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/sinaLayout" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/padding_small" style="?attr/login_btn_weibo">
+                    <ImageView android:background="@r$color/alpha_black_mask_20_percent" android:padding="@dimen/padding_small" android:layout_width="50dp" android:layout_height="50dp" android:src="?attr/login_weibo" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+                    <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="使用微博帐号" android:layout_centerInParent="true" style="?attr/login_btn_txt_base"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginBottom="@dimen/padding_medium">
+                <ImageView android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerInParent="true" style="?attr/login_split_line"/>
+                <TextView android:paddingLeft="@dimen/padding_medium" android:paddingRight="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用糗百帐号登录" android:layout_centerInParent="true" style="?attr/login_base_txt"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                <LinearLayout android:orientation="vertical" android:id="@+id/id_input_group" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@+id/userName" android:hint="邮箱 / 昵称 / 手机号" android:singleLine="true" style="?attr/edit_txt"/>
+                    <EditText android:id="@+id/passwd" android:layout_marginTop="10dp" android:hint="密码" android:password="true" android:singleLine="true" android:inputType="textPassword" style="?attr/edit_txt"/>
+                </LinearLayout>
+                <Button android:id="@+id/id_btn_login" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/padding_small" android:text="登 录" style="?attr/login_btn_txt"/>
+                <TextView android:gravity="left" android:id="@+id/question" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忘记密码?" style="?attr/login_base_txt"/>
+                <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/agreement" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="注册即代表您同意 糗事百科用户协议" style="?attr/login_base_txt"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</qsbk.app.widget.SizeNotifierRelativeLayout>

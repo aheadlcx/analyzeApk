@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rg_tab" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="35dp">
+        <RadioButton android:textSize="14sp" android:id="@+id/this_tab" android:text="本场" android:drawableBottom="@drawable/radio_button_bottom_seleector" style="@style/FansTabRadio"/>
+        <RadioButton android:textSize="14sp" android:id="@+id/seven_tab" android:text="7天" android:drawableBottom="@drawable/radio_button_bottom_seleector" style="@style/FansTabRadio"/>
+        <RadioButton android:textSize="14sp" android:id="@+id/thirty_tab" android:text="30天" android:drawableBottom="@drawable/radio_button_bottom_seleector" style="@style/FansTabRadio"/>
+        <RadioButton android:textSize="14sp" android:id="@+id/super_tab" android:text="超级" android:drawableBottom="@drawable/radio_button_bottom_seleector" style="@style/FansTabRadio"/>
+    </RadioGroup>
+    <View android:id="@+id/division" android:background="@color/pop_gray_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/rg_tab"/>
+    <ListView android:id="@+id/lv_fans_rank" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/list_dark_selector" android:divider="@null" android:layout_above="@+id/ll_title" android:layout_below="@+id/rg_tab"/>
+    <ListView android:id="@+id/lv_gift_rank" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="@null" android:layout_above="@+id/ll_title" android:layout_below="@+id/rg_tab"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="44dp" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rl_left" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="15sp" android:textColor="@drawable/v6_room_pop_title_textcolor_selector" android:gravity="center" android:id="@+id/tv_title_left" android:background="@drawable/pop_fans_title_text_bg_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:text="粉丝排行"/>
+            <View android:id="@+id/bar_left" android:background="@drawable/v6_room_pop_title_line_selector" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="15sp" android:textColor="@drawable/v6_room_pop_title_textcolor_selector" android:gravity="center" android:id="@+id/tv_title_right" android:background="@drawable/pop_fans_title_text_bg_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:text="本场礼单"/>
+            <View android:id="@+id/bar_right" android:background="@drawable/v6_room_pop_title_line_selector" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

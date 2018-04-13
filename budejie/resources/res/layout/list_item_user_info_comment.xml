@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/item_title_layout" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="5dp">
+    <RelativeLayout android:id="@+id/writerProfile_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_centerVertical="true">
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/writerProfile" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/author_item_img_normal" android:scaleType="centerCrop"/>
+        <TextView android:textSize="10sp" android:textColor="?attr/item_title_name_color" android:gravity="center" android:id="@+id/user_v" android:background="?attr/list_item_user_v" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="19dp" android:layout_marginTop="19dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/name_time_layout" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/writerProfile_layout" android:layout_alignBaseline="@+id/writerProfile_layout" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="18dp">
+            <TextView android:textSize="12sp" android:textColor="?attr/item_title_name_color" android:ellipsize="marquee" android:id="@+id/writerName" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/iv_members_mark" android:visibility="gone" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="12dp">
+            <TextView android:textSize="9sp" android:textColor="?attr/item_title_name_time_color" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/addtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="16"/>
+            <TextView android:textSize="9sp" android:textColor="?attr/item_title_name_time_color" android:layout_gravity="center_vertical" android:id="@+id/nearby" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:id="@+id/itemMore" android:background="@null" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="@dimen/post_margin" android:src="?attr/pp_title_right_jubao" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <FrameLayout android:id="@+id/commentDingLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="21dp" android:layout_toLeftOf="@+id/commentCaiLayout">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/commentDingIv" android:background="?attr/ding_icon" android:layout_width="14dp" android:layout_height="14dp"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/post_item_operation_text_color" android:layout_gravity="center_vertical" android:id="@+id/commentLikeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:maxLength="4"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#ee7b7b" android:layout_gravity="center" android:id="@+id/likeCountAnim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/commentCaiLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/commentCaiIv" android:background="?attr/cai_icon" android:layout_width="14dp" android:layout_height="14dp"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/post_item_operation_text_color" android:layout_gravity="center_vertical" android:id="@+id/commentCaiCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:maxLength="4"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#ee7b7b" android:layout_gravity="center" android:id="@+id/caiCountAnim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16sp" android:id="@+id/old_pay_pwd" android:background="@null" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:hint="输入旧支付密码" android:maxLength="6" android:inputType="numberPassword" style="?attr/edit_txt"/>
+        <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16sp" android:id="@+id/new_pwd" android:background="@null" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:hint="6位数字新密码" android:maxLength="6" android:inputType="numberPassword" style="?attr/edit_txt"/>
+        <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16sp" android:id="@+id/repeat_pwd" android:background="@null" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:hint="再输一次新密码" android:maxLength="6" android:inputType="numberPassword" style="?attr/edit_txt"/>
+        <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    </FrameLayout>
+    <Button android:enabled="false" android:textSize="16sp" android:textColor="?attr/bind_btn_text_color" android:layout_gravity="center_horizontal" android:id="@+id/done" android:background="?attr/bind_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp" android:text="@string/done"/>
+    <TextView android:textSize="14sp" android:textColor="?attr/color_gray" android:layout_gravity="center_horizontal" android:id="@+id/forget_pay_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="忘记支付密码"/>
+</LinearLayout>

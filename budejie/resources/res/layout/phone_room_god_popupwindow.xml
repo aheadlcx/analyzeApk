@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/root_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/god_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/god_light_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:src="@drawable/room_god_light" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/god_left_wing_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="66dp" android:layout_marginTop="70dp" android:src="@drawable/room_god_wing_left" android:layout_alignLeft="@+id/god_light_iv"/>
+        <ImageView android:id="@+id/god_right_wing_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70dp" android:layout_marginRight="66dp" android:src="@drawable/room_creator_wing_right" android:layout_alignRight="@+id/god_light_iv"/>
+        <ImageView android:id="@+id/god_entiey_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/room_god_icon" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/god_upgrade_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-66dp" android:layout_below="@+id/god_layout" android:layout_centerHorizontal="true">
+        <TextView android:textSize="15sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/god_upgrade" android:background="@drawable/god_ribbon" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/deliver_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/deliver" android:layout_below="@+id/god_upgrade" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/god_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-26dp" android:src="@drawable/god_close" android:layout_toRightOf="@+id/god_layout" android:contentDescription="清除动画"/>
+    <ImageView android:id="@+id/god_stars_point_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:src="@drawable/room_god_stars_point_001" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

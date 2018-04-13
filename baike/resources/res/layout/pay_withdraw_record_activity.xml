@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/dynamic_adjust_position_contain" android:background="@color/bg_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_tab_bar" android:layout_width="match_parent" android:layout_height="48dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_tab_withdraw" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/pager_title_selector_two" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/pay_withdraw_record"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_tab_exchange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+                <TextView android:textSize="15sp" android:textColor="@color/pager_title_selector_two" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/pay_exchange_record"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_up" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/back_black_normal" android:scaleType="centerInside"/>
+    </FrameLayout>
+    <View android:background="@color/divider_header" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <qsbk.app.core.widget.ChildViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

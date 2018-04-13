@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/evaluate_face_done" android:minLevel="6" android:maxLevel="6"/>
+    <item android:drawable="@drawable/evaluate_face_l4_5" android:minLevel="4" android:maxLevel="5"/>
+    <item android:drawable="@drawable/evaluate_face_l1_3" android:minLevel="1" android:maxLevel="3"/>
+    <item android:drawable="@drawable/evaluate_face_l0"/>
+</level-list>

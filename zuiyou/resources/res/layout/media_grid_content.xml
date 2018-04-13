@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:id="@+id/media_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.zhihu.matisse.internal.ui.widget.CheckView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/check_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/gif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:src="@drawable/ic_gif"/>
+    <TextView android:textSize="12sp" android:textColor="@android:color/white" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/video_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"/>
+</merge>

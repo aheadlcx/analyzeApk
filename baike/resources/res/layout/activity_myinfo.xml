@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/personal_center_botton_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+        <View android:id="@+id/personal_center_botton_view" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+        <FrameLayout android:id="@+id/personal_center_botton_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/personal_center_botton_fan_lin" android:layout_width="match_parent" android:layout_height="50dp">
+                <qsbk.app.widget.DrawableCenterTextView android:textSize="15dp" android:textColor="#c3c3c3" android:gravity="center_vertical" android:id="@+id/personal_fans_tv" android:layout_width="0dp" android:layout_height="match_parent" android:text="互粉" android:drawableLeft="@drawable/fans_small" android:drawablePadding="10dp" android:layout_weight="1"/>
+                <View android:id="@+id/personal_fans_note_line" android:background="#e9e9ea" android:visibility="gone" android:layout_width="1dp" android:layout_height="20dp"/>
+                <qsbk.app.widget.DrawableCenterTextView android:textSize="15dp" android:textColor="#ffba15" android:gravity="center_vertical" android:id="@+id/personal_note" android:layout_width="0dp" android:layout_height="match_parent" android:text="小纸条" android:drawableLeft="@drawable/note_small" android:drawablePadding="10dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <ProgressBar android:id="@+id/personal_fans_progress_bar" android:background="#00ededed" android:layout_width="match_parent" android:layout_height="match_parent" android:max="100" android:progressDrawable="@drawable/progressbar_drawable" style="?android:attr/progressBarStyleHorizontal"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/personal_head_first_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/personal_center_botton_lin">
+        <qsbk.app.nearby.api.ObservableScrollView android:id="@+id/personal_scrollView" android:background="@r$color/group_info_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/personal_head_frame" android:background="@drawable/personal_default" android:layout_width="match_parent" android:layout_height="240dp">
+                    <View android:id="@+id/layerMask" android:background="@r$color/layer_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/personal_info_head_lin" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/personal_avatar" android:layout_width="@dimen/large_user_icon" android:layout_height="@dimen/large_user_icon" android:layout_marginTop="60dp" android:src="?attr/personal_default_icon" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/personal_name_gender_age_lin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp">
+                            <TextView android:textSize="18dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="left" android:id="@+id/personal_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="15" android:shadowColor="#68000000" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1.5"/>
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/personal_gender_age" android:background="@drawable/pinfo_female_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="13dp" android:layout_marginLeft="9dp" android:shadowColor="#68000000" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1.5">
+                                <ImageView android:id="@+id/personal_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:src="@drawable/pinfo_female" android:scaleType="fitXY" android:contentDescription="@null"/>
+                                <TextView android:textSize="9dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/personal_age" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+                            </LinearLayout>
+                            <TextView android:textSize="12dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/personal_remark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:shadowColor="#68000000" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1.5"/>
+                            <ImageView android:layout_gravity="center" android:id="@+id/certification" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:src="?attr/im_msg_certification" android:layout_toRightOf="@+id/userName"/>
+                        </LinearLayout>
+                        <TextView android:textSize="12dp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/personal_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:shadowColor="#68000000" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1.5"/>
+                    </LinearLayout>
+                    <View android:layout_gravity="bottom" android:background="@drawable/bg_shadow_mask" android:layout_width="match_parent" android:layout_height="50dp"/>
+                    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:minHeight="50dp">
+                        <FrameLayout android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/smile" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_my_smile" android:drawablePadding="4dp"/>
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/hot_comment" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_my_hot_comment" android:drawablePadding="4dp"/>
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/highlight" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_my_highlight" android:drawablePadding="6dp"/>
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/check_in" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_my_check_in" android:drawablePadding="4dp"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/personal_body_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/personal_head_frame">
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/personal_qiushi_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_qiushi_left_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="90dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_my_other_qiushi" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:textSize="24dp" android:textColor="#ffdea6" android:gravity="left" android:id="@+id/personal_qiushi_num" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:includeFontPadding="false"/>
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="90dp" android:layout_toRightOf="@+id/personal_qiushi_left_lin">
+                            <ImageView android:id="@+id/personal_qiushi_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:layout_marginRight="18dp" android:src="@drawable/group_info_next" android:layout_alignParentRight="true"/>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/personal_qiushi_content_lin" android:layout_width="match_parent" android:layout_height="89dp" android:layout_toLeftOf="@+id/personal_qiushi_view" android:layout_above="@+id/personal_dynamic_view"/>
+                            <View android:id="@+id/personal_dynamic_view" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/qiushi_topic_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/qiushi_topic_left_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="wrap_content">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/qiushi_topic_remind" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="爆社"/>
+                            <TextView android:textSize="24dp" android:textColor="#ffdea6" android:gravity="left" android:id="@+id/qiushi_topic_num" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:includeFontPadding="false"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/qiushi_topic_right_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/qiushi_topic_left_lin"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/qiushi_topic_dynamic_line" android:background="#ededed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/personal_default_margin_left"/>
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/personal_dynamic_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_dynamic_left_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="90dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_my_other_dynamic" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:textSize="24dp" android:textColor="#ffdea6" android:gravity="left" android:id="@+id/personal_dynamic_num" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+                        </LinearLayout>
+                        <RelativeLayout android:gravity="center" android:id="@+id/personal_dynamic_info_rel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:layout_toRightOf="@+id/personal_dynamic_left_lin">
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_dynamic_image" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="3dp" android:scaleType="centerCrop" app:actualImageScaleType="6"/>
+                            <qsbk.app.widget.QiushiEmotionTextView android:textSize="16dp" android:textColor="#585858" android:ellipsize="end" android:gravity="top" android:id="@+id/personal_dynamic_content" android:paddingLeft="8dp" android:layout_width="120dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/personal_dynamic_image"/>
+                            <TextView android:textSize="13dp" android:textColor="#a3a3a3" android:id="@+id/personal_dynamic_location" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_toRightOf="@+id/personal_dynamic_image" android:layout_below="@+id/personal_dynamic_content"/>
+                            <ImageView android:id="@+id/personal_dynaic_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginRight="18dp" android:src="@drawable/group_info_next" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                        <View android:id="@+id/personal_dynamic_group_view" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/personal_circle_level_and_score_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/personal_default_margin_left">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="49dp">
+                            <TextView android:textSize="14dp" android:gravity="center_vertical" android:id="@+id/personal_circle_level" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2"/>
+                            <TextView android:textSize="14dp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/personal_circle_score" android:paddingLeft="@dimen/personal_default_padding" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3"/>
+                            <LinearLayout android:gravity="right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/personal_circle_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/group_info_help"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:id="@+id/personal_circle_level_and_score_view" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@+id/personal_live_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@+id/personal_live_receive_present_lin" android:layout_width="match_parent" android:layout_height="70dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="center_vertical" android:id="@+id/personal_live_label" android:paddingLeft="20dp" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="match_parent" android:text="直播"/>
+                            <RelativeLayout android:id="@+id/personal_live_send_present_avatar_layout1" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_marginTop="15dp">
+                                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_live_send_present_avatar1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                                <ImageView android:id="@+id/personal_live_present_gold" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/group_level_gold" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@+id/personal_live_send_present_avatar_layout2" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="6dp" android:layout_marginTop="15dp" android:layout_toRightOf="@+id/personal_live_send_present_avatar_layout1">
+                                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_live_send_present_avatar2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                                <ImageView android:id="@+id/personal_live_present_silver" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/group_level_silver" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@+id/personal_live_send_present_avatar_layout3" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="6dp" android:layout_marginTop="15dp" android:layout_toRightOf="@+id/personal_live_send_present_avatar_layout2">
+                                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_live_send_present_avatar3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                                <ImageView android:id="@+id/personal_live_present_copper" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/group_level_copper" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@+id/personal_live_receive_present_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/personal_live_send_present_avatar_layout3">
+                                <ImageView android:id="@+id/personal_live_present_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:layout_marginRight="18dp" android:src="@drawable/group_info_next" android:layout_alignParentRight="true"/>
+                                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginRight="5dp" android:layout_marginBottom="15dp" android:layout_toLeftOf="@+id/personal_live_present_imageview">
+                                    <TextView android:textSize="12dp" android:textColor="#a3a3a3" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/personal_live_receive_present_total_tip" android:layout_width="match_parent" android:layout_height="0dp" android:text="共收到" android:layout_weight="1"/>
+                                    <TextView android:textSize="14dp" android:textColor="#a3a3a3" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/personal_live_receive_present_total" android:layout_width="match_parent" android:layout_height="0dp" android:text="0  礼券" android:layout_weight="1"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <View android:id="@+id/personal_live_receive_present_divider" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/personal_live_receive_lin" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_below="@+id/personal_live_receive_present_lin">
+                            <TextView android:textSize="14dp" android:textColor="#a3a3a3" android:gravity="center_vertical" android:id="@+id/personal_live_level" android:layout_width="0dp" android:layout_height="match_parent" android:text="等级 LV 1" android:layout_weight="2"/>
+                            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="14dp" android:textColor="#a3a3a3" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/personal_live_send_present_total" android:paddingLeft="@dimen/personal_default_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="送出 0" android:drawableRight="@drawable/live_diamond" android:drawablePadding="8dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/personal_live_level_imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/group_info_help"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:id="@+id/personal_live_level_divider" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_below="@+id/personal_live_receive_lin"/>
+                        <RelativeLayout android:id="@+id/personal_family_rel" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_below="@+id/personal_live_level_divider">
+                            <ImageView android:id="@+id/personal_family_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/group_info_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_family_avator" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/circle_article_close" android:layout_centerVertical="true" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                            <TextView android:textSize="15dp" android:textColor="#66667b" android:gravity="center" android:id="@+id/personal_family_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="外围女主播" android:maxLines="1" android:maxLength="10" android:layout_toRightOf="@+id/personal_family_avator"/>
+                            <TextView android:id="@+id/personal_family_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="测试" android:layout_toRightOf="@+id/personal_family_name" android:layout_centerVertical="true" style="@style/FamilyLabel"/>
+                            <View android:id="@+id/personal_family_divider" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/personal_medal_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_medal_left_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="90dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_medal_sign" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="勋章"/>
+                            <TextView android:textSize="24dp" android:textColor="#ffdea6" android:gravity="left" android:id="@+id/personal_medal_num" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/personal_medal_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/group_info_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/personal_medal_more" android:layout_toRightOf="@+id/personal_medal_left_lin">
+                            <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/personal_medal_first" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:placeholderImage="@drawable/medal_empty_1"/>
+                            </RelativeLayout>
+                            <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/personal_medal_second" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:placeholderImage="@drawable/medal_empty_2"/>
+                            </RelativeLayout>
+                            <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/personal_medal_third" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:placeholderImage="@drawable/medal_empty_3"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <View android:id="@+id/personal_medal_divider" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/personal_topic_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_topic_left_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="wrap_content">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_topic_remind" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="话题"/>
+                            <TextView android:textSize="24dp" android:textColor="#ffdea6" android:gravity="left" android:id="@+id/personal_topic_num" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:includeFontPadding="false"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/personal_topic_right_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/personal_topic_left_lin"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/personal_topic_group_line" android:background="#ededed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/personal_default_margin_left"/>
+                    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/personal_group_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_group_left_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="wrap_content">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_group_remind" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="加入群"/>
+                            <TextView android:textSize="24dp" android:textColor="#ffdea6" android:gravity="left" android:id="@+id/personal_group_num" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:includeFontPadding="false"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/personal_group_right_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/personal_group_left_lin"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/personal_group_hometown_line" android:background="#ededed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/personal_default_margin_left"/>
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/presonal_score_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/presonal_score_left_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="50dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/presonal_score_remind" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="圈等级"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/presonal_score_left_lin">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="50dp">
+                                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="48dp">
+                                    <TextView android:textSize="12dp" android:gravity="center_vertical" android:id="@+id/personal_score_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23dp" android:text="5" android:drawableRight="@drawable/group_info_next" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                                    <TextView android:textSize="15dp" android:textColor="#585858" android:gravity="center_vertical" android:id="@+id/presonal_score" android:layout_width="wrap_content" android:layout_height="48dp"/>
+                                </RelativeLayout>
+                                <View android:id="@+id/presonal_score_view" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/personal_live_no_receive_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:id="@+id/personal_live_no_receive_label" android:paddingLeft="20dp" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="直播" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true"/>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/personal_live_no_receive_label_lin" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/personal_default_margin_left">
+                            <TextView android:textSize="15dp" android:textColor="#a3a3a3" android:gravity="center_vertical" android:id="@+id/personal_live_no_receive_level" android:layout_width="0dp" android:layout_height="match_parent" android:text="等级 LV 1" android:layout_weight="2"/>
+                            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+                                <TextView android:textSize="15dp" android:textColor="#a3a3a3" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/personal_live_no_receive_send_present_total" android:paddingLeft="@dimen/personal_default_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="送出 0" android:drawableRight="@drawable/live_diamond" android:drawablePadding="8dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/personal_live_no_receive_level_imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/group_info_help"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:id="@+id/personal_live_no_receive_level_divider" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_below="@+id/personal_live_no_receive_label_lin"/>
+                        <RelativeLayout android:id="@+id/personal_no_live_family_rel" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/personal_default_margin_left" android:layout_below="@+id/personal_live_no_receive_level_divider">
+                            <ImageView android:id="@+id/personal_no_live_family_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/group_info_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_no_live_family_avator" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_launcher" android:layout_centerVertical="true" app:actualImageScaleType="6"/>
+                            <TextView android:textSize="15dp" android:textColor="#66667b" android:gravity="center" android:id="@+id/personal_no_live_family_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="外围女主播" android:maxLines="1" android:maxLength="10" android:layout_toRightOf="@+id/personal_no_live_family_avator" android:layout_centerVertical="true"/>
+                            <TextView android:id="@+id/personal_no_live_family_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="测试" android:layout_toRightOf="@+id/personal_no_live_family_name" android:layout_centerVertical="true" style="@style/FamilyLabel"/>
+                            <View android:id="@+id/personal_live_no_family_divider" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/personal_hometown_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_hometown_left_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="50dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_hometown_remind" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="故乡"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/personal_hometown_left_lin">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="50dp">
+                                <TextView android:textSize="15dp" android:textColor="#585858" android:gravity="center_vertical" android:id="@+id/presonal_hometowm" android:layout_width="match_parent" android:layout_height="48dp"/>
+                                <View android:id="@+id/personal_hometown_view" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/personal_qb_age_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_qb_age_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="50dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_qb_age_remind" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="糗龄"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/personal_qb_age_lin">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="50dp">
+                                <TextView android:textSize="15dp" android:textColor="#585858" android:gravity="center_vertical" android:id="@+id/personal_qb_age" android:layout_width="match_parent" android:layout_height="48dp"/>
+                                <View android:id="@+id/personal_qb_age_view" android:background="#ededed" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/personal_job_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_job_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="50dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_job_remind" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/personal_job_lin">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="50dp">
+                                <TextView android:textSize="15dp" android:textColor="#585858" android:gravity="center_vertical" android:id="@+id/personal_job" android:layout_width="match_parent" android:layout_height="48dp"/>
+                                <View android:id="@+id/personal_job_view" android:background="#ededed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/personal_origin_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/personal_origin_lin" android:layout_width="@dimen/personal_default_margin_left" android:layout_height="50dp">
+                            <TextView android:textSize="16dp" android:textColor="#8d8d8d" android:gravity="left" android:id="@+id/personal_origin" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来源"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/personal_origin_lin">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="50dp">
+                                <TextView android:textSize="15dp" android:textColor="#585858" android:gravity="center_vertical" android:id="@+id/personal_origin_remind" android:layout_width="match_parent" android:layout_height="48dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </qsbk.app.nearby.api.ObservableScrollView>
+        <RelativeLayout android:id="@+id/personal_bar_background_rel" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/reback" android:background="@drawable/oneprofile_button_on_press" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableLeft="@drawable/ic_arrow_left_padding" android:drawablePadding="2dp" android:layout_alignParentLeft="true"/>
+            <ImageView android:id="@+id/choice" android:paddingTop="6dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/actionbar_over_flow_menu" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/personal_edit" android:paddingTop="7dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="编辑" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

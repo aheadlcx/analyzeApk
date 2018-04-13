@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp">
+        <ImageView android:layout_width="271dp" android:layout_height="320dp" android:src="@drawable/live_game_dialog_bg_catanddog" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="112dp" android:layout_height="28dp" android:layout_marginTop="18dp" android:src="@drawable/live_game_help_catanddog_title" android:scaleType="fitXY"/>
+        <ScrollView android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="208dp" android:layout_height="210dp" android:layout_marginTop="65dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="56dp" android:layout_height="14dp" android:layout_marginTop="5dp" android:src="@drawable/live_game_catanddog_help_spec" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#9f6b18" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="热猫星球上的两大萌宠「妙妙」「旺旺」，为了争夺主播和玩家心中的「最佳爱宠」称号决定用竞猜游戏一决高下。大家可以“点赞”围观支持，胜者会和支持Ta的人一起分享胜利果实。   "/>
+                <ImageView android:layout_width="56dp" android:layout_height="14dp" android:layout_marginTop="12dp" android:src="@drawable/live_game_catanddog_help_rule" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#9f6b18" android:id="@+id/game_help_rule" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="- 奖励：游戏过程中，你可以为喜欢的Ta“点赞”，1钻=10赞；揭晓结果后，若「妙妙」或「旺旺」获胜，Ta会开心地给Ta的支持者%s倍回报；若平局，他们会给支持平局的你%s倍回报！
+
+- 输赢：有牛比牛的点数，大者胜；牛点数相同或都没牛为平局。"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_close" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="110dp" android:layout_marginTop="120dp" android:src="@drawable/live_game_catanddog_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

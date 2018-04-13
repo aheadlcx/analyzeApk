@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="160dp">
+    <TextView android:background="@drawable/empty_bg" android:visibility="visible" android:layout_width="20dp" android:layout_height="match_parent"/>
+    <RelativeLayout android:background="?attr/qiushi_empty_bg_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="160dp">
+        <ImageView android:id="@+id/empty_icon" android:background="?attr/qiushi_empty_bg_tips" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:scaleType="centerCrop"/>
+        <View android:background="?attr/qiushi_empty_bg" android:layout_width="60dp" android:layout_height="6dp" android:layout_marginLeft="12dp" android:layout_marginTop="30dp" android:layout_toRightOf="@+id/empty_icon"/>
+        <View android:id="@+id/first_view" android:background="?attr/qiushi_empty_bg" android:layout_width="240dp" android:layout_height="6dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_below="@+id/empty_icon"/>
+        <View android:id="@+id/second_view" android:background="?attr/qiushi_empty_bg" android:layout_width="260dp" android:layout_height="6dp" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_below="@+id/first_view"/>
+        <View android:background="?attr/qiushi_empty_bg" android:layout_width="240dp" android:layout_height="6dp" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_below="@+id/second_view"/>
+        <View android:background="?attr/qiushi_empty_bg" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

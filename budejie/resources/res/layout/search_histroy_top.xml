@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/TopHistoryLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/hot_list_item_default_night_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="29dp" android:layout_marginLeft="10dp" android:text="历史搜索"/>
+            <RelativeLayout android:id="@+id/SearchDelHisLayout" android:layout_width="41dp" android:layout_height="29dp" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_histroy_del" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/search_history_background" android:layout_width="match_parent" android:layout_height="47dp">
+            <TextView android:textSize="13sp" android:textColor="@color/hot_list_item_default_night_text_color" android:gravity="center" android:id="@+id/HisTextView1" android:background="?attr/search_history_text_background" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="101dp" android:text="香喷喷的小烤鸡" android:singleLine="true"/>
+            <TextView android:textSize="13sp" android:textColor="@color/hot_list_item_default_night_text_color" android:gravity="center" android:id="@+id/HisTextView2" android:background="?attr/search_history_text_background" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="101dp" android:text="香喷喷的小烤鸡" android:singleLine="true"/>
+            <TextView android:textSize="13sp" android:textColor="@color/hot_list_item_default_night_text_color" android:gravity="center" android:id="@+id/HisTextView3" android:background="?attr/search_history_text_background" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="101dp" android:text="香喷喷的小烤鸡" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/hot_list_item_default_night_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="41dp" android:layout_marginLeft="10dp" android:text="热门搜索"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

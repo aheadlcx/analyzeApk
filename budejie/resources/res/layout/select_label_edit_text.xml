@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:textSize="16sp" android:textColor="?attr/search_label_edit_color_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="260dp" android:minWidth="50dp" android:hint="输入标签，标签打得好，精华上的早" android:singleLine="true" android:textCursorDrawable="@null"/>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridView android:id="@+id/image_picker_grid" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="4dp" android:verticalSpacing="4dp" android:numColumns="4" android:layout_above="@+id/image_picker_bar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+</RelativeLayout>

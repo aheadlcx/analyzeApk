@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/book_reader_home_view_pager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/book_reader_top_bar_height" android:layout_weight="1"/>
+    <View android:background="@color/book_reader_divide_line_color" android:layout_width="match_parent" android:layout_height="@dimen/book_reader_divide_line_height"/>
+    <include layout="@layout/book_reader_bottom_layout"/>
+</LinearLayout>

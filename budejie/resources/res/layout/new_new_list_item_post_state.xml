@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_vertical" android:id="@+id/mytougao_item_layout" android:paddingLeft="@dimen/post_margin_left" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <LinearLayout android:orientation="vertical" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="13sp" android:textColor="#929292" android:id="@+id/tougao_state" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:text="发表成功" android:singleLine="false" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+        <TextView android:textSize="11sp" android:textColor="#929292" android:id="@+id/tougao_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/text_gray" android:gravity="center_vertical" android:id="@+id/tougaoing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="23dp" android:text="发送中" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <Button android:id="@+id/resetSend" android:background="@drawable/bg_reset_sendbtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/tougaoing" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="11dp" android:layout_marginRight="9dp" android:layout_alignParentRight="true">
+        <ImageButton android:id="@+id/imgbtn_more" android:background="@null" android:layout_width="30dp" android:layout_height="30dp" android:src="?attr/pp_title_right_jubao" android:scaleType="centerInside"/>
+    </LinearLayout>
+</RelativeLayout>

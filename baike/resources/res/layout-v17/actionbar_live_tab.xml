@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_yellow" android:layout_width="match_parent" android:layout_height="48dp">
+    <ImageView android:id="@+id/add" android:background="?attr/actionBarItemBackground" android:layout_width="52dp" android:layout_height="match_parent" android:src="@drawable/group_create" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/rank" android:background="?attr/actionBarItemBackground" android:layout_width="52dp" android:layout_height="match_parent" android:src="@drawable/ic_audit" android:scaleType="center" android:layout_toLeftOf="@+id/add" android:layout_alignParentTop="true" android:layout_toStartOf="@+id/add"/>
+    <qsbk.app.widget.QiuyouCircleTab android:id="@+id/tab" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_toLeftOf="@+id/rank"/>
+</RelativeLayout>

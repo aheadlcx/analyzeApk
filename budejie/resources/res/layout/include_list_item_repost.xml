@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/ll_repost_layout_all" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_delete" android:background="#eaeaea" android:visibility="visible" android:layout_width="210dp" android:layout_height="170dp" android:layout_margin="10dp">
+        <ImageView android:id="@+id/iv_delete_icon" android:background="@drawable/respost_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/delete_item_content_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repost_delete" android:layout_below="@+id/iv_delete_icon" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_repost" android:background="?attr/bg_repost_color_selector_theme" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/contentImage" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="15dp" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="16sp" android:textColor="?attr/repost_item_content_text_color" android:id="@+id/repost_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false" android:layout_toLeftOf="@+id/contentImage" android:lineSpacingExtra="5dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp">
+            <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center_horizontal" android:id="@+id/main_img" android:visibility="visible" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerCrop"/>
+            <Button android:id="@+id/play" android:background="@drawable/play_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/repost_video_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_bt_selector" android:layout_centerInParent="true"/>
+            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@+id/repost_progress_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/repost_baisibudejie" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/baisibudejie"/>
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/repost_gif_progress" android:background="?attr/progressbar_bg_state" android:layout_width="match_parent" android:layout_height="15dp" android:layout_marginTop="10dp" android:progressDrawable="@drawable/progress_style" style="?android:attr/progressBarStyleHorizontal"/>
+            </LinearLayout>
+            <com.budejie.www.activity.view.MediaPlayView android:id="@+id/repost_mMPview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-17dp" android:layout_alignBottom="@+id/main_img"/>
+            <View android:id="@+id/imageready" android:background="?attr/imageready_bg" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/main_img" android:layout_alignTop="@+id/main_img" android:layout_alignRight="@+id/main_img" android:layout_alignBottom="@+id/main_img"/>
+            <ImageView android:id="@+id/error_img_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="?attr/load_error_state" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

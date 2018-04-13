@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rl_msg_verify" android:background="@color/login_generally_Background" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/titlebar_default">
+        <TextView android:textSize="@dimen/text_size_small_14" android:textColor="@color/unbundle_textcolor" android:gravity="left" android:id="@+id/tv_msg_verify_tip" android:paddingLeft="@dimen/phone_login_padding_Left_v4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="15dp" android:singleLine="true"/>
+        <ImageView style="@style/onePxLine"/>
+        <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+            <EditText android:textSize="@dimen/text_size_small_mid" android:textColorHint="@color/bundle_gray_textcolor" android:layout_gravity="center_vertical" android:id="@+id/et_bundle_phone_verify_code" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/bundle_verify_interval_v4" android:hint="@string/msg_verify" android:singleLine="true" android:maxLength="10" android:inputType="number">
+                <requestFocus/>
+            </EditText>
+            <cn.v6.sixrooms.widgets.phone.GetVerificationCodeView android:id="@+id/id_view_get_verification_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/id_iv_clear_code" android:padding="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/phone_del_image_selector" android:layout_toLeftOf="@+id/id_view_get_verification_code" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView style="@style/onePxLine"/>
+        <Button android:enabled="false" android:textSize="@dimen/text_size_middle_min_17" android:textColor="@color/rooms_fourth_login_button_textcolor" android:id="@+id/but_bundle_phone_submit" android:background="@drawable/ic_rooms_fourth_login_selector" android:layout_width="match_parent" android:layout_height="@dimen/button_height_new" android:layout_marginLeft="15dp" android:layout_marginTop="@dimen/phone_input_verify_code_margin_top_new" android:layout_marginRight="15dp" android:text="@string/bundle_phone_submit"/>
+        <TextView android:textSize="@dimen/text_size_small_min" android:textColor="@color/bundle_gray_textcolor_v4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_login_padding_Left_v4" android:layout_marginTop="@dimen/phone_login_tv_margin_left" android:layout_marginRight="@dimen/phone_login_padding_Left_v4" android:text="@string/msg_verify_description"/>
+    </LinearLayout>
+    <include android:id="@+id/bundle_phone_progreebar" android:visibility="gone" layout="@layout/phone_custom_progressbar"/>
+</RelativeLayout>

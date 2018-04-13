@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title">
+    <TextView android:textSize="18sp" android:textColor="?attr/unlogin_default_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow_prompt_login_text" android:includeFontPadding="false" android:lineSpacingExtra="8dp"/>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/attention_unlogin_img_magin" android:src="@drawable/follow_prompt_login_icon"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/attention_unlogin_botton_magin">
+        <Button android:textSize="16sp" android:textColor="@drawable/btn_login_text" android:id="@+id/loginButton" android:background="@drawable/btn_login_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_login"/>
+        <Button android:textSize="16sp" android:textColor="@drawable/btn_regist_text" android:id="@+id/registButton" android:background="@drawable/btn_regist_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="@string/register"/>
+    </LinearLayout>
+</LinearLayout>

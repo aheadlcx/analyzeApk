@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.topic.weight.PostMemberView android:id="@+id/post_member_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <cn.xiaochuankeji.tieba.ui.widget.MultipleLineEllipsisTextView android:textSize="@dimen/F2_text" android:textColor="@color/CT_2" android:ellipsize="end" android:id="@+id/tvPostContent" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="6dp" android:layout_marginRight="13dp" android:maxLines="4" android:lineSpacingExtra="3dp"/>
+    <FrameLayout android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="10dp" android:layout_marginRight="13dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/video_cover_bg" android:layout_width="match_parent" android:layout_height="wrap_content" app:viewAspectRatio="1.513" style="@style/PostImage"/>
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="center_horizontal" android:id="@+id/video_cover" android:layout_width="wrap_content" android:layout_height="match_parent" app:viewAspectRatio="0.758" app:actualImageScaleType="6"/>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@+id/layout_video_cover" android:background="@drawable/recommend_video_cover" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="32dp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CB" android:id="@+id/video_play_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number" android:drawableLeft="@drawable/ic_play_count_flag" android:drawablePadding="8dp" android:drawableStart="@drawable/ic_play_count_flag"/>
+                <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CB" android:id="@+id/video_danmu_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:text="@string/number" android:drawableLeft="@drawable/ic_danmu_count_flag" android:drawablePadding="8dp" android:drawableStart="@drawable/ic_danmu_count_flag"/>
+                <View style="@style/my_divide_view"/>
+                <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CB" android:id="@+id/video_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/video_play_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_flag" android:layout_centerInParent="true" android:contentDescription="@string/image"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.ui.topic.weight.PostVoteView android:id="@+id/post_vote_view" android:paddingLeft="13dp" android:paddingRight="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.xiaochuankeji.tieba.ui.topic.weight.PostGodReview android:id="@+id/post_god_review" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F3_line"/>
+        <TextView android:textSize="@dimen/F6_text" android:textColor="@color/CW" android:ellipsize="middle" android:gravity="center" android:id="@+id/post_topic_name" android:background="@drawable/bg_topic" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="@dimen/F4_line" android:layout_marginTop="11dp" android:singleLine="true"/>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.ui.topic.weight.PostOperateView android:id="@+id/post_operate_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/vPostDivide" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

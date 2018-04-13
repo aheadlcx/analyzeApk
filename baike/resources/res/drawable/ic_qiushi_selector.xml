@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true" android:drawable="@drawable/ic_qiushi_refresh" app:state_highlighted="true"/>
+    <item android:state_selected="true" android:drawable="@drawable/ic_qiushi_select"/>
+    <item android:drawable="@drawable/ic_qiushi_normal"/>
+</selector>

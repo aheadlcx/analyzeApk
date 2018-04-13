@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/ll_info" android:layout_width="match_parent" android:layout_height="63dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_avatar" android:layout_width="29dp" android:layout_height="29dp" android:layout_marginTop="16dp" android:layout_centerVertical="true" style="@style/CircleImage"/>
+        <TextView android:textSize="12sp" android:textColor="@color/CT_2" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="哈哈哈哈" android:layout_toRightOf="@+id/iv_avatar" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_tool" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <Button android:textSize="12sp" android:textColor="@color/CW" android:id="@+id/btn_agree" android:background="@drawable/bn_blue_selector" android:layout_width="44dp" android:layout_height="24dp" android:text="通过"/>
+            <Button android:textSize="12sp" android:textColor="@color/CT_2" android:id="@+id/btn_deny" android:background="@drawable/bn_white_selector" android:layout_width="44dp" android:layout_height="24dp" android:layout_marginLeft="13dp" android:text="拒绝"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/CT_6" android:id="@+id/tv_agreed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="已通过" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/CT_6" android:id="@+id/tv_denied" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="已拒绝" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.MultipleLineEllipsisTextView android:textSize="12sp" android:textColor="@color/CT_2" android:textColorHint="@color/CT_5" android:id="@+id/tv_reason" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:maxHeight="34dp" android:text="申请理由：" android:maxLines="2" android:layout_below="@+id/ll_info" android:lineSpacingMultiplier="1.2"/>
+    <View android:id="@+id/split_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

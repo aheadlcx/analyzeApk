@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <FrameLayout android:layout_gravity="top" android:id="@+id/action_bar" android:background="@color/transparent" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height" android:layout_alignParentTop="true">
+        <View android:layout_gravity="bottom" android:id="@+id/divider" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/webContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/action_bar"/>
+</RelativeLayout>

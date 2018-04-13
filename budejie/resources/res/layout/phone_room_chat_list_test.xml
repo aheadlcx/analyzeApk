@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <cn.v6.sixrooms.widgets.phone.PullToRefreshView android:orientation="vertical" android:id="@+id/pullRefresh" android:background="@drawable/room_chat_list_bg" android:layout_width="175dp" android:layout_height="156dp">
+        <ListView android:id="@+id/lv_chat_list_pop" android:fadingEdge="none" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/room_chat_list_divider" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    </cn.v6.sixrooms.widgets.phone.PullToRefreshView>
+    <ImageView android:id="@+id/triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/room_chat_list_bg_triangle" android:layout_below="@+id/pullRefresh"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="46dp" android:layout_centerHorizontal="true">
+        <ImageView android:background="@drawable/bigpic_comment_head_point_repeat" android:layout_width="80dp" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="#888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="精彩评论"/>
+        <ImageView android:background="@drawable/bigpic_comment_head_point_repeat" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:background="@drawable/bigpic_comment_head_mask" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

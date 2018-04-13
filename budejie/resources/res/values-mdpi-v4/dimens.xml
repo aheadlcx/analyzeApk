@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_open_or_anonym_width">55dp</dimen>
+    <dimen name="but_send_gift_width">80dp</dimen>
+    <dimen name="gift_width">130dp</dimen>
+    <dimen name="hundred_sixty_dip">160dp</dimen>
+    <dimen name="news_feature_title_text_padding">8dp</dimen>
+    <dimen name="phone_gift_pic_height">35dp</dimen>
+    <dimen name="phone_gift_pic_width">35dp</dimen>
+    <dimen name="attention_unlogin_botton_magin">25dp</dimen>
+    <dimen name="attention_unlogin_img_magin">19dp</dimen>
+</resources>

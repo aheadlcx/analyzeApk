@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_pay_success" android:background="@color/white" android:layout_width="260dp" android:layout_height="250dp">
+        <ImageView android:clickable="false" android:layout_width="94dp" android:layout_height="94dp" android:layout_marginTop="43dp" android:src="@drawable/live_market_pay_success"/>
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#41364f" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="购买成功！"/>
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#41364f" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="快试试新特效吧"/>
+    </LinearLayout>
+</LinearLayout>

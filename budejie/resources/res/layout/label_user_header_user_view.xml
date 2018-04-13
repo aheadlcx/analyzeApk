@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/common_layout_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="34dp">
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+    <TextView android:textSize="@dimen/font_14" android:textColor="#626262" android:id="@+id/moderator_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left" android:text="@string/label_moderator_text" android:layout_centerVertical="true"/>
+    <RelativeLayout android:id="@+id/moderator_standard_layout" android:paddingRight="@dimen/post_margin_left" android:layout_width="wrap_content" android:layout_height="33dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/right_icon_image_view" android:layout_width="10dp" android:layout_height="10dp" android:src="?attr/plate_list_item_right_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/font_14" android:textColor="#626262" android:id="@+id/moderator_standard_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:text="@string/label_moderator_standard_text" android:maxLines="1" android:layout_toLeftOf="@+id/right_icon_image_view" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

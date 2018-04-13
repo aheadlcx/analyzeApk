@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/nav_bar">
+        <cn.xiaochuankeji.tieba.ui.widget.ZYRefreshHeader android:layout_width="match_parent" android:layout_height="53dp"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <cn.xiaochuankeji.tieba.widget.ZYClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:srlTextSizeTitle="12sp"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:layout_gravity="top" android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navTitleText="申诉" app:navNeedBack="true" app:navShowBottomDivide="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="35dp">
+            <FrameLayout android:id="@+id/topic_summary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="5dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_buttons" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="66dp">
+                <Button android:textSize="14dp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/btn_modify_topic" android:background="@drawable/bg_button_allege" android:layout_width="130dp" android:layout_height="35dp" android:text="修改话题"/>
+                <Button android:textSize="14dp" android:textColor="#41b1f7" android:layout_gravity="center_horizontal" android:id="@+id/btn_allege_topic" android:background="@drawable/bg_button_round_blue" android:layout_width="130dp" android:layout_height="35dp" android:layout_marginLeft="33.5dp" android:text="我要申诉"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_allege_reason" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="17dp">
+                    <View android:background="#3db4ff" android:layout_width="3.5dp" android:layout_height="match_parent"/>
+                    <TextView android:textSize="13dp" android:textColor="#111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.4dp" android:text="请填写申诉理由"/>
+                </LinearLayout>
+                <EditText android:textSize="15dp" android:textColor="#111111" android:textColorHint="#a5a4a4" android:gravity="start" android:id="@+id/text_allege_content" android:background="@drawable/bg_edit_content" android:padding="10dp" android:layout_width="match_parent" android:layout_height="126dp" android:layout_margin="17dp" android:hint="申诉理由"/>
+                <Button android:textSize="14dp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/btn_submit_allege" android:background="@drawable/bg_button_allege" android:layout_width="100dp" android:layout_height="35dp" android:text="立即提交"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/select_topic" android:visibility="visible" android:layout_width="match_parent" android:layout_height="134dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="14.8dp">
+                    <View android:background="#3db4ff" android:layout_width="3.5dp" android:layout_height="match_parent"/>
+                    <TextView android:textSize="13dp" android:textColor="#111111" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="选择你要修改的话题"/>
+                </LinearLayout>
+                <TextView android:textSize="12sp" android:textColor="@drawable/text_blue_bg_selector" android:gravity="center" android:id="@+id/textSelectTopic" android:background="@drawable/blue_border_round_rect_bg_selector" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="13dp" android:layout_marginTop="10.7dp" android:text="选择话题"/>
+                <Button android:textSize="14dp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/btn_submit_topic" android:background="@drawable/bg_button_allege" android:layout_width="130dp" android:layout_height="35dp" android:layout_marginTop="13dp" android:text="立即提交"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

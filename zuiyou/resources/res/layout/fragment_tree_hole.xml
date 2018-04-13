@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/hole_recommend_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/empty_hollow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31.3dp" android:src="@drawable/tips_tree_empty" android:layout_centerHorizontal="true"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.recommend.widget.HomeRefreshHeader android:layout_width="match_parent" android:layout_height="53dp"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recommend_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <cn.xiaochuankeji.tieba.ui.hollow.widget.HollowFooter android:layout_width="match_parent" android:layout_height="53dp"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <cn.xiaochuankeji.tieba.ui.homepage.PostLoadedTipsView android:id="@+id/tips_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:layout_below="@+id/navBar" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

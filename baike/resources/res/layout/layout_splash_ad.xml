@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/splash_ad_logo" android:layout_width="match_parent" android:layout_height="95dp" android:scaleType="center" android:layout_alignParentBottom="true"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/splash_ad_image" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/splash_ad_logo" app:actualImageScaleType="6"/>
+    <TextView android:textSize="13dp" android:textColor="#ffa015" android:gravity="center" android:id="@+id/splash_ad_btn" android:background="@drawable/splash_ad_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginRight="13dp" android:text="3s | 跳过" android:layout_alignParentRight="true"/>
+</RelativeLayout>

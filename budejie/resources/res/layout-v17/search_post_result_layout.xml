@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/PostItemLayout" android:layout_width="match_parent" android:layout_height="92dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <RelativeLayout android:layout_width="102dp" android:layout_height="68dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/PostImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/VideoPlayImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_video_play" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="9sp" android:textColor="@color/White" android:id="@+id/VideoTimTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="04:25" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="68dp" android:layout_marginRight="10dp">
+            <TextView android:textSize="14sp" android:textColor="#888888" android:ellipsize="end" android:id="@+id/PostContentTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#搞笑搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人的人搞笑的人搞笑的人搞笑的人搞笑的人搞笑的人" android:lines="3"/>
+            <TextView android:textSize="10sp" android:textColor="#bbbbbb" android:ellipsize="end" android:id="@+id/SearchPostInfoTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="百思铁粉    2016-10-11" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider_h_view1" android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_below="@+id/PostItemLayout" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

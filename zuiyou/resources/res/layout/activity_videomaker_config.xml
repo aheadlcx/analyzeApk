@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <TextView android:textColor="@color/black" android:id="@+id/label_phone_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前配置："/>
+        <TextView android:textColor="@color/black" android:id="@+id/label_current_config" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textColor="@color/black" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="硬编码分辨率："/>
+        <TextView android:textColor="@color/main_blue" android:gravity="center_horizontal" android:id="@+id/btn_hwrecoder_540p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="540p" android:layout_weight="1"/>
+        <TextView android:textColor="@color/main_blue" android:gravity="center_horizontal" android:id="@+id/btn_hwrecoder_432p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="432p" android:layout_weight="1"/>
+        <TextView android:textColor="@color/main_blue" android:gravity="center_horizontal" android:id="@+id/btn_hwrecoder_360p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="360p" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textColor="@color/black" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="软编码分辨率："/>
+        <TextView android:textColor="@color/main_blue" android:gravity="center_horizontal" android:id="@+id/btn_softrecoder_540p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="540p" android:layout_weight="1"/>
+        <TextView android:textColor="@color/main_blue" android:gravity="center_horizontal" android:id="@+id/btn_softrecoder_432p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="432p" android:layout_weight="1"/>
+        <TextView android:textColor="@color/main_blue" android:gravity="center_horizontal" android:id="@+id/btn_softrecoder_360p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="360p" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textColor="@color/black" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预览分辨率："/>
+        <TextView android:textColor="@color/main_blue" android:gravity="center_horizontal" android:id="@+id/btn_preview_720p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="720p" android:layout_weight="1"/>
+        <TextView android:textColor="@color/main_blue" android:gravity="center_horizontal" android:id="@+id/btn_preview_540p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="540p" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <Button android:textColor="@color/white" android:id="@+id/btn_videomaker_enabled" android:background="@drawable/bn_blue_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="启用录制器" android:layout_weight="1"/>
+        <Button android:textColor="@color/white" android:id="@+id/btn_videomaker_disabled" android:background="@drawable/bn_blue_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="禁用录制器" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <Button android:textColor="@color/white" android:id="@+id/btn_hwrecoder_enabled" android:background="@drawable/bn_blue_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="启用硬编码" android:layout_weight="1"/>
+        <Button android:textColor="@color/white" android:id="@+id/btn_hwrecoder_disabled" android:background="@drawable/bn_blue_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="禁用硬编码" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <Button android:textColor="@color/white" android:id="@+id/btn_hwprocesser_enabled" android:background="@drawable/bn_blue_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="启用硬合成" android:layout_weight="1"/>
+        <Button android:textColor="@color/white" android:id="@+id/btn_hwprocesser_disabled" android:background="@drawable/bn_blue_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="禁用硬合成" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

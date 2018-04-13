@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <FrameLayout android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llCategoryContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <android.support.v7.widget.RecyclerView android:id="@+id/rvCategory" android:scrollbars="none" android:layout_width="77dp" android:layout_height="match_parent"/>
+        <cn.htjyb.ui.widget.headfooterlistview.QueryListView android:id="@+id/lvContent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <cn.htjyb.ui.widget.headfooterlistview.QueryListView android:id="@+id/lvSearchContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar"/>
+</RelativeLayout>

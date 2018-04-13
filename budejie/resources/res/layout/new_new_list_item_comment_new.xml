@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/operatrion_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/comment_operation_view_height" android:splitMotionEvents="false">
+        <RelativeLayout android:gravity="center" android:id="@+id/ding_layout" android:background="?attr/post_praise_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/ding_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:src="?attr/ding_icon"/>
+            <TextView android:textSize="@dimen/font_13" android:textColor="?attr/post_item_operation_text_color" android:id="@+id/dingCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5" android:maxLines="1" android:layout_toRightOf="@+id/ding_imageView"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/cai_layout" android:background="?attr/post_praise_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/cai_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:src="?attr/cai_icon"/>
+            <TextView android:textSize="@dimen/font_13" android:textColor="?attr/post_item_operation_text_color" android:id="@+id/caiCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5" android:maxLines="1" android:layout_toRightOf="@+id/cai_imageView"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/share_layout" android:background="?attr/post_praise_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/share_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:src="?attr/forward_icon"/>
+            <TextView android:textSize="@dimen/font_13" android:textColor="?attr/post_item_operation_text_color" android:id="@+id/shareCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5" android:maxLines="1" android:layout_toRightOf="@+id/share_imageView"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/comment_layout" android:background="?attr/post_praise_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/comment_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:src="?attr/commend_icon"/>
+            <TextView android:textSize="@dimen/font_13" android:textColor="?attr/post_item_operation_text_color" android:id="@+id/commentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5" android:maxLines="1" android:layout_toRightOf="@+id/comment_imageView"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

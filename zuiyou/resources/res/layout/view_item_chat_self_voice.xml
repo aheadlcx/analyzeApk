@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/CircleImage"/>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="82dp" android:layout_toLeftOf="@+id/avatar" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/container" android:layout_width="wrap_content" android:layout_height="36dp">
+            <ProgressBar android:id="@+id/progress" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/resend" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" android:src="@drawable/tips_error_message"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/voice_container" android:background="@drawable/chat_self_item_bg" android:layout_width="169dp" android:layout_height="36dp">
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F3_text" android:textColor="@color/CW" android:id="@+id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="60’’" android:layout_centerVertical="true"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <android.support.v7.widget.AppCompatImageView android:id="@+id/voice_buffering" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/loading_user"/>
+                    <android.support.v7.widget.AppCompatImageView android:id="@+id/voice_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_me_voice"/>
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

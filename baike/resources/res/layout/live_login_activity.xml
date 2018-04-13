@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/live_login_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="?attr/new_share_bg" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="10dp">
+        <TextView android:id="@+id/live_login_des" android:layout_width="245dp" android:layout_height="50dp" android:layout_marginLeft="30dp" android:layout_marginTop="20dp" android:layout_marginRight="25dp" android:text="请先登录再继续操作" style="?attr/listitem_content"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34dp" android:layout_marginTop="23dp" android:text="@string/user_login_or_register" style="?attr/login_register_text"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="79dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/live_login_qq" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/live_login_tx"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/live_login_wx" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/live_login_wx"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/live_login_wb" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/live_login_wb"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/live_login_qb" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/live_login_qb"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/live_login_delete" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/live_login_delete"/>
+</FrameLayout>

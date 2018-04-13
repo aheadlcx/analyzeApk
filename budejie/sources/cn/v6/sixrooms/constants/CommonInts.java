@@ -1,0 +1,41 @@
+package cn.v6.sixrooms.constants;
+
+public class CommonInts {
+    public static final int AES_KEY_NUM = 32;
+    public static final int APP_BACKGROUND = 105;
+    public static final int APP_FOREGROUND = 106;
+    public static final int COOP_ILLEGAL = 1017;
+    public static final int GT_ERROR = 10002;
+    public static final int IMSOCKETOPEN = 1101;
+    public static final int JSON_PARSE_ERROE = 1007;
+    public static final int LIVE_DEFINITION_SETTING_REQUEST_CODE = 9001;
+    public static final int MISSPARAMSE = 61055;
+    public static final int NET_CONNECT_ERROE = 1006;
+    public static final int NET_CONNECT_ERROE_RE = 1026;
+    public static final int NUMBER_FORMAT_EXCEPTION = 1015;
+    public static final int OUT_OF_MEMORY_ERROR_CODE = 1021;
+    public static final int PASSWOED_ERROE = 1002;
+    public static final int PCK_ERROE_CODE = 1027;
+    public static final int PIC_COMPRESS_ERROR_CODE = 1022;
+    public static final int PIC_UPLOADING_ERROR_CODE = 1023;
+    public static final int REGISTER_FREQUENTLY = 1005;
+    public static final int REPLY_RESULT = 1013;
+    public static final int RETRANSMIT_RESULT = 1011;
+    public static final int SENDMSG_RESULT = 1012;
+    public static final int SERVICE_ERROR = 1009;
+    public static final int STRING_NET_EXCEPTION = 1017;
+    public static final int STRING_OUTOFBOUNDS_EXCEPTION = 1016;
+    public static final int USERNAME_ERROE = 1001;
+    public static final int USERNAME_FORBIDDEN_WORD = 1011;
+    public static final int USERNAME_ILLEGAL = 1008;
+    public static final int USERNAME_NOT_EXIST = 1010;
+    public static final int USER_BEAN_EVALUATION = 101;
+    public static final int USER_EXIST = 1003;
+    public static final int USER_LOGOUT = 103;
+    public static final int USER_MANAGER_REQUEST_CODE = 9999;
+    public static final int USER_NAME_SUCCESS = 104;
+    public static final int USER_PIC_SUCCESS = 102;
+    public static final int USER_SUCCESS = 1000;
+    public static final int VERIFY_CODE_ERROR = 1004;
+    public static final int VOICE_UPLOADING_ERROR_CODE = 1025;
+}

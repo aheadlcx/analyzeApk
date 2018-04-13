@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="false">
+    <item android:duration="100" android:drawable="@drawable/voice_record_play_3"/>
+    <item android:duration="200" android:drawable="@drawable/voice_record_play_1"/>
+    <item android:duration="200" android:drawable="@drawable/voice_record_play_2"/>
+    <item android:duration="100" android:drawable="@drawable/voice_record_play_3"/>
+</animation-list>

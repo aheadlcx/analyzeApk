@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/video_container_top" android:background="@color/recommend_video_mask_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/video_play_btn" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:id="@+id/video_stop_btn" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/video_container_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center_horizontal" android:id="@+id/recommend_post_item_image" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/recommend_post_item_mask" android:background="@color/recommend_video_mask_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/recommend_post_item_image" android:layout_alignBottom="@+id/recommend_post_item_image"/>
+    </RelativeLayout>
+    <View android:id="@+id/video_container_bottom" android:background="@color/recommend_video_mask_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

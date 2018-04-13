@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="45dp" android:src="@drawable/nv_bg_001" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="65dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <CheckBox android:id="@+id/join_cloud" android:checked="true" style="@style/custem_checkbox"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@+id/join_cloud_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/enter" android:background="@drawable/budejiebr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="320dp" android:layout_height="wrap_content">
+    <EditText android:textSize="18dp" android:textColor="#3b3d42" android:gravity="top" android:id="@+id/edittext" android:background="#00000000" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64dp" android:text="哈哈还">
+        <requestFocus/>
+    </EditText>
+    <TextView android:textSize="12dp" android:textColor="#7f7f7f" android:layout_gravity="right" android:id="@+id/left_count" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="140"/>
+    <View android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="47dp">
+        <TextView android:textSize="18dp" android:textColor="#3b3d42" android:gravity="center" android:id="@+id/cancel" android:layout_width="0dp" android:layout_height="match_parent" android:text="取消" android:layout_weight="1"/>
+        <View android:id="@+id/button_divider" android:background="#ededed" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="18dp" android:textColor="#3b3d42" android:gravity="center" android:id="@+id/submit" android:layout_width="0dp" android:layout_height="match_parent" android:text="确定" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

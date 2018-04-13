@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Improved_Dialog_RootView_Width">310dp</dimen>
+    <dimen name="hall_header_pic_width">242dp</dimen>
+    <dimen name="item_margin_top">16dp</dimen>
+    <dimen name="shop_car_height_large">56dp</dimen>
+    <dimen name="shop_car_width_large">104dp</dimen>
+    <dimen name="leftmenu_item_margin">20dp</dimen>
+    <dimen name="leftmenu_portrait_margin_top">39dp</dimen>
+    <dimen name="tv_open_or_anonym_width">65dp</dimen>
+</resources>

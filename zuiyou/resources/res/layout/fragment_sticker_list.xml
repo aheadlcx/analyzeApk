@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="#bb2c3537" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="left" android:id="@+id/close" android:padding="16dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_sticker_close"/>
+        <android.support.v7.widget.AppCompatTextView android:textSize="17dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="50dp" android:maxLines="1"/>
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+</LinearLayout>

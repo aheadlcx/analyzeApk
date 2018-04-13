@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13dp" android:textColor="#666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvSignOrLoginTips" android:paddingLeft="97dp" android:paddingRight="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="45dp" android:maxLines="2" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="12dp" android:lineSpacingMultiplier="1.2"/>
+        <cn.xiaochuankeji.tieba.ui.widget.image.SquaredImageView android:id="@+id/pvMemberAvatar" android:padding="3dp" android:clickable="true" android:layout_width="73dp" android:layout_height="73dp" android:layout_marginLeft="17dp" android:layout_marginTop="-35dp" android:layout_alignParentTop="true" app:actualImageScaleType="2" app:roundAsCircle="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_marginTop="-35dp" android:layout_toRightOf="@+id/pvMemberAvatar">
+            <android.support.v7.widget.AppCompatTextView android:textSize="14dp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tvMemberName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/ivGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:src="@drawable/ic_male"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/ivAssessor" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginRight="9dp" android:src="@drawable/ic_assessor_senior"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/intro_container" android:paddingLeft="13dp" android:paddingTop="6dp" android:paddingRight="13dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <FrameLayout android:id="@+id/postCountArea" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13dp" android:textColor="#666666" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tvPostCount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="11dp" android:textColor="#999999" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvPostTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="帖子"/>
+        </FrameLayout>
+        <View android:layout_gravity="center_vertical" android:id="@+id/split_line1" android:background="@color/CL" android:layout_width="1px" android:layout_height="18dp"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13dp" android:textColor="#666666" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tvBeLikedCount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="11dp" android:textColor="#999999" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvBelikedTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获赞"/>
+        </FrameLayout>
+        <View android:layout_gravity="center_vertical" android:id="@+id/split_line2" android:background="@color/CL" android:layout_width="1px" android:layout_height="18dp"/>
+        <FrameLayout android:id="@+id/flFollowCount" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13dp" android:textColor="#666666" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tvFollowedCount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="11dp" android:textColor="#999999" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvFollowedTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注"/>
+        </FrameLayout>
+        <View android:layout_gravity="center_vertical" android:id="@+id/split_line3" android:background="@color/CL" android:layout_width="1px" android:layout_height="18dp"/>
+        <FrameLayout android:id="@+id/flFansCount" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13dp" android:textColor="#666666" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tvFansCount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="11dp" android:textColor="#999999" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvFansTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝"/>
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="right" android:id="@+id/vFansCrumb" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginRight="15dp" android:src="@drawable/icon_badge_dot" android:scaleType="fitCenter"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+    <include android:id="@+id/rlAssessPost" android:layout_marginTop="10dp" layout="@layout/view_my_activity_item"/>
+    <include android:id="@+id/rlUgcVideo" android:visibility="gone" layout="@layout/view_my_activity_item"/>
+    <include android:id="@+id/rlMyPostArea" layout="@layout/view_my_activity_item"/>
+    <include android:id="@+id/rlMyComment" layout="@layout/view_my_activity_item"/>
+    <include android:id="@+id/rlMyFavoredPost" layout="@layout/view_my_activity_item"/>
+    <include android:id="@+id/rlMyLikePost" layout="@layout/view_my_activity_item"/>
+    <include android:id="@+id/rlHistory" layout="@layout/view_my_activity_item"/>
+    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+    <include android:id="@+id/rlNightMode" layout="@layout/view_my_activity_item"/>
+    <include android:id="@+id/rlShare" layout="@layout/view_my_activity_item"/>
+    <include android:id="@+id/rlFeedback" layout="@layout/view_my_activity_item"/>
+    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

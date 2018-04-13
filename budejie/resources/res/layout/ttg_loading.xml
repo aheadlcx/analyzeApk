@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:id="@+id/ttg_show_ly_loading" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ttg_iv_loading_img" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/ttg_sdk_loading"/>
+            <TextView android:textSize="16sp" android:textColor="#555555" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_cate_jinxuan"/>
+        </FrameLayout>
+        <TextView android:textSize="15sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/ttg_loading_slogan" android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+</LinearLayout>

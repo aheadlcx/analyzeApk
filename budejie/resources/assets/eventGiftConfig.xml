@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<giftTypeStock>
+
+    <!-- 葵花宝典-->
+    <gift>
+        <id>305</id>
+        <tag>12</tag>
+        <price>10</price>
+        <name>葵花宝典</name>
+        <animType>1</animType>
+        <smallName>gift_305_small.png</smallName>
+        <largeName>gift_305_large.png</largeName>
+        <originalName>gift_305_original.png</originalName>
+        <specialName></specialName>
+    </gift>
+    <!-- 九阴真经-->
+    <gift>
+        <id>306</id>
+        <tag>12</tag>
+        <price>10</price>
+        <name>九阴真经</name>
+        <animType>1</animType>
+        <smallName>gift_306_small.png</smallName>
+        <largeName>gift_306_large.png</largeName>
+        <originalName>gift_306_original.png</originalName>
+        <specialName></specialName>
+    </gift>
+    <!-- 北冥神功-->
+    <gift>
+        <id>307</id>
+        <tag>12</tag>
+        <price>10</price>
+        <name>北冥神功</name>
+        <animType>1</animType>
+        <smallName>gift_307_small.png</smallName>
+        <largeName>gift_307_large.png</largeName>
+        <originalName>gift_307_original.png</originalName>
+        <specialName></specialName>
+    </gift>
+    <!-- 打狗棒法-->
+    <gift>
+        <id>325</id>
+        <tag>12</tag>
+        <price>10</price>
+        <name>打狗棒法</name>
+        <animType>1</animType>
+        <smallName>gift_325_small.png</smallName>
+        <largeName>gift_325_large.png</largeName>
+        <originalName>gift_325_original.png</originalName>
+        <specialName></specialName>
+    </gift>
+    <!-- 飞刀-->
+    <gift>
+        <id>309</id>
+        <tag>12</tag>
+        <price>10</price>
+        <name>飞刀</name>
+        <animType>1</animType>
+        <smallName>gift_309_small.png</smallName>
+        <largeName>gift_309_large.png</largeName>
+        <originalName>gift_309_original.png</originalName>
+        <specialName></specialName>
+    </gift>
+    <!-- 屠龙刀-->
+    <gift>
+        <id>310</id>
+        <tag>12</tag>
+        <price>10</price>
+        <name>屠龙刀</name>
+        <animType>1</animType>
+        <smallName>gift_310_small.png</smallName>
+        <largeName>gift_310_large.png</largeName>
+        <originalName>gift_310_original.png</originalName>
+        <specialName></specialName>
+    </gift>
+    <!-- 玄铁剑-->
+    <gift>
+        <id>311</id>
+        <tag>12</tag>
+        <price>10</price>
+        <name>玄铁剑</name>
+        <animType>1</animType>
+        <smallName>gift_311_small.png</smallName>
+        <largeName>gift_311_large.png</largeName>
+        <originalName>gift_311_original.png</originalName>
+        <specialName></specialName>
+    </gift>
+    <!-- 倚天剑-->
+    <gift>
+        <id>312</id>
+        <tag>12</tag>
+        <price>10</price>
+        <name>倚天剑</name>
+        <animType>1</animType>
+        <smallName>gift_312_small.png</smallName>
+        <largeName>gift_312_large.png</largeName>
+        <originalName>gift_312_original.png</originalName>
+        <specialName></specialName>
+    </gift>
+</giftTypeStock>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/gridRecyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/listRecyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/vFloatTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="41dp" layout="@layout/item_view_ugc_listchange"/>
+</FrameLayout>

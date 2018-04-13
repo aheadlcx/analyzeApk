@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/video_music_pink_bg" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/vCancel" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="25dp" android:layout_width="55dp" android:layout_height="60dp" android:src="@drawable/img_search_cancel" android:layout_alignParentRight="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_et_search_music" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="20dp" android:layout_toLeftOf="@+id/vCancel" android:layout_centerVertical="true">
+            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="10dp" android:src="@drawable/img_search_icon"/>
+            <EditText android:textSize="14sp" android:textColor="#111111" android:textColorHint="#999999" android:gravity="center_vertical" android:id="@+id/etInput" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="7dp" android:hint="搜索歌曲名称" android:singleLine="true" android:maxLength="140" android:layout_weight="1"/>
+            <ImageView android:id="@+id/ivClear" android:padding="8dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_clear_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/ultimateRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60dp"/>
+    <FrameLayout android:id="@+id/flEmptyContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60dp"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/live_large_part_without_text" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/live_gift_avatar" android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/live_avatar_default" android:layout_centerVertical="true"/>
+    <View android:id="@+id/iv_filter_mask" android:background="@drawable/live_barrage_anim_avatar_mask" android:layout_width="38dp" android:layout_height="38dp" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/large_gift_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_toRightOf="@+id/live_gift_avatar" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="90dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="7dp">
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/live_large_gift_username" android:layout_width="0dp" android:layout_height="wrap_content" android:text="单俊凯" android:singleLine="true" android:layout_weight="1" android:alpha="0.6" style="@style/TextShadow"/>
+            <qsbk.app.live.widget.FamilyLevelView android:layout_gravity="center_vertical" android:id="@+id/fl_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/live_large_gift_name" android:layout_width="110dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="1dp" android:layout_marginBottom="8dp" android:text="我赠送了主播 掌声" android:singleLine="true" style="@style/TextShadow"/>
+    </LinearLayout>
+</RelativeLayout>

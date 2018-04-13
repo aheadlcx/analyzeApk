@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/rl_ach" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_content" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="-24dp" android:layout_toRightOf="@+id/img_left" android:animateLayoutChanges="true">
+        <View android:layout_gravity="center_vertical" android:id="@+id/view_end" android:background="@drawable/archievement_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="-23dp" android:layout_toRightOf="@+id/ll_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_content" android:background="@color/CM" android:paddingLeft="30dp" android:layout_width="wrap_content" android:layout_height="48dp">
+            <TextView android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:maxWidth="200dp" android:text="" android:maxLines="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_left" android:background="@drawable/archievement_circle" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="centerInside"/>
+</RelativeLayout>

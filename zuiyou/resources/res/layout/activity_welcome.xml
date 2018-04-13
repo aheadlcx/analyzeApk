@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/parallax_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/layout_indicators" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="17dp">
+        <ImageView android:background="@drawable/indicator_dot_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:background="@drawable/indicator_dot_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp"/>
+        <ImageView android:background="@drawable/indicator_dot_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp"/>
+        <ImageView android:background="@drawable/indicator_dot_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp"/>
+    </LinearLayout>
+</FrameLayout>

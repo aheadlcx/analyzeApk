@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/live_market_curtain" android:scaleType="centerCrop"/>
+        <qsbk.app.core.widget.RefreshRecyclerView android:id="@+id/refresher" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="match_parent" app:itemSpace="10" app:columnNum="2"/>
+    </LinearLayout>
+    <qsbk.app.live.widget.SuperUserEnterAnimLayout android:id="@+id/enter_anim" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

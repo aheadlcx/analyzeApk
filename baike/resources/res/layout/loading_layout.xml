@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/tips" android:background="?attr/setting_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="19dp" android:src="@drawable/fail_img" android:contentDescription="@null"/>
+        <TextView android:textSize="14dp" android:textColor="#969696" android:gravity="center_horizontal" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nothing_here" android:lineSpacingExtra="6dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

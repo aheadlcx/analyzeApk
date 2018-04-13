@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.KeyboardListenerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/lable_subscribe_root_layout" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_label" android:background="?attr/window_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/label_search" android:background="?attr/choose_contact_input_box_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="29dp" android:layout_marginLeft="7dp" android:layout_marginTop="7dp" android:layout_marginRight="7dp">
+            <ImageView android:background="@drawable/label_search_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+            <TextView android:textSize="13sp" android:textColor="#a1a1a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="搜索"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="?attr/label_subscribe_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="7dp">
+            <ListView android:id="@+id/label_listview" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@android:color/transparent" android:dividerHeight="@dimen/divide_line_height" android:overScrollMode="never"/>
+            <RelativeLayout android:id="@+id/empty_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp">
+                <ImageView android:id="@+id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/empty_icon" style="@style/follow_text_3_style"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/label_mengban" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="?attr/choose_search_layout_bg" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/cancel_btn" android:layout_centerVertical="true">
+                <EditText android:textSize="13sp" android:textColor="?attr/item_content_text_color" android:textColorHint="?attr/choose_contact_hint_text_color" android:gravity="center_vertical" android:id="@+id/search_keywords_text" android:background="?attr/choose_contact_input_box_bg" android:paddingLeft="7dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="7dp" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:hint="@string/enter_label_hint" android:singleLine="true" android:drawableLeft="?attr/choose_contact_search_icon" android:drawablePadding="6dp" android:layout_centerVertical="true" android:imeOptions="actionSearch"/>
+                <ImageButton android:id="@+id/del_keywords_btn" android:background="@null" android:visibility="gone" android:layout_width="30dp" android:layout_height="@dimen/navigation_height" android:src="?attr/choose_contact_clear_search_text_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="16sp" android:textColor="?attr/choose_contact_cancel_text_color" android:gravity="center" android:id="@+id/cancel_btn" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/fl_bg" android:background="#88000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ListView android:id="@+id/listview" android:background="?attr/label_subscribe_bg_color" android:focusable="true" android:visibility="gone" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@android:color/transparent" android:footerDividersEnabled="false" android:overScrollMode="never"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/melodyview" android:background="@anim/melody_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="20dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ProgressBar android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.ProgressBar"/>
+</com.budejie.www.widget.KeyboardListenerRelativeLayout>

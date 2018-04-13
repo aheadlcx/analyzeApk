@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_forward" android:background="?attr/item_forward_bg" android:paddingTop="5dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+    <ImageView android:id="@+id/iv_forward_qzone" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/share_qzone_day_selector"/>
+    <ImageView android:id="@+id/iv_forward_wxFriend" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="30dp" android:src="@drawable/share_wechat_day_selector"/>
+    <ImageView android:id="@+id/iv_forward_wxGroup" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="30dp" android:src="@drawable/share_circlefriend_day_selector"/>
+    <ImageView android:id="@+id/iv_forward_qq" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="30dp" android:src="@drawable/share_qq_day_selector"/>
+</LinearLayout>

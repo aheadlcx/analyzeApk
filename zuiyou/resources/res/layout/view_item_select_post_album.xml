@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="45dp">
+    <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:ellipsize="end" android:gravity="center" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="@dimen/left_right_common_distance" android:text="选择收藏夹" android:singleLine="true"/>
+    <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:ellipsize="end" android:id="@+id/tvIntroduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/left_right_common_distance" android:text="123条内容" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/line" android:background="@color/CL" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

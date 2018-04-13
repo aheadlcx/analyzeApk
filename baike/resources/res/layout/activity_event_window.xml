@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#99000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="300dp" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_event_window" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:layout_centerInParent="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/img" android:layout_width="280dp" android:layout_height="210dp" app:roundedCornerRadius="5dp" app:roundTopLeft="true" app:roundTopRight="true" app:roundBottomRight="false" app:roundBottomLeft="false"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="40dp">
+                <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btn" android:background="@drawable/yellow_round_btn_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="参与活动讨论"/>
+                <FrameLayout android:id="@+id/progress" android:background="@drawable/yellow_round_btn_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                    <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:textSize="13sp" android:textColor="#639ce0" android:gravity="center" android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="查看红包领取情况"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/close" android:background="@drawable/shape_yellow_oval" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_event_close" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</FrameLayout>

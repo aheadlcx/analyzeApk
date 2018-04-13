@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="25dp">
+        <RelativeLayout android:id="@+id/rl_left" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="11sp" android:textColor="@drawable/v6_room_guard_pop_title_textcolor_selector" android:gravity="center" android:id="@+id/tv_title_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="守护"/>
+                <TextView android:textSize="11sp" android:textColor="@drawable/v6_room_pop_title_textcolor_selector" android:gravity="center" android:id="@+id/tv_guard_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(90)"/>
+            </LinearLayout>
+            <View android:id="@+id/bar_left" android:background="@drawable/v6_room_pop_title_line_selector" android:layout_width="50dp" android:layout_height="1dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="11sp" android:textColor="@drawable/v6_room_guard_pop_title_textcolor_selector" android:gravity="center" android:id="@+id/tv_title_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="管理"/>
+                <TextView android:textSize="11sp" android:textColor="@drawable/v6_room_pop_title_textcolor_selector" android:gravity="center" android:id="@+id/tv_manager_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(90)"/>
+            </LinearLayout>
+            <View android:id="@+id/bar_center" android:background="@drawable/v6_room_pop_title_line_selector" android:layout_width="50dp" android:layout_height="1dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="11sp" android:textColor="@drawable/v6_room_guard_pop_title_textcolor_selector" android:gravity="center" android:id="@+id/tv_title_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观众"/>
+                <TextView android:textSize="11sp" android:textColor="@drawable/v6_room_pop_title_textcolor_selector" android:gravity="center" android:id="@+id/tv_spectator_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(90)"/>
+            </LinearLayout>
+            <View android:id="@+id/bar_right" android:background="@drawable/v6_room_pop_title_line_selector" android:layout_width="50dp" android:layout_height="1dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/division" android:background="@color/pop_gray_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="-0.5dp" android:layout_below="@+id/ll_title"/>
+    <cn.v6.sixrooms.widgets.phone.ReplyWeiBoListView android:orientation="vertical" android:id="@+id/pullToRefresh" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tv_open_guard" android:layout_below="@+id/division">
+        <ListView android:id="@+id/lv_guard_rank" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="@null"/>
+    </cn.v6.sixrooms.widgets.phone.ReplyWeiBoListView>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_open_guard" android:background="@drawable/full_screen_open_guard_btn_selector" android:layout_width="117dp" android:layout_height="34dp" android:layout_marginTop="5dp" android:text="开通守护" android:layout_above="@+id/empty_view" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

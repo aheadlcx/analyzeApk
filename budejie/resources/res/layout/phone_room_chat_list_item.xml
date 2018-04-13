@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="38dp" android:minHeight="38dp">
+    <TextView android:textSize="15sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tv_username" android:background="@drawable/room_chat_list_item_background" android:layout_width="match_parent" android:layout_height="38dp" android:singleLine="true"/>
+</RelativeLayout>

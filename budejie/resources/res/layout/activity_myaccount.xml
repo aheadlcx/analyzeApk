@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/account_layout" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/topLayout" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+    <ScrollView android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topLayout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_14" android:textColor="?attr/more_single_text_color" android:id="@+id/account_title" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="账户"/>
+            <LinearLayout android:orientation="vertical" android:background="?attr/list_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/account_profile_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnProfile$Click">
+                    <TextView android:id="@+id/acount_profile_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="头像" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                    <ImageView android:id="@+id/jiantou" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/jiantou">
+                        <ImageView android:id="@+id/userProfile" android:background="@drawable/head_portrait" android:layout_width="36dp" android:layout_height="36dp"/>
+                        <View android:id="@+id/person_ready" android:background="#e0000000" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp"/>
+                    </FrameLayout>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/account_name_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnName$Click">
+                    <TextView android:id="@+id/account_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="昵称" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                    <ImageView android:id="@+id/jiantou1" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="15sp" android:ellipsize="end" android:id="@+id/userNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="200dp" android:singleLine="true" android:layout_toLeftOf="@+id/jiantou1" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/account_sex_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnSex$Click">
+                    <TextView android:id="@+id/account_sex_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="性别" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                    <ImageView android:id="@+id/jiantou2" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="15sp" android:id="@+id/user_sexTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/jiantou2" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/account_pro_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnPro$Click">
+                    <TextView android:id="@+id/account_pro_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="简介" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                    <ImageView android:id="@+id/jiantou3" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="15sp" android:id="@+id/user_proTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/jiantou3" android:layout_toRightOf="@+id/account_pro_text" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/account_birthday_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnBirthday$Click">
+                    <TextView android:id="@+id/account_birthday_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="生日" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                    <ImageView android:id="@+id/jiantou4" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="15sp" android:ellipsize="end" android:id="@+id/birthdayTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="200dp" android:singleLine="true" android:layout_toLeftOf="@+id/jiantou4" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/account_education_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnEducation$Click">
+                    <TextView android:id="@+id/account_education_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="学历" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                    <ImageView android:id="@+id/jiantou6" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="15sp" android:ellipsize="end" android:id="@+id/educationTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="200dp" android:singleLine="true" android:layout_toLeftOf="@+id/jiantou6" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/account_qq_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnQq$Click">
+                    <TextView android:id="@+id/account_qq_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="QQ" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                    <ImageView android:id="@+id/jiantou10" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="15sp" android:ellipsize="end" android:id="@+id/qqTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="200dp" android:singleLine="true" android:layout_toLeftOf="@+id/jiantou10" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_14" android:textColor="?attr/more_single_text_color" android:id="@+id/account_bind" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="绑定"/>
+            <LinearLayout android:orientation="vertical" android:background="?attr/list_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/account_sina_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnSinaBind$Click">
+                    <LinearLayout android:id="@+id/icon1_l" android:visibility="gone" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <ImageView android:background="@drawable/person_sina_account" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/sina_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/sinaweibo" android:layout_toRightOf="@+id/icon1_l" android:layout_centerVertical="true" style="@style/person_weibo_text_style"/>
+                    <TextView android:id="@+id/sinaBind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/jiantou11" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/jiantou11" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/qqOauthLayout" android:background="?attr/gray_click_state" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnQzoneBind$Click">
+                    <LinearLayout android:id="@+id/icon3_l" android:visibility="gone" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/person_qzone_account"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/qzone_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/qzone" android:layout_toRightOf="@+id/icon3_l" android:layout_centerVertical="true" style="@style/person_weibo_text_style"/>
+                    <TextView android:id="@+id/qzoneBind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/jiantou12" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/jiantou12" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/account_tencent_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnTencentBind$Click">
+                    <LinearLayout android:id="@+id/icon2_l" android:visibility="gone" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/person_tencent_account"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/tencent_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/tencentweibo" android:layout_toRightOf="@+id/icon2_l" android:layout_centerVertical="true" style="@style/person_weibo_text_style"/>
+                    <TextView android:id="@+id/tenctBind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/jiantou13" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/jiantou13" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View style="@style/HorizontalLineStyles"/>
+                <RelativeLayout android:id="@+id/account_weixin_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnWeixinBind$Click">
+                    <TextView android:id="@+id/weixin_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/weixin" android:layout_centerVertical="true" style="@style/person_weibo_text_style"/>
+                    <TextView android:id="@+id/weixinBind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/jiantou_13" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/jiantou_13" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/account_phone_layout" android:background="?attr/gray_click_state" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="btnPhoneBind$Click">
+                    <LinearLayout android:id="@+id/icon5_l" android:visibility="gone" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/person_tencent_account"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/phone_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/phone" android:layout_centerVertical="true" style="@style/person_weibo_text_style"/>
+                    <TextView android:id="@+id/phoneBind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/jiantou_12" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/jiantou_12" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/account_alter_layout" android:background="?attr/gray_click_state" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="alterPsw$Click">
+                    <LinearLayout android:id="@+id/icon6_l" android:visibility="gone" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/person_tencent_account"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/alter_phone__tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/alter_psw" android:layout_toRightOf="@+id/icon6_l" android:layout_centerVertical="true" style="@style/person_weibo_text_style"/>
+                    <TextView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/jiantou_7" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/jiantou_7" android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="21sp" android:textColor="@color/main_red" android:gravity="center" android:layout_gravity="center" android:id="@+id/account_logout_btn" android:background="?attr/white_bg_gray_click_state" android:clickable="true" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="0dp" android:layout_marginTop="20dp" android:layout_marginRight="0dp" android:layout_marginBottom="20dp" android:text="@string/exitAccount" android:onClick="btnExit$Click"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/message_menu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/message_menu_layout"/>
+</RelativeLayout>

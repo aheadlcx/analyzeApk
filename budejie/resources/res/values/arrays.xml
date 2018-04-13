@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="astro">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>魔蝎座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </array>
+    <array name="bill_drop_down">
+        <item>收到礼物</item>
+        <item>送出礼物</item>
+        <item>充值记录</item>
+        <item>消费记录</item>
+    </array>
+    <array name="options">
+        <item>选择图片</item>
+        <item>拍照</item>
+    </array>
+    <array name="ranking_drop_down">
+        <item>明星排行榜</item>
+        <item>富豪排行榜</item>
+        <item>人气排行榜</item>
+        <item>点唱排行榜</item>
+    </array>
+    <array name="shenfeng">
+        <item>美女</item>
+        <item>帅哥</item>
+        <item>辣妈</item>
+    </array>
+</resources>

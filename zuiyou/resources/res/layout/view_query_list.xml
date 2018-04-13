@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.htjyb.ui.widget.headfooterlistview.HeaderFooterListView android:id="@+id/viewListInQueryList" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+    <cn.xiaochuankeji.tieba.widget.CustomEmptyView android:id="@+id/custom_empty_view_net" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.widget.CustomEmptyView android:id="@+id/custom_empty_view_none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/textview_empty_tip_view"/>
+</FrameLayout>

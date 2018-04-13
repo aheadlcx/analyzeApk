@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:background="?attr/personal_tip_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="34dp">
+        <TextView android:textSize="12sp" android:textColor="?attr/personal_tip_content_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="音乐相册"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/personal_tip_content_color" android:id="@+id/music_album_all_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="显示全部" android:drawableRight="?attr/personal_tip_content_btn" android:drawablePadding="4dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.budejie.www.activity.labelsubscription.HorizontalListView android:id="@+id/personal_music_album_list" android:background="?attr/personal_music_album_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="235dp" android:divider="@android:color/transparent" fresco:dividerWidth="3dp"/>
+</LinearLayout>

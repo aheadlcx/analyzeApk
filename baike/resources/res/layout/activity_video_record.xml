@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/camera_operation" android:background="@color/black" android:layout_width="match_parent" android:layout_height="47dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/close" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="11dp" android:src="@drawable/video_close" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/switch_camera" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="39dp" android:src="@drawable/video_overturn" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <TextureView android:id="@+id/textureView" android:layout_width="match_parent" android:layout_height="300dp" android:layout_below="@+id/camera_operation"/>
+    <View android:id="@+id/divider" android:background="#151414" android:layout_width="match_parent" android:layout_height="9dp" android:layout_below="@+id/textureView"/>
+    <qsbk.app.widget.VideoRecordProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="9dp" android:layout_below="@+id/textureView"/>
+    <RelativeLayout android:id="@+id/record" android:background="#151414" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/divider">
+        <ImageView android:id="@+id/record_btn" android:layout_width="81dp" android:layout_height="81dp" android:src="@drawable/video_record_selector" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/left_btn" android:layout_width="62dp" android:layout_height="62dp" android:layout_marginLeft="47dp" android:src="@drawable/video_delete" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/right_btn" android:layout_width="62dp" android:layout_height="62dp" android:layout_marginRight="47dp" android:src="@drawable/video_finish" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/record_time_toast" android:background="@drawable/video_toast_bg" android:paddingLeft="8dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按住拍摄视频需要超过3秒" android:singleLine="true" android:layout_alignBottom="@+id/record" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

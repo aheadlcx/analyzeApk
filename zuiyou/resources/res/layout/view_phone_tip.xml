@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="24.5dp" android:layout_height="44dp">
+    <ImageView android:id="@+id/iv_phone" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/profile_phone_tip" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/tip_crumb" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="-2.5dp" android:layout_marginRight="-2.5dp" android:src="@drawable/icon_badge_dot" android:scaleType="fitXY" android:layout_alignTop="@+id/iv_phone" android:layout_alignRight="@+id/iv_phone"/>
+</RelativeLayout>

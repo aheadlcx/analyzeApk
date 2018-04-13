@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30dp">
+    <TextView android:textSize="14sp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/left" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:id="@+id/image_0" android:padding="2dp" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_fortune_shit"/>
+        <ImageView android:id="@+id/image_1" android:padding="2dp" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_fortune_shit"/>
+        <ImageView android:id="@+id/image_2" android:padding="2dp" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_fortune_shit"/>
+        <ImageView android:id="@+id/image_3" android:padding="2dp" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_fortune_shit"/>
+        <ImageView android:id="@+id/image_4" android:padding="2dp" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_fortune_shit"/>
+    </LinearLayout>
+    <View android:layout_width="30dp" android:layout_height="match_parent"/>
+    <TextView android:textSize="14sp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/right" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="2"/>
+</LinearLayout>

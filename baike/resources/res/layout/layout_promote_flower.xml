@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/promote_flower_rel" android:background="#99000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/promote_flower_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/promote_flower" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="30dp" android:layout_marginRight="40dp" android:layout_below="@+id/promote_flower_image"/>
+    <Button android:id="@+id/btn_join" android:background="@drawable/btn_qsjx_join" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginTop="20dp" android:layout_below="@+id/desc" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

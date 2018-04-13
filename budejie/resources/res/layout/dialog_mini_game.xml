@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/rooms_third_dialog_bg" android:layout_width="@dimen/Improved_Dialog_RootView_Width" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#222222" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/phone_sc_44dp" android:text="房间游戏"/>
+            <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_close_selector" android:layout_alignParentRight="true"/>
+            <ImageView android:layout_below="@+id/iv_close" style="@style/onePxLine"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/color_9" android:id="@+id/game_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:lineSpacingExtra="5dp"/>
+        <GridView android:id="@+id/game_grid" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:listSelector="@color/transparent" android:numColumns="3" android:layout_centerHorizontal="true"/>
+        <ImageView android:layout_below="@+id/game_grid" style="@style/onePxLine"/>
+        <TextView android:textSize="18sp" android:textColor="#ff3333" android:gravity="center" android:id="@+id/tv_start" android:background="@drawable/rooms_third_dialog_center_button_selecter" android:layout_width="match_parent" android:layout_height="@dimen/phone_sc_44dp" android:text="开始游戏"/>
+    </LinearLayout>
+</FrameLayout>

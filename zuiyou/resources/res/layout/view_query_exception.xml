@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivImage" android:layout_width="110dp" android:layout_height="wrap_content" android:src="@drawable/img_exception_network_error"/>
+    <TextView android:textSize="14sp" android:textColor="@color/CT_6" android:id="@+id/tvTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="描述"/>
+    <TextView android:textSize="14sp" android:textColor="@color/CT_5" android:gravity="center" android:id="@+id/tvOptionRefresh" android:background="@drawable/error_action_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="点击刷新"/>
+    <TextView android:textSize="14sp" android:textColor="@color/CT_5" android:gravity="center" android:id="@+id/tvOptionSetNetWork" android:background="@drawable/error_action_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="前往设置网络"/>
+</LinearLayout>

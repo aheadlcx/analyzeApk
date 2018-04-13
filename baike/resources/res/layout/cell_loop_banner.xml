@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.LiveBannerViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="90dp"/>
+    <qsbk.app.widget.IndicatorView android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_alignBottom="@+id/pager" android:layout_centerHorizontal="true" app:space="5dp" app:drawable="@drawable/indicator"/>
+</RelativeLayout>

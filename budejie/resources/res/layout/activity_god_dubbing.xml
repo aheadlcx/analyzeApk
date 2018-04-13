@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+        <RelativeLayout android:background="@color/god_dubbing_title_bar_background" android:layout_width="match_parent" android:layout_height="@dimen/god_dubbing_top_bar_height">
+            <ImageView android:id="@+id/back_image_view" android:layout_width="@dimen/margin_40" android:layout_height="match_parent" android:src="@drawable/video_recommend_title_close" android:scaleType="center" android:layout_centerVertical="true"/> 
+
+            <TextView android:textSize="@dimen/font_16" android:textColor="@color/god_dubbing_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/god_dubbing" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/complete_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_14" android:src="@drawable/god_dubbing_gray_complete" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.budejie.www.goddubbing.wediget.VideoLayout android:id="@+id/video_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.budejie.www.goddubbing.wediget.RecordSeekBar android:id="@+id/record_seek_bar" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" fresco:reachColor="@color/record_bar_reach_color" fresco:unReachColor="@color/half_alpha_black" fresco:undoColor="@color/record_bar_progress_color" fresco:barHeight="@dimen/god_dubbing_seek_bar_height"/>
+            <RelativeLayout android:id="@+id/voice_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/god_dubbing_voice_line_top_margin">
+                <com.budejie.www.widget.VoiceLineView android:id="@+id/left_voice_view" android:layout_width="@dimen/god_dubbing_voice_line_width" android:layout_height="@dimen/god_dubbing_voice_line_height" android:layout_alignParentLeft="true" android:layout_centerVertical="true" fresco:voiceLine="@color/god_dubbing_common_text_color" fresco:rectMoveDirection="2" fresco:maxVolume="60" fresco:viewMode="1" fresco:sensibility="4" fresco:fineness="3"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="@color/god_dubbing_common_text_color" android:id="@+id/time_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <com.budejie.www.widget.VoiceLineView android:id="@+id/right_voice_view" android:layout_width="@dimen/god_dubbing_voice_line_width" android:layout_height="@dimen/god_dubbing_voice_line_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" fresco:voiceLine="@color/god_dubbing_common_text_color" fresco:rectMoveDirection="1" fresco:maxVolume="60" fresco:viewMode="1" fresco:sensibility="4" fresco:fineness="3"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/undo_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10" android:src="@drawable/god_dubbing_undo_cannot_click" android:layout_toLeftOf="@+id/record_image_view" android:layout_alignTop="@+id/rerecord_image_view" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/record_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/god_dubbing_record_image" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/font_14" android:textColor="@color/god_dubbing_common_text_color" android:id="@+id/record_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/press_to_record" android:layout_alignBottom="@+id/record_image_view" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/rerecord_image_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10" android:src="@drawable/god_dubbing_rerecord_selector" android:layout_toRightOf="@+id/record_image_view" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/countdown_view" android:background="@color/half_alpha_black" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/god_dubbing_countdown_text_size" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/count_down_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/preview_layout" android:background="@color/half_alpha_black" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/finish_preview_image_view" android:layout_width="@dimen/margin_40" android:layout_height="@dimen/margin_40" android:src="@drawable/video_recommend_title_close" android:scaleType="center"/> 
+
+        <com.budejie.www.goddubbing.wediget.VideoLayout android:id="@+id/preview_video_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <com.budejie.www.goddubbing.wediget.SeekBar android:id="@+id/seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/preview_video_layout" fresco:reachColor="@color/record_bar_progress_color" fresco:unReachColor="@color/half_alpha_black" fresco:barHeight="@dimen/god_dubbing_seek_bar_height"/>
+    </RelativeLayout>
+</RelativeLayout>

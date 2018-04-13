@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:textSize="14sp" android:textColor="@drawable/selector_blue_white_text" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:button="@null"/>

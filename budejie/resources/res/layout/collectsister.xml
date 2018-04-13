@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.curtain.FloatVideoRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/curtain_root_layout" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/navigation_height">
+    <RelativeLayout android:id="@+id/activity_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+        <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+        <com.budejie.www.activity.view.CustomListView android:id="@+id/listview_collect" android:background="@color/list_item_bg" android:focusable="true" android:visibility="gone" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/list_item_bg" android:divider="@android:color/transparent" android:layout_below="@+id/title"/>
+        <TextView android:textSize="20sp" android:gravity="center" android:id="@+id/empty_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您还没有添加信息到收藏夹！" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/melodyview" android:background="@anim/melody_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="25dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include layout="@layout/float_video_layout"/>
+</com.budejie.www.widget.curtain.FloatVideoRootLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="55.6dp" android:baselineAligned="false">
+        <FrameLayout android:id="@+id/post" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:layout_gravity="center" android:id="@+id/post_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:layout_gravity="center" android:id="@+id/post_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="帖子"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/like" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:layout_gravity="center" android:id="@+id/like_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:layout_gravity="center" android:id="@+id/like_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="获赞"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/follow" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:layout_gravity="center" android:id="@+id/follow_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:layout_gravity="center" android:id="@+id/follow_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="关注"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fans" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:layout_gravity="center" android:id="@+id/fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:layout_gravity="center" android:id="@+id/fans_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="粉丝"/>
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/fans_crumb" android:visibility="visible" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginLeft="16dp" android:layout_marginBottom="18dp" android:src="@drawable/icon_badge_dot"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <cn.xiaochuankeji.tieba.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_line" android:showDividers="middle" app:dividerPaddingLeft="39dp">
+        <RelativeLayout android:id="@+id/shentie" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_shentie_icon" android:src="@drawable/ic_my_shentie" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/shentie_text" android:text="审帖专区" android:drawablePadding="10dp" android:layout_toRightOf="@+id/my_shentie_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_shentie_count" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_ugc_video" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_ugc_icon" android:src="@drawable/ic_my_ugc" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_ugc_text" android:text="我的跟拍" android:layout_toRightOf="@+id/my_ugc_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_ugc_count" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_follow_post" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/ic_follow_post" android:src="@drawable/ic_me_follow_post" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_follow_post_text" android:text="我的跟帖" android:layout_toRightOf="@+id/ic_follow_post" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_follow_post_count" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_post" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_post_icon" android:src="@drawable/ic_my_post" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_post_text" android:text="我的帖子" android:layout_toRightOf="@+id/my_post_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_post_count" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_comment" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_pinglun_icon" android:src="@drawable/ic_my_pinglun" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_comment_text" android:text="我的评论" android:layout_toRightOf="@+id/my_pinglun_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_pinglun_count" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_favor" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_favor_icon" android:src="@drawable/ic_my_favor" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_favor_text" android:text="我收藏的" android:layout_toRightOf="@+id/my_favor_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_favor_count" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_like" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_like_icon" android:src="@drawable/ic_my_like" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_like_text" android:text="我赞过的" android:layout_toRightOf="@+id/my_like_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_like_count" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_history" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_history_icon" android:src="@drawable/ic_my_history" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_history_text" android:text="浏览历史" android:layout_toRightOf="@+id/my_history_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_history_count" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_download" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_download_icon" android:src="@drawable/ic_my_download" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_download_text" android:text="我的下载" android:layout_toRightOf="@+id/my_download_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_group" android:visibility="gone" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_group_icon" android:src="@drawable/ic_my_group" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_group_text" android:text="右友圈" android:layout_toRightOf="@+id/my_group_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_black_house" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_black_icon" android:src="@drawable/my_black_house_icon" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_black_text" android:text="小黑屋" android:drawablePadding="10dp" android:layout_toRightOf="@+id/my_black_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/black_arrow" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+    </cn.xiaochuankeji.tieba.widget.LinearLayoutCompat>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <cn.xiaochuankeji.tieba.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_line" android:showDividers="middle" app:dividerPaddingLeft="41dp">
+        <RelativeLayout android:id="@+id/my_night_mode" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_night_mode_icon" android:src="@drawable/ic_night_mode" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_night_mode_text" android:text="夜间模式" android:layout_toRightOf="@+id/my_night_mode_icon" style="@style/My_Item_Text"/>
+            <cn.xiaochuankeji.tieba.widget.daynight.DayNightSwitch android:id="@+id/night_mode" android:layout_width="48dp" android:layout_height="24dp" android:drawableRight="@null" style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_family" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_family_icon" android:src="@drawable/ic_my_family" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_family_text" android:text="最右Family" android:layout_toRightOf="@+id/my_family_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_share" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_share_icon" android:src="@drawable/ic_my_share" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_share_text" android:text="推荐给好友" android:layout_toRightOf="@+id/my_share_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView style="@style/My_Item_Count"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/my_feedback" style="@style/My_Item">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/my_feedback_icon" android:src="@drawable/ic_my_feedback" style="@style/My_Item_Icon"/>
+            <android.support.v7.widget.AppCompatTextView android:id="@+id/my_feedback_text" android:text="帮助与反馈" android:layout_toRightOf="@+id/my_feedback_icon" style="@style/My_Item_Text"/>
+            <android.support.v7.widget.AppCompatTextView style="@style/My_Item_Count"/>
+        </RelativeLayout>
+    </cn.xiaochuankeji.tieba.widget.LinearLayoutCompat>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center_vertical" android:id="@+id/tv_tips_cumulative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_withdraw_record_total"/>
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_gravity="center_vertical" android:id="@+id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="0"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#ff87808f" android:gravity="center_vertical" android:id="@+id/tv_tips_record" android:paddingLeft="14dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/pay_withdraw_record"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/title_popup_layout0" android:background="@drawable/title_tab_state" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/title_popup_item0_img" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/title_tab_essence_state"/>
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/title_popup_item0_text" android:layout_width="60dp" android:layout_height="wrap_content" android:text="精华" style="@style/title_popup_item_text_style"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/title_popup_layout1" android:background="@drawable/title_tab_state" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/title_popup_item1_img" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/title_tab_newissue_state"/>
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/title_popup_item1_text" android:layout_width="60dp" android:layout_height="wrap_content" android:text="最新" style="@style/title_popup_item_text_style"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/title_popup_layout2" android:background="@drawable/title_tab_state" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/title_popup_item2_img" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/title_tab_suiji_state"/>
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/title_popup_item2_text" android:layout_width="60dp" android:layout_height="wrap_content" android:text="穿越" style="@style/title_popup_item_text_style"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/title_popup_layout3" android:background="@drawable/title_tab_state" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/title_popup_item3_img" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/title_tab_nearby_state"/>
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/title_popup_item3_text" android:layout_width="60dp" android:layout_height="wrap_content" android:text="@string/top_tab_nearby" style="@style/title_popup_item_text_style"/>
+    </LinearLayout>
+</LinearLayout>

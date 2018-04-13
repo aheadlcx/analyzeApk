@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/default_no_content_image" android:scaleType="center" android:layout_centerInParent="true"/>
+    <TextView android:textSize="@dimen/g_txt_big" android:textColor="?attr/default_no_content_text" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/default_no_content" android:layout_below="@+id/image" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

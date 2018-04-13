@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:layout_gravity="top" android:id="@+id/navBar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:navTitleText="置顶" app:navOptionText="确定" app:navNeedBack="true" app:navShowBottomDivide="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/gallery_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="17dp">
+                <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="108dp">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/post_top_image" android:longClickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="17dp" app:placeholderImage="@drawable/icon_top_default_placeholde" app:roundedCornerRadius="3dp"/>
+                    <EditText android:textSize="16dp" android:textColor="@color/white" android:textColorHint="@color/white" android:gravity="center_horizontal" android:id="@+id/title_topic" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:minHeight="40dp" android:hint="请输入文字" android:maxLines="2" android:maxLength="30" android:shadowColor="@color/black_50" android:shadowRadius="8" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/iv_action_image" android:layout_width="61dp" android:layout_height="61dp" android:src="@drawable/icon_take_photo" android:layout_centerVertical="true"/>
+                        <android.support.v7.widget.RecyclerView android:id="@+id/image_list" android:layout_width="match_parent" android:layout_height="63dp" android:layout_toRightOf="@+id/iv_action_image"/>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View android:id="@+id/divider" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/gallery_top"/>
+            <FrameLayout android:id="@+id/topic_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider"/>
+            <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topic_summary"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/rootView" android:background="@color/CB" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="72dp">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/cover_pv" android:layout_width="52dp" android:layout_height="52dp" android:layout_centerVertical="true" style="@style/CircleImage"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/cover_pv" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_1" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游客" android:lines="1" android:drawablePadding="5dp"/>
+            <ImageView android:id="@+id/iv_official_search" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/personal_guanfang"/>
+            <ImageView android:id="@+id/iv_talent" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/talent"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:id="@+id/tvBrief" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:singleLine="true"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/item_split_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignLeft="@+id/ll_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

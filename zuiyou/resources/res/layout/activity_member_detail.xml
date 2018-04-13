@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.StickyNavLayout android:orientation="vertical" android:id="@+id/stickyNavLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/id_stickynavlayout_topview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <cn.xiaochuankeji.tieba.ui.widget.indicator.MagicIndicator android:orientation="horizontal" android:id="@+id/id_stickynavlayout_indicator" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height"/>
+        <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/id_stickynavlayout_viewpager" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </cn.xiaochuankeji.tieba.ui.widget.StickyNavLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@+id/nav_bar" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/ivBack" android:paddingLeft="13dp" android:paddingRight="5dp" android:layout_width="36dp" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left_white" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/small_avatar" android:background="@drawable/bg_avatar_circle" android:visibility="invisible" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="centerCrop" android:layout_toRightOf="@+id/ivBack" android:layout_centerVertical="true" app:roundAsCircle="true"/>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:ellipsize="middle" android:id="@+id/tvTopName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:maxLength="16" android:layout_toRightOf="@+id/small_avatar" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/navbar_height" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/ivFollow" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/img_member_detail_no_bg_follow" android:scaleType="fitCenter"/>
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/ivSendMsg" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/img_member_detail_no_bg_msg" android:scaleType="fitCenter"/>
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/ivMore" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/img_member_detail_no_bg_more" android:scaleType="fitCenter"/>
+            </LinearLayout>
+            <View android:id="@+id/divider" android:background="@color/CL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.widget.CustomEmptyView android:id="@+id/custom_empty_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

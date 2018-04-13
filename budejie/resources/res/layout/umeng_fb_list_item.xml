@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp">
+    <TextView android:textSize="10sp" android:textColor="#666666" android:gravity="center" android:id="@+id/umeng_fb_reply_date" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/umeng_fb_reply_date_default" android:textScaleX="0.8"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/umeng_fb_reply_date">
+        <TextView android:textSize="15sp" android:textColor="#000000" android:id="@+id/umeng_fb_reply_content" android:background="@drawable/umeng_fb_reply_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:maxWidth="250dp" android:text="@string/umeng_fb_reply_content_default" android:textIsSelectable="true"/>
+    </RelativeLayout>
+</RelativeLayout>

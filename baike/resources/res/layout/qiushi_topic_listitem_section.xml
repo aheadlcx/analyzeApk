@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="?attr/single_article_cmt_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:textSize="13dp" android:textColor="?attr/comment_section_text_highlight" android:gravity="center" android:id="@+id/title" android:layout_width="0dp" android:layout_height="match_parent" android:text="默认" android:layout_weight="1"/>
+    <TextView android:textSize="13dp" android:textColor="?attr/comment_section_text_color" android:gravity="center" android:id="@+id/sub_title" android:layout_width="0dp" android:layout_height="match_parent" android:text="最新" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_bar" android:background="?attr/actionbar" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/title" android:background="@drawable/button_on_press" android:paddingLeft="4dp" android:paddingTop="14dp" android:paddingRight="4dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableLeft="?attr/ic_arrow_left_padding" android:drawablePadding="4dp" android:layout_alignParentTop="true"/>
+        <EditText android:id="@+id/input_name" android:paddingLeft="40dp" android:paddingRight="40dp" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:hint="搜索糗友昵称" android:singleLine="true" android:layout_toRightOf="@+id/title" android:layout_centerVertical="true" android:imeOptions="actionSearch" style="?attr/edit_txt_add_qiuyou"/>
+        <ImageView android:id="@+id/search" android:background="@drawable/button_on_press" android:padding="8dp" android:layout_width="36dp" android:layout_height="36dp" android:src="?attr/add_qiuyou_ic_search" android:scaleType="fitXY" android:layout_toRightOf="@+id/title" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/clear_input" android:background="@drawable/button_on_press" android:padding="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:src="?attr/add_qiuyou_ic_clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <android.support.design.widget.CoordinatorLayout android:id="@+id/contact_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout android:theme="@null" android:id="@+id/appbar" android:background="@color/transparent" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/nearby_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="15">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/nearby_people" android:layout_width="match_parent" android:layout_height="66dp" style="?attr/nearby_list_item_bg">
+                    <ImageView android:id="@+id/nearby_people_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:src="@drawable/ic_launcher"/>
+                    <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="附近糗友"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/nearby_group" android:layout_width="match_parent" android:layout_height="66dp" style="?attr/nearby_list_item_bg">
+                    <ImageView android:id="@+id/nearby_group_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:src="@drawable/ic_launcher"/>
+                    <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="附近的群"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="8dp"/>
+            </LinearLayout>
+            <android.support.design.widget.TabLayout android:id="@+id/pager_tab" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_below="@+id/nearby_container" app:layout_scrollFlags="14" app:tabIndicatorHeight="3dp" app:tabPaddingStart="0dp" app:tabPaddingEnd="0dp" app:tabPadding="0dp" style="?attr/nearby_list_item_bg"/>
+        </android.support.design.widget.AppBarLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/pager_tab"/>
+        <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/pager_tab" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

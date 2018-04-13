@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/vote1" android:layout_width="match_parent" android:layout_height="43dp">
+        <View android:background="@drawable/bg_vote_item" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <View android:id="@+id/viewBg1" android:longClickable="true" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/CT_2" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tvVoteCount1" android:background="@color/transparent" android:paddingLeft="7dp" android:paddingRight="20dp" android:layout_width="100dp" android:layout_height="35dp" android:text="100%" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="15dp" android:textColor="@color/CT_2" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvItemValue1" android:background="@color/transparent" android:paddingLeft="16dp" android:longClickable="true" android:layout_width="match_parent" android:layout_height="35dp" android:singleLine="true" android:layout_toLeftOf="@+id/tvVoteCount1" android:layout_centerHorizontal="true"/>
+        <View android:id="@+id/ivSeparator1" android:background="@color/CB" android:visibility="visible" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/vote2" android:layout_width="match_parent" android:layout_height="43dp">
+        <View android:background="@drawable/bg_vote_item" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <View android:id="@+id/viewBg2" android:longClickable="true" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <TextView android:textSize="15dp" android:textColor="@color/CT_2" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tvVoteCount2" android:background="@color/transparent" android:paddingLeft="7dp" android:paddingRight="20dp" android:layout_width="100dp" android:layout_height="35dp" android:text="100%" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="15dp" android:textColor="@color/CT_2" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvItemValue2" android:background="@color/transparent" android:paddingLeft="16dp" android:longClickable="true" android:layout_width="match_parent" android:layout_height="35dp" android:singleLine="true" android:layout_toLeftOf="@+id/tvVoteCount2" android:layout_centerHorizontal="true"/>
+        <View android:id="@+id/ivSeparator2" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/vote3" android:layout_width="match_parent" android:layout_height="43dp">
+        <View android:background="@drawable/bg_vote_item" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <View android:id="@+id/viewBg3" android:longClickable="true" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <TextView android:textSize="15dp" android:textColor="@color/CT_2" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tvVoteCount3" android:background="@color/transparent" android:paddingLeft="7dp" android:paddingRight="20dp" android:layout_width="100dp" android:layout_height="35dp" android:text="100%" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="15dp" android:textColor="@color/CT_2" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvItemValue3" android:background="@color/transparent" android:paddingLeft="16dp" android:longClickable="true" android:layout_width="match_parent" android:layout_height="35dp" android:singleLine="true" android:layout_toLeftOf="@+id/tvVoteCount3" android:layout_centerHorizontal="true"/>
+        <View android:id="@+id/ivSeparator3" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/vote4" android:layout_width="match_parent" android:layout_height="43dp">
+        <View android:background="@drawable/bg_vote_item" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <View android:id="@+id/viewBg4" android:longClickable="true" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <TextView android:textSize="15dp" android:textColor="@color/CT_2" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tvVoteCount4" android:background="@color/transparent" android:paddingLeft="7dp" android:paddingRight="20dp" android:longClickable="true" android:layout_width="100dp" android:layout_height="35dp" android:text="100%" android:singleLine="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="15dp" android:textColor="@color/CT_2" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvItemValue4" android:background="@color/transparent" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="35dp" android:singleLine="true" android:layout_toLeftOf="@+id/tvVoteCount4"/>
+        <View android:id="@+id/ivSeparator4" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

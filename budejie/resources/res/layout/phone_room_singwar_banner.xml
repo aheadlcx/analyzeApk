@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_singwar_banner_top" android:background="@drawable/singwar_banner_bg_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_small_mid" android:textColor="@color/white" android:id="@+id/singwar_stage_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/singwar_switch_banner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/singwar_switch_up" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_singwar_banner_bottom" android:background="@drawable/singwar_banner_bg_bottom" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_singwar_banner_top" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="8dp" android:layout_weight="1">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4">
+                <TextView android:id="@+id/singwar_fav_titile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最喜爱主播榜:" android:drawableLeft="@drawable/singwar_fav_icon" android:drawablePadding="4dp" style="@style/singwar_text_title"/>
+                <TextView android:id="@+id/singwar_fav_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" style="@style/singwar_text_value"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rank" style="@style/singwar_text_title"/>
+                <TextView android:id="@+id/singwar_fav_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" style="@style/singwar_text_value"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_singwar_stage" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="8dp" android:layout_weight="1">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4">
+                <TextView android:id="@+id/singwar_stage_titile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/singwar_arrow_icon" android:drawablePadding="4dp" style="@style/singwar_text_title"/>
+                <TextView android:id="@+id/singwar_stage_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" style="@style/singwar_text_value"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rank" style="@style/singwar_text_title"/>
+                <TextView android:id="@+id/singwar_stage_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" style="@style/singwar_text_value"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_singwar_time" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginLeft="8dp" android:layout_weight="1">
+            <TextView android:id="@+id/singwar_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/singwar_arrow_icon" android:drawablePadding="4dp" style="@style/singwar_text_title"/>
+            <TextView android:id="@+id/singwar_time_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" style="@style/singwar_text_value"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/singwar_vote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:layout_marginRight="8dp" android:src="@drawable/singwar_vote_btn_selector" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/vip_pay_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/user_info_layout" android:background="@color/White" android:layout_width="match_parent" android:layout_height="102dp" android:layout_marginTop="10dp">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/user_profile_img" android:clickable="false" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="15dp" android:src="@drawable/head_portrait"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp">
+                    <TextView android:textSize="18sp" android:textColor="@color/vip_pay_name_normal_text_color" android:id="@+id/UserNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:text="不得姐铁粉"/>
+                    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/VipImageView" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp"/>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/vip_pay_tip_text_color" android:id="@+id/TipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_pay_wait_tips"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="13sp" android:textColor="@color/vip_pay_tip_packages_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/vip_pay_tip_1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/White" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="17sp" android:textColor="@color/vip_pay_name_normal_text_color" android:id="@+id/PayTip1TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/vip_pay_1_tip" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/vip_pay_pressed_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="PayOrder1"/>
+                <LinearLayout android:orientation="vertical" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="17sp" android:textColor="@color/vip_pay_name_normal_text_color" android:id="@+id/PayTip2TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/vip_pay_3_tip" android:layout_centerVertical="true"/>
+                <TextView android:textSize="11sp" android:textColor="@color/vip_pay_name_text_color" android:gravity="center" android:background="@drawable/vip_pay_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/vip_pay_3_tip1" android:layout_toRightOf="@+id/PayTip2TextView" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/vip_pay_pressed_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="PayOrder3"/>
+                <LinearLayout android:orientation="vertical" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="17sp" android:textColor="@color/vip_pay_name_normal_text_color" android:id="@+id/PayTip3TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/vip_pay_12_tip" android:layout_centerVertical="true"/>
+                <TextView android:textSize="11sp" android:textColor="@color/vip_pay_name_text_color" android:gravity="center" android:background="@drawable/vip_pay_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/vip_pay_12_tip1" android:layout_toRightOf="@+id/PayTip3TextView" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/vip_pay_pressed_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="PayOrder12"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="13sp" android:textColor="@color/vip_pay_tip_packages_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/vip_pay_tip_2"/>
+        </LinearLayout>
+        <ImageView android:background="@drawable/vip_privilege" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

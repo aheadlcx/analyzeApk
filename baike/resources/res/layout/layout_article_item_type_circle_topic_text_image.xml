@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/backgroud" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="4dp" app:actualImageScaleType="6"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="204dp" android:layout_marginLeft="30dp" android:layout_marginRight="30dp">
+        <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="?attr/qiushi_topic_title_color" android:ellipsize="end" android:gravity="left" android:layout_gravity="center" android:id="@+id/topic_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" android:shadowColor="@r$color/shadow_color" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="16"/>
+        <TextView android:textSize="14dp" android:textColor="?attr/topic_focus_color" android:gravity="left" android:layout_gravity="center" android:id="@+id/topic_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:shadowColor="@r$color/shadow_color" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="16" android:layout_below="@+id/topic_message"/>
+    </LinearLayout>
+</FrameLayout>

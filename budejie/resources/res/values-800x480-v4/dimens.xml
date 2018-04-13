@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Improved_Dialog_RootView_Width">270dp</dimen>
+    <dimen name="boxing_floating_layer_cover_1_padding_left">0.75dp</dimen>
+    <dimen name="boxing_floating_layer_cover_1_padding_margin_bottom">0.2dp</dimen>
+    <dimen name="boxing_floating_layer_cover_2_padding_margin_bottom">0.2dp</dimen>
+    <dimen name="boxing_floating_layer_iv_avatar_1_margin_bottom">2.7dp</dimen>
+    <dimen name="boxing_floating_layer_iv_avatar_1_margin_left">1dp</dimen>
+    <dimen name="boxing_floating_layer_iv_avatar_1_margin_right">2dp</dimen>
+    <dimen name="boxing_floating_layer_iv_avatar_1_margin_top">1dp</dimen>
+    <dimen name="boxing_floating_layer_iv_avatar_2_margin_bottom">2.7dp</dimen>
+    <dimen name="boxing_floating_layer_iv_avatar_2_margin_left">1.2dp</dimen>
+    <dimen name="boxing_floating_layer_iv_avatar_2_margin_right">1.8dp</dimen>
+    <dimen name="boxing_floating_layer_iv_avatar_2_margin_top">0.8dp</dimen>
+    <dimen name="boxing_floating_layer_name_pading">5dp</dimen>
+    <dimen name="boxing_title_text_size">8sp</dimen>
+    <dimen name="changzhan_vote_total_padding_top">18dp</dimen>
+    <dimen name="gift_box_give_button_width">120dp</dimen>
+    <dimen name="hall_header_pic_width">215dp</dimen>
+    <dimen name="item_margin_top">12dp</dimen>
+    <dimen name="phone_cooperate_login_margin_top">28dp</dimen>
+    <dimen name="phone_input_input_verify_code_height_new">55dp</dimen>
+    <dimen name="phone_input_verify_code_margin_top_new">20dp</dimen>
+    <dimen name="phone_login_input_height_new">100dp</dimen>
+    <dimen name="phone_login_padding_Top">6dp</dimen>
+    <dimen name="phone_qqlogin_margin_top_new">15dp</dimen>
+    <dimen name="shop_car_height_large">56dp</dimen>
+    <dimen name="shop_car_width_large">104dp</dimen>
+</resources>

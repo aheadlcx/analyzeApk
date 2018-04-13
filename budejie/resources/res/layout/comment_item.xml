@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/list_item_color_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/comment_title_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp">
+            <View android:orientation="vertical" android:id="@+id/comment_title_layout_divider" android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="0.4dp"/>
+            <TextView android:textSize="14sp" android:textColor="?attr/post_label_text_color" android:gravity="center_vertical" android:id="@+id/cmtTagTv" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/commend_listview_divider" android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_marginLeft="52dp"/>
+        <ImageView android:id="@+id/hot_author_replay_divider" android:background="?attr/divider_horizontal_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_marginLeft="51dp"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/commend_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/commend_content_top_layout" android:layout_width="match_parent" android:layout_height="30dp">
+                <FrameLayout android:id="@+id/thume_img_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/thume_img" android:layout_width="29dp" android:layout_height="29dp"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/comment_user_name_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/thume_img_layout">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/user_sex" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="13sp" android:textColor="?attr/item_title_name_time_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:maxWidth="180dp" android:singleLine="true"/>
+                    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/iv_members_mark" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/hot_author_replay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="41dp" android:layout_toRightOf="@+id/thume_img_layout">
+                    <View android:background="?attr/author_replay_mark_bg" android:layout_width="4dp" android:layout_height="15dp" android:layout_marginRight="5dp"/>
+                    <TextView android:textSize="16sp" android:textColor="?attr/author_replay_mark_content_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="楼主回复"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/commentDingLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="21dp" android:layout_toLeftOf="@+id/commentCaiLayout">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/commentDingIv" android:background="?attr/ding_icon" android:layout_width="14dp" android:layout_height="14dp"/>
+                        <TextView android:textSize="12sp" android:textColor="?attr/post_item_operation_text_color" android:layout_gravity="center_vertical" android:id="@+id/commentLikeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:maxLength="4"/>
+                    </LinearLayout>
+                    <TextView android:textSize="12sp" android:textColor="#ee7b7b" android:layout_gravity="center" android:id="@+id/likeCountAnim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/commentCaiLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/commentCaiIv" android:background="?attr/cai_icon" android:layout_width="14dp" android:layout_height="14dp"/>
+                        <TextView android:textSize="12sp" android:textColor="?attr/post_item_operation_text_color" android:layout_gravity="center_vertical" android:id="@+id/commentCaiCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:maxLength="4"/>
+                    </LinearLayout>
+                    <TextView android:textSize="12sp" android:textColor="#ee7b7b" android:layout_gravity="center" android:id="@+id/caiCountAnim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+                </FrameLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/commend_content_top_layout">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="29dp" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                    <TextView android:textSize="8sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/cmtLikeCount" android:background="@drawable/shape_ad_install_btn_bg" android:paddingBottom="0dp" android:layout_width="27dp" android:layout_height="12dp" android:text="12.3k"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_middle_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="1dp" android:layout_marginBottom="0dp">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ListCommentLayout" android:background="#f8f8f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="10dp"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:id="@+id/author_replay_mark" android:background="?attr/author_replay_mark_bg" android:visibility="gone" android:layout_width="4dp" android:layout_height="15dp" android:layout_marginTop="3dp" android:layout_marginRight="5dp"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textColor="?attr/author_replay_mark_content_color" android:id="@+id/author_replay_mark_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="楼主回复"/>
+                            <ProgressBar android:layout_gravity="left" android:id="@+id/pb_cmtSending" android:visibility="gone" android:layout_width="20dp" android:layout_height="23dp" android:layout_marginLeft="15dp" android:indeterminateDrawable="@drawable/round_progress_bar_blue_small" style="?android:attr/progressBarStyleSmall"/>
+                            <com.budejie.www.widget.parsetagview.NewParseTagEditText android:textSize="16sp" android:textColor="?attr/item_content_text_color" android:id="@+id/cmtContent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123123" android:lineSpacingExtra="3dp"/>
+                            <com.budejie.www.activity.view.AudioLayout android:id="@+id/cmtVoice" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp"/>
+                            <com.budejie.www.widget.parsetagview.NewParseTagEditText android:textSize="16sp" android:textColor="?attr/item_content_text_color" android:id="@+id/replyUser" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="5dp" android:lineSpacingExtra="3dp"/>
+                            <include layout="@layout/reply_item_image_view"/>
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/pub_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+                                <ImageView android:background="?attr/comment_pub_view_bg" android:layout_width="100dp" android:layout_height="wrap_content"/>
+                                <TextView android:textSize="13sp" android:textColor="#888888" android:id="@+id/pub_content_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="15dp" android:text="7 神配音"/>
+                            </LinearLayout>
+                            <com.budejie.www.widget.VoteView android:id="@+id/comment_vote_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/HotMoreLayout" android:background="@color/main_red" android:layout_width="match_parent" android:layout_height="41dp" android:layout_below="@+id/content_layout">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多热评"/>
+                <RelativeLayout android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="4dp">
+                    <ImageView android:id="@+id/HotMoreArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_down_normal" android:layout_centerInParent="true"/>
+                    <ProgressBar android:id="@+id/HotMoreProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/chrysanthemum_progress_bar_drawable" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

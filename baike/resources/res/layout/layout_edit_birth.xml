@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/listview" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:divider="@r$color/edit_info_divider" android:dividerHeight="1dp"/>
+    <View android:background="@r$color/edit_info_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="8dp" android:layout_marginTop="-8dp" android:layout_marginRight="8dp"/>
+    <TextView android:textSize="@dimen/g_txt_small" android:textColor="@r$color/g_txt_small" android:id="@+id/tips" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_birth"/>
+</LinearLayout>

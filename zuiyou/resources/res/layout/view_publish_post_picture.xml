@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="17dp" android:layout_marginRight="17dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/viewPicture" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:placeholderImage="@color/gray_80" app:roundedCornerRadius="4dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/viewMediaType" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/viewRemove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:src="@drawable/icon_delete_picture"/>
+    <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/viewEdited" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/icon_tucao_little"/>
+</FrameLayout>

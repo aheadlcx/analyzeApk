@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="true">
+    <item android:duration="100" android:drawable="@drawable/hug_1_feed"/>
+    <item android:duration="100" android:drawable="@drawable/hug_2_feed"/>
+    <item android:duration="100" android:drawable="@drawable/hug_3_feed"/>
+    <item android:duration="100" android:drawable="@drawable/hug_4_feed"/>
+    <item android:duration="100" android:drawable="@drawable/hug_5_feed"/>
+    <item android:duration="100" android:drawable="@drawable/hug_6_feed"/>
+</animation-list>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/hollow_reply_fun_name" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View style="@style/my_divide_line"/>
+        <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_5" android:gravity="center_vertical" android:id="@+id/hollow_reply_name" android:background="@color/CB" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/hollow_welcome"/>
+    </LinearLayout>
+    <View style="@style/my_divide_line"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="46dp">
+        <RelativeLayout android:layout_width="42dp" android:layout_height="match_parent">
+            <View android:id="@+id/hollow_reply_audio_sign" android:background="@drawable/bg_publish_selected_circle" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_margin="8dp" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/hollow_reply_switch_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_record_voice" android:scaleType="centerInside" android:contentDescription="@string/image"/>
+        </RelativeLayout>
+        <EditText android:textSize="@dimen/F3_text" android:textColorHint="@color/CT_6" android:gravity="center_vertical" android:id="@+id/hollow_reply_edit" android:background="@drawable/bg_edit_hollow" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:minHeight="30dp" android:hint="@string/hollow_default_reply" android:maxLines="4" android:layout_weight="1"/>
+        <Button android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/hollow_reply_send" android:background="@drawable/bg_button_hollow_send" android:layout_width="48dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:foreground="@null" android:text="@string/send"/>
+    </LinearLayout>
+    <cn.dreamtobe.kpswitch.widget.KPSwitchFSPanelLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/hollow_reply_switch_ll" android:background="@color/color_fffafb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="200dp">
+        <include layout="@layout/layout_hollow_sound_audio"/>
+    </cn.dreamtobe.kpswitch.widget.KPSwitchFSPanelLinearLayout>
+</LinearLayout>

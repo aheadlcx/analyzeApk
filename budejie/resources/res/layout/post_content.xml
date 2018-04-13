@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.budejie.www.widget.parsetagview.NewParseTagEditText android:textSize="18sp" android:textColor="?attr/item_content_text_color" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/post_margin_left" android:singleLine="false" android:lineSpacingExtra="4dp"/>
+    <TextView android:textSize="16sp" android:textColor="#576b95" android:id="@+id/open_or_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left" android:layout_marginRight="@dimen/post_margin_left" android:text="全文"/>
+</LinearLayout>

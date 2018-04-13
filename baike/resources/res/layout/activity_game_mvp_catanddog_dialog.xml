@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:src="@drawable/bg_mvp_catanddog" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/head_mvp_catanddog" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="145dp">
+            <TextView android:textColor="#bc914d" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_rank"/>
+            <TextView android:textColor="#bc914d" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:text="@string/game_name"/>
+            <TextView android:textColor="#bc914d" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:text="@string/game_love"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/recyclerview" android:layout_width="220dp" android:layout_height="175dp" android:layout_marginTop="175dp"/>
+        <qsbk.app.core.widget.EmptyPlaceholderView android:layout_gravity="center_horizontal" android:id="@+id/game_history_empty" android:visibility="gone" android:layout_width="160dp" android:layout_height="175dp" android:layout_marginTop="103dp"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="150dp" android:layout_marginTop="100dp" android:src="@drawable/live_game_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

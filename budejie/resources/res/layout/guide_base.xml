@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="50dp" android:src="@drawable/nv_bg_001" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@drawable/activity_guide_pass_bg" android:id="@+id/jump" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="跳过" android:layout_alignParentRight="true" android:onClick="jump$OnClick"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/umeng_fb_conversation_umeng_logo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="25dp" android:src="@drawable/umeng_fb_logo" android:layout_centerInParent="true"/>
+        <TextView android:textSize="12sp" android:textColor="#888888" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-30dp" android:text="@string/umeng_fb_powered_by" android:layout_toLeftOf="@+id/umeng_fb_conversation_umeng_logo" android:layout_alignBottom="@+id/umeng_fb_conversation_umeng_logo"/>
+    </RelativeLayout>
+</RelativeLayout>

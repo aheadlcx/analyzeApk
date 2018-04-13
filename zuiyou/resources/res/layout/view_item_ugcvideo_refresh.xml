@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_ugcvideo_refresh_item" android:layout_width="match_parent" android:layout_height="52dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_marginRight="3dp" android:text="上次看到这 点击刷新"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_item_refresh"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="44dp" android:navigationIcon="@drawable/ic_arrow_left" app:navigationIcon="@drawable/ic_arrow_left">
+        <TextView android:textSize="15sp" android:textColor="@color/CT_1" android:ellipsize="middle" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/selected_album" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:maxLength="16" android:drawableRight="@drawable/ic_arrow_down1" android:drawablePadding="5dp"/>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@+id/bottom_toolbar" android:background="@color/CB_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:layout_gravity="start" android:id="@+id/button_preview" android:padding="16dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_preview"/>
+        <TextView android:textSize="16sp" android:textColor="@color/CM" android:layout_gravity="end" android:id="@+id/button_apply" android:padding="16dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="17sp" android:textColor="@color/CM" android:gravity="center" android:layout_gravity="center" android:id="@+id/button_confirm" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_toolbar" android:layout_below="@+id/toolbar"/>
+    <FrameLayout android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_toolbar" android:layout_below="@+id/toolbar">
+        <TextView android:textSize="16sp" android:textColor="@color/zhihu_album_empty_view" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_view_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_text" android:drawableTop="@drawable/ic_empty_zhihu" android:drawablePadding="8dp"/>
+    </FrameLayout>
+</RelativeLayout>

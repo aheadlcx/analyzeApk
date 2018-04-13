@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg">
+    <qsbk.app.widget.TopicScrollView android:id="@+id/header_scroll" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/header_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:tint="#1a000000" app:placeholderImageScaleType="6" app:actualImageScaleType="6"/>
+        <qsbk.app.widget.TopicHeader android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="160dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="40dp">
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/color_white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textColor="?attr/color_white" android:layout_gravity="center" android:id="@+id/episode" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </FrameLayout>
+            </LinearLayout>
+        </qsbk.app.widget.TopicHeader>
+    </qsbk.app.widget.TopicScrollView>
+    <qsbk.app.widget.PtrLayout android:id="@+id/ptr" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listview" android:scrollbars="vertical" android:fadingEdge="none" android:saveEnabled="true" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:drawSelectorOnTop="true" android:scrollingCache="false" android:dividerHeight="0dp" android:headerDividersEnabled="false" android:footerDividersEnabled="true" style="?attr/xlistview"/>
+    </qsbk.app.widget.PtrLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/custom_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/back" android:background="@drawable/topic_actionbar_btn" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="@dimen/abc_action_bar_default_height" android:singleLine="true" android:drawableLeft="@drawable/ic_arrow_left_padding" android:drawablePadding="2dp"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/more" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <qsbk.app.widget.LoadingLayout android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

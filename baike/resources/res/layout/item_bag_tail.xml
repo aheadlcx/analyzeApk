@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/live_text_9sp" android:textColor="#9d9d9d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进场特效说明：
+1、进场特效道具的购买与续费在页面右上角“商城”中进行；
+2、进场特效为用户个性化物品，全平台直播间通用，主播不参与分成；
+3、进场特效购买后即开始计算剩余时间，剩余时间不会因为切换成其他进场特效而停止。" android:lineSpacingExtra="12dp"/>
+</LinearLayout>

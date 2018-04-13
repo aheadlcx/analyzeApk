@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="?attr/myinfo_post_name_prompt_text_color" android:id="@+id/share_title" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="14" android:drawableLeft="?attr/personal_share_bar_icon" android:drawablePadding="5dp" android:layout_centerVertical="true"/>
+    <TextView android:textSize="10sp" android:textColor="?attr/myinfo_post_name_prompt_text_color" android:id="@+id/share_time" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="16" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_below="@+id/share_title"/>
+</RelativeLayout>

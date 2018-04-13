@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="@color/bg_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_height_48">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@drawable/selector_gender_tv_color" android:gravity="center_vertical" android:id="@+id/tvMale" android:paddingLeft="@dimen/divide_space_15" android:paddingRight="@dimen/divide_space_15" android:layout_width="match_parent" android:layout_height="@dimen/item_height_48" android:text="男" android:drawableRight="@drawable/selector_img_select"/>
+        <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="@dimen/divide_space_15" android:layout_marginRight="@dimen/divide_space_15"/>
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@drawable/selector_gender_tv_color" android:gravity="center_vertical" android:id="@+id/tvFemale" android:paddingLeft="@dimen/divide_space_15" android:paddingRight="@dimen/divide_space_15" android:layout_width="match_parent" android:layout_height="@dimen/item_height_48" android:text="女" android:drawableRight="@drawable/selector_img_select"/>
+        <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+    </LinearLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:layout_gravity="top" android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navTitleText="性别" app:navNeedBack="true"/>
+</FrameLayout>

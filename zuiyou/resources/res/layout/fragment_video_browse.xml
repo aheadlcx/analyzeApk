@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.widget.AspectRatioFrameLayout android:layout_gravity="center" android:id="@+id/video_frame" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <SurfaceView android:id="@+id/video_surface_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:id="@+id/shutter" android:background="@color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </cn.xiaochuankeji.tieba.ui.widget.AspectRatioFrameLayout>
+        <View android:background="@color/image_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="center" android:id="@+id/pvThumbImg" android:visibility="gone" android:layout_width="250dp" android:layout_height="150dp"/>
+        <cn.xiaochuankeji.tieba.ui.danmaku.HotDanmakuView android:id="@+id/hot_danmaku" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/hot_danmaku_margin_top" android:layout_marginBottom="@dimen/hot_danmaku_margin_bottom"/>
+        <FrameLayout android:id="@+id/layout_like_animation" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <Button android:textSize="12dp" android:textColor="@color/white_80" android:layout_gravity="center" android:id="@+id/btn_retry" android:background="@drawable/gray_round_rectage_bg" android:paddingTop="5dp" android:visibility="invisible" android:layout_width="120dp" android:layout_height="95dp" android:text="加载失败，点击重试" android:drawableTop="@drawable/play_video_retry"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llLoadingContainer" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ivLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_video_loading" android:scaleType="center"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="加载中..."/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/video_more_guide" android:background="@drawable/video_guide_bg" android:paddingLeft="17dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="29dp" android:layout_marginTop="139dp">
+            <TextView android:textSize="12dp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="左滑查看更多视频"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/ic_video_more"/>
+        </LinearLayout>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.ui.danmaku.TopDanmakuView android:id="@+id/top_danmaku" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="@dimen/top_danmaku_margin_left" android:layout_marginRight="@dimen/top_danmaku_margin_right" android:layout_marginBottom="@dimen/top_danmaku_margin_bottom" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/ivPlay" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_selector" android:layout_centerInParent="true"/>
+    <cn.xiaochuankeji.tieba.ui.mediabrowse.h5video.H5VideoWebViewContainer android:id="@+id/h5video_webview_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

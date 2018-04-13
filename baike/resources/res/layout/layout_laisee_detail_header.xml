@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_laisee_oval" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+        <TextView android:textSize="12sp" android:textColor="#fffda7" android:gravity="center" android:id="@+id/link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginBottom="20dp" android:text="查看获奖名单" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/amount_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp">
+        <TextView android:textSize="48dp" android:textColor="?attr/color_black" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100"/>
+        <TextView android:textSize="24dp" android:textColor="?attr/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textColor="#639ce0" android:id="@+id/in_wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已存入糗百钱袋"/>
+    <TextView android:textSize="13sp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tip" android:background="#f4f4f8" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginTop="32dp"/>
+</LinearLayout>

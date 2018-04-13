@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center" android:background="?attr/actionBarItemBackground" android:layout_width="48dp" android:layout_height="48dp">
+        <ImageView android:id="@+id/my_contacts_image" android:layout_width="32dp" android:layout_height="32dp" android:src="?attr/im_actionbar_new_fans" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <TextView android:textSize="9sp" android:textColor="?attr/txtColor01" android:gravity="center" android:id="@+id/new_fans_unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:minWidth="15dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/single_article_cmt_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="28dp">
+    <View android:id="@+id/divider" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+    <TextView android:textSize="13dp" android:textColor="?attr/comment_section_text_color" android:gravity="center_vertical" android:id="@+id/title" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="7dp" android:text="热门评论"/>
+    <TextView android:textSize="13dp" android:textColor="?attr/comment_section_text_highlight" android:gravity="center_vertical" android:id="@+id/sub_title" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="楼主" android:layout_toRightOf="@+id/title"/>
+</RelativeLayout>

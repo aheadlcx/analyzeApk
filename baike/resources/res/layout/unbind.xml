@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/login_bg">
+    <TextView android:gravity="center_horizontal" android:id="@+id/tips" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/account_unbind_tip"/>
+    <EditText android:id="@+id/password" android:layout_marginTop="10dp" android:hint="请输入糗事百科密码" android:singleLine="true" android:inputType="textVisiblePassword" style="?attr/edit_txt"/>
+    <Button android:id="@+id/finish" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="解绑" style="?attr/login_btn_txt"/>
+</LinearLayout>

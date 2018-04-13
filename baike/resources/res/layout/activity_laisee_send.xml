@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f4f4f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout android:id="@+id/tab" android:background="@r$color/red_laisee" android:layout_width="match_parent" android:layout_height="40dp" app:tabIndicatorHeight="0dp" app:tabTextColor="#911e08" app:tabSelectedTextColor="@r$color/yellow_laisee"/>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

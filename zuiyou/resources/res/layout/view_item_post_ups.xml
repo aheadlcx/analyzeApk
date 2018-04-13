@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/bg_content" android:paddingLeft="@dimen/divide_space_15" android:paddingRight="@dimen/divide_space_15" android:layout_width="match_parent" android:layout_height="53dp">
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_1" android:background="@drawable/bg_head" android:visibility="visible" android:layout_width="@dimen/avatar_post_area" android:layout_height="@dimen/avatar_post_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_2" android:background="@drawable/bg_head" android:visibility="visible" android:layout_width="@dimen/avatar_post_area" android:layout_height="@dimen/avatar_post_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_3" android:background="@drawable/bg_head" android:visibility="visible" android:layout_width="@dimen/avatar_post_area" android:layout_height="@dimen/avatar_post_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_4" android:background="@drawable/bg_head" android:visibility="visible" android:layout_width="@dimen/avatar_post_area" android:layout_height="@dimen/avatar_post_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_5" android:background="@drawable/bg_head" android:visibility="visible" android:layout_width="@dimen/avatar_post_area" android:layout_height="@dimen/avatar_post_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <cn.xiaochuankeji.tieba.ui.widget.PictureView android:id="@+id/pv_avatar_6" android:background="@drawable/bg_head" android:visibility="visible" android:layout_width="@dimen/avatar_post_area" android:layout_height="@dimen/avatar_post_area"/>
+        <View android:layout_width="@dimen/blank_placeholder" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@+id/tvMore" android:background="@drawable/bg_more_like" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:drawableLeft="@drawable/icon_inside_more_like" android:drawablePadding="5dp"/>
+    </LinearLayout>
+    <View android:id="@+id/view_top_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_alignParentTop="true"/>
+    <View android:id="@+id/view_bottom_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

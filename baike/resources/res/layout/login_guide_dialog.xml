@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="304dp" android:layout_height="188dp" style="?attr/login_guide_bg">
+    <TextView android:textSize="16dp" android:gravity="center" android:id="@+id/tv_login_guide_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="ABC123abc" style="?attr/login_guide_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_login_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="22dp" android:layout_marginRight="18dp">
+        <View android:layout_width="82dp" android:layout_height="1px" style="?attr/divider_line"/>
+        <TextView android:textSize="13dp" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_login_or_register" style="?attr/login_guide_divider"/>
+        <View android:layout_width="82dp" android:layout_height="1px" style="?attr/divider_line"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ll_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_qq_login" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/qq_icon"/>
+            <TextView android:textSize="11dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/qq" style="?attr/login_guide_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_weixin_login" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/weixin_icon"/>
+            <TextView android:textSize="11dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/wechat" style="?attr/login_guide_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_weibo_login" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/weibo_icon"/>
+            <TextView android:textSize="11dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/weibo" style="?attr/login_guide_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_qiubai_login" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_qiubai" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/qiubai_icon"/>
+            <TextView android:textSize="11dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/qiubai" style="?attr/login_guide_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

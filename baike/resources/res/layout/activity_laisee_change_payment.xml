@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <LinearLayout android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="40dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/close" android:layout_width="14dp" android:layout_height="21dp" android:src="@drawable/ic_pay_left_arrow"/>
+            <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:gravity="center" android:paddingLeft="20dp" android:layout_width="0dp" android:layout_height="40dp" android:text="更改支付方式" android:layout_weight="1"/>
+            <View android:layout_width="40dp" android:layout_height="40dp"/>
+        </LinearLayout>
+        <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="?attr/dividerColor01"/>
+    </LinearLayout>
+</FrameLayout>

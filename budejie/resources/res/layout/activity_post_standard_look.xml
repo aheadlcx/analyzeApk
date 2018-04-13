@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/post_standard_look_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" layout="@layout/navigation_bar_white"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/share_dialog_text_color" android:id="@+id/standard_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_11"/>
+    </ScrollView>
+</LinearLayout>

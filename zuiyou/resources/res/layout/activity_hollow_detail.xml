@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.widget.fits.FitsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/hollow_detail_root" android:background="@color/color_fffafb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@drawable/bg_tree_edit_audio" android:layout_width="match_parent" android:layout_height="186dp"/>
+        <View android:id="@+id/hollow_detail_view_line" android:visibility="gone" android:layout_height="match_parent" style="@style/hollow_detail_line"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.hollow.widget.TouchListenerLayout android:orientation="vertical" android:id="@+id/hollow_detail_listener_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <cn.xiaochuankeji.tieba.ui.hollow.widget.HollowNavigationBar android:id="@+id/hollow_nav_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/hollow_detail_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+                <cn.xiaochuankeji.tieba.ui.recommend.widget.HomeRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <android.support.v7.widget.RecyclerView android:id="@+id/hollow_detail_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <cn.xiaochuankeji.tieba.widget.ZYClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </cn.xiaochuankeji.tieba.ui.hollow.widget.TouchListenerLayout>
+        <cn.xiaochuankeji.tieba.ui.hollow.widget.HollowSoundView android:id="@+id/hollow_reply_sound_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/hollow_detail_empty_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.hollow.widget.HollowNavigationBar android:id="@+id/hollow_nav_bar_fun" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <cn.xiaochuankeji.tieba.widget.CustomEmptyView android:id="@+id/hollow_detail_empty_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</cn.xiaochuankeji.tieba.widget.fits.FitsFrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_avatar" android:layout_width="49dp" android:layout_height="49dp" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_avatar_bg" android:layout_width="49dp" android:layout_height="49dp" android:src="@drawable/gm_candidate_vote_avatar_bg" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@null"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:src="@drawable/ic_default_avatar" android:layout_centerInParent="true" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+        <ImageView android:id="@+id/iv_vote_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:layout_marginBottom="3dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <TextView android:textSize="13dp" android:textColor="#969696" android:id="@+id/tv_candidate_name" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginTop="10dp" android:maxWidth="70dp" android:text="ABCabc123" android:maxLines="2" android:layout_below="@+id/rl_avatar" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

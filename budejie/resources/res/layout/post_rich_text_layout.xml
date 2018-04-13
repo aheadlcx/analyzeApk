@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left" android:layout_marginRight="@dimen/post_margin_left">
+    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/content_image_url" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rich_see_more_bg_color" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="@color/rich_see_more_text_color" android:gravity="center" android:layout_gravity="center" android:padding="@dimen/post_margin" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rich_see_detail" android:drawableLeft="@drawable/rich_see_more_icon" android:drawablePadding="@dimen/margin_5"/>
+    </LinearLayout>
+</RelativeLayout>

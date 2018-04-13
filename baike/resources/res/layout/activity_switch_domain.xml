@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@r$color/white_press" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="15sp" android:textColor="@r$color/ab_title_text_color_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="注意末尾“/”，修改后请点击最下面的保存按钮，保存后只在当前生命周期有效"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="内容"/>
+        <EditText android:id="@+id/content" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="推送"/>
+        <EditText android:id="@+id/push" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="附近的人"/>
+        <EditText android:id="@+id/nearby" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="审核举报"/>
+        <EditText android:id="@+id/insp" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="图片"/>
+        <EditText android:id="@+id/picture" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="投票"/>
+        <EditText android:id="@+id/vote" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="关系网"/>
+        <EditText android:id="@+id/relationship" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="群组相关"/>
+        <EditText android:id="@+id/tribe" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="糗友圈相关"/>
+        <EditText android:id="@+id/qiuyou_circle" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="IM_MQTT"/>
+        <EditText android:id="@+id/im_server" android:hint="示例:192.168.1.1:100" style="?attr/edit_txt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="IM_心跳间隔(秒)"/>
+        <EditText android:id="@+id/im_keepalive_interval" android:hint="示例:30" style="?attr/edit_txt"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开测试模式" android:layout_alignParentLeft="true"/>
+            <CheckBox android:id="@+id/test_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <Button android:id="@+id/live_test_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="热猫直播测试模式" android:layout_alignParentLeft="true"/>
+        <Button android:id="@+id/live_test_mode_qb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="糗百直播列表测试模式" android:layout_alignParentLeft="true"/>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/save" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="20dp" android:layout_marginBottom="10dp" android:text="保存"/>
+    </LinearLayout>
+</ScrollView>

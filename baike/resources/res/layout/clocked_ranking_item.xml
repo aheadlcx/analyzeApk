@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="75dp">
+    <RelativeLayout android:id="@+id/ranking_box" android:layout_width="52dp" android:layout_height="75dp">
+        <TextView android:textSize="14dp" android:textColor="#63625e" android:gravity="center" android:id="@+id/ranking_num" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/large_user_icon" android:layout_height="@dimen/large_user_icon" android:layout_marginRight="17dp" android:layout_toRightOf="@+id/ranking_box" android:layout_centerVertical="true" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/name_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_toRightOf="@+id/avatar">
+        <TextView android:textSize="@dimen/g_txt_middle" android:textColor="#3b3d42" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/gender_age" android:background="@drawable/pinfo_female_bg" android:layout_width="wrap_content" android:layout_height="13dp" android:layout_marginTop="10dp" android:layout_toRightOf="@+id/avatar" android:layout_below="@+id/name_box" android:layout_alignLeft="@+id/name_box">
+        <ImageView android:id="@+id/gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pinfo_female" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <TextView android:textSize="9dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/age" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <TextView android:textSize="9dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/astrology" android:background="@drawable/near_pinfo_astrology_bg" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="13dp" android:layout_marginLeft="2dp" android:layout_marginTop="10dp" android:layout_toRightOf="@+id/gender_age" android:layout_below="@+id/name_box"/>
+    <TextView android:textSize="14dp" android:gravity="center" android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" android:layout_alignLeft="@+id/name_box" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

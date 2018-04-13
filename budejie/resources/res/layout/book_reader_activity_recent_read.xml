@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/book_reader_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/book_shelf_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/book_reader_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/book_reader_top_bar_height" android:layout_marginRight="15dp"/>
+    <ImageView android:textSize="14sp" android:textColor="@color/book_reader_common_text_color" android:id="@+id/empty_image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:src="@drawable/book_reader_recent_read_image" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

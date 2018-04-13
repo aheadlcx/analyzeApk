@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/ttg_head_view" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="11sp" android:textColor="@color/prompt_font" android:gravity="center" android:id="@+id/ttg_tv_refresh" android:paddingTop="55dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ttg_flush_title" android:layout_above="@+id/ttg_fy_content"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/ttg_fy_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/ttg_iv_refreshing" android:visibility="visible" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/tata_pullp"/>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="2dp">
+            <ImageView android:id="@+id/ttg_iv_ball_l" android:visibility="visible" android:layout_width="2dp" android:layout_height="2dp" android:src="@drawable/shape_gray_round" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/ttg_iv_ball_c" android:visibility="visible" android:layout_width="2dp" android:layout_height="2dp" android:src="@drawable/shape_gray_round" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/ttg_iv_ball_r" android:visibility="visible" android:layout_width="2dp" android:layout_height="2dp" android:src="@drawable/shape_gray_round" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="22dp">
+    <ImageView android:id="@+id/ivSmallLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/img_godreview_indicate_small"/>
+    <ImageView android:id="@+id/ivMiddleLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/img_godreview_indicate_middle"/>
+    <ImageView android:id="@+id/ivBig0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/selector_godreview_big_indicate"/>
+    <ImageView android:id="@+id/ivBig1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/selector_godreview_big_indicate"/>
+    <ImageView android:id="@+id/ivBig2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/selector_godreview_big_indicate"/>
+    <ImageView android:id="@+id/ivMiddleRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/img_godreview_indicate_middle"/>
+    <ImageView android:id="@+id/ivSmallRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_godreview_indicate_small"/>
+</LinearLayout>

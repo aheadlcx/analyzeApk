@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46dp">
+        <ImageView android:layout_width="270dp" android:layout_height="126dp" android:src="@drawable/live_game_catanddog_win_bg_title" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="270dp" android:layout_height="270dp" android:layout_marginTop="121dp" android:src="@drawable/live_game_catanddog_dialog_bg" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="235dp" android:layout_height="257dp" android:layout_marginTop="140dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="40sp" android:textStyle="bold" android:textColor="#ff4848" android:id="@+id/heart_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:drawableLeft="@drawable/live_game_win_heart" android:drawablePadding="6dp" style="@style/TextShadow_game_win_num"/>
+                <qsbk.app.live.widget.NumberAnimTextView android:textSize="40sp" android:textStyle="bold" android:textColor="#ff4848" android:id="@+id/num_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200" style="@style/TextShadow_game_win_num"/>
+            </LinearLayout>
+            <ImageView android:layout_width="173dp" android:layout_height="2dp" android:layout_marginTop="9dp" android:src="@drawable/live_game_catanddog_win_line"/>
+            <TextView android:textSize="14sp" android:textColor="#bc914d" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="9dp" android:text="传说中打赏主播运气更佳哦！"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/game_gift_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/game_gift_iv_1" android:background="@drawable/live_game_catanddog_gift_bg" android:padding="2dp" android:layout_width="45dp" android:layout_height="45dp" app:placeholderImage="@drawable/live_gift_default" app:placeholderImageScaleType="5" app:actualImageScaleType="5"/>
+                    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#bc914d" android:gravity="center" android:id="@+id/game_gift_tv_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:minWidth="40dp" android:minHeight="16dp" android:text="6钻"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/game_gift_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/game_gift_iv_2" android:background="@drawable/live_game_catanddog_gift_bg" android:padding="2dp" android:layout_width="45dp" android:layout_height="45dp" app:placeholderImage="@drawable/live_gift_default" app:placeholderImageScaleType="5" app:actualImageScaleType="5"/>
+                    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#bc914d" android:gravity="center" android:id="@+id/game_gift_tv_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:minWidth="40dp" android:minHeight="16dp" android:text="266钻"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/game_gift_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/game_gift_iv_3" android:background="@drawable/live_game_catanddog_gift_bg" android:padding="2dp" android:layout_width="45dp" android:layout_height="45dp" app:placeholderImage="@drawable/live_gift_default" app:placeholderImageScaleType="5" app:actualImageScaleType="5"/>
+                    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#bc914d" android:gravity="center" android:id="@+id/game_gift_tv_3" android:paddingLeft="2dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:minWidth="40dp" android:minHeight="16dp" android:text="1200钻"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/game_gift_send" android:background="@drawable/live_game_win_catanddog_gift_send_bg" android:layout_width="85dp" android:layout_height="34dp" android:layout_marginTop="9dp">
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_game_reward"/>
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/game_time_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(5s)"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="150dp" android:layout_marginTop="100dp" android:src="@drawable/live_game_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/about_layout" android:background="@color/list_item_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/about_title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" layout="@layout/title_bar"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_urls" style="@style/about_large_style"/>
+        <TextView android:autoLink="web" android:id="@+id/product_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_url" style="@style/about_small_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_name" style="@style/about_large_style"/>
+        <TextView android:id="@+id/company_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_name" style="@style/about_small_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_url" style="@style/about_large_style"/>
+        <TextView android:autoLink="web" android:id="@+id/company_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_url" style="@style/about_small_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_email" style="@style/about_large_style"/>
+        <TextView android:id="@+id/contact_emal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_email" android:onClick="toEmail" style="@style/about_small_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_qq" style="@style/about_large_style"/>
+        <TextView android:id="@+id/contactqq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_qq" style="@style/about_small_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_phone" style="@style/about_large_style"/>
+        <TextView android:autoLink="phone" android:id="@+id/telephone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_phone" style="@style/about_small_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address" style="@style/about_large_style"/>
+        <TextView android:id="@+id/adress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_address" style="@style/about_small_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_user_id" style="@style/about_large_style"/>
+        <TextView android:id="@+id/user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/about_small_style"/>
+    </LinearLayout>
+</LinearLayout>

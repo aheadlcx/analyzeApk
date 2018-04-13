@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="120dp">
+    <ImageView android:id="@+id/card_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_punch_card" android:scaleType="fitXY"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/join_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="13dp">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可瓜分奖金池金额（元）"/>
+        <TextView android:textSize="30sp" android:textColor="@color/white" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13332"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/punch_btn" android:background="@drawable/bg_white_round_border" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="20dp" android:text="参与早起打卡" android:layout_toRightOf="@+id/join_container" android:layout_centerVertical="true"/>
+</RelativeLayout>

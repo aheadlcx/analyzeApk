@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:paddingLeft="@dimen/post_margin_left" android:paddingRight="@dimen/post_margin_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <LinearLayout android:orientation="vertical" android:background="?attr/bg_repost_color_selector_theme" android:padding="10dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="#939393" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="处理中，请稍后查看" android:lineSpacingExtra="2dp"/>
+    </LinearLayout>
+</LinearLayout>

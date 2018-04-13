@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="67dp">
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/white" android:gravity="center" android:id="@+id/rank_number_text_view" android:layout_width="23dp" android:layout_height="16dp" android:layout_marginLeft="14dp" android:layout_centerVertical="true"/>
+    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/portrait_image_view" android:layout_width="47dp" android:layout_height="47dp" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/rank_number_text_view" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/font_12" android:textColor="?attr/plate_list_item_color" android:id="@+id/praise_count_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/praise_count_text_view" android:layout_toRightOf="@+id/portrait_image_view" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@+id/user_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_16" android:textColor="?attr/label_list_item_name" android:id="@+id/user_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <ImageView android:id="@+id/sex_image_view" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/user_name_text_view" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/user_name_layout">
+            <TextView android:textSize="@dimen/font_12" android:textColor="?attr/plate_list_item_color" android:id="@+id/comment_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:layout_gravity="center_vertical" android:id="@+id/tag_view" android:background="?attr/divider_horizontal_bg" android:layout_width="1dp" android:layout_height="9dp" android:layout_marginLeft="5dp"/>
+            <TextView android:textSize="@dimen/font_12" android:textColor="?attr/plate_list_item_color" android:id="@+id/post_number_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignLeft="@+id/portrait_image_view" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

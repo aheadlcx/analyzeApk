@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="#3ec997" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_avatars" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Gallery android:gravity="center_horizontal" android:id="@+id/avatars" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:spacing="20dp" android:soundEffectsEnabled="false"/>
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_candidate_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:textSize="16dp" android:textColor="@color/white" android:id="@+id/tv_candidate_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_candidate_gender_age" android:layout_width="wrap_content" android:layout_height="15dp" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/tv_candidate_name" android:layout_centerVertical="true" style="?attr/nearby_list_item_genderage">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_candidate_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@drawable/pinfo_female" android:scaleType="fitXY" android:contentDescription="@null"/>
+                <TextView android:textSize="11dp" android:textColor="@color/white" android:id="@+id/tv_candidate_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="4dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/profiles" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="18dp" android:layout_below="@+id/ll_avatars"/>
+    <ProgressBar android:id="@+id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progressDrawable="@drawable/loadingbar" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="@drawable/rooms_third_drop_down" android:paddingLeft="@dimen/ranking_drop_down_pading_left_and_right" android:paddingRight="@dimen/ranking_drop_down_pading_left_and_right" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll" android:layout_width="match_parent" android:layout_height="@dimen/ranking_drop_down_pading_height"/>
+    <ListView android:id="@+id/drop_lv" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:layout_width="130dp" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:layout_below="@+id/ll" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

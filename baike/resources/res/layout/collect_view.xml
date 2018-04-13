@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/emotions" android:background="?attr/emotion_main_bg" android:layout_width="match_parent" android:layout_height="@dimen/emotion_container_height">
+    <qsbk.app.im.CollectEmotion.CollectionViewPager android:layout_gravity="center_vertical" android:id="@+id/collect_viewpager" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <qsbk.app.widget.DotView android:gravity="center_horizontal" android:id="@+id/collect_dotview" android:layout_width="match_parent" android:layout_height="10dp" app:dot_count="1"/>
+</LinearLayout>

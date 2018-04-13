@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/mycomment_content_layout" android:background="?attr/item_forward_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/comment_item_content_font" android:id="@+id/mycomment_username_textview" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/comment_item_content_font" android:id="@+id/mycomment_content_textview" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.budejie.www.activity.view.AudioLayout android:id="@+id/mycomment_content_voice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/mycomment_reply_content_layout" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/comment_item_content_font" android:id="@+id/mycomment_reply_username_textview" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/comment_item_content_font" android:id="@+id/mycomment_reply_content_textview" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.budejie.www.activity.view.AudioLayout android:id="@+id/mycomment_reply_content_voice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

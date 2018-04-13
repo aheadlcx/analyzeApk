@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/CB_1" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/navBar" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@+id/fl_container" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <ImageView android:id="@+id/back" android:layout_width="@dimen/item_height" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:ellipsize="middle" android:gravity="center_vertical" android:id="@+id/title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="审帖专区" android:singleLine="true" android:drawablePadding="@dimen/divide_space_5" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/more" android:layout_width="@dimen/item_height" android:layout_height="match_parent" android:src="@drawable/ic_nav_more" android:scaleType="center" android:layout_alignParentRight="true"/>
+            <FrameLayout android:id="@+id/exchange" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/more">
+                <ImageView android:layout_gravity="center_vertical" android:padding="2dp" android:layout_width="48dp" android:layout_height="20dp" android:layout_marginRight="10dp" android:src="@drawable/navbar_communication" android:scaleType="center"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/exchange_tips" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="10dp" android:src="@drawable/navbar_communication_new" android:scaleType="center"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.ui.my.assessor.MonitorLeftFlingFrameLayout android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.xiaochuankeji.tieba.ui.my.assessor.ScrollPostAreaLinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@+id/llPostArea" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/post_item_container" android:background="@drawable/assessor_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/ivReport" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginRight="13dp" android:layout_marginBottom="13dp" android:src="@drawable/bg_selector_report"/>
+                </FrameLayout>
+                <RelativeLayout android:paddingLeft="22dp" android:paddingRight="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/layout_reject" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <cn.xiaochuankeji.tieba.ui.my.assessor.RejectPostButton android:id="@+id/tvReject" android:layout_width="66dp" android:layout_height="66dp"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/CH" android:gravity="center" android:id="@+id/tv_refuse" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="不通过"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/layout_pass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <cn.xiaochuankeji.tieba.ui.my.assessor.PassPostButton android:id="@+id/tvPass" android:layout_width="66dp" android:layout_height="66dp"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/CM" android:gravity="center" android:id="@+id/tv_pass" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="通过"/>
+                    </LinearLayout>
+                    <cn.xiaochuankeji.tieba.ui.my.assessor.PostPercentBar android:id="@+id/post_percent_bar" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginLeft="11dp" android:layout_marginRight="11dp" android:layout_toLeftOf="@+id/layout_pass" android:layout_toRightOf="@+id/layout_reject" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/CH" android:id="@+id/label_reject_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="30%" android:layout_alignLeft="@+id/post_percent_bar"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/CM" android:id="@+id/label_pass_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="70%" android:layout_alignRight="@+id/post_percent_bar"/>
+                </RelativeLayout>
+            </cn.xiaochuankeji.tieba.ui.my.assessor.ScrollPostAreaLinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llAssessOver" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="100dp">
+            <ImageView android:id="@+id/ivAssessOver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_block_topic_empty"/>
+            <Button android:textSize="@dimen/F9_text" android:textColor="@color/CB_1" android:id="@+id/bnRequestMore" android:background="@drawable/login_blue_selector" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="-17dp" android:layout_marginRight="40dp" android:text="宝宝还要审"/>
+        </LinearLayout>
+    </cn.xiaochuankeji.tieba.ui.my.assessor.MonitorLeftFlingFrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/progressbar" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+</RelativeLayout>

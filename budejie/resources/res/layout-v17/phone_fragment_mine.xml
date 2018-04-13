@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="@dimen/globalTitleHeight"/>
+    <ScrollView android:id="@+id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@+id/top_bg" android:background="@drawable/phone_ic_mine_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_tx_personal" android:layout_width="@dimen/phone_sc_110px" android:layout_height="@dimen/phone_sc_110px">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_tx_personal" android:layout_width="@dimen/seventy_dip" android:layout_height="@dimen/seventy_dip" fresco:placeholderImage="@drawable/rooms_third_common_head_portrait" fresco:roundAsCircle="true"/>
+                    <ImageView android:id="@+id/ivIconCamera" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rooms_third_personal_camera" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="点击拍照" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_topPart" android:layout_width="match_parent" android:layout_height="62dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/personal_key_size" android:textColor="#383220" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="关注"/>
+                    <TextView android:textSize="@dimen/personal_key_size" android:textColor="@color/red" android:gravity="center" android:id="@+id/tv_fx_attentionNum" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="0.7dp" android:layout_height="32dp" style="@style/onePxLine_light"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/personal_key_size" android:textColor="#383220" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="粉丝"/>
+                    <TextView android:textSize="@dimen/personal_key_size" android:textColor="@color/red" android:gravity="center" android:id="@+id/tv_fx_personal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_name" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="51dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称" style="@style/personal_left"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <EditText android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/et_name_personal" android:background="@color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone" style="@style/personal_right"/>
+                    <RelativeLayout android:id="@+id/nameEditPart" android:visibility="invisible" android:layout_width="51dp" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/ivEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/rooms_third_personal_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                        <ImageView android:id="@+id/ivClear" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/rooms_third_personal_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginStart="@dimen/phone_sc_15dp" style="@style/onePxLine_light"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_room" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="51dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="房间" style="@style/personal_left"/>
+                <TextView android:id="@+id/tv_fh_personal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/personal_right"/>
+            </LinearLayout>
+            <View android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginStart="@dimen/phone_sc_15dp" style="@style/onePxLine_light"/>
+            <include android:layout_width="match_parent" android:layout_height="51dp" layout="@layout/phone_fragment_historical_view"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rechargePart" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="8dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_coin6" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="51dp">
+                    <TextView android:gravity="center_vertical" android:text=" 六币" android:drawableLeft="@drawable/rooms_third_personal_sixcoin" style="@style/personal_left"/>
+                    <TextView android:id="@+id/current_coin6" style="@style/personal_right"/>
+                    <TextView android:textSize="@dimen/personal_key_size" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="充值"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/phone_room_gift_arrow_icon"/>
+                </LinearLayout>
+                <View android:layout_marginLeft="15dp" style="@style/onePxLine_light"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bean6" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="51dp">
+                    <TextView android:gravity="center_vertical" android:text=" 六豆" android:drawableLeft="@drawable/rooms_third_personal_sixbean" style="@style/personal_left"/>
+                    <TextView android:id="@+id/current_bean6" style="@style/personal_right"/>
+                    <TextView android:textSize="@dimen/personal_key_size" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="兑换"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/phone_room_gift_arrow_icon"/>
+                </LinearLayout>
+                <View android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginStart="@dimen/phone_sc_15dp" style="@style/onePxLine_light"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="51dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="财富等级" style="@style/personal_left"/>
+                <RelativeLayout android:id="@+id/rl_richPart" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/richProgress" android:background="@drawable/rooms_third_personal_progress_bg" android:layout_width="105dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_centerInParent="true"/>
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/current_richLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_toLeftOf="@+id/richProgress" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/richProgressIn" android:background="@drawable/rooms_third_personal_progress_in" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_alignLeft="@+id/richProgress" android:layout_centerVertical="true"/>
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/next_richLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:scaleType="center" android:layout_toRightOf="@+id/richProgress" android:layout_centerVertical="true"/>
+                    <cn.v6.sixrooms.widgets.phone.ScrollTextView android:textSize="10sp" android:textColor="#ff888888" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@+id/distanceRich" android:layout_width="105dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/richProgress" android:layout_alignLeft="@+id/richProgress"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:layout_marginLeft="15dp" style="@style/onePxLine_light"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="51dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="明星等级" style="@style/personal_left"/>
+                <RelativeLayout android:id="@+id/rl_starPart" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/starProgress" android:background="@drawable/rooms_third_personal_progress_bg" android:layout_width="105dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@+id/current_starLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_toLeftOf="@+id/starProgress" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/starProgressIn" android:background="@drawable/rooms_third_personal_progress_in" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_alignLeft="@+id/starProgress" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/next_starLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:scaleType="center" android:layout_toRightOf="@+id/starProgress" android:layout_centerVertical="true"/>
+                    <cn.v6.sixrooms.widgets.phone.ScrollTextView android:textSize="10sp" android:textColor="#ff888888" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@+id/distanceStar" android:layout_width="105dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true" android:layout_below="@+id/starProgress" android:layout_alignLeft="@+id/starProgress"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/privatePart" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@+id/personal_prop_top" android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginStart="@dimen/phone_sc_15dp" style="@style/onePxLine_light"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_manage" android:background="@drawable/phone_ranking_adapter_item_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="51dp">
+                        <TextView android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/personal_myprop" android:layout_weight="1" style="@style/personal_left"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/phone_room_gift_arrow_icon" android:layout_marginEnd="16dp"/>
+                    </LinearLayout>
+                    <View android:id="@+id/personal_prop_bottom" android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginStart="@dimen/phone_sc_15dp" style="@style/onePxLine_light"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bill" android:background="@drawable/phone_ranking_adapter_item_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="51dp">
+                        <TextView android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/personal_my_bill" android:layout_weight="1" style="@style/personal_left"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/phone_room_gift_arrow_icon"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/setUserVisiblePart" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="8dp"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llChangeUserVisibility" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="51dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前在线状态" style="@style/personal_left"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/personal_right"/>
+                        <TextView android:textSize="@dimen/personal_key_size" android:textColor="@color/gray_shallow" android:id="@+id/tvUserCurrentVisibility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/phone_sc_10dp" android:text="显身" android:layout_marginEnd="@dimen/phone_sc_10dp"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/phone_room_gift_arrow_icon" android:layout_marginEnd="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/llSecurityPart" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginStart="@dimen/phone_sc_15dp" style="@style/onePxLine_light"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bundle_phone" android:background="@drawable/phone_ranking_adapter_item_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="51dp">
+                        <TextView android:gravity="center_vertical" android:layout_height="match_parent" android:text="@string/keep_secret_phone" style="@style/personal_left"/>
+                        <TextView android:textSize="@dimen/personal_key_size" android:textColor="@color/bundle_common_textcolor" android:gravity="center" android:id="@+id/tv_bundle_phone_number" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                        <TextView android:textSize="@dimen/personal_key_size" android:textColor="@color/gray_shallow" android:id="@+id/tv_is_bundle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/bundle"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/phone_room_gift_arrow_icon"/>
+                    </LinearLayout>
+                    <View android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginStart="@dimen/phone_sc_15dp" style="@style/onePxLine_light"/>
+                    <TextView android:textSize="@dimen/phone_sc_15sp" android:gravity="center_vertical" android:id="@+id/id_tv_hotline_setting" android:background="@drawable/phone_setting_item_selector" android:layout_width="match_parent" android:layout_height="@dimen/mysetting_item_layout_height" style="@style/personal_left"/>
+                    <View android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginStart="@dimen/phone_sc_15dp" style="@style/onePxLine_light"/>
+                    <TextView android:textSize="@dimen/phone_sc_16sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/id_setting_logout" android:background="@drawable/act_setting_logout_bg" android:visibility="visible" android:layout_width="325dp" android:layout_height="38dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="注销"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/rl_bgClickToCancel" android:background="#88404040" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_animationPart" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rooms_third_personal_camera_buttonbg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="#ff929292" android:gravity="center" android:layout_width="match_parent" android:layout_height="40dp" android:text="请选择图片来源"/>
+                <View android:background="#ffb0b9b9" android:layout_width="match_parent" android:layout_height="0.7dp"/>
+                <TextView android:textSize="18sp" android:textColor="#ff007aff" android:gravity="center" android:id="@+id/tv_fromCamera" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="40dp" android:text="拍摄照片"/>
+                <View android:background="#ffb0b9b9" android:layout_width="match_parent" android:layout_height="0.7dp"/>
+                <TextView android:textSize="18sp" android:textColor="#ff007aff" android:gravity="center" android:id="@+id/tv_fromGallery" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="40dp" android:text="从相册中选择"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rooms_third_personal_camera_buttonbg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="18sp" android:textColor="#ff007aff" android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="40dp" android:text="取消"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:visibility="gone" layout="@layout/phone_custom_progressbar"/>
+</RelativeLayout>

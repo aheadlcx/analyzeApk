@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/navigation_height">
+    <RadioGroup android:orientation="horizontal" android:id="@+id/dynamic_tab_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <RadioButton android:textSize="16sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@+id/label_subscription" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="@string/subscibe" android:singleLine="true"/>
+        <RadioButton android:textSize="19sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@+id/news_feed" android:paddingLeft="15dp" android:paddingRight="15dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@null" android:text="@string/pp_attention" android:singleLine="true"/>
+    </RadioGroup>
+    <ImageView android:id="@+id/cursor" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="2dp" android:src="?attr/theme_red_color" android:layout_alignParentBottom="true" android:contentDescription="@null"/>
+</RelativeLayout>

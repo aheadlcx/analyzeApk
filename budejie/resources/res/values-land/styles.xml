@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Design.TabLayout">
+        <item name="tabMode">1</item>
+        <item name="tabGravity">1</item>
+    </style>
+    <style name="song_text_one">
+        <item name="android:textSize">@dimen/phone_sc_15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxEms">4</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="song_text_one_two">
+        <item name="android:textSize">@dimen/phone_sc_12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxEms">4</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="song_text_two">
+        <item name="android:textSize">@dimen/phone_sc_11sp</item>
+        <item name="android:textColor">#a6ffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxEms">4</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="song_title_style">
+        <item name="android:textSize">@dimen/phone_sc_15sp</item>
+        <item name="android:textColor">@color/song_title_select</item>
+    </style>
+</resources>

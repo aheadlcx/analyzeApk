@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="@color/black_80" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zhihu.matisse.internal.ui.widget.PreviewViewPager android:id="@+id/pager" android:background="@color/black_80" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/top_toolbar" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true">
+        <ImageView android:gravity="center_vertical" android:id="@+id/button_back" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left"/>
+        <View android:id="@+id/view_divider" android:background="@color/CT_1" android:visibility="visible" android:layout_width="1dp" android:layout_height="16dp" android:layout_toRightOf="@+id/button_back" android:layout_centerVertical="true" android:alpha="0.2"/>
+        <TextView android:textSize="18sp" android:textColor="@color/CT_1" android:gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="返回" android:maxLines="1" android:layout_toRightOf="@+id/view_divider"/>
+        <ImageView android:id="@+id/check_view" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingRight="15dp" android:paddingBottom="14dp" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/media_selected_state" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/bottom_toolbar" android:background="#50111111" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textColor="#00b6ff" android:gravity="center" android:id="@+id/button_done" android:paddingLeft="10dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/button_done" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/selected_count" android:background="@drawable/ic_blue_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_toLeftOf="@+id/button_done" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

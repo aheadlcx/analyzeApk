@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/login_generally_Background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/tag_bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="@dimen/phone_qqlogin_margin_top_new" android:layout_alignParentBottom="true">
+            <TextView android:textSize="14sp" android:textColor="#a6a6a6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有账号?"/>
+            <LinearLayout android:id="@+id/ll_into_register" android:background="@drawable/rooms_third_into_register_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp">
+                <Button android:textSize="15sp" android:textColor="@drawable/rooms_fouth_login_regester_text_selecter" android:background="#00000000" android:paddingLeft="12dp" android:paddingTop="7dp" android:paddingRight="12dp" android:paddingBottom="7dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即注册" android:drawableRight="@drawable/rooms_third_into_register_arrows" android:drawablePadding="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tag_bottom_layout" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:paddingLeft="15dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <EditText android:textSize="@dimen/text_size_small_mid" android:textColor="#333333" android:textColorHint="#999999" android:id="@+id/et_username" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="35dp" android:hint="@string/hint_username" android:singleLine="true" android:maxLength="30"/>
+                    <ImageView android:id="@+id/id_iv_clean_loginname" android:padding="10dp" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_del_image_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <ImageView android:layout_marginLeft="@dimen/phone_login_tv_margin_left_v4" android:layout_marginRight="@dimen/phone_login_tv_margin_left_v4" style="@style/onePxLine"/>
+                <RelativeLayout android:paddingLeft="15dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp">
+                    <EditText android:textSize="@dimen/text_size_small_mid" android:textColor="#333333" android:textColorHint="#999999" android:id="@+id/et_password" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="35dp" android:hint="@string/hint_password" android:singleLine="true" android:maxLength="30" android:inputType="textPassword"/>
+                    <cn.v6.sixrooms.widgets.phone.HideOrDisplayThePasswordView android:id="@+id/id_password_show_hide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <ImageView android:layout_marginLeft="@dimen/phone_login_tv_margin_left_v4" android:layout_marginRight="@dimen/phone_login_tv_margin_left_v4" style="@style/onePxLine"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/phone_input_verify_code_margin_top_new">
+                <Button android:textSize="@dimen/text_size_middle_min_17" android:textColor="@color/rooms_fourth_login_button_textcolor" android:id="@+id/but_login" android:background="@drawable/ic_rooms_fourth_login_selector" android:layout_width="match_parent" android:layout_height="@dimen/button_height_new_v4" android:layout_marginLeft="@dimen/phone_login_tv_margin_left_v4" android:layout_marginRight="@dimen/phone_login_tv_margin_left_v4" android:text="@string/login_btn_str"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" android:layout_below="@+id/but_login">
+                    <View android:id="@+id/id_view_tag" android:background="#e8e8e8" android:layout_width="1dp" android:layout_height="12dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/rooms_third_login_forget_password" android:id="@+id/login_forget_username" android:padding="5dp" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忘记用户名" android:layout_toLeftOf="@+id/id_view_tag" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/rooms_third_login_forget_password" android:id="@+id/login_forget_password" android:padding="5dp" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忘记密码" android:layout_toRightOf="@+id/id_view_tag" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

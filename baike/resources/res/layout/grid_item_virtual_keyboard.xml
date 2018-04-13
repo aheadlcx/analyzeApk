@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="26sp" android:textColor="#333333" android:gravity="center" android:id="@+id/btn_keys" android:background="@drawable/selector_gird_key_item" android:layout_width="match_parent" android:layout_height="60dp" android:includeFontPadding="false" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/imgDelete" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyboard_delete_img" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

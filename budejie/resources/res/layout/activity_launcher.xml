@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/advideo_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/VideoLayout" android:background="@drawable/ad_video_bg" android:layout_width="match_parent" android:layout_height="260dp" android:layout_marginLeft="10dp" android:layout_marginTop="110dp" android:layout_marginRight="10dp" android:layout_alignParentTop="true">
+        <SurfaceView android:id="@+id/AdSurfaceView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="60dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+    <Button android:id="@+id/JumpButton" android:background="@drawable/ad_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="88dp" android:layout_below="@+id/VideoLayout" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/splash_layout" android:background="@drawable/splash_bacground" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

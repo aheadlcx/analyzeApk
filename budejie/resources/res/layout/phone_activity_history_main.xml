@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/mHistoryView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+    <com.emilsjolander.components.stickylistheaders.StickyListHeadersListView android:id="@+id/lv_sticky_history" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="@null" android:layout_below="@+id/titlebar_default"/>
+    <TextView android:textSize="@dimen/hall_history_header_title_size" android:textColor="@color/black" android:id="@+id/history_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_history" android:layout_centerInParent="true"/>
+</RelativeLayout>

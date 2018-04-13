@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.widget.fits.FitsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="274.2969dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="210dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/member_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:minHeight="210dp"/>
+        <View android:background="@drawable/shape_member_cover_top" android:layout_width="match_parent" android:layout_height="63dp" android:layout_alignParentTop="true"/>
+        <View android:background="@drawable/shape_member_cover_bottom" android:layout_width="match_parent" android:layout_height="94dp" android:layout_alignParentBottom="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/profile" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:layout_marginBottom="8.8dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/member_title" android:layout_width="match_parent" android:layout_height="35dp">
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F7_text" android:textColor="@color/CW" android:ellipsize="end" android:id="@+id/member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/member_gender" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8.5dp" android:src="@drawable/ic_male" android:scaleType="fitCenter"/>
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/member_official" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8.5dp" android:src="@drawable/personal_guanfang_profile" android:scaleType="fitCenter"/>
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/member_assessor" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8.5dp" android:src="@drawable/ic_assessor_senior"/>
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/member_community" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8.5dp" android:src="@drawable/personal_shixizly"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_talent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/iv_talent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/talent"/>
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/iv_talent_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/talent_original_text"/>
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F4_text" android:textColor="@color/CW" android:ellipsize="end" android:id="@+id/tv_talent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="搞笑图片达人" android:maxLines="1"/>
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F4_text" android:textColor="@color/CW" android:ellipsize="end" android:id="@+id/member_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </LinearLayout>
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/member_avatar" android:background="@drawable/bg_avatar_circle" android:padding="1dp" android:clickable="true" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginLeft="13dp" android:layout_marginBottom="8.8dp" android:layout_above="@+id/profile" android:layout_alignParentLeft="true" app:actualImageScaleType="2" app:roundAsCircle="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/CB" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="55.6dp" android:baselineAligned="false">
+        <FrameLayout android:id="@+id/post" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:layout_gravity="center" android:id="@+id/post_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:layout_gravity="center" android:id="@+id/post_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="帖子"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/like" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:layout_gravity="center" android:id="@+id/like_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:layout_gravity="center" android:id="@+id/like_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="获赞"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/follow" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:layout_gravity="center" android:id="@+id/follow_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:layout_gravity="center" android:id="@+id/follow_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="关注"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fans" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:layout_gravity="center" android:id="@+id/fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_5" android:layout_gravity="center" android:id="@+id/fans_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="粉丝"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="8.7dp"/>
+</cn.xiaochuankeji.tieba.widget.fits.FitsLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.budejie.www.widget.XListView android:id="@+id/list_view" android:focusable="true" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp"/>
+    <com.budejie.www.activity.view.StaggeredRecyclerView android:id="@+id/recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="@dimen/font_16" android:textColor="?attr/plate_list_item_color" android:id="@+id/empty_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_list_empty_text" android:layout_centerInParent="true"/>
+</RelativeLayout>

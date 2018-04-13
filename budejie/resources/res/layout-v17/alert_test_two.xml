@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_layout" android:background="?attr/share_dialog_background" android:layout_width="match_parent" android:layout_height="307dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/share_dialog_text_color" android:gravity="center" android:id="@+id/dialogTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_15" android:text="@string/share_title_text"/>
+        <HorizontalScrollView android:id="@+id/top_scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/dialogContainer" android:paddingLeft="@dimen/margin_5" android:paddingRight="@dimen/margin_5" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/dialogContainer_two" android:paddingLeft="@dimen/margin_5" android:paddingRight="@dimen/margin_5" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/share_dialog_text_color" android:gravity="center" android:id="@+id/cancel_textView" android:background="?attr/share_dialog_cancel_text_background" android:layout_width="match_parent" android:layout_height="47dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</RelativeLayout>

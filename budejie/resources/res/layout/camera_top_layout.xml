@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/camera_top_layout" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:id="@+id/record_add_grid" android:clickable="true" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/record_gird_selector" android:scaleType="centerInside" android:layout_centerVertical="true" android:onClick="onAddGrid"/>
+    <ImageView android:id="@+id/record_switch_camera" android:clickable="true" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/record_camera_switch_selector" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onSwitchCamera"/>
+    <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/recording_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/record_add_grid" android:layout_centerVertical="true" layout="@layout/popuwindow_camera_flash"/>
+</RelativeLayout>

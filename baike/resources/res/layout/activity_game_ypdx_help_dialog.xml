@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp">
+        <ImageView android:layout_width="271dp" android:layout_height="75dp" android:src="@drawable/live_game_help_ypdx_title" android:scaleType="fitXY"/>
+        <ImageView android:layout_width="271dp" android:layout_height="240dp" android:layout_marginTop="75dp" android:src="@drawable/live_game_dialog_bg_ypdx" android:scaleType="fitXY"/>
+        <ScrollView android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="208dp" android:layout_height="210dp" android:layout_marginTop="75dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="56dp" android:layout_height="13dp" android:layout_marginTop="5dp" android:src="@drawable/live_game_help_spec" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/transparent_70_percent_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="热猫星球上的三大美少女『哒哒』『顺宝』『晓晓』经常凑一起玩『勇拼大小』来争夺『智慧女神』头衔；大家可以“点赞”围观支持，胜者会和支持她的人一起分享胜利果实。"/>
+                <ImageView android:layout_width="56dp" android:layout_height="13dp" android:layout_marginTop="12dp" android:src="@drawable/live_game_help_rule" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/transparent_70_percent_white" android:id="@+id/game_help_rule" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="- 游戏过程中，你可以为喜欢的她“点赞”。1钻=10赞；揭晓结果后，若『哒哒』和『晓晓』获胜，她们会开心地给她的支持者2倍回报；若『顺宝』获胜，她会激动地给支持者%s倍回报！
+
+- 获胜规则：3颗骰子之和是4~10为『晓晓』胜，和是11~17为『哒哒』胜（不包含3颗骰子点数相同情况）；3颗骰子点数相同（如3|3|3等）或 3颗骰子是顺子（如1|2|3等）为『顺宝』胜。"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="150dp" android:layout_marginTop="100dp" android:src="@drawable/live_game_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

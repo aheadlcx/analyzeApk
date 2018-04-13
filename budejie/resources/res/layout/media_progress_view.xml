@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/playbutton_layout" android:background="@drawable/playerbutton_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/play_iv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play"/>
+        <ProgressBar android:id="@+id/playProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/round_progress_bar_blue_1" style="?android:attr/progressBarStyleSmall"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/timeLayout" android:background="#64000000" android:paddingLeft="43dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="40dp">
+        <TextView android:textColor="#ffffff" android:id="@+id/mCurrentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="00:00" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+        <TextView android:textColor="#ffffff" android:id="@+id/mDurationTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="04:00" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/layout_playHandler" android:background="@drawable/playerbutton_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_playState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play"/>
+    </LinearLayout>
+    <SeekBar android:id="@+id/mSeekBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:layout_marginTop="10dp" style="@style/seekBar_style"/>
+</RelativeLayout>

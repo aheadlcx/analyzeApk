@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:textSize="15sp" android:textColor="?attr/tougao_label_name_color" android:gravity="center" android:id="@+id/label_name_layout_bg" android:background="?attr/label_name_layout_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_centerVertical="true"/>

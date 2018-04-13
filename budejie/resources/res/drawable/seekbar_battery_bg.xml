@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <size android:height="1dp"/>
+            <gradient android:startColor="@color/book_reader_read_title_color" android:endColor="@color/book_reader_read_title_color"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <size android:height="3dp"/>
+                <gradient android:startColor="@android:color/white" android:endColor="@android:color/white"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

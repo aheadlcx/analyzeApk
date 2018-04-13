@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/hot_cmt_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left" android:layout_marginRight="@dimen/post_margin_left" android:layout_marginBottom="13dp">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/hot_cmt_layout" android:background="?attr/hot_comment_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

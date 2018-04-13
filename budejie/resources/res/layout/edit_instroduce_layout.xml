@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/editname_layout" android:background="?attr/list_item_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textSize="15sp" android:textColor="?attr/user_ins_text_color" android:textColorHint="?attr/user_ins_text_colorhint" android:gravity="top" android:id="@+id/edit_instroduce" android:background="@null" android:padding="10dp" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请勿发布色情、淫秽、政治等违反国家法律的内容" android:layout_below="@+id/title"/>
+    <TextView android:textSize="18sp" android:textColor="?attr/user_ins_text_color" android:id="@+id/text_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_alignRight="@+id/edit_instroduce" android:layout_alignBottom="@+id/edit_instroduce"/>
+</RelativeLayout>

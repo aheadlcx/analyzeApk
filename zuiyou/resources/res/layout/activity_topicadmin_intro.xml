@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bg_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llBottom" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="@color/CT_3" android:gravity="center" android:id="@+id/tvCancel" android:layout_width="0dp" android:layout_height="match_parent" android:text="取消" android:layout_weight="1"/>
+        <View android:layout_gravity="center_vertical" android:background="@color/CL" android:layout_width="1px" android:layout_height="24dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/CT_3" android:gravity="center" android:id="@+id/tvAgree" android:layout_width="0dp" android:layout_height="match_parent" android:text="我同意" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:id="@+id/vBriefDivide" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_above="@+id/llBottom"/>
+    <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/vBriefDivide"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.ui.tempview.DealChildLongClickRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/F4_line" android:paddingRight="@dimen/F4_line" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_godreview" android:padding="@dimen/F4_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:minHeight="62dp">
+        <cn.xiaochuankeji.tieba.ui.comment.CommentBaseElementLinearLayout android:id="@+id/god_element_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/god_element_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:src="@drawable/ic_godreview_flag" android:contentDescription="@string/image"/>
+    <ImageView android:background="@drawable/ic_godreview_action_bg" android:layout_width="108dp" android:layout_height="22dp" android:layout_alignParentRight="true" android:contentDescription="@string/image"/>
+    <cn.xiaochuankeji.tieba.ui.widget.updown.CommentItemUpDownView android:id="@+id/god_element_ud_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+</cn.xiaochuankeji.tieba.ui.tempview.DealChildLongClickRelativeLayout>

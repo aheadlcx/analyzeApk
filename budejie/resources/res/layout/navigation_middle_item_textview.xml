@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/title_bar_center_text_size" android:textColor="?attr/title_text_color" android:ellipsize="end" android:gravity="center" android:id="@+id/title_center_txt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+</LinearLayout>

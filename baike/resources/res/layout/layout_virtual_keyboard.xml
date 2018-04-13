@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <GridView android:id="@+id/gv_keybord" android:background="#bdbdbd" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="1px" android:verticalSpacing="1px" android:numColumns="3" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/line" android:background="#bdbdbd" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/gv_keybord"/>
+    <RelativeLayout android:id="@+id/layoutBack" android:background="#f5f5f5" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/line">
+        <ImageView android:id="@+id/imgBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyboard_back_img" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="#bdbdbd" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="1dp" android:layout_above="@+id/layoutBack"/>
+</RelativeLayout>

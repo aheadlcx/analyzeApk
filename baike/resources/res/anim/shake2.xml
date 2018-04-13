@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@r$anim/cycle_3" android:duration="600" android:startOffset="50" android:fromXDelta="0" android:toXDelta="10"/>

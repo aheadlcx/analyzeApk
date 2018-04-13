@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/ad_six_room_container" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sprite.ads.view.AutoGridView android:id="@+id/gv_room_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="7dp" android:verticalSpacing="9dp" android:stretchMode="columnWidth" android:numColumns="2"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp" android:layout_below="@+id/ad_six_room_container">
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13sp" android:textColor="@color/ad_tools_button_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/ad_six_room_change_text" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="换一批" android:drawableRight="@drawable/ad_refresh_icon_selector" android:drawablePadding="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="13sp" android:textColor="@color/ad_tools_button_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/ad_six_room_view_all_text" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="查看全部" android:drawableRight="@drawable/ad_enter_icon_selector" android:drawablePadding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

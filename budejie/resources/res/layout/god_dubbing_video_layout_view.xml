@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <VideoView android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/default_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/preview_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10" android:src="@drawable/god_dubbing_preview_selector" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

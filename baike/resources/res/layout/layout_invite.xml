@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/friend_item" android:layout_width="match_parent" android:layout_height="67dp" style="?attr/nearby_list_item_bg">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_marginLeft="10dp" android:layout_marginRight="12dp" android:src="@drawable/qiuyou" android:layout_centerVertical="true" app:actualImageScaleType="0" app:roundAsCircle="true"/>
+        <TextView android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="互粉糗友" android:layout_toRightOf="@+id/avatar" android:layout_centerVertical="true" style="?attr/nearby_list_item_name"/>
+    </RelativeLayout>
+    <TextView android:textSize="12dp" android:textColor="#969696" android:gravity="center_vertical" android:id="@+id/members_label" android:background="#ededed" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="23dp" android:text="最近联系"/>
+</LinearLayout>

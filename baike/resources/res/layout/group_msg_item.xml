@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="328dp" android:layout_height="60dp" android:layout_marginLeft="16dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/msg_join_group_img" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:src="@drawable/ic_launcher" app:actualImageScaleType="6"/>
+        <TextView android:textSize="14dp" android:textColor="#3b3d42" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/msg_join_group_name" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:maxWidth="140dp" android:singleLine="true" android:layout_weight="1"/>
+        <qsbk.app.widget.Switch android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/msg_join_group_switch" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Widget.AppCompat.CompoundButton.Switch"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.curtain.FloatVideoRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/curtain_root_layout" android:background="@color/list_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/navigation_height" fresco:bottomShow="@r$bool/auto">
+    <RelativeLayout android:id="@+id/activity_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_no_data" android:paddingBottom="100dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/img_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+            <TextView android:id="@+id/tv_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/img_no_data" android:layout_centerHorizontal="true" style="@style/no_data_text_style"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.budejie.www.widget.ExpertXListView android:id="@+id/listview" android:focusable="true" android:fadingEdge="none" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@android:color/transparent" android:headerDividersEnabled="false"/>
+            <RelativeLayout android:id="@+id/TitleLayout" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/TitleLayoutW" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout_w" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+                    <RelativeLayout android:id="@+id/per_title_layout_w" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout_w">
+                        <LinearLayout android:id="@+id/left_layout_w" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+                            <Button android:textSize="@dimen/title_left_right_font_size" android:textColor="@color/label_title_left_back_text_default_selector" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/title_left_btn_w" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="返回" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/label_title_back_image_default_selector"/>
+                        </LinearLayout>
+                        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/title_center_layout_w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textSize="@dimen/title_bar_center_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/title_center_txt_w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150dp" android:singleLine="true" android:drawablePadding="5dp" android:layout_centerVertical="true"/>
+                            <ImageView android:id="@+id/private_chat_w" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment_title_private_chat_selector" android:layout_toRightOf="@+id/title_center_txt_w" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/title_refresh_layout_w" android:layout_width="125dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                            <ImageView android:id="@+id/title_right_imgbtn_w" android:layout_width="@dimen/navigation_height" android:layout_height="@dimen/navigation_height" android:layout_marginRight="10dp" android:src="@drawable/comment_detail_title_right_more_state_w" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/TitleLayoutN" android:background="?attr/title_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+                    <RelativeLayout android:id="@+id/per_title_layout" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout">
+                        <LinearLayout android:id="@+id/left_layout" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+                            <Button android:textSize="@dimen/title_left_right_font_size" android:textColor="@drawable/title_left_back_font_style" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/title_left_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="返回" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/collect_left_btn"/>
+                        </LinearLayout>
+                        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/title_center_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textSize="19sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/title_center_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150dp" android:singleLine="true" android:drawablePadding="5dp" android:layout_centerVertical="true"/>
+                            <ImageView android:id="@+id/private_chat" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment_title_private_chat_selector" android:layout_toRightOf="@+id/title_center_txt" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/title_refresh_layout" android:layout_width="125dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                            <ImageView android:id="@+id/title_right_imgbtn" android:layout_width="@dimen/navigation_height" android:layout_height="@dimen/navigation_height" android:layout_marginRight="10dp" android:src="@drawable/comment_detail_title_right_more_state" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/melodyview" android:background="@anim/melody_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="55dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include layout="@layout/float_video_layout"/>
+</com.budejie.www.widget.curtain.FloatVideoRootLayout>

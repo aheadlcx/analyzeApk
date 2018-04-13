@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textStyle="bold" android:textColor="@color/CT_2" android:gravity="left" android:id="@+id/theme_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true" android:lineSpacingMultiplier="1.25"/>
+    <android.support.v7.widget.AppCompatTextView android:textSize="10.5sp" android:textColor="@color/CT_3" android:layout_gravity="center_horizontal" android:id="@+id/theme_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:layout_marginRight="12dp" android:layout_marginBottom="13dp" android:layout_below="@+id/theme_title"/>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="9dp" android:layout_below="@+id/theme_count"/>
+</RelativeLayout>

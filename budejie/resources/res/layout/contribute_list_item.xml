@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@+id/relayout" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/usericon" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="10dp" android:scaleType="centerCrop"/>
+            <TextView android:id="@+id/user_ranking" android:background="@drawable/user_ranking_one" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp"/>
+            <TextView android:gravity="center" android:id="@+id/user_v" android:background="?attr/list_item_user_v" android:visibility="gone" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="-7dp" android:layout_marginBottom="-7dp" android:layout_alignRight="@+id/usericon" android:layout_alignBottom="@+id/usericon"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_toLeftOf="@+id/bt_layout" android:layout_toRightOf="@+id/relayout" android:layout_centerVertical="true">
+            <TextView android:id="@+id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="faf========" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" style="@style/follow_text_2_style"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/username">
+                <TextView android:id="@+id/fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxxxxxx" android:singleLine="true" style="@style/follow_text_3_style"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人关注" android:singleLine="true" style="@style/follow_text_3_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/bt_layout" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/font_14" android:textColor="?attr/myinfo_post_num_prompt_text_color" android:gravity="center" android:id="@+id/cancel_btn" android:background="?attr/follows_shape_item_unadd_bg" android:layout_width="50dp" android:layout_height="24dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/recommend_follow" android:clickable="true" android:layout_width="66dp" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/recommend_follow_img" android:background="@drawable/follow" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#e93b2d" android:id="@+id/recommend_folow_text" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加关注"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

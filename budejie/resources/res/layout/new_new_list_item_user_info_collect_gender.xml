@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="horizontal" android:id="@+id/user_info_collect_buttons" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_info_collect_margin" android:layout_marginRight="@dimen/user_info_collect_margin" android:weightSum="3">
+        <Button android:textSize="18sp" android:textColor="@color/user_info_collect_selector" android:id="@+id/handsome" android:tag="m" android:background="?attr/user_info_collect_btn_bg" android:layout_width="100dp" android:layout_height="40dp" android:layout_margin="10dp" android:text="@string/handsome" android:layout_weight="1.5"/>
+        <Button android:textSize="18sp" android:textColor="@color/user_info_collect_selector" android:id="@+id/beauty" android:tag="f" android:background="?attr/user_info_collect_btn_bg" android:layout_width="100dp" android:layout_height="40dp" android:layout_margin="10dp" android:text="@string/beauty" android:layout_weight="1.5"/>
+    </LinearLayout>
+</LinearLayout>

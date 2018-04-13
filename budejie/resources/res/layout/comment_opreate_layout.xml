@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/send_post_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="13sp" android:textColor="?attr/comment_operate_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/comment_operate_album" android:layout_width="0dp" android:layout_height="wrap_content" android:text="手机相册" android:drawableTop="?attr/comment_operate_album_icon" android:drawablePadding="5dp" android:layout_weight="1"/>
+        <View android:background="?attr/send_post_divider_color" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="13sp" android:textColor="?attr/comment_operate_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/comment_operate_vote" android:layout_width="0dp" android:layout_height="wrap_content" android:text="投票" android:drawableTop="?attr/comment_operate_vote_icon" android:drawablePadding="5dp" android:layout_weight="1"/>
+        <View android:background="?attr/send_post_divider_color" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="13sp" android:textColor="?attr/comment_operate_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/comment_operate_dub" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="神配音" android:drawableTop="?attr/comment_operate_dub_icon" android:drawablePadding="5dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="?attr/send_post_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="13sp" android:textColor="?attr/comment_operate_text_color" android:gravity="center" android:layout_gravity="center" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:drawablePadding="5dp" android:layout_weight="1"/>
+        <View android:background="?attr/send_post_divider_color" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="13sp" android:textColor="?attr/comment_operate_text_color" android:gravity="center" android:layout_gravity="center" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:drawablePadding="5dp" android:layout_weight="1"/>
+        <View android:background="?attr/send_post_divider_color" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="13sp" android:textColor="?attr/comment_operate_text_color" android:gravity="center" android:layout_gravity="center" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:drawablePadding="5dp" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

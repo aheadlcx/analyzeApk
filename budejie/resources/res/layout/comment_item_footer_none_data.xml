@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_noneDada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:src="@drawable/comment_no_data"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/tv_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/comment_none_data" style="@style/no_data_text_style"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/navigation_height"/>
+</LinearLayout>

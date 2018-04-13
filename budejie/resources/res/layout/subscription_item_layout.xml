@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="58dp">
+    <RelativeLayout android:background="?attr/common_press" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@+id/relayout" android:layout_width="38dp" android:layout_height="38dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <com.androidex.widget.FilletAsyncImageView android:id="@+id/label_icon" android:layout_width="38dp" android:layout_height="38dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="38dp" android:layout_toLeftOf="@+id/bt_layout" android:layout_toRightOf="@+id/relayout" android:layout_centerVertical="true">
+                <TextView android:textSize="14sp" android:textColor="?attr/myinfo_post_num_prompt_text_color" android:id="@+id/label_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerVertical="true"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/label_name">
+                    <TextView android:textSize="11sp" android:textColor="?attr/myinfo_post_name_prompt_text_color" android:id="@+id/label_subscribe_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/bt_layout" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_14" android:gravity="center" android:id="@+id/cancel_btn" android:background="?attr/follows_shape_item_unadd_bg" android:visibility="gone" android:layout_width="50dp" android:layout_height="24dp" android:singleLine="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="?attr/theme_red_color" android:gravity="center" android:id="@+id/add_btn" android:background="?attr/follows_shape_item_bg" android:visibility="gone" android:layout_width="50dp" android:layout_height="24dp" android:singleLine="true" android:layout_centerVertical="true"/>
+                <TextView android:gravity="center" android:id="@+id/default_btn" android:background="@drawable/default_label" android:visibility="gone" android:layout_width="66dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" style="@style/follow_text_1_style"/>
+                <TextView android:id="@+id/enter_btn" android:background="@drawable/rank_jiantou" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="57dp" android:layout_centerVertical="true" style="@style/follow_text_1_style"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="0.4dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

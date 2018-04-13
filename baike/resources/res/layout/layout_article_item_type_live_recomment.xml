@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="8dp" android:clipChildren="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v4.view.ViewPager android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/pager" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+    <RelativeLayout android:id="@+id/layerMask" android:background="@drawable/edit_info_items_card_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4dp"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@drawable/phone_pay_select_list_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ListView android:id="@+id/mListView" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/phone_pay_list_line" android:dividerHeight="1dp"/>
+</LinearLayout>

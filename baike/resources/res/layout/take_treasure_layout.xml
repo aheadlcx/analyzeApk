@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="49dp">
+    <qsbk.app.activity.treasure.layout.TreasureTab android:gravity="center" android:orientation="vertical" android:id="@+id/take_treasure_tab" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:type="linear"/>
+    <qsbk.app.activity.treasure.layout.TreasureTab android:gravity="center" android:orientation="vertical" android:id="@+id/new_treasure_tab" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:type="radial"/>
+    <qsbk.app.activity.treasure.layout.TreasureTab android:gravity="center" android:orientation="vertical" android:id="@+id/new_orders_tab" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:type="sweep"/>
+    <qsbk.app.activity.treasure.layout.TreasureTab android:gravity="center" android:orientation="vertical" android:id="@+id/my_profile_tab" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" app:type="4"/>
+</LinearLayout>

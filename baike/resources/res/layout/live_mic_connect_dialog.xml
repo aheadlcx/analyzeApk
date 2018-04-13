@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_corner_8dp_white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="right" android:id="@+id/iv_up" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/live_user_close"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="288dp" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+        <ImageView android:layout_width="74dp" android:layout_height="74dp" android:src="@drawable/live_mic_request_bg" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/black_41364F" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_mic_inviting" android:singleLine="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginTop="17dp">
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/black_41364F" android:gravity="center_vertical" android:id="@+id/btn_video" android:background="@drawable/bg_corner_100dp_yellow" android:paddingLeft="34dp" android:layout_width="120dp" android:layout_height="match_parent" android:text="@string/live_mic_video" android:drawableLeft="@drawable/live_mic_request_ic_video" android:drawablePadding="5dp"/>
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/black_41364F" android:gravity="center_vertical" android:id="@+id/btn_audio" android:background="@drawable/bg_corner_100dp_yellow" android:paddingLeft="34dp" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:text="@string/live_mic_audio" android:drawableLeft="@drawable/live_mic_request_ic_audio" android:drawablePadding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

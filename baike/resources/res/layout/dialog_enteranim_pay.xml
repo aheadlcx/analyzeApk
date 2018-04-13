@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="260dp" android:layout_height="250dp" app:layout_gravity="center">
+        <TextView android:textSize="15sp" android:textColor="#41364f" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/pay_enteranim"/>
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/swipe" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                    <FrameLayout android:id="@+id/fl_item1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="#777777" android:gravity="center" android:id="@+id/tv_item1" android:background="@drawable/bg_enteranim_payitem" android:layout_width="60dp" android:layout_height="33dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+                        <TextView android:textSize="6sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/tv_off_item1" android:background="@drawable/bg_market_payoff" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/fl_item2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="#777777" android:gravity="center" android:id="@+id/tv_item2" android:background="@drawable/bg_enteranim_payitem" android:layout_width="60dp" android:layout_height="33dp" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+                        <TextView android:textSize="6sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/tv_off_item2" android:background="@drawable/bg_market_payoff" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/fl_item3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="#777777" android:gravity="center" android:id="@+id/tv_item3" android:background="@drawable/bg_enteranim_payitem" android:layout_width="60dp" android:layout_height="33dp" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+                        <TextView android:textSize="6sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/tv_off_item3" android:background="@drawable/bg_market_payoff" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <TextView android:textSize="15sp" android:textColor="#afafaf" android:id="@+id/tv_origin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29dp"/>
+                <TextView android:textSize="20sp" android:textColor="#fc890e" android:id="@+id/tv_current" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/iv_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:src="@drawable/live_pay_confirm"/>
+                <TextView android:textSize="10sp" android:textColor="#9b9b9b" android:id="@+id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

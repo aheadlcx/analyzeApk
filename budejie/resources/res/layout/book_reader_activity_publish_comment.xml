@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/book_reader_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textSize="15sp" android:textColor="#333333" android:textColorHint="#939393" android:gravity="top" android:id="@+id/book_reader_comment_edit_text" android:background="@null" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/book_reader_top_bar_height" android:hint="说说此刻你的想法..." android:maxLines="5" android:minLines="5" android:lineSpacingExtra="3dp" android:imeOptions="actionDone"/>
+</LinearLayout>

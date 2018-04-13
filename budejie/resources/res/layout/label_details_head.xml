@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/labelDetailsInfo" android:background="?attr/label_pinner_tabs_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/labelDetailsImgLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center_horizontal" android:id="@+id/labelDetailsImg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+        <RelativeLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/normalLable_bottom_ll" android:background="@drawable/common_bottom_bg" android:paddingLeft="@dimen/margin_10" android:paddingRight="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/postNumber" style="@style/label_detail_shadow"/>
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@color/label_detail_head" android:id="@+id/tvPostNumber" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/label_detail_shadow_"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subNumber" style="@style/label_detail_shadow"/>
+                    <TextView android:textSize="@dimen/font_14" android:textColor="@color/label_detail_head" android:id="@+id/tvSubNumber" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10" android:text="0" style="@style/label_detail_shadow_"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:id="@+id/lebel_add_btn" android:background="?attr/label_details_add_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_8" android:layout_marginBottom="@dimen/margin_8" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/standard_layout" android:background="?attr/list_view_item_background" android:paddingLeft="12dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="13sp" android:textColor="#3385ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版规"/>
+        <TextView android:textSize="13sp" android:textColor="?attr/label_list_item_name" android:ellipsize="end" android:id="@+id/post_standard_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:maxLines="1"/>
+    </LinearLayout>
+    <View android:id="@+id/standard_line_view" android:background="?attr/divider_horizontal_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/label_detail_head_top_posts"/>
+    </LinearLayout>
+    <RelativeLayout android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="10dp">
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

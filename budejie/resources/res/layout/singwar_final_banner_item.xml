@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/item_bg" android:background="@drawable/singwar_final_item_checked_bg" android:padding="1dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/singwar_final_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_avatar" android:layout_width="32dp" android:layout_height="32dp" fresco:placeholderImage="@drawable/rooms_third_common_head_portrait" fresco:roundAsCircle="true"/>
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/singwar_final_rank" android:background="@drawable/singwar_final_circle_red" android:layout_width="14dp" android:layout_height="14dp"/>
+    </FrameLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/singwar_player_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/singwar_final_left"/>
+    <TextView android:textSize="13sp" android:textColor="#ffb629" android:id="@+id/singwar_final_ticket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/singwar_final_left" android:layout_below="@+id/singwar_player_name"/>
+    <ImageView android:id="@+id/singwar_final_nopass" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:src="@drawable/singwar_final_nopass" android:layout_centerVertical="true"/>
+</RelativeLayout>

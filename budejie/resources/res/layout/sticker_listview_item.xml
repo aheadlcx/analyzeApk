@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_sub_heads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="24dp" android:layout_marginBottom="2dp">
+        <ImageView android:id="@+id/img_sub_heads" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="6dp" android:src="@drawable/icon_clock"/>
+        <TextView android:textSize="14sp" android:textColor="#888888" android:id="@+id/txt_sub_heads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最近使用"/>
+    </LinearLayout>
+    <View android:id="@+id/line_view" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/ll_sub_heads"/>
+    <com.bdj.picture.edit.widget.MyGridView android:gravity="center" android:id="@+id/sticker_listview_item_gridview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="18dp" android:horizontalSpacing="6dp" android:verticalSpacing="18dp" android:stretchMode="columnWidth" android:numColumns="4" android:layout_below="@+id/line_view"/>
+</RelativeLayout>

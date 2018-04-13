@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rootView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+    <RelativeLayout android:id="@+id/menuBar" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/titlebar_default">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/rooms_third_ranking_tab" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/second_titlebar_textsize" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvGoPurpleVip" android:background="@drawable/rooms_third_tab_left" android:layout_width="0dp" android:layout_height="match_parent" android:text="至尊VIP" android:layout_weight="1"/>
+            <View android:background="@color/shop_red" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/second_titlebar_textsize" android:textColor="@color/red" android:gravity="center" android:id="@+id/tvGoGoldenVip" android:layout_width="0dp" android:layout_height="match_parent" android:text="VIP" android:layout_weight="1"/>
+            <View android:background="@color/shop_red" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/second_titlebar_textsize" android:textColor="@color/red" android:gravity="center" android:id="@+id/tvGoGreedCard" android:layout_width="0dp" android:layout_height="match_parent" android:text="绿卡" android:layout_weight="1"/>
+            <View android:background="@color/shop_red" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/second_titlebar_textsize" android:textColor="@color/red" android:gravity="center" android:id="@+id/tvGo4S" android:layout_width="0dp" android:layout_height="match_parent" android:text="座驾" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/line" android:background="#88888888" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/menuBar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/line"/>
+    <include layout="@layout/phone_custom_progressbar"/>
+</RelativeLayout>

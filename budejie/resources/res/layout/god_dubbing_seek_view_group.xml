@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.budejie.www.goddubbing.wediget.SeekBar android:id="@+id/seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" fresco:reachColor="@color/record_bar_reach_color" fresco:unReachColor="@color/half_alpha_black" fresco:barHeight="@dimen/god_dubbing_seek_bar_height"/>
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/god_dubbing_seek_view_text_color" android:gravity="center" android:id="@+id/end_text_view" android:background="@drawable/god_dubbing_time_background" android:paddingTop="@dimen/margin_5" android:layout_width="@dimen/god_dubbing_seek_view_width" android:layout_height="@dimen/god_dubbing_seek_view_height" android:layout_marginLeft="30dp" android:maxLines="1" android:layout_below="@+id/seek_bar" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

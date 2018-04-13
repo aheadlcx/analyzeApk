@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <ImageView android:id="@+id/ivBack" android:layout_width="@dimen/item_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+    <cn.xiaochuankeji.tieba.ui.widget.indicator.MagicIndicator android:orientation="horizontal" android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height" android:layout_marginLeft="44dp" android:layout_marginRight="44dp" android:layout_centerHorizontal="true"/>
+    <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/indicator"/>
+    <View android:id="@+id/split_line" android:background="@color/CL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+</RelativeLayout>

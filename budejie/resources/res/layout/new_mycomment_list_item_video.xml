@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/transparent" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/item_layout" android:background="?attr/item_content_layout_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10" android:layout_marginTop="@dimen/margin_8" android:layout_marginRight="@dimen/margin_10">
+        <include layout="@layout/new_mycomment_list_item_user_info"/>
+        <TextView android:textSize="18sp" android:textColor="?attr/item_content_text_color" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:singleLine="false" android:lineSpacingExtra="5dp"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/image_layout" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp">
+            <RelativeLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/video_container_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center_horizontal" android:id="@+id/main_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/load_error_selector"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/progress_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100dp" android:layout_marginBottom="100dp">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/baisibudejie" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/baisibudejie"/>
+                    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/gif_progress" android:background="@drawable/progressbar_bg" android:layout_width="220dp" android:layout_height="15dp" android:layout_marginTop="10dp" android:progressDrawable="@drawable/progress_style" style="?android:attr/progressBarStyleHorizontal"/>
+                </LinearLayout>
+                <View android:id="@+id/voiceViewFill" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="20dp"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@+id/video_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_bt_selector"/>
+            <TextView android:textColor="@color/white" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/playTimeLength" android:background="@color/translucence2" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23:23"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/itemPlayCount" android:background="@color/translucence2" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12333"/>
+            <View android:id="@+id/imageready" android:background="?attr/imageready_bg" android:focusable="false" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <include layout="@layout/post_video_complete_include"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="top" android:id="@+id/error_img_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <ImageView android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="?attr/load_error_state"/>
+            </LinearLayout>
+        </FrameLayout>
+        <include layout="@layout/new_mycomment_list_item_comment"/>
+    </LinearLayout>
+</LinearLayout>

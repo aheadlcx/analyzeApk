@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/music_link_detail" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/music_bg" android:layout_width="match_parent" android:layout_height="593dp" android:src="@drawable/bg_wy_music_web"/>
+    <WebView android:id="@+id/music_web" android:layout_width="match_parent" android:layout_height="580dp" android:layout_margin="13dp" android:layout_alignLeft="@+id/music_bg" android:layout_alignTop="@+id/music_bg" android:layout_alignRight="@+id/music_bg" android:layout_alignBottom="@+id/music_bg"/>
+    <ImageView android:id="@+id/iv_music_logo" android:layout_width="91dp" android:layout_height="21dp" android:layout_marginBottom="17dp" android:src="@drawable/link_wy_big" android:scaleType="centerInside" android:layout_alignBottom="@+id/music_web" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

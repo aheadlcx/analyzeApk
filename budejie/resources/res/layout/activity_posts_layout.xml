@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.curtain.FloatVideoRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/curtain_root_layout" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/navigation_height" fresco:topShow="@r$bool/auto">
+    <RelativeLayout android:id="@+id/activity_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.budejie.www.activity.view.PostsRelativeLayout android:orientation="vertical" android:id="@+id/postsLayout" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+            <include layout="@layout/navigation_bar_random"/>
+            <RelativeLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/bottom_navigation_height" android:layout_below="@+id/navigation_bar">
+                <com.budejie.www.widget.FixedViewPager android:id="@+id/viewpager" android:focusableInTouchMode="true" android:visibility="visible" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navigation_second_height" android:flipInterval="30"/>
+                <com.budejie.www.activity.view.TopNavigationTabIndicator.ScrollViewCustom android:id="@+id/horizontal_scroll_view" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.budejie.www.activity.view.TopNavigationTabIndicator.TypeIndicator android:orientation="horizontal" android:id="@+id/indicator" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="@dimen/navigation_second_height" android:overScrollMode="never"/>
+                </com.budejie.www.activity.view.TopNavigationTabIndicator.ScrollViewCustom>
+                <ImageView android:id="@+id/iv_top_navigation_right" android:layout_width="wrap_content" android:layout_height="@dimen/toptabpageindicator_height" android:layout_alignTop="@+id/horizontal_scroll_view" android:layout_alignBottom="@+id/horizontal_scroll_view" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/iv_top_navigation_left" android:layout_width="wrap_content" android:layout_height="@dimen/toptabpageindicator_height" android:layout_alignTop="@+id/horizontal_scroll_view" android:layout_alignBottom="@+id/horizontal_scroll_view" android:layout_alignParentLeft="true"/>
+            </RelativeLayout>
+            <ImageButton android:id="@+id/bottom_refresh_btn" android:background="@drawable/bottom_refresh_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="30dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            <ImageButton android:id="@+id/bottom_random_btn" android:background="@drawable/bottom_random_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="30dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </com.budejie.www.activity.view.PostsRelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/float_video_layout"/>
+</com.budejie.www.widget.curtain.FloatVideoRootLayout>

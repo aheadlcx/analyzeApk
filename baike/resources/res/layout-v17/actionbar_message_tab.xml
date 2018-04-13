@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:textSize="20sp" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="小纸条" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/add" android:background="?attr/actionBarItemBackground" android:layout_width="52dp" android:layout_height="match_parent" android:src="@drawable/group_create" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    <RelativeLayout android:id="@+id/contact" android:background="?attr/actionBarItemBackground" android:layout_width="52dp" android:layout_height="match_parent" android:layout_toLeftOf="@+id/add" android:layout_toStartOf="@+id/add">
+        <ImageView android:id="@+id/my_contacts_image" android:layout_width="32dp" android:layout_height="32dp" android:src="?attr/im_actionbar_new_fans" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <TextView android:textSize="9sp" android:textColor="?attr/txtColor01" android:gravity="center" android:id="@+id/new_fans_unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:minWidth="15dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

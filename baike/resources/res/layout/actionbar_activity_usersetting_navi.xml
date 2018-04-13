@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="?attr/setting_bg_new" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="10dp">
+                <ImageView android:layout_gravity="left" android:id="@+id/left" android:focusable="true" android:clickable="true" android:layout_width="60dp" android:layout_height="match_parent" android:contentDescription="@null"/>
+                <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="right" android:id="@+id/right" android:focusable="true" android:clickable="true" android:layout_width="60dp" android:layout_height="match_parent" android:contentDescription="@null"/>
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <qsbk.app.widget.SettingItem android:id="@+id/security_safe" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="@string/account_security" SettingItem:showDivide="false"/>
+            </FrameLayout>
+            <View android:id="@+id/security_safe_divider" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <qsbk.app.widget.SettingItem android:id="@+id/message_info_remind" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="@string/message_info_remind" SettingItem:showDivide="false"/>
+            <View android:id="@+id/message_info_remind_divider" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+            <qsbk.app.widget.SettingItem android:id="@+id/small_paper" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="@string/small_paper" SettingItem:showDivide="false"/>
+            <View android:id="@+id/small_paper_divider" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <qsbk.app.widget.SettingItem android:id="@+id/personal_privacy" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="隐私" SettingItem:showDivide="false"/>
+            <View android:id="@+id/personal_privacy_divider" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+            <qsbk.app.widget.SettingItem android:id="@+id/common" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="@string/common" SettingItem:showDivide="false"/>
+            <View android:id="@+id/common_divider" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <qsbk.app.widget.SettingItem android:id="@+id/external_cache_size_settingitem" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" app:subTitle="0M" SettingItem:mainTitle="清除缓存" SettingItem:showDivide="false"/>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+            <qsbk.app.widget.SettingItem android:id="@+id/feedback" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="意见反馈" SettingItem:showDivide="false"/>
+            <View android:id="@+id/feed_back_divider" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+            <qsbk.app.widget.SettingItem android:id="@+id/about" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="关于糗百" SettingItem:showDivide="false"/>
+            <View android:id="@+id/about_divider" android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <qsbk.app.widget.SettingItem android:id="@+id/logout" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="退出登录" SettingItem:showDivide="false"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

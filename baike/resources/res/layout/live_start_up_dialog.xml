@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/black_60_percent_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <qsbk.app.core.web.ui.QsbkWebView android:id="@+id/webview" android:layout_width="315dp" android:layout_height="322dp" android:layout_marginTop="150dp"/>
+    <ImageView android:id="@+id/iv_up" android:padding="4dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="36dp" android:src="@drawable/live_start_up_close" android:scaleType="fitXY"/>
+</LinearLayout>

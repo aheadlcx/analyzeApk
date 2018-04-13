@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/action_randomdoor" android:orderInCategory="49" android:title="任意门" app:showAsAction="always"/>
+    <item android:id="@+id/action_select" android:orderInCategory="50" android:title="@string/nearby_users_select" app:showAsAction="always"/>
+    <item android:id="@+id/action_clear_location" android:orderInCategory="51" android:title="@string/clear_location" app:showAsAction="always"/>
+</menu>

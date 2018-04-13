@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="200dp" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fl_level_up" android:layout_width="200dp" android:layout_height="100dp" android:layout_marginLeft="200dp">
+        <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:background="@drawable/live_level_up_bg3" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="45dp">
+            <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/live_text_12sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="right" android:id="@+id/tv_up_level" android:layout_width="wrap_content" android:layout_height="15dp" android:layout_marginTop="40dp" android:layout_marginRight="15dp" android:text="恭喜升级到LV.100"/>
+            </FrameLayout>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="26dp" android:src="@drawable/live_level_up_bg1"/>
+        <qsbk.app.core.widget.FrameAnimationView android:layout_gravity="center_vertical" android:id="@+id/frames" android:layout_width="100dp" android:layout_height="100dp"/>
+        <FrameLayout android:layout_width="22dp" android:layout_height="25dp" android:layout_marginLeft="39dp" android:layout_marginTop="40dp">
+            <ImageView android:id="@+id/iv_arrow" android:layout_width="22dp" android:layout_height="23dp" android:layout_marginTop="25dp" android:src="@drawable/live_level_up_bg2"/>
+        </FrameLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/iv_levelup_avatar" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="33dp" android:alpha="0"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_fan" android:layout_width="78dp" android:layout_height="78dp" android:layout_marginLeft="11dp" android:src="@drawable/live_level_up_bg4" android:alpha="0"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="?attr/setting_bg_new" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/other_message_notify_detail" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.SettingItem android:id="@+id/current_text_size" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" app:subTitle=" " SettingItem:mainTitle="字体大小" SettingItem:showDivide="false"/>
+                <View android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.SettingItem android:id="@+id/video_loadway_settingItem" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp" app:subTitle=" " SettingItem:mainTitle="视频播放" SettingItem:showDivide="false"/>
+                <View android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.SettingItem android:id="@+id/image_loadway_settingItem" android:background="@color/white" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" app:subTitle=" " SettingItem:mainTitle="图片加载" SettingItem:showDivide="false"/>
+                <View android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/httpsEnable" android:background="@color/white" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="是否启用https"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

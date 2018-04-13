@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@color/history_header_bg_color" android:layout_width="match_parent" android:layout_height="30dp">
+        <TextView android:textSize="@dimen/hall_history_header_title_size" android:textColor="@color/history_header_size_color" android:layout_gravity="center_vertical" android:id="@+id/tv_history_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.ui.widget.DealChildLongClickFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/CB" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/picEvent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:scaleType="centerCrop" app:viewAspectRatio="2.55" app:placeholderImage="@drawable/story_cover_empty_view" app:roundedCornerRadius="5dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/videoInfoView" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img_ugc_video_flag" android:scaleType="centerCrop"/>
+                    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/CT_2" android:layout_gravity="center_vertical" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33dp" android:text="#吧唧一口#" android:singleLine="true"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tvTotal" android:background="@drawable/bg_event_review_count" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="20dp" android:minWidth="20dp" android:text="6"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/CT_4" android:id="@+id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42dp" android:layout_marginRight="10dp" android:lineSpacingExtra="1dp"/>
+                <cn.xiaochuankeji.tieba.ui.homepage.banner.EventVideoScrollView android:id="@+id/event_video_scroll_view" android:focusable="true" android:scrollbars="none" android:longClickable="true" android:layout_width="match_parent" android:layout_height="176dp" android:layout_marginTop="7dp" android:fillViewport="true">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/event_video_container" android:paddingLeft="10dp" android:paddingRight="4dp" android:longClickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </cn.xiaochuankeji.tieba.ui.homepage.banner.EventVideoScrollView>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="14dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</cn.xiaochuankeji.tieba.ui.widget.DealChildLongClickFrameLayout>

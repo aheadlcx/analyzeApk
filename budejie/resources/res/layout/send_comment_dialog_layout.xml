@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="@drawable/dialog_content_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="160dp" android:layout_height="120dp">
+        <ImageView android:id="@+id/send_comment_dialog_iv" android:background="@drawable/send_comment_sucess" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/send_comment_dialog_progress" android:layout_width="36dp" android:layout_height="36dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/upload_comment_progress_bar_drawable" style="?android:attr/progressBarStyleSmall"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/send_comment_dialog_content" android:paddingLeft="@dimen/post_margin_left" android:paddingRight="@dimen/post_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/send_comment_dialog_uploading" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</RelativeLayout>

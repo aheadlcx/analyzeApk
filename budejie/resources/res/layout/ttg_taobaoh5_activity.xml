@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/rootLayout" android:background="@color/ttg_line" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ttg_ly_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.tatagou.sdk.view.TtgFitView android:id="@+id/ttg_status_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/rl_title_bg" android:background="@color/ttg_theme_color" android:layout_width="match_parent" android:layout_height="@dimen/bar_height" android:layout_marginBottom="1px">
+            <cn.tatagou.sdk.view.TitleBackIconTextView android:textSize="20sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/ttg_tv_backup" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ttg_icon_back"/>
+            <cn.tatagou.sdk.view.TitleBackIconTextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/ttg_tv_close" android:paddingRight="@dimen/spacing_v" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:text="关闭" android:layout_toRightOf="@+id/ttg_tv_backup"/>
+            <TextView android:textSize="@dimen/title_size" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/ttg_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="8" android:singleLine="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ttg_fl_webView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ttg_h5_bottom" android:layout_below="@+id/ttg_ly_title_bar">
+        <cn.tatagou.sdk.view.TtgWebView android:id="@+id/ttg_taobao_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/ttg_hint_layout"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/ttg_ly_coupon" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ttg_h5_bottom">
+        <RelativeLayout android:id="@+id/ttg_rl_coupon" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ttg_h5_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/ttg_h5_bottom"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#91a7ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/title" android:background="@drawable/button_on_press" android:paddingLeft="4dp" android:paddingTop="14dp" android:paddingRight="10dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_arrow_left_padding" android:drawablePadding="4dp"/>
+        <Gallery android:gravity="center_horizontal" android:id="@+id/avatars" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:spacing="20dp" android:soundEffectsEnabled="false"/>
+        <TextView android:textSize="10dp" android:textColor="#5a73d5" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:drawablePadding="4dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="135dp">
+        <qsbk.app.widget.RotateGallery android:gravity="center_horizontal" android:id="@+id/infos" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:spacing="8dp"/>
+        <qsbk.app.widget.PersonalInfoView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/cover" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:view_type="1"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/empty_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="116dp" android:layout_height="116dp" android:layout_marginBottom="19dp" android:src="?attr/emptylistIcon" android:contentDescription="@null"/>
+            <TextView android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nothing_here" style="?attr/unloginTips"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/bottom_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="21dp">
+        <ImageView android:id="@+id/blace_report" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/rel_report_selector" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/message" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="46dp" android:layout_marginRight="46dp" android:src="@drawable/rel_msg_selector" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/know" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/rel_konw_selector" android:scaleType="fitXY" android:contentDescription="@null"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/newfans_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progressDrawable="@drawable/loadingbar"/>
+    <View android:id="@+id/layerMask" android:background="@r$color/layer_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.curtain.FloatVideoLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/curtain_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.budejie.www.widget.curtain.CurtainBGLayout android:id="@+id/curtain_bg" android:background="@color/barrage_full_screen_bg" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+    <RelativeLayout android:id="@+id/curtain_video_move_limit" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.budejie.www.widget.curtain.CurtainVideoContainerLayout android:id="@+id/curtain_video_container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.budejie.www.activity.video.barrage.ui.widget.DanmakuView android:id="@+id/barrage_full_screen_container" android:background="#f00" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="20dp" android:layout_alignTop="@+id/curtain_video_container" android:layout_alignBottom="@+id/curtain_video_container"/>
+        <com.budejie.www.widget.FavorLayout android:id="@+id/favor_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="20dp" android:layout_alignTop="@+id/curtain_video_container" android:layout_alignBottom="@+id/curtain_video_container"/>
+    </RelativeLayout>
+    <include layout="@layout/barrage_bottom_operation_layout"/>
+</com.budejie.www.widget.curtain.FloatVideoLayout>

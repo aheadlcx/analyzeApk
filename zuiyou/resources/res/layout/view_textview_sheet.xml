@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/linearItem" android:paddingLeft="@dimen/divide_space_15" android:paddingRight="@dimen/divide_space_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvItem" android:layout_width="match_parent" android:layout_height="55dp"/>
+    </LinearLayout>
+    <View android:id="@+id/dividerLine" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+</LinearLayout>

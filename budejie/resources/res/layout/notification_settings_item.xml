@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/switch_item_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/switch_item_rl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="18sp" android:textColor="?attr/more_text_color" android:id="@+id/switch_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/posts_commented" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/switch_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_marginLeft="@dimen/margin_10"/>
+</LinearLayout>

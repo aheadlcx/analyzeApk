@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="false">
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_0"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_1"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_2"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_3"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_4"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_5"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_6"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_7"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_8"/>
+    <item android:duration="100" android:drawable="@drawable/img_ugcvideo_loading_9"/>
+</animation-list>

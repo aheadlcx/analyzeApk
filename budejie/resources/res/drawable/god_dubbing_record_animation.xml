@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="500" android:drawable="@drawable/god_dubbing_record_first_frame"/>
+    <item android:duration="500" android:drawable="@drawable/god_dubbing_record_second_frame"/>
+    <item android:duration="500" android:drawable="@drawable/god_dubbing_record_third_frame"/>
+    <item android:duration="500" android:drawable="@drawable/god_dubbing_record_second_frame"/>
+</animation-list>

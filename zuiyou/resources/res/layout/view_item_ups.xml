@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/layout_ups" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/flAvatar1" layout="@layout/layout_topic_upper"/>
+    <include android:id="@+id/flAvatar2" layout="@layout/layout_topic_upper"/>
+    <include android:id="@+id/flAvatar3" layout="@layout/layout_topic_upper"/>
+    <include android:id="@+id/flAvatar4" layout="@layout/layout_topic_upper"/>
+    <include android:id="@+id/flAvatar5" layout="@layout/layout_topic_upper"/>
+    <include android:id="@+id/flAvatar6" layout="@layout/layout_topic_upper"/>
+</LinearLayout>

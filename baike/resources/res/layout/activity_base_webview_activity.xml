@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.CommonWebView android:id="@+id/storeview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="-5dp" android:indeterminate="false" android:layout_alignTop="@+id/storeview" android:layout_alignWithParentIfMissing="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+</RelativeLayout>

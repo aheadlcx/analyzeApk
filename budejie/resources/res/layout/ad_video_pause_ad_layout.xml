@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sprite.ads.nati.view.NativeAdView android:id="@+id/ad_image" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ad_caption" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    </com.sprite.ads.nati.view.NativeAdView>
+    <ImageButton android:id="@+id/ad_close" android:background="@android:color/transparent" android:padding="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ad_close_icon" android:layout_alignTop="@+id/ad_image" android:layout_alignRight="@+id/ad_image"/>
+</RelativeLayout>

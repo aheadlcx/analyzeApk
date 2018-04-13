@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/white" android:id="@+id/ptitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="12dp" android:layout_marginRight="10dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginLeft="10dp" android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:layout_marginBottom="1dp" android:progressDrawable="@drawable/record_progress_style" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal"/>
+        <TextView android:id="@+id/progress_percent" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/progress"/>
+        <TextView android:id="@+id/progress_number" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/progress" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

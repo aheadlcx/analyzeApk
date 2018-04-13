@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="@dimen/divide_item_height_48">
+    <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_1" android:id="@+id/sysTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统消息" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/accessoryView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CH" android:id="@+id/sysUnreadCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/accessoryView" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:minHeight="70dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+    <FrameLayout android:id="@+id/thumb" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:layout_alignTop="@+id/icon" android:layout_alignParentRight="true">
+        <TextView android:textSize="8sp" android:ellipsize="end" android:gravity="center" android:id="@+id/thumb_text" android:padding="2dp" android:layout_width="50dp" android:layout_height="50dp" android:maxLines="4" android:lineSpacingExtra="0.5dp" style="?attr/msg_left"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/thumb_image" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="centerCrop" app:actualImageScaleType="6"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/play" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/gif_tag" android:paddingLeft="3dp" android:visibility="gone" android:layout_width="20dp" android:layout_height="16dp" android:layout_marginTop="1dp" android:src="@drawable/ic_gif_tag"/>
+        <TextView android:textSize="10dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/like_num_textview" android:background="?attr/im_msg_unread_tip" android:visibility="gone" android:layout_width="35dp" android:layout_height="20dp" android:text="2"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/like_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="20dp" android:layout_toLeftOf="@+id/thumb" android:layout_toRightOf="@+id/icon" android:layout_alignTop="@+id/icon">
+        <TextView android:textSize="15sp" android:textColor="#3b3d42" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="15sp" android:textColor="#787878" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:lineSpacingExtra="4dp"/>
+        <TextView android:textSize="12dp" android:textColor="#b8b8b8" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+    <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" android:layout_marginLeft="16dp" android:layout_toRightOf="@+id/icon" android:layout_below="@+id/center"/>
+</merge>

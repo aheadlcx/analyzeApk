@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/label_selector_icon"/>
+    <item android:state_pressed="true" android:drawable="@drawable/label_selector_icon"/>
+    <item android:state_selected="true" android:drawable="@drawable/label_selector_icon"/>
+    <item android:state_checked="false" android:drawable="@drawable/label_no_selector_icon"/>
+    <item android:drawable="@drawable/label_no_selector_icon"/>
+</selector>

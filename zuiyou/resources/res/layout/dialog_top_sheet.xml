@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/sheet_anim_layout" android:background="@drawable/topsheet_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/statusbar_placeholder_view" android:layout_width="match_parent" android:layout_height="@dimen/status_bar_height"/>
+        <ImageView android:layout_gravity="right" android:paddingLeft="14dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="@dimen/navbar_height" android:src="@drawable/icon_topsheet_close" android:scaleType="center"/>
+        <com.google.android.flexbox.FlexboxLayout android:id="@+id/sheet_container" android:paddingTop="10dp" android:paddingBottom="33dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:flexDirection="0" app:flexWrap="0" app:justifyContent="4"/>
+    </LinearLayout>
+</FrameLayout>

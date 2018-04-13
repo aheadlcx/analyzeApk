@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/book_reader_parent_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/book_reader_book_layout" android:background="@drawable/book_reader_store_item_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/book_reader_book_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+            <View android:id="@+id/book_reader_book_line_view" android:background="@drawable/book_reader_store_item_shape" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TextView android:textSize="12sp" android:textColor="@color/book_reader_white" android:gravity="center" android:id="@+id/book_reader_progress_text_view" android:background="@color/book_reader_half_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="25dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/book_reader_common_text_color" android:ellipsize="end" android:id="@+id/book_reader_book_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:maxLines="2" android:lineSpacingExtra="3dp"/>
+        <TextView android:textSize="12sp" android:textColor="#888888" android:ellipsize="end" android:id="@+id/book_reader_author_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

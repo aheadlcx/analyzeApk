@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/phone_room_changzhan_overtime_pressed"/>
+    <item android:state_enabled="false" android:drawable="@drawable/phone_room_changzhan_overtime_disabled"/>
+    <item android:drawable="@drawable/phone_room_changzhan_overtime_normal"/>
+</selector>

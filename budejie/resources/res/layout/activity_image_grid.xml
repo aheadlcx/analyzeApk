@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="?attr/theme_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/image_title" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择照片" android:layout_centerInParent="true"/>
+        <TextView android:gravity="center" android:id="@+id/confirmBtn" android:background="@drawable/select_image_confirm_btn_selector" android:padding="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/title_bottom_gap" android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_below="@+id/image_title"/>
+    <GridView android:id="@+id/gridview" android:paddingLeft="1dp" android:paddingTop="2dp" android:paddingRight="1dp" android:paddingBottom="2dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/navigation_height" android:listSelector="?attr/select_grid_view_selector" android:drawSelectorOnTop="true" android:horizontalSpacing="0dp" android:verticalSpacing="2dp" android:numColumns="3" android:layout_below="@+id/title_bottom_gap"/>
+    <FrameLayout android:id="@+id/fl_shade" android:background="#88000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navigation_height"/>
+    <SlidingDrawer android:orientation="vertical" android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:handle="@+id/ll_select_image" android:content="@+id/lv_content">
+        <ListView android:id="@+id/lv_content" android:background="?attr/theme_bg_color" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@null" android:divider="?attr/divider_horizontal_bg" android:dividerHeight="@dimen/divide_line_height"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_select_image" android:background="?attr/theme_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/photo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="相机照片"/>
+                <ImageView android:id="@+id/photo_arrows" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+        </LinearLayout>
+    </SlidingDrawer>
+</RelativeLayout>

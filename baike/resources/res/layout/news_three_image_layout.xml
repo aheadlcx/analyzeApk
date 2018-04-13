@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="17sp" android:textColor="?attr/color_black" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/news_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/profile_item_default_margin" android:maxLines="2" android:layout_alignParentTop="true" android:lineSpacingExtra="1.5dp"/>
+    <LinearLayout android:id="@+id/news_three_image" android:layout_width="match_parent" android:layout_height="84dp" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/profile_item_default_margin" android:layout_below="@+id/news_title">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/news_image_first" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/news_image_second" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/news_image_third" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="26dp" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/profile_item_default_margin" android:layout_marginBottom="5dp" android:layout_below="@+id/news_three_image">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/news_footer_layout"/>
+    </RelativeLayout>
+</RelativeLayout>

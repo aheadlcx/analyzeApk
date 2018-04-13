@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <cn.xiaochuankeji.tieba.ui.widget.updown.UpArrowView android:id="@+id/ivUpArrow" android:layout_width="40dp" android:layout_height="24dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/comment_content_gray" android:id="@+id/tvUpCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30"/>
+        <cn.xiaochuankeji.tieba.ui.widget.updown.DownArrowView android:id="@+id/ivDownArrow" android:layout_width="40dp" android:layout_height="24dp"/>
+    </LinearLayout>
+</merge>

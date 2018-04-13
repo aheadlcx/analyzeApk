@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/pager_container" android:background="@color/yellow_fddb2e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.core.widget.PagerSlidingTabStrip android:layout_gravity="center_horizontal" android:id="@+id/tabs" android:layout_width="wrap_content" android:layout_height="40dp"/>
+    <qsbk.app.core.widget.ChildViewPager android:id="@+id/pager" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" layout="@layout/item_header"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="当前连接的IM HOST："/>
+            <TextView android:textSize="20sp" android:textColor="@color/red" android:ellipsize="marquee" android:id="@+id/im_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="http://" android:singleLine="true" android:textIsSelectable="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="当前连接的热猫Host："/>
+            <TextView android:textSize="20sp" android:textColor="@color/red" android:ellipsize="marquee" android:id="@+id/remix_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="http://" android:singleLine="true" android:textIsSelectable="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="当前连接的Pay HOST："/>
+            <TextView android:textSize="20sp" android:textColor="@color/red" android:ellipsize="marquee" android:id="@+id/pay_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="http://" android:singleLine="true" android:textIsSelectable="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="或者输入自定义的HOST："/>
+            <EditText android:textSize="20sp" android:textColor="@color/black" android:id="@+id/et_im_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="IM Host" android:singleLine="true"/>
+            <EditText android:textSize="20sp" android:textColor="@color/black" android:id="@+id/et_remix_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="热猫 Host" android:singleLine="true"/>
+            <EditText android:textSize="20sp" android:textColor="@color/black" android:id="@+id/et_pay_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="Pay Host" android:singleLine="true"/>
+            <Button android:textSize="24sp" android:textColor="@color/blue" android:id="@+id/btn_save" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="保存"/>
+            <Button android:textSize="24sp" android:textColor="@color/blue" android:id="@+id/btn_change" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="快速切换"/>
+            <Button android:textSize="24sp" android:textColor="@color/blue" android:id="@+id/btn_change_livetest2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="切换到livetest2"/>
+            <Button android:textSize="24sp" android:textColor="@color/blue" android:id="@+id/btn_change_livetest3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="切换到livetest3"/>
+            <Button android:textSize="24sp" android:textColor="@color/blue" android:id="@+id/btn_change_livetest4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="切换到livetest4"/>
+            <Button android:textSize="24sp" android:textColor="@color/blue" android:id="@+id/btn_change_livetest5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="切换到livetest5"/>
+            <Button android:textSize="24sp" android:textColor="@color/blue" android:id="@+id/btn_change_livetest6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="切换到livetest6"/>
+            <Button android:textSize="24sp" android:textColor="@color/blue" android:id="@+id/btn_show_live_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:text="显示直播信息"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.androidex.widget.FilletAsyncImageView android:id="@+id/logo_imageView" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginLeft="@dimen/margin_11" android:layout_centerVertical="true"/>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="78dp" android:layout_marginLeft="@dimen/margin_11" android:layout_toRightOf="@+id/logo_imageView" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/font_15" android:textColor="?attr/label_list_item_name" android:id="@+id/theme_name_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版块名称" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/font_13" android:textColor="#828282" android:id="@+id/count_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="版块个数" android:maxLines="1" android:layout_below="@+id/theme_name_textView"/>
+    </RelativeLayout>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

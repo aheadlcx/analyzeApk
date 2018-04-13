@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/moreIconItem_layout" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="60dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_icon"/>
+            <TextView android:textSize="16sp" android:textColor="@color/vip_pay_name_normal_text_color" android:id="@+id/HistoryTip1TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="开通30天会员"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/vip_pay_tip_text_color" android:id="@+id/HistoryTip2TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="开通日期：2015-12-24"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

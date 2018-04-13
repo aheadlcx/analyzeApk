@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <RelativeLayout android:id="@+id/nav_bar" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/back" android:layout_width="@dimen/navbar_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_avatar" android:layout_width="32.2dp" android:layout_height="32.2dp" android:layout_centerInParent="true" style="@style/CircleImage"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/navbar_height" android:layout_marginRight="@dimen/navbar_height" android:layout_centerInParent="true">
+            <android.support.v7.widget.AppCompatTextView android:textSize="13sp" android:textColor="@color/CT_2" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <cn.xiaochuankeji.tieba.ui.widget.DisableRecyclerView android:layout_gravity="center_horizontal" android:id="@+id/recycler_view_title" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatImageView android:id="@+id/iv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/icon_web_share_new" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <cn.dreamtobe.kpswitch.widget.KPSwitchPanelFrameLayout android:id="@+id/panel_root" android:layout_width="1px" android:layout_height="1px" android:layout_alignParentTop="true"/>
+    <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/navbar_height" android:layout_below="@+id/nav_bar">
+        <android.support.design.widget.AppBarLayout android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <LinearLayout android:orientation="vertical" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="11">
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F1_text" android:textStyle="bold" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/theme_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="11dp" android:layout_marginRight="12dp" android:lineSpacingMultiplier="1.25" android:textIsSelectable="true"/>
+                <android.support.v7.widget.AppCompatTextView android:textSize="12sp" android:textColor="@color/CT_3" android:layout_gravity="center_horizontal" android:id="@+id/theme_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="10dp"/>
+                <cn.xiaochuankeji.tieba.ui.widget.DisableRecyclerView android:layout_gravity="center_horizontal" android:id="@+id/recycler_view" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginBottom="6dp"/>
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/input_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

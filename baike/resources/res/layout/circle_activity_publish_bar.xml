@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/cancel" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="取消"/>
+    <TextView android:textSize="14dp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/perrmission" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="所有人都可见" android:drawableRight="@drawable/circle_publish_arrow" android:drawablePadding="6dp" android:layout_centerInParent="true"/>
+    <TextView android:textSize="20dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/submit" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="发布" android:layout_alignParentRight="true"/>
+</RelativeLayout>

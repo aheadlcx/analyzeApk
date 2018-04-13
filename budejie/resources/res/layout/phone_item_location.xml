@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/locationRl" android:layout_width="match_parent" android:layout_height="55dp" android:minHeight="55dp">
+    <ImageView android:id="@+id/locationIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/phone_sc_10dp" android:src="@drawable/phone_location_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name"/>
+    <TextView android:textSize="14sp" android:textColor="#323232" android:id="@+id/locationTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_sc_10dp" android:layout_toLeftOf="@+id/locationIv" android:layout_centerVertical="true"/>
+    <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/phone_sc_10dp" android:layout_marginRight="@dimen/phone_sc_10dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

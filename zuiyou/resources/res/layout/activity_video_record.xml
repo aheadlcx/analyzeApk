@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.videomaker.CameraSurfaceView android:id="@+id/camera_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.videomaker.sticker.TouchProcessStickerLayout android:id="@+id/sticker_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.videomaker.CustomFakeViewPager android:id="@+id/vFakeViewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="28sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tvVideoFilterName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="77dp" android:shadowColor="#4c000000" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="8"/>
+    </cn.xiaochuankeji.tieba.ui.videomaker.sticker.TouchProcessStickerLayout>
+    <cn.xiaochuankeji.tieba.ui.videomaker.edittext.OverlayEditTextContainer android:id="@+id/overlay_edit_text_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/layout_control_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@drawable/record_top_mask" android:layout_width="match_parent" android:layout_height="70dp" android:layout_alignParentTop="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_topbar" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+            <ImageView android:id="@+id/btn_record_cancel" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/record_cancel"/>
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+            <ImageView android:id="@+id/btn_video_filter" android:paddingLeft="11.1dp" android:paddingRight="11.1dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/video_filter"/>
+            <ImageView android:id="@+id/btn_face_beautify" android:paddingLeft="11.1dp" android:paddingRight="11.1dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/face_beautify_selector"/>
+            <ImageView android:id="@+id/btn_pick_bgm" android:paddingLeft="11.1dp" android:paddingRight="11.1dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bgm_selector"/>
+            <ImageView android:id="@+id/btn_camera_flash" android:paddingLeft="11.1dp" android:paddingRight="11.1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/camera_flash_selector"/>
+            <ImageView android:id="@+id/btn_camera_switch" android:paddingLeft="11.1dp" android:paddingRight="11.1dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/camera_switch"/>
+            <ImageView android:id="@+id/btn_option_more" android:paddingLeft="11.1dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/option_more"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/layout_actionbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="39.3dp" android:layout_alignParentBottom="true">
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+            <ImageView android:id="@+id/btn_delete_record" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/record_delete"/>
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+            <cn.xiaochuankeji.tieba.ui.videomaker.ShutterButton android:id="@+id/btn_shutter" android:layout_width="98dp" android:layout_height="98dp"/>
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+            <ImageView android:id="@+id/btn_finish_record" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/record_finish"/>
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="@drawable/record_bottom_mask" android:layout_width="match_parent" android:layout_height="70dp" android:layout_alignParentBottom="true"/>
+        <cn.xiaochuankeji.tieba.ui.videomaker.VideoRecordProgressView android:layout_gravity="bottom" android:id="@+id/progress_view" android:layout_width="match_parent" android:layout_height="42dp" android:layout_alignParentBottom="true"/>
+        <cn.xiaochuankeji.tieba.ui.videomaker.roundedvideo.RoundedVideoSurfaceView android:layout_gravity="center_vertical" android:id="@+id/video_preview" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_above="@+id/layout_actionbar" android:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/open_sticker" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="34dp" android:src="@drawable/ic_ugc_sticker" android:scaleType="centerCrop"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/open_magic_emotion" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="34dp" android:src="@drawable/ic_ugc_magic" android:scaleType="centerCrop"/>
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/open_text_sticker" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/add_text" android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <cn.xiaochuankeji.tieba.ui.videomaker.VideoRecordOptionPanel android:id="@+id/option_panel" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextSwitcher android:layout_gravity="center" android:id="@+id/countdown_switcher" android:background="@drawable/circle_bg_a50" android:visibility="gone" android:layout_width="88dp" android:layout_height="88dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tv_magic_emotion" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="255dp"/>
+    <FrameLayout android:id="@+id/vTextAddGuideCover" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/addTextAnimationView" android:layout_width="200dp" android:layout_height="209dp" android:layout_marginTop="80dp" app:lottie_autoPlay="false" app:lottie_loop="true"/>
+    </FrameLayout>
+</FrameLayout>

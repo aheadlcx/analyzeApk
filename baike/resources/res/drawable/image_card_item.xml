@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/image_card_item_0" android:maxLevel="0"/>
+    <item android:drawable="@drawable/image_card_item_1_9" android:minLevel="1" android:maxLevel="9"/>
+    <item android:drawable="@drawable/image_card_item_10_49" android:minLevel="10" android:maxLevel="49"/>
+    <item android:drawable="@drawable/image_card_item_50" android:minLevel="50"/>
+</level-list>

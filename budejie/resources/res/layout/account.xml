@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_alignParentTop="true" layout="@layout/title_btn"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title">
+        <com.tencent.smtt.sdk.WebView android:id="@+id/accountWeb" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/progress_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="400dp" android:layout_marginTop="10dp" android:layout_below="@+id/title" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="15dp" android:indeterminateDrawable="@drawable/progress_bar_drawable" style="?android:attr/progressBarStyleSmall"/>
+        <TextView android:textSize="18sp" android:textColor="#ffaaaaaa" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downloading"/>
+    </LinearLayout>
+</RelativeLayout>

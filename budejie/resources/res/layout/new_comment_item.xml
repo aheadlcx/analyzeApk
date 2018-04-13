@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/new_comment_title_item"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/comment_item_layout" android:background="?attr/comment_item_content_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/comment_picture_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10" android:layout_marginTop="@dimen/margin_10" android:layout_marginBottom="@dimen/margin_10" android:layout_alignParentLeft="true">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/comment_picture" android:layout_width="35dp" android:layout_height="35dp"/>
+            <View android:background="?attr/imageready_bg" android:visibility="visible" android:layout_width="35dp" android:layout_height="35dp"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10" android:layout_marginTop="4dp" android:layout_marginRight="50dp" android:layout_toRightOf="@+id/comment_picture_layout">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/comment_user_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="?attr/comment_item_name_font" android:ellipsize="marquee" android:gravity="top" android:id="@+id/comment_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:maxWidth="200dp" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="left" android:id="@+id/comment_progressBar" android:visibility="gone" android:layout_width="20dp" android:layout_height="23dp" android:layout_marginLeft="15dp" android:indeterminateDrawable="@drawable/round_progress_bar_blue_small" style="?android:attr/progressBarStyleSmall"/>
+                <TextView android:textSize="@dimen/font_16" android:textColor="?attr/comment_item_content_font" android:id="@+id/comment_textcontent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="5dp"/>
+                <com.budejie.www.activity.view.AudioLayout android:id="@+id/comment_voice" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="5dp"/>
+                <TextView android:textSize="@dimen/font_14" android:textColor="?attr/comment_item_name_font" android:id="@+id/comment_replyUser" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/comment_dingLayout" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10" android:layout_alignParentRight="true">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/comment_dingIv" android:background="@drawable/ding_item" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="10dp"/>
+                <TextView android:textSize="@dimen/font_12" android:textColor="?attr/comment_item_name_font" android:layout_gravity="center_horizontal" android:id="@+id/comment_likeCount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_12" android:textColor="#ee7b7b" android:layout_gravity="center" android:id="@+id/comment_likeCountAnim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

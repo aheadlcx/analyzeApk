@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/group_info_item_bg" android:layout_width="match_parent" android:layout_height="30dp">
+    <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="13dp" android:textColor="?attr/group_info_label" android:ellipsize="end" android:id="@+id/label" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="最近使用" android:singleLine="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

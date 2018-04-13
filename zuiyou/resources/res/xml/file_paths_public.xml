@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <external-path name="my_images" path="Pictures"/>
+    <external-path name="beta_external_path" path="Download/"/>
+    <external-path name="beta_external_files_path" path="Android/data/"/>
+    <external-path name="gdt_sdk_download_path" path="GDTDOWNLOAD"/>
+    <external-path name="zuiyou_apk_files_path_debug" path="cn.xiaochuankeji.tieba.debug/app/"/>
+    <external-path name="zuiyou_apk_files_path_release" path="cn.xiaochuankeji.tieba/app/"/>
+</paths>

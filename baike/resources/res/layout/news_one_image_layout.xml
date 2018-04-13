@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/news_image" android:layout_width="93dp" android:layout_height="70dp" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/profile_item_default_margin" android:layout_marginBottom="10dp" android:layout_alignParentRight="true"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginRight="@dimen/profile_item_default_margin" android:layout_marginBottom="-5dp" android:layout_toLeftOf="@+id/news_image" android:layout_alignTop="@+id/news_image" android:layout_alignBottom="@+id/news_image" android:layout_centerVertical="true">
+        <TextView android:textSize="17sp" android:textColor="?attr/color_black" android:ellipsize="end" android:id="@+id/news_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" android:lineSpacingExtra="1.5dp"/>
+        <RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/news_title" android:layout_alignParentBottom="true">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/news_footer_layout"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bet_big" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_big" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/live_game_bet_big_btn" android:scaleType="fitXY"/>
+        <TextView android:textSize="14dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_bet_big_total" android:background="@drawable/bg_bet_num" android:paddingLeft="11dp" android:paddingRight="11dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bet_small" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_small" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/live_game_bet_small_btn" android:scaleType="fitXY"/>
+        <TextView android:textSize="14dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_bet_small_total" android:background="@drawable/bg_bet_num" android:paddingLeft="11dp" android:paddingRight="11dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="0"/>
+    </LinearLayout>
+</merge>

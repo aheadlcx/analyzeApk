@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rl_title" android:layout_width="match_parent" android:layout_height="46dp" android:minHeight="46dp">
+    <View android:id="@+id/division" android:background="@color/pop_item_gray_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="10dp"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_head" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="14dp" android:layout_centerVertical="true" fresco:placeholderImage="@drawable/rooms_third_common_head_portrait" fresco:roundAsCircle="true"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/offline_head" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="14dp" android:layout_centerVertical="true" fresco:placeholderImage="@color/pop_guard_image_offline" fresco:roundAsCircle="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="Fanny兔宝贝" android:singleLine="true" android:layout_toRightOf="@+id/iv_head" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_guard_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/v6_ic_pop_rank_1" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

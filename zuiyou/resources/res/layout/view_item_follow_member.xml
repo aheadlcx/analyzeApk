@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="64dp">
+    <FrameLayout android:layout_width="50dp" android:layout_height="50dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/pv_avatar" android:background="@drawable/bg_avatar_circle" android:layout_width="46dp" android:layout_height="46dp" style="@style/CircleImage"/>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/vFansCrumb" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_badge_dot"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/CT_1" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游客" android:singleLine="true" android:drawablePadding="10dp"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/icon_friend" android:background="@drawable/icon_friend_bidirectional" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+    <Button android:textSize="13dp" android:textColor="@color/CM" android:gravity="center" android:id="@+id/btn_follow" android:background="@drawable/bg_round_blue_border" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="25dp" android:text="关注" style="@style/SmallBlueButton"/>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#99000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/laisee_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_laisee_get_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/head_linearlayout" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="30dp">
+                <ImageView android:id="@+id/close" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/red_envelope_close"/>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="10dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:id="@+id/avatar" android:layout_width="60dp" android:layout_height="60dp"/>
+                <ImageView android:id="@+id/mic_status" android:background="@drawable/bg_circle_black_30" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center"/>
+            </FrameLayout>
+            <TextView android:textSize="14sp" android:textColor="#fbed96" android:gravity="center" android:id="@+id/name" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="lili"/>
+            <FrameLayout android:id="@+id/content_container" android:paddingLeft="50dp" android:paddingRight="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <TextView android:textSize="20sp" android:textColor="@r$color/yellow_laisee" android:gravity="center" android:layout_gravity="center" android:id="@+id/content" android:background="@drawable/shape_voice_gap_stroke" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" android:text="恭喜发财大吉大利" android:layout_centerInParent="true"/>
+                <View android:layout_gravity="left|center_vertical|center_horizontal|center" android:background="@drawable/ic_voice_command_left" android:layout_width="14dp" android:layout_height="14dp" android:layout_toLeftOf="@+id/content" android:layout_centerVertical="true"/>
+                <View android:layout_gravity="right|center_vertical|center_horizontal|center" android:background="@drawable/ic_voice_command_right" android:layout_width="14dp" android:layout_height="14dp" android:layout_toRightOf="@+id/content" android:layout_centerVertical="true"/>
+            </FrameLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/bg_laisee_get_center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/bind_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="40dp">
+                <Button android:textSize="18sp" android:textColor="@r$color/red_laisee" android:id="@+id/bind_phone" android:background="@drawable/shape_laisee_rect" android:layout_width="180dp" android:layout_height="45dp" android:layout_marginTop="10dp" android:text="绑定手机号 >"/>
+                <TextView android:textSize="12sp" android:textColor="#fbed96" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="为了您的资金安全请先绑定手机号码"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/open_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <qsbk.app.widget.RecordButton android:id="@+id/red_envelope_open" android:background="@drawable/btn_voice_open" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="40dp" android:layout_marginBottom="20dp" android:layout_centerHorizontal="true"/>
+                    <ProgressBar android:id="@+id/record_progress" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="40dp" android:layout_marginBottom="20dp" android:indeterminateDrawable="@drawable/drawable_rorate_laisee_loading" android:layout_centerHorizontal="true"/>
+                </FrameLayout>
+                <TextView android:textColor="@color/white" android:id="@+id/record_tip" android:background="@drawable/bg_black_round_30" android:paddingLeft="12dp" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按住按钮读口令"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:background="@drawable/bg_laisee_get_bottom" android:layout_width="match_parent" android:layout_height="67dp"/>
+    </LinearLayout>
+</FrameLayout>

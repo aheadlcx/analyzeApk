@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/traceroute_rootview" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sms_verify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp">
+        <TextView android:gravity="center" android:id="@+id/verify_num_str" android:background="@drawable/input_verify" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.budejie.www.widget.erroredittext.SetErrorAbleEditText android:textSize="@dimen/font_18" android:textColor="@color/input_phone_number" android:textColorHint="#c7c7cd" android:id="@+id/input_verify_num" android:background="@drawable/input_bg" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/please_input_verify" android:singleLine="true" android:layout_centerVertical="true" android:inputType="phone"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_below="@+id/sms_verify">
+        <TextView android:textSize="@dimen/font_13" android:textColor="#888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未收到验证码请点击"/>
+        <TextView android:textSize="@dimen/font_13" android:textColor="#545454" android:id="@+id/again_verify" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/again_verify"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="100dp" android:transcriptMode="normal" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/next_left" android:background="@drawable/new_next_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/to_next_btn" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/to_next_btn" android:background="@drawable/default_next_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/next_right" android:background="@drawable/new_next_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/to_next_btn" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

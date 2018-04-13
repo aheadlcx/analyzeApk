@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qsbk.app.widget.LoaderLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/loader_layout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/abc_action_bar_default_height">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/cmt_empty_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/cmt_empty_tips_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fail_img"/>
+        <TextView android:textSize="14dp" android:textColor="#969696" android:id="@+id/cmt_empty_tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="暂无评论，快来抢地主吧~"/>
+    </LinearLayout>
+</qsbk.app.widget.LoaderLayout>

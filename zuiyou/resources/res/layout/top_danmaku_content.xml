@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/white_70" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/danmaku_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="45dp" android:maxLines="3" android:lineSpacingExtra="4dp"/>
+    <ImageView android:id="@+id/btn_play_audio" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/img_sound_stop" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+    <cn.xiaochuankeji.tieba.ui.widget.updown.ViewUpDown android:id="@+id/like_bar" android:layout_width="40dp" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

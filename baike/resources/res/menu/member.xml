@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/action_search" android:orderInCategory="50" android:title="@string/search" app:showAsAction="always"/>
+    <item android:id="@+id/action_normal_sort" android:orderInCategory="51" android:title="默认排序" app:showAsAction="never"/>
+    <item android:id="@+id/action_level_sort" android:orderInCategory="52" android:title="按天梯排序" app:showAsAction="never"/>
+    <item android:id="@+id/action_invite" android:orderInCategory="53" android:title="邀请糗友进群" app:showAsAction="never"/>
+</menu>

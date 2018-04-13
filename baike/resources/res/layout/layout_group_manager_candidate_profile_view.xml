@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="#3b3d42" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/election_manifesto"/>
+    <RelativeLayout android:id="@+id/rl_content_election_manifesto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="25dp" android:layout_marginRight="11dp">
+        <ImageView android:background="@drawable/open_quote_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="14sp" android:textColor="#63625e" android:ellipsize="end" android:id="@+id/tv_content_election_manifesto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:maxLines="2" android:layout_centerHorizontal="true"/>
+        <ImageView android:background="@drawable/close_quote_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/tv_content_election_manifesto" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:layout_gravity="center_horizontal" android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="18dp" android:layout_marginTop="20dp" android:layout_marginRight="18dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="12dp" android:textColor="#3b3d42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="糗龄："/>
+        <TextView android:textSize="12dp" android:textColor="#63625e" android:id="@+id/tv_age_qsbk_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="#3b3d42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:text="群龄："/>
+        <TextView android:textSize="12dp" android:textColor="#63625e" android:id="@+id/tv_age_group_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_gravity="center_horizontal" android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="18dp" android:layout_marginTop="10dp" android:layout_marginRight="18dp"/>
+    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="@string/daily_activity"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="17dp" android:layout_marginBottom="3dp">
+        <TextView android:textSize="12dp" android:textColor="#969696" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+        <qsbk.app.widget.card.GroupMonthActiveView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" app:activeWidth="10dp" app:activeSpace="3dp" app:actives="0,1,10,50"/>
+        <TextView android:textSize="12dp" android:textColor="#969696" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50+"/>
+    </LinearLayout>
+    <qsbk.app.widget.card.GroupActiveLayout android:id="@+id/active" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp"/>
+    <TextView android:textSize="14sp" android:textColor="#3b3d42" android:layout_gravity="center" android:id="@+id/owner_history_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_marginBottom="8dp" android:text="@string/group_manager_experience"/>
+</LinearLayout>

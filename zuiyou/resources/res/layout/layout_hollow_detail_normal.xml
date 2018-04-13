@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/color_fffafb" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <View android:layout_height="28dp" style="@style/hollow_detail_line"/>
+        <ImageView android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="14dp" android:layout_marginTop="4dp" android:src="@drawable/timeline_dot" android:scaleType="fitXY" android:contentDescription="@string/image"/>
+        <View android:id="@+id/hollow_detail_reply_fun" android:layout_height="match_parent" android:layout_marginTop="4dp" style="@style/hollow_detail_line"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/reply_bg" android:paddingLeft="36dp" android:paddingTop="20dp" android:paddingRight="28dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_4" android:id="@+id/hollow_detail_reply_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hollow_welcome"/>
+                <ImageView android:id="@+id/hollow_detail_reply_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/sexual_male" android:contentDescription="@string/image"/>
+                <View style="@style/my_divide_view"/>
+            </LinearLayout>
+            <cn.xiaochuankeji.tieba.ui.widget.MultipleLineEllipsisTextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:ellipsize="end" android:id="@+id/hollow_detail_reply_title" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F4_line" android:maxLines="8" android:lineSpacingMultiplier="1.2"/>
+            <cn.xiaochuankeji.tieba.ui.hollow.widget.AudioPlayView android:id="@+id/hollow_detail_reply_play" android:background="@drawable/reply_audio_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="180dp" android:layout_height="54dp" android:layout_marginTop="@dimen/F4_line"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="6dp">
+                <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_6" android:id="@+id/hollow_detail_reply_info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <View style="@style/my_divide_view"/>
+                <ImageView android:id="@+id/anonymous_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_accost_comment" android:scaleType="centerInside" android:contentDescription="@string/image"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="36dp" android:paddingRight="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View style="@style/my_divide_view"/>
+            <ImageView android:id="@+id/hollow_detail_like_icon" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="8dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tree_comment_like" android:contentDescription="@string/image"/>
+            <TextView android:textSize="@dimen/F5_text" android:textColor="@color/tree_hole_main" android:id="@+id/hollow_detail_like_count" android:paddingLeft="0dp" android:paddingTop="20dp" android:paddingRight="12dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

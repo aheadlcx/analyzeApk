@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="12sp" android:textColor="?attr/color_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="提现至支付宝"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/alipay_account" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text=""/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="13dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="12sp" android:textColor="?attr/color_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="提现金额"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="24sp" android:textColor="?attr/color_black" android:gravity="bottom" android:id="@+id/rmb" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="4dp" android:text="¥"/>
+        <EditText android:textSize="36sp" android:textColor="?attr/color_black" android:gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/editText" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="9dp" android:maxLength="9" android:layout_toRightOf="@+id/rmb" android:inputType="numberDecimal"/>
+        <ImageView android:id="@+id/clear" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_withdraw_close" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="12sp" android:textColor="?attr/color_gray" android:gravity="center" android:id="@+id/balance" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="可提现现金"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/color_yellow" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/all" android:background="@null" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="全部提现"/>
+    </LinearLayout>
+    <Button android:enabled="false" android:textSize="16sp" android:textColor="?attr/bind_btn_text_color" android:layout_gravity="center_horizontal" android:id="@+id/btn_done" android:background="?attr/bind_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="@string/done"/>
+</LinearLayout>

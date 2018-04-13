@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fill_group_scrollview" android:background="#ffffff" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/create_group_small" android:textColor="#969696" android:gravity="center_horizontal" android:id="@+id/group_remind" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="上传群头像，让你的群光芒四射 !"/>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/group_img_rela" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_below="@+id/group_remind">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/group_img" android:layout_width="66dp" android:layout_height="66dp" android:layout_centerHorizontal="true" android:contentDescription="@null" app:placeholderImage="@drawable/group_img_light" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/edit_avatar" android:layout_alignRight="@+id/group_img" android:layout_alignBottom="@+id/group_img"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/group_name_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="40dp" android:layout_marginRight="16dp">
+            <TextView android:textSize="@dimen/create_group_middle" android:textColor="@r$color/create_group_text_gray" android:id="@+id/create_group_name_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="群名："/>
+            <EditText android:textSize="@dimen/create_group_middle" android:id="@+id/group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="可输入12字" android:maxLines="1" android:singleLine="true" android:maxLength="12"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/location_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="30dp" android:layout_marginRight="16dp">
+            <TextView android:textSize="@dimen/create_group_middle" android:textColor="@r$color/create_group_text_gray" android:id="@+id/create_group_location_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="位置："/>
+            <TextView android:textSize="@dimen/create_group_middle" android:id="@+id/group_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/group_intru_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="30dp" android:layout_marginRight="16dp">
+            <TextView android:textSize="@dimen/create_group_middle" android:textColor="@r$color/create_group_text_gray" android:id="@+id/create_group_introduce_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="简介："/>
+            <EditText android:textSize="@dimen/create_group_middle" android:id="@+id/group_intruduction" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="可输入120字" android:maxLines="10" android:maxLength="120"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80dp">
+            <TextView android:textSize="@dimen/create_group_large" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/confirm_group_tv" android:background="@drawable/used_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="下一步"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

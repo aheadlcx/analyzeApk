@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:background="@color/chat_page" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/navBar" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+                    <android.support.v7.widget.AppCompatImageView android:id="@+id/back" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left" android:scaleType="center" android:layout_alignParentLeft="true"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/title_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_1" android:id="@+id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="20" android:drawablePadding="8dp"/>
+                        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F6_text" android:textColor="@color/CT_3" android:ellipsize="middle" android:id="@+id/title_extra" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="25"/>
+                    </LinearLayout>
+                    <android.support.v7.widget.AppCompatImageView android:id="@+id/more" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_nav_more" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <cn.xiaochuankeji.tieba.ui.widget.ZYRefreshHeader android:layout_width="match_parent" android:layout_height="53dp"/>
+                <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/input_container" android:background="@color/CB" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/voice_recorder" android:padding="12dp" android:visibility="gone" android:layout_width="@dimen/navbar_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_record_voice"/>
+                <EditText android:textSize="@dimen/F2_text" android:gravity="center_vertical" android:id="@+id/input" android:paddingLeft="10dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:minHeight="30dp" android:hint="评论..." android:maxLines="4" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="bottom" android:id="@+id/send_image" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/ic_add_picture"/>
+                <Button android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/send" android:background="@drawable/send" android:layout_width="48dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:foreground="@null" android:text="发送"/>
+            </LinearLayout>
+        </LinearLayout>
+        <cn.xiaochuankeji.tieba.widget.record.ChatRecordLayout android:id="@+id/record_status_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <cn.dreamtobe.kpswitch.widget.KPSwitchPanelLinearLayout android:orientation="vertical" android:id="@+id/panel_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="200dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+            <FrameLayout android:background="@color/CB_1" android:layout_width="match_parent" android:layout_height="match_parent">
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/voice_notify_msg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/video_record_padding_top" android:text="松手发送，上滑取消"/>
+                <cn.xiaochuankeji.tieba.widget.ripple.RippleBackground android:id="@+id/ripple_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:layout_below="@+id/voice_notify_msg" android:layout_centerHorizontal="true" app:rb_color="#149eff" app:rb_radius="40dp" app:rb_duration="2500" app:rb_rippleAmount="2" app:rb_scale="2.5" app:rb_alpha="0.2">
+                    <ImageView android:id="@+id/start_voice" android:layout_width="81dp" android:layout_height="81dp" android:src="@drawable/img_pressed_record" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:id="@+id/voice_touch_notify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="按住说" android:layout_below="@+id/start_voice" android:layout_centerHorizontal="true"/>
+                </cn.xiaochuankeji.tieba.widget.ripple.RippleBackground>
+            </FrameLayout>
+        </LinearLayout>
+    </cn.dreamtobe.kpswitch.widget.KPSwitchPanelLinearLayout>
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout>

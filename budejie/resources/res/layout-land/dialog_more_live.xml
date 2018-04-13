@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:background="@color/dialog_land_bg" android:layout_width="150dp" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29dp" android:layout_marginRight="29dp" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14sp" android:textColor="@color/dialog_open_guard_text_selector" android:gravity="center" android:id="@+id/tv_choose_song" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点歌" android:drawableTop="@drawable/dialog_more_choose_song_selector" android:drawablePadding="8dp" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/dialog_open_guard_text_selector" android:gravity="center" android:id="@+id/tv_head_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56dp" android:text="上头条" android:drawableTop="@drawable/dialog_more_head_line_selector" android:drawablePadding="8dp" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="23dp" android:paddingTop="15dp" android:paddingRight="23dp" android:paddingBottom="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_avatar" android:layout_width="52dp" android:layout_height="52dp"/>
+    <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#171717" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:singleLine="true"/>
+    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#675e72" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_credit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true"/>
+</LinearLayout>

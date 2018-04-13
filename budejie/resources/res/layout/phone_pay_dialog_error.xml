@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="vertical" android:background="@drawable/phone_pay_dialog_bg" android:layout_width="150dp" android:layout_height="150dp" android:minWidth="150dp" android:minHeight="150dp">
+    <ImageView android:background="@drawable/phone_recharge_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+    <TextView android:textSize="@dimen/text_size_small_max" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/five_dip" android:text="@string/str_pay_error"/>
+</LinearLayout>

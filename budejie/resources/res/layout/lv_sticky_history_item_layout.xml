@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_lv_sticky_history_item" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="@dimen/phone_sc_90px" android:layout_marginLeft="@dimen/phone_sc_10px" android:layout_marginTop="@dimen/phone_sc_5px" android:layout_marginRight="@dimen/phone_sc_10px" android:layout_marginBottom="@dimen/phone_sc_5px">
+            <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/iv_lv_sticky_history_item_pic" android:layout_width="@dimen/ranking_adapter_pic_width_high" android:layout_height="@dimen/ranking_adapter_pic_width_high" android:layout_marginLeft="@dimen/phone_sc_10px" fresco:placeholderImage="@drawable/rooms_third_common_head_portrait" fresco:roundAsCircle="true"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_sc_18px">
+                    <TextView android:textSize="@dimen/phone_sc_14sp" android:textColor="#000" android:id="@+id/tv_lv_sticky_history_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Me丶小虎牙"/>
+                    <ImageView android:id="@+id/iv_lv_sticky_history_item_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/phone_sc_15px"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ll_lv_sticky_history_item_delete" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_lv_sticky_history_item_delete" android:background="@drawable/rooms_thirds_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_sc_18px" android:layout_marginRight="@dimen/phone_sc_18px"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/shallow_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/phone_sc_66px"/>
+</LinearLayout>

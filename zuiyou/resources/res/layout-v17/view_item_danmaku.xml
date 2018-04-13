@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.ui.tempview.DealChildLongClickRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/vTop" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:id="@+id/vGodFlag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_danmaku_god_flag"/>
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/wivAvatar" android:paddingLeft="19dp" android:paddingTop="11dp" android:paddingRight="9dp" android:paddingBottom="11dp" android:layout_width="61dp" android:layout_height="55dp" style="@style/CircleImage"/>
+        <TextView android:textSize="12sp" android:textColor="#dd2864" android:gravity="center" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/wivAvatar"/>
+        <ImageView android:id="@+id/vHate" android:paddingLeft="25dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="60dp" android:layout_height="55dp" android:src="@drawable/selector_danmaku_hate" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvLikeCount" android:layout_width="120dp" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        <ImageView android:id="@+id/vLike" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="25dp" android:paddingBottom="20dp" android:layout_width="60dp" android:layout_height="55dp" android:src="@drawable/selector_danmaku_like" android:scaleType="centerCrop" android:layout_toLeftOf="@+id/vHate"/>
+    </RelativeLayout>
+    <TextView android:textSize="14dp" android:textColor="#ffffff" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="61dp" android:layout_marginTop="-15dp" android:layout_marginRight="20dp" android:layout_below="@+id/vTop"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/vSubContainer" android:background="@drawable/bg_sub_danmaku" android:padding="13dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="61dp" android:layout_marginTop="8dp" android:layout_marginRight="20dp" android:layout_below="@+id/tvContent">
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tvFirstSub" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="3dp" android:textDirection="ltr"/>
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tvSecondSub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="2" android:lineSpacingExtra="3dp" android:textDirection="ltr"/>
+        <TextView android:textSize="13sp" android:textColor="#dd2864" android:id="@+id/tvTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/vSubContainer"/>
+    <View android:background="#0dffffff" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_alignParentBottom="true"/>
+</cn.xiaochuankeji.tieba.ui.tempview.DealChildLongClickRelativeLayout>

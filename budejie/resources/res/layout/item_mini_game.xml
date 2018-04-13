@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/item_bg" android:layout_width="59dp" android:layout_height="59dp" android:layout_centerHorizontal="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/game_icon" android:layout_width="57dp" android:layout_height="57dp" android:layout_centerInParent="true" fresco:placeholderImage="@drawable/badge_default" fresco:roundAsCircle="false" fresco:roundedCornerRadius="5dp"/>
+        <ImageView android:id="@+id/game_icon_cover" android:background="@color/mini_game_icon_cover" android:layout_width="57dp" android:layout_height="57dp" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_tag" android:background="@drawable/choose_gift_grad_bg_selected_tag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/color_6" android:id="@+id/game_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/phone_sc_10dp" android:text="比大小" android:maxLines="1" android:layout_below="@+id/item_bg" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

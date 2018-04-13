@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvTopicName" android:paddingLeft="@dimen/divide_space_15" android:paddingRight="@dimen/divide_space_15" android:layout_width="match_parent" android:layout_height="60dp" android:text="#两任女友跳江#"/>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="@dimen/divide_space_15" android:layout_marginRight="@dimen/divide_space_15"/>
+</LinearLayout>

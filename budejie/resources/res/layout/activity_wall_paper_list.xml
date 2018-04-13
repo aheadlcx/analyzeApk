@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/new_main_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+    <LinearLayout android:id="@+id/top_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="42dp" android:layout_below="@+id/title_layout">
+        <RelativeLayout android:id="@+id/download_video_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_15" android:textColor="@color/wall_paper_list_text_color_selector" android:gravity="center" android:id="@+id/download_video_text_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="我的下载" android:layout_centerHorizontal="true"/>
+            <View android:id="@+id/download_video_tag_view" android:background="@drawable/wall_paper_list_top_view_shape" android:layout_width="24dp" android:layout_height="3dp" android:layout_marginBottom="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/native_video_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_15" android:textColor="@color/wall_paper_list_text_color_selector" android:gravity="center" android:id="@+id/native_video_text_view" android:layout_width="match_parent" android:layout_height="match_parent" android:text="本地视频"/>
+            <View android:id="@+id/native_video_tag_view" android:background="@drawable/wall_paper_list_top_view_shape" android:visibility="gone" android:layout_width="24dp" android:layout_height="3dp" android:layout_marginBottom="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/wall_paper_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_layout"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_marginBottom="24dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/voice_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/volume_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="静音播放" android:shadowColor="@color/half_alpha_black" android:shadowDx="3" android:shadowDy="3" android:shadowRadius="1"/>
+    </LinearLayout>
+</RelativeLayout>

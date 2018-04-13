@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navOptionText="完成"/>
+    <TextView android:textSize="@dimen/F8_text" android:textColor="@color/CT_2" android:id="@+id/nav_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="12dp" android:text="我的推荐" android:layout_below="@+id/navBar"/>
+    <TextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="长按拖动可编辑排序" android:layout_toRightOf="@+id/nav_title" android:layout_alignBaseline="@+id/nav_title"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/nav_title"/>
+</RelativeLayout>

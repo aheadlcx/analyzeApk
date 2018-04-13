@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/cameraPreview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:gravity="center" android:id="@+id/bnClose" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/icon_close_white" android:scaleType="center"/>
+        <TextView android:textSize="24dp" android:textColor="#bebebe" android:gravity="center" android:id="@+id/capture_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32dp" android:text="选择声音配图" android:layout_centerHorizontal="true"/>
+        <CheckBox android:id="@+id/bnFlash" android:background="@drawable/bg_flashlight_selector" android:layout_width="32dp" android:layout_height="32dp" android:checked="false" android:button="@null" android:layout_alignParentRight="true"/>
+        <com.budejie.www.activity.image.CaptureFocuseView android:id="@+id/viewFocuse" android:visibility="invisible" android:layout_width="80dp" android:layout_height="80dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fl" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/bnCapture" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/bn_camera_capture_selector" android:scaleType="center"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/bnToggleCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42dp" android:src="@drawable/icon_camera_switch" android:scaleType="center"/>
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/bnAlbum" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="42dp" android:src="@drawable/icon_album" android:scaleType="fitXY"/>
+        </FrameLayout>
+        <TextView android:textSize="16dp" android:textColor="#bebebe" android:gravity="center_vertical" android:id="@+id/tv_upload_sound_web" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网页上传声音" android:drawableRight="@drawable/icon_upload_sound_web" android:drawablePadding="10dp"/>
+    </RelativeLayout>
+</FrameLayout>

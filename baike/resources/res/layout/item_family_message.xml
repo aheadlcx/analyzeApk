@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/transparent_to_gray_selector" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="48dp" android:layout_height="40dp" android:layout_marginLeft="14dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/iv_image" android:layout_width="40dp" android:layout_height="40dp" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/iv_message_type" android:visibility="gone" android:layout_width="19dp" android:layout_height="19dp"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="2dp" android:layout_marginRight="15dp" android:layout_marginBottom="2dp" android:layout_weight="1">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/content" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:text="无敌小马甲，哈哈哈哈哈哈" android:singleLine="true"/>
+                <TextView android:id="@+id/tv_user_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="3dp" android:layout_toRightOf="@+id/tv_name" style="@style/LevelLabel"/>
+                <qsbk.app.live.widget.FamilyLevelView android:id="@+id/fl_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="2dp" android:layout_toRightOf="@+id/tv_user_lv"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/content" android:textColor="#7f7f7f" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_message_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+            <TextView android:textSize="@dimen/caption" android:textColor="@color/light_gray_cccccc" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/live_text_12sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_action" android:visibility="gone" android:layout_width="54dp" android:layout_height="28dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="52dp"/>
+</LinearLayout>

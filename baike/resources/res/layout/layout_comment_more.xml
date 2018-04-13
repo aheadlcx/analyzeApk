@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/container" android:background="?attr/cmt_more_bg" android:layout_width="128dp" android:layout_height="30dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/leftContainer" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/cmt_more_reply"/>
+            <TextView android:textSize="11dp" android:textColor="?attr/cmt_more_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:text="回复"/>
+        </LinearLayout>
+        <View android:background="?attr/cmt_more_divider" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/reportContainer" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/cmt_more_report"/>
+            <TextView android:textSize="11dp" android:textColor="?attr/cmt_more_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginRight="4dp" android:text="举报"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/deleteContainer" android:visibility="gone" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/cmt_more_delete"/>
+            <TextView android:textSize="11dp" android:textColor="?attr/cmt_more_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginRight="4dp" android:text="删除"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

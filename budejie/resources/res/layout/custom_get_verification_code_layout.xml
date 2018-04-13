@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="#e8e8e8" android:layout_width="1.5dp" android:layout_height="17dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="#00d0df" android:id="@+id/id_tv_get_verification_code" android:padding="5dp" android:layout_width="80dp" android:layout_height="wrap_content" android:text="获取验证码"/>
+        <TextView android:textSize="13sp" android:textColor="#00d0df" android:id="@+id/id_tv_countdown" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60s"/>
+    </FrameLayout>
+</LinearLayout>

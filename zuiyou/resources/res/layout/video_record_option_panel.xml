@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="58.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="26.9dp" android:src="@drawable/dark_arrow"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/option_container" android:background="#46757575" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="116dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:src="@drawable/record_speed"/>
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@drawable/white_text_color_selector" android:gravity="center_vertical" android:id="@+id/btn_speed_lowest" android:background="@drawable/recorder_text_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="22dp" android:text="极慢"/>
+            <TextView android:textSize="12sp" android:textColor="@drawable/white_text_color_selector" android:gravity="center_vertical" android:id="@+id/btn_speed_low" android:background="@drawable/recorder_text_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="22dp" android:text="慢"/>
+            <TextView android:textSize="12sp" android:textColor="@drawable/white_text_color_selector" android:gravity="center_vertical" android:id="@+id/btn_speed_normal" android:background="@drawable/recorder_text_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="22dp" android:text="标准"/>
+            <TextView android:textSize="12sp" android:textColor="@drawable/white_text_color_selector" android:gravity="center_vertical" android:id="@+id/btn_speed_fast" android:background="@drawable/recorder_text_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="22dp" android:text="快"/>
+            <TextView android:textSize="12sp" android:textColor="@drawable/white_text_color_selector" android:gravity="center_vertical" android:id="@+id/btn_speed_fastest" android:background="@drawable/recorder_text_bg" android:paddingLeft="14dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="22dp" android:text="极快"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:src="@drawable/timer_countdown"/>
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@drawable/white_text_color_selector" android:gravity="center_vertical" android:id="@+id/btn_countdown_off" android:background="@drawable/recorder_text_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="22dp" android:text="无"/>
+            <TextView android:textSize="12sp" android:textColor="@drawable/white_text_color_selector" android:gravity="center_vertical" android:id="@+id/btn_countdown_three" android:background="@drawable/recorder_text_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="22dp" android:text="3秒"/>
+            <TextView android:textSize="12sp" android:textColor="@drawable/white_text_color_selector" android:gravity="center_vertical" android:id="@+id/btn_countdown_six" android:background="@drawable/recorder_text_bg" android:paddingLeft="14dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="22dp" android:text="6秒"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

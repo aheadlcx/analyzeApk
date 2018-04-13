@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="240dp" android:layout_height="385dp" android:layout_marginTop="39dp" android:src="@drawable/fanfanle_win_bg" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="235dp" android:layout_height="wrap_content" android:layout_marginTop="130dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="40sp" android:textStyle="bold" android:textColor="#ff4848" android:id="@+id/heart_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:drawableLeft="@drawable/live_game_win_heart" android:drawablePadding="6dp" style="@style/TextShadow_game_win_num"/>
+                <qsbk.app.live.widget.NumberAnimTextView android:textSize="40sp" android:textStyle="bold" android:textColor="#ff4848" android:id="@+id/num_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/TextShadow_game_win_num"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="#407b5a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="9dp" android:text="传说中打赏主播运气更佳哦！"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/game_gift_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/game_gift_iv_1" android:background="@drawable/fanfanle_win_btn_bg" android:padding="2dp" android:layout_width="45dp" android:layout_height="45dp" app:placeholderImage="@drawable/live_gift_default" app:placeholderImageScaleType="5" app:actualImageScaleType="5"/>
+                    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#407b5a" android:gravity="center" android:id="@+id/game_gift_tv_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:minWidth="40dp" android:minHeight="16dp" android:text="6钻"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/game_gift_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/game_gift_iv_2" android:background="@drawable/fanfanle_win_btn_bg" android:padding="2dp" android:layout_width="45dp" android:layout_height="45dp" app:placeholderImage="@drawable/live_gift_default" app:placeholderImageScaleType="5" app:actualImageScaleType="5"/>
+                    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#407b5a" android:gravity="center" android:id="@+id/game_gift_tv_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:minWidth="40dp" android:minHeight="16dp" android:text="266钻"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/game_gift_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/game_gift_iv_3" android:background="@drawable/fanfanle_win_btn_bg" android:padding="2dp" android:layout_width="45dp" android:layout_height="45dp" app:placeholderImage="@drawable/live_gift_default" app:placeholderImageScaleType="5" app:actualImageScaleType="5"/>
+                    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#407b5a" android:gravity="center" android:id="@+id/game_gift_tv_3" android:paddingLeft="2dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:minWidth="40dp" android:minHeight="16dp" android:text="1200钻"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/game_gift_close" android:background="@drawable/fanfanle_win_btn" android:layout_width="69dp" android:layout_height="35dp">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#bc6f14" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_game_close"/>
+                    <TextView android:textSize="12sp" android:textColor="#bc6f14" android:gravity="center" android:id="@+id/game_time_count_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(5s)"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/game_gift_next" android:background="@drawable/fanfanle_win_btn" android:layout_width="69dp" android:layout_height="35dp" android:layout_marginLeft="20dp">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#bc6f14" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_game_continue"/>
+                    <TextView android:textSize="12sp" android:textColor="#bc6f14" android:gravity="center" android:id="@+id/game_time_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(5s)"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="10dp" android:textColor="#407b5a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="点击结算，赢得的赞数可领取至账户"/>
+        </LinearLayout>
+        <ImageView android:layout_width="271dp" android:layout_height="114dp" android:src="@drawable/fanfanle_win_head" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="150dp" android:layout_marginTop="100dp" android:src="@drawable/live_game_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

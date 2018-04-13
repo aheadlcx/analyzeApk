@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/black_30" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/voice_layout" android:background="@color/CB_1" android:layout_width="match_parent" android:layout_height="224dp" android:layout_alignParentBottom="true">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F10_text" android:textColor="@color/CT_5" android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="松手发送，上滑取消"/>
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/voice_container" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/img_pressed_record"/>
+    </FrameLayout>
+    <FrameLayout android:background="@color/black_50" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginBottom="32dp" android:layout_above="@+id/voice_layout" android:layout_centerHorizontal="true">
+        <android.support.v7.widget.AppCompatTextView android:textSize="80dp" android:textColor="@color/CW" android:layout_gravity="center" android:id="@+id/time_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5"/>
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F10_text" android:textColor="@color/CW" android:layout_gravity="center" android:id="@+id/record_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="说话时间超长" android:drawableTop="@drawable/icon_message_cancel" android:drawablePadding="12dp"/>
+    </FrameLayout>
+</RelativeLayout>

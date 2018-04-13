@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="#99000000" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@drawable/img_ugcvideo_review_guide" android:layout_width="match_parent" android:layout_height="132dp"/>
+    <View android:id="@+id/vMarginBottom" android:background="#99000000" android:layout_width="match_parent" android:layout_height="50dp"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="60dp">
+    <TextView android:textSize="12sp" android:textColor="@color/CT_3" android:id="@+id/tvSort" android:layout_width="24dp" android:layout_height="wrap_content" android:lines="1"/>
+    <RelativeLayout android:id="@+id/rlAvatar" android:layout_width="54dp" android:layout_height="54dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/pv_avatar" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="3dp" android:layout_centerInParent="true" style="@style/CircleImage"/>
+        <ImageView android:id="@+id/ivCrown" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_user_star" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.xiaochuankeji.tieba.ui.widget.AutoFitTextView android:textSize="12sp" android:textColor="@color/CT_2" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="游客" android:lines="1" android:maxLength="8" android:drawablePadding="8dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/CV_2" android:id="@+id/admin_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="话事人" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="10sp" android:textColor="@color/CT_5" android:id="@+id/tvPostCommentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/CT_5" android:id="@+id/tvValueCount" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp"/>
+</LinearLayout>

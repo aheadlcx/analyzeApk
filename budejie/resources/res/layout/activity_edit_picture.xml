@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@drawable/edit_picture_bg_repeat" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/include_titlebar"/>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/edit_picture_edit_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom" android:background="@color/bg_tab_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/tabsLayout" layout="@layout/include_editvideo_bottomtabs"/>
+        <HorizontalScrollView android:id="@+id/contentLayout" android:background="@color/bg_tab_normal" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</LinearLayout>

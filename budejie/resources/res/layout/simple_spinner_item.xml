@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:textSize="14sp" android:textColor="#333" android:gravity="center" android:id="@android:id/text1" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>

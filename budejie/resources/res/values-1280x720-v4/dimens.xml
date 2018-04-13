@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Improved_Dialog_RootView_Width">300dp</dimen>
+    <dimen name="hall_header_pic_width">240dp</dimen>
+    <dimen name="phone_gift_pic_height">35dp</dimen>
+    <dimen name="phone_gift_pic_width">35dp</dimen>
+    <dimen name="phone_gift_item_height">98dp</dimen>
+    <dimen name="phone_gift_item_width">105dp</dimen>
+    <dimen name="phone_gift_list_height">280dp</dimen>
+    <dimen name="phone_option_pointer_margin_left">-535dp</dimen>
+    <dimen name="phone_option_pointer_margin_right">-265dp</dimen>
+    <dimen name="phone_sc_114px">90dp</dimen>
+</resources>

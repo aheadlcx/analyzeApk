@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/deputy_moderator_header_layout" layout="@layout/label_user_header_user_view"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/deputy_moderator_recycler_view" android:background="?attr/common_layout_background" android:paddingLeft="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="82dp" android:layout_below="@+id/deputy_moderator_header_layout"/>
+    <View android:id="@+id/line_view" android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_below="@+id/deputy_moderator_recycler_view"/>
+    <View android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="@dimen/margin_10" android:layout_below="@+id/line_view"/>
+</RelativeLayout>

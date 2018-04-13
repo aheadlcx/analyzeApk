@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="71dp">
+    <View android:id="@+id/big_split_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <FrameLayout android:id="@+id/fl_container" android:layout_width="match_parent" android:layout_height="61dp">
+        <TextView android:textSize="15sp" android:textColor="@color/CT_2" android:layout_gravity="center_vertical" android:id="@+id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="更多精彩话题等你加入"/>
+        <TextView android:textSize="13sp" android:textColor="@color/CW" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_go" android:background="@drawable/login_blue_selector" android:layout_width="83dp" android:layout_height="24dp" android:layout_marginRight="20dp" android:text="去看看→"/>
+    </FrameLayout>
+</LinearLayout>

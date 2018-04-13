@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="100dp" android:layout_height="36dp">
+    <ImageView android:id="@+id/ivUpArrow" android:paddingLeft="@dimen/F6_line" android:paddingTop="8dp" android:paddingRight="@dimen/F6_line" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_godreview_up" android:scaleType="fitStart" android:contentDescription="@string/image"/>
+    <TextView android:textSize="10.43dp" android:textColor="@color/CM" android:gravity="center" android:id="@+id/tvUpCount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/number" android:layout_weight="1"/>
+    <ImageView android:id="@+id/ivDownArrow" android:paddingLeft="@dimen/F6_line" android:paddingTop="8dp" android:paddingRight="@dimen/F6_line" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_godreview_down" android:scaleType="fitStart" android:contentDescription="@string/image"/>
+</LinearLayout>

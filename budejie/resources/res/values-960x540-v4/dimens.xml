@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Improved_Dialog_RootView_Width">300dp</dimen>
+    <dimen name="shop_car_height_large">56dp</dimen>
+    <dimen name="shop_car_width_large">104dp</dimen>
+    <dimen name="game_luck_indiana_item_count_down_marginleft">3dp</dimen>
+    <dimen name="game_luck_indiana_item_gift_desc">11sp</dimen>
+    <dimen name="game_luck_indiana_item_gift_margintop">10dp</dimen>
+    <dimen name="game_luck_indiana_item_height">220dp</dimen>
+    <dimen name="game_luck_indiana_item_indiana_margintop">6dp</dimen>
+    <dimen name="game_luck_indiana_item_left_margintop">35dp</dimen>
+    <dimen name="game_luck_indiana_item_left_width">110dp</dimen>
+    <dimen name="game_luck_indiana_item_ll_count_margintop">40dp</dimen>
+    <dimen name="game_luck_indiana_item_marginleft">48dp</dimen>
+    <dimen name="game_luck_indiana_item_right_margintop">100dp</dimen>
+    <dimen name="game_luck_indiana_item_surfaceView_marginleft">180dp</dimen>
+    <dimen name="game_luck_indiana_item_surfaceView_margintop">103dp</dimen>
+    <dimen name="game_luck_indiana_item_surfaceView_width">129dp</dimen>
+    <dimen name="game_luck_indiana_ll_name_margintop">40dp</dimen>
+    <dimen name="game_luck_indiana_viewpager_margintop">42dp</dimen>
+    <dimen name="game_luck_indiana_viewpager_width">284dp</dimen>
+</resources>

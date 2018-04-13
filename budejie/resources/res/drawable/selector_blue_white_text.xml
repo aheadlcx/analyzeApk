@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/edit_picture_title_bar_btn_press"/>
+    <item android:state_pressed="true" android:color="@color/edit_picture_title_bar_btn_press"/>
+    <item android:state_checked="true" android:color="@color/edit_picture_title_bar_btn_press"/>
+    <item android:state_selected="false" android:color="#888888"/>
+    <item android:color="@color/white"/>
+</selector>

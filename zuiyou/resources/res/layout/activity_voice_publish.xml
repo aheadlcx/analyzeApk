@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <RelativeLayout android:id="@+id/nav_bar" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/back" android:layout_width="@dimen/navbar_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/CM" android:gravity="center" android:id="@+id/tv_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.5dp" android:text="发表" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <cn.xiaochuankeji.tieba.ui.voice.widget.CoverFrameLayout android:id="@+id/rl_cover" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:layout_below="@+id/nav_bar">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_cover" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:viewAspectRatio="1.77"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/tv_change_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:src="@drawable/voice_button_change_img" android:contentDescription="@string/image"/>
+        <RelativeLayout android:layout_gravity="bottom" android:background="@drawable/bg_voice_text" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="110dp" android:layout_above="@+id/pb_play">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/iv_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_play_01"/>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/voice_time_bg" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                    <TextView android:textSize="10sp" android:textColor="@color/CT_6" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/CT_6" android:id="@+id/tv_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="286dp" android:layout_height="42dp" android:layout_marginBottom="6dp" android:layout_above="@+id/ll_time">
+                <TextView android:textSize="13sp" android:textColor="@color/CW" android:layout_gravity="bottom" android:id="@+id/tv_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.4"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ProgressBar android:layout_gravity="bottom" android:id="@+id/pb_play" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginRight="60dp" android:progressDrawable="@drawable/voice_play_bar" style="?android:attr/progressBarStyleHorizontal"/>
+    </cn.xiaochuankeji.tieba.ui.voice.widget.CoverFrameLayout>
+    <TextView android:textSize="12sp" android:textColor="@drawable/text_blue_bg_selector" android:gravity="center" android:id="@+id/tv_select_topic" android:background="@drawable/blue_border_round_rect_bg_selector" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="14dp" android:layout_marginTop="12dp" android:text="选择话题" android:layout_below="@+id/rl_cover"/>
+    <ImageView android:id="@+id/iv_play" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="-20dp" android:layout_marginRight="34dp" android:src="@drawable/voice_play" android:layout_below="@+id/rl_cover" android:layout_alignParentRight="true"/>
+</RelativeLayout>

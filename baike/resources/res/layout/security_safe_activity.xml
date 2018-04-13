@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/security_safe_divider" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <qsbk.app.widget.SettingItem android:id="@+id/change_password" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="修改密码" SettingItem:showDivide="false"/>
+    <View android:id="@+id/change_password_divider" android:background="?attr/setting_line_bg_new" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <qsbk.app.widget.SettingItem android:id="@+id/security_bind" android:layout_width="match_parent" android:layout_height="wrap_content" SettingItem:mainTitle="账号绑定" SettingItem:showDivide="false"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/exchangeactivity_textsize_btn" android:textColor="@color/rooms_third_login_logintext" android:gravity="center" android:id="@+id/exchange" android:background="@drawable/rooms_third_exchange_item_btn" android:layout_width="86dp" android:layout_height="30dp" android:text="@string/exchange_button_text" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="56dp" android:layout_toLeftOf="@+id/exchange" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/exchangeactivity_textsize_big" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/get" android:layout_width="wrap_content" android:layout_height="25dp"/>
+        <TextView android:textSize="@dimen/exchangeactivity_textsize_small" android:textColor="@color/exchangeactivity_textcolor_small" android:gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/get"/>
+    </RelativeLayout>
+</RelativeLayout>

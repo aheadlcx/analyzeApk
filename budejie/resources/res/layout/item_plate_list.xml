@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="76dp">
+    <com.androidex.widget.FilletAsyncImageView android:id="@+id/plate_header" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginLeft="11dp" android:layout_marginTop="10dp" android:layout_marginRight="11dp" android:layout_marginBottom="10dp" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/plate_header" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="?attr/label_list_item_name" android:ellipsize="end" android:id="@+id/plate_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/center_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_below="@+id/plate_name">
+            <TextView android:textSize="@dimen/font_12" android:textColor="?attr/plate_list_item_color" android:ellipsize="end" android:id="@+id/online_person_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <View android:layout_gravity="center_vertical" android:id="@+id/line_view" android:background="?attr/divider_horizontal_bg" android:layout_width="1dp" android:layout_height="@dimen/margin_9" android:layout_marginLeft="6dp"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/plate_list_item_color" android:ellipsize="end" android:id="@+id/update_prompt_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5" android:text="@string/plate_update_text" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/app_red_main_theme" android:ellipsize="end" android:id="@+id/plate_update_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5" android:layout_marginRight="11dp" android:maxLines="1"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_12" android:textColor="?attr/plate_list_item_color" android:id="@+id/plate_introduction_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/margin_10" android:maxLines="1" android:layout_below="@+id/center_layout"/>
+    </RelativeLayout>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

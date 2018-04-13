@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rl_main" android:background="@android:color/white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/ttg_framelayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/vline"/>
+    <TextView android:id="@+id/vline" android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/ttg_linear_bottom"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ttg_linear_bottom" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ttg_linear_tab1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <cn.tatagou.sdk.view.IconTextView android:textSize="22sp" android:textColor="@color/ttg_icon_tab" android:id="@+id/ttg_icon_tab_main" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_tab_home_shixin"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ttg_icon_tab" android:id="@+id/ttg_tv_tab_main_title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抢购"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ttg_linear_tab2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <cn.tatagou.sdk.view.IconTextView android:textSize="22sp" android:textColor="@color/ttg_icon_tab" android:id="@+id/ttg_icon_tab_cart" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_tab_cart_shixin"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ttg_icon_tab" android:id="@+id/ttg_tv_tab_mine_cart" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购物车"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ttg_linear_tab3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <cn.tatagou.sdk.view.IconTextView android:textSize="22sp" android:textColor="@color/ttg_icon_tab" android:id="@+id/ttg_icon_tab_mine" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/ttg_icon_tab_wode_shixin"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ttg_icon_tab" android:id="@+id/ttg_tv_tab_mine_title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

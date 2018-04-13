@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/wivCover" android:layout_width="match_parent" android:layout_height="wrap_content" app:viewAspectRatio="0.75"/>
+    <ImageView android:id="@+id/cover_draft" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/black_40"/>
+    <View android:layout_gravity="bottom" android:background="@drawable/img_ugc_videoitem_mask" android:layout_width="match_parent" android:layout_height="53dp"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="15sp" android:layout_marginLeft="5dp" android:layout_marginBottom="7dp">
+        <TextView android:textSize="11sp" android:textColor="@color/white" android:id="@+id/tvPlayCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="123456" android:lines="1" android:drawableLeft="@drawable/img_ugc_video_playcount_in_recommend" android:drawablePadding="5dp"/>
+        <TextView android:textSize="11sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tvLikeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="123456" android:lines="1" android:drawableLeft="@drawable/img_ugc_videoitem_like_flag_in_recommend" android:drawablePadding="5dp"/>
+    </LinearLayout>
+    <TextView android:textSize="11sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/tvDrafts" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7dp" android:text="草稿箱" android:drawableTop="@drawable/icon_draft" android:drawablePadding="3dp"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/ivFollowFlag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="7dp" android:src="@drawable/img_ugc_video_follow_flag"/>
+</FrameLayout>

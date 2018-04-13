@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlProgress" android:background="@drawable/uploadmedia_progress_bg" android:layout_width="224dp" android:layout_height="160dp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tvUploadTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <ProgressBar android:id="@+id/pBarUpload" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp" android:layout_marginRight="30dp" android:maxHeight="10dp" android:progressDrawable="@drawable/progressbar_drawable" android:minHeight="10dp" android:layout_below="@+id/tvUploadTitle" style="@style/Widget.ProgressBar.Horizontal"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivCancel" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="-15dp" android:layout_marginRight="-15dp" android:src="@drawable/upload_media_progress_cancel" android:layout_alignTop="@+id/rlProgress" android:layout_alignRight="@+id/rlProgress"/>
+</RelativeLayout>

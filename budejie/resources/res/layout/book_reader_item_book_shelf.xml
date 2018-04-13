@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/book_reader_image_layout" android:background="@drawable/book_reader_store_item_shape" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp">
+        <ImageView android:id="@+id/book_reader_logo_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <TextView android:textSize="12sp" android:textColor="@color/book_reader_white" android:gravity="center" android:id="@+id/book_reader_progress_text_view" android:background="@color/book_reader_half_black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="25dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/book_reader_delete_image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/book_reader_delete_book_selector"/>
+    <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/book_reader_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="2dp" android:maxLines="2" android:layout_below="@+id/book_reader_image_layout"/>
+</RelativeLayout>

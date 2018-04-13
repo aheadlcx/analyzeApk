@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.activity.view.BottomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/bottom_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/bottom_navigation_height">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/bottom_frame" android:background="@drawable/bottom_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/new_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/new_background" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <RelativeLayout android:gravity="bottom" android:layout_gravity="center" android:id="@+id/image_layout_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="40dp" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@+id/new_img" android:background="?attr/bottom_navigation_essence_img" android:layout_width="@dimen/activity_homegroup_buttom_image_size_w" android:layout_height="@dimen/activity_homegroup_buttom_image_size_h" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/activity_homegroup_buttom_txt_size" android:textColor="?attr/bottom_navigation_text" android:id="@+id/tv_cate_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:text="@string/main_bottom_essence" android:layout_below="@+id/new_img" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/duanzi_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/duanzi_background" android:visibility="invisible" android:layout_width="73dp" android:layout_height="37dp"/>
+            <RelativeLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/text_layout_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="40dp" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@+id/duanzi_img" android:background="?attr/bottom_navigation_newest_img" android:layout_width="@dimen/activity_homegroup_buttom_image_size_w" android:layout_height="@dimen/activity_homegroup_buttom_image_size_h" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/activity_homegroup_buttom_txt_size" android:textColor="?attr/bottom_navigation_text" android:id="@+id/tv_cate_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:text="@string/main_bottom_latest" android:layout_below="@+id/duanzi_img" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/sound_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/sound_background" android:visibility="invisible" android:layout_width="73dp" android:layout_height="37dp"/>
+            <RelativeLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/sound_layout_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="40dp" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@+id/apply_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/bottom_navigation_posted" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/video_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/video_background" android:visibility="invisible" android:layout_width="73dp" android:layout_height="37dp"/>
+            <RelativeLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/goods_layout_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="40dp" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@+id/goods_img" android:background="?attr/bottom_navigation_attention_img" android:layout_width="@dimen/activity_homegroup_buttom_image_size_w" android:layout_height="@dimen/activity_homegroup_buttom_image_size_h" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/activity_homegroup_buttom_txt_size" android:textColor="?attr/bottom_navigation_text" android:id="@+id/goods_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:text="@string/main_bottom_news" android:layout_below="@+id/goods_img" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/set_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/set_background" android:visibility="invisible" android:layout_width="73dp" android:layout_height="37dp"/>
+            <RelativeLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/myinfo_layout_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="60dp" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@+id/more_img" android:background="?attr/bottom_navigation_my_img" android:layout_width="@dimen/activity_homegroup_buttom_image_size_w" android:layout_height="@dimen/activity_homegroup_buttom_image_size_h" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/activity_homegroup_buttom_txt_size" android:textColor="?attr/bottom_navigation_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:text="@string/main_bottom_my" android:layout_below="@+id/more_img" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.budejie.www.activity.view.BottomRelativeLayout>

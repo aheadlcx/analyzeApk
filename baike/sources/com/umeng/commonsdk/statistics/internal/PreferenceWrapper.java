@@ -1,0 +1,23 @@
+package com.umeng.commonsdk.statistics.internal;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+
+public class PreferenceWrapper {
+    private PreferenceWrapper() {
+    }
+
+    public static SharedPreferences getInstance(Context context, String str) {
+        if (context != null) {
+            return context.getSharedPreferences(str, 0);
+        }
+        return null;
+    }
+
+    public static SharedPreferences getDefault(Context context) {
+        if (context != null) {
+            return context.getSharedPreferences("umeng_general_config", 0);
+        }
+        return null;
+    }
+}

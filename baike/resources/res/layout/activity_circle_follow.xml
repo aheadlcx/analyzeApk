@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_ptr_listview"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/login_layout" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/empty_list" android:visibility="gone" android:layout_width="116dp" android:layout_height="116dp" android:layout_marginBottom="19dp" android:src="?attr/emptylistIcon" android:contentDescription="@null"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/unlogin" android:layout_width="103dp" android:layout_height="101dp" android:layout_marginBottom="19dp" android:contentDescription="@null" style="?attr/unloginIcon"/>
+        <TextView android:textSize="16sp" android:id="@+id/tips_text_unlogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" style="?attr/unloginTips"/>
+        <Button android:textSize="@dimen/g_txt_big" android:gravity="center" android:id="@+id/id_btn_login" android:layout_width="128dp" android:layout_height="48dp" android:text="@string/goto_login_or_register" style="?attr/unloginButton"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/ttg_titlebar_layout"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.tatagou.sdk.view.pullview.PullToRefreshLayout android:id="@+id/refresh_view" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/ttg_refresh_head"/>
+            <cn.tatagou.sdk.view.pullview.PullableListView android:id="@+id/pull_grid" android:background="@color/ttg_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/ttg_bg" android:dividerHeight="0dp"/>
+            <include layout="@layout/ttg_load_more"/>
+        </cn.tatagou.sdk.view.pullview.PullToRefreshLayout>
+        <include layout="@layout/ttg_hint_layout"/>
+        <include layout="@layout/ttg_loading"/>
+    </FrameLayout>
+</LinearLayout>

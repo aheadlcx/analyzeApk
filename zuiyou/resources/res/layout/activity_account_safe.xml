@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navTitleText="账号与安全" app:navNeedBack="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_avatar_member" android:layout_width="73dp" android:layout_height="73dp" android:layout_marginTop="35dp" android:layout_marginBottom="35dp" app:placeholderImage="@drawable/img_default_avatar_4" app:roundAsCircle="true"/>
+        <RelativeLayout android:id="@+id/rl_nick_name" android:background="@drawable/edit_input_line" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="14dp" android:textColor="@color/CT_5" android:id="@+id/tv_account_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前账号"/>
+            <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_3" android:id="@+id/tv_nickname" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="呵呵" android:layout_alignLeft="@+id/tv_account_tip" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_5" android:id="@+id/tv_login_type" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ登陆" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_go_bind" android:background="@drawable/edit_input_line" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:id="@+id/tv_bindphone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15344445555" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16dp" android:textColor="@color/CM" android:id="@+id/tv_go_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去绑定" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/go_set_password" android:background="@drawable/edit_input_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:id="@+id/tv_update_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="修改密码" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="10dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

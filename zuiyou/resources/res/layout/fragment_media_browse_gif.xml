@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="center" android:id="@+id/pvThumbImg" android:layout_width="250dp" android:layout_height="150dp"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/ivProgressBg" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/bg_progress"/>
+    <cn.xiaochuankeji.tieba.ui.mediabrowse.component.RoundProgressBar android:layout_gravity="center" android:id="@+id/roundPBar" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" app:roundColor="#33ffffff" app:roundProgressColor="@android:color/white" app:roundWidth="2dp" app:textColor="@color/white" app:textSize="12sp"/>
+</FrameLayout>

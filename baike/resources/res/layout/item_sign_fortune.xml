@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fortune" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/content" android:background="@drawable/shape_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/astrology_img" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="15dp" app:roundAsCircle="true" app:roundingBorderWidth="2px" app:roundingBorderColor="?attr/color_gray"/>
+        <TextView android:id="@+id/astrology" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="狮子座"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/fortune_container" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp"/>
+        <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="今天你开心么？"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="20dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/vote_layout" android:background="?attr/qiuyoucircle_vote_container_bg" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="20dp" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true">
+                <TextView android:textSize="14dp" android:gravity="center" android:id="@+id/vote_left" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1"/>
+                <TextView android:textSize="14dp" android:gravity="center" android:id="@+id/vote_right" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/vote_vs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qiuyoucircle_vote_vs_on" android:scaleType="fitCenter" android:layout_alignLeft="@+id/vote_layout" android:layout_alignTop="@+id/vote_layout" android:layout_alignRight="@+id/vote_layout" android:layout_alignBottom="@+id/vote_layout"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/group_info_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <qsbk.app.widget.NoScrollGridView android:id="@+id/grid" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:numColumns="2"/>
+    <TextView android:textSize="13sp" android:textColor="?attr/group_info_label" android:gravity="center" android:id="@+id/close" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="36dp" android:text="清空记录"/>
+</LinearLayout>

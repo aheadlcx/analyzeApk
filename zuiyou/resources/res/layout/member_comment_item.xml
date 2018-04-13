@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.ui.tempview.DealChildLongClickRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/item_layout" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/ll_user" android:layout_width="match_parent" android:layout_height="30dp">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/ivAvatar" android:layout_width="30dp" android:layout_height="30dp" style="@style/CircleImage"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/ivAvatar" android:layout_alignTop="@+id/ivAvatar">
+                <TextView android:textSize="12.17dp" android:textColor="@color/CT_4" android:ellipsize="end" android:id="@+id/tvWriterName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="10.43dp" android:textColor="@color/CT_6" android:ellipsize="end" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <cn.xiaochuankeji.tieba.ui.widget.updown.CommentItemUpDownView android:id="@+id/commentItemUpDownView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:layout_marginRight="-13dp" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/post_privacy" android:paddingLeft="20dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/post_privacy" android:layout_toLeftOf="@+id/commentItemUpDownView"/>
+            <ImageView android:id="@+id/selector_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_comment_hide_item" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <cn.xiaochuankeji.tieba.ui.comment.CommentBaseElementLinearLayout android:id="@+id/baseCommentElementView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_below="@+id/ll_user"/>
+        <cn.xiaochuankeji.tieba.ui.comment.PostOrPgcViewInComment android:id="@+id/postView" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" android:layout_below="@+id/baseCommentElementView"/>
+        <TextView android:textSize="14sp" android:textColor="@color/comment_content_gray" android:ellipsize="end" android:id="@+id/tvParentComment" android:background="#f7f7f7" android:padding="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:maxHeight="56dp" android:maxLines="2" android:layout_below="@+id/postView" android:lineSpacingMultiplier="1.35"/>
+    </RelativeLayout>
+    <View android:id="@+id/split_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/item_layout"/>
+</cn.xiaochuankeji.tieba.ui.tempview.DealChildLongClickRelativeLayout>

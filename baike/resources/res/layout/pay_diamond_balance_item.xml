@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_live_diamond_balance"/>
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="4dp" android:src="@drawable/pay_diamond"/>
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff41364f" android:id="@+id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="39dp">
+        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#ff87808f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/pay_method"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="78dp">
+        <FrameLayout android:id="@+id/fl_ali" android:background="@color/white" android:layout_width="179dp" android:layout_height="78dp" android:layout_weight="1" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="22dp" android:src="@drawable/pay_ali"/>
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff00a0e9" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="77dp" android:text="@string/pay_ali_pay"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/pay_unselected"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/iv_ali_selected" android:visibility="gone" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/pay_ali_selected"/>
+        </FrameLayout>
+        <View android:background="@color/transparent" android:layout_width="2dp" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/fl_wechat" android:background="@color/white" android:visibility="visible" android:layout_width="179dp" android:layout_height="78dp" android:layout_weight="1" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="22dp" android:src="@drawable/pay_wechat"/>
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff17bd0b" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="77dp" android:text="@string/pay_wecaht_pay"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/pay_unselected"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/iv_wechat_selected" android:visibility="gone" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/pay_wechat_selected"/>
+        </FrameLayout>
+        <View android:background="@color/transparent" android:layout_width="2dp" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/fl_qiubai" android:background="@color/white" android:visibility="gone" android:layout_width="179dp" android:layout_height="78dp" android:layout_weight="1" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="22dp" android:src="@drawable/pay_wechat"/>
+            <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#ff17bd0b" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="77dp" android:text="@string/pay_wecaht_pay"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/pay_unselected"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/iv_qiubai_selected" android:visibility="gone" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/pay_wechat_selected"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="15dp"/>
+</LinearLayout>

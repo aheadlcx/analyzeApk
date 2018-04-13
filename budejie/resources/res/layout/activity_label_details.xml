@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout android:id="@+id/appbar_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" fresco:elevation="0dp">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" fresco:layout_scrollFlags="13" fresco:expandedTitleMarginStart="48dp" fresco:expandedTitleMarginEnd="64dp" fresco:contentScrim="?attr/title_background" fresco:statusBarScrim="?attr/title_background">
+                <include android:id="@+id/header_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" fresco:layout_collapseMode="2" layout="@layout/label_activity_details_head"/>
+                <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" fresco:contentInsetStart="0dp" fresco:layout_collapseMode="1">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:id="@+id/back_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="7.5dp">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@+id/back_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/label_title_back_image_default_selector"/>
+                            <TextView android:textSize="@dimen/title_left_right_font_size" android:textColor="@color/label_title_left_back_text_default_selector" android:layout_gravity="center_vertical" android:id="@+id/back_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1dp" android:text="@string/title_back"/>
+                        </LinearLayout>
+                        <include android:id="@+id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/navigation_bar_title"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <com.budejie.www.activity.label.view.LabelTabLayout android:id="@+id/label_tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" fresco:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+    <ImageView android:id="@+id/post_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_11" android:layout_marginBottom="@dimen/margin_11" android:src="?attr/bottom_navigation_posted" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

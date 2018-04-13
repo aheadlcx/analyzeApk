@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.RefreshLinearLayout android:id="@+id/rll" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.widget.StickyNavLayout android:layout_gravity="top" android:orientation="vertical" android:id="@+id/snl_topic" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.youth.banner.Banner android:id="@+id/id_stickynavlayout_topview" android:layout_width="match_parent" android:layout_height="match_parent" app:indicator_width="5dp" app:indicator_height="5dp" app:indicator_margin="5dp" app:indicator_drawable_selected="@drawable/switcher_indicator_select" app:indicator_drawable_unselected="@drawable/switcher_indicator_unselect"/>
+            <FrameLayout android:id="@+id/id_stickynavlayout_indicator" android:layout_width="match_parent" android:layout_height="39.1dp">
+                <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/id_recyclerview_horizontal" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="1dp" android:layout_marginRight="1dp"/>
+            </FrameLayout>
+            <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/id_stickynavlayout_viewpager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </cn.xiaochuankeji.tieba.ui.widget.StickyNavLayout>
+    </cn.xiaochuankeji.tieba.ui.widget.RefreshLinearLayout>
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@+id/title_container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="@dimen/F4_text" android:textColor="@color/search_hint" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tvSearchArea" android:background="@drawable/bg_search_in_top_bar" android:paddingLeft="8.7dp" android:layout_width="0dp" android:layout_height="27dp" android:text="搜索话题 / 帖子 / 用户" android:drawableLeft="@drawable/topic_search" android:drawablePadding="10.5dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/ivAdd" android:layout_width="27dp" android:layout_height="27dp" android:layout_marginLeft="14dp" android:src="@drawable/topic_establish" android:scaleType="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <cn.xiaochuankeji.tieba.widget.CustomEmptyView android:id="@+id/custom_empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

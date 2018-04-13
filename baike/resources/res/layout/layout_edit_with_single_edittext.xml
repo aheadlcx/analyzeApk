@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="?attr/editInfoEditArea" android:padding="@dimen/padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_content" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:gravity="bottom" android:id="@+id/edittext" style="@style/EditText"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/g_txt_small" android:textColor="@r$color/g_txt_small" android:id="@+id/tips" android:paddingLeft="@dimen/padding_medium" android:paddingRight="@dimen/padding_medium" android:paddingBottom="@dimen/padding_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_signature"/>
+        <TextView android:textSize="@dimen/g_txt_small" android:textColor="@r$color/edit_info_left_count" android:gravity="right" android:layout_gravity="right" android:id="@+id/left_count" android:paddingRight="@dimen/padding_medium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

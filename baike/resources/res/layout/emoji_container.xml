@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/emotions" android:background="?attr/emotion_main_bg" android:layout_width="match_parent" android:layout_height="@dimen/emotion_container_height">
+    <android.support.v4.view.ViewPager android:id="@+id/emoji_viewpager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageButton android:gravity="center" android:id="@+id/latest" android:background="#e1e1e1" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/emoji_recent" android:layout_weight="1"/>
+        <ImageButton android:gravity="center" android:id="@+id/tuotuo" android:background="#fafafa" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/emoji_tuotuo" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

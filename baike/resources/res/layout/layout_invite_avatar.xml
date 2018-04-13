@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="43dp" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/avatar" android:layout_width="@dimen/small_user_icon" android:layout_height="@dimen/small_user_icon" android:layout_marginLeft="10dp" android:layout_centerInParent="true" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/g_txt_small" android:textColor="?attr/official_list_header_tips" android:gravity="center" android:layout_width="match_parent" android:layout_height="32dp" android:text="@string/official_list_tips"/>
+    <View android:background="?attr/official_list_divider" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+</LinearLayout>

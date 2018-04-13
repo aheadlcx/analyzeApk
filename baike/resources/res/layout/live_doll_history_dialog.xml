@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/live_doll_dialog_bg" android:clickable="true" android:layout_width="290dp" android:layout_height="340dp" android:layout_marginTop="120dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="154dp" android:layout_height="22dp" android:layout_marginTop="5dp" android:src="@drawable/live_doll_history_text" android:scaleType="fitXY"/>
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginTop="60dp"/>
+        <qsbk.app.core.widget.EmptyPlaceholderView android:layout_gravity="center_horizontal" android:id="@+id/doll_history_empty" android:visibility="gone" android:layout_width="245dp" android:layout_height="220dp" android:layout_marginTop="60dp"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_doll_empty" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="100dp" android:src="@drawable/live_doll_history_empty_ic" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#916800" android:layout_gravity="center_horizontal" android:id="@+id/tv_doll_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="215dp" android:text="暂时还没有人抓中哦"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_close" android:background="@color/transparent" android:padding="12dp" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginLeft="140dp" android:layout_marginTop="95dp" android:src="@drawable/live_doll_dialog_close" android:scaleType="fitXY"/>
+</FrameLayout>

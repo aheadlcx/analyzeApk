@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <Button android:textSize="@dimen/g_txt_big" android:textColor="@r$color/random_start_btn_text_color" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/start" android:background="@drawable/random_start" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginBottom="18dp" android:text="@string/random_start"/>
+    <View android:id="@+id/layerMask" android:background="@r$color/layer_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

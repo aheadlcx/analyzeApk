@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/common_press" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="13sp" android:textColor="?attr/choose_contact_item_title_text_color" android:id="@+id/title" android:background="?attr/choose_contact_item_title_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/contact_icon" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="15sp" android:textColor="?attr/choose_contact_item_name_text_color" android:id="@+id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>

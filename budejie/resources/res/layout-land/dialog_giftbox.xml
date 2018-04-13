@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <View android:id="@+id/null_boxgift" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <include android:layout_width="match_parent" android:layout_height="50dp" layout="@layout/giftbox_input_number_portrait"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_giftbox_content" android:layout_width="@dimen/gift_box_viewpage_width_land" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_giftbox_header" android:layout_width="match_parent" android:layout_height="41dp">
+            <RelativeLayout android:id="@+id/rl_giftbox_give_user" android:paddingLeft="@dimen/phone_sc_12dp" android:paddingRight="@dimen/phone_sc_5dp" android:layout_width="150dp" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/phone_sc_12sp" android:textColor="@color/gift_box_text1" android:id="@+id/tx_give_tag" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送给" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/phone_sc_16sp" android:textColor="@color/gift_box_text2" android:ellipsize="end" android:id="@+id/tx_giftbox_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_sc_5dp" android:lines="1" android:maxEms="5" android:drawableRight="@drawable/choose_gift_select_number_pop_down" android:drawablePadding="14dp" android:layout_toRightOf="@+id/tx_give_tag" android:layout_alignBottom="@+id/tx_give_tag"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_pay_boxgift" android:paddingLeft="@dimen/phone_sc_10dp" android:paddingRight="@dimen/phone_sc_12dp" android:layout_width="105dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/iv_pay_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/phone_sc_12dp" android:layout_toLeftOf="@+id/iv_pay_tag" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/phone_sc_16sp" android:textColor="#fff10e" android:id="@+id/tv_currency_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/phone_sc_11sp" android:textColor="@color/gift_box_text2" android:ellipsize="end" android:gravity="right" android:id="@+id/tv_currency_giftbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30dp" android:text="0" android:lines="1" android:maxEms="8" android:drawableLeft="@drawable/common_currency6" android:drawablePadding="4dp" android:layout_below="@+id/tv_currency_tag" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:background="@color/pop_gray_line" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <FrameLayout android:id="@+id/fl_viewpage_wraplayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <cn.v6.sixrooms.room.view.CustomViewPager android:id="@+id/vp_giftbox" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/rl_super_girl_gift_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@color/pop_gray_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginRight="@dimen/phone_sc_15dp"/>
+            <TextView android:textSize="@dimen/phone_sc_11sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/tv_super_girl_gift_explain" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginLeft="@dimen/phone_sc_15dp" android:layout_marginRight="@dimen/phone_sc_15dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <cn.v6.sixrooms.widgets.phone.indicator.MagicIndicator android:id="@+id/magic_indicator2" android:layout_width="match_parent" android:layout_height="40dp"/>
+        <ImageView android:background="@color/gift_box_line1" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:id="@+id/rl_giftbox_bottom_layout" android:layout_width="match_parent" android:layout_height="88dp">
+            <Button android:enabled="false" android:textSize="@dimen/phone_sc_18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/bt_give_giftbox" android:background="@drawable/choose_gifts_give_button_selector" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="5dp" android:layout_marginTop="@dimen/phone_sc_3dp" android:layout_marginRight="5dp" android:layout_marginBottom="@dimen/phone_sc_3dp" android:text="赠送" android:layout_alignParentBottom="true"/>
+            <TextView android:textSize="@dimen/phone_sc_14sp" android:textColor="@color/gift_box_text2" android:gravity="center" android:id="@+id/tv_anonymous_giftbox" android:padding="10dp" android:layout_width="75dp" android:layout_height="@dimen/phone_sc_45dp" android:text="匿名" android:drawableRight="@drawable/giftbox_anonymous_not_selected" android:layout_above="@+id/bt_give_giftbox"/>
+            <TextView android:textSize="@dimen/phone_sc_18sp" android:textColor="@color/gift_box_text2" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_number_giftbox" android:background="@drawable/giftbox_gift_number_bg" android:paddingLeft="@dimen/phone_sc_10dp" android:paddingRight="@dimen/phone_sc_10dp" android:layout_width="110dp" android:layout_height="45dp" android:layout_marginLeft="10dp" android:layout_marginTop="@dimen/phone_sc_3dp" android:layout_marginRight="@dimen/phone_sc_5dp" android:text="1" android:lines="1" android:maxEms="3" android:layout_above="@+id/bt_give_giftbox" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

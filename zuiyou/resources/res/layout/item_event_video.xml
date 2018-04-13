@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingRight="4dp" android:longClickable="true" android:layout_width="116dp" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/eventVideoCover" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="@drawable/story_cover_empty_view" app:roundedCornerRadius="5dp"/>
+        <ImageView android:id="@+id/iv_moment_master" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_moment_master_view"/>
+        <ImageView android:id="@+id/iv_moment_god" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_god_review_flag"/>
+        <View android:id="@+id/cover_video" android:background="@color/night_icon_cover_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/moreCover" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/cover_ugc_recommend" android:scaleType="fitXY"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_ugc_more_flag"/>
+                <TextView android:textSize="11sp" android:textColor="@color/CW" android:layout_gravity="center_horizontal" android:id="@+id/tvMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="查看更多（1000）" android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="10dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/CircleImage"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="82dp" android:layout_toRightOf="@+id/avatar" android:layout_alignParentTop="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/container" android:background="@drawable/chat_other_item_bg" android:layout_width="169dp" android:layout_height="36dp">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_4" android:id="@+id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="60’’" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/voice_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_other_voice"/>
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/voice_buffering" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/loading_user"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <cn.xiaochuankeji.tieba.ui.widget.text.BadgeTextView android:id="@+id/badge_new" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

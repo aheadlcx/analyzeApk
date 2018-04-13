@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@null" android:paddingBottom="@dimen/list_item_height_small" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="?attr/oneProfileBg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/oneProfileBaseInfoBg" android:layout_width="match_parent" android:layout_height="@dimen/list_item_height_small">
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_title" android:gravity="right" android:layout_width="85dp" android:layout_height="wrap_content" android:text="@string/label_age" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="@r$color/g_txt_big" android:id="@+id/age" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:minWidth="20dp" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_content" android:id="@+id/astrology" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="@dimen/profile_item_margin" android:singleLine="true"/>
+        </LinearLayout>
+        <include layout="@layout/divider_horizontal_small_no_margin"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/oneProfileBaseInfoBg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height_small">
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_title" android:gravity="right" android:layout_width="85dp" android:layout_height="wrap_content" android:text="@string/one_profile_hobby" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_content" android:id="@+id/hobby" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="@dimen/profile_txt_item_margin_right"/>
+        </LinearLayout>
+        <include layout="@layout/divider_horizontal_small_no_margin"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/oneProfileBaseInfoBg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height_small">
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_title" android:gravity="right" android:layout_width="85dp" android:layout_height="wrap_content" android:text="@string/one_profile_location" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_content" android:id="@+id/location" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="@dimen/profile_txt_item_margin_right"/>
+        </LinearLayout>
+        <include layout="@layout/divider_horizontal_small_no_margin"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/oneProfileBaseInfoBg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height_small">
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_title" android:gravity="right" android:layout_width="85dp" android:layout_height="wrap_content" android:text="@string/one_profile_intro" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_content" android:id="@+id/introduce" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="@dimen/profile_txt_item_margin_right"/>
+        </LinearLayout>
+        <include layout="@layout/divider_horizontal_small_no_margin"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/oneProfileBaseInfoBg" android:layout_width="match_parent" android:layout_height="@dimen/list_item_height_small">
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_title" android:gravity="right" android:layout_width="85dp" android:layout_height="wrap_content" android:text="@string/one_profile_create_at" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_content" android:id="@+id/create_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="@dimen/profile_item_margin" android:singleLine="true"/>
+        </LinearLayout>
+        <include layout="@layout/divider_horizontal_small_no_margin"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/oneProfileBaseInfoBg" android:layout_width="match_parent" android:layout_height="@dimen/list_item_height_small">
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_title" android:gravity="right" android:layout_width="85dp" android:layout_height="wrap_content" android:text="@string/one_profile_mobile_brand" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/one_profile_item_content" android:id="@+id/mobile_brand" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="@dimen/profile_item_margin" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+        <TextView android:textSize="@dimen/g_txt_middle" android:textColor="@r$color/base_dialog_negative" android:layout_gravity="center_horizontal" android:id="@+id/textView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nearby_info_notify"/>
+        <CheckBox android:textSize="@dimen/g_txt_small" android:textColor="@r$color/base_dialog_negative" android:id="@+id/checkBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:checked="true" android:button="@drawable/custome_checkbox_bg" android:text="@string/nearby_nopop_nexttime"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+</LinearLayout>

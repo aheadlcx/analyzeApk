@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/activity_root_view" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/video_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.v6.sixrooms.ui.phone.room.spirit.SpiritSurfaceView android:id="@+id/ssf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.v6.sixrooms.widgets.phone.RelativeLayoutGift android:id="@+id/gift" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.v6.sixrooms.surfaceanim.view.AnimSurfaceView android:id="@+id/anim_surface_view2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/player_loading" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/room_player_loading_layout"/>
+    <FrameLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.v6.sixrooms.room.gift.GiftWebview android:id="@+id/gift_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.v6.sixrooms.surfaceanim.view.AnimSurfaceViewTouch android:id="@+id/anim_surface_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv_gift_clean" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:layout_marginRight="10dp" android:src="@drawable/room_special_gift_text_clear" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_im_alert" android:background="@drawable/rooms_fouth_im_room_toast_bg" android:paddingLeft="13dp" android:paddingTop="5dp" android:paddingRight="13dp" android:paddingBottom="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/rooms_fouth_im_room_toast_up_arrow" android:drawablePadding="5dp" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center" android:id="@+id/room_loading_ll" android:background="@drawable/portrait_full_screen_player_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_path_player_logo"/>
+    </LinearLayout>
+</RelativeLayout>

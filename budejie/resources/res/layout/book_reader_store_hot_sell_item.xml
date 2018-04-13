@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/book_reader_horizontal_margin" android:layout_marginTop="12dp" android:layout_marginRight="@dimen/book_reader_horizontal_margin">
+        <RelativeLayout android:id="@+id/book_reader_hot_sell_layout" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/book_reader_white" android:gravity="center" android:id="@+id/book_reader_hot_sell_text_view" android:background="@drawable/book_reader_hot_sell_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/book_reader_choice_layout" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/book_reader_white" android:gravity="center" android:id="@+id/book_reader_choice_text_view" android:background="@drawable/book_reader_choice_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/book_reader_serialize_layout" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/book_reader_white" android:gravity="center" android:id="@+id/book_reader_serialize_text_view" android:background="@drawable/book_reader_serialize_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/book_reader_divide_view" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="@dimen/book_reader_divide_line_height" android:layout_marginLeft="@dimen/book_reader_horizontal_margin" android:layout_marginTop="@dimen/book_reader_store_vertical_margin"/>
+</LinearLayout>

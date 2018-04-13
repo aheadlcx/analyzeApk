@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_vertical" android:orientation="horizontal" android:background="#1a1a1a" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="64dp">
+    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/down_loading" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="17dp" android:paddingRight="11dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="13sp" android:textColor="#4cffffff" android:id="@+id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/stop" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/offline_stop_icon" android:scaleType="centerInside"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/five_dip" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.v6.sixrooms.widgets.phone.GiftGridView android:id="@+id/gv_gift_list" android:background="@color/white" android:paddingLeft="1dp" android:paddingRight="1dp" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/white" android:horizontalSpacing="0dp" android:verticalSpacing="2dp" android:numColumns="4"/>
+</LinearLayout>

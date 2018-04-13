@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/iv_avatar" android:layout_width="40dp" android:layout_height="40dp" app:placeholderImageScaleType="6" app:actualImageScaleType="6" app:backgroundImage="@color/white" app:roundAsCircle="true"/>
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#fff688" android:ellipsize="middle" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="160dp" android:text="罗洪" android:layout_weight="1"/>
+        <TextView android:textSize="15sp" android:textColor="#fddb2e" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_diamond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="8dp" android:src="@drawable/live_red_envelopes_diamond"/>
+    </LinearLayout>
+    <View android:layout_gravity="center" android:background="#ff9e9e" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

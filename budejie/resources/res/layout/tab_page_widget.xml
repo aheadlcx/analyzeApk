@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.budejie.www.activity.view.MyViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="@dimen/tabwidgt_height"/>
+    <com.budejie.www.activity.view.TabPageIndicator android:id="@+id/tab_page_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:layout_alignBottom="@+id/viewpager" android:layout_alignParentRight="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

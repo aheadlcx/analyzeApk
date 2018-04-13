@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#b2333333" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/wivCover" android:layout_width="match_parent" android:layout_height="wrap_content" app:viewAspectRatio="0.75"/>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="11sp" android:textColor="@color/white" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传成功! 分享给朋友" android:layout_centerHorizontal="true"/>
+        <View android:id="@+id/vDivider" android:background="@color/CL" android:layout_width="133dp" android:layout_height="@dimen/divide_space_1px" android:layout_marginTop="12dp" android:layout_below="@+id/tvTitle"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_below="@+id/vDivider" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/ivShareQQ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_ugc_share_qq"/>
+            <ImageView android:id="@+id/ivShareWechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:src="@drawable/img_ugc_share_wechat" android:layout_toRightOf="@+id/ivShareQQ"/>
+            <ImageView android:id="@+id/ivShareWeChatCircle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:src="@drawable/img_ugc_share_wechat_circle" android:layout_toRightOf="@+id/ivShareWechat"/>
+            <ImageView android:id="@+id/ivShareQQZone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/img_ugc_share_qq_zone" android:layout_below="@+id/ivShareQQ"/>
+            <ImageView android:id="@+id/ivShareWeibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="4dp" android:src="@drawable/img_ugc_share_weibo" android:layout_toRightOf="@+id/ivShareQQZone" android:layout_below="@+id/ivShareWechat"/>
+            <ImageView android:id="@+id/ivDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="4dp" android:src="@drawable/img_ugc_share_download" android:layout_toRightOf="@+id/ivShareWeibo" android:layout_below="@+id/ivShareWeChatCircle"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

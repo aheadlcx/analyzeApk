@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <RelativeLayout android:id="@+id/nav_bar" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/back" android:layout_width="@dimen/navbar_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/CM" android:gravity="center" android:id="@+id/tv_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.5dp" android:text="下一步" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <cn.xiaochuankeji.tieba.ui.hollow.widget.TouchListenerLayout android:id="@+id/layout_touch" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <EditText android:textSize="15sp" android:textColor="@color/CT_1" android:textColorHint="@color/CT_6" android:id="@+id/et_content" android:background="@null" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/voice_create_warn" android:cursorVisible="false" android:lineSpacingMultiplier="1.2"/>
+    </cn.xiaochuankeji.tieba.ui.hollow.widget.TouchListenerLayout>
+    <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/CM" android:gravity="center" android:id="@+id/tv_time" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <cn.xiaochuankeji.tieba.ui.voice.widget.AudioWaveView android:id="@+id/awv" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="15dp" android:layout_below="@+id/nav_bar"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <ImageView android:id="@+id/iv_delete" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_record_delete"/>
+        <ImageView android:id="@+id/iv_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/voice_record"/>
+        <ImageView android:id="@+id/iv_play" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/voice_record_play"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/F2_text" android:textColor="@color/CT_6" android:gravity="center" android:id="@+id/tv_tip" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="点击录音"/>
+</LinearLayout>

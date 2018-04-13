@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="47dp" style="?attr/nearby_list_item_bg">
+        <TextView android:textSize="@dimen/g_txt_big" android:textColor="?attr/info_complete_text2" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title" android:paddingLeft="@dimen/padding_small" android:paddingRight="@dimen/padding_medium" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1"/>
+        <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/checkbox" android:background="@null" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="@dimen/padding_large" android:layout_marginRight="@dimen/padding_small" android:button="@drawable/edit_job_checkbox_selector"/>
+    </LinearLayout>
+    <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium"/>
+</LinearLayout>

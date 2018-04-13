@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="55dp">
+        <TextView android:textSize="17sp" android:id="@+id/title_left_btn" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="#ff525252" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_layout"/>
+    <com.sina.weibo.sdk.web.view.LoadingBar android:id="@+id/load_bar" android:layout_width="match_parent" android:layout_height="3dp" android:layout_below="@+id/title_layout"/>
+    <View android:background="@drawable/weibosdk_common_shadow_top" android:layout_width="match_parent" android:layout_height="3dp" android:layout_below="@+id/title_layout"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/retry_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:src="@drawable/weibosdk_empty_failed"/>
+        <TextView android:textSize="14sp" android:textColor="#ffbdbdbd" android:id="@+id/retry_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button android:textSize="16sp" android:textColor="#ff787878" android:gravity="center" android:id="@+id/retry_btn" android:background="@drawable/retry_btn_selector" android:layout_width="142dp" android:layout_height="46dp" android:layout_marginTop="10dp" android:text="重新加载"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/ll_spectator_page" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.v6.sixrooms.widgets.phone.SpectorPullToRefresh android:orientation="vertical" android:id="@+id/ll_spectator_view" android:background="#f4f4f4" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-1dp" android:layout_marginBottom="-8dp" android:layout_above="@+id/ll_spectator_option">
+        <ListView android:id="@+id/lv_spectator" android:background="#f4f4f4" android:fadingEdge="none" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:groupIndicator="@null" android:childDivider="@drawable/rooms_third_onepx_line" android:divider="@drawable/rooms_third_onepx_line"/>
+    </cn.v6.sixrooms.widgets.phone.SpectorPullToRefresh>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/ll_spectator_option" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/room_bottombar_area_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_guard" android:background="@drawable/room_bottombar_bg_unchecked" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_guard" android:background="@drawable/rooms_third_guard_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+            <TextView android:textSize="@dimen/room_bottombar_textsize" android:textColor="@color/room_bottombar_textcolor_unchecked" android:id="@+id/tv_guard_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/str_guard" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_manager" android:background="@drawable/room_bottombar_bg_unchecked" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_manager" android:background="@drawable/rooms_third_manager_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+            <TextView android:textSize="@dimen/room_bottombar_textsize" android:textColor="@color/room_bottombar_textcolor_unchecked" android:id="@+id/tv_manager_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/str_manager" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_common_spectator" android:background="@drawable/room_bottombar_bg_checked" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_common_spectator" android:background="@drawable/rooms_third_room_spectator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+            <TextView android:textSize="@dimen/room_bottombar_textsize" android:textColor="@color/room_bottombar_textcolor_unchecked" android:id="@+id/tv_common_spectator_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/str_common_spectator" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

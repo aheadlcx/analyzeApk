@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navTitleText="意见反馈" app:navNeedBack="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/navBar">
+        <TextView android:textSize="15sp" android:textColor="@color/text_main_black" android:gravity="center_vertical" android:id="@+id/tvVideoError" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="视频播放失败" android:drawableLeft="@drawable/img_video_error" android:drawablePadding="12dp"/>
+        <View android:background="@color/CL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="58dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvPicError" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="图片打不开" android:drawableLeft="@drawable/img_pic_error" android:drawablePadding="12dp"/>
+        <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_marginLeft="58dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvOther" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="其他问题" android:drawableLeft="@drawable/img_pic_other" android:drawablePadding="12dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/CT_5" android:gravity="center" android:id="@+id/tvQQQunNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="208dp" android:text="官方QQ④群：150841325"/>
+    </LinearLayout>
+</RelativeLayout>

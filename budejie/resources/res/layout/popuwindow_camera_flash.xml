@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="horizontal" android:id="@+id/flash_layout" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <RadioButton android:textColor="@color/flash_control_selector" android:gravity="center" android:id="@+id/flash_open" android:background="@null" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/open"/>
+    <RadioButton android:textColor="@color/flash_control_selector" android:gravity="center" android:id="@+id/flash_close" android:background="@null" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:checked="true" android:button="@null" android:text="@string/colse"/>
+</RadioGroup>

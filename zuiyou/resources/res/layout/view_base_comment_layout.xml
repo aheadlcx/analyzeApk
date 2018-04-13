@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/marginView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp"/>
+    <cn.xiaochuankeji.tieba.ui.widget.customtv.ExpandableTextView android:textSize="@dimen/F2_text" android:textColor="@color/CT_2" android:id="@+id/expandTextView" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:lineSpacingExtra="3dp"/>
+    <cn.xiaochuankeji.tieba.ui.comment.soundnewvisual.SoundNewVisualView android:id="@+id/newSoundView" android:visibility="gone" android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_marginRight="80dp" android:layout_marginBottom="2dp"/>
+    <cn.xiaochuankeji.tieba.ui.post.postitem.MultipleImgFrameLayoutContainer android:id="@+id/flPicContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_marginBottom="2dp"/>
+</merge>

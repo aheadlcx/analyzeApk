@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/ttg_titlebar_layout"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.tatagou.sdk.view.pullview.AutoPullToRefreshLayout android:id="@+id/auto_pull_footprint" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/ttg_refresh_head"/>
+            <cn.tatagou.sdk.view.pullview.AutoPullAbleListView android:id="@+id/lv_footprint" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/ttg_white" android:dividerHeight="0dp"/>
+        </cn.tatagou.sdk.view.pullview.AutoPullToRefreshLayout>
+        <include layout="@layout/ttg_list_back_top"/>
+        <include layout="@layout/ttg_hint_layout"/>
+        <include layout="@layout/ttg_loading"/>
+    </FrameLayout>
+</LinearLayout>

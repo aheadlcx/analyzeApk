@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="50dp" android:layout_height="30dp">
+    <TextView android:textSize="@dimen/live_text_10sp" android:textColor="#e9d8ff" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_result" android:background="@drawable/bg_corner_game_rolltable_history_item" android:layout_width="35dp" android:layout_height="14dp" android:layout_margin="8dp" android:text="2"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_history" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/tab_new" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/game_rolltable_new"/>
+</FrameLayout>

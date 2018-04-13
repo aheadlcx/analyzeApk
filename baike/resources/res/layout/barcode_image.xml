@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qsbk.app.widget.barcode.BarcodeView xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/zoomview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>

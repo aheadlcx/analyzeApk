@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="?attr/setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/phone_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16sp" android:id="@+id/phone" android:background="@null" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:hint="@string/enter_phone_num" android:maxLength="11" android:inputType="numberSigned" style="?attr/edit_txt"/>
+        <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/third_verify" android:layout_width="match_parent" android:layout_height="48dp">
+        <EditText android:textSize="16sp" android:id="@+id/captcha" android:background="@null" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:hint="@string/enter_verifycode" android:maxLength="6" android:inputType="numberSigned" style="?attr/edit_txt"/>
+        <qsbk.app.widget.CaptchaButton android:enabled="false" android:textSize="10sp" android:textColor="?attr/bind_btn_text_color" android:id="@+id/get_code" android:background="?attr/bind_btn_bg" android:layout_width="60dp" android:layout_height="22dp" android:layout_marginRight="20dp" android:text="@string/get_verify_code" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/pwd_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16sp" android:id="@+id/pwd" android:background="@null" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:inputType="textPassword" style="?attr/edit_txt"/>
+        <View android:layout_gravity="bottom" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    </FrameLayout>
+    <Button android:enabled="false" android:textSize="16sp" android:textColor="?attr/bind_btn_text_color" android:layout_gravity="center_horizontal" android:id="@+id/bind" android:background="?attr/bind_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp" android:text="@string/done"/>
+    <TextView android:textSize="12sp" android:textColor="#8f8f95" android:id="@+id/bind_phone_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="17dp" android:layout_marginRight="20dp" android:text="1. 绑定手机号，账户更安全 
+2. 一个手机号只能绑定一个糗百账号" android:lineSpacingExtra="3dp"/>
+</LinearLayout>

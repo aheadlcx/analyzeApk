@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/topic_cover" android:layout_width="43dp" android:layout_height="43dp" android:layout_marginTop="11dp" style="@style/RoundedImage"/>
+    <TextView android:textSize="13sp" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/label_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8.5dp" android:layout_marginRight="8dp" android:maxLines="2"/>
+    <TextView android:textSize="11sp" android:textColor="@color/CT_5" android:ellipsize="end" android:gravity="center" android:id="@+id/label_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5.5dp" android:layout_marginRight="8dp" android:maxLines="1"/>
+    <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:id="@+id/btn_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9dp" android:src="@drawable/selector_follow_recommended_topic"/>
+</merge>

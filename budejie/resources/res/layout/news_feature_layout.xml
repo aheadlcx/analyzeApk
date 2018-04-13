@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TabHost android:id="@android:id/tabhost" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/navigation_bar"/>
+            <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"/>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0"/>
+            <FrameLayout android:id="@+id/real_tab_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </TabHost>
+    <ImageView android:id="@+id/melodyview" android:background="@anim/melody_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="55dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

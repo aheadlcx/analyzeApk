@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/line" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height">
+        <RadioGroup android:orientation="vertical" android:id="@+id/mRgFloatTabs" android:layout_width="wrap_content" android:layout_height="42.4dp" android:layout_marginLeft="12dp">
+            <RadioButton android:textSize="@dimen/font_15" android:textColor="#3385ff" android:id="@+id/mRbHottest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/tab_posts" android:layout_weight="1"/>
+            <View android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:background="#3385ff" android:layout_width="10dp" android:layout_height="2dp"/>
+        </RadioGroup>
+        <View android:id="@+id/divide_line_view" android:background="?attr/divider_horizontal_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+    </LinearLayout>
+</RelativeLayout>

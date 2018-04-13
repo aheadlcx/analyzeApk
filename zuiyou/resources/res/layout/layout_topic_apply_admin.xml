@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="60.9dp">
+    <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CB" android:gravity="center" android:id="@+id/btn_apply_admin" android:background="@drawable/btn_apply_agree_selector" android:layout_width="match_parent" android:layout_height="34.8dp" android:layout_marginLeft="@dimen/left_right_common_distance" android:layout_marginRight="@dimen/left_right_common_distance" android:text="申请成为话事人" android:layout_centerVertical="true"/>
+</RelativeLayout>

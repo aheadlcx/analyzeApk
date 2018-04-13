@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?attr/setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <qsbk.app.widget.MarqueeTextView android:textSize="14sp" android:textColor="?attr/color_white" android:ellipsize="marquee" android:gravity="center" android:id="@+id/tip" android:background="#66000000" android:paddingLeft="20dp" android:paddingRight="20dp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:fadingEdge="horizontal" android:layout_width="0dp" android:layout_height="30dp" android:text="" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:layout_weight="3" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+        <ImageView android:layout_width="72dp" android:layout_height="72dp" android:layout_marginTop="35dp" android:src="@drawable/ic_wallet_balance"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/color_gray" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="我的余额"/>
+        <TextView android:textSize="36sp" android:textStyle="bold" android:textColor="?attr/color_black" android:gravity="center" android:id="@+id/balance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="0.00"/>
+        <Button android:enabled="true" android:textSize="16sp" android:textColor="?attr/bind_btn_text_color" android:layout_gravity="center_horizontal" android:id="@+id/btn_withdraw" android:background="?attr/bind_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp" android:text="@string/withdraw"/>
+        <Button android:enabled="true" android:textSize="16sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/btn_charge" android:background="?attr/bind_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:text="@string/charge"/>
+    </LinearLayout>
+    <qsbk.app.widget.LoadingLayout android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

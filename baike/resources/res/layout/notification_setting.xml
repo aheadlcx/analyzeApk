@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="?attr/setting_bg_new" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/new_message_text_lin" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="center" android:layout_gravity="center" android:id="@+id/new_message" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="新消息提醒"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/new_message_notify_detail" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/sound" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/new_msg_notify_sound"/>
+                <View android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/vibrate" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/new_msg_notify_vibrate"/>
+                <View android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/new_msg_detail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/new_msg_notify_msg_detail"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:tag="gone" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="center" android:layout_gravity="center" android:id="@+id/function_message" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="推送提醒（消息是否在手机状态栏显示）"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/qiushi_notification" android:tag="gone" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="糗事消息"/>
+                <View android:tag="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/qiuyou_circle_notification" android:tag="gone" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="糗友圈消息"/>
+                <View android:tag="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/new_msg" android:tag="gone" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="新小纸条"/>
+                <View android:tag="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/join_group_notification" android:tag="gone" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="群通知"/>
+                <View android:tag="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/new_fans_notification" android:tag="gone" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="新粉丝"/>
+                <View android:tag="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/qiushi" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="精选糗事推送"/>
+                <View android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium" style="?attr/setting_line_bg_new"/>
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/topic" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="卧谈会话题推送"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:tag="gone" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="消息接收开关（关闭后将收不到以下消息）"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/qiushi_smile_notify_detail" android:tag="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/qiushi_smile_number_list" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="糗事笑脸通知" SettingItem:mainTitle="@string/qiushi_smile"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/other_message_text_lin" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="center" android:layout_gravity="center" android:id="@+id/other_message" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="其他提醒"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/other_message_notify_detail" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <qsbk.app.widget.SettingItem android:id="@+id/official_number_list" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" SettingItem:mainTitle="@string/other_message_notify" SettingItem:showDivide="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="免打扰模式"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <qsbk.app.widget.NotificationSettingItem android:id="@+id/silent_mode" android:background="?attr/notification_setting_item_background" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="夜间免打扰模式"/> /&gt;
+
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?attr/setting_bg_new" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="12dp" android:textColor="#a6a6a6" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="开启后，23：00-08：00将屏蔽新消息提醒"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

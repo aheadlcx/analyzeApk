@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <RelativeLayout android:id="@+id/nav_bar" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/back" android:layout_width="@dimen/navbar_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/CM" android:gravity="center" android:id="@+id/tv_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.5dp" android:text="发表" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <cn.xiaochuankeji.tieba.ui.voice.widget.VoicePostItemView android:id="@+id/voicePostItemView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="12sp" android:textColor="@drawable/text_blue_bg_selector" android:gravity="center" android:id="@+id/tv_select_topic" android:background="@drawable/blue_border_round_rect_bg_selector" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="14dp" android:layout_marginTop="10dp" android:text="选择话题" android:layout_below="@+id/rl_cover"/>
+</LinearLayout>

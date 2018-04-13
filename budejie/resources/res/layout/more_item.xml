@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="13sp" android:textColor="?attr/more_single_text_color" android:id="@+id/actionsetting_tv" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="功能设置"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_actionframe" android:background="?attr/list_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/more_font_size_layout" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_font_size_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/more_setting_font_size" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <RadioGroup android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/more_setting_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <RadioButton android:id="@+id/more_setting_font_small" android:text="@string/more_setting_font_small" style="@style/more_setting_option_left"/>
+                <RadioButton android:id="@+id/more_setting_font_medium" android:text="@string/more_setting_font_medium" style="@style/more_setting_option_center"/>
+                <RadioButton android:id="@+id/more_setting_font_large" android:text="@string/more_setting_font_large" style="@style/more_setting_option_right"/>
+            </RadioGroup>
+        </RelativeLayout>
+        <View android:id="@+id/divider_h_view1" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/more_theme_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_theme_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="主题" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <RadioGroup android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/more_theme_rg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <RadioButton android:id="@+id/more_setting_theme_light_colour" android:text="浅色" style="@style/more_setting_option_left"/>
+                <RadioButton android:id="@+id/more_setting_theme_deep_colour" android:text="深色" style="@style/more_setting_option_right"/>
+            </RadioGroup>
+        </RelativeLayout>
+        <View android:id="@+id/divider_h_view2" android:visibility="gone" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/more_topspeed_setting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_topspped_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/more_topspeed_setting" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:id="@+id/more_topspeed_swich" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="topsppedSwitch$Click"/>
+        </RelativeLayout>
+        <View android:id="@+id/more_item_divider" android:visibility="gone" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:enabled="true" android:id="@+id/collectSettingLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="18sp" android:textColor="?attr/more_text_color" android:id="@+id/more_collectsetting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/more_collect_setting_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/repost_on_collect_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="repostOnCollect$Click"/>
+        </RelativeLayout>
+        <View android:visibility="gone" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:enabled="true" android:id="@+id/top_navigation_auto_hide" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="18sp" android:textColor="?attr/more_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/more_top_navigation_setting_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/top_navigation_auto_hide_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="topNavigation$Click"/>
+        </RelativeLayout>
+        <View android:visibility="gone" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:enabled="true" android:id="@+id/bottom_navigation_auto_hide" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="18sp" android:textColor="?attr/more_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/more_bottom_navigation_setting_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/bottom_navigation_auto_hide_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="bottomNavigation$Click"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider_h_view4" android:visibility="gone" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/save_position_layout" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/save_position_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/save_position" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:id="@+id/save_position_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="savePosition$Click"/>
+        </RelativeLayout>
+        <View style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:enabled="true" android:id="@+id/acceptPushLayout" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:id="@+id/more_acceptPush_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/more_accept_push_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:id="@+id/acceptPush_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="acceptPush$Click"/>
+        </RelativeLayout>
+        <View style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/noticeLayout" android:background="?attr/common_press" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="noticeLayouts$Click">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/notice_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/noti_settings" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:visibility="gone" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/noprofile_in_nonwifi_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/noprofile_in_nonwifi_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/more_setting_noprofile_in_nonwifi" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:id="@+id/noprofile_in_nonwifi_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="noprofileInNonwifi$Click"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textColor="?attr/more_single_text_color" android:id="@+id/actionother_tv" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="其他"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_otherframe" android:background="?attr/list_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/clearLayout" android:background="?attr/common_press" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="clearLayout$Click">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_clear_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/clear_content" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_cache_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/more_clear_text" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider_h_view6" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/recom_friend_Layout" android:background="?attr/common_press" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="recommendLayout$Click">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/recom_friend_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/recommend_friend" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/feedBackLayout" android:background="?attr/common_press" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="feedBackLayout$Click">
+            <TextView android:textColor="?attr/more_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@string/yijian" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider_h_view8" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/helpLayout" android:background="?attr/common_press" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="help$Click">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_help_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/more_help" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider_h_view9" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/updateLayout" android:background="?attr/common_press" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="updateLayout$Click">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/update" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <TextView android:id="@+id/tvUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/update" android:layout_centerVertical="true"/>
+            <ImageView android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/more_item_divider_apply" android:visibility="gone" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/more_apply_layout" android:background="?attr/common_press" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="more_apply_recommend$Click">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/apply_recommend_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/apply_recommend" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:id="@+id/apply_recommrnd_imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/notice_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider_h_view10" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/installLayout" android:background="?attr/common_press" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="installLayout$Click">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_install_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/yijianzhuang" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_market_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_centerVertical="true"/>
+            <ImageView android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider_h_view11" style="@style/HorizontalLineStyles"/>
+        <RelativeLayout android:id="@+id/aboutLayout" android:background="?attr/common_press" android:layout_width="match_parent" android:layout_height="45dp" android:onClick="aboutLayout$Click">
+            <TextView android:textColor="?attr/more_text_color" android:id="@+id/more_about_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/about_us" android:layout_centerVertical="true" style="@style/more_item_text_style"/>
+            <ImageView android:background="@drawable/rank_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="21sp" android:textColor="@color/main_red" android:gravity="center" android:layout_gravity="center" android:id="@+id/account_logout_btn" android:background="?attr/white_bg_gray_click_state" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="0dp" android:layout_marginTop="20dp" android:layout_marginRight="0dp" android:layout_marginBottom="20dp" android:text="@string/exitAccount" android:onClick="btnExit$Click"/>
+</LinearLayout>

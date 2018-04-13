@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="464dp">
+    <RelativeLayout android:id="@+id/layer1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="75.8dp" android:layout_height="wrap_content" android:layout_marginLeft="42.2dp" android:src="@drawable/tree_1_down" android:scaleType="fitXY"/>
+        <ImageView android:layout_width="75.8dp" android:layout_height="wrap_content" android:layout_marginRight="26dp" android:src="@drawable/tree_2_down" android:scaleType="fitXY" android:layout_alignParentRight="true"/>
+        <ImageView android:layout_width="75.8dp" android:layout_height="wrap_content" android:layout_marginRight="63.4dp" android:src="@drawable/tree_3_down" android:scaleType="fitXY" android:layout_alignParentRight="true"/>
+        <ImageView android:layout_width="75.8dp" android:layout_height="wrap_content" android:layout_marginLeft="131dp" android:src="@drawable/tree_4_down" android:scaleType="fitXY"/>
+        <ImageView android:layout_width="75.8dp" android:layout_height="wrap_content" android:layout_marginLeft="103dp" android:src="@drawable/tree_5_down" android:scaleType="fitXY"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layer2" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="75.8dp" android:layout_height="match_parent" android:layout_marginLeft="42.2dp">
+            <ImageView android:id="@+id/tree1" android:layout_width="75.8dp" android:layout_height="301dp" android:src="@drawable/tree_1_up" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+            <ImageView android:id="@+id/role1" android:layout_width="51.8dp" android:layout_height="52.8dp" android:layout_marginRight="4.8dp" android:layout_marginBottom="-9.5dp" android:src="@drawable/tree_role_1" android:scaleType="fitXY" android:layout_above="@+id/tree1" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="75.8dp" android:layout_height="match_parent" android:layout_marginRight="26dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/tree2" android:layout_width="75.8dp" android:layout_height="301dp" android:src="@drawable/tree_2_up" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+            <ImageView android:id="@+id/role2" android:layout_width="29.8dp" android:layout_height="35.5dp" android:layout_marginBottom="-15.3dp" android:src="@drawable/tree_role_2" android:scaleType="fitXY" android:layout_above="@+id/tree2" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="75.8dp" android:layout_height="match_parent" android:layout_marginRight="63.4dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/tree3" android:layout_width="75.8dp" android:layout_height="wrap_content" android:src="@drawable/tree_3_up" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+            <ImageView android:id="@+id/role3" android:layout_width="38.4dp" android:layout_height="37.4dp" android:layout_marginBottom="-13.4dp" android:src="@drawable/tree_role_3" android:scaleType="fitXY" android:layout_above="@+id/tree3" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="75.8dp" android:layout_height="match_parent" android:layout_marginLeft="131dp">
+            <ImageView android:id="@+id/tree4" android:layout_width="75.8dp" android:layout_height="wrap_content" android:src="@drawable/tree_4_up" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+            <ImageView android:id="@+id/role4" android:layout_width="44.2dp" android:layout_height="52.8dp" android:layout_marginBottom="-16.3dp" android:src="@drawable/tree_role_4" android:scaleType="fitXY" android:layout_above="@+id/tree4" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="75.8dp" android:layout_height="match_parent" android:layout_marginLeft="103dp">
+            <ImageView android:layout_width="75.8dp" android:layout_height="240dp" android:src="@drawable/tree_5_up" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

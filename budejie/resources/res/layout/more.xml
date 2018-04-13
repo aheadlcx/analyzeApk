@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/more_layout" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+    <ScrollView android:id="@+id/m_scroll" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp">
+            <include android:id="@+id/morelayout" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/more_item"/>
+            <View android:layout_width="match_parent" android:layout_height="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

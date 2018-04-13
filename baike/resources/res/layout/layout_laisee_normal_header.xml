@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/bg_laisee_oval" android:layout_width="match_parent" android:layout_height="87dp"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/avatar" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="57dp"/>
+    </FrameLayout>
+    <TextView android:textSize="14sp" android:textColor="?attr/color_black" android:gravity="center" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="莉莉"/>
+    <TextView android:textSize="14sp" android:textColor="?attr/color_gray" android:gravity="center" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="恭喜发财大吉大利"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/amount_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp">
+        <TextView android:textSize="48dp" android:textColor="?attr/color_black" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100"/>
+        <TextView android:textSize="24dp" android:textColor="?attr/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textColor="#639ce0" android:id="@+id/in_wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已存入糗百钱袋"/>
+    <TextView android:textSize="13sp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tip" android:background="#f4f4f8" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginTop="32dp"/>
+</LinearLayout>

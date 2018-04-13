@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/click_hide_input" android:background="@color/gray" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/set_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_below="@+id/title" android:layout_centerHorizontal="true" android:onClick="btnProfile$Click">
+        <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center_horizontal" android:id="@+id/set_icon" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginTop="20dp" android:src="@drawable/set_icon"/>
+        <TextView android:textSize="@dimen/font_18" android:textColor="#c7c7cd" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="设置头像"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/set_icon_layout">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_username"/>
+            <EditText android:textSize="@dimen/font_18" android:textColor="#77000000" android:textColorHint="#c7c7cd" android:gravity="center_vertical" android:id="@+id/set_username" android:background="@drawable/input_bg" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint=" 设置用户名"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_14" android:textColor="#8f8f8f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="用户名支持汉字、字母、数字、和..."/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/set_username_psw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_sex"/>
+            <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/selector_sex" android:background="@drawable/set_username_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:textSize="@dimen/font_16" android:textColor="@color/preson_sex_selector" android:id="@+id/set_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="男" android:drawableLeft="@drawable/selector_sex_style" android:drawablePadding="6dp" style="@style/RadioButtonStyles"/>
+                <RadioButton android:textSize="@dimen/font_16" android:textColor="@color/preson_sex_selector" android:id="@+id/set_woman" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="女" android:drawableLeft="@drawable/selector_sex_style" android:drawablePadding="6dp" style="@style/RadioButtonStyles"/>
+            </RadioGroup>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <ImageView android:id="@+id/iv_left_line" android:background="@drawable/new_next_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/next" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/next" android:background="@drawable/default_next_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:onClick="next$press"/>
+            <ImageView android:id="@+id/iv_right_line" android:background="@drawable/new_next_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/next" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

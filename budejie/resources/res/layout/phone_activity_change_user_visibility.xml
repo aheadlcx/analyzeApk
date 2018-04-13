@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rlRootView" android:background="@color/all_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+    <ScrollView android:id="@+id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlebar_default">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/setUserVisiblePart" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13sp" android:textColor="@color/unbundle_textcolor" android:gravity="center_vertical" android:background="@color/all_background" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="28dp" android:text="在线状态切换"/>
+                <View style="@style/onePxLine"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSetUserVisible" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="51dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="显身" style="@style/personal_left"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/personal_right"/>
+                    <ImageView android:id="@+id/markWhenUserVisible" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/phone_room_user_visible_mark"/>
+                </LinearLayout>
+                <View style="@style/onePxLine"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSetUserInvisible" android:background="@drawable/phone_ranking_adapter_item_selector" android:layout_width="match_parent" android:layout_height="51dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐身" style="@style/personal_left"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/personal_right"/>
+                    <ImageView android:id="@+id/markWhenUserInvisible" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/phone_room_user_visible_mark"/>
+                </LinearLayout>
+                <View style="@style/onePxLine"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:visibility="gone" layout="@layout/phone_custom_progressbar"/>
+</RelativeLayout>

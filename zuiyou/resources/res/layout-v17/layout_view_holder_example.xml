@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.topic.weight.PostMemberView android:id="@+id/post_member_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <cn.xiaochuankeji.tieba.ui.topic.weight.PostVoteView android:id="@+id/post_vote_view" android:paddingLeft="13dp" android:paddingRight="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.xiaochuankeji.tieba.ui.topic.weight.PostGodReview android:id="@+id/post_god_review" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F3_line"/>
+        <TextView android:textSize="@dimen/F6_text" android:textColor="@color/CB" android:ellipsize="middle" android:gravity="center" android:id="@+id/post_topic_name" android:background="@drawable/bg_topic" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="@dimen/F4_line" android:layout_marginTop="11dp" android:singleLine="true" android:layout_marginStart="@dimen/F4_line"/>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.ui.topic.weight.PostOperateView android:id="@+id/post_operate_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/vPostDivide" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

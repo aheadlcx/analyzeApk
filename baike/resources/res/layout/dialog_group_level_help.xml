@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/dialog_group_level_rel" android:layout_width="318dp" android:layout_height="333dp">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="22dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/dialog_group_level" android:background="@drawable/group_info_level_bg" android:layout_width="28dp" android:layout_height="35dp" android:layout_marginTop="28dp" android:text="2"/>
+        <TextView android:textSize="@dimen/g_txt_small" android:textColor="@r$color/group_info_label" android:id="@+id/dialog_group_level_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="2等级"/>
+        <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:id="@+id/dialog_group_level_require" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="还需要50成员才能达到3等级"/>
+        <LinearLayout android:id="@+id/group_level_lin" android:background="#ebebeb" android:layout_width="269dp" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <TextView android:textSize="12dp" android:textColor="@r$color/group_info_label" android:gravity="center" android:id="@+id/group_info_label" android:layout_width="106dp" android:layout_height="28dp" android:text="等级"/>
+            <TextView android:textSize="12dp" android:textColor="@r$color/group_info_label" android:gravity="center" android:id="@+id/group_info_label_limit" android:layout_width="match_parent" android:layout_height="28dp" android:text="群成员上限"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="269dp" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="106dp" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:gravity="center" android:id="@+id/group_level_one" android:layout_width="match_parent" android:layout_height="28dp" android:text="1级"/>
+                <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:gravity="center" android:id="@+id/group_level_twe" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="28dp" android:text="2级"/>
+                <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:gravity="center" android:id="@+id/group_level_three" android:layout_width="match_parent" android:layout_height="28dp" android:text="3级"/>
+                <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:gravity="center" android:id="@+id/group_level_four" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="28dp" android:text="4级"/>
+            </LinearLayout>
+            <View android:id="@+id/group_level_view" android:background="#f5f5f5" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:gravity="center" android:id="@+id/group_level_number_one" android:layout_width="match_parent" android:layout_height="28dp" android:text="50"/>
+                <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:gravity="center" android:id="@+id/group_level_number_twe" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="28dp" android:text="100"/>
+                <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:gravity="center" android:id="@+id/group_level_number_three" android:layout_width="match_parent" android:layout_height="28dp" android:text="150"/>
+                <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:gravity="center" android:id="@+id/group_level_number_four" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="28dp" android:text="200"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12dp" android:textColor="@r$color/group_info_text" android:id="@+id/group_level_foot_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="要达到下一个级别，人数必须达到当前级别的80%"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/dialog_close" android:padding="10dp" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:src="@drawable/shake_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@drawable/mycomment_delete_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/mycomment_delete_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/mycomment_delete_dialog_text"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <Button android:textSize="18sp" android:textColor="#fff" android:id="@+id/mycomment_delete_cancelBtn" android:background="@drawable/mycomment_dialog_delete_btn_bg" android:layout_width="130dp" android:layout_height="35dp" android:text="@string/goback"/>
+        <Button android:textSize="18sp" android:textColor="#fff" android:id="@+id/mycomment_delete_sureBtn" android:background="@drawable/mycomment_dialog_delete_btn_bg" android:layout_width="130dp" android:layout_height="35dp" android:layout_marginLeft="5dp" android:text="@string/sure"/>
+    </LinearLayout>
+</LinearLayout>

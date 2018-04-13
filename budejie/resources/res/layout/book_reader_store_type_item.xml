@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/book_reader_type_layout" android:layout_width="match_parent" android:layout_height="42dp">
+        <View android:id="@+id/book_reader_line_view" android:background="@color/book_reader_main_color" android:layout_width="4dp" android:layout_height="15dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/book_reader_common_text_color" android:id="@+id/book_reader_tag_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="分类" android:layout_toRightOf="@+id/book_reader_line_view" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/book_reader_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/book_reader_type_layout" android:layout_alignParentLeft="true">
+        <ImageView android:id="@+id/book_reader_on_sell_image_view" android:layout_width="0dp" android:layout_height="80dp" android:layout_marginLeft="@dimen/book_reader_horizontal_margin" android:layout_marginRight="10dp" android:src="@drawable/book_reader_home_day_press_image" android:layout_weight="1"/>
+        <ImageView android:id="@+id/book_reader_quality_image_view" android:layout_width="0dp" android:layout_height="80dp" android:layout_marginLeft="10dp" android:layout_marginRight="@dimen/book_reader_horizontal_margin" android:src="@drawable/book_reader_home_day_press_image" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/book_reader_bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/book_reader_top_layout">
+        <ImageView android:id="@+id/book_reader_good_book_image_view" android:layout_width="0dp" android:layout_height="80dp" android:layout_marginLeft="@dimen/book_reader_horizontal_margin" android:layout_marginRight="10dp" android:src="@drawable/book_reader_home_day_press_image" android:layout_weight="1"/>
+        <ImageView android:id="@+id/book_reader_new_book_image_view" android:layout_width="0dp" android:layout_height="80dp" android:layout_marginLeft="10dp" android:layout_marginRight="@dimen/book_reader_horizontal_margin" android:src="@drawable/book_reader_home_day_press_image" android:layout_weight="1"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/book_reader_bottom_layout" layout="@layout/book_reader_store_look_book_layout"/>
+</RelativeLayout>

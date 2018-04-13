@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme">
+    </style>
+    <style name="Platform.AppCompat">
+    </style>
+    <style name="Platform.AppCompat.Light">
+    </style>
+    <style name="ActionBar.Solid.Dark">
+        <item name="android:progressBarStyle">@style/ProgressBar.Dark</item>
+        <item name="android:background">@drawable/ab_solid_dark</item>
+        <item name="android:titleTextStyle">@style/TextView.Title.Dark</item>
+        <item name="android:indeterminateProgressStyle">@style/IndeterminateProgress.Small.Night</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_dark</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_meizu</item>
+    </style>
+    <style name="ActionBar.Solid.Light">
+        <item name="android:progressBarStyle">@style/ProgressBar.Light</item>
+        <item name="android:background">@color/ic_action_bar_item_normal</item>
+        <item name="android:titleTextStyle">@style/TextView.Title.Light</item>
+        <item name="android:indeterminateProgressStyle">@style/IndeterminateProgress.Small.Day</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_light</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_meizu</item>
+    </style>
+    <style name="ActionBar.Solid.Light.GroupInfo">
+        <item name="android:background">@color/group_info_text_green</item>
+    </style>
+    <style name="ActionBar.Solid.Light.Nearby">
+        <item name="android:background">@color/actionbar_nearby_normal</item>
+    </style>
+    <style name="ActionBar.Transparent.Dark">
+        <item name="android:progressBarStyle">@style/ProgressBar.Dark</item>
+        <item name="android:background">@drawable/ab_transparent_dark</item>
+    </style>
+    <style name="ActionBar.Transparent.Light">
+        <item name="android:progressBarStyle">@style/ProgressBar.Light</item>
+        <item name="android:background">@drawable/ab_transparent_light</item>
+    </style>
+    <style name="ActionOverflowButtonBar.Dark">
+        <item name="android:src">@drawable/actionbar_over_flow_menu_dark</item>
+    </style>
+    <style name="ActionOverflowButtonBar.Light">
+        <item name="android:src">@drawable/actionbar_over_flow_menu</item>
+    </style>
+    <style name="AppBaseTheme.share.new.Dark.live">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="AppBaseTheme.share.new.live">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="AppTheme.share.new">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="dividerColor">@color/g_divider</item>
+        <item name="listitem_content">@style/day_listitem_content</item>
+        <item name="login_register_text">@style/day_login_register_text</item>
+        <item name="newShareItemText">@color/g_txt_small</item>
+        <item name="new_share_bg">@drawable/new_share_bg</item>
+        <item name="shareToTextColor">#3d3d42</item>
+    </style>
+    <style name="AppTheme.share.new.Dark">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="dividerColor">#08090a</item>
+        <item name="listitem_content">@style/night_listitem_content</item>
+        <item name="login_register_text">@style/night_login_register_text</item>
+        <item name="newShareItemText">@color/uesr_night</item>
+        <item name="new_share_bg">@drawable/new_share_bg_dark</item>
+        <item name="shareToTextColor">#6a6c7e</item>
+    </style>
+    <style name="AppTheme_NoTitle">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/abc_text_size_button_material</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="Day.GroupInfo">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Light.GroupInfo</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionOverflowButtonBar.Light.GroupInfo</item>
+        <item name="android:actionMenuTextAppearance">@style/ActionBarMenuStyle</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_item_background_light_nearby</item>
+    </style>
+    <style name="Day.QiuyouActivity">
+        <item name="actionOverflowButtonStyle">@style/QiuyouActivityOverflowButtonStyle</item>
+    </style>
+    <style name="Duobao_ActionBar.Solid.Dark">
+        <item name="android:progressBarStyle">@style/ProgressBar.Dark</item>
+        <item name="android:background">@color/duobao_status_bg</item>
+        <item name="android:titleTextStyle">@style/TextView.Title.Dark</item>
+        <item name="android:indeterminateProgressStyle">@style/IndeterminateProgress.Small.Night</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_dark</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_meizu</item>
+    </style>
+    <style name="Duobao_ActionBar.Solid.Light">
+        <item name="android:background">@color/duobao_status_bg</item>
+    </style>
+    <style name="Duobao_Theme.Dark">
+        <item name="android:textColorPrimary">@color/ab_title_text_color_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Dark</item>
+        <item name="android:actionBarStyle">@style/Duobao_ActionBar.Solid.Dark</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Dark</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_dark</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Dark</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionOverflowButtonBar.Dark</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Dark</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_left_padding_dark</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_dark</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_dark</item>
+        <item name="xlistview_header_arrow">@style/night_header_arrow</item>
+        <item name="popupTheme">@style/PopupMenu.Dark</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Widget.PopupMenu.Large.Dark</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Dark</item>
+        <item name="colorPrimary">@color/duobao_status_bg</item>
+        <item name="colorPrimaryDark">@color/duobao_status_bg</item>
+    </style>
+    <style name="Duobao_Theme.Light">
+        <item name="android:textColorPrimary">@color/g_txt_big</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Light</item>
+        <item name="android:actionBarStyle">@style/Duobao_ActionBar.Solid.Light</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Light</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_light</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Light</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionOverflowButtonBar.Light</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Light</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_left_padding</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_light</item>
+        <item name="xlistview_header_arrow">@style/day_header_arrow</item>
+        <item name="popupTheme">@style/PopupMenu.Light</item>
+        <item name="actionOverflowMenuStyle">@style/PopupMenu.Light</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Widget.PopupMenu.Large.Light</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Light</item>
+        <item name="colorPrimary">@color/duobao_status_bg</item>
+        <item name="colorPrimaryDark">@color/duobao_status_bg</item>
+    </style>
+    <style name="Nearby.Dark">
+    </style>
+    <style name="Nearby.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Light.Nearby</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_item_background_light_nearby</item>
+    </style>
+    <style name="Night.QiuyouActivity">
+        <item name="actionOverflowButtonStyle">@style/QiuyouActivityOverflowButtonStyleNight</item>
+    </style>
+    <style name="Platform.V14.AppCompat">
+        <item name="android:actionModeSelectAllDrawable">?attr/actionModeSelectAllDrawable</item>
+        <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
+    </style>
+    <style name="Platform.V14.AppCompat.Light">
+        <item name="android:actionModeSelectAllDrawable">?attr/actionModeSelectAllDrawable</item>
+        <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
+    </style>
+    <style name="TextView.Title.Dark">
+        <item name="android:textSize">@dimen/g_txt_big</item>
+        <item name="android:textColor">@color/ab_title_text_color_dark</item>
+    </style>
+    <style name="TextView.Title.Light">
+        <item name="android:textSize">@dimen/g_txt_big</item>
+        <item name="android:textColor">@color/g_txt_big</item>
+    </style>
+    <style name="Theme.Dark">
+        <item name="android:textColorPrimary">@color/ab_title_text_color_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Dark</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Dark</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Dark</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_dark</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Dark</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionOverflowButtonBar.Dark</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Dark</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_left_padding_dark</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_dark</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_dark</item>
+        <item name="xlistview_header_arrow">@style/night_header_arrow</item>
+        <item name="popupTheme">@style/PopupMenu.Dark</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Widget.PopupMenu.Large.Dark</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Dark</item>
+        <item name="colorPrimary">@color/actionbar_dark</item>
+        <item name="colorPrimaryDark">@color/actionbar_dark</item>
+        <item name="colorAccent">@color/actionbar_dark</item>
+    </style>
+    <style name="Theme.Dark.Widget">
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Dark</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Dark</item>
+    </style>
+    <style name="Theme.Light">
+        <item name="android:textColorPrimary">@color/g_txt_big</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Light</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Light</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Light</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_light</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Light</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionOverflowButtonBar.Light</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Light</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_left_padding</item>
+        <item name="android:actionMenuTextAppearance">@style/ActionBarMenuStyle</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_item_background_light</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_light</item>
+        <item name="xlistview_header_arrow">@style/day_header_arrow</item>
+        <item name="popupTheme">@style/PopupMenu.Light</item>
+        <item name="actionOverflowMenuStyle">@style/PopupMenu.Light</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Widget.PopupMenu.Large.Light</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Light</item>
+        <item name="colorPrimary">@color/ic_action_bar_item_normal</item>
+        <item name="colorPrimaryDark">@color/ic_action_bar_item_normal</item>
+        <item name="colorAccent">@color/ic_action_bar_item_normal</item>
+    </style>
+    <style name="Theme.Light.Widget">
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Light</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Light</item>
+    </style>
+    <style name="Widget.AppCompat.CompoundButton">
+    </style>
+</resources>

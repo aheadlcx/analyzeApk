@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="horizontal" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/rl_first" android:layout_marginLeft="2dp" android:layout_marginRight="1dp" style="@style/ttgTvSpecialList">
+        <ImageView android:id="@+id/iv_session" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+        <LinearLayout style="@style/ttgTvSpecialLisInfo">
+            <TextView android:id="@+id/ttg_tv_mix_title" android:text="经典男士古龙香水 " style="@style/ttgTvSpecialLisTitle"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="@color/price_font" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <TextView android:id="@+id/tv_no_free" android:text="@string/ttg_tv_badges" style="@style/ttgTvSpecialLisBadges"/>
+                <TextView android:id="@+id/ttg_tv_badges" android:text="@string/ttg_tv_get_coupon" style="@style/ttgTvSpecialListCoupon"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv_original_price" style="@style/ttgTvSpecialLisSellCount"/>
+                <TextView android:id="@+id/ttg_tv_sellCount" android:layout_alignParentRight="true" style="@style/ttgTvSpecialLisSellCount"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/rl_second" android:layout_marginLeft="1dp" android:layout_marginRight="2dp" style="@style/ttgTvSpecialList">
+        <ImageView android:id="@+id/iv_session_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+        <LinearLayout android:id="@+id/rl_info2" style="@style/ttgTvSpecialLisInfo">
+            <TextView android:id="@+id/ttg_tv_mix_title2" android:text="经典男士古龙香水" style="@style/ttgTvSpecialLisTitle"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="@color/price_font" android:id="@+id/tv_money_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <TextView android:id="@+id/tv_no_free_2" android:text="@string/ttg_tv_badges" style="@style/ttgTvSpecialLisBadges"/>
+                <TextView android:id="@+id/ttg_tv_badges_2" android:text="@string/ttg_tv_get_coupon" style="@style/ttgTvSpecialListCoupon"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv_original_price_2" style="@style/ttgTvSpecialLisSellCount"/>
+                <TextView android:id="@+id/ttg_tv_sellCount_2" android:layout_alignParentRight="true" style="@style/ttgTvSpecialLisSellCount"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

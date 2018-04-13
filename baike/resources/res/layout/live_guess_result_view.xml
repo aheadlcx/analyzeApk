@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="13dp">
+    <qsbk.app.live.widget.GuessResultImageView android:layout_gravity="center_vertical" android:id="@+id/iv_guess_result_1" android:layout_width="18dp" android:layout_height="18dp" app:roundAsCircle="true"/>
+    <qsbk.app.live.widget.GuessResultImageView android:layout_gravity="center_vertical" android:id="@+id/iv_guess_result_2" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="6dp" app:roundAsCircle="true"/>
+    <qsbk.app.live.widget.GuessResultImageView android:layout_gravity="center_vertical" android:id="@+id/iv_guess_result_3" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="6dp" app:roundAsCircle="true"/>
+    <qsbk.app.live.widget.GuessResultImageView android:layout_gravity="center_vertical" android:id="@+id/iv_guess_result_4" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="6dp" app:roundAsCircle="true"/>
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/CB" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_4" android:id="@+id/hollow_reply_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hollow_welcome"/>
+        <cn.xiaochuankeji.tieba.ui.widget.MultipleLineEllipsisTextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:ellipsize="end" android:id="@+id/hollow_reply_item_info" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F4_line" android:text="@string/long_text_test" android:maxLines="8" android:lineSpacingMultiplier="1.2"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/hollow_reply_play_holder" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="@dimen/F5_line">
+            <cn.xiaochuankeji.tieba.ui.hollow.widget.AudioPlayView android:gravity="center_vertical" android:id="@+id/hollow_reply_item_play" android:background="@drawable/reply_audio_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_hollow_item_audio" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="@dimen/F5_line">
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/color_f5878a" android:ellipsize="end" android:id="@+id/hollow_reply_item_title_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/long_text_test" android:maxLines="1" android:layout_weight="1"/>
+            <ImageView android:layout_width="6dp" android:layout_height="12dp" android:layout_marginLeft="10dp" android:src="@drawable/hollow_item_next" android:scaleType="fitXY" android:contentDescription="@string/image" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/hollow_reply_item_bottom" android:background="@color/color_fffafb" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

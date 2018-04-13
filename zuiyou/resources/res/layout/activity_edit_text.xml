@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:navTitleText="默认标题" app:navNeedBack="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/navBar">
+        <EditText android:textColor="@color/CT_2" android:textColorHint="@color/CT_5" android:gravity="center_vertical" android:id="@+id/etInput" android:background="@drawable/edit_input_line" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="34dp" android:hint="默认文字hint" style="@style/CommonEdit"/>
+        <TextView android:textSize="12sp" android:textColor="@color/CT_5" android:id="@+id/tvDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="默认介绍文字" android:lineSpacingMultiplier="1.5"/>
+        <Button android:textSize="@dimen/F9_text" android:textColor="@color/CB_1" android:id="@+id/bnNext" android:background="@drawable/login_blue_selector" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="43dp" android:text="下一步"/>
+    </LinearLayout>
+</RelativeLayout>

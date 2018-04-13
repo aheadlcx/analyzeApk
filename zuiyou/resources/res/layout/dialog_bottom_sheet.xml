@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/dim_view" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/layout_sheet_dialog" android:background="@drawable/fillet" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="13sp" android:textColor="#242529" android:gravity="center" android:id="@+id/label_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+            <TextView android:textSize="11sp" android:textColor="#999ead" android:gravity="center" android:id="@+id/label_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/label_title"/>
+            <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <HorizontalScrollView android:id="@+id/hsv_first" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="101dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/first_option_container" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+        <View android:id="@+id/line_first" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/second_option_container" android:paddingLeft="0dp" android:paddingRight="0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="101dp"/>
+        </HorizontalScrollView>
+        <View android:id="@+id/second_option_line" android:background="@color/CL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+        <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/btn_cancel" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height" android:text="取消" android:lineSpacingExtra="1.2dp"/>
+    </LinearLayout>
+</FrameLayout>

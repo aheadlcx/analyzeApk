@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <FrameLayout android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_gravity="bottom" android:id="@+id/vgContent" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <ImageView android:id="@+id/viewBack" android:layout_width="@dimen/navbar_height" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16sp" android:textColor="@color/tab_text_color_selector" android:gravity="center" android:id="@+id/tvWeek" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="本周" android:singleLine="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/tab_text_color_selector" android:gravity="center" android:id="@+id/tvMonth" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="本月" android:singleLine="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/tab_text_color_selector" android:gravity="center" android:id="@+id/tvAll" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="全部" android:singleLine="true"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/ivBottomDivide" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar"/>
+</RelativeLayout>

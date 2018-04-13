@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="72dp">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="center" android:id="@+id/avatar" android:layout_width="52dp" android:layout_height="52dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_centerVertical="true" app:actualImageScaleType="2" app:roundAsCircle="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_toRightOf="@+id/avatar" android:layout_centerVertical="true">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F9_text" android:textColor="@color/CT_1" android:ellipsize="middle" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="70dp" android:layout_marginBottom="4dp" android:singleLine="true" android:drawablePadding="4dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F5_text" android:textColor="@color/CT_6" android:ellipsize="marquee" android:layout_gravity="end" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="62dp" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.xiaochuankeji.tieba.ui.widget.text.BadgeTextView android:textSize="@dimen/F6_text" android:textColor="@color/CW" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/crumb" android:background="@color/CH_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80dp" android:layout_alignParentRight="true"/>
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:ellipsize="end" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true" android:layout_toLeftOf="@+id/crumb" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_toRightOf="@+id/avatar" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

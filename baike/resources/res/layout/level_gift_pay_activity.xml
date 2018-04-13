@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/iv_up" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_level_gift_pay" android:clickable="true" android:layout_width="match_parent" android:layout_height="322dp" android:layout_marginLeft="25dp" android:layout_marginRight="25dp">
+        <TextView android:textSize="18sp" android:textColor="#675e72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="选择支付方式"/>
+        <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="15dp"/>
+        <ImageView android:id="@+id/level_gift_pay_ali" android:layout_width="216dp" android:layout_height="50dp" android:layout_marginTop="35dp" android:src="@drawable/level_gift_pay_ali"/>
+        <ImageView android:id="@+id/level_gift_pay_wechat" android:layout_width="216dp" android:layout_height="50dp" android:layout_marginTop="40dp" android:src="@drawable/level_gift_pay_wechat"/>
+    </LinearLayout>
+    <ImageView android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="25dp" android:layout_marginTop="40dp" android:src="@drawable/live_start_up_close" android:scaleType="fitXY"/>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@r$color/login_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/id_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                <TextView android:textSize="16dp" android:textColor="#b3b3b3" android:id="@+id/top_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="最后一步，绑定任意密保完成注册"/>
+                <RelativeLayout android:id="@+id/qqLayout" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp" style="?attr/login_btn_qq">
+                    <ImageView android:background="@drawable/login_qq" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="18dp" android:textColor="@color/white" android:textColorHint="@color/white" android:gravity="center" android:id="@+id/qq" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="绑定QQ" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@+id/qq_mark" android:background="@drawable/username_correct" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/sinaLayout" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp" style="?attr/login_btn_weibo">
+                    <ImageView android:background="@drawable/login_weibo" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="18dp" android:textColor="@color/white" android:textColorHint="@color/white" android:gravity="center" android:id="@+id/sina" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="绑定新浪微博" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@+id/sina_mark" android:background="@drawable/username_correct" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/mailLayout" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp" style="?attr/login_btn_email">
+                    <ImageView android:background="@drawable/login_mail" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="18dp" android:textColor="@color/white" android:textColorHint="@color/white" android:gravity="center" android:id="@+id/mail" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="绑定邮箱" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@+id/email_mark" android:background="@drawable/username_correct" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="20dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerInParent="true" style="?attr/login_split_line"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                <Button android:id="@+id/overRegister" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="完成注册" style="?attr/login_btn_txt"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/umeng_xp_rootId" android:background="#ececec" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/umeng_xp_banner" layout="@layout/umeng_xp_component_focus_banner"/>
+    <RelativeLayout android:id="@+id/umeng_xp_detail0" android:background="#ececec" android:layout_width="match_parent" android:layout_height="140dp" android:layout_above="@+id/umeng_xp_bottom" android:layout_below="@+id/umeng_xp_banner">
+        <include layout="@layout/umeng_xp_component_foucused_app"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/umeng_xp_list" android:background="#ececec" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginBottom="55dp" android:stackFromBottom="true" android:divider="#00000000" android:dividerHeight="0dp" android:layout_alignParentBottom="true"/>
+    <include android:id="@+id/umeng_xp_bottom" layout="@layout/umeng_xp_component_back_bottom"/>
+</RelativeLayout>

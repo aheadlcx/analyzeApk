@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/share_items" android:background="#f9ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="#ff675e72" android:layout_gravity="center_horizontal" android:id="@+id/tv_share_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/share_to"/>
+        <qsbk.app.core.widget.NoScrollGridView android:layout_gravity="center_horizontal" android:id="@+id/live_grid" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="12dp" android:layout_marginRight="30dp" android:layout_marginBottom="30dp" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:verticalSpacing="11dp" android:stretchMode="columnWidth" android:numColumns="4"/>
+    </LinearLayout>
+</LinearLayout>

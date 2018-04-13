@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/placeHolderView" android:layout_width="160dp" android:layout_height="160dp" android:layout_marginTop="80dp" android:src="@drawable/ic_post_empty" android:layout_centerHorizontal="true" android:foregroundGravity="bottom|center_vertical|center_horizontal|center"/>
+    <TextView android:textSize="15sp" android:textColor="@color/CT_5" android:id="@+id/textErrMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="加载失败" android:layout_below="@+id/placeHolderView" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="15sp" android:textColor="@color/CT_5" android:id="@+id/textNetSetting" android:padding="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:text="前往网络设置" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

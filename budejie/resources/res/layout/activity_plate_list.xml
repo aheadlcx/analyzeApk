@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <RelativeLayout android:id="@+id/TopLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/plate_search_layout" android:background="?attr/label_list_search_bg" android:layout_width="match_parent" android:layout_height="26dp" android:layout_margin="7dp">
+            <ImageView android:background="?attr/label_list_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+            <TextView android:textSize="13sp" android:textColor="?attr/label_list_search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.budejie.www.widget.XListView android:id="@+id/plate_list_view" android:background="@color/transparent" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/bottom_navigation_height" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_below="@+id/TopLayout"/>
+    <com.budejie.www.activity.view.CircleLoadLayout android:id="@+id/circle_load_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:layout_below="@+id/TopLayout"/>
+</RelativeLayout>

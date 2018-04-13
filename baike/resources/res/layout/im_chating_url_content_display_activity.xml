@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/id_fake_actionbar" android:background="?attr/actionbar" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:layout_gravity="left" android:id="@+id/ic_close" android:paddingLeft="19dp" android:paddingTop="15dp" android:paddingRight="19dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/url_content_back"/>
+        <TextView android:textSize="16sp" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:text="" android:singleLine="true" style="?attr/msg_official_detail_title"/>
+        <ProgressBar android:layout_gravity="bottom" android:id="@+id/progressbar" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginBottom="-5dp" android:indeterminate="false" android:progressDrawable="@drawable/progress_horizontal_qiustore" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="right" android:id="@+id/ic_report" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="30dp" android:text="举报"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <qsbk.app.core.web.ui.QsbkWebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/ic_back" android:paddingLeft="19dp" android:paddingTop="15dp" android:paddingRight="19dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/url_content_back"/>
+        <ImageView android:id="@+id/ic_go" android:paddingLeft="19dp" android:paddingTop="15dp" android:paddingRight="19dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/url_content_forward" android:layout_toRightOf="@+id/ic_back"/>
+        <ImageView android:id="@+id/ic_refresh" android:paddingLeft="19dp" android:paddingTop="15dp" android:paddingRight="19dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="30dp" android:src="@drawable/url_content_reload" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

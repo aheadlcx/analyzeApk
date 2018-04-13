@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="10dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/CircleImage"/>
+    <cn.xiaochuankeji.tieba.widget.CornerRelativeLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/avatar" android:layout_alignParentTop="true" app:round_corner="16dp" app:stroke_color="@color/CB_1" app:stroke_width="1dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:gravity="center_vertical" android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="169dp" app:failureImage="@drawable/chat_image_holder" app:placeholderImage="@drawable/chat_image_holder" app:actualImageScaleType="6"/>
+    </cn.xiaochuankeji.tieba.widget.CornerRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="horizontal" android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="63dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="63dp" android:layout_height="63dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_label_tip_icon"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="?attr/label_list_item_name" android:id="@+id/LabelNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#搞笑的人" android:singleLine="true"/>
+            <TextView android:textSize="13sp" android:textColor="#929292" android:id="@+id/LabelPostCountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="1289个帖子"/>
+        </LinearLayout>
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

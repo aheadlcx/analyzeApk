@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:id="@+id/ly_ttg_notice_img" android:background="@color/transparent_45" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp">
+        <ImageView android:id="@+id/iv_ttg_notice_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+        <TextView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/ttg_icon_close" android:layout_width="56dp" android:layout_height="56dp"/>
+    </FrameLayout>
+</LinearLayout>

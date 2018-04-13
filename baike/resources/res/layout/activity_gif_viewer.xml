@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/imageLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <qsbk.app.video.SimpleVideoPlayerView android:id="@+id/videoView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/image" android:layout_alignTop="@+id/image" android:layout_alignRight="@+id/image" android:layout_alignBottom="@+id/image" app:layout="@layout/layout_simple_video_1"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:drawingCacheQuality="low" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" android:contentDescription="@null" app:actualImageScaleType="0"/>
+        <qsbk.app.widget.NightModeMaskView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/image" android:layout_alignBottom="@+id/image"/>
+        <ProgressBar android:id="@+id/video_progress" android:visibility="gone" android:layout_width="46dp" android:layout_height="46dp" android:max="100" android:indeterminate="true" android:layout_centerInParent="true" style="?attr/video_loading_progress"/>
+        <TextView android:textColor="#ad9883" android:gravity="center" android:layout_gravity="center" android:id="@+id/imageLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="点击加载图片" android:layout_alignLeft="@+id/image" android:layout_alignTop="@+id/image" android:layout_alignRight="@+id/image" android:layout_alignBottom="@+id/image"/>
+        <ImageView android:id="@+id/play_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_selector" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/gif_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:src="@drawable/ic_gif_tag"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/close" android:layout_width="75dp" android:layout_height="75dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:src="@drawable/add_qiuyou_ic_clear"/>
+    </FrameLayout>
+    <View android:background="@drawable/imageviewer_footermask" android:layout_width="match_parent" android:layout_height="120dp" android:layout_alignParentBottom="true"/>
+    <qsbk.app.widget.ImageControlView android:id="@+id/image_control" android:visibility="gone" android:layout_width="match_parent" android:layout_height="63dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/action_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="55dp" android:layout_above="@+id/image_control" android:layout_alignParentBottom="true">
+        <qsbk.app.widget.FunnyTextView android:id="@+id/funny_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentLeft="true"/>
+        <TextView android:id="@+id/comment_and_share_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/funny_count" android:layout_alignTop="@+id/funny_count" android:layout_alignBottom="@+id/funny_count"/>
+    </RelativeLayout>
+</RelativeLayout>

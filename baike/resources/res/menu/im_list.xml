@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/my_contacts" android:id="@+id/my_contacts" android:title="糗友/群" app:showAsAction="always" app:actionLayout="@layout/layout_new_fans"/>
+    <item android:id="@+id/add" android:orderInCategory="50" android:title="@string/add_chat" app:showAsAction="never"/>
+    <item android:id="@+id/action_add_qiuyou" android:orderInCategory="80" android:title="添加糗友" app:showAsAction="never"/>
+    <item android:id="@+id/action_search_group" android:orderInCategory="81" android:title="搜索群" app:showAsAction="never"/>
+    <item android:id="@+id/action_create_group" android:orderInCategory="82" android:title="创建群" app:showAsAction="never"/>
+    <item android:id="@+id/action_clear_message" android:orderInCategory="83" android:title="清除未读" app:showAsAction="never"/>
+</menu>

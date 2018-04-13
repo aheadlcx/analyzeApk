@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="true">
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/operation_unsupport_press"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_00"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_01"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_02"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_03"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_04"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_05"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_06"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_07"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_08"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_09"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_10"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_11"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_12"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_13"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_14"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_15"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_16"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_17"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_18"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_19"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_20"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_21"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_22"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_23"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_24"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_25"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_26"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_27"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_28"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/not_funny_shake_29"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/operation_unsupport_press"/>
+</animation-list>

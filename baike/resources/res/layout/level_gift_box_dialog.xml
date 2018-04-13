@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="@color/black_60_percent_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.core.widget.FrameAnimationView android:layout_gravity="center_horizontal" android:id="@+id/level_gift_open_box" android:layout_width="360dp" android:layout_height="640dp" android:layout_marginTop="10dp"/>
+    <FrameLayout android:id="@+id/level_gift_total" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/level_gift_box_full" android:visibility="gone" android:layout_width="360dp" android:layout_height="640dp" android:layout_marginTop="10dp" android:src="@drawable/level_gift_box_full"/>
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/recyclerview_gifts" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="312dp" android:layout_marginTop="500dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/level_gift" android:background="@drawable/bg_level_gift_item" android:visibility="gone" android:layout_width="80dp" android:layout_height="94dp" android:layout_marginTop="150dp">
+        <TextView android:textSize="20sp" android:textColor="#834909" android:layout_gravity="center_horizontal" android:id="@+id/level_gift_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="500"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/level_gift_icon" android:visibility="gone" android:layout_width="48dp" android:layout_height="40dp" android:layout_marginTop="42dp" android:src="@drawable/level_gift_heart"/>
+        <TextView android:textSize="60sp" android:textStyle="bold" android:textColor="#fbae2f" android:layout_gravity="center_horizontal" android:id="@+id/level_gift_quest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="?"/>
+    </FrameLayout>
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/level_gift_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="255dp" android:text="游戏赞"/>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/level_gift_card" android:background="@drawable/level_gift_card" android:visibility="gone" android:layout_width="59dp" android:layout_height="58dp" android:layout_marginLeft="65dp" android:layout_marginTop="310dp">
+        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/level_gift_card_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:text="3"/>
+    </FrameLayout>
+    <qsbk.app.core.widget.FrameAnimationView android:layout_gravity="center_horizontal" android:id="@+id/level_gift_light_effect" android:layout_width="360dp" android:layout_height="640dp" android:layout_marginTop="10dp"/>
+</FrameLayout>

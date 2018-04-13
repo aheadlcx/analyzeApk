@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:paddingLeft="0dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/audioLayout" android:background="?attr/commend_item_laba_bg" android:layout_width="113dp" android:layout_height="39dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="18dp">
+            <com.budejie.www.activity.view.TrumpetImageView android:id="@+id/trumpetImageView" android:background="@anim/audio_play_anim" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ProgressBar android:id="@+id/audioProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/round_progress_bar_blue_1" style="?android:attr/progressBarStyleSmall"/>
+            <ImageView android:id="@+id/audioPlayIv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/ic_trumpet_play"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/voice_total_time_color" android:gravity="left" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/audioTime" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="7" android:singleLine="true"/>
+</LinearLayout>

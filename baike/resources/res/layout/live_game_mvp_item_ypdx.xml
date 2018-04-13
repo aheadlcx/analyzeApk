@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="30dp">
+    <TextView android:textSize="10sp" android:textColor="#ffcc7c" android:gravity="center" android:id="@+id/tv_rank" android:layout_width="50dp" android:layout_height="wrap_content"/>
+    <TextView android:textSize="10sp" android:textColor="#ffcc7c" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_name" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:maxWidth="25dp" android:singleLine="true"/>
+    <TextView android:textSize="10sp" android:textColor="#ffcc7c" android:gravity="center" android:id="@+id/tv_love" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:maxWidth="29dp"/>
+</LinearLayout>

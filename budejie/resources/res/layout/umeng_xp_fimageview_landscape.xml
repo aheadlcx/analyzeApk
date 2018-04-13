@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/umeng_xp_banner" android:background="#000000" android:paddingLeft="8dp" android:paddingTop="15dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="120dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <Button android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/umeng_xp_button" android:background="@drawable/umeng_xp_greenbg_selector" android:layout_width="80dp" android:layout_height="25dp" android:layout_marginBottom="30dp" android:text="点此浏览" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/umeng_xp_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Google" android:maxLines="1"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/umeng_xp_descript" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="Google" android:maxLines="5" android:layout_below="@+id/umeng_xp_title"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/umeng_xp_imagev" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/umeng_xp_zhanwei" android:scaleType="fitXY" android:layout_toLeftOf="@+id/umeng_xp_banner"/>
+</RelativeLayout>

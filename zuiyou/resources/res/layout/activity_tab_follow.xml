@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/nav_bar" android:paddingTop="@dimen/status_bar_height" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <cn.xiaochuankeji.tieba.ui.widget.indicator.MagicIndicator android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/indicator" android:layout_width="180dp" android:layout_height="@dimen/navbar_height" android:layout_marginLeft="60dp" android:layout_marginRight="60dp"/>
+        <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/ivSearch" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="38dp" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_search" android:scaleType="center"/>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

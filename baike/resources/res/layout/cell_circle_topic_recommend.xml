@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="30dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" app:viewAspectRatio="3.13"/>
+        <ImageView android:id="@+id/weekly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/ic_weekly_recommend"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/color_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这里是标题" android:maxLines="1"/>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/vol_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_marginBottom="4dp">
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vol."/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="?attr/color_white" android:id="@+id/desc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每周话题"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

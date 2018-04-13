@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/finish_group_rel" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/finish_group_img_rela" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/show_group_img" android:layout_width="@dimen/large_user_icon" android:layout_height="@dimen/large_user_icon" android:src="@drawable/group_img_light" android:layout_centerHorizontal="true" android:contentDescription="@null" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/edit_avatar" android:layout_alignRight="@+id/show_group_img" android:layout_alignBottom="@+id/show_group_img"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/finish_group_name_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/finish_group_img_rela">
+        <TextView android:textSize="@dimen/create_group_middle" android:textColor="#63625e" android:id="@+id/finish_group_name_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="群名："/>
+        <TextView android:textSize="@dimen/create_group_middle" android:id="@+id/show_group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="12"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/show_location_lin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_below="@+id/finish_group_name_lin">
+        <TextView android:textSize="@dimen/create_group_middle" android:textColor="#63625e" android:id="@+id/finish_group_location_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="位置："/>
+        <TextView android:textSize="@dimen/create_group_middle" android:id="@+id/show_group_location" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/finish_group_scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="30dp" android:fillViewport="true" android:layout_below="@+id/show_location_lin">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/finish_group_intru_lin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/create_group_middle" android:textColor="#63625e" android:id="@+id/finish_group_introduce_remind" android:paddingLeft="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="简介："/>
+            <TextView android:textSize="@dimen/create_group_middle" android:id="@+id/show_group_intruduction" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="10" android:maxLength="120"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:layout_below="@+id/finish_group_scroll_view">
+        <TextView android:textSize="@dimen/create_group_large" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/finish_group_tv" android:background="@drawable/used_button" android:layout_width="328dp" android:layout_height="50dp" android:layout_marginLeft="16dp" android:text="创建"/>
+    </LinearLayout>
+</RelativeLayout>

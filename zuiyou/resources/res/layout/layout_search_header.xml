@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/ll_root_container" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_container" android:background="@drawable/bg_search_in_top_bar" android:layout_width="0dp" android:layout_height="27dp" android:layout_marginLeft="@dimen/left_right_common_distance" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+        <ImageView android:layout_width="15.6dp" android:layout_height="15.6dp" android:layout_marginLeft="8.7dp" android:src="@drawable/topic_search_up"/>
+        <EditText android:textSize="11.3sp" android:textColor="@color/CT_2" android:textColorHint="@color/search_hint_up" android:id="@+id/etSearchKey" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.5dp" android:maxLength="140" android:layout_weight="1" style="@style/EditNoBorder"/>
+        <ImageView android:id="@+id/ivClear" android:padding="8dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_clear_text"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivCancel" android:layout_width="27dp" android:layout_height="27dp" android:layout_marginLeft="10dp" android:layout_marginRight="@dimen/left_right_common_distance" android:src="@drawable/topic_search_cancel" android:scaleType="fitXY"/>
+</LinearLayout>

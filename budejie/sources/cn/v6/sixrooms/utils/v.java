@@ -1,0 +1,69 @@
+package cn.v6.sixrooms.utils;
+
+import cn.v6.sixrooms.R;
+import java.util.HashMap;
+
+final class v extends HashMap<String, Integer> {
+    v() {
+        put("8001", Integer.valueOf(R.drawable.room_girl_team_silver_month_1));
+        put("8002", Integer.valueOf(R.drawable.room_girl_team_silver_month_2));
+        put("8003", Integer.valueOf(R.drawable.room_girl_team_silver_month_3));
+        put("8004", Integer.valueOf(R.drawable.room_girl_team_silver_month_4));
+        put("8005", Integer.valueOf(R.drawable.room_girl_team_silver_month_5));
+        put("8006", Integer.valueOf(R.drawable.room_girl_team_silver_month_6));
+        put("8007", Integer.valueOf(R.drawable.room_girl_team_silver_month_7));
+        put("8008", Integer.valueOf(R.drawable.room_girl_team_silver_month_8));
+        put("8009", Integer.valueOf(R.drawable.room_girl_team_silver_month_9));
+        put("8010", Integer.valueOf(R.drawable.room_girl_team_silver_month_10));
+        put("8011", Integer.valueOf(R.drawable.room_girl_team_silver_month_11));
+        put("8012", Integer.valueOf(R.drawable.room_girl_team_silver_month_12));
+        put("8013", Integer.valueOf(R.drawable.room_girl_team_gold_month_1));
+        put("8014", Integer.valueOf(R.drawable.room_girl_team_gold_month_2));
+        put("8015", Integer.valueOf(R.drawable.room_girl_team_gold_month_3));
+        put("8016", Integer.valueOf(R.drawable.room_girl_team_gold_month_4));
+        put("8017", Integer.valueOf(R.drawable.room_girl_team_gold_month_5));
+        put("8018", Integer.valueOf(R.drawable.room_girl_team_gold_month_6));
+        put("8019", Integer.valueOf(R.drawable.room_girl_team_gold_month_7));
+        put("8020", Integer.valueOf(R.drawable.room_girl_team_gold_month_8));
+        put("8021", Integer.valueOf(R.drawable.room_girl_team_gold_month_9));
+        put("8022", Integer.valueOf(R.drawable.room_girl_team_gold_month_10));
+        put("8023", Integer.valueOf(R.drawable.room_girl_team_gold_month_11));
+        put("8024", Integer.valueOf(R.drawable.room_girl_team_gold_month_12));
+        put("8025", Integer.valueOf(R.drawable.room_girl_team_platinum_month_1));
+        put("8026", Integer.valueOf(R.drawable.room_girl_team_platinum_month_2));
+        put("8027", Integer.valueOf(R.drawable.room_girl_team_platinum_month_3));
+        put("8028", Integer.valueOf(R.drawable.room_girl_team_platinum_month_4));
+        put("8029", Integer.valueOf(R.drawable.room_girl_team_platinum_month_5));
+        put("8030", Integer.valueOf(R.drawable.room_girl_team_platinum_month_6));
+        put("8031", Integer.valueOf(R.drawable.room_girl_team_platinum_month_7));
+        put("8032", Integer.valueOf(R.drawable.room_girl_team_platinum_month_8));
+        put("8033", Integer.valueOf(R.drawable.room_girl_team_platinum_month_9));
+        put("8034", Integer.valueOf(R.drawable.room_girl_team_platinum_month_10));
+        put("8035", Integer.valueOf(R.drawable.room_girl_team_platinum_month_11));
+        put("8036", Integer.valueOf(R.drawable.room_girl_team_platinum_month_12));
+        put("8037", Integer.valueOf(R.drawable.room_girl_team_diamond_month_1));
+        put("8038", Integer.valueOf(R.drawable.room_girl_team_diamond_month_2));
+        put("8039", Integer.valueOf(R.drawable.room_girl_team_diamond_month_3));
+        put("8040", Integer.valueOf(R.drawable.room_girl_team_diamond_month_4));
+        put("8041", Integer.valueOf(R.drawable.room_girl_team_diamond_month_5));
+        put("8042", Integer.valueOf(R.drawable.room_girl_team_diamond_month_6));
+        put("8043", Integer.valueOf(R.drawable.room_girl_team_diamond_month_7));
+        put("8044", Integer.valueOf(R.drawable.room_girl_team_diamond_month_8));
+        put("8045", Integer.valueOf(R.drawable.room_girl_team_diamond_month_9));
+        put("8046", Integer.valueOf(R.drawable.room_girl_team_diamond_month_10));
+        put("8047", Integer.valueOf(R.drawable.room_girl_team_diamond_month_11));
+        put("8048", Integer.valueOf(R.drawable.room_girl_team_diamond_month_12));
+        put("8049", Integer.valueOf(R.drawable.room_girl_team_silver_year_1));
+        put("8050", Integer.valueOf(R.drawable.room_girl_team_gold_year_1));
+        put("8051", Integer.valueOf(R.drawable.room_girl_team_platinum_year_1));
+        put("8052", Integer.valueOf(R.drawable.room_girl_team_diamond_year_1));
+        put("8058", Integer.valueOf(R.drawable.room_girl_fans_group));
+        put("7116", Integer.valueOf(R.drawable.rooms_flash_satrt_1));
+        put("7117", Integer.valueOf(R.drawable.rooms_flash_satrt_2));
+        put("7118", Integer.valueOf(R.drawable.rooms_flash_satrt_3));
+        put("7119", Integer.valueOf(R.drawable.rooms_flash_satrt_4));
+        put("7120", Integer.valueOf(R.drawable.rooms_flash_satrt_5));
+        put("7569", Integer.valueOf(R.drawable.rooms_third_guard_silver));
+        put("7570", Integer.valueOf(R.drawable.rooms_third_guard_gold));
+    }
+}

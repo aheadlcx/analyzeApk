@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="30dp">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/pvAvatar" android:longClickable="true" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="13dp" style="@style/CircleImage"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.7dp" android:layout_toRightOf="@+id/pvAvatar" android:layout_alignTop="@+id/pvAvatar">
+        <TextView android:textSize="12dp" android:textColor="@color/CT_4" android:ellipsize="end" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="30"/>
+        <TextView android:textSize="10dp" android:textColor="@color/CT_6" android:id="@+id/tvTime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="10天前"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/ivOwnerFlag" android:visibility="gone" android:layout_width="32dp" android:layout_height="16dp" android:layout_marginLeft="5dp" android:src="@drawable/ic_comment_master" android:layout_toRightOf="@+id/llMsg" android:layout_alignTop="@+id/llMsg"/>
+</RelativeLayout>

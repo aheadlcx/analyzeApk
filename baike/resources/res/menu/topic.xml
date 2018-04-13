@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/topic_share" android:orderInCategory="50" android:title="分享" app:showAsAction="never"/>
+    <item android:id="@+id/topic_report" android:orderInCategory="51" android:title="举报" app:showAsAction="never"/>
+    <item android:id="@+id/topic_publish" android:orderInCategory="52" android:title="发动态" app:showAsAction="never"/>
+    <item android:id="@+id/black_room" android:orderInCategory="53" android:title="小黑屋" app:showAsAction="never"/>
+    <item android:id="@+id/topic_more" android:orderInCategory="54" android:title="更多话题" app:showAsAction="never"/>
+    <item android:id="@+id/black_list_manage" android:orderInCategory="55" android:title="屏蔽管理" app:showAsAction="never"/>
+    <item android:id="@+id/resign_master" android:orderInCategory="56" android:title="辞职题主" app:showAsAction="never"/>
+</menu>

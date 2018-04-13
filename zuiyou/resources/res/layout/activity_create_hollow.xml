@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="@color/color_fffafb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/hollow_create_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navbar_height"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_hollow_indicator" android:layout_width="match_parent" android:layout_height="48dp" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="6dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/tree_hole_main" android:gravity="center" android:id="@+id/hollow_create_audio_text" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="0dp" android:text="@string/press_to_say" android:layout_weight="1"/>
+            <View android:id="@+id/hollow_create_audio_view" style="@style/hollow_create_indicator"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="6dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_4" android:gravity="center" android:id="@+id/hollow_create_text_text" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="0dp" android:text="@string/text_to_say" android:layout_weight="1"/>
+            <View android:id="@+id/hollow_create_text_view" android:visibility="invisible" style="@style/hollow_create_indicator"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

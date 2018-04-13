@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <FrameLayout android:id="@+id/nav_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@+id/fl_container" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <ImageView android:id="@+id/ivBack" android:layout_width="@dimen/item_height" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:ellipsize="middle" android:gravity="center_vertical" android:id="@+id/tvTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="我的评论" android:singleLine="true" android:drawablePadding="@dimen/divide_space_5" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvOptionText" android:paddingLeft="8dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="最新" android:drawablePadding="3dp" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/btnHide" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/nav_privacy" android:scaleType="center" android:layout_toLeftOf="@+id/tvOptionText"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/fl_container_edit_mode" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+                <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_4" android:gravity="center" android:id="@+id/cancel" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="取消"/>
+                <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/edit_mode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐藏评论设置" android:layout_centerInParent="true"/>
+                <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CM" android:gravity="center_vertical" android:id="@+id/ok" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="完成" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/nav_bar"/>
+</RelativeLayout>

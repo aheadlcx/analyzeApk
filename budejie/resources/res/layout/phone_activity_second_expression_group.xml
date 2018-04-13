@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.v6.sixrooms.widgets.phone.ExpressionGroup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:gravity="center" android:background="@drawable/phone_expression_item_selector" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="70dp" android:layout_weight="1"/>
+        <ImageView android:gravity="center" android:background="@drawable/phone_expression_item_selector" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="70dp" android:layout_weight="1"/>
+        <ImageView android:gravity="center" android:background="@drawable/phone_expression_item_selector" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="70dp" android:layout_weight="1"/>
+        <ImageView android:gravity="center" android:background="@drawable/phone_expression_item_selector" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="70dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:gravity="center" android:background="@drawable/phone_expression_item_selector" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="70dp" android:layout_weight="1"/>
+        <ImageView android:gravity="center" android:background="@drawable/phone_expression_item_selector" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="70dp" android:layout_weight="1"/>
+        <ImageView android:gravity="center" android:background="@drawable/phone_expression_item_selector" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="70dp" android:layout_weight="1"/>
+        <ImageView android:gravity="center" android:background="@drawable/phone_expression_item_selector" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="70dp" android:layout_weight="1"/>
+    </LinearLayout>
+</cn.v6.sixrooms.widgets.phone.ExpressionGroup>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12dp" android:textColor="?attr/smile_count" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/smile_count" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginTop="4dp" android:text="获得笑脸总数 ：0" style="?attr/main_bg"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <SurfaceView android:id="@+id/hack_surface_view" android:visibility="gone" android:layout_width="0px" android:layout_height="0px"/>
+</LinearLayout>

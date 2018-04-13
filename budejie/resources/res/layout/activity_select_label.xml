@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="?attr/personal_popupwindow_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/navigation_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_input_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_label_title" android:layout_below="@+id/navigation_bar">
+        <com.budejie.www.label.widget.TagEditText android:id="@+id/tag_edit_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ListView android:id="@+id/list_view_search" android:background="?attr/personal_popupwindow_bg" android:focusable="true" android:visibility="gone" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="?attr/search_label_item_divider_theme" android:dividerHeight="1dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/ll_label_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_above="@+id/horizontal_waterfall_flow">
+        <TextView android:textSize="15sp" android:textColor="?attr/label_recommend_color_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最近使用" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_next_page" android:background="?attr/label_next_page_selector_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.budejie.www.label.widget.HorizontalWaterfallFlow android:id="@+id/horizontal_waterfall_flow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

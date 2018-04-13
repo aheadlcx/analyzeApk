@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <qsbk.app.widget.OverScrollView android:id="@+id/review_rules_item_container" android:background="?attr/item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="?attr/review_rules_content"/>
+        </RelativeLayout>
+    </qsbk.app.widget.OverScrollView>
+    <RelativeLayout android:id="@+id/bottom_layout" android:background="?attr/item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <ImageView android:id="@+id/tips_swipe_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/direction_left"/>
+            <TextView android:layout_marginLeft="6dp" android:text="@string/review_swipe_left" style="?attr/review_swipe_left"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

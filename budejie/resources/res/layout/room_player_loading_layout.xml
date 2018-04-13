@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rl_video_loading" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@null"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/loading_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:layout_centerHorizontal="true">
+        <TextView android:textSize="17sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_live_over" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/live_loading"/>
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="5dp" style="@style/CustomProgressBarStyleLarge"/>
+    </LinearLayout>
+</RelativeLayout>

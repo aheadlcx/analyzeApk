@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="@dimen/margin_10"/>
+    <include android:id="@+id/moderator_header_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/label_user_header_user_view"/>
+    <RelativeLayout android:id="@+id/moderator_layout" android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="63dp">
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/moderator_image_view" android:layout_width="47dp" android:layout_height="47dp" android:layout_marginLeft="@dimen/post_margin_left" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/label_list_item_name" android:id="@+id/moderator_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_11" android:layout_toRightOf="@+id/moderator_image_view" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+    <View android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="@dimen/margin_10"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="attention_unlogin_botton_magin">25dp</dimen>
+    <dimen name="attention_unlogin_img_magin">19dp</dimen>
+</resources>

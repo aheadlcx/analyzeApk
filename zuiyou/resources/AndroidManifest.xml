@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="41901" android:versionName="4.1.8.9" package="cn.xiaochuankeji.tieba" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.capability.manual_sensor" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.capability.manual_post_processing" android:required="false"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <permission android:name="cn.xiaochuankeji.tieba.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="cn.xiaochuankeji.tieba.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+    <permission android:name="cn.xiaochuankeji.tieba.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="cn.xiaochuankeji.tieba.push.permission.MESSAGE"/>
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    <permission android:name="cn.xiaochuankeji.tieba.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="cn.xiaochuankeji.tieba.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <permission android:name="cn.xiaochuankeji.tieba.permission.MESSAGE_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="cn.xiaochuankeji.tieba.permission.MESSAGE_RECEIVE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <application android:theme="@style/App" android:label="@string/app_name" android:icon="@mipmap/icon_launcher" android:name="cn.xiaochuankeji.tieba.background.ZuiyouApplication" android:persistent="true" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:fullBackupContent="@xml/backup_config">
+        <meta-data android:name="UMENG_APPKEY" android:value="54694fa0fd98c51476006477"/>
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <activity android:theme="@style/WelcomeStyle" android:name="cn.xiaochuankeji.tieba.ui.base.SplashActivity" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboard|keyboardHidden|navigation|orientation|uiMode|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="zuiyou"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MainTheme" android:name="cn.xiaochuankeji.tieba.ui.base.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.CustomReportReasonActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.post.postdetail.PostDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.webview.WebActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.post.SubjectActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.post.LikedUsersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.tale.TaleThumbUsersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.post.PostVoteDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MainTheme" android:name="cn.xiaochuankeji.tieba.ui.homepage.HomePageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.discovery.moretopic.MoreTopicRecommendActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MainTheme" android:name="cn.xiaochuankeji.tieba.ui.my.MeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppFullscreen" android:name="cn.xiaochuankeji.tieba.ui.mediabrowse.MediaBrowseActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.ReportedPostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.ugcvideo.MyUgcVideoShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.ugcvideo.MyUgcVideoDraftActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateVisible|stateAlwaysVisible|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.member.MemberDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.member.MemberAvatarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.MyPostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.SettingAboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.SettingPushActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MainTheme" android:name="cn.xiaochuankeji.tieba.ui.my.MyBlockTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.MyHistoryPostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.auth.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.AccountSafeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.UpdatePhoneTipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.MyCommentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.account.InputPhoneNumberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.account.SetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.account.InputPasswordNicknameAvatarActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.account.ModifyPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.ugcvideodetail.UgcVideoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.videomaker.music.SelectVideoMusicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.videomaker.cover.SelectVideoCoverActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.account.ModifySignActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.account.AccountInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.account.ModifyNickNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/PublishTheme" android:name="cn.xiaochuankeji.tieba.ui.publish.PublishPostActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.publish.selecttopic.SelectTopicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.selectlocalmedia.SelectPicturesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.mediabrowse.MediaBrowseWhenSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.discovery.TopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicInvolvedUsersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicCoverActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.discovery.search.SearchAllActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/MainTheme" android:name="cn.xiaochuankeji.tieba.ui.chat.MessageTabActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.follow.UserFollowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.follow.UserBeFollowedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.chat.FlowSessionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.chat.ChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.debug.DebugOptionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.debug.XPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MainTheme" android:name="cn.xiaochuankeji.tieba.ui.homepage.ugc.UGCTabActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.ZYGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.download.MyDownloadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.followpost.MyFollowPostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.tale.TaleCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.tale.TaleDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.tale.TaleListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.tale.TaleInvisibleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.assessor.UserAssessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.favorite.FavoritePostListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.favorite.CreateOrEditFavoriteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.favorite.MyFavoriteListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.post.postdetail.InnerCommentDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.UserFeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.diagnosis.DiagnoseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.diagnosis.NetworkDiagnoseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicPostTopActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.picker.RegionPicker" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.licence.LicenceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicAdminManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicEscortListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicEscortApplyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.TopicTopManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.post.PostAllegeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.member.UserAllegeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.topic.deleteList.TopicDeletePostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.block.BlockUserActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppFullscreen" android:name="cn.xiaochuankeji.tieba.ui.videomaker.VideoRecordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/AppFullscreen" android:name="cn.xiaochuankeji.tieba.ui.videomaker.VideoProcessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.videomaker.MainVideoPublishActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.homepage.banner.UgcEventListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.videomaker.VideoMakerConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.tag.NavigatorTagActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.hollow.edit.PublishHollowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.hollow.edit.EditHollowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.hollow.detail.HollowDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.hollow.detail.MyHollowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.hollow.edit.CreateHollowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.voice.VoiceCreateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.voice.VoicePublishActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.voice.VoicePublishV2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.voice.VoiceSelectTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.mypost.PostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.favorite.MyFavorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.favorite.MyFavorListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.liked.MyLikedPostListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.ui.my.history.MyHistoryPostListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.xiaochuankeji.tieba.abmgr.ui.ActivitySelectType" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppFullscreen" android:name="cn.xiaochuankeji.tieba.ui.mediabrowse.local.LocalVideoPlayActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="cn.xiaochuankeji.tieba.receiver.AudioStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.music.metachanged"/>
+                <action android:name="com.android.music.queuechanged"/>
+                <action android:name="com.android.music.playbackcomplete"/>
+                <action android:name="com.android.music.playstatechanged"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="cn.xiaochuankeji.tieba.ui.mediabrowse.PictureDownloadService"/>
+        <service android:name="cn.xiaochuankeji.tieba.background.utils.monitor.crash.CrashUploaderService"/>
+        <receiver android:name="cn.xiaochuankeji.tieba.network.filedownload.DownloadReceiver">
+            <intent-filter>
+                <action android:name="cn.xiaochuankeji.tieba.push.client_id"/>
+                <action android:name="cn.xiaochuankeji.tieba.push.push"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1103537147"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="cn.xiaochuankeji.tieba.wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="cn.xiaochuankeji.tieba.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths_public"/>
+        </provider>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.bugly.beta.ui.BetaActivity" android:configChanges="locale|keyboardHidden|orientation|screenSize"/>
+        <service android:name="cn.xiaochuankeji.tieba.push.service.DaemonService" android:exported="false" android:stopWithTask="true"/>
+        <service android:name="com.qq.e.comm.DownloadService" android:exported="false"/>
+        <activity android:theme="@style/Theme.AppCompat.DayNight" android:name="com.qq.e.ads.ADActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true"/>
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true"/>
+        <receiver android:name="cn.xiaochuan.push.xiaomi.XiaomiMessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.xiaochuan.push.meizu.MeizuMessageReceiver">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+                <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+                <category android:name="cn.xiaochuankeji.tieba"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="10212948"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.huawei.hms.activity.BridgeActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="locale|orientation|screenSize|layoutDirection|fontScale" android:hardwareAccelerated="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <provider android:name="com.huawei.hms.update.provider.UpdateProvider" android:exported="false" android:authorities="cn.xiaochuankeji.tieba.hms.update.provider" android:grantUriPermissions="true"/>
+        <receiver android:name="cn.xiaochuan.push.huawei.HuaweiMessageReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+                <action android:name="com.huawei.android.push.intent.CLICK"/>
+                <action android:name="com.huawei.intent.action.PUSH_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushEventReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="cn.xiaochuan.push.oppo.OPPOService">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme_Transparent" android:name="cn.xiaochuan.push.oppo.BridgeActivity" android:enabled="true" android:exported="true" android:noHistory="true">
+            <intent-filter>
+                <action android:name="cn.xiaochuankeji.tieba.internal"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="cn.xiaochuan.push.receiver.MessageReceiver" android:permission="cn.xiaochuankeji.tieba.permission.MESSAGE_RECEIVE" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="cn.xiaochuan.push.action.clicked"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.xiaochuan.push.action.delete"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme_Transparent" android:name="cn.xiaochuan.push.huawei.HuaweiBridgeActivity" android:enabled="true" android:exported="true" android:noHistory="true"/>
+        <activity android:theme="@style/Theme_Transparent" android:name="cn.xiaochuan.push.PushBridgeActivity" android:enabled="true" android:exported="true" android:noHistory="true"/>
+        <receiver android:name="cn.xiaochuan.daemon.WakeUpReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="cn.xiaochuan.daemon.CANCEL_JOB_ALARM_SUB"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.xiaochuan.daemon.WakeUpReceiver$WakeUpAutoStartReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="cn.xiaochuan.daemon.AbsWorkService$WorkNotificationService"/>
+        <service android:name="cn.xiaochuan.daemon.JobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":pushservice"/>
+        <service android:name="cn.xiaochuan.daemon.WatchDogService" android:process=":pushservice"/>
+        <service android:name="cn.xiaochuan.daemon.WatchDogService$WatchDogNotificationService" android:process=":pushservice"/>
+        <activity android:name="com.izuiyou.auth.sina.SinaEntryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CropTheme" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService" android:process=":filedownloader"/>
+        <activity android:theme="@style/Transparent" android:name="cn.xiaochuankeji.aop.permission.ShadowPermissionActivity"/>
+        <provider android:name="com.tencent.bugly.beta.utils.BuglyFileProvider" android:exported="false" android:authorities="cn.xiaochuankeji.tieba.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:name="com.tencent.bugly.beta.tinker.TinkerResultService" android:exported="false"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09" android:launchMode="singleTop"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T" android:launchMode="singleTop"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T" android:launchMode="singleTop"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09" android:launchMode="singleTask"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T" android:launchMode="singleTask"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T" android:launchMode="singleTask"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09" android:launchMode="singleInstance"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T" android:launchMode="singleInstance"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T" android:launchMode="singleInstance"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T" android:launchMode="singleInstance"/>
+        <meta-data android:name="tinker_version" android:value="1.9.1"/>
+        <service android:name="com.tencent.tinker.lib.service.TinkerPatchService" android:exported="false" android:process=":patch"/>
+        <service android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" android:exported="false" android:process=":patch"/>
+        <service android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService" android:exported="false"/>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="cn.xiaochuankeji.tieba.lifecycle-trojan"/>
+        <meta-data android:name="TINKER_ID" android:value="4.1.8.9-base"/>
+    </application>
+</manifest>

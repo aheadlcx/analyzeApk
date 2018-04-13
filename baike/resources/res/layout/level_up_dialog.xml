@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/iv_avatar" android:layout_width="45.5dp" android:layout_height="45.5dp" android:layout_marginTop="12dp" android:scaleType="centerCrop" app:placeholderImageScaleType="6" app:roundAsCircle="true"/>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/level_upgrade_bg"/>
+    <TextView android:textSize="@dimen/live_text_15sp" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_notice_content" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp" android:maxWidth="160dp" android:text="合肥市扫..合肥市扫合肥市扫.大队长
+升级到 Lv 21" android:maxLines="2"/>
+</FrameLayout>

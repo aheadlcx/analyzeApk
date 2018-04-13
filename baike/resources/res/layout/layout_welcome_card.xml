@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@null" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/mainLayout" android:paddingBottom="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/article_item_bg">
+        <RelativeLayout android:id="@+id/rl_qiubai_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="12dp" android:layout_marginBottom="-7dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_qiubai_avatar" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:layout_alignParentLeft="true" android:contentDescription="@string/description_user_avatar" app:actualImageScaleType="6" app:roundAsCircle="true" style="?attr/tuotuo_usericon"/>
+            <TextView android:id="@+id/tv_userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:text="@string/qiubai_name" android:drawableRight="?attr/im_msg_certification" android:drawablePadding="4dp" android:layout_toRightOf="@+id/iv_qiubai_avatar" android:layout_centerVertical="true" style="?attr/card_username"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/tv_welcome" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="19dp" android:layout_marginRight="@dimen/profile_item_default_margin" android:text="@string/qiubai_welcome" android:layout_below="@+id/rl_qiubai_info" android:lineSpacingExtra="30dp" android:lineSpacingMultiplier="0" style="?attr/listitem_content"/>
+        <ImageView android:id="@+id/iv_welcome" android:layout_width="match_parent" android:layout_height="213dp" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="13dp" android:layout_marginRight="@dimen/profile_item_default_margin" android:scaleType="fitXY" android:layout_below="@+id/tv_welcome" android:layout_centerHorizontal="true" style="?attr/welcome_image"/>
+        <TextView android:id="@+id/tv_login_or_register" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="15dp" android:text="@string/user_login_or_register" android:layout_below="@+id/iv_welcome" style="?attr/login_register_text"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ll_login" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/tv_login_or_register">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_qq_login" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/qq_icon"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_weixin_login" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/weixin_icon"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_weibo_login" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/weibo_icon"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_qiubai_login" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_qiubai" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/qiubai_icon"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

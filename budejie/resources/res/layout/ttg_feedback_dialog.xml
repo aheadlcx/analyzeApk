@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="bottom" android:orientation="vertical" android:id="@+id/ttg_ly_content" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/ttg_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="#f2f2f2" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="56dp">
+            <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/btn_cancel" android:background="@drawable/shape_bg_radius" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="取消" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/ttg_white" android:gravity="center" android:id="@+id/btn_sure" android:background="@drawable/shape_bg_radius" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="确认" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView style="@style/TtgVLine"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="180dp">
+            <cn.tatagou.sdk.view.dialog.WheelView android:layout_gravity="center_vertical" android:id="@+id/wv_address_province" android:drawingCacheQuality="auto" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="36dp" android:layout_centerInParent="true">
+                <TextView android:layout_alignParentTop="true" style="@style/TtgVLine"/>
+                <TextView android:layout_alignParentBottom="true" style="@style/TtgVLine"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/flowBottomBg" android:layout_width="match_parent" android:layout_height="48dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/button1" android:background="?attr/flowBottomBgSelector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/id_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+            <TextView android:textSize="@dimen/g_txt_big" android:textColor="?attr/flowBottomTextColor" android:gravity="center" android:id="@+id/id_txt" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_small"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/divide1" android:background="?attr/flowBottomBg" android:paddingTop="12dp" android:paddingBottom="12dp" android:visibility="gone" android:layout_width="1dp" android:layout_height="match_parent">
+            <View android:layout_gravity="center" android:background="?attr/flowBottomDivider" android:layout_width="@dimen/g_divider_small" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button2" android:background="?attr/flowBottomBgSelector" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/id_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+            <TextView android:textSize="@dimen/g_txt_big" android:textColor="?attr/flowBottomTextColor" android:gravity="center" android:id="@+id/id_txt" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_small"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/divide2" android:background="?attr/flowBottomBg" android:paddingTop="12dp" android:paddingBottom="12dp" android:visibility="gone" android:layout_width="1dp" android:layout_height="match_parent">
+            <View android:layout_gravity="center" android:background="?attr/flowBottomDivider" android:layout_width="@dimen/g_divider_small" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button3" android:background="?attr/flowBottomBgSelector" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/id_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+            <TextView android:textSize="@dimen/g_txt_big" android:textColor="?attr/flowBottomTextColor" android:gravity="center" android:id="@+id/id_txt" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_small"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@r$color/alpha_white_mask_20_percent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

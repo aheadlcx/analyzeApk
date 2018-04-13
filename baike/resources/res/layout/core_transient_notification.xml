@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/core_toast_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@android:style/TextAppearance" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@android:id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#bb000000" android:shadowRadius="2.75" android:layout_weight="1"/>
+</LinearLayout>

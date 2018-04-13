@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/grid_pager_title_selected"/>
+        </shape>
+    </item>
+    <item android:state_selected="false">
+        <shape>
+            <solid android:color="@color/transparent"/>
+        </shape>
+    </item>
+</selector>

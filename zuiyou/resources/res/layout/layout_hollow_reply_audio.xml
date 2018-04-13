@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_fffafb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View style="@style/my_divide_view"/>
+    <TextView android:textSize="@dimen/F2_text" android:textColor="@color/tree_hole_main" android:id="@+id/hollow_reply_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="18dp">
+        <cn.xiaochuankeji.tieba.ui.hollow.widget.RecordAnimView android:layout_gravity="center_vertical" android:id="@+id/hollow_reply_anim" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="36dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/hollow_mask" android:scaleType="fitXY" android:layout_weight="1" android:contentDescription="@string/image"/>
+            <FrameLayout android:layout_width="64dp" android:layout_height="64dp">
+                <cn.xiaochuankeji.tieba.ui.hollow.widget.PressListenerView android:id="@+id/hollow_reply_record" android:background="@color/color_fffafb" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/record" android:contentDescription="@string/image"/>
+                <View android:id="@+id/hollow_reply_alpha_fun" android:background="@color/CB" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.6"/>
+            </FrameLayout>
+            <ImageView android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/hollow_mask" android:scaleType="fitXY" android:layout_weight="1" android:contentDescription="@string/image"/>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:id="@+id/hollow_reply_record_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F5_line" android:text="@string/press_say"/>
+    <View style="@style/my_divide_view"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View style="@style/my_divide_view"/>
+        <cn.xiaochuankeji.tieba.ui.hollow.widget.CardView android:gravity="center" android:id="@+id/hollow_reply_reset" android:visibility="invisible" android:layout_width="50dp" android:layout_height="30dp" app:cardShadowColor="@color/tree_hole_main" app:cardShadowRadius="4dp" app:cardBackColor="@color/CB" app:cardRadiusAll="16dp">
+            <TextView android:textSize="@dimen/F4_text" android:textColor="@color/tree_hole_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/record_again"/>
+        </cn.xiaochuankeji.tieba.ui.hollow.widget.CardView>
+        <View android:layout_weight="3" style="@style/my_divide_view"/>
+        <cn.xiaochuankeji.tieba.ui.hollow.widget.CardView android:gravity="center" android:id="@+id/hollow_reply_play" android:visibility="invisible" android:layout_width="50dp" android:layout_height="30dp" app:cardShadowColor="@color/tree_hole_main" app:cardShadowRadius="4dp" app:cardBackColor="@color/CB" app:cardRadiusAll="16dp">
+            <TextView android:textSize="@dimen/F4_text" android:textColor="@color/tree_hole_main" android:id="@+id/hollow_reply_play_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/try_listen"/>
+        </cn.xiaochuankeji.tieba.ui.hollow.widget.CardView>
+        <View style="@style/my_divide_view"/>
+    </LinearLayout>
+    <View style="@style/my_divide_view"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.activity.video.ControlPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/control_panel" android:background="@color/black" android:paddingLeft="15dp" android:paddingRight="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="150dp" android:minHeight="120dp" android:layout_alignParentBottom="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/control_left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/record_tips">
+        <ImageView android:id="@+id/record_cancel_bt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/record_cancel_selector" android:onClick="onRecordCancel"/>
+        <ImageView android:enabled="false" android:id="@+id/record_confirm_bt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/record_confirm_selector" android:onClick="onRecordConfirm"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/control_left_layout" android:layout_alignBottom="@+id/control_left_layout" android:layout_centerInParent="true">
+        <com.budejie.www.activity.video.ShutterButton android:id="@+id/shutter_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+    </LinearLayout>
+    <RadioGroup android:gravity="center" android:orientation="vertical" android:id="@+id/controlRadioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/record_tips" android:layout_alignParentRight="true">
+        <RadioButton android:gravity="center" android:id="@+id/record_control_auto_bt" android:background="@drawable/recorder_control_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="自动"/>
+        <RadioButton android:gravity="center" android:id="@+id/record_control_bt" android:background="@drawable/recorder_control_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:button="@null" android:text="手动"/>
+    </RadioGroup>
+    <TextView android:gravity="center" android:id="@+id/record_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/record_tips_auto" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</com.budejie.www.activity.video.ControlPanelLayout>

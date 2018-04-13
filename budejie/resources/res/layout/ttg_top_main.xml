@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ttg_ly_cats_www" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="0.5dp">
+        <cn.tatagou.sdk.view.TagLayout android:id="@+id/ttg_cats_www" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="6dp" android:layout_marginRight="5dp" android:layout_marginBottom="6dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fy_scroll" android:background="@color/bg_prompt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <cn.tatagou.sdk.view.MyGridView android:gravity="center_horizontal" android:id="@+id/gv_columns" android:background="@color/ttg_white" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:numColumns="4"/>
+    <TextView android:id="@+id/ttg_tv_space" android:background="@color/ttg_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+</LinearLayout>

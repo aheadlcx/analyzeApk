@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/game_container" android:background="@drawable/live_game_ypdx_nn_bg" android:layout_width="match_parent" android:layout_height="201dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/ll_game_init" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="6dp">
+                <ImageView android:id="@+id/iv_role_1" android:layout_width="80dp" android:layout_height="110dp" android:src="@drawable/live_game_ypdx_role_dada" android:scaleType="centerInside"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_role_name_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/live_game_ypdx_role_name_dada" android:scaleType="centerInside"/>
+                <ImageView android:id="@+id/iv_role_2" android:layout_width="80dp" android:layout_height="110dp" android:src="@drawable/live_game_ypdx_role_baobao" android:scaleType="centerInside"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_role_name_2" android:background="@drawable/live_game_role_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/live_game_ypdx_role_name_baobao" android:scaleType="centerInside"/>
+                <ImageView android:id="@+id/iv_role_3" android:layout_width="80dp" android:layout_height="110dp" android:src="@drawable/live_game_ypdx_role_xiaoxiao" android:scaleType="centerInside"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_role_name_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_game_ypdx_role_name_xiaoxiao" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_game_bet" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/fl_group_1" android:paddingLeft="2dp" android:paddingTop="3dp" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <qsbk.app.live.widget.GameBetView android:layout_gravity="right" android:id="@+id/bet_view_1" android:background="@drawable/live_game_ypdx_bet_bg" android:layout_width="58dp" android:layout_height="72dp" android:layout_marginTop="70dp" android:text="哒哒x2"/>
+                        <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/bet_role_1" android:layout_width="60dp" android:layout_height="82dp" android:src="@drawable/live_game_ypdx_role_dada" android:scaleType="fitXY"/>
+                    </FrameLayout>
+                    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/fl_win_bubble_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/live_game_win_bubble_bg" android:layout_width="107dp" android:layout_height="37dp">
+                            <ImageView android:layout_width="33dp" android:layout_height="33dp" android:layout_marginLeft="2dp" android:src="@drawable/live_game_ypdx_result_dada" android:scaleType="fitXY"/>
+                            <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:text="我才是真正的游戏王！哈哈~" android:lines="2"/>
+                        </LinearLayout>
+                        <ImageView android:layout_width="13dp" android:layout_height="5dp" android:layout_marginLeft="10dp" android:layout_marginTop="37dp" android:src="@drawable/live_game_ypdx_bubble_arrow" android:scaleType="fitXY"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/fl_group_2" android:paddingLeft="4dp" android:paddingTop="3dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <qsbk.app.live.widget.GameBetView android:layout_gravity="right" android:id="@+id/bet_view_2" android:background="@drawable/live_game_ypdx_bet_bg" android:layout_width="58dp" android:layout_height="72dp" android:layout_marginTop="70dp" android:text="顺宝x18"/>
+                        <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/bet_role_2" android:layout_width="60dp" android:layout_height="82dp" android:src="@drawable/live_game_ypdx_role_baobao" android:scaleType="fitXY"/>
+                    </FrameLayout>
+                    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/fl_win_bubble_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/live_game_win_bubble_bg" android:layout_width="110dp" android:layout_height="37dp">
+                            <ImageView android:id="@+id/iv_win_bubble_2" android:layout_width="33dp" android:layout_height="33dp" android:layout_marginLeft="2dp" android:scaleType="fitXY"/>
+                            <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:text="让你们等这么久，有想我吗？" android:lines="2"/>
+                        </LinearLayout>
+                        <ImageView android:layout_width="13dp" android:layout_height="5dp" android:layout_marginLeft="10dp" android:layout_marginTop="37dp" android:src="@drawable/live_game_ypdx_bubble_arrow" android:scaleType="fitXY"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/fl_group_3" android:paddingLeft="4dp" android:paddingTop="3dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <qsbk.app.live.widget.GameBetView android:layout_gravity="right" android:id="@+id/bet_view_3" android:background="@drawable/live_game_ypdx_bet_bg" android:layout_width="58dp" android:layout_height="72dp" android:layout_marginTop="70dp" android:text="晓晓x2"/>
+                        <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/bet_role_3" android:layout_width="60dp" android:layout_height="82dp" android:src="@drawable/live_game_ypdx_role_xiaoxiao" android:scaleType="fitXY"/>
+                    </FrameLayout>
+                    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/fl_win_bubble_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/live_game_win_bubble_bg" android:layout_width="107dp" android:layout_height="37dp">
+                            <ImageView android:layout_width="33dp" android:layout_height="33dp" android:layout_marginLeft="2dp" android:src="@drawable/live_game_ypdx_result_xiaoxiao" android:scaleType="fitXY"/>
+                            <TextView android:textSize="@dimen/live_text_10sp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:text="事实证明，选我是正确的~" android:lines="2"/>
+                        </LinearLayout>
+                        <ImageView android:layout_width="13dp" android:layout_height="5dp" android:layout_marginLeft="10dp" android:layout_marginTop="37dp" android:src="@drawable/live_game_ypdx_bubble_arrow" android:scaleType="fitXY"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:id="@+id/mask_group_1" android:background="@color/black_30_percent_transparent" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <View android:id="@+id/mask_group_2" android:background="@color/black_30_percent_transparent" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <View android:id="@+id/mask_group_3" android:background="@color/black_30_percent_transparent" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <View android:id="@+id/divider" android:background="@color/black_30_percent_transparent" android:visibility="invisible" android:layout_width="16dp" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/ll_game_bottom" android:layout_width="match_parent" android:layout_height="42dp">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_game_balance" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/live_game_balance2" android:scaleType="centerInside"/>
+                    <TextView android:textSize="15sp" android:textColor="#ffe503" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_game_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="1dp" android:text="0" android:singleLine="true" style="@style/TextShadow_game_money_num"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="18dp" android:layout_height="14dp" android:src="@drawable/live_game_diamond" android:scaleType="centerInside"/>
+                </LinearLayout>
+                <qsbk.app.live.widget.GameBetButton android:orientation="horizontal" android:id="@+id/bet_btn" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                <ImageView android:layout_gravity="bottom" android:id="@+id/btn_more" android:paddingLeft="7dp" android:paddingTop="5dp" android:paddingRight="5dp" android:layout_width="45dp" android:layout_height="match_parent" android:src="@drawable/live_game_more_ic_selector" android:scaleType="centerCrop"/>
+            </LinearLayout>
+            <View android:id="@+id/divider_bottom" android:background="@color/black_30_percent_transparent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/btn_mvp" android:padding="8dp" android:visibility="gone" android:layout_width="43dp" android:layout_height="44dp" android:layout_marginBottom="154dp" android:src="@drawable/btn_mvp" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/btn_help" android:padding="8dp" android:visibility="gone" android:layout_width="43dp" android:layout_height="44dp" android:layout_marginBottom="103dp" android:src="@drawable/live_game_help_ic_selector" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/btn_history" android:padding="8dp" android:visibility="gone" android:layout_width="43dp" android:layout_height="44dp" android:layout_marginBottom="52dp" android:src="@drawable/live_game_history_ic_selector" android:scaleType="fitXY"/>
+    <View android:id="@+id/live_game_dice_bg" android:background="@color/black_30_percent_transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <FrameLayout android:id="@+id/fl_dice" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/live_game_ypdx_light" android:layout_width="214dp" android:layout_height="94dp" android:layout_marginTop="58dp" android:src="@drawable/live_game_ypdx_light" android:scaleType="fitXY" android:alpha="0"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/live_game_ypdx_flag_left" android:layout_width="60dp" android:layout_height="77dp" android:layout_marginTop="6dp" android:layout_marginRight="30dp" android:scaleType="fitXY" android:alpha="0"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/live_game_ypdx_flag_right" android:background="@drawable/live_game_ypdx_flag_shunzi" android:layout_width="60dp" android:layout_height="77dp" android:layout_marginLeft="30dp" android:layout_marginTop="6dp" android:scaleType="fitXY" android:alpha="0"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/live_game_ypdx_flag" android:layout_width="60dp" android:layout_height="77dp" android:layout_marginTop="6dp" android:scaleType="fitXY" android:alpha="0"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/live_game_ypdx_pan" android:visibility="gone" android:layout_width="137dp" android:layout_height="86dp" android:layout_marginTop="103dp" android:src="@drawable/live_game_ypdx_pan" android:scaleType="fitXY"/>
+        <qsbk.app.live.widget.GameDiceView android:layout_gravity="center_horizontal" android:id="@+id/live_game_ypdx_dice" android:visibility="gone" android:layout_width="105dp" android:layout_height="37dp" android:layout_marginTop="120dp"/>
+        <TextView android:textSize="@dimen/live_text_13sp" android:textColor="@color/color_FFE403" android:layout_gravity="center_horizontal" android:id="@+id/tv_dice_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="98dp" android:alpha="0"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/live_game_ypdx_cup_pan" android:visibility="gone" android:layout_width="137dp" android:layout_height="132dp" android:layout_marginTop="30dp" android:src="@drawable/live_game_ypdx_cup_pan" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/live_game_ypdx_cup" android:visibility="gone" android:layout_width="118dp" android:layout_height="151dp" android:layout_marginTop="22dp" android:src="@drawable/live_game_ypdx_cup" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <TextView android:textSize="38sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_count_down" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:text="40" style="@style/TextShadow_20_percent"/>
+    <TextView android:textSize="13sp" android:textColor="#ffe503" android:gravity="center" android:id="@+id/tv_tips" android:background="@drawable/live_game_tips" android:paddingLeft="35dp" android:paddingTop="4dp" android:paddingRight="35dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="29dp" android:layout_marginTop="16dp" android:layout_marginRight="29dp" android:text="即将开始，请稍等"/>
+</FrameLayout>

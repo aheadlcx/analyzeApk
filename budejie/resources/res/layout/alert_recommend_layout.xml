@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/alertLayout" android:background="@drawable/bg_sf_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+        <LinearLayout android:gravity="center" android:id="@+id/alertTitleLayout" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:layout_gravity="center" android:id="@+id/alertTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggested_follows"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/gridViewLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/alertTitleLayout">
+            <GridView android:id="@+id/gridViewContent" android:background="@color/transparent" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/margin_8" android:verticalSpacing="@dimen/margin_8" android:numColumns="4"/>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/alertBottomLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20" android:layout_marginTop="@dimen/margin_20" android:layout_marginRight="@dimen/margin_20" android:layout_below="@+id/gridViewLayout">
+            <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/alertIgnoreTV" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hulue" android:layout_weight="2"/>
+            <Button android:textSize="20sp" android:textColor="@color/white" android:id="@+id/alertLookBtn" android:background="@drawable/bg_alert_lookbtn" android:padding="@dimen/margin_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/go_look" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10" android:src="@drawable/ic_alert_recommend_love"/>
+</RelativeLayout>

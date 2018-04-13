@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/ttg_ly_icon" android:background="@drawable/shape_transparent_circular" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginRight="7dp" android:layout_marginBottom="@dimen/ttg_cm_backup_top">
+    <RelativeLayout android:id="@+id/ttg_rl_num" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="13sp" android:textColor="@color/ttg_white" android:id="@+id/ttg_tv_num" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_above="@+id/ttg_v_line" android:layout_centerHorizontal="true"/>
+        <TextView android:id="@+id/ttg_v_line" android:background="@color/ttg_white" android:layout_height="1dp" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" android:layout_centerVertical="true" style="@style/TtgVLine"/>
+        <TextView android:textSize="13sp" android:textColor="@color/ttg_white" android:id="@+id/ttg_tv_sum_num" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_below="@+id/ttg_v_line" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <cn.tatagou.sdk.view.IconTextView android:textSize="20sp" android:textColor="@color/ttg_white" android:gravity="center" android:id="@+id/ttg_icon_back_top" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="2dp" android:text="@string/ttg_icon_back_top"/>
+</LinearLayout>

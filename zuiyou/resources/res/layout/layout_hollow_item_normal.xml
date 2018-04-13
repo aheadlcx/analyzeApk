@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/CB" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_4" android:id="@+id/hollow_normal_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hollow_welcome"/>
+        <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:id="@+id/hollow_normal_item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F5_line" android:text="@string/long_text_test" android:lineSpacingMultiplier="1.2"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F5_line">
+            <RelativeLayout android:background="@drawable/bg_hollow_item_emotion" android:layout_width="44dp" android:layout_height="44dp">
+                <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/hollow_normal_item_emotion" android:layout_width="28dp" android:layout_height="28dp" android:layout_centerInParent="true" android:contentDescription="@string/image" app:placeholderImage="@drawable/bg_emotion_item_normal" app:actualImageScaleType="5"/>
+            </RelativeLayout>
+            <cn.xiaochuankeji.tieba.ui.hollow.widget.AudioPlayView android:id="@+id/hollow_normal_item_play" android:background="@drawable/profile_post_audio_bg" android:paddingLeft="20dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="10dp"/>
+            <TextView android:textSize="@dimen/F3_text" android:textColor="@color/CT_2" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/hollow_normal_item_info_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/long_text_test" android:maxLines="8" android:lineSpacingMultiplier="1.2"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_6" android:id="@+id/hollow_normal_item_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/F5_line" android:text="@string/image"/>
+    </LinearLayout>
+    <View android:id="@+id/hollow_normal_item_bottom" android:background="@color/color_fffafb" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

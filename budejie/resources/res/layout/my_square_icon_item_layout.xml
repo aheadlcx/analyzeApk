@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/my_square_icon_layout" android:background="?attr/common_press" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/my_square_icon" android:layout_width="43dp" android:layout_height="43dp"/>
+        <TextView android:textSize="11sp" android:textColor="?attr/item_content_text_color" android:gravity="center_horizontal" android:id="@+id/my_square_icon_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rl_my_blog_pic" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+    <cn.v6.sixrooms.widgets.phone.WeiBoListView android:orientation="vertical" android:id="@+id/pullToRefresh" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlebar_default">
+        <GridView android:gravity="center" android:id="@+id/blog_photo" android:background="@color/white" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/blog_pospic_wrapper_margin_top" android:layout_marginTop="@dimen/blog_pospic_wrapper_margin_top" android:layout_marginRight="@dimen/blog_pospic_wrapper_margin_top" android:listSelector="#ffffffff" android:horizontalSpacing="@dimen/blog_photo_spacing" android:verticalSpacing="@dimen/blog_photo_spacing" android:stretchMode="columnWidth" android:numColumns="3"/>
+    </cn.v6.sixrooms.widgets.phone.WeiBoListView>
+    <include android:visibility="gone" layout="@layout/phone_custom_progressbar"/>
+</RelativeLayout>

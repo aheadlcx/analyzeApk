@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:layout_gravity="top" android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navTitleText="申诉" app:navNeedBack="true" app:navShowBottomDivide="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_allege_reason" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <EditText android:textSize="15dp" android:textColor="#111111" android:textColorHint="#a5a4a4" android:gravity="start" android:id="@+id/text_allege_content" android:background="@drawable/bg_edit_content" android:padding="10dp" android:layout_width="match_parent" android:layout_height="126dp" android:layout_margin="17dp" android:hint="请填写申诉理由"/>
+        <Button android:textSize="14dp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/btn_submit_allege" android:background="@drawable/bg_button_allege" android:layout_width="100dp" android:layout_height="35dp" android:text="立即提交"/>
+    </LinearLayout>
+</RelativeLayout>

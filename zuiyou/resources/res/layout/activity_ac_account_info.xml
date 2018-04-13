@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:navTitleText="个人信息" app:navNeedBack="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/navBar">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/headerView" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/picAvatar" android:layout_width="73dp" android:layout_height="73dp" app:roundAsCircle="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/CT_5" android:id="@+id/tv_tip_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="点击修改头像"/>
+        </LinearLayout>
+        <View android:id="@+id/split_lin1" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="@dimen/item_height" android:layout_marginTop="15dp">
+            <TextView android:textSize="16sp" android:textColor="@color/CT_2" android:id="@+id/tip_tv_nickname" android:layout_width="110dp" android:layout_height="wrap_content" android:text="昵称"/>
+            <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:gravity="center_vertical" android:id="@+id/tvNickName" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="@dimen/item_height">
+            <TextView android:textSize="16sp" android:textColor="@color/CT_2" android:id="@+id/tv_tip_sex" android:layout_width="110dp" android:layout_height="wrap_content" android:text="性别"/>
+            <ImageView android:id="@+id/ivMale" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/male_selector"/>
+            <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:id="@+id/tv_tip_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="男"/>
+            <ImageView android:id="@+id/ivFemale" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:src="@drawable/male_selector"/>
+            <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:id="@+id/tv_tip_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="女"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="@dimen/item_height">
+            <TextView android:textSize="16sp" android:textColor="@color/CT_2" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_tip_birth" android:layout_width="110dp" android:layout_height="wrap_content" android:text="生日"/>
+            <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:textColorHint="@color/CT_5" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tvBirth" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请填写生日" android:maxLines="2" android:lineSpacingMultiplier="1.2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="30dp">
+            <TextView android:textSize="16sp" android:textColor="@color/CT_2" android:id="@+id/tv_tip_sign" android:layout_width="110dp" android:layout_height="wrap_content" android:text="个人签名"/>
+            <TextView android:textSize="16sp" android:textColor="@color/CT_5" android:textColorHint="@color/CT_5" android:ellipsize="end" android:id="@+id/tvSignOrLoginTips" android:layout_width="0dp" android:layout_height="42dp" android:hint="这个人很懒，什么也没有写~" android:maxLines="2" android:layout_weight="1" android:lineSpacingMultiplier="1.2"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

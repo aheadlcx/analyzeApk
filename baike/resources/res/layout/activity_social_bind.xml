@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="?attr/setting_line_bg_new" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <qsbk.app.widget.SecurityBindView android:gravity="center_vertical" android:id="@+id/wx" android:background="?attr/editSingleItemBg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:ic="?attr/ic_wx" app:mainText="绑定微博" app:status="1"/>
+        <View android:background="?attr/dividerColor01" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+        <qsbk.app.widget.SecurityBindView android:gravity="center_vertical" android:id="@+id/qq" android:background="?attr/editSingleItemBg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:ic="?attr/ic_qq" app:mainText="绑定QQ" app:status="1"/>
+        <View android:background="?attr/dividerColor01" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+        <qsbk.app.widget.SecurityBindView android:gravity="center_vertical" android:id="@+id/weibo" android:background="?attr/editSingleItemBg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:ic="?attr/ic_weibo" app:mainText="绑定微博" app:status="1"/>
+        <View android:background="?attr/dividerColor01" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small"/>
+    </LinearLayout>
+    <TextView android:textColor="?attr/one_profile_item_content" android:background="?attr/setting_line_bg_new" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/security_bind_description"/>
+</LinearLayout>

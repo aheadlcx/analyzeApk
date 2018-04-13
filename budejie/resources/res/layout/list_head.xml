@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/head_contentLayout" android:paddingLeft="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/head_arrowImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/goicon"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/head_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/head_tipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下拉刷新"/>
+            <TextView android:textSize="12sp" android:textColor="@android:color/black" android:id="@+id/head_lastUpdatedTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上次更新"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

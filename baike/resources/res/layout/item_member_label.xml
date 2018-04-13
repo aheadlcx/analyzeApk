@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="12dp" android:textColor="#969696" android:gravity="center_vertical" android:id="@+id/label" android:background="?attr/group_info_bg" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="23dp" android:text="群大"/>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.image.SquaredImageView android:id="@+id/picture_view" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/PostImage"/>
+    <TextView android:textSize="10sp" android:textColor="@color/CW" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/tvLongImgFlag" android:background="@drawable/bg_longpic_flag" android:layout_width="32dp" android:layout_height="18dp" android:layout_marginRight="8dp" android:layout_marginBottom="7dp" android:text="长图"/>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/flVBottomLine" android:background="@drawable/recommend_video_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24dp">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/tvVDur" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/ivVFlag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video2_flag"/>
+</FrameLayout>

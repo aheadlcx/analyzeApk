@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Image_EditWay">
+        <item>编辑图片</item>
+        <item>删除图片</item>
+        <item>拍照</item>
+        <item>从相册选择</item>
+    </array>
+    <array name="Image_SelectWay">
+        <item>拍照</item>
+        <item>从相册选择</item>
+    </array>
+    <array name="LiveRoomChristmas">
+        <item>@drawable/live_christmas_favor_1</item>
+        <item>@drawable/live_christmas_favor_2</item>
+        <item>@drawable/live_christmas_favor_3</item>
+        <item>@drawable/live_christmas_favor_4</item>
+        <item>@drawable/live_christmas_favor_5</item>
+        <item>@drawable/live_christmas_favor_6</item>
+        <item>@drawable/live_christmas_favor_7</item>
+        <item>@drawable/live_christmas_favor_8</item>
+        <item>@drawable/live_christmas_favor_9</item>
+        <item>@drawable/live_christmas_favor_10</item>
+    </array>
+    <array name="LiveRoomNormal">
+        <item>@drawable/live_favor_1</item>
+        <item>@drawable/live_favor_2</item>
+        <item>@drawable/live_favor_3</item>
+        <item>@drawable/live_favor_4</item>
+        <item>@drawable/live_favor_5</item>
+        <item>@drawable/live_favor_6</item>
+        <item>@drawable/live_favor_7</item>
+        <item>@drawable/live_favor_8</item>
+        <item>@drawable/live_favor_9</item>
+        <item>@drawable/live_favor_10</item>
+    </array>
+    <array name="LiveRoomSpring">
+        <item>@drawable/live_spring_favor_1</item>
+        <item>@drawable/live_spring_favor_2</item>
+        <item>@drawable/live_spring_favor_3</item>
+        <item>@drawable/live_spring_favor_4</item>
+        <item>@drawable/live_spring_favor_5</item>
+        <item>@drawable/live_spring_favor_6</item>
+        <item>@drawable/live_spring_favor_7</item>
+        <item>@drawable/live_spring_favor_8</item>
+        <item>@drawable/live_spring_favor_9</item>
+        <item>@drawable/live_spring_favor_10</item>
+    </array>
+    <array name="evaluate_rating_tip">
+        <item>请选择星级后提交您的评分。</item>
+        <item>简直渣渣！</item>
+        <item>真是无趣！</item>
+        <item>非常勉强！</item>
+        <item>不错哦不要骄傲！</item>
+        <item>简直棒呆了！</item>
+    </array>
+    <array name="found_ids">
+        <item>group</item>
+        <item>nearby</item>
+        <item>random</item>
+        <item>store</item>
+        <item>game</item>
+    </array>
+    <array name="found_subtitles">
+        <item>来看看周围的群吧</item>
+        <item>Hey，来看看周围的糗友吧≖‿≖✧</item>
+        <item>不用去外地，都可以广交糗友</item>
+        <item>萌萌的糗事百科周边，买买买</item>
+        <item>精选好玩游戏汇总</item>
+    </array>
+    <array name="found_titles">
+        <item>群</item>
+        <item>附近</item>
+        <item>任意门</item>
+        <item>糗百货</item>
+        <item>游戏</item>
+    </array>
+</resources>

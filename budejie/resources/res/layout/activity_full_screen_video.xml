@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/video_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.budejie.www.activity.video.VideoView android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.budejie.www.activity.video.barrage.ui.widget.DanmakuView android:id="@+id/barrage_full_screen_container" android:background="#f00" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navigation_height" android:layout_marginBottom="20dp" android:layout_alignTop="@+id/video_container" android:layout_alignBottom="@+id/video_container"/>
+    <com.budejie.www.widget.FavorLayout android:id="@+id/favor_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="20dp" android:layout_alignTop="@+id/video_container" android:layout_alignBottom="@+id/video_container"/>
+    <RelativeLayout android:id="@+id/rl_video_recommended" android:background="#d9000000" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager android:id="@+id/video_recommend_viewpager" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navigation_height" android:flipInterval="30" android:layout_above="@+id/video_recommend_viewpager_indicator"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/video_recommend_viewpager_indicator" android:layout_width="match_parent" android:layout_height="20dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <com.budejie.www.widget.NewTitleView android:id="@+id/new_title_view" android:layout_width="match_parent" android:layout_height="@dimen/comment_detail_title_height" android:layout_alignParentTop="true"/>
+</RelativeLayout>

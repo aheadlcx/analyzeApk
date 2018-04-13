@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/single_article_cmt_item_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.SizeNotifierRelativeLayout android:orientation="vertical" android:id="@+id/root" android:saveEnabled="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/emotions" android:background="?attr/emotion_main_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/emotion_container_height" android:layout_alignParentBottom="true">
+            <qsbk.app.im.emotion.EmotionViewPager android:layout_gravity="center_vertical" android:id="@+id/emotion_viewpager" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1"/>
+            <qsbk.app.widget.DotView android:gravity="center_horizontal" android:id="@+id/emotion_dotview" android:layout_width="match_parent" android:layout_height="10dp" app:dot_count="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/addCmtLayout" android:background="?attr/singleArticleBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_above="@+id/emotions" android:layout_alignWithParentIfMissing="true">
+            <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="@dimen/padding_small">
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/sendEmotion" android:background="@drawable/button_on_press" android:padding="5dp" android:layout_width="34dp" android:layout_height="34dp"/>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/sendKeyboard" android:background="@drawable/button_on_press" android:padding="5dp" android:visibility="gone" android:layout_width="34dp" android:layout_height="34dp"/>
+            </FrameLayout>
+            <qsbk.app.widget.QiushiEmotionEditText android:id="@+id/addCmtEditText" android:background="@null" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:hint="@string/comment_input_hint" android:layout_weight="1" android:lineSpacingExtra="2dp" android:inputType="text" android:imeOptions="actionSend" app:emotionSize="20dp" style="?attr/edittext_comment"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/padding_small">
+                <TextView android:textSize="16sp" android:textColor="#e14123" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/exceed_words" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/send" android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="match_parent" style="?attr/btnSend"/>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="?attr/dividerColor01" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_large" android:layout_above="@+id/addCmtLayout"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/divider" android:layout_alignParentTop="true">
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/cafe_web_layout"/>
+            <RelativeLayout android:id="@+id/remind_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ProgressBar android:layout_gravity="center" android:id="@+id/loading_remind" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerHorizontal="true" style="?attr/xlistview_progress"/>
+                <TextView android:textSize="12sp" android:textColor="?attr/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="加载中...请稍后" android:layout_below="@+id/loading_remind"/>
+            </RelativeLayout>
+            <ProgressBar android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </qsbk.app.widget.SizeNotifierRelativeLayout>
+</RelativeLayout>

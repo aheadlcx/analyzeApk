@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/bt_left" android:background="@drawable/btn_left_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="4dp" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:onClick="followLayout$Click"/>
+</RelativeLayout>

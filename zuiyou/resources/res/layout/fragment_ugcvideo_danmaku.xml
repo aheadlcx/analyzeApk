@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.ugcvideodetail.danmaku.DanmakuStickyFrameLayout android:layout_gravity="bottom" android:id="@+id/vContainerWrap" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="58dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_ugcvideo_danmaku" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="40dp">
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="17dp" android:text="弹幕列表"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ivClose" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="17dp" android:src="@drawable/img_danmaku_close" android:scaleType="center"/>
+            </FrameLayout>
+            <View android:background="#0dffffff" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="#4dffffff" android:layout_gravity="center" android:id="@+id/tvEmpty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无弹幕，发个弹幕吧" android:drawableTop="@drawable/img_empty_danmaku" android:drawablePadding="23dp"/>
+                <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/ulRecyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </cn.xiaochuankeji.tieba.ui.ugcvideodetail.danmaku.DanmakuStickyFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/vInputContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/vSoftCover" android:background="#80000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="#232323" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="58dp">
+            <EditText android:textSize="13sp" android:textColor="#b3ffffff" android:textColorHint="#b3ffffff" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/etInput" android:background="@drawable/bg_et_input_ugcvideo_danmaku" android:paddingLeft="@dimen/divide_space_10" android:paddingRight="@dimen/divide_space_10" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:minHeight="40dp" android:hint="填装弹幕内容..." android:maxLines="4" android:maxLength="40" android:layout_weight="1" android:imeOptions="flagNoExtractUi"/>
+            <TextView android:textColor="#dd2864" android:gravity="center" android:id="@+id/vSend" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="发送"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

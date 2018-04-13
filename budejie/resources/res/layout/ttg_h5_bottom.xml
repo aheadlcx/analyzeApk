@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="#8b00ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/ttg_ly_bc_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/ttg_tv_prices" android:paddingTop="4dp" android:layout_marginBottom="-3dp" android:text="￥24.9" android:layout_toLeftOf="@+id/ttg_ly_title" style="@style/ttgH5TvCouponPrice"/>
+        <TextView android:textSize="8sp" android:textColor="@android:color/white" android:id="@+id/ttg_tv_prices_description" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="@string/ttg_use_coupon_discount_price" android:layout_below="@+id/ttg_tv_prices" android:layout_alignLeft="@+id/ttg_tv_prices"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ttg_ly_title" android:paddingTop="7dp" android:paddingBottom="6dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="10sp" android:textColor="@android:color/white" android:id="@+id/ttg_tv_receive_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_get_coupon_now"/>
+            <TextView android:id="@+id/ttg_tv_coupon_title" android:text="@string/ttg_coupon_discount_price" style="@style/ttgH5TvCouponTitle"/>
+        </LinearLayout>
+        <cn.tatagou.sdk.view.IconTextView android:textSize="20dp" android:textColor="@android:color/white" android:id="@+id/ttg_tv_coupon_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="41dp" android:text="@string/ttg_icon_coupon_show" android:layout_toRightOf="@+id/ttg_ly_title" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ttg_ly_lessen_prices" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:id="@+id/ttg_tv_lessen_prices" android:text="￥24.9" android:layout_toLeftOf="@+id/ttg_tv_lessen_title" android:layout_centerVertical="true" style="@style/ttgH5TvCouponPrice"/>
+        <TextView android:id="@+id/ttg_tv_lessen_title" android:text="@string/ttg_order_lessen_prices" android:layout_centerInParent="true" style="@style/ttgH5TvCouponTitle"/>
+    </RelativeLayout>
+</LinearLayout>

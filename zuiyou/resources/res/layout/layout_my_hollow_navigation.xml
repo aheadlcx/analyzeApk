@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/my_hollow_nav_root" android:background="@drawable/bg_tree_edit_audio" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/nav_back_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left_white" android:contentDescription="@string/image"/>
+            <View style="@style/my_divide_view"/>
+            <ImageView android:id="@+id/nav_publish_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tree_write" android:contentDescription="@string/image"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:layout_weight="2" style="@style/my_divide_view"/>
+            <FrameLayout android:id="@+id/fun_view_left" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CB" android:layout_gravity="center_vertical" android:id="@+id/my_hollow_nav_hollow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tree_hole"/>
+                <View android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/fun_view_empty" android:background="@color/CB" android:visibility="invisible" android:layout_width="12dp" android:layout_height="3dp" android:layout_marginBottom="4dp"/>
+            </FrameLayout>
+            <View android:layout_weight="1" style="@style/my_divide_view"/>
+            <FrameLayout android:id="@+id/fun_view_middle" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CB" android:layout_gravity="center_vertical" android:id="@+id/my_hollow_nav_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reply" android:alpha="0.8"/>
+            </FrameLayout>
+            <View android:layout_weight="1" style="@style/my_divide_view"/>
+            <FrameLayout android:id="@+id/fun_view_right" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CB" android:layout_gravity="center_vertical" android:id="@+id/my_hollow_nav_discovery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discovery" android:alpha="0.8"/>
+            </FrameLayout>
+            <View android:layout_weight="2" style="@style/my_divide_view"/>
+        </LinearLayout>
+        <View android:id="@+id/my_hollow_nav_slide" android:background="@color/CB" android:layout_width="12dp" android:layout_height="3dp"/>
+    </FrameLayout>
+</LinearLayout>

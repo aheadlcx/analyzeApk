@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentTop="true"/>
+        <RelativeLayout android:id="@+id/content_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider">
+            <RelativeLayout android:id="@+id/news_user_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="12dp" android:layout_marginRight="@dimen/profile_item_default_margin" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/news_user_icon" android:background="@drawable/default_users_avatar" android:layout_width="@dimen/middle_user_icon" android:layout_height="@dimen/middle_user_icon" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:contentDescription="@string/description_user_avatar" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                <TextView android:id="@+id/news_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:text="糗闻" android:layout_toRightOf="@+id/news_user_icon" android:layout_centerVertical="true" style="?attr/listitem_username"/>
+            </RelativeLayout>
+            <TextView android:ellipsize="end" android:id="@+id/news_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="@dimen/padding_medium" android:layout_marginRight="@dimen/profile_item_default_margin" android:maxLines="4" android:layout_below="@+id/news_user_info" style="?attr/listitem_content"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/news_image" android:layout_width="match_parent" android:layout_height="197dp" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="6dp" android:layout_marginRight="@dimen/profile_item_default_margin" android:layout_below="@+id/news_description"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/operation_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_below="@+id/news_image">
+                <TextView android:textSize="@dimen/small_fonts" android:textColor="?attr/color_gray" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/news_more" android:layout_width="match_parent" android:layout_height="50dp" android:text="查看更多糗闻" android:drawableLeft="@drawable/live_arrow" android:drawablePadding="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

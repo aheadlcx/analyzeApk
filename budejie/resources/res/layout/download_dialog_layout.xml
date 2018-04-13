@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/download_dialog_bg" android:background="@drawable/download_dialog_bg" android:layout_width="wrap_content" android:layout_height="320dp" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/download_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:src="@drawable/download_dialog_icon" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="22sp" android:textColor="#e50541" android:id="@+id/download_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="上传视频插件" android:layout_below="@+id/download_icon" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="20sp" android:textColor="#363636" android:id="@+id/download_text_explain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="安装后可以上传视频" android:layout_below="@+id/download_text" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:background="@drawable/download_dialog_buttom_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <Button android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/download_apk_btn" android:background="@drawable/download_setup_now_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="马上安装" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/download_dialog_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/download_dialog_cancel" android:layout_alignTop="@+id/download_dialog_bg" android:layout_alignRight="@+id/download_dialog_bg"/>
+</RelativeLayout>

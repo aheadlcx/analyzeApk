@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@null" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/divider" android:layout_width="wrap_content" android:layout_height="8dp" android:layout_alignParentTop="true"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/backgroud_image" android:layout_width="match_parent" android:layout_height="200dp" android:layout_below="@+id/divider"/>
+        <TextView android:textSize="16dp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@+id/title" android:paddingLeft="@dimen/profile_item_default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66dp" android:text="再恶劣的天气也阻挡不了我看她的直播再恶劣的天气也阻挡不了我看她的直播" android:singleLine="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="12dp" android:textColor="#ffffffff" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="- 2016.10.24 期 -" android:layout_below="@+id/title" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14dp" android:textColor="#ffffffff" android:id="@+id/btn" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="查看精选糗事" android:layout_below="@+id/date" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layerMask" android:background="@color/transparent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

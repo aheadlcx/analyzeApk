@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/found_head_lin" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/found_head_title_lin" android:layout_width="match_parent" android:layout_height="120dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/found_ic_nearby" android:background="@drawable/found_ic_nearby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="13dp" android:layout_gravity="center" android:id="@+id/found_head_nearby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scaleType="centerCrop" android:text="附近糗友" android:layout_below="@+id/found_ic_nearby" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/found_ic_group" android:background="@drawable/found_ic_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="13dp" android:layout_gravity="center" android:id="@+id/found_head_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scaleType="centerCrop" android:text="群" android:layout_below="@+id/found_ic_group" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/found_ic_chicken_rel" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/found_ic_chicken" android:background="@drawable/found_ic_chicken" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="13dp" android:gravity="center" android:id="@+id/found_head_cross" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scaleType="centerCrop" android:text="小鸡" android:layout_below="@+id/found_ic_chicken" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/chicken_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/chicken_new" android:layout_alignTop="@+id/found_ic_chicken" android:layout_alignParentRight="true" android:layout_alignEnd="@+id/found_ic_chicken"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/found_ic_duobao_rel" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/found_ic_store" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="13dp" android:layout_gravity="center" android:id="@+id/found_head_store" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:scaleType="centerCrop" android:text="糗商城" android:layout_below="@+id/found_ic_store" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/duobao_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/chicken_new" android:layout_alignTop="@+id/found_ic_store" android:layout_alignParentRight="true" android:layout_alignEnd="@+id/found_ic_store"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

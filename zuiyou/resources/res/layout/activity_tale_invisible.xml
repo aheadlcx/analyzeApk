@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <RelativeLayout android:id="@+id/nav_bar" android:background="@color/CB" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/navbar_height">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/back" android:layout_width="@dimen/navbar_height" android:layout_height="@dimen/navbar_height" android:src="@drawable/ic_arrow_left" android:scaleType="center"/>
+        <android.support.v7.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/CT_2" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="被吃掉的帖子" android:singleLine="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/nav_bar">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <cn.xiaochuankeji.tieba.widget.ZYClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:srlTextSizeTitle="12sp"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

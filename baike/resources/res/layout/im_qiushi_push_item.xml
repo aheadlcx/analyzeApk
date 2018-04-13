@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:id="@+id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/article_image" android:visibility="gone" android:layout_width="@dimen/large_user_icon" android:layout_height="@dimen/large_user_icon" app:actualImageScaleType="6" app:roundedCornerRadius="3dp"/>
+        <TextView android:textSize="9dp" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/article_content" android:background="@r$color/im_qiushi_push_thumb_text" android:padding="5dp" android:layout_width="@dimen/im_push_right_thumb_size" android:layout_height="@dimen/im_push_right_thumb_size" android:lineSpacingExtra="0.5dp" style="?attr/msg_left"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/play" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_toLeftOf="@+id/right" android:layout_centerVertical="true">
+        <TextView android:textSize="20dp" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_chattitle" android:background="@null" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/tv_chatcontent" android:lineSpacingExtra="2dp" style="?attr/msg_left"/>
+        <TextView android:textSize="16dp" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_chatcontent" android:background="@null" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1" android:lineSpacingExtra="2dp" style="?attr/msg_left"/>
+    </LinearLayout>
+</merge>

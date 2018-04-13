@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="177" android:versionName="10.19.2" android:installLocation="internalOnly" package="qsbk.app" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <permission android:name="qsbk.app.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="qsbk.app.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <permission android:name="android.permission.FLASHLIGHT" android:protectionLevel="normal" android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="true"/>
+    <uses-feature android:name="android.hardware.microphone"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="qsbk.app.QsbkApp" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true">
+        <activity android:theme="@style/Theme_Start" android:name="qsbk.app.activity.group.SplashGroup" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme_Start" android:name="qsbk.app.activity.group.SplashAdActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Theme_Start" android:name="qsbk.app.activity.group.SplashAdOtherActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.SimpleWebActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.NewsWebActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Day_GroupInfo" android:name="qsbk.app.activity.GroupInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day_GroupInfo" android:name="qsbk.app.activity.ChangeGroupNameActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day_GroupInfo" android:name="qsbk.app.activity.MemberTitleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/Day_GroupInfo" android:name="qsbk.app.activity.MemberManagerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day_GroupInfo" android:name="qsbk.app.activity.MemberChooseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day_GroupInfo" android:name="qsbk.app.activity.SearchGroupActivity" android:screenOrientation="portrait" android:configChanges="orientation"/>
+        <activity android:theme="@style/Day_GroupInfo" android:name="qsbk.app.activity.GroupRankActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.NearByGroupActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.GroupNoticeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.InviteQiuYouActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.InviteFriendActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.ApplyForGroupActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.GroupNoticeDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="qsbk.app.activity.UserGuideActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:theme="@style/AppTheme_FullScreen" android:name="qsbk.app.activity.VideoFullScreenActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:name="qsbk.app.activity.LandscapeVideoFullScreenActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:name="qsbk.app.video.VideoPickerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="qsbk.app.video.VideoEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged" android:hardwareAccelerated="true"/>
+        <activity android:name="qsbk.app.video.VideoRecordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.VideoImmersionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.VideoImmersionCircleActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:theme="@style/Nearby_Day" android:name="qsbk.app.nearby.ui.InfoCompleteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.im.ConversationActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.QiushiNotificationListActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.QiuyouCircleLikedListActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.im.GroupConversationActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.im.OfficialMsgDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.im.GameWebViewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.im.OfficialInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.RunForOwnerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.ApplyForOwnerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.im.OfficialSubscribeListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.SingleArticle" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.slide.SlideActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.TopicTopActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.SingleArticleLevel" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/Day_FullScreenTransition" android:name="qsbk.app.activity.ImageViewer" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_FullScreenTransition" android:name="qsbk.app.activity.NewImageViewer" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="qsbk.app.activity.GIFImageViewer" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_FullScreenTransition" android:name="qsbk.app.activity.CircleArticleImageViewer" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Login" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.ActionBarLoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Login" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.FillUserDataActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Setting" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.ActionBarUserSettingNavi" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Setting" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.PrivacyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Setting" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.SecuritySafeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Login" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.security.ActionBarSecurityBindActivity" android:screenOrientation="portrait" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Login" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.security.EmailBindActivity" android:screenOrientation="portrait" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.security.FindPasswordActivity" android:screenOrientation="portrait" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.About" android:screenOrientation="portrait" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.ad.store.StoreActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.game.GameIndexActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.base.BaseWebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.push.PushMessageShow" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.publish.Publish_Image" android:screenOrientation="portrait"/>
+        <activity android:name="qsbk.app.share.AuthorizeActivity" android:screenOrientation="portrait" android:configChanges="orientation"/>
+        <activity android:name="qsbk.app.share.QQAuthorizeActivity" android:screenOrientation="portrait" android:configChanges="orientation"/>
+        <activity android:theme="@style/AppTheme_share_new" android:name="qsbk.app.activity.base.CommDialogActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_share_FullScreen" android:name="qsbk.app.share.NewShareActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_share_new" android:name="qsbk.app.share.LandscapeNewShareActivity" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/AppTheme_share_new" android:name="qsbk.app.share.WebShareActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_Transparent" android:name="qsbk.app.share.WeiboShareActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_Transparent" android:name="qsbk.app.live.share.LiveShareActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_Transparent" android:name="qsbk.app.live.share.ImageShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="qsbk.app.live.dload.LiveDownloadWebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="qsbk.app.activity.LiveFollowActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_share_new" android:name="qsbk.app.report.ReportActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.AuditNativeActivity2" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.MyAuditListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/NoDisplay" android:name="qsbk.app.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTop"/>
+        <activity android:theme="@style/NoDisplay" android:name="qsbk.app.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop"/>
+        <activity android:theme="@style/MyDialogStyleBottom" android:name="qsbk.app.share.FakeWXEntryActivity" android:exported="true"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.EditInfoEntranceActivity" android:screenOrientation="portrait" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/AppTheme_NoTitle" android:name="qsbk.app.activity.publish.PublishActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.MainActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/AppTheme_share_new" android:name="qsbk.app.activity.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.ManageQiuShiActivity" android:screenOrientation="portrait" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.ManageQiuShiNewActivity" android:screenOrientation="portrait" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/AppTheme_NoTitle" android:name="qsbk.app.activity.EditBirthActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitle" android:name="qsbk.app.activity.EditGenderActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.EditSignatureActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.EditIntrActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.EditNameActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.EditHobbyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_SSO_SPLASH" android:name="qsbk.app.open.auth.SSOAuthActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.EditLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.DiggerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.NotificationSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.EditIMImageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.ImagesPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.ImagesPickerForCollectActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.ImagePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.ShowCollectImageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.HighLightQiushiActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/AppTheme_share_new" android:name="qsbk.app.activity.NoAvailableSpaceActivity" android:launchMode="singleInstance" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="qsbk.intent.action.NO_AVAILABLE_SPACE"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Login" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.SwitchTestDomainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.NewFansActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_Transparent" android:name="qsbk.app.activity.MyInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.OtherInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.OthersQiuShiActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.ImageClipActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.QiuYouActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.AddQiuYouActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.SearchQiuYouActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.ChooseQiuyouActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.BlacklistActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.UnSubscribeListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.SecurityBindActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.SocialBindActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.SocialVerifyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.ResetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.BindPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.ReBindPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.ModifyPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.security.PhoneVerifyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Nearby_Day" android:name="qsbk.app.activity.NearByActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Nearby_Day" android:name="qsbk.app.activity.AcrossActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Nearby_Day" android:name="qsbk.app.activity.RandomDoorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Nearby_Day" android:name="qsbk.app.nearby.ui.JobEditorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Nearby_Day" android:name="qsbk.app.nearby.ui.HauntEditorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Nearby_Day" android:name="qsbk.app.nearby.ui.MobileBrandEditorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/weibo_login" android:name="qsbk.app.activity.WeiboLoginActivity"/>
+        <meta-data android:name="BaiduMobAd_APP_ID" android:value="f719f0cc"/>
+        <activity android:name="com.baidu.mobad.feeds.BaiduActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.share.message.ShareToIMMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.share.message.ChooseQiuyouActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.im.group.vote.GroupManagerVoteActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.publish.CirclePublishActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.CircleArticleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.CircleTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.CircleTopicsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.CircleTopicRecommendActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.CircleTopicCategoriesActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.CircleTopicWeeklyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.TopicBlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_Transparent" android:name="qsbk.app.activity.ReAuthActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.QiushiHourHotActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Dialog" android:name="qsbk.app.activity.SpringFestivalDialogActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.QiushiTopicListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.HotCommentPagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.MyHighlightQiushiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.LaiseeGetActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_LaiseeStyle" android:name="qsbk.app.activity.LaiseeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.EventWindowActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.WalletActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.PayPasswordSetActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.PayPwdResetActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.PayPasswordModifyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.WalletTradeListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.WalletBalanceActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Laisee" android:name="qsbk.app.activity.LaiseeChargeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Laisee" android:name="qsbk.app.activity.LaiseeSendActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.pay.LaiseePaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.pay.PayPWDUniversalActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.pay.PaymentChangeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.WithdrawActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.WithdrawSetupActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.pay.ItemUnivasualBuyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.pay.ItemSignCardBuyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.pay.ItemSignCardPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.CheckInTopActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Day_NoActionBar_Transparent" android:name="qsbk.app.activity.RedirectActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="mqsbk"/>
+            </intent-filter>
+        </activity>
+        <service android:name="qsbk.app.service.VersionCheckService"/>
+        <service android:name="qsbk.app.service.VersionService"/>
+        <service android:name="qsbk.app.service.VerifyUserInfoService"/>
+        <service android:name="qsbk.app.service.ConfigService"/>
+        <service android:name="qsbk.app.service.JoinedGroupInfoService"/>
+        <receiver android:name="qsbk.app.AppRegister" android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="ad.qsbk.pkg.MagicActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <service android:name="ad.qsbk.pkg.MagicService"/>
+        <activity android:name="com.baidu.mobads.AppActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="12"/>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="b6e3849382"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="1bb1ca4bd1caffa195724cad9d828412"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <receiver android:name="qsbk.app.push.AiXinTuiPushReceiver">
+            <intent-filter>
+                <action android:name="com.ixintui.action.MESSAGE"/>
+                <action android:name="com.ixintui.action.RESULT"/>
+                <action android:name="com.ixintui.action.notification.CLICK"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.ixintui.push.PushActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.ixintui.push.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.ixintui.push.PushService" android:exported="true" android:process=":pushservice"/>
+        <service android:name="com.ixintui.push.MediateService" android:exported="true"/>
+        <provider android:name="com.ixintui.push.Provider" android:exported="false" android:multiprocess="true" android:authorities="qsbk.app.ixintui.push.provider"/>
+        <receiver android:name="com.ixintui.push.Receiver">
+            <intent-filter>
+                <action android:name="com.ixintui.action.BROADCAST"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":bdlocation"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="heZqUagITv4WCYPchIWkLXfm"/>
+        <service android:name="com.qq.e.comm.DownloadService" android:exported="false"/>
+        <meta-data android:name="GDT_AD_APPID" android:value="0"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="f830d6c458a1faea4a8bf61a2eefea716ad87b7d"/>
+        <activity android:name="qsbk.app.activity.security.UnBindActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="AA_DB_NAME" android:value="aa_qsbk.db"/>
+        <meta-data android:name="AA_DB_VERSION" android:value="1"/>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent100251437"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.CreateNewGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.FillGroupInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.FinishGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.GroupIntroduceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.TemporaryNoteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Theme_Light" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.GroupMsgActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.UserRevokeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateVisible|stateAlwaysVisible|adjustResize"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.im.IMChatingUrlContentDisplayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/first_in_remind_dialog" android:name="qsbk.app.activity.dialog.FirstInRemindDailog" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/first_in_remind_dialog" android:name="qsbk.app.activity.dialog.PromoteFlowerDialog" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/Day" android:name="qsbk.app.activity.CheckInActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true"/>
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true"/>
+        <service android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":pushservice"/>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="qsbk.app.push.XiaoMiPushReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.MyQiuYouDynamicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|stateVisible|stateAlwaysVisible"/>
+        <activity android:theme="@style/AppTheme_share_new" android:name="qsbk.app.activity.ManageQiushiMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.ManageQiuShiAndDynamicActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Setting" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.MessageInfoReminderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Setting" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.SmallPaperSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Setting" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.PersonalPrivacySettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Setting" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.CommonSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/Setting" android:icon="@drawable/ic_ab_logo_padding" android:name="qsbk.app.activity.AboutSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize" android:logo="@drawable/ic_ab_logo_padding"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.im.CollectEmotion.ManageCollectActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.im.CollectEmotion.ShowCollectActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme" android:name="qsbk.app.activity.ClockedRankingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme" android:name="qsbk.app.activity.RemixConfigActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppBaseTheme_share_new_live" android:name="qsbk.app.share.LiveLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.MedalListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Light" android:name="qsbk.app.activity.GroupLeaderListActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4f3b66f45270153458000040"/>
+        <activity android:theme="@style/Duobao_Day" android:name="com.duobao.DuobaoMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="com.ak.android.bridge.AKActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppTheme_NoTitleBar" android:name="qsbk.app.activity.QiushiTopicActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.sina.weibo.sdk.share.WbShareTransActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+        <activity android:label="@string/app_name" android:name="qsbk.app.live.debug.LiveDebugMainActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="qsbk.app.live.debug.LiveGameDebugActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="qsbk.app.live.debug.LiveGiftAnimDebugActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme" android:name="qsbk.app.live.ui.LivePushActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.LevelGiftPayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.LivePullActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.GiftRankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.LiveRankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.NetworkDiagnosisActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.LiveUserLevelActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.NetworkConfigActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.family.FamilyCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.family.FamilyDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.family.FamilyMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.family.FamilyBlankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.family.FamilyAnchorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.bag.MarketActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.bag.BagActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.live.ui.family.FamilyMessageActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.pay.ui.PayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.pay.ui.WithdrawActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.pay.ui.WithdrawRecordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.pay.ui.WithdrawNoticeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.pay.ui.WithdrawHelpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme.Slidr" android:name="qsbk.app.core.web.ui.WebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/SimpleDialog.Fullscreen.Translucent" android:name="qsbk.app.core.web.ui.FullScreenWebActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CropTheme" android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity android:name="qsbk.app.core.ui.BrowseLargeImageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"/>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService" android:process=":filedownloader"/>
+    </application>
+</manifest>

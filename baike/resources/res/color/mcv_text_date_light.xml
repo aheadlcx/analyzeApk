@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:enterFadeDuration="@android:integer/config_shortAnimTime" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <item android:state_checked="true" android:color="@android:color/white"/>
+    <item android:state_pressed="true" android:color="@android:color/white"/>
+    <item android:state_enabled="false" android:color="#bebebe"/>
+    <item android:color="#464646"/>
+</selector>

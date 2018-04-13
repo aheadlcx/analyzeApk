@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="?attr/friend_empty_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="88dp">
+        <TextView android:textSize="@dimen/font_16" android:textColor="?attr/item_content_text_color" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/recommendMsgTextView" android:background="?attr/follow_friend_empty_skipbtn_bg" android:paddingLeft="@dimen/margin_20" android:paddingRight="@dimen/margin_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

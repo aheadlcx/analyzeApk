@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/ttg_titlebar_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ttg_ly_cats_www" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="0.5dp">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ttg_ll_emptytishi" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="200dp" android:layout_marginTop="20dp">
+                        <View android:background="@drawable/shape_ttg_circle" android:layout_width="120dp" android:layout_height="120dp" android:layout_centerInParent="true"/>
+                        <cn.tatagou.sdk.view.IconTextView android:textSize="70sp" android:textColor="#bbbbbb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_ed_search" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="18sp" android:id="@+id/ttg_tv_noneresult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-35dp" android:layout_marginBottom="62dp" android:text="暂无此类商品"/>
+                    <View android:layout_gravity="bottom" android:background="#e9e9f0" android:layout_width="match_parent" android:layout_height="1px"/>
+                </LinearLayout>
+                <cn.tatagou.sdk.view.TagLayout android:id="@+id/ttg_cats_www" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="6dp" android:layout_marginRight="5dp" android:layout_marginBottom="6dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ttg_search_title" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@+id/ttg_fenge_line" android:background="#e9e9f0" android:layout_width="match_parent" android:layout_height="11dp"/>
+                    <TextView android:textSize="15sp" android:textColor="#050505" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="16dp" android:text="搜索历史"/>
+                    <View android:background="#e9e9f0" android:layout_width="match_parent" android:layout_height="1px"/>
+                </LinearLayout>
+                <cn.tatagou.sdk.view.MyListView android:id="@+id/ttg_listview_historyresult" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp"/>
+                <TextView android:textSize="15sp" android:textColor="#2b2b2b" android:gravity="center_horizontal" android:id="@+id/ttg_clear_history" android:paddingTop="11dp" android:paddingBottom="11dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="清空历史"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ttg_lrl_getseaechcontent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="36dp">
+            <cn.tatagou.sdk.view.IconTextView android:gravity="center" android:id="@+id/ttg_tv_default" android:layout_width="0dp" android:layout_height="match_parent" android:text="默认" android:layout_weight="1"/>
+            <View android:layout_gravity="center" android:background="#dfdfdf" android:layout_width="1px" android:layout_height="20dp"/>
+            <cn.tatagou.sdk.view.IconTextView android:gravity="center" android:id="@+id/ttg_tv_salenumber" android:layout_width="0dp" android:layout_height="match_parent" android:text="销量" android:layout_weight="1"/>
+            <View android:layout_gravity="center" android:background="#dfdfdf" android:layout_width="1px" android:layout_height="20dp"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ttg_linear_price" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <cn.tatagou.sdk.view.IconTextView android:gravity="center" android:id="@+id/ttg_tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="-2dp">
+                    <cn.tatagou.sdk.view.IconTextView android:textSize="11sp" android:id="@+id/ttg_tv_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_top"/>
+                    <cn.tatagou.sdk.view.IconTextView android:textSize="5sp" android:id="@+id/ttg_tv_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_down" android:layout_below="@+id/ttg_tv_top"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#dfdfdf" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <cn.tatagou.sdk.view.pullview.AutoPullToRefreshLayout android:id="@+id/auto_pull_footprint" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/ttg_refresh_head"/>
+                <cn.tatagou.sdk.view.pullview.AutoPullAbleListView android:id="@+id/lv_footprint" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/ttg_white" android:dividerHeight="0dp"/>
+            </cn.tatagou.sdk.view.pullview.AutoPullToRefreshLayout>
+            <include layout="@layout/ttg_list_back_top"/>
+            <include layout="@layout/ttg_hint_layout"/>
+            <include layout="@layout/ttg_loading"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="true">
+    <item android:duration="30" android:drawable="@drawable/play_blue_0"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_1"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_2"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_3"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_4"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_5"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_6"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_7"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_8"/>
+    <item android:duration="30" android:drawable="@drawable/play_blue_9"/>
+</animation-list>

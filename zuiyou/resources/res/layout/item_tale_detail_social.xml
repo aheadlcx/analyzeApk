@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:gravity="center_vertical" android:id="@+id/tvShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:drawableLeft="@drawable/ic_share" android:drawablePadding="10dp" android:layout_centerVertical="true"/>
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:gravity="center_vertical" android:id="@+id/comment" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="37dp" android:drawableLeft="@drawable/ic_comment" android:drawablePadding="8dp" android:layout_toRightOf="@+id/tvShare" android:layout_centerVertical="true"/>
+        <cn.xiaochuankeji.tieba.ui.widget.updown.PostItemUpDownView android:gravity="center_vertical" android:id="@+id/like" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginRight="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

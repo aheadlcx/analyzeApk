@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hwpush_delete_tip">
+        <item>Delete selected notifications?</item>
+        <item>Delete selected notification?</item>
+    </plurals>
+</resources>

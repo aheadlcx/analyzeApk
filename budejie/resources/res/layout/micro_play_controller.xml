@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/play_controller_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/v_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+        <ProgressBar android:id="@+id/progress" android:layout_width="40dp" android:layout_height="40dp" android:indeterminateDrawable="@drawable/progress_bar_drawable" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+        <ImageView android:id="@+id/play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_bt_selector" android:layout_centerInParent="true"/>
+        <SeekBar android:id="@+id/play_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="3dp" android:progressDrawable="@drawable/seekbar_video_progress_drawable" android:minHeight="3dp" android:thumb="@null" android:thumbOffset="2dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

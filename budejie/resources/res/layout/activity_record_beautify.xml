@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/record_beautify_layout" android:background="?attr/send_post_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+    <include android:id="@+id/recordStepView" android:layout_width="match_parent" android:layout_height="65dp" android:layout_below="@+id/title" layout="@layout/show_step_view"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_above="@+id/beautifyBottomFrame" android:layout_below="@+id/recordStepView">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layoutTime">
+            <ImageView android:layout_gravity="center" android:id="@+id/recordPhoto" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5dp" android:scaleType="centerCrop"/>
+            <SeekBar android:layout_gravity="bottom" android:id="@+id/mSeekBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/seekBar_style"/>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/recordPlayBtn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_play_white" android:layout_centerInParent="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/recordTime" android:background="@color/translucence2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="00:15" android:layout_below="@+id/recordPlayBtn" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/layoutTime" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/black" android:id="@+id/recordPlayCurrentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_alignParentLeft="true"/>
+            <TextView android:textColor="@color/black" android:id="@+id/recordPlayDurationTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="04:00" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <HorizontalScrollView android:id="@+id/beautifyBottomFrame" android:background="@drawable/bottom_bg" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/voiceBottomContent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/native_mark" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/review_main_bg">
+    <RelativeLayout android:id="@+id/center_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/review_waiting"/>
+        <TextView android:textSize="17sp" android:textColor="@r$color/review_waiting_text" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="努力加载中..." style="?attr/listitem_content"/>
+    </LinearLayout>
+    <SurfaceView android:id="@+id/hack_surface_view" android:visibility="gone" android:layout_width="0px" android:layout_height="0px"/>
+</RelativeLayout>

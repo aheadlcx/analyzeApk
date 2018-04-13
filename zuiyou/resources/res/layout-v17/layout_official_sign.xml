@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/image_official" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/personal_guanfang_bg" android:layout_centerInParent="true" android:contentDescription="@string/image"/>
+    <View android:id="@+id/view_click" android:layout_width="46dp" android:layout_height="46dp" android:layout_alignTop="@+id/image_official" android:layout_alignRight="@+id/image_official" android:layout_alignEnd="@+id/image_official"/>
+</RelativeLayout>

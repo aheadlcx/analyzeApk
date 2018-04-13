@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="260dp" android:layout_height="270dp" android:layout_marginTop="110dp" android:src="@drawable/game_rolltable_dialog_bg" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="292dp" android:layout_height="144dp" android:src="@drawable/game_rolltable_help" android:scaleType="fitXY"/>
+        <ScrollView android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="208dp" android:layout_height="210dp" android:layout_marginTop="130dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/game_rolltable_star"/>
+                    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#e9d8ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="游戏说明"/>
+                    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="3dp" android:src="@drawable/game_rolltable_star"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#e9d8ff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="热猫星球的指挥官近日在搜查过程中发现了一块神奇宝物——超级转盘，这块转盘有个神奇的地方，转动他就会得到神明的奖励，于是指挥官决定将这个宝物改造一下，变成一个娱乐的玩具。"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+                    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/game_rolltable_star"/>
+                    <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#e9d8ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="游戏规则"/>
+                    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="3dp" android:src="@drawable/game_rolltable_star"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#e9d8ff" android:id="@+id/game_help_rule" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="大转盘一共有37块，转到每一块的概率都是一样的，游戏过程中，你可通过猜测转盘转到的数字从而给奖励倍数点赞，1钻=10赞。
+
+获胜规则：转盘停止转动后，指针所指的数字即为本轮游戏结果，如果你猜对了数字，则会获得2-25倍不等的回报！"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="150dp" android:layout_marginTop="100dp" android:src="@drawable/live_game_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/new_detail_content_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/post_detail_head_content_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.budejie.www.widget.parsetagview.NewParseTagEditText android:textSize="16sp" android:textColor="?attr/item_content_text_color" android:id="@+id/post_detail_head_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:singleLine="false" android:lineSpacingExtra="4dp"/>
+        <TextView android:textSize="15sp" android:textColor="#576b95" android:id="@+id/post_detail_head_content_open_or_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left" android:layout_marginRight="@dimen/post_margin_left" android:text="全文"/>
+    </LinearLayout>
+    <com.budejie.www.widget.VoteView android:id="@+id/vote_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+    <TextView android:textSize="12sp" android:textColor="?attr/new_detail_play_count_color" android:gravity="center_vertical" android:id="@+id/post_detail_head_content_play_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/ttg_titlebar_layout"/>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_car" android:paddingLeft="@dimen/spacing_v" android:paddingRight="@dimen/spacing_v" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:id="@+id/ly_car" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_car" android:layout_width="84dp" android:layout_height="81dp" android:layout_marginRight="15dp" android:src="@mipmap/shoping_cart"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#aeaeae" android:gravity="center_horizontal" android:id="@+id/tv_car_explanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/car_explanation" android:layout_below="@+id/ly_car" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2"/>
+        <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_tb_login" android:background="@drawable/shape_bg_radius" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="12dp" android:text="@string/ttjx_tb_login" android:layout_below="@+id/tv_car_explanation" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <include layout="@layout/ttg_hint_layout"/>
+</RelativeLayout>

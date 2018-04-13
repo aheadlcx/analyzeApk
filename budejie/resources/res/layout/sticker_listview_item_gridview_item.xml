@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bdj.picture.edit.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/sl_container" android:background="@drawable/bg_sticker_item" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.androidexlib.widget.asyncimage.AsyncImageView android:id="@+id/img_sticker" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="6dp" android:scaleType="fitCenter"/>
+    <View android:id="@+id/v_ring" android:background="@drawable/bg_sticker_item_ring" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.bdj.picture.edit.widget.RoundProgressBar android:id="@+id/prb_round" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" fresco:pciEditroundColor="@color/transparent" fresco:pciEditroundProgressColor="#44ff2d55" fresco:pciEditroundWidth="10dp" fresco:pciEditstyle="1"/>
+</com.bdj.picture.edit.widget.SquareLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="60dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/item_header"/>
+            <View android:background="#f1f1f1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/iv_avatar" android:background="@drawable/bg_corner_3dp_line_979797" android:padding="3dp" android:layout_width="81dp" android:layout_height="81dp" android:layout_marginTop="30dp" app:placeholderImage="@drawable/ic_family_create_photo"/>
+            <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="44dp" android:text="@string/family_name"/>
+            <EditText android:textSize="@dimen/live_text_15sp" android:textColor="@color/black" android:id="@+id/et_family_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="16dp" android:hint="@string/family_name_hint" android:maxLines="1" android:singleLine="true" android:maxLength="16"/>
+            <View android:background="#f1f1f1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="19dp" android:layout_marginTop="15dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="10dp" android:text="@string/family_badge"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="16dp">
+                <EditText android:textSize="@dimen/live_text_15sp" android:textColor="@color/black" android:id="@+id/et_family_badge" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/family_badge_hint" android:maxLines="1" android:singleLine="true" android:maxLength="4" android:layout_centerVertical="true"/>
+                <qsbk.app.live.widget.FamilyLevelView android:id="@+id/fl_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#f1f1f1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="19dp" android:layout_marginTop="15dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="10dp" android:text="@string/family_notice"/>
+            <EditText android:textSize="@dimen/live_text_15sp" android:textColor="@color/black" android:id="@+id/et_family_notice" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="16dp" android:hint="@string/family_notice_hint" android:maxLines="10"/>
+            <View android:background="#f1f1f1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="19dp" android:layout_marginTop="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/ll_create" android:background="@drawable/btn_yellow_selector" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:layout_marginRight="15dp" android:layout_marginBottom="7dp">
+        <TextView android:textSize="14dp" android:textColor="@color/color_793D00" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_create" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/family_create" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

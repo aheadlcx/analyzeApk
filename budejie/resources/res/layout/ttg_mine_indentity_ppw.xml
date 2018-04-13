@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:orientation="vertical" android:id="@+id/ttv_ly_identity" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="18sp" android:textColor="@color/session_title" android:gravity="center" android:layout_width="match_parent" android:layout_height="40dp" android:text="选择身份"/>
+        <View android:background="#dfdfdf" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ttg_linear_item1" android:background="@drawable/sel_white_change" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <cn.tatagou.sdk.view.IconTextView android:textColor="#666666" android:id="@+id/ttg_itv_item1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_shenfeng_radiouncheck"/>
+            <TextView android:textSize="16sp" android:textColor="@color/session_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="美女"/>
+        </LinearLayout>
+        <View android:background="#dfdfdf" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ttg_linear_item2" android:background="@drawable/sel_white_change" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <cn.tatagou.sdk.view.IconTextView android:textColor="#666666" android:id="@+id/ttg_itv_item2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_shenfeng_radiouncheck"/>
+            <TextView android:textSize="16sp" android:textColor="@color/session_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="帅哥"/>
+        </LinearLayout>
+        <View android:background="#dfdfdf" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ttg_linear_item3" android:background="@drawable/sel_white_change" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <cn.tatagou.sdk.view.IconTextView android:textColor="#666666" android:id="@+id/ttg_itv_item3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_shenfeng_radiouncheck"/>
+            <TextView android:textSize="16sp" android:textColor="@color/session_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="辣妈"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

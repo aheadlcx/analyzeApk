@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/publishBg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top2" android:layout_width="match_parent" android:layout_height="@dimen/topbar_height" android:layout_alignParentTop="true" layout="@layout/edit_info_top"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top2">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:scrollbarThumbVertical="@drawable/wb_scrollbar" android:gravity="top" android:id="@+id/group_introduce_info" android:background="@null" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:minHeight="100dp" android:maxLength="250" style="?attr/send_content"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

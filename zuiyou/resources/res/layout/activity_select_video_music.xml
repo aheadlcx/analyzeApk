@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/video_music_pink_bg" android:layout_width="match_parent" android:layout_height="51dp">
+            <ImageView android:id="@+id/vClose" android:paddingLeft="18dp" android:paddingTop="18dp" android:paddingRight="10dp" android:paddingBottom="18dp" android:layout_width="43dp" android:layout_height="51dp" android:src="@drawable/img_select_music_close"/>
+            <TextView android:textSize="22sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="请选择音乐" android:layout_toRightOf="@+id/vClose" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/vSearch" android:padding="17dp" android:layout_width="51dp" android:layout_height="51dp" android:src="@drawable/img_music_search" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <cn.xiaochuankeji.tieba.ui.videomaker.music.SelectMusicStickyLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/id_stickynavlayout_topview" android:background="@color/video_music_pink_bg" android:layout_width="match_parent" android:layout_height="89dp"/>
+            <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/id_stickynavlayout_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </cn.xiaochuankeji.tieba.ui.videomaker.music.SelectMusicStickyLinearLayout>
+    </LinearLayout>
+</FrameLayout>

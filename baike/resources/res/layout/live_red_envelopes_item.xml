@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/live_red_envelopes_item_bg" android:layout_width="70dp" android:layout_height="80dp" android:layout_margin="7dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="#fddb2e" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/tv_diamond" android:layout_width="0dp" android:layout_height="wrap_content" android:text="500" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/live_red_envelopes_diamond"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100"/>
+            <TextView android:textSize="11sp" android:textColor="#ffb0bf" android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_red_envelopes_count"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center" android:id="@+id/selected" android:background="@drawable/live_red_envelopes_item_selected" android:visibility="gone" android:layout_width="80dp" android:layout_height="90dp"/>
+</FrameLayout>

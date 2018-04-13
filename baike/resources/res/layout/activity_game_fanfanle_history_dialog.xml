@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="271dp" android:layout_height="380dp" android:src="@drawable/fanfanle_win_bg" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="271dp" android:layout_height="114dp" android:src="@drawable/game_fanfanle_tengtiao" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:src="@drawable/game_fanfanle_history_head" android:scaleType="fitXY"/>
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/recyclerview" android:layout_width="215dp" android:layout_height="175dp" android:layout_marginLeft="31dp" android:layout_marginTop="120dp" android:layout_marginRight="31dp"/>
+        <qsbk.app.core.widget.EmptyPlaceholderView android:layout_gravity="center_horizontal" android:id="@+id/game_history_empty" android:visibility="gone" android:layout_width="215dp" android:layout_height="175dp" android:layout_marginTop="133dp"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="150dp" android:layout_marginTop="100dp" android:src="@drawable/live_game_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

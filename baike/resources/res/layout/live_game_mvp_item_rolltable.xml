@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="40dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="21dp">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_rank" android:background="@drawable/bg_mvp_rolltable_inf" android:layout_width="35dp" android:layout_height="14dp"/>
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_name" android:background="@drawable/bg_mvp_rolltable_inf" android:layout_width="75dp" android:layout_height="14dp" android:layout_marginLeft="20dp" android:singleLine="true"/>
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_love" android:background="@drawable/bg_mvp_rolltable_inf" android:layout_width="55dp" android:layout_height="14dp" android:layout_marginLeft="10dp" android:maxWidth="29dp"/>
+    </LinearLayout>
+</LinearLayout>

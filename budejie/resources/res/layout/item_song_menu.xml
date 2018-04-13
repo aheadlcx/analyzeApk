@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/phone_sc_44dp" android:minHeight="@dimen/phone_sc_44dp">
+    <View android:id="@+id/music_line_buttom" android:background="@color/cut_off_line_one" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/phone_sc_9dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_sc_9dp" android:layout_marginRight="@dimen/phone_sc_10dp" android:layout_toLeftOf="@+id/tv_song_ok" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/phone_sc_15sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_song_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/phone_sc_12sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_song_singer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/song_btn_select" android:gravity="center" android:id="@+id/tv_song_ok" android:layout_width="@dimen/phone_sc_44dp" android:layout_height="@dimen/phone_sc_44dp" android:layout_marginRight="@dimen/phone_sc_20dp" android:text="@string/song_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

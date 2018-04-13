@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" layout="@layout/item_header"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="当前连接的糗百HOST：(糗百全部直播、已粉直播、直播信息拉取，重启APP后无效)"/>
+            <TextView android:textSize="20sp" android:textColor="@color/colorPrimaryDark" android:id="@+id/all_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="http://" android:textIsSelectable="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="或者输入自定义的HOST："/>
+            <EditText android:textSize="20sp" android:textColor="@color/black" android:id="@+id/et_all_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="All Host(糗百全部直播、已粉直播、直播信息拉取)"/>
+            <Button android:textSize="24sp" android:textColor="@color/colorPrimaryDark" android:id="@+id/btn_save" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="保存"/>
+            <Button android:textSize="24sp" android:textColor="@color/colorPrimaryDark" android:id="@+id/btn_change" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="快速切换"/>
+            <Button android:textSize="24sp" android:textColor="@color/colorPrimaryDark" android:id="@+id/btn_change_livetest2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="切换到livetest2"/>
+            <Button android:textSize="24sp" android:textColor="@color/colorPrimaryDark" android:id="@+id/btn_change_livetest3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="切换到livetest3"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

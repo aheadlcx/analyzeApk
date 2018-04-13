@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/content" android:background="@color/CB" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/CL" android:showDividers="middle">
+        <android.support.v7.widget.AppCompatTextView android:textSize="14dp" android:textColor="@color/CM" android:gravity="center" android:id="@+id/save" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="50dp" android:text="保存到相册"/>
+        <android.support.v7.widget.AppCompatTextView android:textSize="14dp" android:textColor="@color/CM" android:gravity="center" android:id="@+id/cancel" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="50dp" android:text="取消"/>
+    </LinearLayout>
+</FrameLayout>

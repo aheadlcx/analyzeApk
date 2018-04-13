@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/slidingview" android:background="@color/gift_activity_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/gift_activity_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+        <com.emilsjolander.components.stickylistheaders.StickyListHeadersListView android:scrollbarStyle="outsideOverlay" android:id="@+id/myprop_list" android:background="@color/white" android:fadingEdge="none" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="true" android:cacheColorHint="@android:color/transparent" android:divider="@color/gain_gift_divider" android:dividerHeight="0.5dp" android:fastScrollEnabled="true"/>
+        <View android:background="@color/gain_gift_divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <include layout="@layout/phone_custom_progressbar"/>
+    <TextView android:textSize="@dimen/hall_history_header_title_size" android:textColor="@color/black" android:id="@+id/emptyview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/prop_empty" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

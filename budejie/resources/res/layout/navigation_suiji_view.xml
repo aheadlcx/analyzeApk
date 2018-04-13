@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="right" android:id="@+id/iv_random" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/top_suiji_btn_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

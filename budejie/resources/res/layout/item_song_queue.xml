@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/phone_sc_44dp" android:minHeight="@dimen/phone_sc_44dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_sc_9dp" android:layout_centerVertical="true">
+        <TextView android:id="@+id/tv_music_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/song_text_one"/>
+        <TextView android:id="@+id/tv_music_singer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" style="@style/song_text_two"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/username_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/song_name_layout_margin_left" android:layout_centerVertical="true">
+        <TextView android:id="@+id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/song_text_one_two"/>
+        <TextView android:id="@+id/tv_song_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" style="@style/song_text_two"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/phone_sc_11sp" android:textColor="@color/white" android:id="@+id/tv_song_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/song_status_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/music_line_buttom" android:background="@color/cut_off_line_one" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/phone_sc_9dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

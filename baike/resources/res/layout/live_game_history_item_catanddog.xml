@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="160dp" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/game_role_1" android:background="#f9dfb7" android:layout_width="match_parent" android:layout_height="21dp" android:src="@drawable/live_game_catanddog_win" android:scaleType="centerInside"/>
+            <ImageView android:id="@+id/iv_me_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_game_me"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_weight="1">
+            <ImageView android:id="@+id/game_role_2" android:background="#f9dfb7" android:layout_width="match_parent" android:layout_height="21dp" android:src="@drawable/live_game_catanddog_win" android:scaleType="centerInside"/>
+            <ImageView android:id="@+id/iv_me_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_game_me"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_weight="1">
+            <ImageView android:id="@+id/game_role_3" android:background="#f9dfb7" android:layout_width="match_parent" android:layout_height="21dp" android:src="@drawable/live_game_catanddog_win" android:scaleType="centerInside"/>
+            <ImageView android:id="@+id/iv_me_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_game_me"/>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/tab_new" android:visibility="gone" android:layout_width="30dp" android:layout_height="14dp" android:layout_marginLeft="4dp" android:src="@drawable/live_game_history_new_ic" android:scaleType="fitXY"/>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/image_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="17dp" android:layout_marginRight="17dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_topic_top" android:layout_width="match_parent" android:layout_height="107dp" app:placeholderImage="@color/text_color_gray_light_40" app:roundedCornerRadius="3dp"/>
+        <TextView android:textSize="16dp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/tv_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:shadowColor="@color/black_50" android:shadowRadius="8" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layout_action" android:layout_width="match_parent" android:layout_height="43dp" android:layout_below="@+id/image_container">
+        <TextView android:textSize="14dp" android:textColor="#666666" android:id="@+id/text_del_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:text="取消置顶" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#dbdbdb" android:layout_width="0.7dp" android:layout_height="14dp" android:layout_marginRight="17dp" android:layout_toLeftOf="@+id/text_del_top" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14dp" android:textColor="#41b1f7" android:id="@+id/tv_edit_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="编辑" android:layout_toLeftOf="@+id/text_del_top" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#eff0f7" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/layout_action" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

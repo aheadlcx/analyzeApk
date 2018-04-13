@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:paddingLeft="@dimen/post_margin_left" android:paddingTop="@dimen/margin_8" android:paddingRight="@dimen/post_margin_left" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/ad_gdt_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/ad_gdt_logo" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ad_gdt_logo"/>
+        <ImageView android:id="@+id/ad_gdt_logo_expand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ad_gdt_logo_expand"/>
+    </RelativeLayout>
+</RelativeLayout>

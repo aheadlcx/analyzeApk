@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/room_sofa_layout1" android:layout_width="25dp" android:layout_height="25dp">
+        <cn.v6.sixrooms.room.view.CustomImageSwitcher android:id="@+id/room_sofa1" android:layout_width="25dp" android:layout_height="25dp"/>
+        <ImageView android:id="@+id/room_sofa_subscript1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sixroom_sofa_subscript" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/room_sofa_layout2" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="6dp">
+        <cn.v6.sixrooms.room.view.CustomImageSwitcher android:id="@+id/room_sofa2" android:layout_width="25dp" android:layout_height="25dp"/>
+        <ImageView android:id="@+id/room_sofa_subscript2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sixroom_sofa_subscript" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/room_sofa_layout3" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="6dp">
+        <cn.v6.sixrooms.room.view.CustomImageSwitcher android:id="@+id/room_sofa3" android:layout_width="25dp" android:layout_height="25dp"/>
+        <ImageView android:id="@+id/room_sofa_subscript3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sixroom_sofa_subscript" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/room_sofa_layout4" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="6dp">
+        <cn.v6.sixrooms.room.view.CustomImageSwitcher android:id="@+id/room_sofa4" android:layout_width="25dp" android:layout_height="25dp"/>
+        <ImageView android:id="@+id/room_sofa_subscript4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sixroom_sofa_subscript" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

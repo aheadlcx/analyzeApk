@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:orientation="horizontal" android:id="@+id/mRgFloatTabs" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="@dimen/font_14" android:textColor="@drawable/pp_tabs_textcolor" android:gravity="center" android:id="@+id/mRbPosts" android:background="?attr/personal_tabs_bg" android:layout_width="match_parent" android:layout_height="32dp" android:checked="true" android:button="@null" android:text="帖子" android:layout_weight="1" android:lineSpacingExtra="6dp"/>
+        <RadioButton android:textSize="@dimen/font_14" android:textColor="@drawable/pp_tabs_textcolor" android:gravity="center" android:id="@+id/mRbShares" android:background="?attr/personal_tabs_bg" android:layout_width="match_parent" android:layout_height="32dp" android:button="@null" android:text="分享" android:layout_weight="1" android:lineSpacingExtra="6dp"/>
+        <RadioButton android:textSize="@dimen/font_14" android:textColor="@drawable/pp_tabs_textcolor" android:gravity="center" android:id="@+id/mRbComment" android:background="?attr/personal_tabs_bg" android:layout_width="match_parent" android:layout_height="32dp" android:button="@null" android:text="评论" android:layout_weight="1" android:lineSpacingExtra="6dp"/>
+    </RadioGroup>
+    <ImageView android:id="@+id/cursor" android:paddingLeft="40dp" android:paddingRight="40dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="2dp" android:src="?attr/theme_red_color" android:contentDescription="@null"/>
+    <include android:id="@+id/personal_muisc_album_view" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/personal_muisc_album"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/personal_tip_bg" android:layout_width="match_parent" android:layout_height="34dp">
+        <TextView android:textSize="13sp" android:textColor="#828282" android:layout_gravity="center_vertical" android:id="@+id/CommentTipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="0条评论"/>
+    </LinearLayout>
+</LinearLayout>

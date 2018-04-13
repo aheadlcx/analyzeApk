@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:background="#f4f4f8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:layout_width="match_parent" android:layout_height="24dp"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp">
+                    <EditText android:textColor="?attr/color_black" android:textColorHint="#8f8f95" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/watchword" android:background="@null" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="9dp" android:hint="设置口令如快乐你就不孤单" android:maxLength="18" android:layout_weight="1" android:textCursorDrawable="@null"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/before_hand_container" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <TextView android:textSize="13sp" android:textColor="@r$color/red_laisee" android:id="@+id/before_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预设"/>
+                        <ImageView android:id="@+id/voice_before_hand_arrow" android:background="@drawable/drawable_rorate_red_arrow" android:layout_width="10dp" android:layout_height="5dp" android:layout_marginLeft="6dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <qsbk.app.widget.ExpandableLayout android:id="@+id/expandable_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/voice_word" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1px"/>
+                            <android.support.design.widget.TabLayout android:id="@+id/words_tabs" android:layout_width="match_parent" android:layout_height="36dp" app:tabIndicatorHeight="0dp" app:tabBackground="@color/transparent"/>
+                            <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1px"/>
+                            <TextView android:gravity="center" android:id="@+id/word_content" android:layout_width="match_parent" android:layout_height="100dp" android:text=""/>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <Button android:textColor="?attr/color_black" android:id="@+id/word_next" android:background="@drawable/shape_light" android:layout_width="140dp" android:layout_height="30dp" android:text="换一个"/>
+                                <Button android:textColor="@color/white" android:id="@+id/word_done" android:background="@drawable/btn_laisee_submit" android:layout_width="140dp" android:layout_height="30dp" android:layout_marginLeft="15dp" android:text="用这个口令"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <qsbk.app.widget.LoadingLayout android:id="@+id/voice_loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/voice_word" android:layout_alignBottom="@+id/voice_word"/>
+                    </RelativeLayout>
+                </qsbk.app.widget.ExpandableLayout>
+            </LinearLayout>
+            <TextView android:textColor="?attr/color_gray" android:id="@+id/info" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="2dp" android:layout_marginRight="20dp" android:text="小伙伴们说对口令就能随机获得打赏"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:layout_marginRight="20dp">
+                <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:id="@+id/amount_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赏金"/>
+                <EditText android:textColor="?attr/color_black" android:textColorHint="#8f8f95" android:ellipsize="end" android:gravity="right" android:id="@+id/amount" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginRight="9dp" android:hint="0.00" android:maxLines="1" android:maxLength="8" android:layout_weight="1" android:inputType="numberDecimal" android:textCursorDrawable="@null"/>
+                <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:id="@+id/yuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/count_container" android:background="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp">
+                <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:id="@+id/count_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数量"/>
+                <EditText android:textColor="?attr/color_black" android:textColorHint="#8f8f95" android:gravity="right" android:id="@+id/count" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginRight="9dp" android:hint="填写个数" android:maxLines="1" android:maxLength="3" android:layout_weight="1" android:inputType="number" android:textCursorDrawable="@null"/>
+                <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:id="@+id/ge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个"/>
+            </LinearLayout>
+            <TextView android:textColor="?attr/color_gray" android:id="@+id/group_members_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:layout_marginRight="20dp" android:text="本群8人"/>
+            <TextView android:textSize="48sp" android:gravity="center" android:id="@+id/amount_copy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="¥0.00"/>
+            <Button android:enabled="false" android:textSize="16sp" android:textColor="@color/white" android:id="@+id/submit" android:background="@drawable/btn_laisee_submit" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/put_money_in_laisee"/>
+            <TextView android:textColor="?attr/color_gray" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/fee_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:text=""/>
+            <TextView android:textColor="?attr/color_gray" android:gravity="bottom|center_vertical|center_horizontal|center" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:text="未领取的红包，将于24小时后发起退款"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="12sp" android:textColor="@r$color/red_laisee" android:gravity="center" android:id="@+id/input_tips" android:background="@r$color/yellow_laisee" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="24dp" android:text="单个红包金额不可超过200元"/>
+</FrameLayout>

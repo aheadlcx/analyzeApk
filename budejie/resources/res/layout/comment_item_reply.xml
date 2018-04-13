@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="?attr/comment_reply_item_bg" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="10sp" android:textColor="#888" android:gravity="center" android:id="@+id/NumberTextView" android:background="?attr/comment_reply_item_number_bg" android:paddingBottom="3dp" android:layout_width="17dp" android:layout_height="14dp" android:layout_marginLeft="0dp" android:layout_marginTop="2dp" android:layout_marginRight="7dp" android:text="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ReplayLayout" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/NumberTextView">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/comment_item_reply_name_color" android:ellipsize="end" android:id="@+id/UserNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180dp" android:text="张无忌" android:lines="1"/>
+                    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/iv_members_mark_reply" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/commentDingLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21dp" android:layout_toLeftOf="@+id/commentCaiLayout">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/commentDingIv" android:background="?attr/ding_icon" android:layout_width="14dp" android:layout_height="14dp"/>
+                        <TextView android:textSize="12sp" android:textColor="?attr/post_item_operation_text_color" android:layout_gravity="center_vertical" android:id="@+id/commentLikeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:maxLength="4"/>
+                    </LinearLayout>
+                    <TextView android:textSize="12sp" android:textColor="#ee7b7b" android:layout_gravity="center" android:id="@+id/likeCountAnim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/commentCaiLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/commentCaiIv" android:background="?attr/cai_icon" android:layout_width="14dp" android:layout_height="14dp"/>
+                        <TextView android:textSize="12sp" android:textColor="?attr/post_item_operation_text_color" android:layout_gravity="center_vertical" android:id="@+id/commentCaiCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:maxLength="4"/>
+                    </LinearLayout>
+                    <TextView android:textSize="12sp" android:textColor="#ee7b7b" android:layout_gravity="center" android:id="@+id/caiCountAnim" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+                </FrameLayout>
+            </RelativeLayout>
+            <TextView android:textSize="16sp" android:textColor="?attr/comment_reply_item_content_color" android:id="@+id/ContentTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="有图为证，不信可以打脸啊"/>
+            <com.budejie.www.activity.view.AudioLayout android:id="@+id/cmtVoice" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="4dp"/>
+            <include layout="@layout/reply_item_image_view"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/pub_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+                <ImageView android:background="?attr/comment_pub_view_bg" android:layout_width="100dp" android:layout_height="wrap_content"/>
+                <TextView android:textSize="13sp" android:textColor="#888888" android:id="@+id/pub_content_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="15dp" android:text="7 神配音"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textColor="@drawable/comment_reply_vote_text_selector" android:gravity="center_vertical" android:id="@+id/comment_reply_vote" android:paddingLeft="3dp" android:paddingTop="3dp" android:paddingRight="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投票" android:drawableLeft="@drawable/comment_reply_vote_selector" android:drawablePadding="2dp"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/HideLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="15sp" android:textColor="?attr/commend_reply_item_hide_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="展开隐藏楼层"/>
+                <RelativeLayout android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="4dp">
+                    <ImageView android:id="@+id/LappedArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/commend_reply_item_hide_arrow_bg" android:layout_centerInParent="true"/>
+                    <ProgressBar android:id="@+id/LappedProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/chrysanthemum_progress_bar_drawable" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@+id/line_view" android:background="?attr/commend_reply_divider_line_bg" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

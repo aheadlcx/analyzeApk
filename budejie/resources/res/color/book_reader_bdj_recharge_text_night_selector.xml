@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/book_reader_bdj_half_main_night_color"/>
+    <item android:color="@color/book_reader_bdj_main_night_color"/>
+</selector>

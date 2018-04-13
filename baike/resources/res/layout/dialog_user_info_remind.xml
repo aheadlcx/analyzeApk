@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/user_info_textView" android:background="@drawable/manage_qiushi_user_info_remind" android:paddingLeft="5dp" android:clickable="true" android:layout_width="176dp" android:layout_height="63dp" android:text="@string/user_remind" android:textIsSelectable="false"/>
+</LinearLayout>

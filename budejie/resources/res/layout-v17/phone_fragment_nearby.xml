@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/live_hall_list_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/locationRl" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:id="@+id/arrowIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/phone_sc_12dp" android:src="@drawable/phone_location_pull_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/phone_sc_12dp" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="16sp" android:textColor="#da3e33" android:id="@+id/locationTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/phone_sc_10dp" android:drawableLeft="@drawable/phone_location_head_icon" android:drawablePadding="10dp" android:layout_toLeftOf="@+id/arrowIv" android:layout_centerVertical="true" android:drawableStart="@drawable/phone_location_head_icon" android:layout_marginStart="@dimen/phone_sc_10dp" android:layout_toStartOf="@+id/arrowIv"/>
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.view.SixRoomPullToRefreshRecyclerView android:id="@+id/pullToRefreshRecyclerView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

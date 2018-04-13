@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar_qiushi" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStart="0dp" app:contentInsetEnd="0dp" app:theme="?attr/toolbar_style">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/add" android:background="?attr/actionBarItemBackground" android:layout_width="52dp" android:layout_height="match_parent" android:src="@drawable/group_create" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/event" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/audit" android:background="?attr/actionBarItemBackground" android:layout_width="52dp" android:layout_height="match_parent" android:src="@drawable/ic_audit" android:scaleType="center" android:layout_toLeftOf="@+id/add" android:layout_alignParentTop="true" android:layout_toStartOf="@+id/add"/>
+            <qsbk.app.widget.QiuyouCircleTab android:id="@+id/tab" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_toLeftOf="@+id/audit"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <qsbk.app.widget.TipsView android:id="@+id/tipsView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/widget_tips_view_height" android:layout_below="@+id/tabs"/>
+        <include android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/qiushi_notification" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="57dp" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" layout="@layout/qiushi_notification"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/activity_notification" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginBottom="30dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

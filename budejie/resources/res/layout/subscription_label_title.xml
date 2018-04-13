@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="?attr/myinfo_post_name_prompt_text_color" android:background="?attr/label_subscribe_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="9dp" android:layout_marginRight="10dp" android:text="我的订阅"/>
+</LinearLayout>

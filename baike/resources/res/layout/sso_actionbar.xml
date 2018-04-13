@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/cancel" android:background="@drawable/edit_info_top_button" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left"/>
+        <TextView android:textSize="18dp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="糗事百科登录"/>
+    </LinearLayout>
+    <TextView android:textSize="18dp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/change_account" android:background="@drawable/edit_info_top_button" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="切换帐号" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

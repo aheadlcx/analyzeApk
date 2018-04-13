@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textColor="@color/CM" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="最新" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/ivRedPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/icon_badge_dot" android:layout_toRightOf="@+id/tvTitle" android:layout_centerVertical="true"/>
+    <View android:id="@+id/vSelectFlag" android:background="@drawable/bg_tab_index" android:layout_width="9dp" android:layout_height="3dp" android:layout_marginBottom="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

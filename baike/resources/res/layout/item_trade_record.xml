@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:text="直播钻"/>
+    <TextView android:textSize="16sp" android:textColor="?attr/color_black" android:id="@+id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginRight="18dp" android:text="+8.88" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="13sp" android:textColor="?attr/color_gray" android:gravity="bottom" android:id="@+id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19：80" android:layout_below="@+id/money" android:layout_alignLeft="@+id/title"/>
+    <View android:background="?attr/dividerColor01" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_below="@+id/sub_title" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

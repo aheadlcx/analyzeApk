@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/dynamic_adjust_position_contain" android:background="#fffddb2e" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_up" android:padding="12dp" android:layout_width="56dp" android:layout_height="@dimen/header_bar_height" android:src="@drawable/back_white_normal" android:scaleType="centerInside"/>
+        <ImageView android:layout_width="96dp" android:layout_height="64dp" android:layout_marginTop="8dp" android:src="@drawable/live_star" android:layout_centerHorizontal="true"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_avatar" android:background="@drawable/avatar_bg_mask_2dp" android:padding="2dp" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="12dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="#ff41364f" android:layout_gravity="center_horizontal" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="remix" android:layout_below="@+id/iv_avatar" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/live_text_10sp" android:textColor="#ff41364f" android:id="@+id/tv_total_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/live_total_receive" android:layout_below="@+id/tv_name" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/tv_total_hint" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="36dp" android:layout_height="20dp" android:src="@drawable/live_gift_rank_head"/>
+            <TextView android:textSize="@dimen/live_text_20sp" android:textColor="#ff41364f" android:id="@+id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="礼券"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

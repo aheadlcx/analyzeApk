@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navbar_height">
+        <TextView android:id="@+id/version_type_default" android:background="@drawable/bg_version_grey" android:layout_marginTop="@dimen/F7_line" android:text="@string/version_default" style="@style/version_text"/>
+        <TextView android:id="@+id/version_type_a" android:background="@drawable/bg_version_blue" android:layout_marginTop="@dimen/F2_line" android:text="@string/version_type_a" style="@style/version_text"/>
+        <TextView android:id="@+id/version_type_b" android:background="@drawable/bg_version_grey" android:layout_marginTop="@dimen/F2_line" android:text="@string/version_type_b" style="@style/version_text"/>
+    </LinearLayout>
+</RelativeLayout>

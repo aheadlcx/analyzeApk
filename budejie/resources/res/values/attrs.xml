@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ttgPstsIndicatorColor" format="color">
+    </attr>
+    <attr name="ttgPstsUnderlineColor" format="color">
+    </attr>
+    <attr name="ttgPstsDividerColor" format="color">
+    </attr>
+    <attr name="ttgPstsIndicatorHeight" format="dimension">
+    </attr>
+    <attr name="ttgPstsUnderlineHeight" format="dimension">
+    </attr>
+    <attr name="ttgPstsDividerPadding" format="dimension">
+    </attr>
+    <attr name="ttgPstsTabPaddingLeftRight" format="dimension">
+    </attr>
+    <attr name="ttgPstsScrollOffset" format="dimension">
+    </attr>
+    <attr name="ttgPstsTabBackground" format="reference">
+    </attr>
+    <attr name="ttgPstsShouldExpand" format="boolean">
+    </attr>
+    <attr name="ttgPstsTextAllCaps" format="boolean">
+    </attr>
+    <attr name="ttgZmsTabTextSize" format="dimension">
+    </attr>
+    <attr name="ttgZmsTabTextColor" format="color">
+    </attr>
+    <attr name="ttgZmsSelectedTabTextSize" format="dimension">
+    </attr>
+    <attr name="ttgZmsSelectedTabTextColor" format="color">
+    </attr>
+    <attr name="centered" format="boolean">
+    </attr>
+    <attr name="drawerArrowStyle" format="reference">
+    </attr>
+    <attr name="height" format="dimension">
+    </attr>
+    <attr name="isLightTheme" format="boolean">
+    </attr>
+    <attr name="mySwitchStyleAttr" format="reference">
+    </attr>
+    <attr name="selectedColor" format="color">
+    </attr>
+    <attr name="strokeWidth" format="dimension">
+    </attr>
+    <attr name="title" format="string">
+    </attr>
+    <attr name="unselectedColor" format="color">
+    </attr>
+    <attr name="navigationMode">
+        <enum name="listMode" value="1" />
+        <enum name="normal" value="0" />
+        <enum name="tabMode" value="2" />
+    </attr>
+    <attr name="displayOptions">
+        <flag name="disableHome" value="20" />
+        <flag name="homeAsUp" value="4" />
+        <flag name="none" value="0" />
+        <flag name="showCustom" value="10" />
+        <flag name="showHome" value="2" />
+        <flag name="showTitle" value="8" />
+        <flag name="useLogo" value="1" />
+    </attr>
+    <attr name="subtitle" format="string">
+    </attr>
+    <attr name="titleTextStyle" format="reference">
+    </attr>
+    <attr name="subtitleTextStyle" format="reference">
+    </attr>
+    <attr name="icon" format="reference">
+    </attr>
+    <attr name="logo" format="reference">
+    </attr>
+    <attr name="divider" format="reference">
+    </attr>
+    <attr name="background" format="reference">
+    </attr>
+    <attr name="backgroundStacked" format="reference|color">
+    </attr>
+    <attr name="backgroundSplit" format="reference|color">
+    </attr>
+    <attr name="customNavigationLayout" format="reference">
+    </attr>
+    <attr name="homeLayout" format="reference">
+    </attr>
+    <attr name="progressBarStyle" format="reference">
+    </attr>
+    <attr name="indeterminateProgressStyle" format="reference">
+    </attr>
+    <attr name="progressBarPadding" format="dimension">
+    </attr>
+    <attr name="itemPadding" format="dimension">
+    </attr>
+    <attr name="hideOnContentScroll" format="boolean">
+    </attr>
+    <attr name="contentInsetStart" format="dimension">
+    </attr>
+    <attr name="contentInsetEnd" format="dimension">
+    </attr>
+    <attr name="contentInsetLeft" format="dimension">
+    </attr>
+    <attr name="contentInsetRight" format="dimension">
+    </attr>
+    <attr name="elevation" format="dimension">
+    </attr>
+    <attr name="popupTheme" format="reference">
+    </attr>
+    <attr name="closeItemLayout" format="reference">
+    </attr>
+    <attr name="initialActivityCount" format="string">
+    </attr>
+    <attr name="expandActivityOverflowButtonDrawable" format="reference">
+    </attr>
+    <attr name="buttonPanelSideLayout" format="reference">
+    </attr>
+    <attr name="listLayout" format="reference">
+    </attr>
+    <attr name="multiChoiceItemLayout" format="reference">
+    </attr>
+    <attr name="singleChoiceItemLayout" format="reference">
+    </attr>
+    <attr name="listItemLayout" format="reference">
+    </attr>
+    <attr name="expanded" format="boolean">
+    </attr>
+    <attr name="layout_scrollFlags">
+        <flag name="enterAlways" value="4" />
+        <flag name="enterAlwaysCollapsed" value="8" />
+        <flag name="exitUntilCollapsed" value="2" />
+        <flag name="scroll" value="1" />
+        <flag name="snap" value="10" />
+    </attr>
+    <attr name="layout_scrollInterpolator" format="reference">
+    </attr>
+    <attr name="srcCompat" format="reference">
+    </attr>
+    <attr name="textAllCaps" format="reference|boolean">
+    </attr>
+    <attr name="windowActionBar" format="boolean">
+    </attr>
+    <attr name="windowNoTitle" format="boolean">
+    </attr>
+    <attr name="windowActionBarOverlay" format="boolean">
+    </attr>
+    <attr name="windowActionModeOverlay" format="boolean">
+    </attr>
+    <attr name="windowFixedWidthMajor" format="dimension|fraction">
+    </attr>
+    <attr name="windowFixedHeightMinor" format="dimension|fraction">
+    </attr>
+    <attr name="windowFixedWidthMinor" format="dimension|fraction">
+    </attr>
+    <attr name="windowFixedHeightMajor" format="dimension|fraction">
+    </attr>
+    <attr name="windowMinWidthMajor" format="dimension|fraction">
+    </attr>
+    <attr name="windowMinWidthMinor" format="dimension|fraction">
+    </attr>
+    <attr name="actionBarTabStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabBarStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabTextStyle" format="reference">
+    </attr>
+    <attr name="actionOverflowButtonStyle" format="reference">
+    </attr>
+    <attr name="actionOverflowMenuStyle" format="reference">
+    </attr>
+    <attr name="actionBarPopupTheme" format="reference">
+    </attr>
+    <attr name="actionBarStyle" format="reference">
+    </attr>
+    <attr name="actionBarSplitStyle" format="reference">
+    </attr>
+    <attr name="actionBarTheme" format="reference">
+    </attr>
+    <attr name="actionBarWidgetTheme" format="reference">
+    </attr>
+    <attr name="actionBarSize" format="dimension">
+        <enum name="wrap_content" value="0" />
+    </attr>
+    <attr name="actionBarDivider" format="reference">
+    </attr>
+    <attr name="actionBarItemBackground" format="reference">
+    </attr>
+    <attr name="actionMenuTextAppearance" format="reference">
+    </attr>
+    <attr name="actionMenuTextColor" format="reference|color">
+    </attr>
+    <attr name="actionModeStyle" format="reference">
+    </attr>
+    <attr name="actionModeCloseButtonStyle" format="reference">
+    </attr>
+    <attr name="actionModeBackground" format="reference">
+    </attr>
+    <attr name="actionModeSplitBackground" format="reference">
+    </attr>
+    <attr name="actionModeCloseDrawable" format="reference">
+    </attr>
+    <attr name="actionModeCutDrawable" format="reference">
+    </attr>
+    <attr name="actionModeCopyDrawable" format="reference">
+    </attr>
+    <attr name="actionModePasteDrawable" format="reference">
+    </attr>
+    <attr name="actionModeSelectAllDrawable" format="reference">
+    </attr>
+    <attr name="actionModeShareDrawable" format="reference">
+    </attr>
+    <attr name="actionModeFindDrawable" format="reference">
+    </attr>
+    <attr name="actionModeWebSearchDrawable" format="reference">
+    </attr>
+    <attr name="actionModePopupWindowStyle" format="reference">
+    </attr>
+    <attr name="textAppearanceLargePopupMenu" format="reference">
+    </attr>
+    <attr name="textAppearanceSmallPopupMenu" format="reference">
+    </attr>
+    <attr name="dialogTheme" format="reference">
+    </attr>
+    <attr name="dialogPreferredPadding" format="dimension">
+    </attr>
+    <attr name="listDividerAlertDialog" format="reference">
+    </attr>
+    <attr name="actionDropDownStyle" format="reference">
+    </attr>
+    <attr name="dropdownListPreferredItemHeight" format="dimension">
+    </attr>
+    <attr name="spinnerDropDownItemStyle" format="reference">
+    </attr>
+    <attr name="homeAsUpIndicator" format="reference">
+    </attr>
+    <attr name="actionButtonStyle" format="reference">
+    </attr>
+    <attr name="buttonBarStyle" format="reference">
+    </attr>
+    <attr name="buttonBarButtonStyle" format="reference">
+    </attr>
+    <attr name="selectableItemBackground" format="reference">
+    </attr>
+    <attr name="selectableItemBackgroundBorderless" format="reference">
+    </attr>
+    <attr name="borderlessButtonStyle" format="reference">
+    </attr>
+    <attr name="dividerVertical" format="reference">
+    </attr>
+    <attr name="dividerHorizontal" format="reference">
+    </attr>
+    <attr name="activityChooserViewStyle" format="reference">
+    </attr>
+    <attr name="toolbarStyle" format="reference">
+    </attr>
+    <attr name="toolbarNavigationButtonStyle" format="reference">
+    </attr>
+    <attr name="popupMenuStyle" format="reference">
+    </attr>
+    <attr name="popupWindowStyle" format="reference">
+    </attr>
+    <attr name="editTextColor" format="reference|color">
+    </attr>
+    <attr name="editTextBackground" format="reference">
+    </attr>
+    <attr name="imageButtonStyle" format="reference">
+    </attr>
+    <attr name="textAppearanceSearchResultTitle" format="reference">
+    </attr>
+    <attr name="textAppearanceSearchResultSubtitle" format="reference">
+    </attr>
+    <attr name="textColorSearchUrl" format="reference|color">
+    </attr>
+    <attr name="searchViewStyle" format="reference">
+    </attr>
+    <attr name="listPreferredItemHeight" format="dimension">
+    </attr>
+    <attr name="listPreferredItemHeightSmall" format="dimension">
+    </attr>
+    <attr name="listPreferredItemHeightLarge" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingLeft" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingRight" format="dimension">
+    </attr>
+    <attr name="dropDownListViewStyle" format="reference">
+    </attr>
+    <attr name="listPopupWindowStyle" format="reference">
+    </attr>
+    <attr name="textAppearanceListItem" format="reference">
+    </attr>
+    <attr name="textAppearanceListItemSmall" format="reference">
+    </attr>
+    <attr name="panelBackground" format="reference">
+    </attr>
+    <attr name="panelMenuListWidth" format="dimension">
+    </attr>
+    <attr name="panelMenuListTheme" format="reference">
+    </attr>
+    <attr name="listChoiceBackgroundIndicator" format="reference">
+    </attr>
+    <attr name="colorPrimary" format="color">
+    </attr>
+    <attr name="colorPrimaryDark" format="color">
+    </attr>
+    <attr name="colorAccent" format="color">
+    </attr>
+    <attr name="colorControlNormal" format="color">
+    </attr>
+    <attr name="colorControlActivated" format="color">
+    </attr>
+    <attr name="colorControlHighlight" format="color">
+    </attr>
+    <attr name="colorButtonNormal" format="color">
+    </attr>
+    <attr name="colorSwitchThumbNormal" format="color">
+    </attr>
+    <attr name="controlBackground" format="reference">
+    </attr>
+    <attr name="alertDialogStyle" format="reference">
+    </attr>
+    <attr name="alertDialogButtonGroupStyle" format="reference">
+    </attr>
+    <attr name="alertDialogCenterButtons" format="boolean">
+    </attr>
+    <attr name="alertDialogTheme" format="reference">
+    </attr>
+    <attr name="textColorAlertDialogListItem" format="reference|color">
+    </attr>
+    <attr name="buttonBarPositiveButtonStyle" format="reference">
+    </attr>
+    <attr name="buttonBarNegativeButtonStyle" format="reference">
+    </attr>
+    <attr name="buttonBarNeutralButtonStyle" format="reference">
+    </attr>
+    <attr name="autoCompleteTextViewStyle" format="reference">
+    </attr>
+    <attr name="buttonStyle" format="reference">
+    </attr>
+    <attr name="buttonStyleSmall" format="reference">
+    </attr>
+    <attr name="checkboxStyle" format="reference">
+    </attr>
+    <attr name="checkedTextViewStyle" format="reference">
+    </attr>
+    <attr name="editTextStyle" format="reference">
+    </attr>
+    <attr name="radioButtonStyle" format="reference">
+    </attr>
+    <attr name="ratingBarStyle" format="reference">
+    </attr>
+    <attr name="ratingBarStyleIndicator" format="reference">
+    </attr>
+    <attr name="ratingBarStyleSmall" format="reference">
+    </attr>
+    <attr name="seekBarStyle" format="reference">
+    </attr>
+    <attr name="spinnerStyle" format="reference">
+    </attr>
+    <attr name="switchStyle" format="reference">
+    </attr>
+    <attr name="behavior_peekHeight" format="dimension">
+    </attr>
+    <attr name="behavior_hideable" format="boolean">
+    </attr>
+    <attr name="allowStacking" format="boolean">
+    </attr>
+    <attr name="border_width" format="dimension">
+    </attr>
+    <attr name="border_color" format="color">
+    </attr>
+    <attr name="min" format="integer">
+    </attr>
+    <attr name="maxpress" format="integer">
+    </attr>
+    <attr name="CircleProgress" format="integer">
+    </attr>
+    <attr name="progressbarColor" format="color">
+    </attr>
+    <attr name="progressbarBgColor" format="color">
+    </attr>
+    <attr name="progressBarThickness" format="dimension">
+    </attr>
+    <attr name="layout_collapseMode">
+        <enum name="none" value="0" />
+        <enum name="parallax" value="2" />
+        <enum name="pin" value="1" />
+    </attr>
+    <attr name="layout_collapseParallaxMultiplier" format="float">
+    </attr>
+    <attr name="expandedTitleMargin" format="dimension">
+    </attr>
+    <attr name="expandedTitleMarginStart" format="dimension">
+    </attr>
+    <attr name="expandedTitleMarginTop" format="dimension">
+    </attr>
+    <attr name="expandedTitleMarginEnd" format="dimension">
+    </attr>
+    <attr name="expandedTitleMarginBottom" format="dimension">
+    </attr>
+    <attr name="expandedTitleTextAppearance" format="reference">
+    </attr>
+    <attr name="collapsedTitleTextAppearance" format="reference">
+    </attr>
+    <attr name="contentScrim" format="color">
+    </attr>
+    <attr name="statusBarScrim" format="color">
+    </attr>
+    <attr name="toolbarId" format="reference">
+    </attr>
+    <attr name="collapsedTitleGravity">
+        <flag name="bottom" value="50" />
+        <flag name="center" value="11" />
+        <flag name="center_horizontal" value="1" />
+        <flag name="center_vertical" value="10" />
+        <flag name="end" value="800005" />
+        <flag name="fill_vertical" value="70" />
+        <flag name="left" value="3" />
+        <flag name="right" value="5" />
+        <flag name="start" value="800003" />
+        <flag name="top" value="30" />
+    </attr>
+    <attr name="expandedTitleGravity">
+        <flag name="bottom" value="50" />
+        <flag name="center" value="11" />
+        <flag name="center_horizontal" value="1" />
+        <flag name="center_vertical" value="10" />
+        <flag name="end" value="800005" />
+        <flag name="fill_vertical" value="70" />
+        <flag name="left" value="3" />
+        <flag name="right" value="5" />
+        <flag name="start" value="800003" />
+        <flag name="top" value="30" />
+    </attr>
+    <attr name="titleEnabled" format="boolean">
+    </attr>
+    <attr name="buttonTint" format="color">
+    </attr>
+    <attr name="buttonTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="keylines" format="reference">
+    </attr>
+    <attr name="statusBarBackground" format="reference">
+    </attr>
+    <attr name="layout_behavior" format="string">
+    </attr>
+    <attr name="layout_anchor" format="reference">
+    </attr>
+    <attr name="layout_keyline" format="integer">
+    </attr>
+    <attr name="layout_anchorGravity">
+        <flag name="bottom" value="50" />
+        <flag name="center" value="11" />
+        <flag name="center_horizontal" value="1" />
+        <flag name="center_vertical" value="10" />
+        <flag name="end" value="800005" />
+        <flag name="fill_vertical" value="70" />
+        <flag name="left" value="3" />
+        <flag name="right" value="5" />
+        <flag name="start" value="800003" />
+        <flag name="top" value="30" />
+        <flag name="clip_horizontal" value="8" />
+        <flag name="clip_vertical" value="80" />
+        <flag name="fill" value="77" />
+        <flag name="fill_horizontal" value="7" />
+    </attr>
+    <attr name="guidelines">
+        <enum name="off" value="0" />
+        <enum name="on" value="2" />
+        <enum name="onTouch" value="1" />
+    </attr>
+    <attr name="fixAspectRatio" format="boolean">
+    </attr>
+    <attr name="aspectRatioX" format="integer">
+    </attr>
+    <attr name="aspectRatioY" format="integer">
+    </attr>
+    <attr name="imageResource" format="reference">
+    </attr>
+    <attr name="gifMoviewViewStyle" format="reference">
+    </attr>
+    <attr name="bottomSheetDialogTheme" format="reference">
+    </attr>
+    <attr name="bottomSheetStyle" format="reference">
+    </attr>
+    <attr name="textColorError" format="color">
+    </attr>
+    <attr name="color" format="color">
+    </attr>
+    <attr name="spinBars" format="boolean">
+    </attr>
+    <attr name="drawableSize" format="dimension">
+    </attr>
+    <attr name="gapBetweenBars" format="dimension">
+    </attr>
+    <attr name="arrowHeadLength" format="dimension">
+    </attr>
+    <attr name="arrowShaftLength" format="dimension">
+    </attr>
+    <attr name="barLength" format="dimension">
+    </attr>
+    <attr name="thickness" format="dimension">
+    </attr>
+    <attr name="scrollBarPanel" format="reference">
+    </attr>
+    <attr name="scrollBarPanelInAnimation" format="reference">
+    </attr>
+    <attr name="scrollBarPanelOutAnimation" format="reference">
+    </attr>
+    <attr name="rippleColor" format="color">
+    </attr>
+    <attr name="fabSize">
+        <enum name="normal" value="0" />
+        <enum name="mini" value="1" />
+    </attr>
+    <attr name="pressedTranslationZ" format="dimension">
+    </attr>
+    <attr name="borderWidth" format="dimension">
+    </attr>
+    <attr name="useCompatPadding" format="boolean">
+    </attr>
+    <attr name="foregroundInsidePadding" format="boolean">
+    </attr>
+    <attr name="fadeDuration" format="integer">
+    </attr>
+    <attr name="viewAspectRatio" format="float">
+    </attr>
+    <attr name="placeholderImage" format="reference">
+    </attr>
+    <attr name="placeholderImageScaleType">
+        <enum name="none" value="-1" />
+        <enum name="center" value="4" />
+        <enum name="centerCrop" value="6" />
+        <enum name="centerInside" value="5" />
+        <enum name="fitCenter" value="2" />
+        <enum name="fitEnd" value="3" />
+        <enum name="fitStart" value="1" />
+        <enum name="fitXY" value="0" />
+        <enum name="focusCrop" value="7" />
+    </attr>
+    <attr name="retryImage" format="reference">
+    </attr>
+    <attr name="retryImageScaleType">
+        <enum name="none" value="-1" />
+        <enum name="center" value="4" />
+        <enum name="centerCrop" value="6" />
+        <enum name="centerInside" value="5" />
+        <enum name="fitCenter" value="2" />
+        <enum name="fitEnd" value="3" />
+        <enum name="fitStart" value="1" />
+        <enum name="fitXY" value="0" />
+        <enum name="focusCrop" value="7" />
+    </attr>
+    <attr name="failureImage" format="reference">
+    </attr>
+    <attr name="failureImageScaleType">
+        <enum name="none" value="-1" />
+        <enum name="center" value="4" />
+        <enum name="centerCrop" value="6" />
+        <enum name="centerInside" value="5" />
+        <enum name="fitCenter" value="2" />
+        <enum name="fitEnd" value="3" />
+        <enum name="fitStart" value="1" />
+        <enum name="fitXY" value="0" />
+        <enum name="focusCrop" value="7" />
+    </attr>
+    <attr name="progressBarImage" format="reference">
+    </attr>
+    <attr name="progressBarImageScaleType">
+        <enum name="none" value="-1" />
+        <enum name="center" value="4" />
+        <enum name="centerCrop" value="6" />
+        <enum name="centerInside" value="5" />
+        <enum name="fitCenter" value="2" />
+        <enum name="fitEnd" value="3" />
+        <enum name="fitStart" value="1" />
+        <enum name="fitXY" value="0" />
+        <enum name="focusCrop" value="7" />
+    </attr>
+    <attr name="progressBarAutoRotateInterval" format="integer">
+    </attr>
+    <attr name="actualImageScaleType">
+        <enum name="none" value="-1" />
+        <enum name="center" value="4" />
+        <enum name="centerCrop" value="6" />
+        <enum name="centerInside" value="5" />
+        <enum name="fitCenter" value="2" />
+        <enum name="fitEnd" value="3" />
+        <enum name="fitStart" value="1" />
+        <enum name="fitXY" value="0" />
+        <enum name="focusCrop" value="7" />
+    </attr>
+    <attr name="backgroundImage" format="reference">
+    </attr>
+    <attr name="overlayImage" format="reference">
+    </attr>
+    <attr name="pressedStateOverlayImage" format="reference">
+    </attr>
+    <attr name="roundAsCircle" format="boolean">
+    </attr>
+    <attr name="roundedCornerRadius" format="dimension">
+    </attr>
+    <attr name="roundTopLeft" format="boolean">
+    </attr>
+    <attr name="roundTopRight" format="boolean">
+    </attr>
+    <attr name="roundBottomRight" format="boolean">
+    </attr>
+    <attr name="roundBottomLeft" format="boolean">
+    </attr>
+    <attr name="roundWithOverlayColor" format="color">
+    </attr>
+    <attr name="roundingBorderWidth" format="dimension">
+    </attr>
+    <attr name="roundingBorderColor" format="color">
+    </attr>
+    <attr name="roundingBorderPadding" format="dimension">
+    </attr>
+    <attr name="gif" format="reference">
+    </attr>
+    <attr name="paused" format="boolean">
+    </attr>
+    <attr name="dividerWidth" format="dimension">
+    </attr>
+    <attr name="measureWithLargestChild" format="boolean">
+    </attr>
+    <attr name="showDividers">
+        <flag name="none" value="0" />
+        <flag name="end" value="4" />
+        <flag name="beginning" value="1" />
+        <flag name="middle" value="2" />
+    </attr>
+    <attr name="dividerPadding" format="dimension">
+    </attr>
+    <attr name="showAsAction">
+        <flag name="always" value="2" />
+        <flag name="collapseActionView" value="8" />
+        <flag name="ifRoom" value="1" />
+        <flag name="never" value="0" />
+        <flag name="withText" value="4" />
+    </attr>
+    <attr name="actionLayout" format="reference">
+    </attr>
+    <attr name="actionViewClass" format="string">
+    </attr>
+    <attr name="actionProviderClass" format="string">
+    </attr>
+    <attr name="preserveIconSpacing" format="boolean">
+    </attr>
+    <attr name="menu" format="reference">
+    </attr>
+    <attr name="itemIconTint" format="color">
+    </attr>
+    <attr name="itemTextColor" format="color">
+    </attr>
+    <attr name="itemBackground" format="reference">
+    </attr>
+    <attr name="itemTextAppearance" format="reference">
+    </attr>
+    <attr name="headerLayout" format="reference">
+    </attr>
+    <attr name="progress" format="integer">
+    </attr>
+    <attr name="max" format="integer">
+    </attr>
+    <attr name="progress_unreached_color" format="color">
+    </attr>
+    <attr name="progress_reached_color" format="color">
+    </attr>
+    <attr name="progress_reached_bar_height" format="dimension">
+    </attr>
+    <attr name="progress_unreached_bar_height" format="dimension">
+    </attr>
+    <attr name="progress_text_size" format="dimension">
+    </attr>
+    <attr name="progress_text_color" format="color">
+    </attr>
+    <attr name="progress_text_offset" format="dimension">
+    </attr>
+    <attr name="progress_text_visibility">
+        <enum name="invisible" value="1" />
+        <enum name="visible" value="0" />
+    </attr>
+    <attr name="overlapAnchor" format="boolean">
+    </attr>
+    <attr name="state_above_anchor" format="boolean">
+    </attr>
+    <attr name="actionViewId" format="reference">
+    </attr>
+    <attr name="toolViewId" format="reference">
+    </attr>
+    <attr name="ptrRefreshableViewBackground" format="reference|color">
+    </attr>
+    <attr name="ptrHeaderBackground" format="reference|color">
+    </attr>
+    <attr name="ptrHeaderTextColor" format="reference|color">
+    </attr>
+    <attr name="ptrHeaderSubTextColor" format="reference|color">
+    </attr>
+    <attr name="ptrMode">
+        <flag name="both" value="3" />
+        <flag name="disabled" value="0" />
+        <flag name="manualOnly" value="4" />
+        <flag name="pullDownFromTop" value="1" />
+        <flag name="pullFromEnd" value="2" />
+        <flag name="pullFromStart" value="1" />
+        <flag name="pullUpFromBottom" value="2" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean">
+    </attr>
+    <attr name="ptrDrawable" format="reference">
+    </attr>
+    <attr name="ptrDrawableStart" format="reference">
+    </attr>
+    <attr name="ptrDrawableEnd" format="reference">
+    </attr>
+    <attr name="ptrOverScroll" format="reference|boolean">
+    </attr>
+    <attr name="ptrHeaderTextAppearance" format="reference">
+    </attr>
+    <attr name="ptrSubHeaderTextAppearance" format="reference">
+    </attr>
+    <attr name="ptrAnimationStyle">
+        <flag name="flip" value="1" />
+        <flag name="rotate" value="0" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean">
+    </attr>
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean">
+    </attr>
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean">
+    </attr>
+    <attr name="ptrAdapterViewBackground" format="reference|color">
+    </attr>
+    <attr name="ptrDrawableTop" format="reference">
+    </attr>
+    <attr name="ptrDrawableBottom" format="reference">
+    </attr>
+    <attr name="layoutManager" format="string">
+    </attr>
+    <attr name="spanCount" format="integer">
+    </attr>
+    <attr name="reverseLayout" format="boolean">
+    </attr>
+    <attr name="stackFromEnd" format="boolean">
+    </attr>
+    <attr name="roundWidth" format="dimension">
+    </attr>
+    <attr name="roundHeight" format="dimension">
+    </attr>
+    <attr name="pciEditroundColor" format="color">
+    </attr>
+    <attr name="pciEditroundProgressColor" format="color">
+    </attr>
+    <attr name="pciEditroundWidth" format="dimension">
+    </attr>
+    <attr name="pciEditTextColor" format="color">
+    </attr>
+    <attr name="pciEditTextSize" format="dimension">
+    </attr>
+    <attr name="pciEditmax" format="integer">
+    </attr>
+    <attr name="pciEdittextIsDisplayable" format="boolean">
+    </attr>
+    <attr name="pciEditstyle">
+        <enum name="FILL" value="1" />
+        <enum name="STROKE" value="0" />
+    </attr>
+    <attr name="cornerRadius" format="dimension">
+    </attr>
+    <attr name="insetForeground" format="reference|color">
+    </attr>
+    <attr name="behavior_overlapTop" format="dimension">
+    </attr>
+    <attr name="layout" format="reference">
+    </attr>
+    <attr name="iconifiedByDefault" format="boolean">
+    </attr>
+    <attr name="queryHint" format="string">
+    </attr>
+    <attr name="defaultQueryHint" format="string">
+    </attr>
+    <attr name="closeIcon" format="reference">
+    </attr>
+    <attr name="goIcon" format="reference">
+    </attr>
+    <attr name="searchIcon" format="reference">
+    </attr>
+    <attr name="searchHintIcon" format="reference">
+    </attr>
+    <attr name="voiceIcon" format="reference">
+    </attr>
+    <attr name="commitIcon" format="reference">
+    </attr>
+    <attr name="suggestionRowLayout" format="reference">
+    </attr>
+    <attr name="queryBackground" format="reference">
+    </attr>
+    <attr name="submitBackground" format="reference">
+    </attr>
+    <attr name="reachColor" format="color">
+    </attr>
+    <attr name="unReachColor" format="color">
+    </attr>
+    <attr name="undoColor" format="color">
+    </attr>
+    <attr name="barHeight" format="dimension">
+    </attr>
+    <attr name="startValue" format="dimension">
+    </attr>
+    <attr name="endValue" format="dimension">
+    </attr>
+    <attr name="actualImageUri" format="string">
+    </attr>
+    <attr name="actualImageResource" format="reference">
+    </attr>
+    <attr name="mode">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="viewAbove" format="reference">
+    </attr>
+    <attr name="viewBehind" format="reference">
+    </attr>
+    <attr name="behindOffset" format="dimension">
+    </attr>
+    <attr name="behindWidth" format="dimension">
+    </attr>
+    <attr name="behindScrollScale" format="float">
+    </attr>
+    <attr name="touchModeAbove">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+    </attr>
+    <attr name="touchModeBehind">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+    </attr>
+    <attr name="shadowDrawable" format="reference">
+    </attr>
+    <attr name="shadowWidth" format="dimension">
+    </attr>
+    <attr name="fadeEnabled" format="boolean">
+    </attr>
+    <attr name="fadeDegree" format="float">
+    </attr>
+    <attr name="selectorEnabled" format="boolean">
+    </attr>
+    <attr name="selectorDrawable" format="reference">
+    </attr>
+    <attr name="maxActionInlineWidth" format="dimension">
+    </attr>
+    <attr name="stroke_width" format="dimension">
+    </attr>
+    <attr name="stroke_color" format="color">
+    </attr>
+    <attr name="src" format="reference">
+    </attr>
+    <attr name="assetName" format="string">
+    </attr>
+    <attr name="panEnabled" format="boolean">
+    </attr>
+    <attr name="zoomEnabled" format="boolean">
+    </attr>
+    <attr name="quickScaleEnabled" format="boolean">
+    </attr>
+    <attr name="tileBackgroundColor" format="color">
+    </attr>
+    <attr name="onDrawable" format="reference">
+    </attr>
+    <attr name="offDrawable" format="reference">
+    </attr>
+    <attr name="thumbDrawable" format="reference">
+    </attr>
+    <attr name="thumb_margin" format="reference|dimension">
+    </attr>
+    <attr name="thumb_marginTop" format="reference|dimension">
+    </attr>
+    <attr name="thumb_marginBottom" format="reference|dimension">
+    </attr>
+    <attr name="thumb_marginLeft" format="reference|dimension">
+    </attr>
+    <attr name="thumb_marginRight" format="reference|dimension">
+    </attr>
+    <attr name="thumb_width" format="reference|dimension">
+    </attr>
+    <attr name="thumb_height" format="reference|dimension">
+    </attr>
+    <attr name="onColor" format="reference|color">
+    </attr>
+    <attr name="offColor" format="reference|color">
+    </attr>
+    <attr name="thumbColor" format="reference|color">
+    </attr>
+    <attr name="thumbPressedColor" format="reference|color">
+    </attr>
+    <attr name="animationVelocity" format="integer">
+    </attr>
+    <attr name="radius" format="integer">
+    </attr>
+    <attr name="measureFactor" format="float">
+    </attr>
+    <attr name="insetLeft" format="reference|dimension">
+    </attr>
+    <attr name="insetRight" format="reference|dimension">
+    </attr>
+    <attr name="insetTop" format="reference|dimension">
+    </attr>
+    <attr name="insetBottom" format="reference|dimension">
+    </attr>
+    <attr name="track" format="reference">
+    </attr>
+    <attr name="thumbTextPadding" format="dimension">
+    </attr>
+    <attr name="switchTextAppearance" format="reference">
+    </attr>
+    <attr name="switchMinWidth" format="dimension">
+    </attr>
+    <attr name="switchPadding" format="dimension">
+    </attr>
+    <attr name="splitTrack" format="boolean">
+    </attr>
+    <attr name="showText" format="boolean">
+    </attr>
+    <attr name="tabIndicatorColor" format="color">
+    </attr>
+    <attr name="tabIndicatorHeight" format="dimension">
+    </attr>
+    <attr name="tabContentStart" format="dimension">
+    </attr>
+    <attr name="tabBackground" format="reference">
+    </attr>
+    <attr name="tabMode">
+        <enum name="fixed" value="1" />
+        <enum name="scrollable" value="0" />
+    </attr>
+    <attr name="tabGravity">
+        <enum name="center" value="1" />
+        <enum name="fill" value="0" />
+    </attr>
+    <attr name="tabMinWidth" format="dimension">
+    </attr>
+    <attr name="tabMaxWidth" format="dimension">
+    </attr>
+    <attr name="tabTextAppearance" format="reference">
+    </attr>
+    <attr name="tabTextColor" format="color">
+    </attr>
+    <attr name="tabSelectedTextColor" format="color">
+    </attr>
+    <attr name="tabPaddingStart" format="dimension">
+    </attr>
+    <attr name="tabPaddingTop" format="dimension">
+    </attr>
+    <attr name="tabPaddingEnd" format="dimension">
+    </attr>
+    <attr name="tabPaddingBottom" format="dimension">
+    </attr>
+    <attr name="tabPadding" format="dimension">
+    </attr>
+    <attr name="hintTextAppearance" format="reference">
+    </attr>
+    <attr name="hintEnabled" format="boolean">
+    </attr>
+    <attr name="errorEnabled" format="boolean">
+    </attr>
+    <attr name="errorTextAppearance" format="reference">
+    </attr>
+    <attr name="counterEnabled" format="boolean">
+    </attr>
+    <attr name="counterMaxLength" format="integer">
+    </attr>
+    <attr name="counterTextAppearance" format="reference">
+    </attr>
+    <attr name="counterOverflowTextAppearance" format="reference">
+    </attr>
+    <attr name="hintAnimationEnabled" format="boolean">
+    </attr>
+    <attr name="ball_color" format="color">
+    </attr>
+    <attr name="left_color" format="color">
+    </attr>
+    <attr name="right_color" format="color">
+    </attr>
+    <attr name="ball_radius" format="dimension">
+    </attr>
+    <attr name="start_value" format="dimension">
+    </attr>
+    <attr name="errorMessageBackground" format="reference">
+    </attr>
+    <attr name="errorMessageAboveBackground" format="reference">
+    </attr>
+    <attr name="window_background" format="reference|color">
+    </attr>
+    <attr name="title_background" format="reference">
+    </attr>
+    <attr name="title_collect_left_bg" format="reference">
+    </attr>
+    <attr name="title_text_size" format="dimension">
+    </attr>
+    <attr name="title_text_color" format="reference|color">
+    </attr>
+    <attr name="title_text_selector" format="reference|color">
+    </attr>
+    <attr name="tv_background" format="reference">
+    </attr>
+    <attr name="tv_size" format="dimension">
+    </attr>
+    <attr name="tv_color" format="reference|color">
+    </attr>
+    <attr name="tv_text" format="string">
+    </attr>
+    <attr name="title_left_publish_bg" format="reference|color">
+    </attr>
+    <attr name="title_right_refresh_bg" format="reference|color">
+    </attr>
+    <attr name="title_right_suiji_bg" format="reference|color">
+    </attr>
+    <attr name="audit_bottom_layout_bg" format="reference|color">
+    </attr>
+    <attr name="audit_bottom_text_size" format="dimension">
+    </attr>
+    <attr name="audit_bottom_text_color" format="reference|color">
+    </attr>
+    <attr name="audit_bottom_text_color_red" format="reference|color">
+    </attr>
+    <attr name="audit_bottom_text_selector" format="reference|color">
+    </attr>
+    <attr name="audit_bottom_ding_img_bg" format="reference">
+    </attr>
+    <attr name="audit_bottom_cai_img_bg" format="reference">
+    </attr>
+    <attr name="audit_layout_bg" format="reference|color">
+    </attr>
+    <attr name="audit_bottom_redmine_text_color" format="reference|color">
+    </attr>
+    <attr name="audit_content_bg" format="reference">
+    </attr>
+    <attr name="audit_content_text_color" format="reference|color">
+    </attr>
+    <attr name="user_ins_layout_bg" format="reference|color">
+    </attr>
+    <attr name="user_ins_text_color" format="reference|color">
+    </attr>
+    <attr name="user_ins_text_colorhint" format="reference|color">
+    </attr>
+    <attr name="fans_list_bg" format="reference|color">
+    </attr>
+    <attr name="title_mid_button_right" format="reference|color">
+    </attr>
+    <attr name="title_mid_button_mid" format="reference|color">
+    </attr>
+    <attr name="title_mid_button_left" format="reference|color">
+    </attr>
+    <attr name="title_text_selector_news" format="reference|color">
+    </attr>
+    <attr name="attention_suggested_follows_text_color" format="reference|color">
+    </attr>
+    <attr name="item_content_layout_bg" format="reference|color">
+    </attr>
+    <attr name="item_content_layout_new_bg" format="reference|color">
+    </attr>
+    <attr name="list_item_bg" format="reference|color">
+    </attr>
+    <attr name="list_item_color_bg" format="reference|color">
+    </attr>
+    <attr name="item_title_name_color" format="reference|color">
+    </attr>
+    <attr name="item_title_name_time_color" format="reference|color">
+    </attr>
+    <attr name="item_content_text_color" format="reference|color">
+    </attr>
+    <attr name="comment_list_content_text_color" format="reference|color">
+    </attr>
+    <attr name="repost_item_content_text_color" format="reference|color">
+    </attr>
+    <attr name="delete_item_content_text_color" format="reference|color">
+    </attr>
+    <attr name="pp_title_right_jubao" format="reference|color">
+    </attr>
+    <attr name="pp_title_right_jubao_detail" format="reference|color">
+    </attr>
+    <attr name="imageready_bg" format="reference|color">
+    </attr>
+    <attr name="item_adsense_btn_bg" format="reference|color">
+    </attr>
+    <attr name="shenhe_suiji_btn_bg" format="reference|color">
+    </attr>
+    <attr name="ding_topic_head_portrait_bg" format="reference|color">
+    </attr>
+    <attr name="check_full_pic_back_dark_bg" format="reference|color">
+    </attr>
+    <attr name="check_full_pic_btn_bg" format="reference|color">
+    </attr>
+    <attr name="rich_item_bg_theme" format="reference|color">
+    </attr>
+    <attr name="rich_title_color_theme" format="reference|color">
+    </attr>
+    <attr name="rich_content_color_theme" format="reference|color">
+    </attr>
+    <attr name="bg_repost_color_selector_theme" format="reference|color">
+    </attr>
+    <attr name="recommend_nav_tv_bg" format="reference|color">
+    </attr>
+    <attr name="recommend_nav_font_selector" format="reference|color">
+    </attr>
+    <attr name="recommend_window_bg" format="reference|color">
+    </attr>
+    <attr name="recommend_nav_listview_bg" format="reference|color">
+    </attr>
+    <attr name="recommend_checkbox_bg" format="reference|color">
+    </attr>
+    <attr name="recommend_social_sina_bg" format="reference|color">
+    </attr>
+    <attr name="recommend_social_tencent_bg" format="reference|color">
+    </attr>
+    <attr name="recommend_friend_titlebar_bg" format="reference|color">
+    </attr>
+    <attr name="friend_empty_hint" format="reference|color">
+    </attr>
+    <attr name="follow_empty_hint" format="reference|color">
+    </attr>
+    <attr name="follow_friend_empty_skipbtn_bg" format="reference|color">
+    </attr>
+    <attr name="follow_friend_un_loginbtn_bg" format="reference|color">
+    </attr>
+    <attr name="follow_friend_un_loginbtn_text_color" format="reference|color">
+    </attr>
+    <attr name="recommend_social_phone_bg" format="reference|color">
+    </attr>
+    <attr name="recommend_title_search_icon" format="reference|color">
+    </attr>
+    <attr name="commend_detail_bottom_write_cmt_btn" format="reference|color">
+    </attr>
+    <attr name="bottom_bg_theme" format="reference|color">
+    </attr>
+    <attr name="comment_item_name_font" format="reference|color">
+    </attr>
+    <attr name="comment_item_content_font" format="reference|color">
+    </attr>
+    <attr name="commend_item_laba_bg" format="reference|color">
+    </attr>
+    <attr name="ic_trumpet_play" format="reference|color">
+    </attr>
+    <attr name="comment_item_title_bg" format="reference|color">
+    </attr>
+    <attr name="comment_item_content_bg" format="reference|color">
+    </attr>
+    <attr name="inform_someone_state" format="reference|color">
+    </attr>
+    <attr name="keyboard_state" format="reference|color">
+    </attr>
+    <attr name="keyboard_record_state" format="reference|color">
+    </attr>
+    <attr name="comment_select_image" format="reference|color">
+    </attr>
+    <attr name="commend_sendbtn" format="reference|color">
+    </attr>
+    <attr name="comment_detail_input_box_bg" format="reference|color">
+    </attr>
+    <attr name="comment_reply_item_bg" format="reference|color">
+    </attr>
+    <attr name="comment_reply_item_number_bg" format="reference|color">
+    </attr>
+    <attr name="comment_reply_item_content_color" format="reference|color">
+    </attr>
+    <attr name="commend_reply_divider_line_bg" format="reference|color">
+    </attr>
+    <attr name="commend_reply_item_hide_text_color" format="reference|color">
+    </attr>
+    <attr name="commend_reply_item_hide_arrow_bg" format="reference|color">
+    </attr>
+    <attr name="comment_reply_item_delete_text_color" format="reference|color">
+    </attr>
+    <attr name="write_comments_bottom_reply_bg" format="reference|color">
+    </attr>
+    <attr name="write_comments_bottom_share_bg" format="reference|color">
+    </attr>
+    <attr name="write_comments_bottom_share_title_bg" format="reference|color">
+    </attr>
+    <attr name="write_comments_textlength_color" format="reference|color">
+    </attr>
+    <attr name="write_comments_layout_bg" format="reference|color">
+    </attr>
+    <attr name="personal_tabs_bg" format="reference|color">
+    </attr>
+    <attr name="personal_tabs_text_color" format="reference|color">
+    </attr>
+    <attr name="personal_tabs_text_color_2" format="reference|color">
+    </attr>
+    <attr name="personal_popupwindow_bg" format="reference|color">
+    </attr>
+    <attr name="personal_user_text_color" format="reference|color">
+    </attr>
+    <attr name="personal_user_text_color_2" format="reference|color">
+    </attr>
+    <attr name="personal_ic_wanna_cry" format="reference|color">
+    </attr>
+    <attr name="personal_not_have_user_text_prompt" format="reference|color">
+    </attr>
+    <attr name="text_tiezi_count_color" format="reference|color">
+    </attr>
+    <attr name="personal_share_bar_icon" format="reference|color">
+    </attr>
+    <attr name="personal_attention_bg" format="reference|color">
+    </attr>
+    <attr name="personal_attention_cancle_bg" format="reference|color">
+    </attr>
+    <attr name="personal_chat_bg" format="reference|color">
+    </attr>
+    <attr name="personal_tip_bg" format="reference|color">
+    </attr>
+    <attr name="personal_tip_content_color" format="reference|color">
+    </attr>
+    <attr name="personal_music_album_bg" format="reference|color">
+    </attr>
+    <attr name="personal_music_album_item_bg" format="reference|color">
+    </attr>
+    <attr name="personal_music_album_item_add_bg" format="reference|color">
+    </attr>
+    <attr name="personal_music_album_item_content" format="reference|color">
+    </attr>
+    <attr name="add_music_album_content" format="reference|color">
+    </attr>
+    <attr name="add_music_album_btn" format="reference|color">
+    </attr>
+    <attr name="personal_tip_content_btn" format="reference|color">
+    </attr>
+    <attr name="account_item_content_layout_bg" format="reference|color">
+    </attr>
+    <attr name="account_text_color" format="reference|color">
+    </attr>
+    <attr name="account_item_h_divider" format="reference|color">
+    </attr>
+    <attr name="myinfo_num_color" format="reference|color">
+    </attr>
+    <attr name="myinfo_attention_color" format="reference|color">
+    </attr>
+    <attr name="myinfo_post_num_prompt_text_color" format="reference|color">
+    </attr>
+    <attr name="suggested_follows_number" format="reference|color">
+    </attr>
+    <attr name="suggested_posts_number" format="reference|color">
+    </attr>
+    <attr name="myinfo_post_name_prompt_text_color" format="reference|color">
+    </attr>
+    <attr name="myinfo_friend_color" format="reference|color">
+    </attr>
+    <attr name="shentie_bg" format="reference|color">
+    </attr>
+    <attr name="dialog_bg_color" format="reference|color">
+    </attr>
+    <attr name="new_item_login_sina_bg" format="reference|color">
+    </attr>
+    <attr name="new_item_login_qq_bg" format="reference|color">
+    </attr>
+    <attr name="new_item_login_tencent_bg" format="reference|color">
+    </attr>
+    <attr name="new_item_login_phone_bg" format="reference|color">
+    </attr>
+    <attr name="new_item_invite_bg" format="reference|color">
+    </attr>
+    <attr name="new_item_recommend_more_bg" format="reference|color">
+    </attr>
+    <attr name="new_item_shareFriend_text_color" format="reference|color">
+    </attr>
+    <attr name="divider_horizontal_bg" format="reference|color">
+    </attr>
+    <attr name="close_btn" format="reference|color">
+    </attr>
+    <attr name="color_bg" format="reference|color">
+    </attr>
+    <attr name="send_btn_text_color" format="reference|color">
+    </attr>
+    <attr name="myinfo_setting_bg" format="reference|color">
+    </attr>
+    <attr name="myinfo_night_model_bg" format="reference|color">
+    </attr>
+    <attr name="phone_edittext_bg" format="reference|color">
+    </attr>
+    <attr name="phone_verify_btn_bg" format="reference|color">
+    </attr>
+    <attr name="label_pinner_tabs_bg" format="reference|color">
+    </attr>
+    <attr name="label_details_info_color" format="reference|color">
+    </attr>
+    <attr name="more_text_color" format="reference|color">
+    </attr>
+    <attr name="item_forward_bg" format="reference|color">
+    </attr>
+    <attr name="item_forward_arrow" format="reference|color">
+    </attr>
+    <attr name="new_listview_bg_color" format="reference|color">
+    </attr>
+    <attr name="item_list_content_bg" format="reference|color">
+    </attr>
+    <attr name="promptly_attention" format="reference">
+    </attr>
+    <attr name="promptly_attention_bg" format="reference|color">
+    </attr>
+    <attr name="attention_left" format="reference|color">
+    </attr>
+    <attr name="attention_right" format="reference|color">
+    </attr>
+    <attr name="bottom_navigation_posted" format="reference|color">
+    </attr>
+    <attr name="bottom_navigation_text" format="reference|color">
+    </attr>
+    <attr name="bottom_navigation_newest_img" format="reference|color">
+    </attr>
+    <attr name="bottom_navigation_essence_img" format="reference|color">
+    </attr>
+    <attr name="bottom_navigation_attention_img" format="reference|color">
+    </attr>
+    <attr name="bottom_navigation_my_img" format="reference|color">
+    </attr>
+    <attr name="label_recommend_color_theme" format="reference|color">
+    </attr>
+    <attr name="label_next_page_selector_theme" format="reference|color">
+    </attr>
+    <attr name="search_label_item_color_theme" format="reference|color">
+    </attr>
+    <attr name="search_label_item_bg_theme" format="reference|color">
+    </attr>
+    <attr name="label_icon_theme" format="reference|color">
+    </attr>
+    <attr name="search_label_item_divider_theme" format="reference|color">
+    </attr>
+    <attr name="search_label_edit_color_theme" format="reference|color">
+    </attr>
+    <attr name="label_subscribe_bg_color" format="reference|color">
+    </attr>
+    <attr name="label_subscribe_bg_gd_color" format="reference|color">
+    </attr>
+    <attr name="label_subscribe_bg_tjbq_color" format="reference|color">
+    </attr>
+    <attr name="label_name_text_color" format="reference|color">
+    </attr>
+    <attr name="cancel_subscribe_name_text_color" format="reference|color">
+    </attr>
+    <attr name="label_subscribe_number_text_color" format="reference|color">
+    </attr>
+    <attr name="item_view_color" format="reference|color">
+    </attr>
+    <attr name="item_cancel_btn_color" format="reference|color">
+    </attr>
+    <attr name="label_details_ic_selector_list_empty_prompt" format="reference|color">
+    </attr>
+    <attr name="label_details_bg_selector_subscribe_btn" format="reference|color">
+    </attr>
+    <attr name="label_details_ic_selector_edit_btn" format="reference|color">
+    </attr>
+    <attr name="label_details_ic_selector_share_btn" format="reference|color">
+    </attr>
+    <attr name="list_item_right_follow_state" format="reference|color">
+    </attr>
+    <attr name="list_item_user_v" format="reference|color">
+    </attr>
+    <attr name="bg_labeldetails_list_empty_action_selector_state" format="reference|color">
+    </attr>
+    <attr name="label_search_input_bg_state" format="reference|color">
+    </attr>
+    <attr name="lable_search_bg_color" format="reference|color">
+    </attr>
+    <attr name="event_label_bg" format="reference|color">
+    </attr>
+    <attr name="event_label_bg_color" format="reference|color">
+    </attr>
+    <attr name="event_label_text_color" format="reference|color">
+    </attr>
+    <attr name="post_loading_icon" format="reference|color">
+    </attr>
+    <attr name="posts_state_bg" format="reference|color">
+    </attr>
+    <attr name="progressbar_bg_state" format="reference|color">
+    </attr>
+    <attr name="circle_progressbar_bg_color" format="reference|color">
+    </attr>
+    <attr name="circle_progressbar_color" format="reference|color">
+    </attr>
+    <attr name="load_error_state" format="reference|color">
+    </attr>
+    <attr name="bt1_color_state" format="reference|color">
+    </attr>
+    <attr name="bt2_color_state" format="reference|color">
+    </attr>
+    <attr name="bt3_color_state" format="reference|color">
+    </attr>
+    <attr name="bt4_color_state" format="reference|color">
+    </attr>
+    <attr name="bt5_color_state" format="reference|color">
+    </attr>
+    <attr name="label_bt_text_color" format="reference|color">
+    </attr>
+    <attr name="user_info_collect_btn_bg" format="reference|color">
+    </attr>
+    <attr name="myinfo_msg_icon" format="reference|color">
+    </attr>
+    <attr name="my_vip_icon" format="reference|color">
+    </attr>
+    <attr name="custom_tab_color_bg" format="reference|color">
+    </attr>
+    <attr name="custom_tab_indicator_bg" format="reference|color">
+    </attr>
+    <attr name="custom_tab_indicator_text_color" format="reference|color">
+    </attr>
+    <attr name="reprint_window_bg" format="reference|color">
+    </attr>
+    <attr name="reprint_text_color_hint" format="reference|color">
+    </attr>
+    <attr name="reprint_post_layout_bg" format="reference|color">
+    </attr>
+    <attr name="reprint_opreation_frame_color" format="reference|color">
+    </attr>
+    <attr name="repint_contacts_icon" format="reference|color">
+    </attr>
+    <attr name="repint_label_icon" format="reference|color">
+    </attr>
+    <attr name="repint_icon_text_color" format="reference|color">
+    </attr>
+    <attr name="repint_post_user_name_color" format="reference|color">
+    </attr>
+    <attr name="create_forward_text_color" format="reference|color">
+    </attr>
+    <attr name="choose_contact_item_bg" format="reference|color">
+    </attr>
+    <attr name="choose_search_layout_bg" format="reference|color">
+    </attr>
+    <attr name="choose_contact_input_box_bg" format="reference|color">
+    </attr>
+    <attr name="choose_contact_search_icon" format="reference|color">
+    </attr>
+    <attr name="choose_contact_hint_text_color" format="reference|color">
+    </attr>
+    <attr name="choose_contact_text_color" format="reference|color">
+    </attr>
+    <attr name="choose_contact_cancel_text_color" format="reference|color">
+    </attr>
+    <attr name="choose_contact_clear_search_text_icon" format="reference|color">
+    </attr>
+    <attr name="choose_search_no_contacts_bg" format="reference|color">
+    </attr>
+    <attr name="choose_contact_item_title_bg" format="reference|color">
+    </attr>
+    <attr name="choose_contact_item_title_text_color" format="reference|color">
+    </attr>
+    <attr name="choose_contact_item_search_text_color" format="reference|color">
+    </attr>
+    <attr name="choose_contact_item_divider_color" format="reference|color">
+    </attr>
+    <attr name="choose_contact_item_name_text_color" format="reference|color">
+    </attr>
+    <attr name="choose_contact_item_arrow_icon" format="reference|color">
+    </attr>
+    <attr name="label_name_layout_bg" format="reference|color">
+    </attr>
+    <attr name="label_add_icon" format="reference|color">
+    </attr>
+    <attr name="tougao_label_name_color" format="reference|color">
+    </attr>
+    <attr name="hot_comment_prompt_text_color_bg" format="reference|color">
+    </attr>
+    <attr name="hot_comment_prompt_text_color" format="reference|color">
+    </attr>
+    <attr name="hot_comment_text_color" format="reference|color">
+    </attr>
+    <attr name="shape_cmt_like1_bg" format="reference|color">
+    </attr>
+    <attr name="shape_cmt_like2_bg" format="reference|color">
+    </attr>
+    <attr name="shape_cmt_like3_bg" format="reference|color">
+    </attr>
+    <attr name="shape_cmt_like4_bg" format="reference|color">
+    </attr>
+    <attr name="top_navigation_bar_bg_color" format="reference|color">
+    </attr>
+    <attr name="top_navigation_middle" format="reference|color">
+    </attr>
+    <attr name="top_refresh_btn" format="reference|color">
+    </attr>
+    <attr name="top_label_btn_bg" format="reference|color">
+    </attr>
+    <attr name="top_games_btn_bg" format="reference|color">
+    </attr>
+    <attr name="top_audit_btn_bg" format="reference|color">
+    </attr>
+    <attr name="top_suiji_btn_bg" format="reference|color">
+    </attr>
+    <attr name="top_suiji_btn_bg_2" format="reference|color">
+    </attr>
+    <attr name="gray_click_state" format="reference|color">
+    </attr>
+    <attr name="white_bg_gray_click_state" format="reference|color">
+    </attr>
+    <attr name="select_grid_view_selector" format="reference|color">
+    </attr>
+    <attr name="theme_bg_color" format="reference|color">
+    </attr>
+    <attr name="more_single_text_color" format="reference|color">
+    </attr>
+    <attr name="icon_post_copyright" format="reference|color">
+    </attr>
+    <attr name="dailog_cacel_btn_bg" format="reference|color">
+    </attr>
+    <attr name="dailog_cancel_text_color" format="reference|color">
+    </attr>
+    <attr name="post_item_operation_text_color" format="reference|color">
+    </attr>
+    <attr name="ding_icon" format="reference|color">
+    </attr>
+    <attr name="cai_icon" format="reference|color">
+    </attr>
+    <attr name="forward_icon" format="reference|color">
+    </attr>
+    <attr name="posts_detail_forward_icon" format="reference|color">
+    </attr>
+    <attr name="commend_icon" format="reference|color">
+    </attr>
+    <attr name="notice_red_point" format="reference|color">
+    </attr>
+    <attr name="follows_shape_bg" format="reference|color">
+    </attr>
+    <attr name="follows_shape_item_bg" format="reference|color">
+    </attr>
+    <attr name="follows_shape_item_unadd_bg" format="reference|color">
+    </attr>
+    <attr name="theme_red_color" format="reference|color">
+    </attr>
+    <attr name="post_label_text_color" format="reference|color">
+    </attr>
+    <attr name="post_label_icon" format="reference|color">
+    </attr>
+    <attr name="comment_bottom_bar_bg" format="reference|color">
+    </attr>
+    <attr name="xlistview_progress_bar_icon" format="reference|color">
+    </attr>
+    <attr name="xlistview_arrow_piclib" format="reference|color">
+    </attr>
+    <attr name="xlistview_text_color" format="reference|color">
+    </attr>
+    <attr name="personal_sex_men" format="reference|color">
+    </attr>
+    <attr name="personal_sex_women" format="reference|color">
+    </attr>
+    <attr name="sms_verify_prompt_text_color" format="reference|color">
+    </attr>
+    <attr name="post_item_history_hot_post_icon" format="reference|color">
+    </attr>
+    <attr name="post_item_history_hot_post_see_more" format="reference|color">
+    </attr>
+    <attr name="bg_activities_topic_item_participants_count" format="reference|color">
+    </attr>
+    <attr name="ic_follows_sinafriend" format="reference|color">
+    </attr>
+    <attr name="pp_btn_add_attention" format="reference|color">
+    </attr>
+    <attr name="pp_btn_cancle_attention" format="reference|color">
+    </attr>
+    <attr name="suggested_follows_fragment_color_bg" format="reference|color">
+    </attr>
+    <attr name="follow_divider_vertical" format="reference|color">
+    </attr>
+    <attr name="follow_divider_horizontal" format="reference|color">
+    </attr>
+    <attr name="h5_close_icon" format="reference|color">
+    </attr>
+    <attr name="common_press" format="reference|color">
+    </attr>
+    <attr name="edit_username_default_text_color" format="reference|color">
+    </attr>
+    <attr name="unlogin_default_text_color" format="reference|color">
+    </attr>
+    <attr name="history_post_content_text_color" format="reference|color">
+    </attr>
+    <attr name="history_post_describe_text_color" format="reference|color">
+    </attr>
+    <attr name="history_post_duration_icon" format="reference|color">
+    </attr>
+    <attr name="history_post_play_time_icon" format="reference|color">
+    </attr>
+    <attr name="history_post_indicator_icon" format="reference|color">
+    </attr>
+    <attr name="comment_video_bg" format="reference|color">
+    </attr>
+    <attr name="forward_close_icon" format="reference|color">
+    </attr>
+    <attr name="tougao_preview_bg" format="reference|color">
+    </attr>
+    <attr name="send_post_text_color" format="reference|color">
+    </attr>
+    <attr name="send_post_text_hint_color" format="reference|color">
+    </attr>
+    <attr name="send_post_divider_color" format="reference|color">
+    </attr>
+    <attr name="send_post_bg" format="reference|color">
+    </attr>
+    <attr name="send_link_post_tip_color" format="reference|color">
+    </attr>
+    <attr name="tougao_help_bg" format="reference|color">
+    </attr>
+    <attr name="ranking_list_title_color" format="reference|color">
+    </attr>
+    <attr name="ranking_list_title_color_selected" format="reference|color">
+    </attr>
+    <attr name="ranking_list_title_bg" format="reference">
+    </attr>
+    <attr name="ranking_list_title_bg_selected" format="reference">
+    </attr>
+    <attr name="ranking_list_dropdown_bg" format="reference|color">
+    </attr>
+    <attr name="vip_icon" format="reference">
+    </attr>
+    <attr name="vip_tip_icon" format="reference">
+    </attr>
+    <attr name="offline_download_tip_icon" format="reference">
+    </attr>
+    <attr name="local_download_tip_icon" format="reference">
+    </attr>
+    <attr name="change_phone_text_color" format="reference">
+    </attr>
+    <attr name="change_phone_text_bg" format="reference">
+    </attr>
+    <attr name="no_data_text_color" format="reference">
+    </attr>
+    <attr name="hot_comment_top_bg" format="reference">
+    </attr>
+    <attr name="hot_comment_bg" format="reference|color">
+    </attr>
+    <attr name="last_refresh_item_point_theme" format="reference">
+    </attr>
+    <attr name="last_refresh_item_bg_theme" format="reference">
+    </attr>
+    <attr name="last_refresh_item_text_theme" format="reference">
+    </attr>
+    <attr name="last_refresh_item_icon_theme" format="reference">
+    </attr>
+    <attr name="add_vote_item_bg" format="reference">
+    </attr>
+    <attr name="add_vote_item_cancel" format="reference">
+    </attr>
+    <attr name="add_vote_item_edit_color" format="color">
+    </attr>
+    <attr name="add_vote_item_edit_hint_color" format="color">
+    </attr>
+    <attr name="vote_item_divider_color" format="color">
+    </attr>
+    <attr name="vote_item_bg_color" format="reference|color">
+    </attr>
+    <attr name="vote_proportion_color" format="reference">
+    </attr>
+    <attr name="vote_container_cancel_bg" format="reference|color">
+    </attr>
+    <attr name="comment_operate_vote_icon" format="reference|color">
+    </attr>
+    <attr name="comment_operate_album_icon" format="reference|color">
+    </attr>
+    <attr name="comment_operate_dub_icon" format="reference|color">
+    </attr>
+    <attr name="comment_operate_text_color" format="reference|color">
+    </attr>
+    <attr name="comment_bottom_more_icom" format="reference|color">
+    </attr>
+    <attr name="comment_pub_view_bg" format="reference|color">
+    </attr>
+    <attr name="author_replay_mark_content_color" format="reference|color">
+    </attr>
+    <attr name="author_replay_mark_bg" format="reference|color">
+    </attr>
+    <attr name="label_details_add_selector" format="reference|color">
+    </attr>
+    <attr name="label_list_search_bg" format="reference|color">
+    </attr>
+    <attr name="label_list_search_icon" format="reference|color">
+    </attr>
+    <attr name="label_list_search_text" format="reference|color">
+    </attr>
+    <attr name="label_list_item_name" format="reference|color">
+    </attr>
+    <attr name="label_list_item_num" format="reference|color">
+    </attr>
+    <attr name="publish_comment_status_bar_background" format="reference|color">
+    </attr>
+    <attr name="publish_comment_divide_line_color" format="reference|color">
+    </attr>
+    <attr name="publish_comment_bottom_layout_background" format="reference|color">
+    </attr>
+    <attr name="publish_comment_cancel_text_color" format="reference|color">
+    </attr>
+    <attr name="publish_comment_content_color" format="reference|color">
+    </attr>
+    <attr name="staggered_fragment_background" format="reference|color">
+    </attr>
+    <attr name="recyclerview_load_image_background" format="reference|color">
+    </attr>
+    <attr name="share_qq_theme" format="reference">
+    </attr>
+    <attr name="share_message_theme" format="reference">
+    </attr>
+    <attr name="share_copy_theme" format="reference">
+    </attr>
+    <attr name="share_report_theme" format="reference">
+    </attr>
+    <attr name="share_qzone_theme" format="reference">
+    </attr>
+    <attr name="share_circlefriend_theme" format="reference">
+    </attr>
+    <attr name="share_collect_theme" format="reference">
+    </attr>
+    <attr name="share_wechat_theme" format="reference">
+    </attr>
+    <attr name="share_download_theme" format="reference">
+    </attr>
+    <attr name="share_sina_theme" format="reference">
+    </attr>
+    <attr name="share_screenshot_theme" format="reference">
+    </attr>
+    <attr name="share_cancelcollect_theme" format="reference">
+    </attr>
+    <attr name="share_dialog_text_color" format="reference|color">
+    </attr>
+    <attr name="share_dialog_cancel_text_background" format="reference|color">
+    </attr>
+    <attr name="share_dialog_background" format="reference|color">
+    </attr>
+    <attr name="share_wall_paper_set_theme" format="reference|color">
+    </attr>
+    <attr name="share_add_essence_theme" format="reference|color">
+    </attr>
+    <attr name="share_cancel_essence_theme" format="reference|color">
+    </attr>
+    <attr name="share_totop_theme" format="reference|color">
+    </attr>
+    <attr name="share_cancel_totop_theme" format="reference|color">
+    </attr>
+    <attr name="share_delete_theme" format="reference|color">
+    </attr>
+    <attr name="post_standard_look_background" format="reference|color">
+    </attr>
+    <attr name="select_label_background" format="reference|color">
+    </attr>
+    <attr name="label_background" format="reference|color">
+    </attr>
+    <attr name="tougao_select_label_text_color" format="reference|color">
+    </attr>
+    <attr name="tougao_label_text_color" format="reference|color">
+    </attr>
+    <attr name="load_view_text_color" format="reference|color">
+    </attr>
+    <attr name="list_view_item_background" format="reference|color">
+    </attr>
+    <attr name="search_history_text_background" format="reference|color">
+    </attr>
+    <attr name="search_history_background" format="reference|color">
+    </attr>
+    <attr name="new_detail_title_bg" format="reference">
+    </attr>
+    <attr name="new_detail_title_back" format="reference">
+    </attr>
+    <attr name="new_detail_title_like" format="reference">
+    </attr>
+    <attr name="new_detail_title_hate" format="reference">
+    </attr>
+    <attr name="new_detail_title_share" format="reference">
+    </attr>
+    <attr name="new_detail_title_barrage_close" format="reference">
+    </attr>
+    <attr name="new_detail_title_barrage_single" format="reference">
+    </attr>
+    <attr name="new_detail_title_barrage_multi" format="reference">
+    </attr>
+    <attr name="new_detail_bottom_text" format="reference|color">
+    </attr>
+    <attr name="new_detail_content_bg" format="reference|color">
+    </attr>
+    <attr name="new_detail_play_count_color" format="reference|color">
+    </attr>
+    <attr name="new_detail_plate_color" format="reference|color">
+    </attr>
+    <attr name="new_detail_plate_bg" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_bg" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_text_color" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_send_color" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_Progress_bg" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_play" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_stop" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_start" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_cancel" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_divider" format="reference|color">
+    </attr>
+    <attr name="comment_recoder_text_bg" format="reference|color">
+    </attr>
+    <attr name="new_detail_plate_name_color" format="reference|color">
+    </attr>
+    <attr name="new_detail_plate_sub_num_color" format="reference|color">
+    </attr>
+    <attr name="new_detail_sub_post_divider_color" format="reference|color">
+    </attr>
+    <attr name="new_detail_plate_right" format="reference|color">
+    </attr>
+    <attr name="plate_list_item_right_icon" format="reference|color">
+    </attr>
+    <attr name="post_praise_background" format="reference|color">
+    </attr>
+    <attr name="app_red_main_theme" format="reference|color">
+    </attr>
+    <attr name="plate_list_item_color" format="reference|color">
+    </attr>
+    <attr name="label_apply_moderator_theme" format="reference|color">
+    </attr>
+    <attr name="common_layout_background" format="reference|color">
+    </attr>
+    <attr name="label_sex_male_theme" format="reference|color">
+    </attr>
+    <attr name="label_sex_female_theme" format="reference|color">
+    </attr>
+    <attr name="search_hot_1_background" format="reference|color">
+    </attr>
+    <attr name="search_hot_2_background" format="reference|color">
+    </attr>
+    <attr name="search_hot_3_background" format="reference|color">
+    </attr>
+    <attr name="search_hot_4_background" format="reference|color">
+    </attr>
+    <attr name="label_tab_line_background" format="reference|color">
+    </attr>
+    <attr name="label_top_post_mark_background" format="reference|color">
+    </attr>
+    <attr name="label_top_post_mark_text_color" format="reference|color">
+    </attr>
+    <attr name="label_top_post_text_color" format="reference|color">
+    </attr>
+    <attr name="label_deputy_user_name_color" format="reference|color">
+    </attr>
+    <attr name="numberProgressBarStyle" format="reference">
+    </attr>
+    <attr name="titleTextAppearance" format="reference">
+    </attr>
+    <attr name="subtitleTextAppearance" format="reference">
+    </attr>
+    <attr name="titleMargins" format="dimension">
+    </attr>
+    <attr name="titleMarginStart" format="dimension">
+    </attr>
+    <attr name="titleMarginEnd" format="dimension">
+    </attr>
+    <attr name="titleMarginTop" format="dimension">
+    </attr>
+    <attr name="titleMarginBottom" format="dimension">
+    </attr>
+    <attr name="maxButtonHeight" format="dimension">
+    </attr>
+    <attr name="collapseIcon" format="reference">
+    </attr>
+    <attr name="collapseContentDescription" format="string">
+    </attr>
+    <attr name="navigationIcon" format="reference">
+    </attr>
+    <attr name="navigationContentDescription" format="string">
+    </attr>
+    <attr name="logoDescription" format="string">
+    </attr>
+    <attr name="titleTextColor" format="color">
+    </attr>
+    <attr name="subtitleTextColor" format="color">
+    </attr>
+    <attr name="paddingStart" format="dimension">
+    </attr>
+    <attr name="paddingEnd" format="dimension">
+    </attr>
+    <attr name="theme" format="reference">
+    </attr>
+    <attr name="backgroundTint" format="color">
+    </attr>
+    <attr name="backgroundTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="vpiCirclePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiIconPageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiLinePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiTitlePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiTabPageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiTabPageIndicatorStyleNight" format="reference">
+    </attr>
+    <attr name="minTop" format="integer">
+    </attr>
+    <attr name="minBottom" format="integer">
+    </attr>
+    <attr name="topShow" format="boolean">
+    </attr>
+    <attr name="bottomShow" format="boolean">
+    </attr>
+    <attr name="index" format="integer">
+    </attr>
+    <attr name="text" format="string">
+    </attr>
+    <attr name="textColor" format="reference|color">
+    </attr>
+    <attr name="textSize" format="reference|dimension">
+    </attr>
+    <attr name="direction">
+        <enum name="downtoup" value="1" />
+        <enum name="uptodown" value="0" />
+    </attr>
+    <attr name="middleLine" format="color">
+    </attr>
+    <attr name="middleLineHeight" format="dimension">
+    </attr>
+    <attr name="voiceLine" format="color">
+    </attr>
+    <attr name="lineSpeed" format="integer">
+    </attr>
+    <attr name="rectWidth" format="dimension">
+    </attr>
+    <attr name="rectSpace" format="dimension">
+    </attr>
+    <attr name="rectInitHeight" format="dimension">
+    </attr>
+    <attr name="rectMoveDirection">
+        <enum name="leftToRight" value="1" />
+        <enum name="rightToLeft" value="2" />
+    </attr>
+    <attr name="maxVolume" format="float">
+    </attr>
+    <attr name="viewMode">
+        <enum name="line" value="0" />
+        <enum name="rect" value="1" />
+    </attr>
+    <attr name="sensibility">
+        <enum name="five" value="5" />
+        <enum name="four" value="4" />
+        <enum name="one" value="1" />
+        <enum name="three" value="3" />
+        <enum name="two" value="2" />
+    </attr>
+    <attr name="fineness">
+        <enum name="one" value="1" />
+        <enum name="three" value="3" />
+        <enum name="two" value="2" />
+    </attr>
+</resources>

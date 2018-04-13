@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="9dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_rank_head" android:visibility="gone" android:layout_width="31dp" android:layout_height="44dp"/>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/fl_rank" android:layout_width="60dp" android:layout_height="58dp" android:layout_marginLeft="14dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/avatar" android:background="@color/white" android:padding="4dp" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        </FrameLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/live_gift_user" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#41364f" android:ellipsize="end" android:id="@+id/tv_username" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:id="@+id/tv_user_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:singleLine="true" android:layout_toRightOf="@+id/tv_username" style="@style/LevelLabel"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="#ff675e72" android:id="@+id/tv_contribute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true" android:layout_below="@+id/live_gift_user"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/iv_more" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29dp"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#f1f1f1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+</FrameLayout>

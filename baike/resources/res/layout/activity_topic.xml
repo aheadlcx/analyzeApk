@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/header_image" android:layout_width="match_parent" android:layout_height="180dp" android:scaleType="centerCrop" android:tint="#1a000000" app:placeholderImageScaleType="6" app:actualImageScaleType="6"/>
+    <qsbk.app.widget.StickyNavLayout android:orientation="vertical" android:id="@+id/sticky_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/id_stickynavlayout_topview" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <qsbk.app.widget.TopicHeader android:id="@+id/header" android:paddingTop="55dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/activity_topic_header"/>
+            </qsbk.app.widget.TopicHeader>
+        </FrameLayout>
+        <qsbk.app.widget.PagerSlidingTabStrip android:textSize="14sp" android:id="@+id/id_stickynavlayout_indicator" android:layout_width="match_parent" android:layout_height="48dp" app:pstsUnderlineColor="@color/divider_header" app:pstsDividerColor="@color/transparent" app:pstsUnderlineHeight="1dp" app:pstsTabPaddingLeftRight="10dp" app:pstsShouldExpand="true" style="?attr/psts"/>
+        <android.support.v4.view.ViewPager android:id="@+id/id_stickynavlayout_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </qsbk.app.widget.StickyNavLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/topic_bar" android:background="?attr/qiuyoucircle_topic_bar_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <TextView android:ellipsize="end" android:id="@+id/topic_bar_text" android:background="#00000000" android:paddingLeft="20dp" android:paddingTop="6dp" android:paddingRight="20dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:hint="我也说一下" android:maxLines="2" android:layout_centerInParent="true" style="?attr/edittext_comment"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/clocked_bar" android:background="?attr/qiuyoucircle_topic_bar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <View android:id="@+id/divider" android:background="?attr/dividerColor01" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_medium"/>
+        <TextView android:textSize="14dp" android:textColor="#ffbb00" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/clocked_bar_text" android:background="#00000000" android:paddingLeft="20dp" android:paddingTop="6dp" android:paddingRight="20dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打卡" android:maxLines="1" android:drawableLeft="@drawable/clocked_bottom" android:drawablePadding="5dp" style="?attr/edittext_comment"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/black_room_tip" android:background="?attr/qiuyoucircle_topic_bar_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:background="#00000000" android:paddingLeft="20dp" android:paddingTop="6dp" android:paddingRight="20dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:hint="查看糗事百科社区行为规范" android:maxLines="2" android:drawableLeft="@drawable/black_room_icon" android:drawablePadding="8dp" android:layout_centerInParent="true" style="?attr/edittext_comment"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/remix" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="61dp" android:src="@drawable/circle_topic_remix" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/bar_line" android:background="?attr/dividerColor01" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginBottom="60dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/custom_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/back" android:background="@drawable/topic_actionbar_btn" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="@dimen/abc_action_bar_default_height" android:singleLine="true" android:drawableLeft="@drawable/ic_arrow_left_padding" android:drawablePadding="2dp"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/more" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <qsbk.app.widget.LoadingLayout android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg"/>
+</RelativeLayout>

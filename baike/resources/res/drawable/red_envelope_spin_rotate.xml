@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="false">
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_00"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_01"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_02"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_03"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_04"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_05"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_06"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_07"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_08"/>
+    <item android:duration="@r$integer/vote_frame_duration" android:drawable="@drawable/spin_rotate_09"/>
+</animation-list>

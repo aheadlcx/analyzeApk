@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView android:id="@+id/barrage_list" android:background="@drawable/live_barrage_list_bg" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="101dp" android:layout_height="wrap_content"/>
+    <ImageView android:layout_width="8dp" android:layout_height="3dp" android:layout_marginLeft="18dp" android:src="@drawable/live_barrage_list_arrow"/>
+</LinearLayout>

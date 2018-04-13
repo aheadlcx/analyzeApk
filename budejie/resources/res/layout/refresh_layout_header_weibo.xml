@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+    <RelativeLayout android:id="@+id/pull_to_load_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:id="@+id/fl" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/pull_to_refresh_image" android:background="@drawable/msg_pull_to_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pull_to_refresh_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+        </FrameLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/fl" android:layout_centerVertical="true">
+            <TextView android:textSize="12sp" android:textColor="@android:color/darker_gray" android:id="@+id/pull_to_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下拉可以刷新" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@android:color/darker_gray" android:id="@+id/pull_to_refresh_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/pull_to_refresh_text" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.ZYRefreshHeader android:layout_width="match_parent" android:layout_height="53dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <cn.xiaochuankeji.tieba.ui.homepage.PostLoadedTipsView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <cn.xiaochuankeji.tieba.widget.ZYClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:srlTextSizeTitle="12sp"/>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

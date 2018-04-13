@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="40dp">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/live_barrage_content" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="26dp" android:layout_marginRight="16dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp">
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:id="@+id/live_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="85dp" android:text="单俊凯keven" android:singleLine="true" style="@style/TextShadow"/>
+            <qsbk.app.live.widget.FamilyLevelView android:layout_gravity="center_vertical" android:id="@+id/fl_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:ellipsize="none" android:gravity="center_vertical" android:id="@+id/live_content" android:background="@drawable/live_barrage_anim_content_bg" android:paddingLeft="21dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:minHeight="20dp" android:text="送了啪啪啪" android:singleLine="true"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="8dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/live_gift_avatar" android:layout_width="36dp" android:layout_height="36dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+        <View android:id="@+id/iv_filter_mask" android:background="@drawable/live_barrage_anim_avatar_mask" android:layout_width="36dp" android:layout_height="36dp"/>
+    </FrameLayout>
+</merge>

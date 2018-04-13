@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/moderator_header_view" layout="@layout/label_user_header_moderator_view"/>
+    <include android:id="@+id/deputy_moderator_header_view" layout="@layout/label_user_deputy_moderator_header_view"/>
+    <include android:id="@+id/label_moderator_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/label_user_header_user_view"/>
+</LinearLayout>

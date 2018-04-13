@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@r$color/red_laisee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/avatar" android:layout_width="74dp" android:layout_height="74dp" android:layout_marginTop="20dp"/>
+    </FrameLayout>
+    <TextView android:textSize="14sp" android:textColor="@r$color/yellow_laisee" android:gravity="center" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="莉莉"/>
+    <FrameLayout android:id="@+id/content_container" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp">
+        <TextView android:textSize="20sp" android:textColor="@r$color/yellow_laisee" android:gravity="center" android:layout_gravity="center" android:id="@+id/content" android:background="@drawable/shape_voice_gap_stroke" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" android:text="恭喜发财大吉大利" android:layout_centerInParent="true"/>
+        <View android:layout_gravity="left|center_vertical|center_horizontal|center" android:background="@drawable/ic_voice_command_left" android:layout_width="14dp" android:layout_height="14dp" android:layout_toLeftOf="@+id/content" android:layout_centerVertical="true"/>
+        <View android:layout_gravity="right|center_vertical|center_horizontal|center" android:background="@drawable/ic_voice_command_right" android:layout_width="14dp" android:layout_height="14dp" android:layout_toRightOf="@+id/content" android:layout_centerVertical="true"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/amount_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+        <TextView android:textSize="48dp" android:textColor="@r$color/yellow_laisee" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100"/>
+        <TextView android:textSize="24dp" android:textColor="@r$color/yellow_laisee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+    </LinearLayout>
+    <Button android:textSize="17sp" android:textColor="@r$color/red_laisee" android:id="@+id/send_too" android:background="@drawable/btn_yellow_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="18dp" android:layout_marginRight="30dp" android:text="发个更有趣的给朋友"/>
+    <View android:layout_width="match_parent" android:layout_height="32dp"/>
+    <TextView android:textSize="13sp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tip" android:background="#f4f4f8" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="24dp"/>
+</LinearLayout>

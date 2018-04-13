@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/xlistview_footer_content" android:paddingLeft="@dimen/margin_0" android:paddingTop="@dimen/post_margin" android:paddingRight="@dimen/margin_0" android:paddingBottom="@dimen/post_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@+id/footer_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="?attr/xlistview_text_color" android:gravity="center" android:id="@+id/xlistview_footer_hint_textview" android:padding="@dimen/post_margin" android:layout_width="wrap_content" android:layout_height="@dimen/navigation_height" android:text="@string/xlistview_footer_hint_normal" android:layout_centerInParent="true"/>
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/xlistview_footer_progressbar" android:paddingRight="5dp" android:visibility="visible" android:layout_width="@dimen/list_load_progress_width" android:layout_height="@dimen/list_load_progress_width" android:indeterminateDrawable="?attr/xlistview_progress_bar_icon" android:indeterminateDuration="1000" android:layout_toLeftOf="@+id/xlistview_footer_hint_textview" style="?android:attr/progressBarStyleSmall"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

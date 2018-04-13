@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/dialog_container" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="182dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/dialog_close" android:paddingLeft="18dp" android:layout_width="50dp" android:layout_height="wrap_content" android:src="@drawable/dialog_close" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/CT_2" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加链接" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/CM" android:id="@+id/tv_add" android:paddingRight="18dp" android:layout_width="50dp" android:layout_height="wrap_content" android:text="添加" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="70dp">
+        <EditText android:textSize="14dp" android:textColor="@color/CT_2" android:textColorHint="@color/CT_5" android:id="@+id/et_url" android:background="@drawable/edittext_input_url" android:paddingLeft="14dp" android:paddingRight="28dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="22dp" android:layout_marginRight="22dp" android:hint="请输入网页链接" android:singleLine="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ivClear" android:padding="6dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="22dp" android:src="@drawable/img_input_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/split_line" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="22dp" android:layout_marginRight="22dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="62dp">
+        <TextView android:textSize="11dp" android:textColor="@color/CT_5" android:ellipsize="end" android:id="@+id/tv_describe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:singleLine="true" android:drawableRight="@drawable/button_link_help" android:drawablePadding="3dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

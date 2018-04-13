@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="?attr/color_gray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="为了您的账户安全，请先验证一个您的社交账号"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:divider="@drawable/shape_divider" android:showDividers="middle">
+        <RelativeLayout android:id="@+id/qq" android:layout_width="65dp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="5dp" android:src="@drawable/qq_verify"/>
+            <ImageView android:id="@+id/qq_selected" android:background="@drawable/ic_verify_selected" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp" android:text="QQ" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/wx" android:layout_width="65dp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="5dp" android:src="@drawable/wechat_verify"/>
+            <ImageView android:id="@+id/wx_selcted" android:background="@drawable/ic_verify_selected" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp" android:text="微信" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/wb" android:layout_width="65dp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="5dp" android:src="@drawable/weibo_verify"/>
+            <ImageView android:id="@+id/wb_selected" android:background="@drawable/ic_verify_selected" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp" android:text="微博" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:enabled="true" android:textColor="?attr/bind_btn_text_color" android:id="@+id/done" android:background="?attr/bind_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="37dp" android:layout_marginRight="20dp" android:text="去验证"/>
+</LinearLayout>

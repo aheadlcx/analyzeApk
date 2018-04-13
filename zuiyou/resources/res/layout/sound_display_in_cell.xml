@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rlVoice">
+    <ImageView android:id="@+id/ivVoiceInputPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:src="@drawable/anim_danmaku_sound_gray" android:layout_centerVertical="true"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="#9e9d9d" android:id="@+id/tvVoiceTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        <ProgressBar android:id="@+id/downloading_progress_bar" android:visibility="invisible" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp" style="?android:attr/progressBarStyle"/>
+    </FrameLayout>
+</merge>

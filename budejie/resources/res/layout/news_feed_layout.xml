@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.curtain.FloatVideoRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/curtain_root_layout" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/navigation_height" fresco:minBottom="@dimen/margin_0" fresco:topShow="@r$bool/auto" fresco:bottomShow="@r$bool/auto">
+    <RelativeLayout android:id="@+id/activity_content_layout" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+        <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+        <include android:id="@+id/my_msg_setting" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" android:layout_alignParentRight="true" layout="@layout/my_msg_setting"/>
+        <include android:id="@+id/left_btn" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" android:layout_alignParentLeft="true" layout="@layout/my_left_btn"/>
+        <com.budejie.www.widget.XListView android:id="@+id/listview" android:background="@color/transparent" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@android:color/transparent" android:layout_below="@+id/title"/>
+        <include android:id="@+id/hintEmptyLayout" layout="@layout/include_friends_hint_textview"/>
+        <include android:id="@+id/unLoginLayout" layout="@layout/include_friends_unlogin_view"/>
+        <RelativeLayout android:id="@+id/subscription_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title"/>
+    </RelativeLayout>
+    <include layout="@layout/float_video_layout"/>
+</com.budejie.www.widget.curtain.FloatVideoRootLayout>

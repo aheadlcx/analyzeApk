@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/curtain_root_layout" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/navigation_height">
+    <RelativeLayout android:id="@+id/activity_content_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+        <RelativeLayout android:id="@+id/TopLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+                    <LinearLayout android:gravity="center" android:id="@+id/label_search" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/BackImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:src="@drawable/collect_left_btn"/>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="?attr/label_list_search_bg" android:layout_width="match_parent" android:layout_height="26dp" android:layout_margin="7dp" android:onClick="labelSearch$click">
+                            <ImageView android:background="@drawable/search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp"/>
+                            <TextView android:textSize="12sp" android:textColor="#8e8e93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@+id/SerchEditLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                            <EditText android:textSize="12sp" android:textColor="?attr/send_post_text_color" android:textColorHint="?attr/send_post_text_hint_color" android:gravity="center_vertical" android:id="@+id/search_keywords_text" android:background="?attr/label_list_search_bg" android:paddingLeft="7dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="26dp" android:layout_marginLeft="11dp" android:layout_marginTop="7dp" android:layout_marginRight="11dp" android:layout_marginBottom="7dp" android:hint="@string/enter_label_hint" android:singleLine="true" android:drawableLeft="@drawable/choose_contact_search_icon" android:drawablePadding="4dp" android:layout_weight="1" android:imeOptions="actionSearch"/>
+                            <ImageButton android:id="@+id/del_keywords_btn" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/choose_contact_clear_search_text_icon" android:layout_alignRight="@+id/search_keywords_text" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_alignEnd="@+id/search_keywords_text"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="14sp" android:textColor="?attr/title_text_selector" android:gravity="center" android:id="@+id/cancel_btn" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="7dp" android:layout_marginRight="11dp" android:layout_marginBottom="7dp" android:text="@string/cancel"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/TopLayout">
+            <RelativeLayout android:id="@+id/DataLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.budejie.www.widget.PullToRefreshView android:orientation="vertical" android:id="@+id/activitiesTopic_refresh_view" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.budejie.www.widget.GridViewWithHeaderAndFooter android:id="@+id/activitiesTopicGridView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:listSelector="@null" android:horizontalSpacing="2dp" android:verticalSpacing="2dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+                </com.budejie.www.widget.PullToRefreshView>
+            </RelativeLayout>
+            <include layout="@layout/search_result"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

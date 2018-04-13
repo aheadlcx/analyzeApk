@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/firstLayout" android:background="@drawable/goods_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/emptyImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shopping_logo"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/goods_image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <RelativeLayout android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="12sp" android:textColor="#eb1600" android:id="@+id/goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="10sp" android:textColor="#a7a7a7" android:id="@+id/goods_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="5dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:layout_width="3dp" android:layout_height="match_parent" android:layout_weight="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/secondLayout" android:background="@drawable/goods_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/emptyImg1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shopping_logo"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/goods_image1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <RelativeLayout android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="12sp" android:textColor="#eb1600" android:id="@+id/goods_price1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="10sp" android:textColor="#a7a7a7" android:id="@+id/goods_volume1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="5dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

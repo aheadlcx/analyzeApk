@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="90dp" android:minHeight="90dp" style="?attr/article_item_bg">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/pic" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="?attr/color_black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="一小时最热. 0点场" android:layout_toRightOf="@+id/pic"/>
+        <ImageView android:id="@+id/title_hot" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="5dp" android:src="@drawable/ic_rss_hot_night" android:layout_toRightOf="@+id/title" android:layout_alignTop="@+id/title" android:layout_alignBottom="@+id/title"/>
+        <TextView android:textSize="15sp" android:textColor="?attr/color_gray" android:ellipsize="end" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="50dp" android:maxLines="1" android:layout_toRightOf="@+id/pic" android:layout_below="@+id/title"/>
+        <ImageView android:background="@drawable/ic_right_arrow" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="18dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

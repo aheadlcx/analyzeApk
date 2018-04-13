@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/ttg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/ttg_ly_bc_bottom" android:background="#8b00ff" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="left" android:id="@+id/ttg_tv_prices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="￥24.9" android:lines="1" android:layout_toLeftOf="@+id/ttg_ly_title" android:layout_alignParentLeft="true"/>
+        <TextView android:textColor="@android:color/white" android:id="@+id/ttg_tv_prices_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="用券后" android:layout_below="@+id/ttg_tv_prices" android:layout_alignLeft="@+id/ttg_tv_prices"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ttg_ly_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textColor="@android:color/white" android:id="@+id/ttg_tv_receive_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即领取"/>
+            <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/ttg_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拍下后支付立减价格"/>
+        </LinearLayout>
+        <TextView android:textSize="30dp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/ttg_icon_coupon_hide" android:layout_toRightOf="@+id/ttg_ly_title" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

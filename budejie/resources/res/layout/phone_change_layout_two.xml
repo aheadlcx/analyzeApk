@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/layout_click" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/county_num" android:background="@drawable/input_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+            <com.budejie.www.widget.erroredittext.SetErrorAbleEditText android:textSize="@dimen/font_16" android:textColor="@color/myinfo_attention" android:id="@+id/input_phone_number" android:background="@drawable/input_bg" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone_input_hint" android:singleLine="true" android:layout_toRightOf="@+id/county_num" android:layout_centerVertical="true" android:inputType="phone"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="100dp" android:layout_alignParentBottom="true">
+        <ImageView android:background="@drawable/new_next_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/to_next_btn" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/to_next_btn" android:background="@drawable/default_next_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <ImageView android:background="@drawable/new_next_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/to_next_btn" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

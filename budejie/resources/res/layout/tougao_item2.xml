@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/mytougao_item_layout" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="?attr/item_content_layout_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_10" android:layout_marginTop="@dimen/margin_4" android:layout_marginRight="@dimen/margin_10" android:layout_marginBottom="@dimen/margin_4">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/topLayout" android:background="@drawable/title_bg" android:paddingLeft="@dimen/margin_8" android:paddingRight="@dimen/margin_8" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentTop="true">
+            <TextView android:textSize="14sp" android:textColor="#fff" android:gravity="center_vertical" android:id="@+id/tougao_state" android:background="@drawable/shenhe_status" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_gray" android:gravity="center_vertical" android:id="@+id/tougaoing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="23dp" android:text="发送中" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_gray" android:gravity="center_vertical" android:id="@+id/tougaoingPoint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="23dp" android:text="......" android:layout_toRightOf="@+id/tougaoing" android:layout_centerInParent="true"/>
+            <Button android:id="@+id/resetSend" android:background="@drawable/bg_reset_sendbtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/tougaoingPoint" android:layout_centerInParent="true"/>
+            <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp" android:layout_toRightOf="@+id/tougao_state" android:layout_alignParentRight="true">
+                <TextView android:textSize="12sp" android:textColor="#a7a7a7" android:id="@+id/tougao_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+                <ImageButton android:id="@+id/mytouago_delete_imageview" android:background="@null" android:layout_width="@dimen/close_icon_w_h" android:layout_height="@dimen/close_icon_w_h" android:src="?attr/close_btn"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/tougao_item_content_layout" android:background="@drawable/content_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/topLayout">
+            <LinearLayout android:orientation="vertical" android:id="@+id/contentLayout" android:focusable="true" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="#555555" android:gravity="center_vertical" android:id="@+id/tougao_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_8" android:layout_marginTop="9dp" android:layout_marginRight="@dimen/margin_8" android:singleLine="false" android:lineSpacingExtra="5dp"/>
+                <include layout="@layout/include_list_item_repost"/>
+                <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/video_container_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/img_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center" android:id="@+id/tougao_pic" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <View android:id="@+id/voiceViewFill" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="8dp"/>
+                        <com.tencent.smtt.sdk.WebView android:layout_gravity="center" android:id="@+id/wv_gif" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:id="@+id/blank_img_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:gravity="center" android:layout_gravity="top" android:id="@+id/error_img_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="?attr/load_error_state"/>
+                    </LinearLayout>
+                    <Button android:layout_gravity="center" android:id="@+id/play" android:background="@drawable/play_btn_bg" android:visibility="gone" android:layout_width="62dp" android:layout_height="60dp"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/video_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_bt_selector"/>
+                    <TextView android:textColor="@color/white" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/playTimeLength" android:background="@color/translucence2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.budejie.www.activity.view.MediaPlayView android:layout_gravity="bottom" android:id="@+id/mMPview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp"/>
+                    <FrameLayout android:layout_gravity="bottom" android:id="@+id/checkFullPic_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/checkFullPic_back" android:layout_width="match_parent" android:layout_height="match_parent" android:src="?attr/check_full_pic_back_dark_bg"/>
+                        <TextView android:textSize="17sp" android:textColor="@drawable/checkbig_textcolor" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_full_pic" android:drawableLeft="?attr/check_full_pic_btn_bg" android:drawablePadding="10dp"/>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/progress_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/baisibudejie" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp" android:src="@drawable/baisibudejie"/>
+                        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progressBar" android:background="?attr/progressbar_bg_state" android:layout_width="220dp" android:layout_height="15dp" android:layout_marginTop="10dp" android:progressDrawable="@drawable/progress_style" style="?android:attr/progressBarStyleHorizontal"/>
+                    </LinearLayout>
+                    <View android:id="@+id/tougao_imageready" android:background="#e0000000" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/label_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_below="@+id/contentLayout">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/label_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.budejie.www.activity.labelsubscription.HorizontalListView android:layout_gravity="center_vertical" android:id="@+id/horizontial_listview" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <View android:id="@+id/item_h_divider" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_marginTop="7dp" android:layout_below="@+id/label_layout"/>
+            <RelativeLayout android:id="@+id/btnLayout" android:paddingBottom="7dp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_8" android:layout_marginRight="@dimen/margin_8" android:layout_below="@+id/item_h_divider">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dingLayout" android:paddingLeft="9dp" android:paddingRight="9dp" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/mytougao_ding_img" android:background="@drawable/ding_item" android:layout_width="@dimen/list_item_bottom_icon_w_h" android:layout_height="@dimen/list_item_bottom_icon_w_h"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/text_gray" android:gravity="center" android:id="@+id/tougao_ding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_bottom_tv_leftmargin"/>
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:background="@drawable/divider_vertical" android:layout_width="@dimen/divider_vertical_width" android:layout_height="wrap_content"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/caiLayout" android:paddingLeft="9dp" android:paddingRight="9dp" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/mytougao_cai_img" android:background="@drawable/cai_item" android:layout_width="@dimen/list_item_bottom_icon_w_h" android:layout_height="@dimen/list_item_bottom_icon_w_h"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/text_gray" android:gravity="center" android:id="@+id/tougao_cai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_bottom_tv_leftmargin"/>
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:id="@+id/tougao_divider" android:background="@drawable/divider_vertical" android:layout_width="@dimen/divider_vertical_width" android:layout_height="wrap_content"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tougao_forwardlayout" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/forward_img" android:background="@drawable/list_item_forward_state" android:layout_width="@dimen/list_item_bottom_icon_w_h" android:layout_height="@dimen/list_item_bottom_icon_w_h"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/text_gray" android:gravity="center" android:id="@+id/tougao_forwardCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_bottom_tv_leftmargin"/>
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:id="@+id/comment_divider" android:background="@drawable/divider_vertical" android:layout_width="@dimen/divider_vertical_width" android:layout_height="wrap_content"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tougao_cmdLayout" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/comment_img" android:background="@drawable/list_item_commend_state" android:layout_width="@dimen/list_item_bottom_icon_w_h" android:layout_height="@dimen/list_item_bottom_icon_w_h"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/text_gray" android:gravity="center" android:id="@+id/tougao_commentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_bottom_tv_leftmargin"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="?attr/qiushi_empty_bg_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="90dp">
+        <View android:id="@+id/first_view" android:background="?attr/qiushi_empty_bg" android:layout_width="240dp" android:layout_height="6dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp"/>
+        <View android:id="@+id/second_view" android:background="?attr/qiushi_empty_bg" android:layout_width="150dp" android:layout_height="6dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_below="@+id/first_view"/>
+        <RelativeLayout android:id="@+id/ttp_info" android:layout_width="240dp" android:layout_height="6dp" android:layout_marginLeft="15dp" android:layout_marginTop="25dp" android:layout_below="@+id/second_view">
+            <View android:id="@+id/time" android:background="?attr/qiushi_empty_bg" android:layout_width="40dp" android:layout_height="match_parent"/>
+            <View android:id="@+id/source" android:background="?attr/qiushi_empty_bg" android:layout_width="25dp" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/time"/>
+            <View android:id="@+id/part" android:background="?attr/qiushi_empty_bg" android:layout_width="30dp" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="?attr/qiushi_empty_bg" android:layout_width="70dp" android:layout_height="match_parent" android:layout_marginRight="15dp" android:layout_alignTop="@+id/first_view" android:layout_alignBottom="@+id/ttp_info" android:layout_alignParentRight="true"/>
+        <View android:background="?attr/qiushi_empty_bg" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

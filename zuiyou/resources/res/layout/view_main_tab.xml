@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="3dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tab" android:focusable="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="12dp">
+        <cn.xiaochuankeji.tieba.ui.homepage.AnimationTabImageView android:id="@+id/iconTabItem" android:layout_width="31dp" android:layout_height="31dp" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="11dp" android:textColor="@color/home_tab_text_selector" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/textTabItem" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp"/>
+    <cn.xiaochuankeji.tieba.ui.widget.text.BadgeTextView android:textSize="@dimen/F6_text" android:textColor="@color/CW" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/crumb" android:background="@color/CH_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="2dp"/>
+</FrameLayout>

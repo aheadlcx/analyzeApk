@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/group_info_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/categories" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textColor="?attr/color_gray" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门分类"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textColor="?attr/color_yellow" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/more" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="更多"/>
+        <ImageView android:id="@+id/more_arrow" android:layout_width="14dp" android:layout_height="match_parent" android:src="@drawable/url_content_forward_active"/>
+    </LinearLayout>
+    <qsbk.app.widget.FlowLayout android:id="@+id/flow" android:background="?attr/group_info_item_bg" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="24dp" app:flChildSpacing="12dp" app:flMaxRows="1"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp">
+        <ImageView android:layout_width="271dp" android:layout_height="75dp" android:src="@drawable/live_game_help_dialog_bg_title" android:scaleType="fitXY"/>
+        <ImageView android:layout_width="271dp" android:layout_height="240dp" android:layout_marginTop="75dp" android:src="@drawable/live_game_dialog_bg" android:scaleType="fitXY"/>
+        <ScrollView android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="208dp" android:layout_height="210dp" android:layout_marginTop="75dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="56dp" android:layout_height="13dp" android:layout_marginTop="5dp" android:src="@drawable/live_game_help_spec" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/transparent_70_percent_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="热猫星球上的猫忍者『热热』、猫女侠『猫猫』、兔女郎『宝宝』经常在一起玩斗牛；大家可以“点赞”围观支持，胜者会和支持她的人一起分享胜利果实。"/>
+                <ImageView android:layout_width="56dp" android:layout_height="13dp" android:layout_marginTop="12dp" android:src="@drawable/live_game_help_rule" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/transparent_70_percent_white" android:id="@+id/game_help_rule" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="1. 游戏过程中，你可以为喜欢的她“点赞”，1钻=10赞；揭晓结果后，胜者会开心地给她的支持者%s倍回报。
+
+2. 牌型大小为：牛牛（牛十）>牛九>牛八>…>牛一>没牛；牛相同比单牌大小，K>Q>...>2>1；单牌大小还相同，则比较花色，黑桃>红桃>梅花>方片。
+
+3. 如何算牛：5张牌中有3张加和为10的倍数即有牛，剩余2张之和的个位数是几即为牛几，其中个位数为0为牛牛；若任意3张之和非10的倍数即没牛（算牛时J、Q、K按10点计算）。"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="150dp" android:layout_marginTop="100dp" android:src="@drawable/live_game_dialog_close" android:scaleType="centerInside"/>
+</FrameLayout>

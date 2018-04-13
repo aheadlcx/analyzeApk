@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/group_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+            <RelativeLayout android:paddingTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sign_img" android:layout_width="120dp" android:layout_height="97dp" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="14sp" android:textColor="#464646" android:gravity="center" android:id="@+id/sign_content" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxWidth="250dp" android:text="天门一挂榜,预定夺标人,
+马嘶芳草地,秋高听鹿鸣。" android:layout_below="@+id/sign_img" android:layout_centerHorizontal="true"/>
+                <View android:id="@+id/sign_divider" android:background="#646464" android:layout_width="18dp" android:layout_height="1dp" android:layout_marginTop="14dp" android:layout_below="@+id/sign_content" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="12sp" android:textColor="#464646" android:gravity="center" android:id="@+id/sign_desc" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxWidth="250dp" android:text="解签:大吉、事业、财运、健康、婚姻均顺遂。" android:layout_below="@+id/sign_divider" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="#464646" android:gravity="center" android:id="@+id/msg" android:paddingLeft="16dp" android:paddingTop="17dp" android:paddingRight="16dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="坚持签到好运来,获得 68 积分
+已连续签到 7 天" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/close" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/live_login_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</FrameLayout>

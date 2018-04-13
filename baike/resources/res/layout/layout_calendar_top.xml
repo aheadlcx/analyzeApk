@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="40dp">
+    <RelativeLayout android:id="@+id/left_container" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/left_img" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+        <TextView android:textSize="8sp" android:textColor="?attr/color_yellow" android:gravity="center" android:id="@+id/left_count" android:background="@drawable/ic_dot_white" android:padding="0dp" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginTop="7dp" android:layout_marginRight="4dp" android:text="1" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/btn_right" android:layout_toRightOf="@+id/left_container">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30dp"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/btn_right" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_calendar_today" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <cn.xiaochuankeji.tieba.ui.widget.NavigationBar android:id="@+id/navBar" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height" app:navTitleText="创建收藏夹" app:navOptionText="创建" app:navNeedBack="true"/>
+    <EditText android:textSize="@dimen/F9_text" android:textColor="@color/CT_2" android:textColorHint="@color/CT_6" android:id="@+id/etInput" android:background="@null" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="默认文字hint" android:layout_below="@+id/navBar" style="@style/CommonEdit"/>
+</RelativeLayout>

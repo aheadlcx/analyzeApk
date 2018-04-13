@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+        <RelativeLayout android:background="?attr/phone_edittext_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/obtain_verify_num">
+                <TextView android:textSize="@dimen/font_20" android:textColor="?attr/item_content_text_color" android:id="@+id/county_num" android:background="@drawable/phone_register_div" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+86"/>
+                <com.budejie.www.widget.erroredittext.SetErrorAbleEditText android:textSize="@dimen/font_16" android:textColor="@color/more_text_color" android:id="@+id/input_phone_number" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone_input_hint" android:singleLine="true" android:inputType="phone"/>
+            </LinearLayout>
+            <TextView android:textSize="13sp" android:textColor="#9f9f9f" android:id="@+id/obtain_verify_num" android:background="?attr/phone_verify_btn_bg" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/phone_obain_verify_num" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="13sp" android:textColor="?attr/sms_verify_prompt_text_color" android:id="@+id/textView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/phone_register_prompt"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="?attr/phone_edittext_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/font_20" android:textColor="?attr/item_content_text_color" android:gravity="center" android:id="@+id/verify_num_str" android:background="@drawable/phone_register_div_not_lin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verify_number"/>
+            <com.budejie.www.widget.erroredittext.SetErrorAbleEditText android:textSize="@dimen/font_16" android:textColor="@color/myinfo_attention" android:id="@+id/input_verify_num" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone_edit_hint_txt" android:singleLine="true"/>
+        </LinearLayout>
+        <Button android:textSize="@dimen/font_18" android:textColor="?attr/follow_friend_un_loginbtn_text_color" android:id="@+id/to_next_btn" android:background="?attr/follow_friend_un_loginbtn_bg" android:padding="@dimen/margin_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/phone_register_next"/>
+    </LinearLayout>
+</RelativeLayout>

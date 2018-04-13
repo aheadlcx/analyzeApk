@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/RootStyle">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tool_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llTapTopic" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CM" android:gravity="center" android:id="@+id/tv_topic" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="话题"/>
+            <View android:layout_gravity="center_horizontal" android:id="@+id/vTopicBottomLine" android:background="@drawable/bg_tab_index" android:layout_width="9dp" android:layout_height="3dp" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llTapPost" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/tv_post" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="帖子"/>
+            <View android:layout_gravity="center_horizontal" android:id="@+id/vPostBottomLine" android:background="@drawable/bg_tab_index" android:visibility="invisible" android:layout_width="9dp" android:layout_height="3dp" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llTapMember" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/tv_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="用户"/>
+            <View android:layout_gravity="center_horizontal" android:id="@+id/vMemberBottomLine" android:background="@drawable/bg_tab_index" android:visibility="invisible" android:layout_width="9dp" android:layout_height="3dp" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

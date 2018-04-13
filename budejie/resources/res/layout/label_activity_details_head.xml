@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/labelDetailsInfo" android:background="?attr/label_pinner_tabs_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="176dp">
+        <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center_horizontal" android:id="@+id/labelDetailsImg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/label_default_gaussian_blur_image" android:scaleType="centerCrop"/>
+        <View android:background="@color/label_activity_top_layout_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/normalLable_bottom_ll" android:padding="@dimen/margin_11" android:layout_width="match_parent" android:layout_height="108dp" android:layout_alignParentBottom="true">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/label_image_view" android:layout_width="86dp" android:layout_height="86dp" android:src="@drawable/lable_default_bg" android:scaleType="centerCrop" android:layout_alignParentBottom="true"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_toRightOf="@+id/label_image_view" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_16" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/label_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/label_name_text_view">
+                    <TextView android:textSize="@dimen/font_12" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/label_person_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                    <View android:layout_gravity="center_vertical" android:id="@+id/label_divide_line" android:background="@color/white" android:visibility="gone" android:layout_width="1dp" android:layout_height="9dp" android:layout_marginLeft="5dp"/>
+                    <TextView android:textSize="@dimen/font_12" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/label_post_num_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:maxLines="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/lebel_add_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_8" android:layout_marginBottom="@dimen/margin_8" android:src="?attr/label_details_add_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/standard_layout" android:background="?attr/list_view_item_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/label_top_post_layout_height">
+        <TextView android:id="@+id/standard_prompt_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/label_standard_text" android:layout_centerVertical="true" style="@style/LabelTopPostMarkViewStyle"/>
+        <TextView android:textSize="15sp" android:textColor="?attr/label_list_item_name" android:id="@+id/post_standard_textView" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:maxLines="1" android:layout_toRightOf="@+id/standard_prompt_view" android:layout_centerVertical="true"/>
+        <View android:id="@+id/standard_line_view" android:background="?attr/divider_horizontal_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/label_activity_detail_head_top_posts"/>
+    </LinearLayout>
+    <RelativeLayout android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="10dp">
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+    </RelativeLayout>
+</LinearLayout>

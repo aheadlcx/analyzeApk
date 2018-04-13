@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/ding_Profile_imageview" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/author_item_img_normal" android:scaleType="centerCrop"/>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="11dp" android:layout_toRightOf="@+id/ding_Profile_imageview" android:layout_centerVertical="true">
+        <TextView android:textSize="13sp" android:textColor="#545454" android:ellipsize="end" android:id="@+id/news_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="12sp" android:textColor="#bbbbbb" android:id="@+id/news_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/list_divider" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

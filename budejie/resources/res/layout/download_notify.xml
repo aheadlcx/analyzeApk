@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="#1a1a1a" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/noitfy_icon" android:background="@drawable/down_loading" android:layout_width="40dp" android:layout_height="40dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/notify_linearLayout2" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp">
+        <TextView android:textSize="16sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@+id/notify_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:singleLine="true"/>
+        <TextView android:id="@+id/notify_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        <ProgressBar android:id="@+id/notify_processbar" android:layout_width="match_parent" android:layout_height="1.5dp" android:progressDrawable="@drawable/download_progressbar" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+</LinearLayout>

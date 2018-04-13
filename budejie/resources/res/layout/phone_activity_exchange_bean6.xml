@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rootView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/titlebar_default" layout="@layout/title_bar_defult"/>
+        <TextView android:textSize="@dimen/exchangeactivity_textsize_big" android:textColor="@color/exchangeactivity_username_textcolor" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/userName" android:background="@color/exchangeactivity_bg" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="43dp"/>
+        <ImageView style="@style/onePxLine"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_coin6" android:background="@color/white" android:layout_width="match_parent" android:layout_height="49dp">
+            <TextView android:textSize="@dimen/exchangeactivity_textsize_big" android:textColor="@color/black" android:gravity="center_vertical" android:text="@string/six_money" android:drawableLeft="@drawable/rooms_third_personal_sixcoin" style="@style/personal_left"/>
+            <TextView android:id="@+id/current_coin6" style="@style/personal_right"/>
+            <TextView android:textSize="@dimen/exchangeactivity_textsize_big" android:textColor="@color/red" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/coin6Num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28dp"/>
+        </LinearLayout>
+        <ImageView android:layout_marginLeft="20dp" android:layout_marginRight="20dp" style="@style/onePxLine"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bean6" android:background="@color/white" android:layout_width="match_parent" android:layout_height="49dp">
+            <TextView android:textSize="@dimen/exchangeactivity_textsize_big" android:textColor="@color/black" android:gravity="center_vertical" android:text="@string/six_bean" android:drawableLeft="@drawable/rooms_third_personal_sixbean" style="@style/personal_left"/>
+            <TextView android:id="@+id/current_bean6" style="@style/personal_right"/>
+            <TextView android:textSize="@dimen/exchangeactivity_textsize_big" android:textColor="@color/red" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/bean6Num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28dp"/>
+        </LinearLayout>
+        <ImageView style="@style/onePxLine"/>
+        <View android:background="@color/exchangeactivity_bg" android:layout_width="match_parent" android:layout_height="31dp"/>
+        <ImageView style="@style/onePxLine"/>
+        <ListView android:id="@+id/listView" android:background="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@drawable/rooms_third_onepx_line" android:dividerHeight="1dp" android:layout_weight="1"/>
+        <ImageView style="@style/onePxLine"/>
+        <TextView android:textSize="@dimen/explanation_textarea_textsize" android:textColor="@color/exchangeactivity_textcolor_explanation" android:gravity="center" android:id="@+id/rate" android:background="@color/exchangeactivity_bg" android:layout_width="match_parent" android:layout_height="38dp"/>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/phone_custom_progressbar"/>
+</RelativeLayout>

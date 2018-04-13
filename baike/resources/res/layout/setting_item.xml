@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="49dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大标题" style="?attr/setting_item"/>
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:id="@+id/tip" android:background="?attr/found_item_tips" android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/title_container" android:layout_centerVertical="true"/>
+    <TextView android:id="@+id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="小标题" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?attr/setting_sub_item"/>
+    <CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/divide_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true" style="?attr/setting_sub_divide_line"/>
+</RelativeLayout>

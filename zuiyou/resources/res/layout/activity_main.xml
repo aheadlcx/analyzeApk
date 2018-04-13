@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaochuankeji.tieba.widget.fits.FitsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TabHost android:id="@android:id/tabhost" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/bottom_navbar_height"/>
+        <TabWidget android:layout_gravity="bottom" android:orientation="horizontal" android:id="@android:id/tabs" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="@dimen/bottom_navbar_height" android:divider="@null"/>
+    </TabHost>
+</cn.xiaochuankeji.tieba.widget.fits.FitsFrameLayout>

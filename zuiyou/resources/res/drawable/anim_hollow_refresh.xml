@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="false">
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_1"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_2"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_3"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_4"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_5"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_6"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_7"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_8"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_9"/>
+    <item android:duration="70" android:drawable="@drawable/img_hollow_anim_10"/>
+</animation-list>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/itemRootView" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/wivCover" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:viewAspectRatio="0.63" app:placeholderImage="@drawable/story_cover_empty_view" app:roundedCornerRadius="5dp"/>
+            <View android:layout_gravity="bottom" android:background="@drawable/bg_ugcvideo_mask_in_recommend" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40dp"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/llVideoInfo" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="7dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_ugc_video_playcount_in_recommend"/>
+                <TextView android:textSize="11dp" android:textStyle="italic" android:textColor="@color/white" android:id="@+id/tvPlayCount" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_ugc_videoitem_like_flag_in_recommend"/>
+                <TextView android:textSize="11dp" android:textStyle="italic" android:textColor="@color/white" android:id="@+id/tvLikeCount" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="6dp"/>
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/wivMemberCover" android:layout_width="17dp" android:layout_height="17dp" android:layout_marginRight="7dp" android:layout_marginBottom="5dp" style="@style/CircleImage"/>
+            <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/ivFollowFlag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:src="@drawable/img_follow_flag_in_recommend"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_follow_video" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginTop="7dp">
+            <RelativeLayout android:layout_width="36dp" android:layout_height="36dp">
+                <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_follow1" android:layout_width="36dp" android:layout_height="36dp" app:viewAspectRatio="1" app:placeholderImage="@color/image_placeholder" app:roundedCornerRadius="5dp"/>
+                <ImageView android:id="@+id/main_video_icon" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/img_main_flag"/>
+            </RelativeLayout>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_follow2" android:layout_width="36dp" android:layout_height="36dp" app:viewAspectRatio="1" app:placeholderImage="@drawable/story_img_lai" app:roundedCornerRadius="5dp"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_follow3" android:layout_width="36dp" android:layout_height="36dp" app:viewAspectRatio="1" app:placeholderImage="@drawable/story_img_gen" app:roundedCornerRadius="5dp"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <RelativeLayout android:layout_width="36dp" android:layout_height="36dp">
+                <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_follow4" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerVertical="true" app:viewAspectRatio="1" app:placeholderImage="@drawable/story_img_pai" app:roundedCornerRadius="5dp"/>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/ivBlueOrRed" android:visibility="invisible" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerVertical="true" app:viewAspectRatio="1" app:roundedCornerRadius="5dp"/>
+                <TextView android:textSize="13dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_mask_count" android:visibility="invisible" android:layout_width="36dp" android:layout_height="36dp" android:text="67" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

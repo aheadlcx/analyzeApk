@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/label_top_post_mark_night_background"/>
+    <corners android:radius="1dp"/>
+    <stroke android:width="0.3dp" android:color="@color/label_top_post_mark_text_stroke_color"/>
+</shape>

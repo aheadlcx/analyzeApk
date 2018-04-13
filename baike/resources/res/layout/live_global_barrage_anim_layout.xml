@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="40dp">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/live_barrage_content" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="38dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/live_global_red_envelopes_bg" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:ellipsize="none" android:gravity="center_vertical" android:id="@+id/live_content" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="20dp" android:text="@string/live_global_red_envelopes_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/live_text_12sp" android:textStyle="italic" android:textColor="#fff57a" android:ellipsize="none" android:gravity="center_vertical" android:id="@+id/btn_enter_live" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_global_red_envelopes_click" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="40dp" android:src="@drawable/live_global_red_envelopes_footer"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_global_red_envelopes_header"/>
+</merge>

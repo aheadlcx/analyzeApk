@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="254dp" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="93dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/tips_permission" android:scaleType="fitXY"/>
+        <View android:id="@+id/dialog_close" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="25dp" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/bg_permission_dialog" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/F8_text" android:textColor="@color/CT_2" android:gravity="center" android:id="@+id/dialog_message" android:layout_width="150dp" android:layout_height="wrap_content" android:text="最右需要以下权限才可以正常使用" android:layout_centerHorizontal="true"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/dialog_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_below="@+id/dialog_message"/>
+        <Button android:textSize="@dimen/F3_text" android:textColor="@color/CW" android:gravity="center" android:id="@+id/btn_ok" android:background="@drawable/login_blue_selector" android:layout_width="match_parent" android:layout_height="39dp" android:layout_marginLeft="20dp" android:layout_marginTop="17dp" android:layout_marginRight="20dp" android:text="去开启" android:layout_below="@+id/dialog_items" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="?attr/list_item_color_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/sfLayout" android:background="?attr/common_press" android:padding="10dp" android:layout_width="match_parent" android:layout_height="58dp" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@+id/sfPictureParent" android:layout_width="33dp" android:layout_height="33dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/sfPictureIV" android:layout_width="33dp" android:layout_height="33dp" android:scaleType="fitXY"/>
+            <View android:id="@+id/writerProfile_ready" android:background="?attr/imageready_bg" android:visibility="visible" android:layout_width="33dp" android:layout_height="33dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/sfContentLayout" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_toLeftOf="@+id/bt_layout" android:layout_toRightOf="@+id/sfPictureParent">
+            <TextView android:textSize="13sp" android:textColor="#545454" android:ellipsize="end" android:id="@+id/sfNickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:singleLine="true"/>
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/iv_members_mark" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/sfNickname" android:layout_alignTop="@+id/sfNickname" android:layout_alignBottom="@+id/sfNickname"/>
+            <ImageView android:id="@+id/sfSocialIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_5" android:layout_marginRight="3dp" android:layout_below="@+id/sfNickname"/>
+            <TextView android:textSize="11sp" android:textColor="#929292" android:id="@+id/sfInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:singleLine="true" android:layout_toRightOf="@+id/sfSocialIcon" android:layout_below="@+id/sfNickname"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/bt_layout" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:gravity="center" android:id="@+id/cancel_btn" android:background="?attr/follows_shape_item_unadd_bg" android:visibility="gone" android:layout_width="50dp" android:layout_height="24dp" android:singleLine="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="10sp" android:textColor="?attr/theme_red_color" android:gravity="center" android:id="@+id/add_btn" android:background="?attr/follows_shape_item_bg" android:layout_width="50dp" android:layout_height="24dp" android:singleLine="true" android:layout_centerVertical="true"/>
+            <CheckBox android:gravity="center" android:id="@+id/addCheckBox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr/recommend_checkbox_bg" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/text_gray" android:gravity="left" android:layout_gravity="center" android:id="@+id/titleTV" android:background="?attr/recommend_friend_titlebar_bg" android:padding="@dimen/margin_4" android:paddingBottom="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:layout_marginBottom="@dimen/margin_8" android:text="返回"/>
+    </LinearLayout>
+</RelativeLayout>

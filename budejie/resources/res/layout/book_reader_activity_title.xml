@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/book_reader_container_layout" android:background="@color/book_reader_container_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/book_reader_title_layout" android:background="@color/book_reader_bdj_main_color" android:layout_width="match_parent" android:layout_height="@dimen/book_reader_top_bar_height">
+        <LinearLayout android:gravity="center" android:id="@+id/book_reader_left_layout" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@+id/book_reader_back_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:src="@drawable/book_reader_title_bdj_back_selector" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/book_reader_center_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/book_reader_white" android:ellipsize="end" android:id="@+id/book_reader_title_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150dp" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/book_reader_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/book_reader_title_line_view" android:background="@color/book_reader_divide_line_color" android:layout_width="match_parent" android:layout_height="@dimen/book_reader_divide_line_height" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

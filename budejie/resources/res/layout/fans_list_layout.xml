@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/new_main_layout" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.budejie.www.widget.XListView android:id="@+id/listview" android:background="@color/transparent" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginTop="10dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="?attr/divider_horizontal_bg" android:dividerHeight="@dimen/divide_line_height"/>
+    <RelativeLayout android:id="@+id/empty_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/empty_icon" style="@style/no_data_text_style"/>
+    </RelativeLayout>
+    <include android:id="@+id/hintEmptyLayout" android:visibility="gone" layout="@layout/include_follows_hint_textview"/>
+</RelativeLayout>

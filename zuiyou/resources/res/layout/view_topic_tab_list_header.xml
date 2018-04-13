@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relaRecommendHeader" android:background="@color/main_gray" android:paddingLeft="@dimen/divide_space_15" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_40">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐话题" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/main_blue" android:gravity="center" android:id="@+id/tvMoreRecommendTopic" android:paddingLeft="@dimen/divide_space_15" android:paddingRight="@dimen/divide_space_15" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="更多>>" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.htjyb.ui.widget.headfooterlistview.QueryListViewInScrollView android:id="@+id/lvRecommendTopic" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:layout_gravity="bottom" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/CT_2" android:gravity="center_vertical" android:id="@+id/tvAttentionHeader" android:background="@color/main_gray" android:paddingLeft="@dimen/divide_space_15" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_40" android:text="我关注的话题" android:layout_centerVertical="true"/>
+</LinearLayout>

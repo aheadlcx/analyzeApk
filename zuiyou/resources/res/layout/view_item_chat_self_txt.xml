@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/CircleImage"/>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="82dp" android:layout_toLeftOf="@+id/avatar" android:layout_alignParentTop="true">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/resend" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="10dp" android:src="@drawable/tips_error_message"/>
+        <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@+id/container" android:background="@drawable/chat_self_item_bg" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progres" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar"/>
+            <cn.xiaochuankeji.tieba.widget.rich.LineSpaceExtraContainer android:layout_width="match_parent" android:layout_height="wrap_content">
+                <cn.xiaochuankeji.tieba.widget.rich.LineSpaceExtraCompatTextView android:textSize="@dimen/F9_text" android:textColor="@color/CW" android:textColorHighlight="@color/CT_6" android:gravity="center_vertical" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.5" android:textIsSelectable="false"/>
+            </cn.xiaochuankeji.tieba.widget.rich.LineSpaceExtraContainer>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

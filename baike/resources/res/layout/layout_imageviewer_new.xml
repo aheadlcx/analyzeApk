@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.TransitionDraweeView android:id="@+id/transition_img" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <qsbk.app.widget.imageview.ExtendedViewPager android:id="@+id/view_pager" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/ext_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@drawable/imageviewer_footermask" android:layout_width="match_parent" android:layout_height="140dp" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:id="@+id/btn_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/close" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="75dp" android:layout_height="75dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_item_default_margin" android:layout_marginTop="@dimen/profile_item_default_margin" android:src="@drawable/add_qiuyou_ic_clear"/>
+            </RelativeLayout>
+            <qsbk.app.widget.ImageControlView android:id="@+id/image_control" android:layout_width="match_parent" android:layout_height="63dp" android:layout_marginBottom="0dp" android:layout_alignParentBottom="true"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="55dp" android:layout_above="@+id/image_control" android:layout_alignParentBottom="true">
+                <qsbk.app.widget.FunnyTextView android:id="@+id/funny_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentLeft="true"/>
+                <TextView android:id="@+id/comment_and_share_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/funny_count" android:layout_alignTop="@+id/funny_count" android:layout_alignBottom="@+id/funny_count"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerInParent="true" style="@style/IndeterminateProgress_Small_Day"/>
+</RelativeLayout>

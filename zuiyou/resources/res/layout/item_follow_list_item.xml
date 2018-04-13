@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/CB" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="9dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_author" android:layout_width="30dp" android:layout_height="30dp" style="@style/CircleImage"/>
+        <TextView android:textSize="@dimen/follow_post_small" android:textColor="@color/CT_5" android:gravity="center" android:id="@+id/tv_author_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/iv_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:viewAspectRatio="1.77"/>
+        <TextView android:textSize="@dimen/follow_post_small" android:textColor="@color/CW" android:gravity="center" android:id="@+id/tv_img_count" android:background="#88000000" android:paddingLeft="6dp" android:paddingTop="2dp" android:paddingRight="6dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/CP" android:ellipsize="end" android:gravity="left" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="4" android:lineSpacingMultiplier="1.4"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:gravity="center_vertical" android:id="@+id/tvShare" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_share" android:drawablePadding="10dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CT_5" android:gravity="left" android:id="@+id/tvCommentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:drawableLeft="@drawable/ic_comment" android:drawablePadding="10dp"/>
+        <RelativeLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-13dp">
+            <cn.xiaochuankeji.tieba.ui.widget.updown.PostItemUpDownView android:id="@+id/like" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

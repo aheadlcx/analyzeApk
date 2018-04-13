@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/post_detail_head_image_video_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/post_detail_head_video_container_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center_horizontal" android:id="@+id/post_detail_head_img" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/post_detail_subsampling_placeholder_view" android:layout_width="match_parent" android:layout_height="640dp"/>
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@+id/post_detail_subsampling" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/post_detail_video_play" android:background="@drawable/play_bt_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/post_detail_rich_mark" android:background="@drawable/rich_see_more_bg_color" android:visibility="gone" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16sp" android:textColor="@color/rich_see_more_text_color" android:gravity="center" android:padding="@dimen/post_margin" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rich_see_detail" android:drawableLeft="@drawable/rich_see_more_icon" android:drawablePadding="@dimen/margin_5" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

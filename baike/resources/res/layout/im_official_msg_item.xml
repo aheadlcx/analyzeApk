@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="?attr/msg_official_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="?attr/msg_official_title" android:layout_gravity="center_vertical" android:id="@+id/item_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:text="今天早上最糗的十件事" android:layout_weight="1"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/item_cover" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="8dp" app:actualImageScaleType="6"/>&quot;
+
+</LinearLayout>

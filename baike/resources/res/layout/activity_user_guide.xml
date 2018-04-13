@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <pl.droidsonroids.gif.GifImageView android:id="@+id/shit" android:layout_width="88dp" android:layout_height="111dp" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+    <TextView android:textSize="20dp" android:textColor="@color/black" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:text="围观真实糗事
+分享爆笑生活" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

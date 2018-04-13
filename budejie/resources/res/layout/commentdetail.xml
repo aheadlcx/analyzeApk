@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.KeyboardListenerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/root_layout" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.budejie.www.widget.curtain.FloatVideoRootLayout android:id="@+id/curtain_root_layout" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/navigation_height">
+        <RelativeLayout android:id="@+id/activity_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/listview_container" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navigation_height">
+                <com.budejie.www.activity.view.CustomListView android:id="@+id/listview" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="?attr/divider_horizontal_bg"/>
+            </LinearLayout>
+            <include layout="@layout/include_comment_bottom_layout"/>
+            <View android:id="@+id/keyword_mask" android:background="@color/record_voice_mask_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="42dp"/>
+            <RelativeLayout android:id="@+id/select_image_video_mark" android:background="@drawable/select_image_video_mark_bg" android:visibility="gone" android:layout_width="82dp" android:layout_height="82dp" android:layout_marginRight="35dp" android:layout_marginBottom="-10dp" android:layout_above="@+id/recordBottomFrame" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/select_image_video_mark_iv" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/select_image_video_mark_cancel" android:background="@drawable/select_image_video_cancel" android:padding="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:layout_marginBottom="-25dp" android:layout_above="@+id/select_image_video_mark" android:layout_alignParentRight="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/itemReplyLayout" android:background="#dfdfdf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/recordBottomFrame">
+                <TextView android:textColor="#949494" android:ellipsize="end" android:id="@+id/itemReplyTextView" android:paddingLeft="14dp" android:paddingTop="8dp" android:paddingRight="14dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/itemCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/umeng_xp_x_button_night"/>
+            </LinearLayout>
+            <include android:id="@+id/comment_write_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/writecommend"/>
+        </RelativeLayout>
+        <include layout="@layout/float_video_layout"/>
+    </com.budejie.www.widget.curtain.FloatVideoRootLayout>
+    <com.budejie.www.widget.NewTitleView android:id="@+id/new_title_view" android:layout_width="match_parent" android:layout_height="@dimen/comment_detail_title_height"/>
+    <View android:id="@+id/record_send_voice_mask" android:background="@color/record_voice_mask_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="284dp"/>
+    <View android:id="@+id/record_voice_mask" android:background="@color/record_voice_mask_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="242dp"/>
+    <RelativeLayout android:id="@+id/VoiceToWordsLayout" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/VoiceToWordsScrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="100dp" android:layout_marginRight="26dp" android:layout_marginBottom="100dp">
+            <TextView android:textSize="25sp" android:textColor="#333" android:id="@+id/VoiceToWordsTextView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:lineSpacingExtra="3dp"/>
+        </ScrollView>
+        <RelativeLayout android:id="@+id/VoiceToWordsLoadingLayout" android:background="#fff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="134dp" android:layout_marginBottom="26dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ProgressBar android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/chrysanthemum_progress_bar_drawable" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+                <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/more_info"/>
+            </LinearLayout>
+            <TextView android:id="@+id/VoiceToWordsCancelTextView" android:background="@drawable/commend_voice_to_word_cancel_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/VoiceToWordsFailsLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="206dp" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/commend_voice_to_word_cancel_fails"/>
+            <TextView android:textSize="17sp" android:textColor="#aaa" android:id="@+id/VoiceToWordsFailsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="语音转换失败"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/screen_shot_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:background="@color/black" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:text="@string/screen_shot_tip"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/screen_shot_stop" android:background="@color/black" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:text="@string/screen_shot_stop" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.budejie.www.widget.KeyboardListenerRelativeLayout>

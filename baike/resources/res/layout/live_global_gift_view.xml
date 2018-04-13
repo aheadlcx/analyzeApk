@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="20dp">
+    <TextView android:textSize="12dp" android:textColor="@color/white" android:ellipsize="middle" android:gravity="center_vertical" android:id="@+id/live_content" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="-12dp" android:singleLine="true" android:layout_toRightOf="@+id/live_icon" android:layout_centerVertical="true"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/live_icon" android:layout_width="wrap_content" android:layout_height="20dp" android:maxWidth="72dp" android:minWidth="30dp" android:layout_centerVertical="true" app:actualImageScaleType="0"/>
+</merge>

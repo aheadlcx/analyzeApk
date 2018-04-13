@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_window_light" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56dp">
+            <TextView android:textSize="@dimen/live_text_14sp" android:textColor="@color/black_41364F" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:id="@+id/tv_user_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" style="@style/LevelLabel"/>
+            <qsbk.app.live.widget.FamilyLevelView android:id="@+id/fl_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="1dp"/>
+            <ProgressBar android:id="@+id/progress_bar" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="8dp" android:max="100" android:progress="0" android:secondaryProgress="100"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/live_text_14sp" android:textColor="@color/black_41364F" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="9dp" android:layout_marginRight="18dp" android:text="@string/live_tips_follow_anchor"/>
+        <TextView android:textSize="@dimen/live_text_15sp" android:textColor="#793d00" android:layout_gravity="center_horizontal" android:id="@+id/btn_follow" android:background="@drawable/bg_corner_100dp_yellow" android:paddingLeft="55dp" android:paddingTop="10dp" android:paddingRight="55dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="23dp" android:text="@string/setting_confirm"/>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/avatar" android:layout_width="66dp" android:layout_height="66dp"/>
+</FrameLayout>

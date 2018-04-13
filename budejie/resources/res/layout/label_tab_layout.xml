@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/top_line_view" android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+    <LinearLayout android:background="?attr/list_view_item_background" android:layout_width="match_parent" android:layout_height="42dp" android:layout_below="@+id/top_line_view">
+        <TextView android:textSize="@dimen/font_14" android:gravity="center" android:id="@+id/new_text_view" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_newest" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/font_14" android:gravity="center" android:id="@+id/essence_text_view" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_essence" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/font_14" android:gravity="center" android:id="@+id/hot_text_view" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_hottest" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/font_14" android:gravity="center" android:id="@+id/member_text_view" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_member" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:id="@+id/line_view" android:background="?attr/label_tab_line_background" android:layout_width="wrap_content" android:layout_height="3dp" android:layout_marginBottom="3dp" android:layout_alignParentBottom="true"/>
+    <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

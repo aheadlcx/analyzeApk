@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="180dp" android:layout_height="180dp">
+    <ImageView android:id="@+id/game_rolltable_circle" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/game_rolltable"/>
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/game_rolltable_arrow"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/game_rolltable_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/game_rolltable_light1"/>
+    <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90dp" android:text="0s"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/rolltable_border"/>
+</FrameLayout>

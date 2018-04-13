@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="13sp" android:textColor="?attr/event_label_text_color" android:gravity="center" android:id="@+id/bv_event_label" android:background="?attr/event_label_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" android:text="活动标签"/>
+</RelativeLayout>

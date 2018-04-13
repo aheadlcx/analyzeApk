@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="#999999" android:layout_gravity="center" android:id="@+id/netErrorTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前无法连接到互联网！" android:drawableTop="@drawable/rooms_fouth_global_network_error" android:drawablePadding="27dp"/>
+</FrameLayout>

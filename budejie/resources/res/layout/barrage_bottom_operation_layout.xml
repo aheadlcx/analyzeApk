@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/full_screen_write_barrage" android:background="#66000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+    <RelativeLayout android:background="#ededed" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentBottom="true">
+        <EditText android:textSize="16sp" android:textColor="@color/black" android:textColorHint="#c5c4cb" android:layout_gravity="center" android:id="@+id/write_barrage_edit_text" android:background="@drawable/barrage_edit_text_write_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="发弹幕" android:maxLines="3" android:maxLength="20" android:layout_toLeftOf="@+id/write_barrage_send" android:layout_centerInParent="true" android:imeOptions="flagNoExtractUi"/>
+        <ImageView android:id="@+id/write_barrage_send" android:background="@drawable/commend_sendbtn_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

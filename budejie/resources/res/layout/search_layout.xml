@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/navigation_bar"/>
+    <TextView android:textColor="?attr/item_content_text_color" android:id="@+id/total_count_tv" android:background="@android:color/transparent" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="搜索结果  32"/>
+    <com.budejie.www.widget.XListView android:id="@+id/listview" android:background="?attr/fans_list_bg" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="?attr/divider_horizontal_bg" android:dividerHeight="@dimen/divide_line_height"/>
+</LinearLayout>

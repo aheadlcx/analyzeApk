@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="?attr/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/TypeIconImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:src="@drawable/mymsg_notify"/>
+    <RelativeLayout android:id="@+id/right_post_layout" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true">
+        <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/MyTipImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_album"/>
+        <ImageView android:id="@+id/VideoPlayImageView" android:background="@drawable/play_video_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <TextView android:textSize="10sp" android:textColor="#888888" android:ellipsize="end" android:id="@+id/TextTextView" android:background="#eeeeee" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="TextView" android:maxLines="4" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/comment_like_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/comment_like_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/operation_ding_day_select_image"/>
+            <TextView android:textSize="13sp" android:textColor="@color/main_red" android:id="@+id/comment_like_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="10dp" android:layout_toLeftOf="@+id/right_post_layout" android:layout_toRightOf="@+id/TypeIconImageView">
+        <TextView android:textSize="13sp" android:textColor="#828282" android:id="@+id/TitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="系统消息"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/ContentTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="您的帖子已经被顶到新帖区"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="22dp">
+            <TextView android:textSize="12sp" android:textColor="#c6c6c6" android:layout_gravity="center_vertical" android:id="@+id/TimeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015-12-24 09：45"/>
+            <TextView android:layout_gravity="center_vertical" android:id="@+id/reply_comment_btn" android:background="@drawable/my_news_reply_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

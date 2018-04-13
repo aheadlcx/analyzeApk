@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/umeng_xp_banner" android:background="@drawable/appwallcellbackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/umeng_xp_content" android:visibility="visible" android:layout_width="match_parent" android:layout_height="55dp">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/umeng_xp_banner_more_txt" android:layout_width="wrap_content" android:layout_height="55dp" android:text="更多精彩推荐   " android:shadowColor="#ffeeeeee" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="2"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/umeng_xp_pb" android:visibility="visible" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="10dp" android:src="@drawable/umeng_xp_loading" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="48dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_find_username_body" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_size_small_max" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_username_left" android:layout_width="0dp" android:layout_height="48dp" android:singleLine="true" android:layout_weight="2"/>
+        <View android:layout_gravity="center_vertical" android:id="@+id/id_line" android:background="#e8e8e8" android:layout_width="1.5dp" android:layout_height="18dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+        <TextView android:textSize="@dimen/text_size_small_max" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_username_right" android:layout_width="0dp" android:layout_height="48dp" android:singleLine="true" android:layout_weight="2"/>
+    </LinearLayout>
+    <View android:id="@+id/id_bottom_line" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

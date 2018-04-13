@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar_circle" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStart="16dp" app:contentInsetEnd="0dp" app:theme="?attr/toolbar_style"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <qsbk.app.widget.TipsView android:id="@+id/tipsView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/widget_tips_view_height"/>
+        <include android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/qiushi_notification" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="57dp" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" layout="@layout/qiushi_notification"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/activity_notification" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginBottom="30dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_role_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+    <TextView android:textSize="@dimen/live_text_10sp" android:textStyle="bold" android:textColor="@color/color_80481E" android:gravity="center" android:id="@+id/tv_role_name" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bet_total" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="6dp" android:layout_weight="1">
+        <ImageView android:layout_width="11dp" android:layout_height="9dp" android:src="@drawable/live_game_bet_love" android:scaleType="fitXY"/>
+        <TextView android:textSize="11sp" android:textColor="#ffe503" android:gravity="center" android:id="@+id/tv_bet_total" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bet_me" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="6dp" android:layout_weight="1">
+        <ImageView android:layout_width="11dp" android:layout_height="9dp" android:src="@drawable/live_game_bet_love" android:scaleType="fitXY"/>
+        <TextView android:textSize="11sp" android:textColor="#ffe503" android:gravity="center" android:id="@+id/tv_bet_me" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="0"/>
+    </LinearLayout>
+</merge>

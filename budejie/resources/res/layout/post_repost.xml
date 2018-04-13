@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/ll_repost_layout_all" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_margin_left" android:layout_marginTop="@dimen/margin_4" android:layout_marginRight="@dimen/post_margin_left">
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_delete" android:background="#eaeaea" android:visibility="visible" android:layout_width="210dp" android:layout_height="170dp">
+        <ImageView android:id="@+id/iv_delete_icon" android:background="@drawable/respost_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/delete_item_content_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repost_delete" android:layout_below="@+id/iv_delete_icon" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_repost" android:background="?attr/bg_repost_color_selector_theme" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="?attr/repost_item_content_text_color" android:id="@+id/repost_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2dp"/>
+        <RelativeLayout android:id="@+id/repost_rich_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/repost_content">
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/contentImage" android:duplicateParentState="true" android:layout_width="200dp" android:layout_height="107dp" android:layout_marginTop="5dp" android:scaleType="centerCrop"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rich_see_more_bg_color" android:duplicateParentState="true" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_alignBottom="@+id/contentImage">
+                <TextView android:textSize="16sp" android:textColor="@color/rich_see_more_text_color" android:gravity="center" android:layout_gravity="center" android:padding="@dimen/post_margin" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rich_see_detail" android:drawableLeft="@drawable/rich_see_more_icon" android:drawablePadding="@dimen/margin_5"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp">
+            <com.androidex.widget.asyncimage.AsyncImageView android:layout_gravity="center_horizontal" android:id="@+id/main_img" android:visibility="visible" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerCrop"/>
+            <Button android:id="@+id/play" android:background="@drawable/play_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/repost_video_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_bt_selector" android:layout_centerInParent="true"/>
+            <com.budejie.www.activity.view.CircleProgressBar android:id="@+id/repost_gif_progress" android:layout_width="@dimen/repost_circle_progress_bar_width" android:layout_height="@dimen/repost_circle_progress_bar_width" android:layout_centerInParent="true" app:progressbarColor="?attr/circle_progressbar_color" app:progressbarBgColor="?attr/circle_progressbar_bg_color" app:progressBarThickness="@dimen/repost_circle_progress_bar_Thickness"/>
+            <com.budejie.www.activity.view.MediaPlayView android:id="@+id/repost_mMPview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-17dp" android:layout_alignBottom="@+id/main_img"/>
+            <ImageView android:id="@+id/error_img_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="?attr/load_error_state" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

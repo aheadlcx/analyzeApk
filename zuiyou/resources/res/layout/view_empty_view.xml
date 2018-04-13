@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/CB" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/vTipContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80dp">
+        <ImageView android:id="@+id/vTipImage" android:layout_width="148dp" android:layout_height="148dp" android:src="@drawable/ic_post_empty" android:scaleType="centerInside"/>
+        <TextView android:textSize="@dimen/F10_text" android:textColor="@color/CT_5" android:id="@+id/tvTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="加载失败"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/F4_text" android:textColor="@color/CM" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvGoToSetNet" android:padding="14dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:text="前往网络设置"/>
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="12dp" android:longClickable="true" android:layout_width="205dp" android:layout_height="305dp">
+    <RelativeLayout android:id="@+id/container" android:layout_width="193dp" android:layout_height="match_parent">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/moment_video_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="@drawable/story_cover_empty_view" app:roundedCornerRadius="3dp"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/img_ugc_videoitem_mask" android:layout_width="match_parent" android:layout_height="80dp" android:layout_alignParentBottom="true" app:roundedCornerRadius="3dp"/>
+        <ImageView android:id="@+id/iv_moment_master" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_moment_master_view"/>
+        <ImageView android:id="@+id/iv_moment_god" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_god_review_flag"/>
+        <ImageView android:id="@+id/play_btn" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_video2_flag" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_member" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="4dp" android:weightSum="1" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_count_flag"/>
+            <TextView android:textSize="11dp" android:textStyle="italic" android:textColor="@color/CW" android:id="@+id/tv_play_count" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_ugc_videoitem_like_flag_in_recommend"/>
+            <TextView android:textSize="11dp" android:textStyle="italic" android:textColor="@color/CW" android:id="@+id/tv_like_count" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:layout_width="0dp" android:layout_height="10dp" android:layout_weight="1"/>
+            <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:layout_gravity="right" android:id="@+id/wivMemberCover" android:layout_width="17dp" android:layout_height="17dp" style="@style/CircleImage"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/video_cover" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/cover_ugc_recommend" android:scaleType="fitXY"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_ugc_count_recommend"/>
+                <TextView android:textSize="13dp" android:textColor="@color/CW" android:gravity="center" android:id="@+id/tv_more" android:layout_width="128dp" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="查看更多（1000）" android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@+id/cover_video" android:background="@color/night_icon_cover_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</FrameLayout>

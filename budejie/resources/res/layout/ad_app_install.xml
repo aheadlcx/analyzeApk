@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.NativeAppInstallAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/native_app_install_adview" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20dp" android:paddingTop="3dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/appinstall_app_icon" android:paddingBottom="5dp" android:layout_width="40dp" android:layout_height="40dp" android:adjustViewBounds="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:id="@+id/appinstall_headline" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <RatingBar android:id="@+id/appinstall_stars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="?android:attr/ratingBarStyleSmall"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:id="@+id/appinstall_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+                <ImageView android:id="@+id/appinstall_image" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxHeight="150dp"/>
+                <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:id="@+id/appinstall_price" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="12sp" android:id="@+id/appinstall_store" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Button android:textSize="12sp" android:gravity="center" android:id="@+id/appinstall_call_to_action" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.formats.NativeAppInstallAdView>

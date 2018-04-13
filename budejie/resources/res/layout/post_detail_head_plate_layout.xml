@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/post_detail_plate" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="0.4dp"/>
+        <View android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="0.4dp"/>
+        <RelativeLayout android:background="?attr/new_detail_content_bg" android:layout_width="match_parent" android:layout_height="86dp">
+            <com.androidex.widget.FilletAsyncImageView android:id="@+id/post_detail_plate_header" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginLeft="10dp" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:layout_centerVertical="true"/>
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/post_detail_plate_btn" android:layout_toRightOf="@+id/post_detail_plate_header" android:layout_alignTop="@+id/post_detail_plate_header" android:layout_alignBottom="@+id/post_detail_plate_header" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="?attr/new_detail_plate_name_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/post_detail_plate_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                        <TextView android:textSize="12sp" android:textColor="?attr/new_detail_plate_sub_num_color" android:ellipsize="end" android:id="@+id/post_detail_plate_sub_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                        <View android:layout_gravity="center_vertical" android:id="@+id/post_detail_plate_sub_post_divider" android:background="?attr/new_detail_sub_post_divider_color" android:layout_width="1dp" android:layout_height="10dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+                        <TextView android:textSize="12sp" android:textColor="?attr/new_detail_plate_sub_num_color" android:ellipsize="end" android:id="@+id/post_detail_plate_post_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                    </LinearLayout>
+                    <TextView android:textSize="12sp" android:textColor="?attr/new_detail_plate_sub_num_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/post_detail_plate_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="12sp" android:textColor="?attr/new_detail_plate_color" android:id="@+id/post_detail_plate_btn" android:background="?attr/new_detail_plate_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="55dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="进入" android:drawableRight="?attr/new_detail_plate_right" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="0.4dp"/>
+        <View android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <View android:background="?attr/divider_horizontal_bg" android:layout_width="match_parent" android:layout_height="0.4dp"/>
+    </LinearLayout>
+</LinearLayout>

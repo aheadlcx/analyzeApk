@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/nav_root_view" android:background="@drawable/bg_tree_edit_audio" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/nav_back_icon" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left_white" android:scaleType="centerInside" android:contentDescription="@string/image"/>
+            <View style="@style/my_divide_view"/>
+            <ImageView android:id="@+id/nav_chat" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_accost_nav" android:scaleType="centerInside" android:contentDescription="@string/image"/>
+            <ImageView android:id="@+id/nav_option_icon" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/nav_more_white" android:scaleType="centerInside" android:contentDescription="@string/image"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:layout_width="48dp" android:layout_height="0dp"/>
+            <ImageView android:id="@+id/nav_title_icon_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:contentDescription="@string/image" android:layout_marginEnd="2dp"/>
+            <TextView android:textSize="@dimen/F1_text" android:textColor="@color/CB" android:id="@+id/nav_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time"/>
+            <ImageView android:id="@+id/nav_title_icon_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="1dp" android:contentDescription="@string/image" android:layout_marginStart="5dp"/>
+            <View style="@style/my_divide_view"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

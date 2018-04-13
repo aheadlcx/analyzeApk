@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider" android:background="@color/CL" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/author" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="9dp" android:layout_marginRight="13dp" android:layout_marginBottom="9dp" android:layout_below="@+id/divider" android:layout_alignParentLeft="true">
+        <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/avatar" android:layout_width="30dp" android:layout_height="30dp" style="@style/CircleImage"/>
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/F6_text" android:textColor="@color/CT_4" android:gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    <View android:background="@color/CL" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_1px" android:layout_below="@+id/author"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/wivThumb" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <cn.xiaochuankeji.tieba.ui.widget.AspectRatioFrameLayout android:layout_gravity="center" android:id="@+id/video_frame" android:layout_width="match_parent" android:layout_height="match_parent" app:scaleType="fitStart">
+        <TextureView android:id="@+id/textureView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </cn.xiaochuankeji.tieba.ui.widget.AspectRatioFrameLayout>
+    <cn.xiaochuankeji.tieba.ui.danmaku.HotDanmakuView android:id="@+id/hot_danmaku" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="53dp" android:layout_marginBottom="187dp"/>
+    <cn.xiaochuankeji.tieba.ui.danmaku.TopDanmakuView android:layout_gravity="bottom" android:id="@+id/top_danmaku" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="15dp" android:layout_marginRight="82dp" android:layout_marginBottom="125dp"/>
+    <Button android:textSize="12dp" android:textColor="@color/white_80" android:layout_gravity="center" android:id="@+id/btn_retry" android:background="@color/transparent" android:paddingTop="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载失败，点击重试" android:drawableTop="@drawable/play_video_retry"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/ivLoadingAnim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:src="@drawable/anim_ugcvideo_loading"/>
+</FrameLayout>

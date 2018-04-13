@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:background="@drawable/singwarpk_banner_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_small_twelve" android:textColor="@color/white" android:id="@+id/see_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ten_dip" android:text="@string/click_see_game" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

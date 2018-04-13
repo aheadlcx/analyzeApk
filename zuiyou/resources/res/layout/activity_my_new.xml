@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.pullzoom.PullToZoomScrollViewEx android:layout_gravity="top" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginTop="@dimen/setting_margin_top">
+        <cn.xiaochuankeji.tieba.ui.my.PhoneTipView android:id="@+id/phont_tip_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44dp"/>
+        <RelativeLayout android:id="@+id/layout_setting_icon" android:layout_width="60dp" android:layout_height="60dp">
+            <ImageView android:id="@+id/iv_setting" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/icon_setting" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/ivSettingCrumb" android:background="@drawable/icon_badge_dot" android:visibility="visible" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="-2.5dp" android:layout_marginRight="-2.5dp" android:layout_alignTop="@+id/iv_setting" android:layout_alignRight="@+id/iv_setting"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

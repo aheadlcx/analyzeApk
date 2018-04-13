@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_video_progress" android:layout_width="135dp" android:layout_height="104dp">
+    <ImageView android:id="@+id/ivFlag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:src="@drawable/selector_video_fast"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textSize="14sp" android:textColor="@color/CM" android:id="@+id/tvPosition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/tvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/00:00"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="93dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxHeight="4dp" android:max="100" android:progressDrawable="@drawable/progressbar_video" android:minHeight="4dp" style="@style/Widget.ProgressBar.Horizontal"/>
+</LinearLayout>

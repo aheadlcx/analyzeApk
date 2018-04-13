@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/dialog_bg" android:layout_width="233dp" android:layout_height="200dp" android:layout_marginTop="124dp" android:src="@drawable/live_doll_dialog_bg" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/iv_result" android:layout_width="264dp" android:layout_height="153dp" android:src="@drawable/live_doll_bear_success" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="165dp">
+            <TextView android:textSize="@dimen/live_text_16sp" android:textStyle="bold" android:textColor="#914300" android:id="@+id/tips_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恭喜你，你将获得"/>
+            <TextView android:textSize="@dimen/live_text_16sp" android:textStyle="bold" android:textColor="#262626" android:id="@+id/diamond_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:drawableLeft="@drawable/pay_diamond" android:drawablePadding="6dp"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/btn_again" android:background="@drawable/live_doll_dialog_btn_bg_selector" android:layout_width="107dp" android:layout_height="63dp" android:layout_marginTop="12dp">
+                <TextView android:textSize="@dimen/live_text_15sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="再抓一次"/>
+                <TextView android:textSize="@dimen/live_text_12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/time_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(5s)"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/live_text_16sp" android:textStyle="bold" android:textColor="#914300" android:layout_gravity="center_horizontal" android:id="@+id/tips_fail" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="183dp" android:text="据说换个姿势，手气会更好！"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_up" android:background="@color/transparent" android:padding="12dp" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginLeft="110dp" android:layout_marginTop="184dp" android:src="@drawable/live_doll_dialog_close" android:scaleType="fitXY"/>
+</FrameLayout>

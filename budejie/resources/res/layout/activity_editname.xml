@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/editname_layout" android:background="?attr/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout" layout="@layout/title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp">
+        <EditText android:id="@+id/edit_name_edit" android:background="@drawable/edit_bg" android:paddingLeft="10dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/person_edit_name_hint" android:singleLine="true" android:maxLength="24"/>
+        <LinearLayout android:gravity="center" android:layout_width="40dp" android:layout_height="match_parent" android:layout_alignParentRight="true" android:onClick="editDelName$Click">
+            <Button android:id="@+id/person_name_cancel_btn" android:background="@drawable/person_name_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:onClick="editDelName$Click"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textColor="#524d53" android:id="@+id/default_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/person_limit_hint"/>
+</LinearLayout>

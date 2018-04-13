@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/back_image_view" android:layout_width="@dimen/margin_40" android:layout_height="@dimen/margin_40" android:src="@drawable/video_recommend_title_close" android:scaleType="center"/> 
+
+    <com.budejie.www.goddubbing.wediget.VideoLayout android:id="@+id/video_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <com.budejie.www.goddubbing.wediget.SeekBar android:id="@+id/seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/video_layout" fresco:reachColor="@color/record_bar_progress_color" fresco:unReachColor="@color/half_alpha_black" fresco:barHeight="@dimen/god_dubbing_seek_bar_height"/>
+</RelativeLayout>

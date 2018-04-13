@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sprite.ads.view.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ad_six_room_pic" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/ad_six_room_pic_bg" android:background="@drawable/ad_six_rooms_gradient_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/ad_six_room_user_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginBottom="6dp" android:text="0人正在看" android:drawableLeft="@drawable/ad_six_rooms_user_icon" android:drawablePadding="3dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/ad_six_room_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginBottom="4dp" android:text="" android:layout_above="@+id/ad_six_room_user_count"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:src="@drawable/ad_six_rooms_living" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</com.sprite.ads.view.SquareRelativeLayout>

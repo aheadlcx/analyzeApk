@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/group_action" android:background="?attr/group_info_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15dp" android:textColor="@r$color/group_info_text_green" android:gravity="center_vertical" android:id="@+id/group_action_text" android:padding="11dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="13dp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/group_action" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:background="?attr/group_info_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <GridView android:id="@+id/group_info_grid" android:background="?attr/group_info_bg" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:horizontalSpacing="4dp" android:verticalSpacing="4dp" android:stretchMode="columnWidth" android:numColumns="4"/>
+            <View android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="4dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/group_level" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/group_info_item_height">
+                <TextView android:textSize="@dimen/g_txt_big" android:textColor="@r$color/group_info_label" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="@dimen/group_info_left_offset" android:layout_height="wrap_content" android:text="等级"/>
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/group_level_text" android:background="@drawable/group_info_level_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:includeFontPadding="false"/>
+                <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/group_info_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="级群" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/notification_subtext_size" android:textColor="?attr/group_info_text" android:gravity="center" android:id="@+id/group_level_require" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/group_info_help" android:drawablePadding="8dp"/>
+            </LinearLayout>
+            <View android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/group_info_left_offset"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/group_members" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/group_info_item_height">
+                <TextView android:textSize="@dimen/g_txt_big" android:textColor="@r$color/group_info_label" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="@dimen/group_info_left_offset" android:layout_height="wrap_content" android:text="成员"/>
+                <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/group_info_text" android:id="@+id/group_members_count" android:layout_width="0dp" android:layout_height="wrap_content" android:drawableRight="@drawable/group_info_next" android:layout_weight="1"/>
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="11dp">
+                <qsbk.app.widget.LinearReactiveLayout android:id="@+id/group_info_avatars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/group_info_left_offset"/>
+                <ImageView android:id="@+id/group_add_member" android:visibility="gone" android:layout_width="@dimen/group_info_avatar_width" android:layout_height="@dimen/group_info_avatar_width" android:src="@drawable/group_info_add" android:layout_alignRight="@+id/group_info_avatars"/>
+            </RelativeLayout>
+            <View android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/group_info_left_offset"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/group_owner" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/group_info_item_height">
+                <TextView android:textSize="@dimen/g_txt_big" android:textColor="@r$color/group_info_label" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="@dimen/group_info_left_offset" android:layout_height="wrap_content" android:text="群大"/>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/group_owner_avatar" android:layout_width="@dimen/small_user_icon" android:layout_height="@dimen/small_user_icon" app:actualImageScaleType="6" app:roundAsCircle="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/g_txt_small" android:textColor="@r$color/group_info_label" android:id="@+id/group_owner_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="12dp" android:textColor="?attr/group_info_text" android:id="@+id/group_owner_term" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:drawableLeft="@drawable/group_info_date" android:drawablePadding="4dp"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/group_info_next_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_info_next"/>
+            </LinearLayout>
+            <View android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/group_info_left_offset"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/group_rank" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/group_info_item_height">
+                <TextView android:textSize="@dimen/g_txt_big" android:textColor="@r$color/group_info_label" android:id="@+id/group_rank_remind" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="@dimen/group_info_left_offset" android:layout_height="wrap_content" android:text="天梯"/>
+                <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/group_info_text" android:id="@+id/group_rank_num" android:layout_width="0dp" android:layout_height="wrap_content" android:drawableRight="@drawable/group_info_next" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:id="@+id/group_rank_line" android:background="?attr/group_info_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="@dimen/group_info_left_offset"/>
+            <LinearLayout android:gravity="top" android:orientation="horizontal" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/g_txt_big" android:textColor="@r$color/group_info_label" android:gravity="center_vertical" android:paddingLeft="16dp" android:layout_width="@dimen/group_info_left_offset" android:layout_height="@dimen/group_info_item_height" android:text="简介"/>
+                <TextView android:textSize="@dimen/g_txt_middle" android:textColor="?attr/group_info_text" android:id="@+id/group_describe" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1" android:lineSpacingExtra="2dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="50dp" android:layout_height="match_parent">
+                    <TextView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/group_intru_modify" android:background="@drawable/group_intruduce_modify" android:paddingLeft="18dp" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="9dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/group_notify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/group_info_item_height">
+                    <TextView android:textSize="@dimen/g_txt_big" android:textColor="@r$color/group_info_label" android:id="@+id/group_info_remind" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="消息提醒" android:layout_weight="1"/>
+                    <qsbk.app.widget.Switch android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/group_notify_switch" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Widget.AppCompat.CompoundButton.Switch"/>
+                </LinearLayout>
+                <View android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="9dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/group_mute_all" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textColor="?attr/group_info_label" android:background="?attr/group_info_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="开启后，只有群大和管理员可以发言"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/group_info_item_height">
+                    <TextView android:textSize="@dimen/g_txt_big" android:textColor="@r$color/group_info_label" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="全体禁言" android:layout_weight="1"/>
+                    <qsbk.app.widget.Switch android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/group_mute_all_switch" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Widget.AppCompat.CompoundButton.Switch"/>
+                </LinearLayout>
+                <View android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="9dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/group_member_level" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/group_info_item_height">
+                    <TextView android:textSize="@dimen/g_txt_big" android:textColor="@r$color/group_info_label" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="群成员等级" android:layout_weight="1"/>
+                    <TextView android:textSize="15dp" android:textColor="?attr/group_info_label" android:id="@+id/group_member_level_text" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启" android:drawableRight="@drawable/group_info_next" android:drawablePadding="12dp"/>
+                </LinearLayout>
+                <View android:background="?attr/group_info_bg" android:layout_width="match_parent" android:layout_height="9dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

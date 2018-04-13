@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/tip_out_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/tip_layout" android:background="@drawable/count_tip_bg" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:id="@+id/cup" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:gravity="center" android:background="@drawable/count_tip_cup" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/bigStar" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cup" android:layout_alignBottom="@+id/cup">
+                <ImageView android:background="@drawable/count_tip_big_star" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/smallRightStar" android:paddingLeft="28dp" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cup" android:layout_alignTop="@+id/cup">
+                <ImageView android:background="@drawable/count_tip_small_star" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/smallLeftStar" android:paddingTop="30dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/cup" android:layout_alignTop="@+id/cup">
+                <ImageView android:background="@drawable/count_tip_small_star" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="#000000" android:id="@+id/content" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发帖成功" android:layout_below="@+id/cup" android:layout_centerHorizontal="true"/>
+            <LinearLayout android:id="@+id/addView" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/content" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/gold" android:background="@drawable/count_tip_gold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="18sp" android:textColor="#000000" android:id="@+id/addGold" android:paddingLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+10" android:layout_toRightOf="@+id/gold"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

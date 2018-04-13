@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/fl_footer_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+    <RelativeLayout android:id="@+id/rl_loading" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_centerVertical="true" android:layout_marginStart="10dp" style="?android:attr/progressBarStyleSmall"/>
+        <TextView android:textColor="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_load_more_loading" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@+id/tv_end" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_load_more_end"/>
+    <TextView android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@+id/tv_error" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_load_more_error"/>
+</FrameLayout>

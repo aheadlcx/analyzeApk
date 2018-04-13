@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/foot_lin" android:background="?attr/across_tips_backgroud" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp">
+    <TextView android:textSize="12dp" android:textColor="?attr/across_date_color" android:gravity="center" android:id="@+id/across_date" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="12dp" android:textColor="?attr/across_change_color" android:gravity="center" android:id="@+id/change_date" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:text="换一天" android:layout_alignParentRight="true"/>
+    <View android:id="@+id/across_line" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

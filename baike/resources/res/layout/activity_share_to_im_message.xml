@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/main_bg">
+    <RelativeLayout android:id="@+id/rl_share_to_my_qiuyou" android:layout_width="match_parent" android:layout_height="@dimen/share_choose_qiuyou_my_qiuyou_item_height" style="?attr/my_qiuyou_bg">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_share_to_my_qiuyou" android:clickable="false" android:layout_width="@dimen/share_choose_qiuyou_my_qiuyou_icon_diameter" android:layout_height="@dimen/share_choose_qiuyou_my_qiuyou_icon_diameter" android:layout_marginLeft="@dimen/share_choose_qiuyou_my_qiuyou_icon_margin_left" android:layout_centerVertical="true" app:placeholderImage="?attr/my_qiuyou_icon" app:placeholderImageScaleType="6" app:roundAsCircle="true"/>
+        <TextView android:textSize="@dimen/share_choose_qiuyou_my_qiuyou_text_size" android:id="@+id/tv_share_to_my_qiuyou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/share_choose_qiuyou_my_qiuyou_text_margin_left" android:text="@string/my_qiuyou" android:layout_toRightOf="@+id/iv_share_to_my_qiuyou" android:layout_centerVertical="true" style="?attr/my_qiuyou_text"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_share_to_my_qiuyou"/>
+</RelativeLayout>

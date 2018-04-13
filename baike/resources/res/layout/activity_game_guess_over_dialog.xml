@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/guess_help_bg" android:clickable="true" android:layout_width="300dp" android:layout_height="320dp" android:layout_marginTop="135dp">
+        <ScrollView android:layout_gravity="center_horizontal" android:background="@drawable/guess_help_bottom_bg" android:scrollbars="none" android:layout_width="280dp" android:layout_height="268dp" android:layout_marginTop="40dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textSize="20dp" android:textColor="#353535" android:gravity="center" android:id="@+id/game_help_rule" android:layout_width="match_parent" android:layout_height="143dp" android:text="10个用户
+瓜分了200元现金"/>
+                <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="13dp" android:layout_marginRight="11dp"/>
+                <TextView android:textSize="14dp" android:textColor="#686778" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="分享战绩，获得复活卡" android:lineSpacingMultiplier="1.2"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp">
+                    <ImageView android:id="@+id/share_friend" android:layout_width="0dp" android:layout_height="42dp" android:src="@drawable/guess_share_friend" android:scaleType="centerInside" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/share_wechat" android:layout_width="0dp" android:layout_height="42dp" android:src="@drawable/guess_share_wechat" android:scaleType="centerInside" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/share_qq" android:layout_width="0dp" android:layout_height="42dp" android:src="@drawable/guess_share_qq" android:scaleType="centerInside" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/share_qzone" android:layout_width="0dp" android:layout_height="42dp" android:src="@drawable/guess_share_qzone" android:scaleType="centerInside" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/title_image" android:layout_width="160dp" android:layout_height="40dp" android:layout_marginTop="120dp" android:src="@drawable/guess_help_title" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginTop="120dp" android:layout_marginRight="25dp" android:src="@drawable/guess_help_close" android:scaleType="centerInside"/>
+</FrameLayout>

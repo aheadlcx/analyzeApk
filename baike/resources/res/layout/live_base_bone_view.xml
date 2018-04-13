@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_background" android:background="@color/live_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <ViewStub android:id="@+id/view_stub_shadow" android:layout="@layout/live_pc_shadow_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextureView android:id="@+id/textureview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/surfaceViewContainer1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/surfaceViewContainer2" android:layout_width="100dp" android:layout_height="150dp" android:layout_marginRight="2dp" android:layout_marginBottom="60dp"/>
+    <View android:layout_gravity="bottom" android:id="@+id/live_chatroom_bg" android:background="@drawable/live_chatroom_bg" android:layout_width="match_parent" android:layout_height="218dp"/>
+</merge>

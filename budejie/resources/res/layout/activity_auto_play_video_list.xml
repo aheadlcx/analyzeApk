@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.curtain.FloatVideoRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/curtain_root_layout" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/toptabpageindicator_height_negative" fresco:topShow="@r$bool/auto">
+    <RelativeLayout android:id="@+id/activity_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listview" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0px"/>
+    </RelativeLayout>
+    <include layout="@layout/float_video_layout"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/TitleGapLayout" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height_gap"/>
+    <RelativeLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height" android:layout_below="@+id/TitleGapLayout">
+        <ImageView android:id="@+id/title_left" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_recommend_title_close_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/recommend_video_pause_comment_color" android:ellipsize="end" android:gravity="center" android:id="@+id/title_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150dp" android:text="猜你喜欢" android:singleLine="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</com.budejie.www.widget.curtain.FloatVideoRootLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/title_background" android:layout_width="match_parent" android:layout_height="@dimen/navigation_height">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/left_layout" android:visibility="gone" android:layout_width="@dimen/navigation_height" android:layout_height="@dimen/navigation_height" android:layout_marginLeft="@dimen/margin_9" android:layout_alignParentLeft="true">
+        <TextView android:id="@+id/title_left_btn" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="@dimen/margin_4" style="@style/titleBtnStyle"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/title_bar_center_text_size" android:ellipsize="end" android:gravity="center" android:id="@+id/title_center_txt" android:clickable="true" android:layout_width="150dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center" android:id="@+id/right2_layout" android:visibility="gone" android:clickable="true" android:layout_width="50dp" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/right_layout">
+        <ImageButton android:id="@+id/night_model" android:background="?attr/myinfo_night_model_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/right_layout" android:paddingRight="9dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/margin_4" android:layout_alignParentRight="true">
+        <TextView android:id="@+id/title_right_btn" android:background="@drawable/edit_send_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/titleBtnStyle"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/rating_1" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="4dp" android:scaleType="fitXY" android:maxLevel="1" android:contentDescription="@null" style="?attr/feedsadRatting"/>
+    <ImageView android:id="@+id/rating_2" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="4dp" android:scaleType="fitXY" android:maxLevel="1" android:contentDescription="@null" style="?attr/feedsadRatting"/>
+    <ImageView android:id="@+id/rating_3" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="4dp" android:scaleType="fitXY" android:maxLevel="1" android:contentDescription="@null" style="?attr/feedsadRatting"/>
+    <ImageView android:id="@+id/rating_4" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="4dp" android:scaleType="fitXY" android:maxLevel="1" android:contentDescription="@null" style="?attr/feedsadRatting"/>
+    <ImageView android:id="@+id/rating_5" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="4dp" android:scaleType="fitXY" android:maxLevel="1" android:contentDescription="@null" style="?attr/feedsadRatting"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:id="@+id/ll_music_page" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/pad_room_chat_record_public_list_height" android:layout_alignParentBottom="true">
+    <RelativeLayout android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="@dimen/thirty_five_dip">
+        <TextView android:textSize="15sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tv_music_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/str_follower"/>
+        <ImageView android:id="@+id/iv_title_close" android:paddingLeft="@dimen/ten_dip" android:paddingRight="@dimen/twenty_dip" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/room_page_common_close_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_music" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/lv_song_menu" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="#00000000" android:divider="@null" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_song_collect" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="@dimen/hundred_twenty_dip">
+            <View android:background="#bbbbbb" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fourteen_dp" android:layout_marginTop="@dimen/phone_sc_15px" android:layout_marginRight="@dimen/fourteen_dp">
+                <EditText android:textSize="@dimen/phone_sc_13sp" android:textColorHint="@color/gray" android:id="@+id/et_song_input" android:background="@drawable/music_input" android:paddingLeft="5dp" android:layout_width="0dp" android:layout_height="@dimen/thirty_three_dp" android:hint="@string/tips_song_0" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/phone_sc_13sp" android:textColor="@color/rooms_third_login_logintext" android:gravity="center" android:id="@+id/tv_song_set" android:background="@drawable/rooms_third_login_login" android:layout_width="@dimen/eightyone_dp" android:layout_height="@dimen/thirty_three_dp" android:layout_marginLeft="@dimen/ten_dip" android:text="@string/bth_song"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/phone_sc_11sp" android:textColor="@color/text2_music" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fourteen_dp" android:layout_marginTop="@dimen/phone_sc_10px" android:text="@string/tip_song_description"/>
+            <TextView android:textSize="@dimen/phone_sc_11sp" android:textColor="@color/text2_music" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fourteen_dp" android:layout_marginTop="@dimen/phone_sc_6px" android:text="@string/tips_song_1"/>
+            <TextView android:textSize="@dimen/phone_sc_11sp" android:textColor="@color/text2_music" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fourteen_dp" android:layout_marginTop="@dimen/phone_sc_6px" android:layout_marginBottom="@dimen/phone_sc_5px" android:text="@string/tips_song_2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

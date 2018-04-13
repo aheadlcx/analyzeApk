@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/phone_fragment_ranking_arrow_down" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/ranking_title_size_title" android:textColor="@color/phone_ranking_adapter_item__color_selector" android:id="@+id/item_drop_down_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

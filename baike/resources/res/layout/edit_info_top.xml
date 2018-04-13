@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/flowBottomBg" android:layout_width="match_parent" android:layout_height="@dimen/topbar_height">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@+id/cancel" android:background="?attr/editTopBtn" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/ic_cancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="?attr/icCancel" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/g_txt_big" android:textColor="?attr/editSingleTopTextColor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/app_cancel" android:layout_toRightOf="@+id/ic_cancel"/>
+        </RelativeLayout>
+        <FrameLayout android:background="?attr/editTopBtn" android:paddingTop="11dp" android:paddingBottom="11dp" android:layout_width="1dp" android:layout_height="match_parent">
+            <View android:layout_gravity="center" android:background="?attr/dividerColor" android:layout_width="1dp" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/sure" android:background="?attr/editTopBtn" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/ic_ok" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="?attr/icOk" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/g_txt_big" android:textColor="?attr/editSingleTopTextColor" android:gravity="center" android:id="@+id/id_sure_txt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/save" android:layout_toRightOf="@+id/ic_ok"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

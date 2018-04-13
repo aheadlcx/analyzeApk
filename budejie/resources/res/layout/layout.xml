@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.budejie.www.widget.curtain.FloatVideoRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/curtain_root_layout" android:layout_width="match_parent" android:layout_height="match_parent" fresco:minTop="@dimen/navigation_height" fresco:minBottom="@dimen/navigation_height" fresco:topShow="@r$bool/auto" fresco:bottomShow="@r$bool/auto">
+    <RelativeLayout android:id="@+id/activity_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+        <ImageView android:id="@+id/melodyview" android:background="@anim/melody_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="55dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <include android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="@dimen/bottom_navigation_height" android:layout_alignParentBottom="true" layout="@layout/bottom_new"/>
+        <com.budejie.www.activity.view.SplashADView android:id="@+id/splashADView" android:background="@drawable/splash_bacground" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <include layout="@layout/float_video_layout"/>
+</com.budejie.www.widget.curtain.FloatVideoRootLayout>

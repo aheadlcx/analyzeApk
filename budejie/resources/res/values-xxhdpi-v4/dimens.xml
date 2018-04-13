@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_open_or_anonym_width">65dp</dimen>
+    <dimen name="blog_pospic_width">110dp</dimen>
+    <dimen name="but_send_gift_width">90dp</dimen>
+    <dimen name="gift_width">145dp</dimen>
+    <dimen name="hall_title_cursor">121dp</dimen>
+    <dimen name="hundred_sixty_dip">180dp</dimen>
+    <dimen name="msg_img_max_height">324dp</dimen>
+    <dimen name="msg_img_max_width">264dp</dimen>
+    <dimen name="offset_x">-30dp</dimen>
+    <dimen name="pad_room_chat_record_public_list_height">348dp</dimen>
+    <dimen name="phone_gift_pic_height">35dp</dimen>
+    <dimen name="phone_gift_pic_width">35dp</dimen>
+    <dimen name="ranking_item_text_size">115dp</dimen>
+    <dimen name="reply_input_width">290dp</dimen>
+    <dimen name="star_dispatch">-10dp</dimen>
+    <dimen name="star_edge">32dp</dimen>
+    <dimen name="singwar_banner_text">12sp</dimen>
+    <dimen name="singwar_final_margin_top_grid">8dp</dimen>
+    <dimen name="line_to_indicator">-1dp</dimen>
+    <dimen name="offset_x_calendar">-129dp</dimen>
+</resources>

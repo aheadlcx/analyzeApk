@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_item" android:background="@drawable/phone_pay_selcet_item_selector" android:layout_width="match_parent" android:layout_height="@dimen/forty_dip" android:minHeight="@dimen/forty_dip">
+    <TextView android:textSize="@dimen/text_size_small_mid" android:textColor="@color/black" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ten_dip" android:text="@string/str_pay_mobile_m" android:singleLine="true"/>
+</LinearLayout>

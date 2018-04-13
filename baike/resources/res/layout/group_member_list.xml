@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <qsbk.app.widget.PtrLayout android:id="@+id/ptr" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listview" android:background="?attr/group_info_bg" android:scrollbars="vertical" android:fadingEdge="none" android:saveEnabled="true" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:drawSelectorOnTop="true" android:scrollingCache="false" android:dividerHeight="0dp" android:headerDividersEnabled="false" android:footerDividersEnabled="true" style="?attr/xlistview"/>
+    </qsbk.app.widget.PtrLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/tips_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fail_img"/>
+        <TextView android:textSize="14dp" android:textColor="#969696" android:id="@+id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="加载失败"/>
+    </LinearLayout>
+</RelativeLayout>

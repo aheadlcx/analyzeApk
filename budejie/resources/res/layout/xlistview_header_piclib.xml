@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="bottom" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="60dp">
+    <RelativeLayout android:id="@+id/mgc_xlistview_header_content" android:layout_width="match_parent" android:layout_height="60dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mgc_xlistview_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:id="@+id/mgc_xlistview_header_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xlistview_header_hint_normal"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xlistview_header_last_time"/>
+                <TextView android:textSize="12sp" android:id="@+id/mgc_xlistview_header_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/mgc_xlistview_header_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-35dp" android:src="@drawable/xlistview_arrow_piclib" android:layout_alignLeft="@+id/mgc_xlistview_header_text" android:layout_centerVertical="true"/>
+        <ProgressBar android:id="@+id/mgc_xlistview_header_progressbar" android:visibility="invisible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="-40dp" android:layout_alignLeft="@+id/mgc_xlistview_header_text" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

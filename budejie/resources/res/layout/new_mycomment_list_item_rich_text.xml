@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:orientation="vertical" android:background="@color/transparent" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/item_layout" android:background="?attr/item_content_layout_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_10" android:layout_marginTop="@dimen/margin_8" android:layout_marginRight="@dimen/margin_10">
+        <include layout="@layout/new_mycomment_list_item_user_info"/>
+        <TextView android:textSize="18sp" android:textColor="?attr/item_content_text_color" android:id="@+id/content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:text="sdfdsfdafdsafdsafdsagfsdmgjkfdsjgklfdjkglfdjglfdjsklgfjdkslgjfdlskgjfkdslgjkdflsgjlfksdjglkfdsjglfksd" android:singleLine="false" android:lineSpacingExtra="5dp"/>
+        <RelativeLayout android:id="@+id/ll_content" android:background="?attr/rich_item_bg_theme" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp">
+            <TextView android:textSize="16sp" android:textColor="?attr/rich_title_color_theme" android:id="@+id/content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@+id/content_image_url" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="14sp" android:textColor="?attr/rich_content_color_theme" android:id="@+id/content_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:singleLine="true" android:layout_toLeftOf="@+id/content_image_url" android:layout_alignBottom="@+id/content_image_url" android:layout_alignParentLeft="true"/>
+            <com.androidex.widget.asyncimage.AsyncImageView android:id="@+id/content_image_url" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="15dp" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+            <View android:background="?attr/imageready_bg" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="15dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <include layout="@layout/new_mycomment_list_item_comment"/>
+    </LinearLayout>
+</LinearLayout>

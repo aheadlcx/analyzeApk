@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootView" android:background="#030303" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.xiaochuankeji.tieba.ui.widget.TBViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="top" android:background="@drawable/video_top_bar_mask" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llVideoBar" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/navbar_height">
+            <ImageView android:id="@+id/btn_back" android:paddingLeft="20dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_meidabrowse_back"/>
+            <TextView android:textSize="14sp" android:textColor="#b2ffffff" android:id="@+id/tvPosition_top" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textColor="#b2ffffff" android:id="@+id/tvPosition_top_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <RelativeLayout android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="100dp" android:layout_height="match_parent" android:layout_marginLeft="10dp">
+                <ImageView android:id="@+id/ivSave_top" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/pic_down" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <cn.xiaochuankeji.tieba.ui.mediabrowse.component.RoundProgressBar android:id="@+id/iv_progress" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:roundColor="@color/white_40" app:roundProgressColor="#2aacff" app:roundWidth="2dp" app:textIsDisplayable="false" app:style="0"/>
+                <TextView android:textSize="12dp" android:textColor="#2aacff" android:id="@+id/tv_percent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/iv_progress" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/iv_download_finsh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_download_finish" android:scaleType="centerInside" android:layout_alignLeft="@+id/iv_progress" android:layout_alignTop="@+id/iv_progress" android:layout_alignRight="@+id/iv_progress" android:layout_alignBottom="@+id/iv_progress"/>
+            </RelativeLayout>
+            <ImageView android:gravity="center_vertical" android:id="@+id/tvShare_top" android:paddingLeft="10dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/pic_share"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/llImageBar" android:background="@drawable/bg_img_bottom_mask" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="12sp" android:textColor="#b2ffffff" android:id="@+id/tvPosition_bottom" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/ivSave_bottom" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_down"/>
+        <TextView android:textSize="12sp" android:textColor="#b2ffffff" android:gravity="center_vertical" android:id="@+id/tvShare_bottom" android:paddingLeft="10dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/pic_share" android:drawablePadding="7dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/flDownloadFinish" android:background="@drawable/bg_white_circle" android:visibility="gone" android:layout_width="106dp" android:layout_height="106dp">
+        <cn.xiaochuankeji.tieba.ui.mediabrowse.component.ImgDownloadFinishAnimView android:id="@+id/vFinishAnim" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ivFlag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+    </FrameLayout>
+</FrameLayout>

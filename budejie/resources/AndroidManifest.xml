@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="266" android:versionName="6.9.2" package="com.budejie.www" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="20"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <permission android:name="com.budejie.www.permission.MIPUSH_RECEIVE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.budejie.www.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/icon_new" android:name="com.budejie.www.activity.BudejieApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="false">
+        <meta-data android:name="linkedme.sdk.key" android:value="a93e657f2c399b233e30237c1994646a"/>
+        <meta-data android:name="APPKEY_DENGTA" android:value="1KK15BWJ5R16QN5M"/>
+        <meta-data android:name="CHANNEL_DENGTA" android:value="@string/dengta_id"/>
+        <meta-data android:name="BDAPPID" android:value="6095400"/>
+        <meta-data android:name="BDAPPKEY" android:value="WWput294BPQeAjS6FAGAvFBIgzu9STKx"/>
+        <receiver android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.qihoo.appstore.updatelib.CheckUpdateService" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.qihoo.appstore.updatelib.CheckUpdateAcitivty" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.qihoo.updatesdk.lib.UpdateTipDialogActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.SplashScreen" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.AppWallActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/SplashTheme" android:name="com.budejie.www.activity.LaucherActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.elves.sister.receivemessage"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bsbdj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.budejie.www.multidex.LoadDexActivity" android:process=":mini" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:alwaysRetainTaskState="false"/>
+        <service android:name="com.budejie.www.download.BDJDownloadService"/>
+        <activity android:theme="@style/StyledIndicators" android:label="@string/app_name" android:name="com.budejie.www.activity.HomeGroup" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:scheme="jie"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="lkme.cc" android:pathPrefix="/VED"/>
+                <data android:scheme="http" android:host="lkme.cc" android:pathPrefix="/VED"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.budejie.www.activity.LinkedMeMiddleActivity" android:screenOrientation="portrait" android:noHistory="true">
+            <meta-data android:name="linkedme.sdk.auto_link_keys" android:value="linkedme"/>
+        </activity>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.DetailContentActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.labelsubscription.LabelSubscribeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.labelsubscription.RecommendLabelActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.phonenumber.PhoneNumChangeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.noticesetting.NotificationSettingsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <receiver android:name="com.budejie.www.activity.SisterReceiver">
+            <intent-filter>
+                <action android:name="com.elves.uidownloadsuccessed"/>
+                <action android:name="com.elves.downloadfailed"/>
+                <action android:name="com.intent.action.sister.MESSAGE_NOTIFY"/>
+                <action android:name="com.elves.budejie.check.unsend.adrequest"/>
+                <action android:name="com.budejie.download.successed"/>
+                <action android:name="com.budejie.download.failed"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.lt.NetworkStateChangeReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.elves.update.DownloadServer" android:enabled="true" android:exported="true"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.AccountActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/StyledIndicators" android:name="com.budejie.www.activity.CollectActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.ShowBigPicture" android:launchMode="singleTask" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.CommentShowBigPicture" android:launchMode="singleTask" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.budejie.www.activity.CommendDetail" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.budejie.www.activity.detail.PostDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.budejie.www.activity.CommendDetailOld" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.RichPostDetail" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.sendCommendActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.MoreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.JokeToPictureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.HotCommentShareActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.MyInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.TougaoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.SelectLabelsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.AddVoteActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:name="com.budejie.www.activity.EditImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/LoginActivityTheme" android:name="com.budejie.www.activity.OAuthWeiboActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.MyPostsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.auditpost.AuditPostsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.MyAccountActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.EditUserNameAct" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.QiHooActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.MessageCenterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.MyNewsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.DingMeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.MyMsgTopicListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.EditPicActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.budejie.www.activity.NewsFeedActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.htmlpage.HtmlFeatureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.htmlpage.NoViewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.recommend.SuggestedFollowsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.textcomment.MakeTextCommentsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.mycomment.MyCommentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.SearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.phonenumber.PhoneNumRegisterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.phonenumber.PhoneNumberLoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.phonenumber.PhoneRetrievePasswordActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.phonenumber.PhoneNumBindingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppCompatTheme" android:name="com.budejie.www.activity.label.CommonLabelActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.label.ActivitiesTopicActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.label.LabelsSelectActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.label.ActivitiesRuleActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.label.ActivitiesInfoMoreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.plate.PlateListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.plate.PlateDedailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent100336987"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:label="@string/app_name" android:name="com.budejie.www.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent" android:label="@string/app_name" android:name="com.budejie.www.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.RecordActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.CreatePersonDataActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.BeautifyRecordActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.VoiceCommentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.FansListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.FollowListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.MyFollowListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.BlackListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/StyledIndicators" android:name="com.budejie.www.activity.RankingListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.search.SearchMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.EditUserIntroduceAct" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:theme="@style/StyledIndicators" android:name="com.budejie.www.activity.PersonalProfileActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.newsfeature.NewsFeatureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/StyledIndicators" android:name="com.budejie.www.activity.posts.PostsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.budejie.www.activity.SwitchThemeMiddleActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.DingTopicListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.MySquareMoreIcon" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.FeedBackActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.budejie.www.service.MediaPlayerServer" android:exported="false">
+            <intent-filter>
+                <action android:name="com.budejie.www.mediaplayer.Server"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/ThemeActivity" android:name="cn.tatagou.sdk.activity.TrackListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="cn.tatagou.sdk.activity.FeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="cn.tatagou.sdk.activity.FootprintListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="cn.tatagou.sdk.activity.TtgMineActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="cn.tatagou.sdk.activity.TaobaoH5Activity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="cn.tatagou.sdk.activity.TtgExtraActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="cn.tatagou.sdk.activity.TtgMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.ConversationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.image.SelectImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.budejie.www.activity.image.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.ContributeListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.umeng.update.net.DownloadingService" android:exported="true" android:process=":DownloadingService"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.umeng.update.UpdateDialogActivity"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4f0fc73752701510610000c8"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="小米市场"/>
+        <meta-data android:name="TA_APPKEY" android:value="Aqc100336987"/>
+        <meta-data android:name="InstallChannel" android:value="小米市场"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.clip.ClipPictureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.SelectorContactsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.SelectorContactsFormWebActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.budejie.www.activity.ReprintPostsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.budejie.www.activity.PlayVoiceActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.budejie.www.activity.video.FullScreenVideoActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.video.AdVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.lt.payactivity.WebViewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.video.CommentItemVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.bdj.video.build.CameraActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.bdj.video.build.EditVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.bdj.video.build.AdvancedEditVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.bdj.video.activity.ChooseVideoFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.budejie.www.recommendvideo.AutoPlayVideoListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.bdj.picture.edit.EditPictureActivity" android:screenOrientation="portrait" android:hardwareAccelerated="false"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.bdj.picture.edit.mosaic.MosaicActivity" android:screenOrientation="portrait" android:hardwareAccelerated="false"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.bdj.picture.edit.sticker.StickerActivity" android:screenOrientation="portrait" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ThemeActivity" android:label="@string/download_manager" android:name="com.zxt.download2.DownloadListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.zxt.download2.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThemeActivity" android:name="com.alipay.VipPayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wx592fdc48acfbe290"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.PayHistoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <receiver android:name="com.budejie.www.push.IxinPushReceiver">
+            <intent-filter>
+                <action android:name="com.ixintui.action.MESSAGE"/>
+                <action android:name="com.ixintui.action.RESULT"/>
+                <action android:name="com.ixintui.action.notification.CLICK"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.ixintui.push.PushActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.ixintui.push.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.ixintui.push.PushService" android:exported="true" android:process=":ixintui_service_v1"/>
+        <service android:name="com.ixintui.push.MediateService" android:exported="true"/>
+        <provider android:name="com.ixintui.push.Provider" android:exported="false" android:authorities="com.budejie.www.ixintui.push.provider"/>
+        <receiver android:name="com.ixintui.push.Receiver">
+            <intent-filter>
+                <action android:name="com.ixintui.action.BROADCAST"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="com.budejie.www"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.sprite.ads.web.SpriteAdActivity"/>
+        <service android:name="com.sprite.ads.SpriteADService"/>
+        <service android:name="com.budejie.www.MagicService" android:exported="false"/>
+        <activity android:name="com.budejie.www.MagicActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.baidu.mobads.AppActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:label="@string/app_name" android:name="org.egret.egretruntimelauncher.GamePlayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.laya.plugin.PMService"/>
+        <activity android:label="@string/app_name" android:name="org.laya.LayaPluginActivity" android:screenOrientation="sensor" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.GodDubbingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.DubbingPreviewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.budejie.www.activity.PublishCommentActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateVisible|stateAlwaysVisible|adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.label.PostStandardLookActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.labelsearch.SearchLabelActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.wallpaper.WallPaperSetActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.budejie.www.wallpaper.WallPaperListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.budejie.www.activity.label.DeputyModeratorSetActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="cn.tatagou.sdk.activity.TtgMainTabActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="cn.tatagou.sdk.activity.TtgSearchGoodsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize|adjustPan|adjustNothing"/>
+        <meta-data android:name="cn.tatagou.sdk.util.CustomGlideModule" android:value="GlideModule"/>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.ui.webview.BaseWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.ui.LoginWebViewActivity" android:excludeFromRecents="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.ali.auth.third.ui.LoginActivity" android:excludeFromRecents="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.ali.auth.third.accountlink.ui.BindResultActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.accountlink.ui.UnbindWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.alibaba.baichuan.android.trade.ui.activity.AlibcWebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM_TAOBAO_TAE_SDK_TRADE_WEB_VIEW_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alibaba.baichuan.android.trade.ui.activity.AlibcNativeTaobaoActivity" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="alisdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.alibaba.baichuan.android.auth.AlibcAuthActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.alipay.sdk.auth.AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <service android:name="anetwork.channel.aidl.NetworkService" android:exported="false">
+            <intent-filter>
+                <action android:name="anetwork.channel.aidl.IRemoteNetworkGetter"/>
+            </intent-filter>
+        </service>
+        <service android:name="mtopsdk.xstate.XStateService" android:exported="false">
+            <intent-filter>
+                <action android:name="mtopsdk.xstate.aidl.IXState"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="android.test.runner"/>
+        <activity android:theme="@style/Theme_dialog" android:name="cn.v6.sixrooms.ui.phone.DialogActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/room_activity_style" android:name="cn.v6.sixrooms.room.RoomActivity" android:exported="true" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:scheme="http"/>
+                <data android:scheme="rtsp"/>
+                <data android:scheme="file"/>
+                <data android:scheme="mms"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="sixroomsslzb" android:host="roomactivity"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.MyPropActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.ShopActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="cn.v6.sixrooms.pay.ui.activity.RechargeActivity" android:screenOrientation="portrait" android:configChanges="orientation"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="cn.v6.sixrooms.pay.ui.activity.PayCardActivity" android:screenOrientation="portrait" android:configChanges="orientation"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="cn.v6.sixrooms.pay.ui.activity.AlipayActivity" android:screenOrientation="portrait" android:configChanges="orientation"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="cn.v6.sixrooms.pay.ui.activity.BanklineActivity" android:screenOrientation="portrait" android:configChanges="orientation"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="cn.v6.sixrooms.pay.ui.activity.MobilePayActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.ExchangeBean6ToCoin6Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.MsgVerifyFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="cn.v6.sixrooms.ui.phone.UserManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.BillManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.ChangeUserVisibilityActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="cn.v6.sixrooms.ui.phone.HistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.DialogSupportCustomizeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.FindUsernameActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.RetrieveNameOrPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.pay.ui.activity.WeixinPayActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.EventActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="cn.v6.sixrooms.hall.HallActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sdk.sixrooms.coop.CoopLoadingActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.room.ReportActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.v6.sixrooms.ui.phone.RegisterActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:theme="@style/HuaXiAppTheme" android:name="com.spriteapp.booklibrary.ui.activity.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/HuaXiAppTheme" android:name="com.spriteapp.booklibrary.ui.activity.ReadActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/HuaXiAppTheme" android:name="com.spriteapp.booklibrary.ui.activity.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/HuaXiAppTheme" android:name="com.spriteapp.booklibrary.ui.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/HuaXiAppTheme" android:name="com.spriteapp.booklibrary.ui.activity.PublishCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:theme="@style/HuaXiAppTheme" android:name="com.spriteapp.booklibrary.ui.activity.RecentReadActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.sina.weibo.sdk.share.WbShareTransActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.sina.weibo.sdk.share.WbShareToStoryActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

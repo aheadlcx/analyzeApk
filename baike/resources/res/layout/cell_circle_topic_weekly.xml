@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:SettingItem="http://schemas.android.com/apk/res/qsbk.app" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="88dp">
+    <View android:layout_width="match_parent" android:layout_height="8dp" style="?attr/main_bg"/>
+    <RelativeLayout android:background="?attr/group_info_item_bg" android:layout_width="match_parent" android:layout_height="80dp" android:minHeight="80dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:paddingBottom="1dp" android:layout_width="37dp" android:layout_height="37dp" android:layout_marginLeft="15dp" android:layout_centerVertical="true" app:actualImageScaleType="6" app:roundedCornerRadius="6dp"/>
+        <FrameLayout android:id="@+id/item_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14dp" android:textColor="#63625e" android:gravity="center" android:id="@+id/ranking_num" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginRight="10dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="22dp" android:layout_toLeftOf="@+id/item_right" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="?attr/topic_title_color" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="#呵呵#" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="5dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="13dp" android:textColor="?attr/topic_topic_text" android:id="@+id/article_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="动态 484767   今日 53" android:includeFontPadding="false" android:layout_below="@+id/title" android:layout_alignLeft="@+id/title"/>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="?attr/group_info_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/g_divider_small" android:layout_marginLeft="10dp" android:layout_marginBottom="@dimen/g_divider_small" android:minHeight="@dimen/g_divider_small" android:layout_alignParentBottom="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

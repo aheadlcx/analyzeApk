@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.xiaochuankeji.tieba.ui.widget.image.WebImageView android:id="@+id/picEvent" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:viewAspectRatio="2.55" app:placeholderImage="@drawable/story_cover_empty_view" app:roundedCornerRadius="5dp"/>
+</merge>

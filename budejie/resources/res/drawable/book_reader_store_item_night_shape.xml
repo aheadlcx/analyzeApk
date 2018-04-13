@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="0.4dp" android:color="@color/book_reader_book_line_night_color"/>
+    <solid android:color="@android:color/transparent"/>
+    <padding android:left="0.4dp" android:top="0.4dp" android:right="0.4dp" android:bottom="0.4dp"/>
+</shape>

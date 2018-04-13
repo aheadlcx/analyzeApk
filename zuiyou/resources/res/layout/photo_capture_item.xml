@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhihu.matisse.internal.ui.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/item.placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+    <TextView android:textSize="14sp" android:textColor="?attr/capture.textColor" android:gravity="center" android:layout_gravity="center" android:id="@+id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photo_grid_capture" android:drawableTop="@drawable/ic_photo_camera_white_24dp" android:drawablePadding="8dp"/>
+</com.zhihu.matisse.internal.ui.widget.SquareFrameLayout>

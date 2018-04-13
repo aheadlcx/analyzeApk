@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="106dp" android:layout_height="106dp" android:layout_centerInParent="true">
+        <com.budejie.www.activity.view.MICView android:id="@+id/micView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:id="@+id/txt_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_cancel_remind" android:layout_below="@+id/linearLayout1" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

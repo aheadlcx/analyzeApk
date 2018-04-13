@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:id="@+id/rl_title" android:layout_width="match_parent" android:layout_height="46dp" android:minHeight="46dp">
+    <View android:id="@+id/division" android:background="@color/pop_item_gray_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="10dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Fanny兔宝贝" android:singleLine="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/iv_gift" android:layout_width="16dp" android:layout_height="16dp" fresco:placeholderImage="@drawable/phone_gift_def_bg"/>
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="X" android:singleLine="true"/>
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_num" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="0" android:singleLine="true"/>
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="个" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

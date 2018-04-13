@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res/com.budejie.www" android:gravity="center" android:id="@+id/ttg_ly_fail_layout" android:background="@color/ttg_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="48dp">
+        <cn.tatagou.sdk.view.IconTextView android:textSize="110sp" android:textColor="#bdbdbd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_icon_default_img"/>
+        <TextView android:textSize="15sp" android:textColor="#666666" android:id="@+id/ttg_tv_first_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ttg_load_fail" android:lineSpacingMultiplier="1.2"/>
+        <TextView android:textSize="12sp" android:textColor="#aeaeae" android:id="@+id/ttg_tv_second_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/ttg_no_data" android:lineSpacingMultiplier="1.2"/>
+        <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/ttg_tv_try_again" android:background="@drawable/shape_bg_radius" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="12dp" android:text="@string/ttg_try_again"/>
+    </LinearLayout>
+</LinearLayout>
